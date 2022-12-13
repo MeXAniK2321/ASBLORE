@@ -1,0 +1,479 @@
+//===================================
+"item_recipe_angel_halo"
+	{
+
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"angel_halo"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"500"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_angel_halo"
+
+		"ItemRequirements"
+		{
+			"01"								"item_yoru;item_last_star;item_rebellion"
+		}	
+	}
+	//=================================================================================================================
+	"item_angel_halo"
+	{
+
+		
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_angel_halo.lua"
+		"AbilityTextureName" 					"angel_halo"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+			"ItemDroppable" 						"0"
+		"ItemSellable"							"0"
+
+		"AbilityCastRange"						"700"
+		"AbilityCastPoint"						"0.2"
+		"AbilityCooldown"						"30"
+		"AbilityManaCost"						"150"
+		"AbilitySharedCooldown"					"axis_sheet"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack"					"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"as"				"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"all_stats"				"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ms"				"30"
+			}
+			
+			
+			
+		}
+	}
+//=================================================================================================================
+	// 
+	//=================================================================================================================
+	"item_recipe_divine_lyre"
+	{
+	
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"divine_lyre"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"2500"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_divine_lyre"
+
+		"ItemRequirements"
+		{
+			"01"								"item_ultimate_orb;item_magic_wand"
+		}	
+	}
+	//=================================================================================================================
+	"item_divine_lyre"
+	{
+
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_divine_lyre"
+		"AbilityTextureName" 					"divine_lyre"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"						"0.0"
+		"AbilityCooldown"						"60"
+		"AbilityManaCost"						"0"
+
+		"ItemShareability"						"ITEM_NOT_SHAREABLE"
+		"AbilitySharedCooldown"					"divine_lyre"
+
+		"ItemShopTags"							"str;agi;int;boots"
+		"ItemQuality"							"epic"
+		"ItemAliases"							"asta;sword"
+		"ItemSellable"							"1"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"all_stats"						"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack"					"15"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"60"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"amp"						"5"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"arm"					"2"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana"					"100"
+			}
+			
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"spd_chance"					"35"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attack_chance"						"35"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"buff_chance"						"35"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"diff_chance"						"40"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier1_chance"						"35"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier2_chance"						"30"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier3_chance"						"25"
+			}
+			"13"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier4_chance"						"20"
+			}
+			"14"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier5_chance"						"15"
+			}
+			"15"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_ms"						"90"
+			}
+			"16"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hero_lifesteal"		"20"
+			}	
+		}
+	}
+//==========================
+//Horn Of The Abyss
+//==========================
+"item_recipe_abyss_horn"
+	{
+	
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"divine_lyre"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"100"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_abyss_horn"
+
+		"ItemRequirements"
+		{
+			"01"								"item_divine_lyre;item_pandora_heart"
+		}	
+	}
+	//=================================================================================================================
+	"item_abyss_horn"
+	{
+
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_abyss_horn"
+		"AbilityTextureName" 					"horn_of_the_abyss"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"						"0.0"
+		"AbilityCooldown"						"60"
+		"AbilityManaCost"						"0"
+
+		"ItemShareability"						"ITEM_NOT_SHAREABLE"
+		"AbilitySharedCooldown"					"divine_lyre"
+
+		"ItemShopTags"							"str;agi;int;boots"
+		"ItemQuality"							"epic"
+		"ItemAliases"							"asta;sword"
+		"ItemSellable"							"1"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"all_stats"						"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack"					"160"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"60"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana"					"300"
+			}
+			
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"spd_chance"					"35"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attack_chance"						"35"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"buff_chance"						"35"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"diff_chance"						"40"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier1_chance"						"35"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier2_chance"						"30"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier3_chance"						"25"
+			}
+			"13"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier4_chance"						"20"
+			}
+			"14"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"tier5_chance"						"15"
+			}
+			"15"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_ms"						"30"
+			}
+		}
+	}
+	
+	
+	//==========================================
+//SPAMTON
+//==========================================
+"item_recipe_spamton"
+	{
+
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"spamton"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"200"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_spamton"
+
+		"ItemRequirements"
+		{
+			"01"								"item_divine_lyre;item_asha_tear;item_relic"
+		}	
+	}
+	//=================================================================================================================
+	"item_spamton"
+	{
+
+		
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_spamton.lua"
+		"AbilityTextureName" 					"spamton"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"						"700"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCooldown"						"30"
+		"AbilityManaCost"						"0"
+		"AbilitySharedCooldown"					"spamton"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"spd"					"25"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stat"				"15"
+			}
+			
+			
+			
+		}
+	}
+//==========================================
+//SPAMTON
+//==========================================
+"item_recipe_angel_halo"
+	{
+
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"angel_halo"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"500"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_angel_halo"
+
+		"ItemRequirements"
+		{
+			"01"								"item_abyss_horn;item_last_star;item_debate_club"
+		}	
+	}
+	//=================================================================================================================
+	"item_angel_halo"
+	{
+
+		
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_angel_halo.lua"
+		"AbilityTextureName" 					"angel_halo"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+			"ItemDroppable" 						"0"
+		"ItemSellable"							"0"
+
+		"AbilityCastRange"						"700"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCooldown"						"25"
+		"AbilityManaCost"						"0"
+		"AbilitySharedCooldown"					"angel_halo"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack"					"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"as"				"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"all_stats"				"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ms"				"30"
+			}
+			
+			
+			
+		}
+	}
+	
+	"item_dress"
+  	{
+		"BaseClass"					"item_lua"
+		"ScriptFile"				"items/item_dress"
+  		"AbilityTextureName"        "dress"
+  		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+  		"ItemCost"					"500"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"AbilityCooldown" "1"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"dmg_block"				"100"
+		    }
+		    
+		   
+		}
+  	}
