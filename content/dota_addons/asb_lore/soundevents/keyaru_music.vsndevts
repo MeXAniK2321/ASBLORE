@@ -1,0 +1,79 @@
+{
+	keyaru.theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/keyaru_theme_1.vsnd",
+		]
+		volume = "1.500000"
+		pitch = "1.000000"
+		vsnd_duration = 33.720001
+	}
+	keyaru.true_theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/keyaru_theme_2.vsnd",
+		]
+		volume = "1.500000"
+		pitch = "1.000000"
+		vsnd_duration = 31.968000
+	}
+	gachichu.2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/pika1.vsnd",
+		]
+		volume = "4.500000"
+		pitch = "1.000000"
+		vsnd_duration = 4.080000
+	}
+	gachichu.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/gachi/woo.vsnd",
+		]
+		volume = "4.500000"
+		pitch = "1.000000"
+		vsnd_duration = 0.470204
+	}
+	gachichu.3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/pika2.vsnd",
+		]
+		volume = "4.500000"
+		pitch = "1.000000"
+		vsnd_duration = 2.616000
+	}
+	gachichu.5 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/gachi/aaaaaaaaaaaahhhh.vsnd",
+		]
+		volume = "3.000000"
+		pitch = "1.000000"
+		vsnd_duration = 1.561678
+	}
+	gachichu.theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/gachichu_theme.vsnd",
+		]
+		volume = "4.000000"
+		pitch = "1.000000"
+		vsnd_duration = 30.552000
+	}
+}

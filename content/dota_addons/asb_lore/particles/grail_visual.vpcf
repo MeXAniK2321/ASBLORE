@@ -1,0 +1,179 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_flCullRadius = 1.000000
+	m_flConstantRadius = 50.000000
+	m_BoundingBoxMin = 
+	[
+		-128.000000,
+		-128.000000,
+		-128.000000,
+	]
+	m_BoundingBoxMax = 
+	[
+		128.000000,
+		128.000000,
+		128.000000,
+	]
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						255.000000,
+						255.000000,
+						255.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 5
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 6
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						255.000000,
+						255.000000,
+						255.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 4
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 9
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_hitboxSetName = "default"
+				m_materialGroupName = "0"
+			}
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_nCP1 = 15
+			m_vecCP1Pos = 
+			[
+				200.000000,
+				128.000000,
+				0.000000,
+			]
+			m_bUseWorldLocation = true
+			m_bDisableOperator = true
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = 
+			[
+				0.000000,
+				0.000000,
+				50.000000,
+			]
+			m_OffsetMax = 
+			[
+				0.000000,
+				0.000000,
+				50.000000,
+			]
+			m_bDisableOperator = true
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+			m_bDisableOperator = true
+		},
+		
+		{
+			_class = "C_OP_PositionLock"
+			m_bDisableOperator = true
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_ground.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_magic.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_twinkle.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_glow.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_gold_glow.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/teleport/teleport_ti10_cable.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/grail_visual2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/test_grail_sigh.vpcf"
+		},
+	]
+}

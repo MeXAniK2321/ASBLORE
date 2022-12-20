@@ -1,0 +1,3994 @@
+{
+	anime_chatwheel_non_sorted_1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/chlen.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.944000
+	}
+	anime_chatwheel_non_sorted_1_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/chlen2.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.340000
+	}
+	anime_chatwheel_non_sorted_1_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/debili.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.760000
+	}
+	anime_chatwheel_non_sorted_1_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/dio_chance.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 10.044000
+	}
+	anime_chatwheel_non_sorted_1_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/dio_spustilsa.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.248000
+	}
+	anime_chatwheel_non_sorted_1_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/diobolbaeb.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.744000
+	}
+	anime_chatwheel_non_sorted_1_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/echos.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.980000
+	}
+	anime_chatwheel_non_sorted_1_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/vinvin.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 15.156000
+	}
+	anime_chatwheel_non_sorted_2_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/nya.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.648000
+	}
+	anime_chatwheel_non_sorted_2_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/faq.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.572000
+	}
+	anime_chatwheel_non_sorted_2_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/kirino.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.052000
+	}
+	anime_chatwheel_non_sorted_2_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/its_time_to_duel.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.112000
+	}
+	anime_chatwheel_non_sorted_2_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/anime_Wow.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.284000
+	}
+	anime_chatwheel_non_sorted_2_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/applause.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.400000
+	}
+	anime_chatwheel_non_sorted_2_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/GodJob.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.188000
+	}
+	anime_chatwheel_non_sorted_2_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/Bulyat.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.332000
+	}
+	anime_chatwheel_non_sorted_3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/shimoneta.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.744000
+	}
+	anime_chatwheel_non_sorted_3_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/satania2.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 10.368000
+	}
+	anime_chatwheel_non_sorted_3_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/satania1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.564000
+	}
+	anime_chatwheel_non_sorted_3_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/creepy.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 8.532000
+	}
+	anime_chatwheel_non_sorted_3_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/pomf_1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.672000
+	}
+	anime_chatwheel_non_sorted_3_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/Ochichin.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.096001
+	}
+	anime_chatwheel_non_sorted_3_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/oh_jesus.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.656000
+	}
+	anime_chatwheel_non_sorted_3_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/miku.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 8.952000
+	}
+	anime_chatwheel_non_sorted_4_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/svet.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.408000
+	}
+	anime_chatwheel_non_sorted_4_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/waifus.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.608000
+	}
+	anime_chatwheel_non_sorted_4_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/yay.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.880000
+	}
+	anime_chatwheel_non_sorted_4_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/WowCongratulation.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.276000
+	}
+	anime_chatwheel_non_sorted_4_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/WATASHIWANUMBAWAN.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.808000
+	}
+	anime_chatwheel_non_sorted_4_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/WatashiWaNumbaOne1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.700000
+	}
+	anime_chatwheel_non_sorted_4_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/okawai.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.836000
+	}
+	anime_chatwheel_non_sorted_4_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/others/shinobu1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.472000
+	}
+	anime_chatwheel_non_sorted_5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Echos1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.012000
+	}
+	anime_chatwheel_non_sorted_5_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Doppio1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.696000
+	}
+	anime_chatwheel_non_sorted_5_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Dio3.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.008000
+	}
+	anime_chatwheel_non_sorted_5_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Dio2.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.204000
+	}
+	anime_chatwheel_non_sorted_5_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Dio1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.340000
+	}
+	anime_chatwheel_non_sorted_5_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Diavolo1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.512000
+	}
+	anime_chatwheel_non_sorted_5_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Yoshi.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.032000
+	}
+	anime_chatwheel_non_sorted_5_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/arrividerchi.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.368000
+	}
+	anime_chatwheel_non_sorted_6_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/ohshit.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.728000
+	}
+	anime_chatwheel_non_sorted_6_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/omg3.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.132000
+	}
+	anime_chatwheel_non_sorted_6_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/omg2.vsnd",
+		]
+		volume = "8.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.088000
+	}
+	anime_chatwheel_non_sorted_6_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/omg1.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.096000
+	}
+	anime_chatwheel_non_sorted_6_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/ohgod.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.412000
+	}
+	anime_chatwheel_non_sorted_6_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/nonono.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.808000
+	}
+	anime_chatwheel_non_sorted_6_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/Nice.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.016000
+	}
+	anime_chatwheel_non_sorted_6_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/GG.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.872000
+	}
+	anime_chatwheel_non_sorted_7_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/zm/tupoi.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.400000
+	}
+	anime_chatwheel_non_sorted_7_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/yesyesyes.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.284000
+	}
+	anime_chatwheel_non_sorted_7_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/round.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.112000
+	}
+	anime_chatwheel_non_sorted_7_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/yakamashi.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.528000
+	}
+	anime_chatwheel_non_sorted_7_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/nice2.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.248000
+	}
+	anime_chatwheel_non_sorted_7_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/high.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.852000
+	}
+	anime_chatwheel_non_sorted_7_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/siza.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.272000
+	}
+	anime_chatwheel_non_sorted_7_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/sonofa.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.204000
+	}
+	anime_chatwheel_non_sorted_8_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/TIMESTOP/polnaref.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.260000
+	}
+	anime_chatwheel_non_sorted_8_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/timestop/kakyoin.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.376000
+	}
+	anime_chatwheel_non_sorted_8_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/sekai.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.300000
+	}
+	anime_chatwheel_non_sorted_8_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/sha.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.088000
+	}
+	anime_chatwheel_non_sorted_8_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/dagakoto.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.880000
+	}
+	anime_chatwheel_non_sorted_8_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/kars.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.300000
+	}
+	anime_chatwheel_non_sorted_8_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/muhamedo.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.004000
+	}
+	anime_chatwheel_non_sorted_8_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/JoJo/lerolero.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.068000
+	}
+	anime_chatwheel_non_sorted_9_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/aaaaaaaaaaaahhhh.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.561678
+	}
+	anime_chatwheel_non_sorted_9_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/boy_next_door.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.103968
+	}
+	anime_chatwheel_non_sorted_9_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/dungeon_master.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.036032
+	}
+	anime_chatwheel_non_sorted_9_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/fisting_is_300.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.900930
+	}
+	anime_chatwheel_non_sorted_9_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/fuck_you_leather_man.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.894943
+	}
+	anime_chatwheel_non_sorted_9_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/fucking_slaves_get_your_ass_back_here.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.369796
+	}
+	anime_chatwheel_non_sorted_9_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/oh_yes_sir.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.436735
+	}
+	anime_chatwheel_non_sorted_9_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/Gachi/woo.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.470204
+	}
+	chatwheel.01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_01.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.306122
+	}
+	chatwheel.02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_02.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.033958
+	}
+	chatwheel.03 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_03.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.024000
+	}
+	chatwheel.04 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_04.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.281066
+	}
+	chatwheel.05 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_05.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.960249
+	}
+	chatwheel.06 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_06.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.256000
+	}
+	chatwheel.07 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_07.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.319667
+	}
+	chatwheel.08 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_08.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.041958
+	}
+	chatwheel.09 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_09.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.484979
+	}
+	chatwheel.10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_10.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.515102
+	}
+	chatwheel.11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_11.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.929958
+	}
+	chatwheel.12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_12.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.067755
+	}
+	chatwheel.13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_13.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.198625
+	}
+	chatwheel.14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_14.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.166984
+	}
+	chatwheel.15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_15.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.004082
+	}
+	chatwheel.16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_16.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.912000
+	}
+	chatwheel.17 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_17.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.545958
+	}
+	chatwheel.18 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_18.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.833958
+	}
+	chatwheel.19 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_19.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.441958
+	}
+	chatwheel.20 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_20.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.137958
+	}
+	chatwheel.21 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_21.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.913958
+	}
+	chatwheel.22 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_22.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.537958
+	}
+	chatwheel.23 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_23.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.185958
+	}
+	chatwheel.24 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_24.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.329958
+	}
+	chatwheel.25 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_25.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.041958
+	}
+	chatwheel.26 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_26.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.985958
+	}
+	chatwheel.27 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_27.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.433959
+	}
+	chatwheel.28 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_28.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.225958
+	}
+	chatwheel.29 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_29.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.537958
+	}
+	chatwheel.30 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_30.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.825958
+	}
+	chatwheel.31 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_31.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.377958
+	}
+	chatwheel.32 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_32.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.329958
+	}
+	chatwheel.33 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_33.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.929958
+	}
+	chatwheel.34 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_34.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.041958
+	}
+	chatwheel.35 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_35.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.633958
+	}
+	chatwheel.36 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_36.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.737958
+	}
+	chatwheel.37 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_37.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.436553
+	}
+	chatwheel.38 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_38.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.280000
+	}
+	chatwheel.39 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_39.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.280000
+	}
+	chatwheel.40 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_40.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.848000
+	}
+	chatwheel.41 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_41.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.790454
+	}
+	chatwheel.42 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_42.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.633719
+	}
+	chatwheel.43 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_43.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.182290
+	}
+	chatwheel.44 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_44.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.548005
+	}
+	chatwheel.45 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_45.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.084979
+	}
+	chatwheel.46 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_46.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.247596
+	}
+	chatwheel.47 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_47.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.756984
+	}
+	chatwheel.48 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_48.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.148821
+	}
+	chatwheel.49 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_49.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.077801
+	}
+	chatwheel.50 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_50.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.727596
+	}
+	chatwheel.51 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_51.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.685964
+	}
+	chatwheel.52 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_52.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.861474
+	}
+	chatwheel.53 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_53.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.201066
+	}
+	chatwheel.54 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_54.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.965964
+	}
+	chatwheel.55 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_55.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.000000
+	}
+	chatwheel.56 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_56.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.388004
+	}
+	chatwheel.57 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_57.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.462290
+	}
+	chatwheel.58 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_58.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.947188
+	}
+	chatwheel.59 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_59.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.925148
+	}
+	chatwheel.60 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_60.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.876984
+	}
+	chatwheel.61 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_61.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.148821
+	}
+	chatwheel.62 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_62.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.223923
+	}
+	chatwheel.63 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_63.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.928798
+	}
+	chatwheel.64 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_64.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.585556
+	}
+	chatwheel.65 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_65.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.537958
+	}
+	chatwheel.66 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_66.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.040000
+	}
+	chatwheel.67 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_67.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.920000
+	}
+	chatwheel.68 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_68.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.081958
+	}
+	chatwheel.69 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_69.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.089958
+	}
+	chatwheel.70 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_70.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.224000
+	}
+	chatwheel.71 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_71.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.233958
+	}
+	chatwheel.72 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_72.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.280000
+	}
+	chatwheel.73 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_73.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.137958
+	}
+	chatwheel.74 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_74.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.728000
+	}
+	chatwheel.75 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_75.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.497958
+	}
+	chatwheel.76 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_76.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.848000
+	}
+	chatwheel.77 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_77.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.944000
+	}
+	chatwheel.78 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_78.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.009958
+	}
+	chatwheel.79 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_79.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.777958
+	}
+	chatwheel.80 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_80.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.503107
+	}
+	chatwheel.81 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_81.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.913958
+	}
+	chatwheel.82 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_82.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.623855
+	}
+	chatwheel.83 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_83.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.849958
+	}
+	chatwheel.84 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_84.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.120000
+	}
+	chatwheel.85 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_85.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.176000
+	}
+	chatwheel.86 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_86.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.280000
+	}
+	chatwheel.87 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_87.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 11.064000
+	}
+	chatwheel.88 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_88.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.497958
+	}
+	chatwheel.89 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_89.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.935578
+	}
+	chatwheel.90 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_90.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.145958
+	}
+	chatwheel.91 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_91.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.865958
+	}
+	chatwheel.92 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_92.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.503787
+	}
+	chatwheel.93 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_93.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.638367
+	}
+	chatwheel.94 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_94.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 8.256000
+	}
+	chatwheel.95 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_95.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.576000
+	}
+	chatwheel.96 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_96.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.153958
+	}
+	chatwheel.97 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_97.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.041958
+	}
+	chatwheel.98 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_98.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.241958
+	}
+	chatwheel.99 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_99.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.393959
+	}
+	chatwheel.100 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_100.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.353958
+	}
+	chatwheel.101 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_101.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.520000
+	}
+	chatwheel.102 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_102.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.201958
+	}
+	chatwheel.103 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_103.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.024000
+	}
+	chatwheel.104 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_104.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.825958
+	}
+	chatwheel.105 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_105.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.137958
+	}
+	chatwheel.106 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_106.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.713958
+	}
+	chatwheel.107 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_107.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.881958
+	}
+	chatwheel.108 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_108.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.825958
+	}
+	chatwheel.109 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_109.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.697958
+	}
+	chatwheel.110 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_110.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.841958
+	}
+	chatwheel.111 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_111.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.417958
+	}
+	chatwheel.112 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_112.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.649958
+	}
+	chatwheel.113 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_113.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 8.737958
+	}
+	chatwheel.114 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_114.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.136000
+	}
+	chatwheel.115 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_115.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.269388
+	}
+	chatwheel.116 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_116.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.792000
+	}
+	chatwheel.117 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_117.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.545958
+	}
+	chatwheel.118 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_118.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.817958
+	}
+	chatwheel.119 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_119.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.433958
+	}
+	chatwheel.120 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_120.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.200000
+	}
+	chatwheel.121 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_121.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.200930
+	}
+	chatwheel.122 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_122.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.617347
+	}
+	chatwheel.123 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_123.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.236735
+	}
+	chatwheel.124 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_124.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.368000
+	}
+	chatwheel.125 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_125.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.894943
+	}
+	chatwheel.126 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_126.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.320249
+	}
+	chatwheel.127 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_127.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.980658
+	}
+	chatwheel.128 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_128.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.541224
+	}
+	chatwheel.129 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_129.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.811678
+	}
+	chatwheel.130 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_130.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.408000
+	}
+	chatwheel.131 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_131.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.585958
+	}
+	chatwheel.132 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_132.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.716000
+	}
+	chatwheel.133 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_133.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.297234
+	}
+	chatwheel.134 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_134.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.239184
+	}
+	chatwheel.135 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_135.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.776000
+	}
+	chatwheel.136 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_136.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 8.089958
+	}
+	chatwheel.137 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_137.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chatwheel.138 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_138.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.916604
+	}
+	chatwheel.139 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_139.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.101746
+	}
+	chatwheel.140 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_140.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.249959
+	}
+	chatwheel.141 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_141.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.553958
+	}
+	chatwheel.142 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_142.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.457958
+	}
+	chatwheel.143 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_143.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.968000
+	}
+	chatwheel.144 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_144.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.089958
+	}
+	chatwheel.145 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_145.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.784000
+	}
+	chatwheel.146 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_146.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.193958
+	}
+	chatwheel.147 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_147.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.456000
+	}
+	chatwheel.148 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_148.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.416000
+	}
+	chatwheel.149 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_149.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 10.993958
+	}
+	chatwheel.150 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_150.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.064000
+	}
+	chatwheel.151 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_151.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.992000
+	}
+	chatwheel.152 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_152.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.792000
+	}
+	chatwheel.153 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_153.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.089958
+	}
+	chatwheel.154 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_154.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.577958
+	}
+	chatwheel.155 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_155.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.816000
+	}
+	chatwheel.156 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_156.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.544000
+	}
+	chatwheel.157 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_157.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.681958
+	}
+	chatwheel.158 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_158.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.928000
+	}
+	chatwheel.159 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_159.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.913958
+	}
+	chatwheel.160 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_160.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.060408
+	}
+	chatwheel.161 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_161.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.288000
+	}
+	chatwheel.162 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_162.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.873958
+	}
+	chatwheel.163 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_163.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.920000
+	}
+	chatwheel.164 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_164.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.232000
+	}
+	chatwheel.165 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_165.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.249958
+	}
+	chatwheel.166 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_166.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.585958
+	}
+	chatwheel.167 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_167.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.673958
+	}
+	chatwheel.168 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_168.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.205329
+	}
+	chatwheel.169 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_169.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.009958
+	}
+	chatwheel.170 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_170.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.979932
+	}
+	chatwheel.171 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_171.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.657143
+	}
+	chatwheel.172 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_172.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.425958
+	}
+	chatwheel.173 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_173.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.913958
+	}
+	chatwheel.174 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_174.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.105958
+	}
+	chatwheel.175 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_175.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.041958
+	}
+	chatwheel.176 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_176.vsnd",
+		]
+		volume_min = "1.500000"
+		volume_max = "1.500000"
+		pitch_min = "1.500000"
+		pitch_max = "1.500000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.585958
+	}
+	chatwheel.177 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_177.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.665146
+	}
+	chatwheel.178 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_178.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.555737
+	}
+	chatwheel.179 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_179.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	chatwheel.180 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_180.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.209333
+	}
+	chatwheel.181 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_181.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.763175
+	}
+	chatwheel.182 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_182.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.136236
+	}
+	chatwheel.183 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_183.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.156372
+	}
+	chatwheel.184 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_184.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.512000
+	}
+	chatwheel.185 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_185.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.718277
+	}
+	chatwheel.186 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_186.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 8.736979
+	}
+	chatwheel.187 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_187.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 10.104000
+	}
+	chatwheel.188 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_188.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.808000
+	}
+	chatwheel.189 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_189.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.896000
+	}
+	chatwheel.190 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_190.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.495760
+	}
+	chatwheel.191 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_191.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.816576
+	}
+	chatwheel.192 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_192.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.879274
+	}
+	chatwheel.193 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_193.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+}

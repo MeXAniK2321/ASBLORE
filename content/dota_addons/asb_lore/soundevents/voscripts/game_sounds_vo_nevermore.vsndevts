@@ -1,0 +1,380 @@
+{
+	nevermore_nev_kill_01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_kill_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_kill_02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_kill_02.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_02.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_03 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_03.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_04 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_04.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_05 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_05.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_attack_06 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_06.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_death_01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_death_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_death_02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_death_02.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_02.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_03 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_03.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_04 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_04.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_05 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_05.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_06 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_06.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_07 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_07.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_08 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_08.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_09 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_09.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_10.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_11.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_12.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_13.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_14.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_move_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_move_15.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_respawn_01 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_respawn_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	nevermore_nev_respawn_02 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_respawn_02.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+}

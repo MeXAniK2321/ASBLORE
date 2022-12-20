@@ -1,0 +1,224 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flConstantRadius = 50.000000
+	m_nBehaviorVersion = 4
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 9
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_nCP1 = 4
+			m_vecCP1Pos = 
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_SetCPOrientationToPointAtCP"
+			m_nOutputCP = 4
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.000000
+			m_fLifetimeMin = 1.000000
+		},
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_nControlPointNumber = 1
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.513000
+			m_Gravity = 
+			[
+				0.000000,
+				0.000000,
+				1000.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_nFirstControlPoint = 3
+		},
+		
+		{
+			_class = "C_OP_RemapCPVisibilityToScalar"
+			m_nControlPoint = 1
+			m_flInputMax = 0.010000
+			m_nFieldOutput = 16
+		},
+		
+		{
+			_class = "C_OP_SetToCP"
+			m_nControlPointNumber = 1
+			m_vecOffset = 
+			[
+				0.000000,
+				0.000000,
+				500.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_DampenToCP"
+			m_nControlPointNumber = 1
+			m_flRange = 75.000000
+			m_bDisableOperator = true
+		},
+		
+		{
+			_class = "C_OP_PositionLock"
+			m_nControlPointNumber = 1
+		},
+	]
+	m_ForceGenerators = 
+	[
+		
+		{
+			_class = "C_OP_AttractToControlPoint"
+			m_fForceAmount = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 2000.000000
+			}
+			m_fFalloffPower = 0.000000
+			m_nControlPointNumber = 1
+			m_bDisableOperator = true
+		},
+	]
+	m_Constraints = 
+	[
+		
+		{
+			_class = "C_OP_ConstrainDistance"
+			m_nControlPointNumber = 1
+			m_bDisableOperator = true
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_bDisableOperator = true
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_whitebox.vtex"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_ground.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_mane.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_flare.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_ripple.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_debug.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_energy.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_trail.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2.vpcf"
+		},
+	]
+}

@@ -1,0 +1,1352 @@
+{
+	legion_commander_legcom_spawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.897958
+	}
+	legion_commander_legcom_spawn_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_spawn_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.985958
+	}
+	legion_commander_legcom_move_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.969958
+	}
+	legion_commander_legcom_move_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.121958
+	}
+	legion_commander_legcom_move_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_4.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.945958
+	}
+	legion_commander_legcom_move_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_5.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.257958
+	}
+	legion_commander_legcom_move_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_6.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.961958
+	}
+	legion_commander_legcom_move_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.969958
+	}
+	legion_commander_legcom_move_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.121958
+	}
+	legion_commander_legcom_move_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_4.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.945958
+	}
+	legion_commander_legcom_move_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_5.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.257958
+	}
+	legion_commander_legcom_move_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_6.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.961958
+	}
+	legion_commander_legcom_move_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.969958
+	}
+	legion_commander_legcom_move_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.121958
+	}
+	legion_commander_legcom_move_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_4.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.945958
+	}
+	legion_commander_legcom_move_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_5.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.257958
+	}
+	legion_commander_legcom_move_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_6.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.961958
+	}
+	legion_commander_legcom_move_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_21 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.969958
+	}
+	legion_commander_legcom_move_22 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.121958
+	}
+	legion_commander_legcom_move_23 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_4.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.945958
+	}
+	legion_commander_legcom_move_24 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_5.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.257958
+	}
+	legion_commander_legcom_move_25 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_6.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.961958
+	}
+	legion_commander_legcom_move_26 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_27 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.969958
+	}
+	legion_commander_legcom_move_28 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.121958
+	}
+	legion_commander_legcom_move_29 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_move_30 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/move_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.497958
+	}
+	legion_commander_legcom_attack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.729958
+	}
+	legion_commander_legcom_attack_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_attack_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/attack_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.489958
+	}
+	legion_commander_legcom_kill_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.577958
+	}
+	legion_commander_legcom_kill_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.489958
+	}
+	legion_commander_legcom_kill_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.577958
+	}
+	legion_commander_legcom_kill_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.489958
+	}
+	legion_commander_legcom_kill_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.577958
+	}
+	legion_commander_legcom_kill_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.577958
+	}
+	legion_commander_legcom_kill_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.657958
+	}
+	legion_commander_legcom_kill_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/kill_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.489958
+	}
+	legion_commander_legcom_death_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.009958
+	}
+	legion_commander_legcom_death_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.009958
+	}
+	legion_commander_legcom_death_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.009958
+	}
+	legion_commander_legcom_death_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.009958
+	}
+	legion_commander_legcom_death_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_death_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.009958
+	}
+	legion_commander_legcom_death_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/death_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.321959
+	}
+	legion_commander_legcom_respawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_respawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/respawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_rare_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_rare_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_rare_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_rare_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/spawn.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	legion_commander_legcom_firstblood_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/legion_commander/first_blood.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.465958
+	}
+}

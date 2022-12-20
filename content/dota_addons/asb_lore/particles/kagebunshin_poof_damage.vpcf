@@ -1,0 +1,267 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 32
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_flAnimationRate = 1.000000
+			m_vecColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = 
+				[
+					255,
+					255,
+					255,
+				]
+			}
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/vistasmokev1/vistasmokev1_gray.vtex"
+					m_nTextureChannels = "SPRITECARD_TEXTURE_CHANNEL_MIX_A"
+				},
+				
+				{
+					m_hTexture = resource:"materials/particle/vistasmokev1/vistasmokev1_gray.vtex"
+					m_TextureControls = 
+					{
+						m_flZoomScale = 
+						{
+							m_nType = "PF_TYPE_LITERAL"
+							m_flLiteralValue = 4.000000
+						}
+					}
+					m_nTextureChannels = "SPRITECARD_TEXTURE_CHANNEL_MIX_RGB"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_OutlineColor = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.120000
+			m_Gravity = 
+			[
+				0.000000,
+				0.000000,
+				-200.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_Decay"
+		},
+		
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.100000
+		},
+		
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.400000
+		},
+		
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = 
+			[
+				207,
+				206,
+				205,
+			]
+		},
+		
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fSpeedMax = 300.000000
+			m_fSpeedMin = 100.000000
+			m_vecDistanceBias = 
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+			]
+			m_LocalCoordinateSystemSpeedMin = 
+			[
+				0.000000,
+				0.000000,
+				100.000000,
+			]
+			m_LocalCoordinateSystemSpeedMax = 
+			[
+				0.000000,
+				0.000000,
+				600.000000,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 2.000000
+			m_fLifetimeMin = 1.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				246,
+				231,
+				214,
+			]
+			m_ColorMax = 
+			[
+				118,
+				118,
+				118,
+			]
+			m_TintMin = 
+			[
+				0,
+				0,
+				0,
+			]
+			m_TintMax = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 16
+			m_nAlphaMax = 24
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 60.000000
+			m_flRadiusMax = 80.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		
+		{
+			_class = "C_INIT_RandomRotationSpeed"
+			m_flDegreesMax = 20.000000
+			m_flDegreesMin = 10.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = 
+			[
+				0.000000,
+				0.000000,
+				40.000000,
+			]
+			m_OffsetMax = 
+			[
+				0.000000,
+				0.000000,
+				60.000000,
+			]
+			m_nControlPointNumber = 2
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 32.000000
+			}
+		},
+	]
+	m_ForceGenerators = 
+	[
+		
+		{
+			_class = "C_OP_TwistAroundAxis"
+			m_fForceAmount = 300.000000
+		},
+	]
+	m_nBehaviorVersion = 10
+	m_nFirstMultipleOverride_BackwardCompat = 8
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/kagebunshin_poof_cartoon.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/kagebunshin_sphere.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/naruto_dust_hit_shockwave.vpcf"
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						null,
+						null,
+						null,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+}

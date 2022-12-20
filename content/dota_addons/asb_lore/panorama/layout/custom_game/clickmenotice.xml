@@ -1,6 +1,6 @@
 <root>
     <styles>
-    	<include src="s2r://panorama/styles/custom_game/clickmenotice.vcss_c" />
+    	<include src="s2r://panorama/styles/custom_game/clickmenotice.css" />
     </styles>
 
     <scripts>

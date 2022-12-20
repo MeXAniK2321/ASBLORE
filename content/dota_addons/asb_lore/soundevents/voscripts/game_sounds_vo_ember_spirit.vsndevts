@@ -1,0 +1,5187 @@
+"ember_spirit_embr_spawn_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_spawn_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/spawn7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_begin_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/begin1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_begin_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/begin2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_firstblood_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fb1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_firstblood_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fb2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_firstblood_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fb3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move16.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move17.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move18.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move19.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move20.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move21.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move22.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_24"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move24.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_25"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move25.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_move_26"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/move26.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_attack_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/attack10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_cast_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/cast1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_cast_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/cast2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_cast_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/cast3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_cast_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/cast4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_searingchains_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/searingchains2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist16.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist17.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist18.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist20.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist21.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist22.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_23"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist23.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_24"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist24.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_25"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_26"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_27"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_sleightoffist_28"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/sleightoffist4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_flameguard_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/flameguard1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_flameguard_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/flameguard2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_flameguard_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/flameguard1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_flameguard_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/flameguard2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_flameguard_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/flameguard2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremsend_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremsend1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fireremrun_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fireremrun3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_failure_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/failure1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_failure_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/failure2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_failure_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/failure3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_levelup_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/levelup6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill16.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill17.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill18.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill19.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_kill_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/kill20.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rival_23"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rival9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_ally_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/ally15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lasthit_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lasthit10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_death_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/death14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_fastres_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/fastres1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_respawn_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/respawn11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_purch_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_purch_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_purch_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_purch_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_scepter_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/scepter1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_scepter_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/scepter1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_blink_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/blink1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_blink_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/blink1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/purch2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item16.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_items_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/item17.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_bottle_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/bottle1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_bottle_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/bottle1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_bottle_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/bottle1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny16.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny17.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny18.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny19.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny20.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_deny_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/deny2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lanemissing_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/miss1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lanemissing_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/miss2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lanemissing_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/miss3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_itemcommon_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/itemcommon1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_itemmoderate_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/itemmoderate1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_itemrare_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/itemrare1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_immort_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/immort1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_immort_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/immort2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_immort_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/immort3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_immort_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/immort4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_haste_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/haste1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_haste_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/haste2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_haste_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/haste1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_haste_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/haste2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_doubdam_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/doubdam1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_doubdam_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/doubdam2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_doubdam_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/doubdam1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_doubdam_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/doubdam2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_regen_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/regen1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_regen_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/regen1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_regen_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/regen1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_regen_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/regen1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_illus_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/illus1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_illus_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/illus1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_illus_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/illus1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_illus_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/illus1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_invis_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/invis1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_invis_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/invis2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_invis_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/invis3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_invis_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/invis4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_notyet_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/notyet9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_nomana_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/nomana9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_thanks_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/thanks1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_thanks_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/thanks2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_underattack_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/underattack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_inthebag_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/inthebag1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_inthebag_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/inthebag2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_crumwiz_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/wiz1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_shiwiz_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/wiz2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_shiwiz_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/wiz3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lose_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lose1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lose_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lose2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_lose_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/lose3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_win_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/win1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_win_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/win2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_win_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/win3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rare_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rare1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rare_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rare2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_rare_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/rare3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_pain_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/pain10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_anger_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/anger6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_grunt_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/grunt13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_happy_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/happy6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh11.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh12.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh13.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh14.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh15.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"ember_spirit_embr_laugh_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/shana/laugh4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+

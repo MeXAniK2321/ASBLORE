@@ -1,0 +1,251 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 64
+	m_flConstantRadius = 12.000000
+	m_ConstantColor = 
+	[
+		255,
+		105,
+		180,
+		255,
+	]
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 2
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 18
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 19
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 20
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 21
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 22
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 32.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.450000
+			m_fLifetimeMax = 0.450000
+		},
+		
+		{
+			_class = "C_INIT_CreateInEpitrochoid"
+			m_flRadius1 = 17.000000
+			m_flRadius2 = -23.400000
+			m_flOffset = 120.000000
+			m_flParticleDensity = 5.000000
+			m_bUseCount = true
+		},
+		
+		{
+			_class = "C_INIT_CreateInEpitrochoid"
+			m_flOffset = 60.000000
+			m_nComponent2 = -1
+			m_nComponent1 = 2
+			m_flRadius1 = 70.000000
+			m_flRadius2 = -17.000000
+			m_flParticleDensity = 0.210000
+			m_bUseCount = true
+			m_bOffsetExistingPos = true
+		},
+		
+		{
+			_class = "C_INIT_SetHitboxToClosest"
+			m_vecHitBoxScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL"
+				m_vLiteralValue = 
+				[
+					0.900000,
+					0.900000,
+					0.900000,
+				]
+			}
+		},
+		
+		{
+			_class = "C_INIT_RemapParticleCountToScalar"
+			m_bActiveRange = true
+			m_nFieldOutput = 7
+			m_nInputMax = 2
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+		},
+		
+		{
+			_class = "C_INIT_RemapParticleCountToScalar"
+			m_bActiveRange = true
+			m_flOutputMax = 0.000000
+			m_flOutputMin = 1.000000
+			m_nFieldOutput = 7
+			m_nInputMax = 31
+			m_nInputMin = 29
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				0,
+				255,
+				255,
+			]
+			m_ColorMax = 
+			[
+				255,
+				20,
+				147,
+			]
+			m_TintMin = 
+			[
+				0,
+				0,
+				255,
+			]
+			m_TintMax = 
+			[
+				0,
+				255,
+				255,
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.400000
+		},
+		
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.500000
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.150000
+			m_flEndScale = 1.400000
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_OFF"
+		},
+		
+		{
+			_class = "C_OP_OscillateScalar"
+			m_nField = 16
+			m_RateMin = -3.000000
+			m_RateMax = -5.000000
+			m_FrequencyMin = 3.000000
+			m_FrequencyMax = 16.000000
+		},
+		
+		{
+			_class = "C_OP_MoveToHitbox"
+			m_flLifeTimeLerpEnd = 0.250000
+		},
+		
+		{
+			_class = "C_OP_LockToBone"
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderRopes"
+			m_flOverbrightFactor = 2.000000
+			m_flRadiusScale = 0.500000
+			m_flTextureVWorldSize = 580.046387
+			m_flTextureVScrollRate = 580.046387
+			m_nMaxTesselation = 8
+			m_nMinTesselation = 8
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/beam_jagged_02.vtex"
+					m_TextureControls = 
+					{
+						m_flFinalTextureScaleU = 
+						{
+							m_nType = "PF_TYPE_LITERAL"
+							m_flLiteralValue = -1.000000
+						}
+					}
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_siren/siren_net_sparkles.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_siren/siren_net_sparkles_model.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/billy_bondage1.vpcf"
+		},
+	]
+}

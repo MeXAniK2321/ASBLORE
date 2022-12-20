@@ -1,0 +1,200 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{261b3cba-02c7-424f-854b-c432c6f018d1} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_Children = 
+	[
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_h.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_rubick/rubick_freezing_field_explosion_shadow.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_g.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_d.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_e.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_b.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_c.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_ice.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_ice_debris.vpcf"
+		},
+		{
+			m_flDelay = 0.350000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_dust.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_a.vpcf"
+		},
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/rubick_freezing_field_explosion_swirl.vpcf"
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP1Pos = 
+			[
+				-328.000000,
+				490.000000,
+				1600.000000,
+			]
+			m_nCP4 = 3
+			m_vecCP2Pos = 
+			[
+				0.000000,
+				0.000000,
+				32.000000,
+			]
+		},
+	]
+	m_nBehaviorVersion = 8
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 60
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						8.000000,
+						229.000000,
+						96.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						-328.000000,
+						490.000000,
+						1600.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						32.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						-128.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+}

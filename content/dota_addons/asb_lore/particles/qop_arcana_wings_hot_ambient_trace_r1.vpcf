@@ -1,0 +1,63 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{36c3961f-02a4-4c52-bf8f-6e3147d7d142} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_hSnapshot = resource:"particles/models/items/queenofpain/queenofpain_arcana/queenofpain_arcana_wings/queenofpain_arcana_wing_hot_r_fx_model.vsnap"
+	m_nSnapshotControlPoint = 6
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_wings_hot_ambient_trace_glow.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_wings_hot_ambient_trace_detail.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_wings_ambient_trace_ember.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_wings_hot_ambient_trace_light.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_wings_hot_ambient_trace_sonic.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/qop_arcana_wings_ambient_trace_smoke1.vpcf"
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						null,
+						null,
+						null,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_nBehaviorVersion = 10
+}

@@ -1,0 +1,111 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_ConstantColor = 
+	[
+		253,
+		16,
+		0,
+		255,
+	]
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_RemapSpeedtoCP"
+			m_flInputMax = 500.000000
+			m_nOutControlPointNumber = 1
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_whirlwind_static_cascade-red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_magic_trail_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_trail_d_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_burst_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_afterimage_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_fire_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_windrun_start_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_feet_effects_cascade_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_feet_effects_cascade_b_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/windrunner_feet_effects_cascade_c_red.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/sam_katana_buff.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/blood_aura1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/pikachu_exe_aura4.vpcf"
+		},
+	]
+}

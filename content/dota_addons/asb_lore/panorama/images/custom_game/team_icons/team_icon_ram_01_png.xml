@@ -1,0 +1,5 @@
+<root>
+	<Panel class="AddonLoadingRoot">
+		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/team_icons/team_icon_gazm.png" />
+	</Panel>
+</root>

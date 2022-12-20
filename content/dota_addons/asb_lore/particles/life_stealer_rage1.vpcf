@@ -1,0 +1,158 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{36c3961f-02a4-4c52-bf8f-6e3147d7d142} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 4
+	m_hFallback = resource:"particles/units/heroes/hero_life_stealer/life_stealer_rage_mid.vpcf"
+	m_nFallbackMaxCount = 2
+	m_ConstantColor = 
+	[
+		226,
+		0,
+		0,
+		55,
+	]
+	m_nConstantSequenceNumber = 8
+	m_bShouldSort = false
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_life_stealer/life_stealer_rage_cast.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_life_stealer/life_stealer_rage_body.vpcf"
+		},
+		
+		{
+			m_bEndCap = true
+			m_ChildRef = resource:"particles/units/heroes/hero_life_stealer/life_stealer_rage_end.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/life_stealer_rage_swirl1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/antimage_manavoid_explode_b_b_ti_555.vpcf"
+			m_bEndCap = true
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_HSVShiftToCP"
+			m_DefaultHSVColor = 
+			[
+				182,
+				63,
+				5,
+				255,
+			]
+		},
+	]
+	m_nBehaviorVersion = 10
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 60
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						8.000000,
+						229.000000,
+						96.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+}

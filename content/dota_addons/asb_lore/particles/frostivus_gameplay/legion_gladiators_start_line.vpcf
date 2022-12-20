@@ -1,0 +1,162 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 100
+	m_ConstantColor = 
+	[
+		255,
+		238,
+		181,
+		255,
+	]
+	m_nConstantSequenceNumber = 4
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_nOrientationType = "PARTICLE_ORIENTATION_WORLD_Z_ALIGNED"
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_flares/aircraft_white.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_OutlineColor = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.500000
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 1.500000
+		},
+		
+		{
+			_class = "C_OP_RampScalarLinearSimple"
+			m_flEndTime = 9999999827968.000000
+			m_Rate = -2.000000
+			m_nField = "7"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		
+		{
+			_class = "C_OP_AlphaDecay"
+			m_flMinAlpha = 0.001000
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 100.000000
+			m_flRadiusMax = 100.000000
+		},
+		
+		{
+			_class = "C_INIT_CreateSequentialPath"
+			m_flNumToAssign = 75.000000
+			m_PathParams = 
+			{
+				m_nEndControlPointNumber = 6
+				m_nStartControlPointNumber = 5
+			}
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 6.000000
+			m_fLifetimeMin = 6.000000
+		},
+		
+		{
+			_class = "C_INIT_PositionPlaceOnGround"
+			m_flOffset = 5.000000
+			m_bIncludeWater = true
+		},
+		
+		{
+			_class = "C_INIT_RemapParticleCountToScalar"
+			m_nInputMax = 30
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+		},
+		
+		{
+			_class = "C_INIT_RemapParticleCountToScalar"
+			m_flOutputMax = 0.000000
+			m_flOutputMin = 1.000000
+			m_nInputMax = 75
+			m_nInputMin = 35
+			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
+		},
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = 
+			[
+				75.000000,
+				0.000000,
+				0.000000,
+			]
+			m_OffsetMax = 
+			[
+				75.000000,
+				0.000000,
+				0.000000,
+			]
+			m_bLocalCoords = true
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 75.000000
+			}
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_nCP4 = 9
+			m_nCP3 = 9
+			m_vecCP2Pos = 
+			[
+				0.000000,
+				200.000000,
+				0.000000,
+			]
+			m_nCP2 = 6
+			m_vecCP1Pos = 
+			[
+				0.000000,
+				-200.000000,
+				0.000000,
+			]
+			m_nCP1 = 5
+			m_bSetOnce = true
+		},
+	]
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 3
+}

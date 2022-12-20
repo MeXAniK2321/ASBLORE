@@ -1,0 +1,100 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 11
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_POINT_FOLLOW"
+					m_attachmentName = "attach_hitloc"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						100.000000,
+						0.000000,
+						50.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/heroes/lion/lion.vmdl"
+				m_nModSpecificData = 365
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_sparks.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_dust.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_debris.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_body.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_streaks.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_ring.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/chaos_knight/chaos_knight_ti9_weapon/chaos_knight_ti9_weapon_crit_tgt_light.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/bad_ancient002_destroy_smoke_lower1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rumia_step_of_darkness1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/step_of_darkness_pierce.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/shuichi_hug_blood1.vpcf"
+		},
+	]
+}

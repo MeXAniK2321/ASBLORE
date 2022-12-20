@@ -1,11 +1,10 @@
-<!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<styles>
-		<include src="s2r://panorama/styles/custom_game/screamer1.vcss_c" />
-		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/screamer1.css" />
+		<include src="s2r://panorama/styles/dotastyles.css" />
 	</styles>
 	<scripts>
-		<include src="s2r://panorama/scripts/custom_game/screamer1.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/screamer1.js" />
 	</scripts>
 	<Panel class="screamer_test" hittest="false">
 		<Label id="screamer_start" html="true" text="" />

@@ -1,0 +1,88 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 11
+	m_flCullRadius = -1.000000
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 6
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/heroes/lion/lion.vmdl"
+				m_nModSpecificData = 365
+				m_groundType = "PET_GROUND_PLANE"
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_RemapSpeedtoCP"
+			m_nOutControlPointNumber = 6
+			m_flInputMin = 280.000000
+			m_flInputMax = 300.000000
+			m_flOutputMin = 0.500000
+		},
+		
+		{
+			_class = "C_OP_RemapSpeedtoCP"
+			m_nOutControlPointNumber = 7
+			m_flInputMin = 280.000000
+			m_flInputMax = 300.000000
+			m_flOutputMin = 0.250000
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect_ground_dark.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/chara_aura_light.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/chara_trail.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/blood_chara.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/chara_aura_true.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/blood_corrupt.vpcf"
+		},
+	]
+}

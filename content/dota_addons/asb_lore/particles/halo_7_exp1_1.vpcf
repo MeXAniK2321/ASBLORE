@@ -1,0 +1,155 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 32
+	m_flConstantLifespan = 1.500000
+	m_ConstantColor = 
+	[
+		255,
+		0,
+		0,
+		255,
+	]
+	m_flConstantRadius = 50.000000
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 3
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 50.000000
+			m_flRadiusMax = 50.000000
+		},
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.700000
+			m_fLifetimeMax = 1.700000
+		},
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_bLocalCoords = true
+			m_OffsetMin = 
+			[
+				300.000000,
+				0.000000,
+				0.000000,
+			]
+			m_OffsetMax = 
+			[
+				300.000000,
+				0.000000,
+				0.000000,
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_Decay"
+		},
+		
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		
+		{
+			_class = "C_OP_PositionLock"
+			m_bLockRot = true
+		},
+		
+		{
+			_class = "C_OP_MovementRotateParticleAroundAxis"
+			m_vecRotAxis = 
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+			]
+			m_flRotRate = -65.000000
+			m_bLocalSpace = true
+		},
+		
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_nFirstControlPoint = 6
+			m_bSetOrientation = true
+		},
+		
+		{
+			_class = "C_OP_OscillateScalarSimple"
+			m_Rate = 120.000000
+			m_Frequency = 3.000000
+			m_nField = 3
+		},
+		
+		{
+			_class = "C_OP_RampScalarLinearSimple"
+			m_Rate = -250.000000
+			m_flEndTime = 999999999.000000
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_flOverbrightFactor = 5.000000
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_flares/particle_flare_004b_mod.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/elder_titan/elder_titan_ti7/elder_titan_echo_stomp_cast_spirit_arc_ember_ti7.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/halo_7_exp1_2.vpcf"
+		},
+	]
+}

@@ -9,8 +9,7 @@ function item_super_idol_water:OnSpellStart()
 
 	if not target:HasModifier("modifier_hidnotea") then
 	target:AddNewModifier(caster, self, "modifier_item_super_idol_water", { duration = 6.0 } )
-	EmitSoundOn("super.idol_water", caster)
-	EmitSoundOnClient("super.idol_water2", Player)
+	EmitSoundOn("item_idol_water_sound", caster)
 	self:PlayEffects(target)
 	end
 end

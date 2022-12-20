@@ -1,0 +1,82 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_BoundingBoxMin = 
+	[
+		-10.000000,
+		-10.000000,
+		-100.000000,
+	]
+	m_BoundingBoxMax = 
+	[
+		10.000000,
+		10.000000,
+		100.000000,
+	]
+	m_nBehaviorVersion = 11
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_poof.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_outer_smoke.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_body_pyro.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_trail_pnt.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_body.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_eyel.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_eyer.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_slark/slark_shadow_dance_start.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/dark_smoke_test1.vpcf"
+		},
+	]
+}

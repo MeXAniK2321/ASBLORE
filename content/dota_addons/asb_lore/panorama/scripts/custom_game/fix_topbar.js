@@ -11,7 +11,7 @@ function FixHeroIcons()
             var new_img = $.CreatePanel( "Image", img, "ImageOverride" )
             if (img.heroname) 
             {
-                 new_img.SetImage( "file://{images}/custom_game/heroes/ + img.heroname + ".png" )
+                 new_img.SetImage( "file://{images}/custom_game/heroes/" + img.heroname + ".png" );
             } 
         }
     }

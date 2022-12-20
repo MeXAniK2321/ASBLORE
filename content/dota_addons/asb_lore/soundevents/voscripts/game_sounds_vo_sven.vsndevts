@@ -1,0 +1,4030 @@
+"sven_sven_spawn_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_spawn_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/spawn1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_battlebegins_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_battlebegins_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_firstblood_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_23"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_24"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_25"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_26"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_27"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move8.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_28"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move9.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_move_29"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/move10.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_acknow_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_attack_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/attack6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_cast_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_cast_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_cast_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_stormbolt_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_teleport_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_teleport_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_teleport_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_teleport_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_teleport_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_warcry_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_godstrength_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_ability_godstrength_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_level_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shengji1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_kill_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_general_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_omni_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_chaos_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rivals_dragon_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_20"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_21"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_22"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_23"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_24"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_25"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_26"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_27"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_28"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rival_29"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death6.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_15"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death7.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_16"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_17"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_18"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_death_19"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_fastres_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/battlebegin+respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_respawn_14"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/respawn2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lasthit_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/bubing3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_deny_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/deny4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_rare_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/rare1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_purch_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_purch_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_purch_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_purch_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_purch_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_scepter_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shenzhang.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_scepter_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/shenzhang.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_blink_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_blink_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_item_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_bottle_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_bottle_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_bottle_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_missing_lane_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_missing_lane_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_missing_lane_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_immort_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/buxiudun.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_immort_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/buxiudun.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_immort_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/buxiudun.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_immort_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/buxiudun.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_immort_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/buxiudun.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_haste_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_haste_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_haste_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_doubdam_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_doubdam_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_regen_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_regen_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_regen_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_illus_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_illus_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_invis_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_invis_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_thanks_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_thanks_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_inthebag_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_inthebag_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_shitwiz_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_crumwiz_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_underattack_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_notyet_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_nomana_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/cd1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lose_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lose_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lose_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lose_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_lose_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/death5.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_win_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_win_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill2.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_win_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill3.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_win_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill4.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_win_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/kill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_pain_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_anger_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_anger_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_anger_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_anger_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_happy_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_happy_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_happy_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_01"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_02"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_03"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_04"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_05"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_06"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_07"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_08"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_09"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_10"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_11"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_12"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+
+"sven_sven_laugh_13"
+{
+	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/vo/tohka/null.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}}
+

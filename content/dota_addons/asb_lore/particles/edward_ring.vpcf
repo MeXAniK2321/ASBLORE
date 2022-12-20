@@ -1,0 +1,256 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 100
+	m_nConstantSequenceNumber = 6
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderTrails"
+			m_flOverbrightFactor = 6.000000
+			m_flLengthFadeInTime = 0.500000
+			m_flMaxLength = 200.000000
+			m_bIgnoreDT = true
+			m_flRadiusScale = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.500000
+			}
+			m_vecTailColorScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_LiteralColor = 
+				[
+					255,
+					255,
+					255,
+				]
+			}
+			m_flTailAlphaScale = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.000000
+			}
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/models/particle/sphere_hotblue2.vtex"
+					m_TextureControls = 
+					{
+						m_flFinalTextureScaleV = 
+						{
+							m_nType = "PF_TYPE_LITERAL"
+							m_flLiteralValue = -1.000000
+						}
+						m_flFinalTextureOffsetV = 
+						{
+							m_nType = "PF_TYPE_LITERAL"
+							m_flLiteralValue = 1.000000
+						}
+					}
+				},
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_flFadeStartTime = 0.250000
+			m_ColorFade = 
+			[
+				0,
+				82,
+				133,
+			]
+		},
+		
+		{
+			_class = "C_OP_Decay"
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		
+		{
+			_class = "C_OP_OscillateScalar"
+			m_RateMin = 1.000000
+			m_RateMax = 2.000000
+			m_FrequencyMin = 0.500000
+			m_flEndTime_min = 2.000000
+			m_flEndTime_max = 2.000000
+		},
+		
+		{
+			_class = "C_OP_PositionLock"
+		},
+		
+		{
+			_class = "C_OP_FadeOutSimple"
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RingWave"
+			m_flParticlesPerOrbit = 100.000000
+			m_flInitialRadius = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 40.000000
+			}
+			m_flInitialSpeedMin = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = -2000.000000
+			}
+			m_flInitialSpeedMax = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = -2000.000000
+			}
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				41,
+				167,
+				255,
+			]
+			m_ColorMax = 
+			[
+				41,
+				167,
+				255,
+			]
+			m_TintMin = 
+			[
+				0,
+				0,
+				0,
+			]
+			m_TintMax = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 0.000000
+			m_flRadiusMax = 56.784500
+		},
+		
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMaxLength = 0.400000
+			m_flMinLength = 0.020000
+		},
+		
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 196
+		},
+		
+		{
+			_class = "C_INIT_VelocityRandom"
+			m_LocalCoordinateSystemSpeedMin = 
+			[
+				0.000000,
+				0.000000,
+				-10000.000000,
+			]
+			m_LocalCoordinateSystemSpeedMax = 
+			[
+				0.000000,
+				0.000000,
+				-10000.000000,
+			]
+		},
+		
+		{
+			_class = "C_INIT_PositionPlaceOnGround"
+			m_bDisableOperator = true
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_flStartTime = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.100000
+			}
+		},
+	]
+	m_ConstantColor = 
+	[
+		0,
+		0,
+		0,
+		255,
+	]
+	m_nBehaviorVersion = 10
+	m_nFirstMultipleOverride_BackwardCompat = 5
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						null,
+						null,
+						null,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/edward_ring_inner.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/edward_ring_inner2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/edward_electricity2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/edward_ring_outer.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/edward_ring_outer1.vpcf"
+		},
+	]
+	m_flMaxDrawDistance = 2000.000000
+	m_flStartFadeDistance = 2000.000000
+}

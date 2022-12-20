@@ -1,0 +1,67 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 12
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 5
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/items/drow/drow_arcana/drow_arcana_weapon.vmdl"
+				m_nModSpecificData = 19090
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/drow/drow_arcana/drow_ranger_arcana_revenge_kill_effect_caster_coil_01.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/drow/drow_arcana/drow_ranger_arcana_revenge_kill_effect_caster_coil_02.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/keyaru_vengeance1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/keyaru_vengeance2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/blood_strike_ts.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/vengeance_written.vpcf"
+		},
+	]
+}

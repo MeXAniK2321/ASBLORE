@@ -1,0 +1,45 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_flCullRadius = -1.000000
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/heroes/lion/lion.vmdl"
+				m_nModSpecificData = 365
+				m_groundType = "PET_GROUND_PLANE"
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/padoru_padoru_exp1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/padoru_padoru_exp2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_cowl_of_ice/maiden_crystal_nova_cowlofice.vpcf"
+		},
+	]
+}

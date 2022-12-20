@@ -1,0 +1,239 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 24
+	m_ConstantColor = 
+	[
+		255,
+		20,
+		147,
+		255,
+	]
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 4
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 15
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						255.000000,
+						255.000000,
+						255.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 16
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 30.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = 
+			[
+				-200.000000,
+				0.000000,
+				0.000000,
+			]
+			m_LocalCoordinateSystemSpeedMin = 
+			[
+				-100.000000,
+				0.000000,
+				0.000000,
+			]
+			m_nControlPointNumber = 3
+			m_fSpeedMin = 224.000000
+			m_fSpeedMax = 496.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.250000
+			m_fLifetimeMax = 1.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 80.000000
+			m_flRadiusMin = 12.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		
+		{
+			_class = "C_INIT_InheritVelocity"
+			m_flVelocityScale = 0.800000
+			m_nControlPointNumber = 3
+		},
+		
+		{
+			_class = "C_INIT_RemapCPtoVector"
+			m_nCPInput = 15
+			m_vInputMax = 
+			[
+				255.000000,
+				255.000000,
+				255.000000,
+			]
+			m_nFieldOutput = "6"
+			m_vOutputMax = 
+			[
+				1.000000,
+				1.000000,
+				1.000000,
+			]
+			m_flOpStrength = 
+			{
+				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
+				m_nControlPoint = 16
+				m_nVectorComponent = 0
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_flInput0 = 0.000000
+				m_flInput1 = 1.000000
+				m_flOutput0 = 0.000000
+				m_flOutput1 = 1.000000
+			}
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = 
+			[
+				0.000000,
+				0.000000,
+				-500.000000,
+			]
+			m_fDrag = 0.150000
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.250000
+			m_flEndScale = 0.000000
+		},
+		
+		{
+			_class = "C_OP_OscillateVector"
+			m_bProportional = false
+			m_RateMin = 
+			[
+				-6.000000,
+				-6.000000,
+				-6.000000,
+			]
+			m_RateMax = 
+			[
+				6.000000,
+				6.000000,
+				6.000000,
+			]
+			m_FrequencyMax = 
+			[
+				3.000000,
+				3.000000,
+				3.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_RampScalarLinear"
+			m_RateMax = 2.000000
+			m_RateMin = -2.000000
+			m_nField = "4"
+		},
+		
+		{
+			_class = "C_OP_Decay"
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_flares/aircraft_blue2.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_OutlineColor = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+	]
+}

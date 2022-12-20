@@ -1,0 +1,147 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_POINT_FOLLOW"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self_with_wearables"
+					m_attachmentName = "attach_hitloc"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 60
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						8.000000,
+						229.000000,
+						96.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_nMaxParticles = 0
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/dark_willow_willowisp_ambient_sphere1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/dark_willow_willowisp_ambient_dark1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/dark_willow_willowisp_ambient_trail1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/dark_willow_willowisp_ambient_edge1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/dark_willow_willowisp_ambient_flare1.vpcf"
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_HSVShiftToCP"
+			m_DefaultHSVColor = 
+			[
+				244,
+				13,
+				248,
+				255,
+			]
+		},
+	]
+	m_nBehaviorVersion = 10
+}

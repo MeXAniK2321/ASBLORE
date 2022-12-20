@@ -1,0 +1,35 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 10
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_blade_ambient_trace.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/queen_of_pain/qop_arcana/qop_arcana_blade_ambient_trace_r.vpcf"
+			m_bDisableChild = true
+		},
+	]
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_previewState = 
+			{
+				m_previewModel = "models/items/queenofpain/queenofpain_arcana/queenofpain_arcana_dagger.vmdl"
+				m_nModSpecificData = 13770
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+				m_materialGroupName = "default"
+				m_flPlaybackSpeed = 0.000000
+			}
+		},
+	]
+}

@@ -1,0 +1,112 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP1Pos = 
+			[
+				-328.000000,
+				490.000000,
+				1600.000000,
+			]
+			m_nCP4 = 3
+			m_vecCP2Pos = 
+			[
+				0.000000,
+				0.000000,
+				32.000000,
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_flDelay = 0.350000
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_explosion_dust_arcana1.vpcf"
+		},
+		
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_explosion_swirl_arcana1.vpcf"
+		},
+		
+		{
+			m_flDelay = 0.200000
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_skybeam_arcana1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_skybeamglow_arcana1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_explosion_e_arcana1.vpcf"
+		},
+		
+		{
+			m_flDelay = 0.400000
+			m_ChildRef = resource:"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_darkcore_arcana1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/maiden_freezing_field_groundshards_arcana11.vpcf"
+			m_flDelay = 0.400000
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/maiden_freezing_field_cracks_arcana1.vpcf"
+			m_flDelay = 0.200000
+		},
+		
+		{
+			m_ChildRef = resource:"particles/maiden_freezing_field_explosion_flashbeam_arcana11.vpcf"
+			m_flDelay = 0.400000
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/maiden_freezing_field_brightcore_arcana11.vpcf"
+			m_flDelay = 0.300000
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/maiden_freezing_field_explosion_c_arcana11.vpcf"
+			m_flDelay = 0.400000
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/puck_illusory_orb_explode_merry_wanderer11.vpcf"
+			m_flDelay = 0.450000
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/starlight_breaker_beam.vpcf"
+		},
+	]
+}

@@ -1,0 +1,138 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_FadeAndKill"
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.500000
+		},
+		
+		{
+			_class = "C_OP_SnapshotRigidSkinToBones"
+			m_bDisableOperator = true
+		},
+		
+		{
+			_class = "C_OP_LockToBone"
+			m_HitboxSetName = "hands"
+		},
+		
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+		
+		{
+			_class = "C_OP_FadeInSimple"
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			VisibilityInputs = 
+			{
+				m_flCameraBias = 25.000000
+			}
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particles/light_flare/light_glow_01.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 37.000000
+			m_flRadiusMax = 46.000000
+		},
+		
+		{
+			_class = "C_INIT_CreateOnModel"
+			m_HitboxSetName = "hands"
+			m_vecHitBoxScale = 
+			{
+				m_nType = "PVEC_TYPE_LITERAL"
+				m_vLiteralValue = 
+				[
+					0.000000,
+					0.000000,
+					0.000000,
+				]
+			}
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				167,
+				196,
+				255,
+				255,
+			]
+			m_ColorMax = 
+			[
+				1,
+				33,
+				211,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		
+		{
+			_class = "C_INIT_RandomRotationSpeed"
+			m_flDegreesMax = 180.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 1.000000
+			m_fLifetimeMax = 1.000000
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 6.000000
+			}
+		},
+	]
+	m_nBehaviorVersion = 4
+}

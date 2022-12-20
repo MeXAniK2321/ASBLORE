@@ -1,0 +1,242 @@
+{
+	lelouch.nightmare = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/attack1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.629469
+	}
+	lelouch.nightmare2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/explosion.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.052000
+	}
+	lelouch.freya = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/1skill1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.621469
+	}
+	lelouch.freya2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/big_exp.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.600000
+	}
+	lelouch.geass = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/win1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.229469
+	}
+	lelouch.kill = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/dazhao3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.825469
+	}
+	lulu.order = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/dazhao5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.653469
+	}
+	lulu.suicide = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_slash.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	lelouch.suicide_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/dazhao1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.509469
+	}
+	lelouch.suicide_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/dazhao2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.501469
+	}
+	lelouch.suicide_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/dazhao6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.149469
+	}
+	lelouch.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 36.647999
+	}
+	lelouch.ressurection = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/luluxiu/happy2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.773469
+	}
+	lelouch.eternal2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/eternal_geass2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.392000
+	}
+	lelouch.eternal1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/eternal_geass1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.536000
+	}
+}

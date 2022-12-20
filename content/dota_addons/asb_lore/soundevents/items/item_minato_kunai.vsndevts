@@ -1,0 +1,786 @@
+{
+	minato.kunai = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/minato_kunai.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	sword.breaker_self = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_ghost_sceptre.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.318685
+	}
+	sword.breaker_enemy = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/heavens_halberd.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.646394
+	}
+	horn.hero_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.647999
+	}
+	horn.hero_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_2.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 61.248001
+	}
+	horn.hero_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_3.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 59.928001
+	}
+	horn.hero_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_4.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 61.872002
+	}
+	horn.hero_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_5.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 97.823997
+	}
+	horn.hero_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/hero/hero_theme_6.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.023582
+	}
+	horn.demon_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.456001
+	}
+	horn.demon_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_2.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 61.344002
+	}
+	horn.demon_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_3.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 64.103996
+	}
+	horn.demon_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_4.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 81.599998
+	}
+	horn.demon_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_5.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 80.447998
+	}
+	horn.demon_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/demon/demon_route_6.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 110.472000
+	}
+	horn.samurai_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.216000
+	}
+	horn.samurai_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_2.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 40.512001
+	}
+	horn.samurai_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_3.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 44.448002
+	}
+	horn.samurai_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_4.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.144001
+	}
+	horn.samurai_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_5.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 80.279999
+	}
+	horn.samurai_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/samurai/samurai_theme_6.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 66.000000
+	}
+	horn.samurai_special = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/sound_effects/hatori_hanzo.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.632000
+	}
+	horn.choose_destiny = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/new_horn_themes/sound_effects/chose_your_destiny.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.065034
+	}
+	halo.attack = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/attack.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.552000
+	}
+	halo.water = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/water.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.671837
+	}
+	halo.wind = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/wind.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.097143
+	}
+	halo.earth = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/earth_spirit/rolling_boulder_target.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.096667
+	}
+	halo.crit = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/slash.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.016000
+	}
+	halo.root = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/treant/natures_grasp_layer04.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.450726
+	}
+	halo.shock = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/love.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	halo.shot = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/snapfire/shotgun_fire.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.776962
+	}
+	halo.flame = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/fire.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.966531
+	}
+	halo.magic = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/magic.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.304000
+	}
+	halo.magic_exp = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/explosion_of_magic.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.296000
+	}
+	halo.explosion = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5_1_1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.720000
+	}
+	halo.theme_spirits_true = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/theme/true_stage_7.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	halo.theme4_true = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/theme/true_stage_10.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	halo.succubus = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/succubus_orgy_2.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.003515
+	}
+	halo.alarm = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/alarm.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.016000
+	}
+	halo.succubus2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/orgy_1.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.000000
+	}
+	halo.succubus_gachi = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/gachi_orgy_1.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.112472
+	}
+	halo.succubus_gachi_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/gachi_orgy_2.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.571157
+	}
+	halo.death = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/death.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.985306
+	}
+	halo.heaven = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/angel.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.959184
+	}
+	halo.teleport = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/portal.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.410612
+	}
+	halo.slash = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_slash.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	halo.lust_end = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/dark_active.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.216000
+	}
+	halo.lust_slash = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/soundless_slash.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.896000
+	}
+	halo.lust_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/dark_armor_sealed.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	halo.lust_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/dark_armor_awaken.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	halo.dark_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/dark_1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.224000
+	}
+	halo.dark_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/cursed_armor/dark_active.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.216000
+	}
+	new.year_theme_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/devils_lyre/unknown_truth/8.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/10.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 205.464005
+	}
+	new.year_theme_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/devils_lyre/unknown_truth/3.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/11.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 238.332977
+	}
+	new.year_theme_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/devils_lyre/unknown_truth/6.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/1.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 122.185959
+	}
+	new.year_theme_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/devils_lyre/unknown_truth/9.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/5.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 139.877014
+	}
+	new.year_theme_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/padoru/padoru_theme_2.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/2.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 166.022675
+	}
+	new.year_theme_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/padoru/padoru_theme_3.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 116.006897
+	}
+	new.year_theme_7 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/padoru/padoru_theme_1.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 144.219131
+	}
+	new.year_theme_8 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/padoru/padoru_theme_4.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 135.952835
+	}
+}

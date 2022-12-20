@@ -1,0 +1,322 @@
+{
+	Bone.Throw = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/bone_throw.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.417596
+	}
+	Bone.Throw_impact_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ambient/chicken.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.397347
+	}
+	Bone.Throw_impact_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/glass_break.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.728000
+	}
+	sans.5_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_5_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.536000
+	}
+	Bone.Hit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/bone_hit.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.463673
+	}
+	Joke.Cast = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/joke_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.352000
+	}
+	Joke.End = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/joke_end.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.816000
+	}
+	Sans.up = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_up.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.248000
+	}
+	Sans.down = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_down.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320000
+	}
+	Sans.impact = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_impact.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.616792
+	}
+	Sans.Boner = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/boner.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.872000
+	}
+	Sans.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_12.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 156.167999
+	}
+	Saness.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/saness_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.360001
+	}
+	Sans.gaster = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gaster_blaster.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.736000
+	}
+	Sans.blink = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_blink.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.072979
+	}
+	Sans.slap = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_slap.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.920000
+	}
+	Sans.badtime = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_badtime.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.776000
+	}
+	Sans.badtome = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sans_badtome.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.136000
+	}
+	Sans.tom_blaster = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tom_blaster.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.984000
+	}
+	Sans.dying_is_gay = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/dying_is_gay.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.032000
+	}
+}

@@ -1,0 +1,115 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_flConstantRadius = 2.000000
+	m_bShouldSort = false
+	m_nBehaviorVersion = 10
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha4.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha5.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha6.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha8.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha9.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha10.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha11.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha12.vpcf"
+		},
+	]
+}

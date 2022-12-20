@@ -1,0 +1,16 @@
+{
+	shana.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shana_theme.vsnd",
+		]
+		volume_min = "0.200000"
+		volume_max = "0.200000"
+		pitch_min = "0.200000"
+		pitch_max = "0.200000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+}

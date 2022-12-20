@@ -1,0 +1,262 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flConstantRadius = 1.000000
+	m_flConstantLifespan = 2.000000
+	m_nBehaviorVersion = 5
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 6
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 10
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 0.200000
+			m_nControlPointNumber = 10
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 0.800000
+			m_flRadiusMin = 0.800000
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.800000
+			m_fLifetimeMax = 1.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomNamedModelSequence"
+			m_bModelFromRenderer = true
+			m_names = 
+			[
+				"resistive_pinfold_ground_spike_anim",
+			]
+			m_nFieldOutput = 13
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_RemapNamedModelSequenceOnceTimed"
+			m_bModelFromRenderer = true
+			m_inNames = 
+			[
+				"resistive_pinfold_ground_spike_anim",
+			]
+			m_outNames = 
+			[
+				"bindPose",
+			]
+			m_nFieldInput = 13
+			m_nFieldOutput = 13
+		},
+		
+		{
+			_class = "C_OP_Orient2DRelToCP"
+			m_nFieldOutput = 12
+		},
+		
+		{
+			_class = "C_OP_SetControlPointsToModelParticles"
+			m_nFirstControlPoint = 6
+		},
+		
+		{
+			_class = "C_OP_EndCapTimedDecay"
+			m_flDecayTime = 2.000000
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = 
+			[
+				0.000000,
+				0.000000,
+				-800.000000,
+			]
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderModels"
+			m_flAnimationRate = 50.000000
+			m_nAnimationScaleField = 18
+			m_bOrientZ = true
+			m_nBodyGroupField = 18
+			m_bSuppressTint = true
+			m_ModelList = 
+			[
+				
+				{
+					m_model = resource:"maps/ti10_assets/column/column_ti10_01.vmdl"
+				},
+			]
+			m_bAnimated = true
+			m_nLOD = 1
+			m_bForceLoopingAnimation = true
+			m_hOverrideMaterial = resource:"materials/models/ui/trustblob.vmat"
+			m_flRadiusScale = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 0.500000
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.000000
+				m_flRandomMax = 1.000000
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flLOD0 = 0.000000
+				m_flLOD1 = 0.000000
+				m_flLOD2 = 0.000000
+				m_flLOD3 = 0.000000
+				m_flNoiseOutputMin = 0.000000
+				m_flNoiseOutputMax = 1.000000
+				m_flNoiseScale = 0.100000
+				m_vecNoiseOffsetRate = 
+				[
+					0.000000,
+					0.000000,
+					0.000000,
+				]
+				m_flNoiseOffset = 0.000000
+				m_nNoiseOctaves = 1
+				m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
+				m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
+				m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
+				m_flNoiseTurbulenceScale = 1.000000
+				m_flNoiseTurbulenceMix = 0.500000
+				m_flNoiseImgPreviewScale = 1.000000
+				m_bNoiseImgPreviewLive = true
+				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
+				m_flMultFactor = 1.000000
+				m_flInput0 = 0.000000
+				m_flInput1 = 1.000000
+				m_flOutput0 = 0.000000
+				m_flOutput1 = 1.000000
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.000000
+				m_Curve = 
+				{
+					m_spline = 
+					[
+					]
+					m_tangents = 
+					[
+					]
+					m_vDomainMins = 
+					[
+						0.000000,
+						0.000000,
+					]
+					m_vDomainMaxs = 
+					[
+						0.000000,
+						0.000000,
+					]
+				}
+			}
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_formation_spike_model_grndamc.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_formation_spike_model_grndamb.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_modelt_glow_a.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_glow_b.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_glow_c.vpcf"
+		},
+		
+		{
+			m_bEndCap = true
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_end.vpcf"
+		},
+		
+		{
+			m_bEndCap = true
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_end_b.vpcf"
+		},
+		
+		{
+			m_flDelay = 0.350000
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_end_smoke.vpcf"
+		},
+		
+		{
+			m_bEndCap = true
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_model_end_smoke.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/disruptor/disruptor_resistive_pinfold/disruptor_ecage_formation_spike_model_grow.vpcf"
+		},
+	]
+}

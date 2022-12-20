@@ -18,6 +18,7 @@
 		   "item"      "item_power_of_youth"
 		      "item"          "item_pandora_heart"
 			  "item" "item_sword_breaker"
+        "item" "item_walter_white"
 	 
   }
 

@@ -1,0 +1,96 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_ConstantColor = 
+	[
+		248,
+		232,
+		198,
+		255,
+	]
+	m_nBehaviorVersion = 10
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/hero_levelup_ti6_flash_hit_aegis11.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/omniknight_repel_buff_ti8_swoosh_b1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/omniknight_repel_buff_ti8_sphere1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/omniknight_repel_buff_ti8_swoosh1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/omniknight_repel_buff_ti8_body_glow1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/omniknight_repel_buff_ti8_flash1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/own_soul1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/own_soul2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/own_soul3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/shu_crystals.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/shu_crystals2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/shu_crystals3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/shu_rocks.vpcf"
+		},
+	]
+}

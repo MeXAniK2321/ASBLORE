@@ -1,0 +1,164 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 32
+	m_hFallback = resource:"particles/units/heroes/hero_tidehunter/tidehunter_spell_ravage_mid.vpcf"
+	m_nFallbackMaxCount = 2
+	m_flCullRadius = 1100.000000
+	m_nBehaviorVersion = 11
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 4
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 5
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 18
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 60
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						8.000000,
+						229.000000,
+						96.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_HSVShiftToCP"
+			m_DefaultHSVColor = 
+			[
+				116,
+				146,
+				98,
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_tidehunter/tidehunter_spell_ravage_pool.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_tidehunter/tidehunter_spell_ravage_pool_b.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/yoshino_black_age1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/black_age_2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/black_age3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/black_age4.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/black_age5.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/black_age_start.vpcf"
+		},
+	]
+}

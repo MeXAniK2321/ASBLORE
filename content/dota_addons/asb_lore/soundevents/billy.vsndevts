@@ -1,0 +1,297 @@
+"billy.1"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy1.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"5.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.2"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy2.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"10.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.3"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy3.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"4.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.4"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy4.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"20.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.5_1"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy_5.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"10.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.spanked"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/chatwheel/gachi/spank.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"10.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.5_1_1"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/frisk_4.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"1.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.6"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy6.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"3.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+
+"billy.fisting.sound"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_vo_switch"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy_fisting.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"2.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}

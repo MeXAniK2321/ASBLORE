@@ -1,0 +1,194 @@
+{
+	ikki.shinkiro = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/shinkiro.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.672000
+	}
+	ikki.blade_steal = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/blade_steal.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.360000
+	}
+	ikki.swoosh = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/swoosh.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.944000
+	}
+	ikki.ten_i_muho_strike = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/ikki_ten_i_muho_impact.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.304000
+	}
+	perfect.vision = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/perfect_vision.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.824000
+	}
+	ikki.1_1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/tsunou.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.116000
+	}
+	ikki.intetsu = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/ikki_intetsu.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.384000
+	}
+	ittou.shura = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ittou_shura.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.980000
+	}
+	ikki.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikki_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 38.903999
+	}
+	ikki.ittou_shura_last = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/ikki_5_start.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.424000
+	}
+	ikki.blink = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikki_blink.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.080000
+	}
+	ikki.raiko = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/raiko.vsnd",
+		]
+		volume = "7.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.304000
+	}
+}

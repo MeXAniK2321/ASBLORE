@@ -1,0 +1,92 @@
+{
+	Emilia.Shoots.Sound = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_shoot.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Emilia.Shield.Sound = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_shield.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Emilia.Shield.Block = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_shield_block.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Emilia.Barrier.Sound = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_barrier.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Emilia.Ice.Sound = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_ice.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Emilia.Flower.Sound = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_emilia/emilia_flower.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+}

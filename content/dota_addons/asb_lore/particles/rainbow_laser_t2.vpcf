@@ -1,0 +1,105 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flConstantRadius = 15.000000
+	m_ConstantColor = 
+	[
+		255,
+		255,
+		255,
+		80,
+	]
+	m_nBehaviorVersion = 10
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/phoenix/phoenix_solar_forge/phoenix_sunray_solar_forge_tgt_smoke.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2_1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2_2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2_3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2_4.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/rainbow_laser_t2_5.vpcf"
+		},
+	]
+}

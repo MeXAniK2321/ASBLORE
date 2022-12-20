@@ -583,8 +583,11 @@ if target:TriggerSpellAbsorb( self ) then return end
 	
 	
 	
-	
-	EmitSoundOn("billy.4", caster)
+	if RollPercentage(50) then
+		EmitSoundOn("billy.fisting.sound", caster)
+	else
+		EmitSoundOn("billy.4", caster)
+	end
 end
 
 function fisting:OnChannelFinish( bInterrupted )
@@ -592,9 +595,9 @@ function fisting:OnChannelFinish( bInterrupted )
 		self.hVictim:RemoveModifierByName( "modifier_fisting" )
 		local caster = self:GetCaster()
 		caster:RemoveModifierByName( "modifier_fisting_immune" )
-		
-		StopSoundOn("billy.4", caster)
 	end
+	StopSoundOn("billy.4", self:GetCaster())
+	StopSoundOn("billy.fisting.sound", self:GetCaster())
 end
 
 

@@ -1,7 +1,7 @@
 <root>
 	<styles>
-		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
-		<include src="s2r://panorama/styles/custom_game/team_select.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="s2r://panorama/styles/custom_game/team_select.css" />
 	</styles>
 	<Panel class="TeamSelectEmptySlot">
 		<Panel id="EmptySlotIcon" />

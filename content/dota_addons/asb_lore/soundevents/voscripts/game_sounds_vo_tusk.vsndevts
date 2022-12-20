@@ -1,0 +1,1367 @@
+{
+	tusk_tusk_spawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_spawn_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_move_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.600000
+	}
+	tusk_tusk_move_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_4.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.848000
+	}
+	tusk_tusk_move_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_5.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.324898
+	}
+	tusk_tusk_move_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_6.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.600000
+	}
+	tusk_tusk_move_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_4.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.848000
+	}
+	tusk_tusk_move_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_5.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.324898
+	}
+	tusk_tusk_move_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_6.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.600000
+	}
+	tusk_tusk_move_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_4.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.848000
+	}
+	tusk_tusk_move_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_5.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.324898
+	}
+	tusk_tusk_move_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_6.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_21 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_22 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.600000
+	}
+	tusk_tusk_move_23 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_4.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.848000
+	}
+	tusk_tusk_move_24 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_5.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.324898
+	}
+	tusk_tusk_move_25 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_6.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_26 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_27 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.802449
+	}
+	tusk_tusk_move_28 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.600000
+	}
+	tusk_tusk_move_29 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_move_30 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.645714
+	}
+	tusk_tusk_attack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.776327
+	}
+	tusk_tusk_attack_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_attack_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	tusk_tusk_kill_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.702041
+	}
+	tusk_tusk_kill_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.854512
+	}
+	tusk_tusk_kill_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.142041
+	}
+	tusk_tusk_kill_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.702041
+	}
+	tusk_tusk_kill_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.854512
+	}
+	tusk_tusk_kill_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.142041
+	}
+	tusk_tusk_kill_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.702041
+	}
+	tusk_tusk_kill_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.854512
+	}
+	tusk_tusk_kill_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.142041
+	}
+	tusk_tusk_kill_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.142041
+	}
+	tusk_tusk_kill_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.702041
+	}
+	tusk_tusk_kill_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.702041
+	}
+	tusk_tusk_kill_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.854512
+	}
+	tusk_tusk_death_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.481633
+	}
+	tusk_tusk_death_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.481633
+	}
+	tusk_tusk_death_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.481633
+	}
+	tusk_tusk_death_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.481633
+	}
+	tusk_tusk_death_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_death_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.481633
+	}
+	tusk_tusk_death_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.246531
+	}
+	tusk_tusk_respawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.032000
+	}
+	tusk_tusk_respawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.032000
+	}
+	tusk_tusk_respawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.032000
+	}
+	tusk_tusk_respawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.032000
+	}
+	tusk_tusk_respawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_respawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 5.784000
+	}
+	tusk_tusk_rare_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_rare_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_rare_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_rare_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 8.616000
+	}
+	tusk_tusk_firstblood_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/shinobu/voicelines/first_blood.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.512000
+	}
+}

@@ -1,10 +1,10 @@
 <root>
 	<styles>
-		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
-		<include src="s2r://panorama/styles/custom_game/overthrow_item_notification.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="s2r://panorama/styles/custom_game/overthrow_item_notification.css" />
 	</styles>
 	<scripts>
-		<include src="s2r://panorama/scripts/custom_game/overthrow_notification.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/overthrow_notification.js" />
 	</scripts>
 	<Panel hittest="false" class="OverthrowNotification">
 		<Panel hittest="false" class="OverthrowItemNotification">

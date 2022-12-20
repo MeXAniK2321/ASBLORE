@@ -1,0 +1,76 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_flConstantRadius = 12.000000
+	m_ConstantColor = 
+	[
+		168,
+		72,
+		8,
+		255,
+	]
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_nCP1 = 0
+			m_vecCP1Pos = 
+			[
+				0.000000,
+				0.000000,
+				16.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_SetParentControlPointsToChildCP"
+			m_nChildControlPoint = 5
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_marci/marci_unleash_stack_bg.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_marci/marci_unleash_debuff.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_marci/marci_unleash_stack_black.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_marci/marci_unleash_stack_number_bg.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/test_counter2.vpcf"
+		},
+	]
+}

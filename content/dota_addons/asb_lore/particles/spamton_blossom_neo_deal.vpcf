@@ -1,0 +1,97 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_flCullRadius = 1.000000
+	m_flConstantRadius = 50.000000
+	m_BoundingBoxMin = 
+	[
+		-128.000000,
+		-128.000000,
+		-128.000000,
+	]
+	m_BoundingBoxMax = 
+	[
+		128.000000,
+		128.000000,
+		128.000000,
+	]
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 15
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						255.000000,
+						255.000000,
+						255.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_nCP1 = 15
+			m_vecCP1Pos = 
+			[
+				200.000000,
+				128.000000,
+				0.000000,
+			]
+			m_bUseWorldLocation = true
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_PositionLock"
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/spamton_neo_deal1_blossom.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/items2_fx/teleport_end_image.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/events/spring_2021/teleport_spring_2021_rays.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/spamton_neo_deal2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/spamton_blossom_magic.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/spamton_blossom_magic2.vpcf"
+		},
+	]
+}

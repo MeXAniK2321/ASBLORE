@@ -1,0 +1,137 @@
+{
+	axis.sheet_throw = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/axis_kult_throw.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.080000
+	}
+	axis.sheet = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/axis_kult.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.636000
+	}
+	emergency.food_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.160000
+	}
+	emergency.food_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.736000
+	}
+	emergency.food_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.904000
+	}
+	emergency.food_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_4.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.848000
+	}
+	emergency.food_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_5.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.720000
+	}
+	emergency.food_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_6.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.864000
+	}
+	emergency.food_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/emergency_food_7.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.440000
+	}
+}

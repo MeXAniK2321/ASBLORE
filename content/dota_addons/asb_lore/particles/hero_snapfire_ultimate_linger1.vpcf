@@ -1,0 +1,180 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 10
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_light.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ultimate_linger_steam.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_ring.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_embers.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_flames.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_splash_liquid.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_splash.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_snapfire/hero_snapfire_ult_ground_bubble.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ult_ground_outer1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ult_ground_bloom1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ultimate_impact_directional1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ultimate_shockwave1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ultimate_burst1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/hero_snapfire_ultimate_ground_glow1.vpcf"
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_StopAfterCPDuration"
+			m_flDuration = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_flLiteralValue = 3.100000
+				m_nControlPoint = 0
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.000000
+				m_flRandomMax = 1.000000
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
+				m_flMultFactor = 1.000000
+				m_flInput0 = 0.000000
+				m_flInput1 = 1.000000
+				m_flOutput0 = 0.000000
+				m_flOutput1 = 1.000000
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.000000
+				m_Curve = 
+				{
+					m_spline = 
+					[
+					]
+					m_tangents = 
+					[
+					]
+					m_vDomainMins = 
+					[
+						0.000000,
+						0.000000,
+					]
+					m_vDomainMaxs = 
+					[
+						0.000000,
+						0.000000,
+					]
+				}
+			}
+		},
+	]
+}

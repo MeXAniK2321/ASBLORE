@@ -114,7 +114,7 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/soundevents_conquest.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/yukari_yakumo.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/Hatsune_miku.vsndevts", context )
-		PrecacheResource( "soundfile", "soundevents/Billy.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/billy.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/sans.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kagamine_rin.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts", context )
@@ -126,11 +126,18 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/ryougisounds.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/keyaru_music.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/touma.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/tohka.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/tatsuya.vsndevts", context )
+
 		PrecacheResource( "model", "models/susano/susano1.vmdl", context )
 		PrecacheResource( "model", "models/shinobu_vampie/shinobu_success.vmdl", context )
 		PrecacheResource( "model", "models/yoshinon/yoshino.vmdl", context )
 		PrecacheResource( "model", "models/zayac/zayac.vmdl", context )
 		PrecacheResource( "model", "models/bogdan/hurk.vmdl", context )
+		PrecacheResource( "model", "models/tohka/arcana/tohka_arcana.vmdl", context )
+		PrecacheResource( "model", "models/tohka/inversion/inversion_arcana.vmdl", context )
+		PrecacheResource( "model", "models/hatsune_miku/arcana/arcana_form/arcana_monster.vmdl", context )
+		
 		PrecacheResource( "soundfile", "soundevents/yoshino.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_axis_sheet.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/esdeath_ability4.vsndevts", context )
@@ -144,6 +151,8 @@ function Precache( context )
 
 		PrecacheResource( "soundfile", "soundevents/seva_nasral.vsndevts", context )
 
+		PrecacheResource( "soundfile", "soundevents/items/item_walter_white.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/items/item_idol_water.vsndevts", context )
 		
 end
 

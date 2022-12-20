@@ -1,0 +1,293 @@
+{
+	Blood.Strike = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/bloodstrike.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.476000
+	}
+	grand.panaino = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/panaino.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.248000
+	}
+	Shinobu.Donut = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/donut.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.584000
+	}
+	Shinobu.2_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.392000
+	}
+	Shinobu.2_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_2_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.224000
+	}
+	Shinobu.2_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_2_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.712000
+	}
+	Shinobu.punch = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_punch_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.959184
+	}
+	Ka.ka = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ka_ka.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.044000
+	}
+	shinobu.vampire = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_vampire.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 10.044000
+	}
+	shinobu.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.072001
+	}
+	sword.fight = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sword_fight.vsnd",
+			"sounds/sword_fight1.vsnd",
+			"sounds/sword_fight2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.705306
+	}
+	sword.fight_end = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sword_fight_end.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.616000
+	}
+	blood.strike_hit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/mars/shield_crit.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.947937
+	}
+	Blood.Strike_ts = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_1_ts.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.664490
+	}
+	Shinobu.4_ts = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_4_ts.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.220408
+	}
+	Shinobu.4_1_ts = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_4_end_ts.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.638367
+	}
+	Shinobu.3_ts = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_donut_ts.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	Shinobu.annoing_ts = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu/shinobu_6_1_ts.vsnd",
+			"sounds/shinobu/shinobu_6_ts.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.638367
+	}
+}

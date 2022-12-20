@@ -127,6 +127,13 @@ function COverthrowGameMode:OnNPCSpawned( event )
 					player:SetModelScale(1.4)
 				end
 			end
+
+			if player:GetUnitName() == "npc_dota_hero_terrorblade" then
+				if IsASBPatreon(player) then
+					player:SetOriginalModel("models/hatsune_miku/arcana/arcana_form/arcana_monster.vmdl")
+					player:SetModelScale(1.25)
+				end
+			end
 		end
 
 		if self.allSpawned == false then

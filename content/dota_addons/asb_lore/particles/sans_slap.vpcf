@@ -1,0 +1,221 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 4
+	m_flConstantRadius = 300.000000
+	m_ConstantColor = 
+	[
+		255,
+		38,
+		0,
+		255,
+	]
+	m_nBehaviorVersion = 10
+	m_nFirstMultipleOverride_BackwardCompat = 5
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 2.000000
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fRadiusMax = 5.000000
+			m_bLocalCoords = true
+			m_LocalCoordinateSystemSpeedMin = 
+			[
+				-15.000000,
+				-200.000000,
+				600.000000,
+			]
+			m_LocalCoordinateSystemSpeedMax = 
+			[
+				600.000000,
+				200.000000,
+				1700.000000,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 421.362000
+			m_flRadiusMax = 405.901000
+		},
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.200000
+			m_fLifetimeMax = 0.300000
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				255,
+				92,
+				92,
+			]
+			m_ColorMax = 
+			[
+				255,
+				55,
+				55,
+			]
+			m_TintMin = 
+			[
+				0,
+				0,
+				0,
+			]
+			m_TintMax = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = 
+			[
+				160.000000,
+				0.000000,
+				70.000000,
+			]
+			m_OffsetMax = 
+			[
+				160.000000,
+				0.000000,
+				70.000000,
+			]
+			m_bLocalCoords = true
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_FadeAndKill"
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flEndScale = 0.000000
+		},
+		
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = 
+			[
+				255,
+				0,
+				0,
+			]
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_flOverbrightFactor = 2.000000
+			VisibilityInputs = 
+			{
+				m_flCameraBias = 50.000000
+			}
+			m_bDisableZBuffering = true
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_flares/combined_flare.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_OutlineColor = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_flOverbrightFactor = 2.000000
+			VisibilityInputs = 
+			{
+				m_flCameraBias = 50.000000
+			}
+			m_bDisableZBuffering = true
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/particle_flares/aircraft_white_v3.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_OutlineColor = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodbath_eztzhok_burst.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/slap_face.vpcf"
+		},
+	]
+}

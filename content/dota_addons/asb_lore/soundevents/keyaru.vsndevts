@@ -1,0 +1,435 @@
+{
+	keyaru.1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/1.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.503129
+	}
+	keyaru.2_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/laught_1.vsnd",
+		]
+		volume = "8.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.816000
+	}
+	keyaru.2_5 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/laught_5.vsnd",
+		]
+		volume = "9.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 9.048000
+	}
+	keyaru.2_2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/laught_2.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 11.808000
+	}
+	keyaru.2_3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/laught_3.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.512000
+	}
+	keyaru.2_4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/laught_4.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.716735
+	}
+	keyaru.4_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/4_s.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.888000
+	}
+	keyaru.4_2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/4_s2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.792000
+	}
+	keyaru.4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/4.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.152000
+	}
+	keyaru.4_1_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/4_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.584000
+	}
+	keyaru.4_2_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/4_2_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.568000
+	}
+	keyaru.5_special = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/5.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.688000
+	}
+	keyaru.6 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/6.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.440000
+	}
+	keyaru.5 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/5.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.688000
+	}
+	keyaru.fireball = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/dragon_knight/fireball_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.209792
+	}
+	keyaru.exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/explosion.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.052000
+	}
+	keyaru.big_exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/explosion1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.264000
+	}
+	keyaru.magic_attack = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/phoenix/attack01.vsnd",
+			"sounds/weapons/hero/phoenix/attack02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.585079
+	}
+	keyaru.ice_claws = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/ancient_apparition/ice_vortex_ti8.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.370340
+	}
+	keyaru.ice_barrage = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/crystal_maiden/death.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.178322
+	}
+	keyaru.6_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/gachi_orgy_1.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.112472
+	}
+	keyaru.6_5 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/bull_attack.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.768000
+	}
+	keyaru.7 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/7.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.648000
+	}
+	keyaru.6_2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/gachi_orgy_2.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.571157
+	}
+	keyaru.6_3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/angel_halo/sfx/succubus_orgy_2.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.003515
+	}
+	keyaru.6_4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/banging.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.408000
+	}
+	keyaru.mass_heal = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/keyaru/keyaru_mass_heal.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.720000
+	}
+}

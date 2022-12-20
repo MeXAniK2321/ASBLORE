@@ -1,0 +1,6 @@
+<!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
+<root>
+	<Panel class="AddonLoadingRoot">
+		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/custom_game/team_icons/team_icon_rooster_01_png.vtex" />
+	</Panel>
+</root>

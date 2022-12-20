@@ -1,0 +1,79 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_flConstantRadius = 2.000000
+	m_bShouldSort = false
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 62
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha3.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha4.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha5.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha8.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha9.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_kamehameha10.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_drip_kamehameha2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_drip_kamehameha11.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_drip_kamehameha12.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ss_blue_drip_kamehameha3.vpcf"
+		},
+	]
+}

@@ -1,0 +1,77 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{f9a1c8c4-159b-4786-b740-4d1a118c8f46} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 80
+	m_flNoDrawTimeToGoToSleep = 12.000000
+	m_bShouldSort = false
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						500.000000,
+						2.000000,
+						1000.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_HSVShiftToCP"
+			m_DefaultHSVColor = 
+			[
+				18,
+				188,
+				255,
+			]
+			m_bDisableOperator = true
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/reinforce_demolish1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/reinforce_demolish2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/reinforce_triangle_for_demo.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/sans_punch.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/demolish2.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/test_demolish_shockwave.vpcf"
+		},
+	]
+}

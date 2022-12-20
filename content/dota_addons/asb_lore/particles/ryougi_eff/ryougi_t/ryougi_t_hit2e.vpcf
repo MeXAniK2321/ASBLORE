@@ -1,0 +1,213 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 20
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderSprites"
+			m_vecTexturesInput = 
+			[
+				
+				{
+					m_hTexture = resource:"materials/particle/feathers_01.vtex"
+				},
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_Decay"
+		},
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.100000
+			m_Gravity = 
+			[
+				0.000000,
+				0.000000,
+				-250.000000,
+			]
+		},
+		
+		{
+			_class = "C_OP_VectorNoise"
+			m_bAdditive = true
+			m_vecOutputMax = 
+			[
+				2.000000,
+				2.000000,
+				2.000000,
+			]
+			m_vecOutputMin = 
+			[
+				-2.000000,
+				-2.000000,
+				-2.000000,
+			]
+			m_nFieldOutput = 0
+			m_fl4NoiseScale = 0.300000
+		},
+		
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+		
+		{
+			_class = "C_OP_RampScalarLinear"
+			m_flEndTime_max = 999999.000000
+			m_flEndTime_min = 999999.000000
+			m_RateMax = 5.000000
+			m_RateMin = 2.000000
+			m_nField = 12
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 4.000000
+			m_fLifetimeMin = 4.000000
+		},
+		
+		{
+			_class = "C_INIT_CreateOnModel"
+			m_nControlPointNumber = 3
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		
+		{
+			_class = "C_INIT_RandomYaw"
+			m_flDegreesMax = 90.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRotationSpeed"
+			m_flDegreesMax = 150.000000
+			m_flDegreesMin = 30.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 22.000000
+			m_flRadiusMax = 24.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				106,
+				96,
+				241,
+				255,
+			]
+			m_ColorMax = 
+			[
+				60,
+				25,
+				254,
+				255,
+			]
+		},
+		
+		{
+			_class = "C_INIT_VelocityRandom"
+			m_nControlPointNumber = 3
+			m_LocalCoordinateSystemSpeedMin = 
+			[
+				-500.000000,
+				-500.000000,
+				-500.000000,
+			]
+			m_LocalCoordinateSystemSpeedMax = 
+			[
+				500.000000,
+				500.000000,
+				850.000000,
+			]
+		},
+		
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_flNoiseScaleLoc = 0.300000
+			m_vecOutputMin = 
+			[
+				-50.000000,
+				-50.000000,
+				-50.000000,
+			]
+			m_vecOutputMax = 
+			[
+				50.000000,
+				50.000000,
+				50.000000,
+			]
+			m_nControlPointNumber = 3
+			m_bLocalSpace = true
+		},
+		
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 0.250000
+			}
+			m_flEmitRate = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 80.000000
+			}
+		},
+	]
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Constraints = 
+	[
+		
+		{
+			_class = "C_OP_WorldTraceConstraint"
+			m_bKillonContact = true
+			m_CollisionGroupName = "DEBRIS"
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/ryougi_eff/ryougi_t/ryougi_t_hit2e0.vpcf"
+		},
+	]
+	m_nBehaviorVersion = 5
+	m_nFirstMultipleOverride_BackwardCompat = 7
+}

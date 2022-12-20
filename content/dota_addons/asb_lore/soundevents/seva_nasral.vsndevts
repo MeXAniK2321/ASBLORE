@@ -1,0 +1,100 @@
+{
+	reinforce_starlight_breaker = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/sb_redacted.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 4.464000
+	}
+	fallground = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/fallground.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 2.120000
+	}
+	live = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/live.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 5.660000
+	}
+	mindcontrol = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/mindcontrol.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 7.160000
+	}
+	shine = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/shine.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 5.200000
+	}
+	zero = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/zero.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 15.700658
+	}
+	op = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_2/op.vsnd",
+		]
+		volume = "0.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event = "1.000000"
+		vsnd_duration = 50.000000
+	}
+}

@@ -1,0 +1,143 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{36c3961f-02a4-4c52-bf8f-6e3147d7d142} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_void_spirit/dissimilate/void_spirit_dissimilate_light.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_void_spirit/dissimilate/void_spirit_dissimilate_dark_core.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/yukari_portal1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_swirl1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_warp1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_ring_dark1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_select_fill1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_ring_add1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_ring1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_parent1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_flash1.vpcf"
+			m_bEndCap = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_select_steam1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/void_spirit_dissimilate_select_center1.vpcf"
+		},
+	]
+	m_nBehaviorVersion = 10
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+}

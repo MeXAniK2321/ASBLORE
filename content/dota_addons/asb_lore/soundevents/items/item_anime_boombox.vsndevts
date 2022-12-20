@@ -1,0 +1,1831 @@
+{
+	item_anime_boombox_anime_themes_anime_theme_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+	}
+	item_anime_boombox_anime_themes_anime_theme_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_4.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_5.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_6.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_7.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_8.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_9.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_11.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_11.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_12.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_13.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_14.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_15.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_16.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_17 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_17.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_18 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_18.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_19 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_19.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_20 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_20.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_21 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_21.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_22 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_22.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_23 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_23.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_24 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_24.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_25 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_25.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_26 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_26.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_27 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_27.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_28 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_28.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_29 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_29.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_30 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_30.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_31 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_31.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_32 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_32.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_33 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_33.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_34 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_34.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_35 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_35.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_36 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_36.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_37 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_37.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_38 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_38.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_39 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_39.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_40 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_40.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_41 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_41.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_42 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_42.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_43 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_43.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_44 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_44.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_45 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_45.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_46 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_46.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_47 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_47.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_48 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_48.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_themes_anime_theme_49 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_49.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_4.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_5.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_6.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_7.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_8.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_9.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_10.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_11.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_12.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_13.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_14.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_15.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_16.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_17 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_17.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_18 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_18.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_19 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_19.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_20 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_20.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_21 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_21.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_22 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_22.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_23 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_23.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_24 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_24.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_25 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_25.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_26 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_26.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_27 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_27.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_28 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_28.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_29 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_29.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_30 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_30.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_31 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_31.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_32 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_32.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_33 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_33.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_34 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_34.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_35 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_35.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_36 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_36.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_37 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_37.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_38 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_38.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_39 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_39.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_40 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_40.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_41 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_41.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_42 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_42.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_43 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_43.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_44 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_44.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_45 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_45.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_46 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_46.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_memes_anime_meme_47 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_memes/anime_meme_47.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend4.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend5.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend6.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend7.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend8.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend9.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend10.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend11.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend12.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend13.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend14.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend15.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend16.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_17 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend17.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_18 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend18.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_19 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend19.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_20 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend20.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_21 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend21.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_22 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend22.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_23 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend23.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_24 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend24.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_25 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend25.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+	item_anime_boombox_anime_legends_anime_legend_26 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend26.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		distance_max = "1600"
+	}
+}

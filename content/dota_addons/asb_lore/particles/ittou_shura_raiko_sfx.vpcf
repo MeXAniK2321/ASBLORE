@@ -1,0 +1,91 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 11
+	m_nMaxParticles = 0
+	m_flCullRadius = 50.000000
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_entityName = "parent"
+				},
+				
+				{
+					m_iControlPoint = 6
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 20
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/items/windrunner/windrunner_arcana/wr_arcana_base.vmdl"
+				m_sequenceName = "wr_arc_idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/windrunner/windranger_arcana/windranger_arcana_ambient_mist_trail.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/windrunner/windranger_arcana/windranger_arcana_ambient_butterfly_trail.vpcf"
+			m_bDisableChild = true
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ittou_shura_sfx1_1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ittou_shura_blood_wind.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ittou_shura_blood_mist.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/vengeful_venge_aura_cast_streaks1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/econ/items/nightstalker/nightstalker_ti10_silence/nightstalker_ti10_aura_corrupt.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/ittou_shura_raiko_sfx_1.vpcf"
+		},
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_bloodseeker/bloodseeker_rupture.vpcf"
+		},
+	]
+}

@@ -1,0 +1,391 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 12
+	m_BoundingBoxMin = 
+	[
+		40.000000,
+		40.000000,
+		-10.000000,
+	]
+	m_BoundingBoxMax = 
+	[
+		-40.000000,
+		-40.000000,
+		10.000000,
+	]
+	m_nBehaviorVersion = 11
+	m_nFirstMultipleOverride_BackwardCompat = 9
+	m_controlPointConfigurations = 
+	[
+		
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+				
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = 
+					[
+						1.000000,
+						0.000000,
+						0.000000,
+					]
+					m_angOffset = 
+					[
+						0.000000,
+						0.000000,
+						0.000000,
+					]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_vecCP1Pos = 
+			[
+				0.000000,
+				0.000000,
+				-128.000000,
+			]
+			m_nCP1 = 2
+		},
+	]
+	m_Emitters = 
+	[
+		
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_CONTROL_POINT_COMPONENT"
+				m_nMapType = "PF_MAP_TYPE_REMAP"
+				m_flLiteralValue = 35.000000
+				m_nControlPoint = 1
+				m_nScalarAttribute = 3
+				m_nVectorAttribute = 6
+				m_nVectorComponent = 0
+				m_flRandomMin = 0.000000
+				m_flRandomMax = 1.000000
+				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
+				m_flLOD0 = 0.000000
+				m_flLOD1 = 0.000000
+				m_flLOD2 = 0.000000
+				m_flLOD3 = 0.000000
+				m_flNoiseOutputMin = 0.000000
+				m_flNoiseOutputMax = 1.000000
+				m_flNoiseScale = 0.100000
+				m_vecNoiseOffsetRate = 
+				[
+					0.000000,
+					0.000000,
+					0.000000,
+				]
+				m_flNoiseOffset = 0.000000
+				m_nNoiseOctaves = 1
+				m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
+				m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
+				m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
+				m_flNoiseTurbulenceScale = 1.250000
+				m_flNoiseTurbulenceMix = 0.500000
+				m_flNoiseImgPreviewScale = 1.000000
+				m_bNoiseImgPreviewLive = true
+				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
+				m_flMultFactor = 1.000000
+				m_flInput0 = 100.000000
+				m_flInput1 = 500.000000
+				m_flOutput0 = 35.000000
+				m_flOutput1 = 50.000000
+				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
+				m_flBiasParameter = 0.000000
+				m_Curve = 
+				{
+					m_spline = 
+					[
+					]
+					m_tangents = 
+					[
+					]
+					m_vDomainMins = 
+					[
+						0.000000,
+						0.000000,
+					]
+					m_vDomainMaxs = 
+					[
+						0.000000,
+						0.000000,
+					]
+				}
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 5.000000
+			m_fLifetimeMin = 5.000000
+		},
+		
+		{
+			_class = "C_INIT_CreationNoise"
+			m_flNoiseScale = 3.000000
+			m_flNoiseScaleLoc = 1.000000
+			m_nFieldOutput = "5"
+			m_flOutputMin = -15.000000
+			m_flOutputMax = 15.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 2.250000
+			m_flRadiusMin = 1.500000
+		},
+		
+		{
+			_class = "C_INIT_RandomYaw"
+			m_flDegreesMax = 90.000000
+			m_flDegreesMin = 90.000000
+		},
+		
+		{
+			_class = "C_INIT_RandomRotation"
+			m_flDegreesMax = 0.000000
+		},
+		
+		{
+			_class = "C_INIT_CreationNoise"
+			m_flOutputMax = 0.000000
+			m_nFieldOutput = "20"
+			m_flNoiseScaleLoc = 0.100000
+			m_flNoiseScale = 1.000000
+		},
+		
+		{
+			_class = "C_INIT_CreatePhyllotaxis"
+			m_fMinRad = 1.000000
+			m_fRadPerPointTo = 0.500000
+			m_fsizeOverall = 1.000000
+			m_nScaleCP = 1
+			m_bUseWithContEmit = true
+		},
+		
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMaxLength = 1.500000
+			m_flMinLength = 0.850000
+		},
+		
+		{
+			_class = "C_INIT_RandomNamedModelSequence"
+			m_bModelFromRenderer = true
+			m_names = 
+			[
+				"rockySpikes_dynamic_anim_01",
+				"rockySpikes_dynamic_anim_02",
+				"rockySpikes_dynamic_anim_03",
+				"rockySpikes_dynamic_anim_04",
+				"rockySpikes_dynamic_anim_05",
+			]
+			m_nFieldOutput = "13"
+		},
+		
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMax = 
+			[
+				0.000000,
+				0.000000,
+				256.000000,
+			]
+			m_OffsetMin = 
+			[
+				0.000000,
+				0.000000,
+				256.000000,
+			]
+		},
+		
+		{
+			_class = "C_INIT_PositionPlaceOnGround"
+			m_flOffset = 5.000000
+			m_CollisionGroupName = "DEBRIS"
+			m_flMaxTraceLength = 512.000000
+			m_bSetNormal = true
+		},
+		
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = 
+			[
+				255,
+				255,
+				255,
+			]
+			m_ColorMax = 
+			[
+				174,
+				174,
+				174,
+			]
+			m_TintMin = 
+			[
+				0,
+				0,
+				0,
+			]
+			m_TintMax = 
+			[
+				255,
+				255,
+				255,
+			]
+		},
+	]
+	m_Operators = 
+	[
+		
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.250000
+		},
+		
+		{
+			_class = "C_OP_Decay"
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.350000
+			m_flStartTime = 0.125000
+		},
+		
+		{
+			_class = "C_OP_Orient2DRelToCP"
+			m_nFieldOutput = "12"
+			m_flRotOffset = 45.000000
+		},
+		
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.850000
+			m_flStartScale = 0.000000
+			m_flEndTime = 0.125000
+		},
+		
+		{
+			_class = "C_OP_SetChildControlPoints"
+		},
+		
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_flFadeEndTime = 0.000000
+			m_ColorFade = 
+			[
+				179,
+				255,
+				192,
+			]
+			m_bDisableOperator = true
+		},
+		
+		{
+			_class = "C_OP_RemapNamedModelSequenceOnceTimed"
+			m_flRemapTime = 2.660000
+			m_bModelFromRenderer = true
+			m_inNames = 
+			[
+				"rockySpikes_dynamic_anim_01",
+				"rockySpikes_dynamic_anim_02",
+				"rockySpikes_dynamic_anim_03",
+				"rockySpikes_dynamic_anim_04",
+				"rockySpikes_dynamic_anim_05",
+			]
+			m_outNames = 
+			[
+				"end_1",
+				"end_2",
+				"end_3",
+				"end_4",
+				"end_5",
+			]
+			m_nFieldInput = "13"
+			m_nFieldOutput = "13"
+		},
+	]
+	m_ForceGenerators = 
+	[
+		
+		{
+			_class = "C_OP_RandomForce"
+			m_flOpStartFadeInTime = 1.000000
+			m_flOpEndFadeInTime = 1.000000
+			m_flOpStartFadeOutTime = 2.000000
+			m_flOpEndFadeOutTime = 3.000000
+			m_MinForce = 
+			[
+				0.000000,
+				0.000000,
+				-50.000000,
+			]
+			m_MaxForce = 
+			[
+				0.000000,
+				0.000000,
+				-100.000000,
+			]
+		},
+	]
+	m_Renderers = 
+	[
+		
+		{
+			_class = "C_OP_RenderModels"
+			m_bScaleAnimationRate = true
+			m_ModelList = 
+			[
+				
+				{
+					m_model = resource:"models/kumagawa/screw.vmdl"
+				},
+			]
+			m_bAnimated = true
+			m_nLOD = 1
+			m_bForceLoopingAnimation = true
+		},
+	]
+	m_Children = 
+	[
+		
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_leshrac/leshrac_splitearth_groundflash_lines.vpcf"
+		},
+	]
+}
