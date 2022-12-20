@@ -79,7 +79,7 @@ end
 function modifier_item_walter_white_active:GetModifierPreAttack_BonusDamage(keys)
     return self.nActiveDamage
 end
-function modifier_item_walter_white_active:OnCreated(table)
+function modifier_item_walter_white_active:OnCreated(tTable)
     self.hCaster  = self:GetCaster()
     self.hParent  = self:GetParent()
     self.hAbility = self:GetAbility()
@@ -90,13 +90,15 @@ function modifier_item_walter_white_active:OnCreated(table)
     if IsServer() then
         self.sEmitSound = "item_walter_white_music"
         EmitSoundOn(self.sEmitSound, self.hParent)
-    elseif not self.nParticlePFX then
-        self.nParticlePFX = ParticleManager:CreateParticle("particles/econ/items/alchemist/alchemist_aurelian_weapon/alchemist_chemical_rage_aurelian.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hParent)
-                            ParticleManager:SetParticleControl(self.nParticlePFX, 60, Vector(0, 255, 0))
-                            ParticleManager:SetParticleControl(self.nParticlePFX, 61, Vector(0, 255, 0))
-                            ParticleManager:SetParticleControl(self.nParticlePFX, 62, Vector(0, 255, 0))
+    else
+        if not self.nParticlePFX then
+            self.nParticlePFX = ParticleManager:CreateParticle("particles/econ/items/alchemist/alchemist_aurelian_weapon/alchemist_chemical_rage_aurelian.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hParent)
+                                ParticleManager:SetParticleControl(self.nParticlePFX, 60, Vector(0, 255, 0))
+                                ParticleManager:SetParticleControl(self.nParticlePFX, 61, Vector(0, 255, 0))
+                                ParticleManager:SetParticleControl(self.nParticlePFX, 62, Vector(0, 255, 0))
 
-        self:AddParticle(self.nParticlePFX, false, false, -1, false, false)
+            self:AddParticle(self.nParticlePFX, false, false, -1, false, false)
+        end
     end
 end
 function modifier_item_walter_white_active:OnRefresh(tTable)

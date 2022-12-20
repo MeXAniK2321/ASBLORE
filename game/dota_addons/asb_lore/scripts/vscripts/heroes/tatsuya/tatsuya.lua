@@ -192,7 +192,7 @@ function modifier_tatsuya_personal:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("flash_cast")
         if vongolle and not vongolle:IsNull() then
-            if self:GetParent():HasModifier("modifier_item_aghanims_shard")  then
+            if self:GetParent():HasModifier("modifier_item_ultimate_scepter")  then
                 if vongolle:IsHidden() then
                     vongolle:SetHidden(false)
                 end
@@ -202,18 +202,18 @@ function modifier_tatsuya_personal:OnIntervalThink()
                 end
             end
         end
-		       local vongolle2 = self:GetParent():FindAbilityByName("tatsuya_seal_off")
-        if vongolle2 and not vongolle2:IsNull() then
-            if self:GetParent():HasScepter() and not self:GetParent():HasModifier("modifier_tatsuya_seal_off") and not self:GetParent():HasModifier("modifier_silver_horn")  then
-                if vongolle2:IsHidden() then
-                    vongolle2:SetHidden(false)
-                end
-            else
-                if not vongolle2:IsHidden() then
-                    vongolle2:SetHidden(true)
-                end
-            end
-        end
+		--        local vongolle2 = self:GetParent():FindAbilityByName("tatsuya_seal_off")
+        -- if vongolle2 and not vongolle2:IsNull() then
+        --     if self:GetParent():HasScepter() and not self:GetParent():HasModifier("modifier_tatsuya_seal_off") and not self:GetParent():HasModifier("modifier_silver_horn")  then
+        --         if vongolle2:IsHidden() then
+        --             vongolle2:SetHidden(false)
+        --         end
+        --     else
+        --         if not vongolle2:IsHidden() then
+        --             vongolle2:SetHidden(true)
+        --         end
+        --     end
+        -- end
     end
 	end
 	

@@ -269,21 +269,21 @@ function modifier_purple_dura:PlayEffects( radius,target )
 end
 function modifier_purple_dura:OnIntervalThink()
     if IsServer() then
-        local angry_women = self:GetParent():FindAbilityByName("tohka_inversion")
-        if angry_women and not angry_women:IsNull() and not self:GetParent():HasModifier("modifier_tohka_inversion") then
-            if self:GetParent():HasScepter() then
-                if angry_women:IsHidden() then
-                    angry_women:SetHidden(false)
-                end
-            else
-                if not angry_women:IsHidden() then
-                    angry_women:SetHidden(true)
-                end
-            end
-        end
+        -- local angry_women = self:GetParent():FindAbilityByName("tohka_inversion")
+        -- if angry_women and not angry_women:IsNull() and not self:GetParent():HasModifier("modifier_tohka_inversion") then
+        --     if self:GetParent():HasScepter() then
+        --         if angry_women:IsHidden() then
+        --             angry_women:SetHidden(false)
+        --         end
+        --     else
+        --         if not angry_women:IsHidden() then
+        --             angry_women:SetHidden(true)
+        --         end
+        --     end
+        -- end
 		 local angry_women = self:GetParent():FindAbilityByName("tohka_finishing_blow")
         if angry_women and not angry_women:IsNull() then
-            if self:GetParent():HasModifier("modifier_item_aghanims_shard") then
+            if self:GetParent():HasScepter() then
                 if angry_women:IsHidden() then
                     angry_women:SetHidden(false)
                 end
@@ -345,7 +345,7 @@ end
 function modifier_tohka_rage_combo_begin:OnCreated()
 if IsServer() then
 local ability = self:GetCaster():FindAbilityByName("tohka_finishing_blow")
-if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then
+if self:GetCaster():HasScepter() then
  if ability and not ability:IsActivated() then
             ability:SetActivated(true)
         end
@@ -475,7 +475,7 @@ end
  function modifier_tohka_rage_combo_begin:OnDestroy()
  if IsServer() then
 local ability = self:GetCaster():FindAbilityByName("tohka_finishing_blow")
-if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then
+if self:GetCaster():HasScepter() then
  if ability:IsActivated() then
             ability:SetActivated(false)
 			end

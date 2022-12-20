@@ -229,7 +229,7 @@
 		"ScriptFile"							"heroes/tohka/tohka.lua"
 		"AbilityTextureName" 					"tohka/5"
 		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
@@ -244,7 +244,7 @@
 		"AbilityManaCost"						"250"
 		//"AbilityCastRange"						"1200"
 
-		"IsGrantedByScepter"						"1"
+		//"IsGrantedByScepter"						"1"
 
 		"MaxLevel"								"1"
 		"RequiredLevel"							"30"
@@ -379,7 +379,7 @@
 		"AbilityTextureName"			"tohka/6"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
-		"IsGrantedByShard"						"1"
+		"IsGrantedByScepter"			"1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------

@@ -390,7 +390,8 @@ function modifier_sexy_body:PlayEffects( radius )
 	ParticleManager:SetParticleControl( effect_cast, 1, Vector( radius, radius, radius ) )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 
-	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
+	EmitSoundOn(sound_cast, self:GetCaster())
+	--EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
 end
 
 
@@ -464,7 +465,9 @@ function muscule_flex:PlayEffects( radius )
 	ParticleManager:SetParticleControl( effect_cast, 1, Vector( radius, radius, radius ) )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 
-	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
+	--print(self:GetCaster():GetAbsOrigin())
+	--EmitSoundOnLocationWithCaster( self:GetCaster():GetAbsOrigin(), sound_cast, self:GetCaster() )
+	EmitSoundOn(sound_cast, self:GetCaster())
 end
 
 modifier_muscule_flex = class({})
@@ -972,7 +975,8 @@ function gachi_paradise:PlayEffects( radius )
 	ParticleManager:SetParticleControl( effect_cast, 1, Vector( radius, radius, radius ) )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 
-	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
+	EmitSoundOn(sound_cast, self:GetCaster())
+	--EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
 end
 
 
@@ -992,6 +996,7 @@ function modifier_gachi_paradise:IsStunDebuff()
 	return true
 end
 function modifier_gachi_paradise:OnDestroy()
+	if not IsServer() then return end
 if self:GetParent()  == self:GetCaster() then
 self:GetParent():Kill(self, self:GetCaster())
 else	

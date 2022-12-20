@@ -5,6 +5,7 @@ function modifier_star_tier2:IsPurgable() return false end
 function modifier_star_tier2:IsPurgeException() return false end
 function modifier_star_tier2:RemoveOnDeath() return true end
 function modifier_star_tier2:OnCreated(table)
+	if not IsServer() then return end
 	self.caster = self:GetCaster()
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
@@ -144,6 +145,7 @@ end
 
 
 function modifier_star_tier2:OnDestroy()
+	if not IsServer() then return end
 	self.caster = self:GetCaster()
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()

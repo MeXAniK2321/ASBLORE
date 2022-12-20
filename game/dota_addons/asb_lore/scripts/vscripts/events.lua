@@ -233,6 +233,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				"tohka_inversion",
 				"tatsuya_seal_off",
 				"regrowth",
+				"flash_cast",
 			}
 
 			for _,FastAbility in pairs(FastAbilities) do
