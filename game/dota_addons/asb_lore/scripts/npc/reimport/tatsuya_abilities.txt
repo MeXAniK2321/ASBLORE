@@ -1,0 +1,671 @@
+"DOTAAbilities"
+{
+	//======================================================================================================
+	//Shiba_Tatsuya
+	//======================================================================================================
+	"gram_dispersion"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades" "4"
+		"precache"
+		{
+			"soundfile"		"soundevents/tatsuya.vsndevts"
+
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_ATTACK2"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18"
+		"AbilityManaCost"				"50 75 100 125"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"1.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+				
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown_increase"			"5 7 9 11"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"200 300 400 500"
+				
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow"			"-25 -40 -60 -80"
+				
+			}
+		}
+	}
+	"elemental_sight"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/2"
+		"FightRecapLevel"				"1"
+			"MaxLevel"						"4"
+		"LevelsBetweenUpgrades" "4"
+
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40"
+		"AbilityManaCost"				"40 60 80 100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"1000 1300 1600 2000"
+			}
+			
+		}
+	}
+		"ssid_breaker"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/3"
+		"FightRecapLevel"				"1"
+			"MaxLevel"						"4"
+		"RequiredLevel" "1"
+		"LevelsBetweenUpgrades" "4"
+
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_2"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 25 20 15"
+		"AbilityManaCost"				"100 120 140 160"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"400"
+			}
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"150 275 425 550"
+
+			}
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"0.5 0.7 0.9 1.1"
+			}
+			
+		}
+	}
+	"mist_disparsion"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/4"
+		"FightRecapLevel"				"1"
+			"MaxLevel"						"3"
+		"RequiredLevel" "8"
+		"LevelsBetweenUpgrades" "8"
+			
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"5"
+		"AbilityCooldown"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_damage"		"0.8 1.1 1.4"
+			}
+		
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"		"200"
+			}
+		}
+	}
+	"tatsuya_seal_off"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/tatsuya/tatsuya"
+		"AbilityTextureName" 					"tatsuya/5"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.5"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"170"
+		"AbilityManaCost"						"400"
+		//"AbilityCastRange"						"1200"
+
+		"IsGrantedByScepter"						"1"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_3"
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+
+		
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"zenitsu_flash_upgrade_distance""0"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"int"	"100"
+				
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"agi"	"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"all_stats"	"75"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"zenitsu_hear_upgrade_flash_charges"	"0 0 2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_movespeed"				"40 60 80"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_amplify"		               "60"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"turn_rate"						"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"awake_mana"					"0"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"fixed_duration"				"34"
+			}
+		}
+	}
+	"material_burst"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/5_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ATTACK"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"5000"
+		"AbilityCastPoint"				"0.3"
+		"AbilityDuration"				"1.5 1.75 2 2.25"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200"
+		"AbilityManaCost"				"1000"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"25"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"delay"				"3.5"
+				
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1000"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"3"
+			}
+		}
+	}
+	"regrowth"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/5_2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"RequiredLevel"                 "1"
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"800"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun"					"1"
+			}
+		
+		}
+	}
+	"flash_cast"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/6"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"625"
+		"IsGrantedByShard" "1"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50"
+		"AbilityManaCost"				"350"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"170"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_charges"			"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"charge_restore_time"	"25 20 15"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"	"1500"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range"	"900"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pop_damage_delay"		"0.1"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"500"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_slow_pct"		"1000"
+			}
+				"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"		"1.2"
+			}
+		}
+	}
+		"special_bonus_tatsuya_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0.5"
+			}			
+		}
+	}
+	"special_bonus_tatsuya_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+	"special_bonus_tatsuya_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1000"
+			}			
+		}
+	}
+	"special_bonus_tatsuya_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+	"deep_mist_disparsion"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tatsuya/tatsuya"
+		"AbilityTextureName"			"tatsuya/7"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"		"soundevents/tatsuya.vsndevts"
+
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityCastAnimation"          "ACT_DOTA_ATTACK2"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.1"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"400"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+				
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown_increase"			"7 9 11 13"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"1500"
+				
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow"			"-25 -40 -60 -80"
+				
+			}
+		}
+	}
+}

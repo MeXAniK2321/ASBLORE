@@ -1,0 +1,14 @@
+<root>
+    <styles>
+    	<include src="s2r://panorama/styles/custom_game/clickmenotice.vcss_c" />
+    </styles>
+
+    <scripts>
+    </scripts>
+
+  <Panel hittest="false" class="ClickMe">
+	<Panel hittest="false" id="ClickToChange"></Panel>
+  </Panel>
+
+
+</root>

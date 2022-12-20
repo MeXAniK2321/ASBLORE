@@ -1,0 +1,17 @@
+<!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/screamer1.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/screamer1.vjs_c" />
+	</scripts>
+	<Panel class="screamer_test" hittest="false">
+		<Label id="screamer_start" html="true" text="" />
+		<Panel id="screamer_start1">
+			<Movie id="Bgvideo" src="" controls="true" repeat="true" hittest="false" hittestchildren="false" autoplay="onload" />
+			<Movie id="dialvideo" src="" controls="true" repeat="true" hittest="false" hittestchildren="false" autoplay="onload" />
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,378 @@
+
+LinkLuaModifier("modifier_sans_control", "heroes/sans_control", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_sans_control_stun", "heroes/sans_control", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_sans_control_root", "heroes/sans_control", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_sans_control_caster", "heroes/sans_control", LUA_MODIFIER_MOTION_NONE)
+
+
+
+sans_control = class({})
+function sans_control:IsHiddenWhenStolen() return false end
+function sans_control:IsRefreshable() return true end
+function sans_control:IsStealable() return true end
+function sans_control:IsNetherWardStealable() return true end
+-------------------------------------------
+
+function sans_control:CastFilterResultTarget(target)
+	if target == self:GetCaster() and self:GetCaster():IsRooted() then
+		return UF_FAIL_CUSTOM
+	else
+		return UnitFilter(target, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, self:GetCaster():GetTeamNumber())
+	end
+end
+
+function sans_control:GetCustomCastErrorTarget(target)
+	if target == self:GetCaster() and self:GetCaster():IsRooted() then
+		return "dota_hud_error_ability_disabled_by_root"
+	end
+end
+
+function sans_control:OnSpellStart( params )
+	local caster = self:GetCaster()
+	local target = self:GetCursorTarget()
+	-- Handler on lifted targets
+	if caster:HasModifier("modifier_sans_control_caster") then
+		local target_loc = self:GetCursorPosition()
+		-- Parameters
+		local maximum_distance
+		if self.target:GetTeam() == caster:GetTeam() then
+			maximum_distance = self:GetSpecialValueFor("ally_range") 
+		else
+			maximum_distance = self:GetSpecialValueFor("enemy_range") 
+		end
+
+		if self.telekinesis_marker_pfx then
+			ParticleManager:DestroyParticle(self.telekinesis_marker_pfx, false)
+			ParticleManager:ReleaseParticleIndex(self.telekinesis_marker_pfx)
+		end
+
+		-- If the marked distance is too great, limit it
+		local marked_distance = (target_loc - self.target_origin):Length2D()
+		if marked_distance > maximum_distance then
+			target_loc = self.target_origin + (target_loc - self.target_origin):Normalized() * maximum_distance
+		end
+
+		-- Draw marker particle
+		
+
+		self.target_modifier.final_loc = target_loc
+		self.target_modifier.changed_target = true
+		self:EndCooldown()
+		-- Handler on regular
+	else
+		-- Parameters
+		self.target = self:GetCursorTarget()
+		self.target_origin = self.target:GetAbsOrigin()
+
+		local duration
+		local is_ally = true
+		-- Create modifier and check Linken
+		if self.target:GetTeam() ~= caster:GetTeam() then
+			if self.target:TriggerSpellAbsorb(self) then
+				return nil
+			end
+
+			duration = self:GetSpecialValueFor("enemy_lift_duration") * (1 - self.target:GetStatusResistance())
+			self.target:AddNewModifier(caster, self, "modifier_sans_control_stun", { duration = duration })
+			is_ally = false
+		else
+			duration = self:GetSpecialValueFor("ally_lift_duration") 
+			self.target:AddNewModifier(caster, self, "modifier_sans_control_root", { duration = duration})
+		end
+		
+
+		self.target_modifier = self.target:AddNewModifier(caster, self, "modifier_sans_control", { duration = duration })
+
+		if is_ally then
+			self.target_modifier.is_ally = true
+		end
+
+		-- Add the particle & sounds
+		
+		caster:EmitSound("Sans.up")
+		
+
+		-- Modifier-Params
+		self.target_modifier.final_loc = self.target_origin
+		self.target_modifier.changed_target = false
+		-- Add caster handler
+		caster:AddNewModifier(caster, self, "modifier_sans_control_caster", { duration = duration + FrameTime()})
+
+		self:EndCooldown()
+	end
+end
+
+function sans_control:GetAbilityTextureName()
+	if self:GetCaster():HasModifier("modifier_sans_control_caster") then
+		return "sans_3_1"
+	end
+	return "sans_3"
+end
+
+function sans_control:GetBehavior()
+	if self:GetCaster():HasModifier("modifier_sans_control_caster") then
+		return DOTA_ABILITY_BEHAVIOR_POINT
+	end
+	return DOTA_ABILITY_BEHAVIOR_UNIT_TARGET
+end
+
+function sans_control:GetManaCost( target )
+	if self:GetCaster():HasModifier("modifier_sans_control_caster") then
+		return 0
+	else
+		return self.BaseClass.GetManaCost(self, target)
+	end
+end
+
+function sans_control:GetCastRange( location , target)
+	if self:GetCaster():HasModifier("modifier_sans_control_caster") then
+		return 25000
+	end
+	return self:GetSpecialValueFor("cast_range")
+end
+
+-------------------------------------------
+modifier_sans_control_caster = class({})
+function modifier_sans_control_caster:IsDebuff() return false end
+function modifier_sans_control_caster:IsHidden() return true end
+function modifier_sans_control_caster:IsPurgable() return false end
+function modifier_sans_control_caster:IsPurgeException() return false end
+function modifier_sans_control_caster:IsStunDebuff() return false end
+-------------------------------------------
+
+function modifier_sans_control_caster:OnDestroy()
+	local ability = self:GetAbility()
+	if ability.telekinesis_marker_pfx then
+		ParticleManager:DestroyParticle(ability.telekinesis_marker_pfx, false)
+		ParticleManager:ReleaseParticleIndex(ability.telekinesis_marker_pfx)
+	end
+end
+
+-------------------------------------------
+modifier_sans_control = class({})
+function modifier_sans_control:IsDebuff()
+	if self:GetParent():GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then return true end
+	return false
+end
+function modifier_sans_control:IsHidden() return false end
+function modifier_sans_control:IsPurgable() return false end
+function modifier_sans_control:IsPurgeException() return false end
+function modifier_sans_control:IsStunDebuff() return false end
+function modifier_sans_control:IsMotionController() return true end
+function modifier_sans_control:GetMotionControllerPriority() return DOTA_MOTION_CONTROLLER_PRIORITY_MEDIUM end
+
+-------------------------------------------
+
+function modifier_sans_control:OnCreated( params )
+	if IsServer() then
+		-- Ability properties
+		local caster = self:GetCaster()
+		local ability = self:GetAbility()
+		self.parent = self:GetParent()
+		self.z_height = 0
+		self.duration = params.duration
+		self.lift_animation = ability:GetSpecialValueFor("lift_animation")
+		self.fall_animation = ability:GetSpecialValueFor("fall_animation")
+		self.current_time = 0
+
+		-- Start thinking
+		self.frametime = FrameTime()
+		self:StartIntervalThink(FrameTime())
+		
+		Timers:CreateTimer(FrameTime(), function()
+			self.duration = self:GetRemainingTime()
+		end)
+	end
+end
+
+function modifier_sans_control:OnIntervalThink()
+	if IsServer() then
+		-- Check motion controllers
+		
+if not self:CheckMotionControllers() then
+			self:Destroy()
+			return nil
+		end
+		-- Vertical Motion
+		self:VerticalMotion(self.parent, self.frametime)
+
+		-- Horizontal Motion
+		self:HorizontalMotion(self.parent, self.frametime)
+	end
+end
+
+function modifier_sans_control:EndTransition()
+	if IsServer() then
+		if self.transition_end_commenced then
+			return nil
+		end
+
+		self.transition_end_commenced = true
+
+		local caster = self:GetCaster()
+		local parent = self:GetParent()
+		local ability = self:GetAbility()
+		local ally_cooldown_reduction = ability:GetSpecialValueFor("ally_cooldown")
+		
+		-- Set the thrown unit on the ground
+		parent:SetUnitOnClearGround()
+		ResolveNPCPositions(parent:GetAbsOrigin(), 64)
+
+		-- Remove the stun/root modifier
+		parent:RemoveModifierByName("modifier_sans_control_stun")
+		parent:RemoveModifierByName("modifier_sans_control_root")
+
+		local parent_pos = parent:GetAbsOrigin()
+
+		-- Ability properties
+		local ability = self:GetAbility()
+		local impact_radius = ability:GetSpecialValueFor("impact_radius")
+		GridNav:DestroyTreesAroundPoint(parent_pos, impact_radius, true)
+
+		-- Parameters
+		local damage = ability:GetSpecialValueFor("damage")
+		local impact_stun_duration = ability:GetSpecialValueFor("impact_stun_duration")
+		local impact_radius = ability:GetSpecialValueFor("impact_radius")
+
+		parent:StopSound("Sans.up")
+		parent:EmitSound("Sans.down")
+		
+
+		-- Play impact particle
+		
+
+		-- Deal damage and stun to enemies
+		local enemies = FindUnitsInRadius(caster:GetTeamNumber(), parent_pos, nil, impact_radius, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
+		for _,enemy in ipairs(enemies) do
+			if enemy ~= parent then
+				enemy:AddNewModifier(caster, ability, "modifier_stunned", {duration = impact_stun_duration * (1 - enemy:GetStatusResistance())})
+			end
+			ApplyDamage({attacker = caster, victim = enemy, ability = ability, damage = damage+ self:GetCaster():FindTalentValue("special_bonus_sans_25"), damage_type = ability:GetAbilityDamageType()})
+		end
+		if #enemies > 0 and self.is_ally then
+			parent:EmitSound("Sans.down")
+		elseif #enemies > 1 and not self.is_ally then
+			parent:EmitSound("Sans.down")
+		end
+		
+		ability:UseResources(true, false, true)
+		
+		-- Special considerations for ally telekinesis		
+		if self.is_ally then
+			local current_cooldown = ability:GetCooldownTime()
+			ability:EndCooldown()
+			ability:StartCooldown(current_cooldown)
+		end
+	end
+end
+
+function modifier_sans_control:VerticalMotion(unit, dt)
+	if IsServer() then
+		self.current_time = self.current_time + dt
+
+		local max_height = self:GetAbility():GetSpecialValueFor("max_height")
+		-- Check if it shall lift up
+		if self.current_time <= self.lift_animation  then
+			self.z_height = self.z_height + ((dt / self.lift_animation) * max_height)
+			unit:SetAbsOrigin(GetGroundPosition(unit:GetAbsOrigin(), unit) + Vector(0,0,self.z_height))
+		elseif self.current_time > (self.duration - self.fall_animation) then
+			self.z_height = self.z_height - ((dt / self.fall_animation) * max_height)
+			if self.z_height < 0 then self.z_height = 0 end
+			unit:SetAbsOrigin(GetGroundPosition(unit:GetAbsOrigin(), unit) + Vector(0,0,self.z_height))
+		else
+			max_height = self.z_height
+		end
+
+		if self.current_time >= self.duration then
+			self:EndTransition()
+			self:Destroy()
+		end
+	end
+end
+
+function modifier_sans_control:HorizontalMotion(unit, dt)
+	if IsServer() then
+
+		self.distance = self.distance or 0
+		if (self.current_time > (self.duration - self.fall_animation)) then
+			if self.changed_target then
+				local frames_to_end = math.ceil((self.duration - self.current_time) / dt)
+				self.distance = (unit:GetAbsOrigin() - self.final_loc):Length2D() / frames_to_end
+				self.changed_target = false
+			end
+			if (self.current_time + dt) >= self.duration then
+				unit:SetAbsOrigin(self.final_loc)
+				self:EndTransition()
+			else
+				unit:SetAbsOrigin( unit:GetAbsOrigin() + ((self.final_loc - unit:GetAbsOrigin()):Normalized() * self.distance))
+			end
+		end
+	end
+end
+
+function modifier_sans_control:GetTexture()
+	return "rubick_telekinesis"
+end
+
+function modifier_sans_control:OnDestroy()
+	if IsServer() then
+		-- If it was destroyed because of the parent dying, set the caster at the ground position.
+		if not self.parent:IsAlive() then
+			self.parent:SetUnitOnClearGround()
+			
+		end
+		
+		
+
+	-- move parent
+	
+	end
+end
+
+-------------------------------------------
+modifier_sans_control_stun = class({})
+function modifier_sans_control_stun:IsDebuff() return true end
+function modifier_sans_control_stun:IsHidden() return true end
+function modifier_sans_control_stun:IsPurgable() return false end
+function modifier_sans_control_stun:IsPurgeException() return false end
+function modifier_sans_control_stun:IsStunDebuff() return true end
+-------------------------------------------
+
+function modifier_sans_control_stun:DeclareFunctions()
+	local decFuns =
+		{
+			MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+		}
+	return decFuns
+end
+
+function modifier_sans_control_stun:GetOverrideAnimation()
+	return ACT_DOTA_FLAIL
+end
+
+function modifier_sans_control_stun:CheckState()
+	local state =
+		{
+			
+		[MODIFIER_STATE_STUNNED] = true,
+			
+		}
+	return state
+end
+
+modifier_sans_control_root = class({})
+function modifier_sans_control_root:IsDebuff() return false end
+function modifier_sans_control_root:IsHidden() return true end
+function modifier_sans_control_root:IsPurgable() return false end
+function modifier_sans_control_root:IsPurgeException() return false end
+
+-------------------------------------------
+
+function modifier_sans_control_root:CheckState()
+	local state =
+		{
+			[MODIFIER_STATE_ROOTED] = true,
+			
+		}
+	return state
+end

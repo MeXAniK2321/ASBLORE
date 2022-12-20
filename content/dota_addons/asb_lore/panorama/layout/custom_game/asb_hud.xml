@@ -1,0 +1,8 @@
+<root>
+	<styles />
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/asb_hud.vjs_c" />
+	</scripts>
+	<snippets />
+	<Panel />
+</root>

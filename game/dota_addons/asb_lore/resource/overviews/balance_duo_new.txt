@@ -1,0 +1,8 @@
+balance_duo_new
+{
+	material materials/overviews/balance_duo_new.vmat
+	pos_x -5632
+	pos_y 5632
+	scale 11.000
+}
+

@@ -1,0 +1,55 @@
+"itembuilds"
+{
+	"author"		"Valve"
+	"hero"			"npc_dota_hero_skeleton_king"
+	"Title"			"Recommended items for Skeleton King"
+	
+	"Items"
+	{
+		"#DOTA_Item_Build_Starting_Items"
+		{
+			"item"		"item_boots"
+			"item"		"item_hidnotea"
+                       
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_blink"
+			"item"		"item_lerolero"
+                        "item"	        "item_minato_kunai"
+                        
+		}
+		
+		"#DOTA_Item_Build_Mid_Items"
+		{
+
+			"item"	        "item_watch"
+			"item"      	"item_vongolla_primo_ring"
+			"item"		"item_asta_sword"
+                  	
+                 
+				 
+		}
+		
+		"#DOTA_Item_Build_Late_Items"
+		{
+
+			"item"		"item_crucible_of_the_executioner"
+			"item"      	"item_pandora_box"
+                    	"item"	     	"item_beast_boots"    
+               		"item" 		"item_hell_staff"
+                        "item" 		"item_spamton"
+		}
+		
+		"DOTA_Item_Build_Other_Items"
+		{
+
+			"item"          "item_avalon"	   
+                        "item"      	"item_serp_molot"
+                        "item" 		"item_seal_of_chaos"			                        
+                                                                                        
+
+		}
+	}
+}

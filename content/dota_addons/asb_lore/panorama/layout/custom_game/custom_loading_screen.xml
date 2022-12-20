@@ -1,0 +1,11 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/custom_loading_screen.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<Panel class="AddonLoadingRoot">
+		<Panel id="CustomBg">
+			<Movie id="Video" src="file://{resources}/videos/for_heroes/custom.webm" controls="true" repeat="true" hittest="false" hittestchildren="false" autoplay="onload" />
+		</Panel>
+	</Panel>
+</root>

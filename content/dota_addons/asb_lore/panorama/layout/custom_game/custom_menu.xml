@@ -1,0 +1,18 @@
+<root>
+	<styles>
+    	<include src="s2r://panorama/styles/custom_game/custom_menu.vcss_c"/>
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/custom_menu.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/custom_utils.vjs_c" />
+	</scripts>
+
+	<Panel class="CustomMenu" hittest="false">
+		<Panel id="CustomMenuButtons" class="CustomMenuButtons" hittest="false">
+			<Panel id="ChatWheel" class="InMenuButtons" hittest="true" onactivate="OnCustomButton(2)">
+				<Label class="InMenuText" text="#localize_anime_chatwheel" hittest="false"/>
+			</Panel>
+		</Panel> 
+	</Panel>  
+
+</root>

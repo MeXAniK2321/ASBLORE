@@ -1,0 +1,14 @@
+"CustomHeroList"
+{
+
+		
+		
+		"npc_dota_hero_faceless void"                "Esdeath" //Esdeath
+		"npc_dota_hero_tusk"                "Shinobu" //Shinobu
+		"npc_dota_hero_kunkka"                "Madara" //Madara
+		"npc_dota_hero_dark_seer"                "Tsuna" //Tsuna
+		"npc_dota_hero_ancient_apparition"                "Yoshino" //Yoshino
+		"npc_dota_hero_ember_spirit"                "Shana" //Shana
+		
+
+}

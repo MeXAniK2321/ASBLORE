@@ -1,0 +1,53 @@
+"itembuilds"
+{
+	"author"		"Valve"
+	"hero"			"npc_dota_hero_drow_ranger"
+	"Title"			"Recommended items for Drow Ranger"
+	
+	"Items"
+	{
+		"#DOTA_Item_Build_Starting_Items"
+		{
+			"item"		"item_boots"
+			"item"		"item_hidnotea" 
+                        
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_blink"
+			"item"		"item_lerolero"
+                        "item"		"item_minato_kunai"
+                        
+			
+		}
+		
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"	        "item_block_bow"
+                        "item"          "item_beast_spear"
+                        "item"	        "item_paimon"
+                        "item"		"item_power_of_youth"
+			"item"		"item_asta_sword"
+               	
+               
+		}
+		
+		"#DOTA_Item_Build_Late_Items"
+		{
+                       "item"           "item_black_march"
+                       "item"           "item_samehada"
+                       "item"           "item_pandora_box"
+                       "item"           "item_van_dark"
+		}
+		
+		"DOTA_Item_Build_Other_Items"
+		{
+			
+                        "item"          "item_tome_of_knowledge"
+                        "item"	        "item_beast_boots"
+                        "item"          "item_abyss_horn"
+
+		}
+	}
+}

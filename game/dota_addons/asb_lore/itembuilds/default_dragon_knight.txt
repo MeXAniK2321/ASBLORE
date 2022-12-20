@@ -1,0 +1,51 @@
+"itembuilds"
+{
+	"author"		"Valve"
+	"hero"			"npc_dota_hero_dragon_knight"
+	"Title"			"Recommended items for dragon knight"
+	
+	"Items"
+	{
+		"#DOTA_Item_Build_Starting_Items"
+		{
+			"item"		"item_boots"
+			"item"		"item_hidnotea"
+                        
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_blink"
+			"item"		"item_lerolero"
+                        "item"	        "item_minato_kunai"
+                                    
+			  
+		}
+		
+		"#DOTA_Item_Build_Mid_Items"
+		{
+                      "item"      "item_beast_spear"
+                      "item"      "item_power_of_youth"
+		      "item"		"item_asta_sword"
+                       "item"      "item_black_march"
+		}
+		
+		"#DOTA_Item_Build_Late_Items"
+		{        
+                                   "item"      "item_yoru"
+                             "item"		"item_van_dark"
+                            "item"      "item_paimon"
+                             "item"    "item_samehada"
+		}
+		
+		"DOTA_Item_Build_Other_Items"
+		{
+			
+                          "item"      "item_pandora_box"
+                        "item"	     "item_beast_boots"
+                         "item" "item_abyss_horn"
+                                            
+
+		}
+	}
+}
