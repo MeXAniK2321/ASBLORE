@@ -603,6 +603,7 @@
 		"AbilityTextureName"			"tatsuya/7"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
+		"RequiredLevel"					"30"
 		"precache"
 		{
 			"soundfile"		"soundevents/tatsuya.vsndevts"

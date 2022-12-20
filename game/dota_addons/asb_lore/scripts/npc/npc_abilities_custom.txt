@@ -242,7 +242,7 @@
 // Dummy stuff
 //-------------------
   
-  "dummy_unit"
+  "dummy_unit_ability"
   {
     "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"           "ability_datadriven"
@@ -250,21 +250,29 @@
     "MaxLevel"                      "1"
     
     "Modifiers"
-    {
-      "dummy_unit"
-      {
-          "Passive"                        "1"
-          "IsHidden"                        "1"    
-          "States"
-          {
-              "MODIFIER_STATE_UNSELECTABLE" "MODIFIER_STATE_VALUE_ENABLED"
-              "MODIFIER_STATE_INVULNERABLE"    "MODIFIER_STATE_VALUE_ENABLED"
-              "MODIFIER_STATE_NOT_ON_MINIMAP" "MODIFIER_STATE_VALUE_ENABLED"
-              "MODIFIER_STATE_NO_HEALTH_BAR"  "MODIFIER_STATE_VALUE_ENABLED"
-          }
-      }
-    }
-  }
+		{
+			"dummy_unit"
+			{
+				"Passive" "1"
+				"IsHidden" "1"
+
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_TEAM_MOVE_TO" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_TEAM_SELECT" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_COMMAND_RESTRICTED" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_ATTACK_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_UNSELECTABLE" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE" "MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+  
   
   "barebones_empty1"
   {
@@ -43379,7 +43387,394 @@
     }
   }
 
+//ichigo abilities
+	//=================================================================================================================
+	// ichigo: Q
+	//=================================================================================================================
+	"ichigoQ"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoQ"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"      "ichigo/ichigo-q"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"		"1"
+		"AbilityCastPoint"				"1.0 1.0 1.0 1.0"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+
+
+		"AbilityCooldown"				"18.0 16.0 14.0 10.0"
+		"AbilityManaCost"				"45 65 85 100"
+		//"AbilityDamage"					"25 50 100"
+		"AbilityCastRange"				"1500"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"250"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"80 160 240 320"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance"	"1500 1500 1500 1500"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"1800 1800 1800 1800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength"	"2.0"
+			}
+		}
+	}
+
+		//=================================================================================================================
+	// ichigo: W
+	//=================================================================================================================
+	"ichigoW"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoW"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"      "ichigo/ichigo-f"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"18"
+		"LevelsBetweenUpgrades"		"6"
+		"AbilityCastPoint"				"1.0"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+
+
+		"AbilityCooldown"				"30.0"
+		"AbilityManaCost"				"150"
+		//"AbilityDamage"					"25 50 100"
+		//"AbilityCastRange"				"100"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"250"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"700"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength"	"2.0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"0.5"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance"	"1300"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// ichigo: E
+	//=================================================================================================================
+	"ichigoE"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityTextureName"      "ichigo/ichigo-e"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"		"1"
+		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+
+
+		"AbilityCooldown"				"30.0 20.0 16.0 12.0"
+		"AbilityManaCost"				"25 45 65 95"
+		//"AbilityDamage"					"25 50 100"
+		"AbilityCastRange"				"1250"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"250"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"0.4 0.4 0.4 0.4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance"	"500 500 500 500"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"1000 1000 1000 1000"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength"	"1.0 2.0 3.0 4.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// ichigo: F
+	//=================================================================================================================
+	"ichigoF"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoF"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"      "ichigo/ichigo-d"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_NONE"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"		"0"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+        "IsGrantedByScepter"    "1"
+
+		"AbilityCooldown"				"20"
+		//"AbilityDamage"					"25 50 100"
+		//"AbilityCastRange"				"900"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"1500"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"range"	"600"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// ichigo: R
+	//=================================================================================================================
+	"ichigoR"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoR"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"      "ichigo/ichigo-w"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"		"1"
+		"AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+
+
+		"AbilityCooldown"				"28.0 24.0 18.0 14.0"
+		"AbilityManaCost"				"30 60 90 120"
+		//"AbilityDamage"					"25 50 100"
+		//"AbilityCastRange"				"1800"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"250"
+		//"AoERadius"						"1500"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"80 160 240 320"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration_stun"	"1.6 2.0 2.4 2.8"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"0.5"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance"	"550"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance_enemy"	"550"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration_travel"	"0.1 0.1 0.1"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength"	"2.0"
+			}
+		}
+	}
+
+
+	//=================================================================================================================
+	// ichigo: T
+	//=================================================================================================================
+	"ichigoT"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/ichigo/ichigoT"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityTextureName"      "ichigo/ichigo-r"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"30"
+		"LevelsBetweenUpgrades"		"1"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"empty"
+		//"AnimationPlaybackRate"			"1"
+		//"AnimationIgnoresModelScale"	"1"
+
+
+		"AbilityCooldown"				"120.0"
+		"AbilityManaCost"				"0"
+		//"AbilityDamage"					"25 50 100"
+		"AbilityCastRange"				"500"
+		//"AbilityCastRangeBuffer"		"250"
+		//"AbilityChannelTime"			"0.0 0.0 0.0"
+		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
+		//"AbilityDuration"				"0.0 0.0 0.0"
+		//"AoERadius"						"250"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration_initial"	"12.0"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"99999"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"600"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"distance"	"99999"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"vision"	"1200"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"3000"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration_last"	"8.0"
+			}
+		}
+	}
 
 
 

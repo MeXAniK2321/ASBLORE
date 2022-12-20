@@ -4229,8 +4229,48 @@
 			
 		   
 		}
+		}
 	
+	"item_shinigami"
+	{
+	"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_shinigami.lua"
+	"AbilityTextureName"			"ichigo-d"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"0"
+	"ItemIsNeutralDrop"						"1"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"dmg"				"40"
+		    }
+		    
+		    "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"str"				"20"
+		    }
+		
+			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana"				"1000"
+			}
+			
 	
+		}
+		
 	
 	
 	}

@@ -170,6 +170,9 @@ function item_pandora_box:OnSpellStart()
 		elseif caster:GetUnitName()== "npc_dota_hero_sven" then
 		local item = CreateItem("item_sandalphon", caster, self)
 	    caster:AddItem(item)
+	    elseif caster:GetUnitName()== "npc_dota_hero_razor" then
+		local item = CreateItem("item_shinigami", caster, self)
+	    caster:AddItem(item)
 		else
 		local item = CreateItem("item_vongolla_primo_ring", caster, self)
 	    caster:AddItem(item)

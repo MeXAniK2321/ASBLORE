@@ -3104,4 +3104,75 @@
     "VisionNighttimeRange"    "1200"                  // Range of vision at night time.
   }
 
-}
+"Ichigo Kurosaki"
+  {
+    //"AbilityLayout"     "6"
+    "override_hero"     "npc_dota_hero_razor"
+    "Model"             "models/characters/ichigo/ichigo.vmdl"
+    "ModelScale"        "1.20"
+    "DisableWearables"  "1"
+    "IdleExpression"		"empty"
+    "PickSound"		"empty"
+		"BanSound"		"empty"
+    "HeroSelectSoundEffect"		"empty"
+    //"SoundSet"          "1"
+    "VoiceFile"		"empty"  
+    "Ability1"        "ichigoQ"
+    "Ability2"        "ichigoR" 
+    "Ability3"        "ichigoE" 
+    "Ability4"        "ichigoF"
+    "Ability5"        "ichigoW"
+    "Ability6"        "ichigoT"
+
+    //Talents
+    "Ability10"					"special_bonus_attack_speed_30"
+		"Ability11"					"special_bonus_attack_damage_25"
+
+		"Ability12"					"special_bonus_hp_300"
+		"Ability13"					"special_bonus_hp_regen_7"
+
+		"Ability14"					"special_bonus_all_stats_12"
+		"Ability15"					"special_bonus_armor_10"
+
+		"Ability16"					"special_bonus_strength_25"
+		"Ability17"					"special_bonus_movement_speed_50"
+
+		"AbilityTalentStart"		"10"
+
+    "ArmorPhysical"       "0"                 // Physical protection.
+    "MagicalResistance"       "25"                 // Magical protection (percentage).
+
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
+    "AttackDamageMin"     "40"                   // Damage range min.
+    "AttackDamageMax"     "50"                   // Damage range max.
+    "AttackRange"				"100"
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "25"                   // Base strength
+    "AttributeStrengthGain"   "2"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "13"                   // Base intelligence
+    "AttributeIntelligenceGain" "1"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "20"                   // Base agility
+    "AttributeAgilityGain"    "1"                   // Agility bonus per level.
+
+    "BountyXP"          "100"                 // Experience earn.
+    "BountyGoldMin"       "250"                   // Gold earned min.
+    "BountyGoldMax"       "400"                   // Gold earned max.
+
+    "BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    "RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "285"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "180"                 // Base health.
+    "StatusHealthRegen"     "0.5"                 // Health regeneration rate.
+    "StatusMana"        "150"                   // Base mana.
+    "StatusManaRegen"     "0.2"                 // Mana regeneration rate.
+    "HealthBarOffset"			"210"
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
+  }
+  }
