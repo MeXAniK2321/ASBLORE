@@ -27,7 +27,6 @@ function ichigoT:OnSpellStart()
     local target = self:GetCursorTarget()
     target:AddNewModifier(caster, caster, "modifier_combo", {Duration = 20})
     caster:AddNewModifier(caster, caster, "modifier_combo", {Duration = 20})
-
     --[[  if caster:FindAbilityByName("ichigoD"):IsInAbilityPhase() then
         EndAnimation(self:GetCaster())
         Timers:CreateTimer(1.0, function() StopGlobalSound("ichigo.T1") end)
@@ -205,7 +204,7 @@ function ichigoT:OnSpellStart()
                                "npc_dota_hero_announcer" and unit:GetTeamNumber() ~= caster:GetTeamNumber()
                 end,
                 OnUnitHit = function(self, unit)
-                    if unit ~= nil then
+                    if unit ~= nil and not unit:IsMagicImmune() then
                         ApplyDamage({
                             victim = unit,
                             attacker = caster,
@@ -223,10 +222,25 @@ function ichigoT:OnSpellStart()
             return 0.4
         end)
 
-        local dummy = CreateUnitByName("npc_dummy_unit", casterPt, true, caster, caster, caster:GetTeamNumber())
-
+        local dummy = CreateUnitByName("npc_dummy_unit_vision", casterPt, true, caster, caster, caster:GetTeamNumber())
+        casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
+        dummy:SetOrigin(casterPt)
+        dummy:SetDayTimeVisionRange(2000) 
+    dummy:SetNightTimeVisionRange(2000)
+        local knockback_push = caster:GetAbsOrigin() - caster:GetForwardVector()*300
+    local knockback = { should_stun = false,
+    knockback_duration = 8,
+    duration = 8,
+    knockback_distance = 20000,
+    knockback_height = 0,
+   
+    center_x = knockback_push.x,
+    center_y = knockback_push.y,
+    center_z = caster:GetAbsOrigin().z }
+    dummy:AddNewModifier(caster, self, "modifier_knockback", knockback)
+    --caster:AddNewModifier(caster, self, "modifier_knockback", knockback)
         self:PlayEffects(caster, dummy, casterPt, duration_last)
-
+       
         Timers:CreateTimer(duration_last, function()
             if kameTimer then
                 Timers:RemoveTimer(kameTimer)
@@ -236,11 +250,12 @@ function ichigoT:OnSpellStart()
 end
 
 function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
-    local dummyTimer = Timers:CreateTimer(function()
-        casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
-        dummy:SetOrigin(casterPt)
-        return 0
-    end)
+    --local dummyTimer = Timers:CreateTimer(function()
+        --casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
+        --dummy:SetOrigin(casterPt)
+        
+       -- return 0
+   -- end)
 
     local plus300 = 0
 
@@ -283,7 +298,7 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
         caster:SetOriginalModel("models/characters/ichigo/ichigo.vmdl")
         caster:SetModelScale(1.20)
         caster:ForceKill(true)
-        Timers:RemoveTimer(dummyTimer)
+       -- Timers:RemoveTimer(dummyTimer)
         Timers:RemoveTimer(chargeTimer)
         Timers:RemoveTimer(self.TimerCharge)
         Timers:RemoveTimer(self.TimerCharge2)
