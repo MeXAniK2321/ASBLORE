@@ -1,0 +1,195 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	deidara.boom = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_boom.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.552000
+	}
+	deidara.centipide = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_centipide.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.000000
+	}
+	deidara.c4_plant = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c4_plant.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.552000
+	}
+	deidara.bird = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_bird.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	deidara.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 25.200001
+	}
+	deidara.c2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.712000
+	}
+	deidara.karakura = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_karakura.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.424000
+	}
+	deidara.c0 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c0.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.104000
+	}
+	deidara.c0_explode = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c0_explode.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.529958
+	}
+	deidara.c1_explode = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c1_explode.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.368000
+	}
+	deidara.c3_explode = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c3_explode.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.896000
+	}
+	deidara.c4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_c4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.952000
+	}
+}

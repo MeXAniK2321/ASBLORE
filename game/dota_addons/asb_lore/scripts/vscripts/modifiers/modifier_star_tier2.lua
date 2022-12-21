@@ -6,6 +6,7 @@ function modifier_star_tier2:IsPurgeException() return false end
 function modifier_star_tier2:RemoveOnDeath() return true end
 function modifier_star_tier2:OnCreated(table)
 	if not IsServer() then return end
+
 	self.caster = self:GetCaster()
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
@@ -15,126 +16,123 @@ function modifier_star_tier2:OnCreated(table)
 	if IsServer() then
 		self:StopAllMusic()
 		StopGlobalSound("spamton.theme")
-StopGlobalSound("spamton.neo_theme")
-StopGlobalSound("halo.theme_spirits_true")
+		StopGlobalSound("spamton.neo_theme")
+		StopGlobalSound("halo.theme_spirits_true")
 	end
 	if caster:GetUnitName()== "npc_dota_hero_oracle" then
-	EmitGlobalSound("star.theme2_15")
+		EmitGlobalSound("star.theme2_15")
 	elseif caster:GetUnitName()== "npc_dota_hero_dragon_knight" then
-	EmitGlobalSound("star.theme2_2")
+		EmitGlobalSound("star.theme2_2")
 	elseif caster:GetUnitName()== "npc_dota_hero_pudge" then
-	EmitGlobalSound("star.theme2_33")
+		EmitGlobalSound("star.theme2_33")
 	elseif caster:GetUnitName()== "npc_dota_hero_slark" then
-	if caster:HasModifier( "modifier_neko_arc" ) then
-	EmitGlobalSound("star.theme2_46")
-	else
-	EmitGlobalSound("star.theme2_45")
-	end
+		if caster:HasModifier( "modifier_neko_arc" ) then
+			EmitGlobalSound("star.theme2_46")
+		else
+			EmitGlobalSound("star.theme2_45")
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_faceless_void" then
-	EmitGlobalSound("star.theme2_32")
+		EmitGlobalSound("star.theme2_32")
 	elseif caster:GetUnitName()== "npc_dota_hero_skeleton_king" then
-	EmitGlobalSound("star.theme2_28")
+		EmitGlobalSound("star.theme2_28")
 	elseif caster:GetUnitName()== "npc_dota_hero_juggernaut" then
-	EmitGlobalSound("star.theme2_38")
+		EmitGlobalSound("star.theme2_38")
 	elseif caster:GetUnitName()== "npc_dota_hero_abyssal_underlord" then
-	EmitGlobalSound("star.theme2_27")
+		EmitGlobalSound("star.theme2_27")
 	elseif caster:GetUnitName()== "npc_dota_hero_bane" then
-	if caster:HasScepter() then
-	EmitGlobalSound("star.theme2_43")
-	else
-	EmitGlobalSound("star.theme2_42")
-	end
+		if caster:HasScepter() then
+			EmitGlobalSound("star.theme2_43")
+		else
+			EmitGlobalSound("star.theme2_42")
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_ember_spirit" then
-	EmitGlobalSound("star.theme2_36")
+		EmitGlobalSound("star.theme2_36")
 	elseif caster:GetUnitName()== "npc_dota_hero_dark_willow" then
-	EmitGlobalSound("star.theme2_34")
+		EmitGlobalSound("star.theme2_34")
 	elseif caster:GetUnitName()== "npc_dota_hero_life_stealer" then
-	EmitGlobalSound("star.theme2_39")
+		EmitGlobalSound("star.theme2_39")
 	elseif caster:GetUnitName()== "npc_dota_hero_mars" then
-	EmitGlobalSound("star.theme2_44")
+		EmitGlobalSound("star.theme2_44")
 	elseif caster:GetUnitName()== "npc_dota_hero_chaos_knight" then
-	EmitGlobalSound("star.theme2_25")
+		EmitGlobalSound("star.theme2_25")
 	elseif caster:GetUnitName()== "npc_dota_hero_queenofpain" then
-	EmitGlobalSound("star.theme2_21")
+		EmitGlobalSound("star.theme2_21")
 	elseif caster:GetUnitName()== "npc_dota_hero_monkey_king" then
-	EmitGlobalSound("star.theme2_3")
+		EmitGlobalSound("star.theme2_3")
 	elseif caster:GetUnitName()== "npc_dota_hero_beastmaster" then
-	EmitGlobalSound("star.theme2_35")
+		EmitGlobalSound("star.theme2_35")
 	elseif caster:GetUnitName()== "npc_dota_hero_spectre" then
-	if self:GetParent():HasModifier( "modifier_devilovania" ) then
-	EmitGlobalSound("star.theme2_24")
-	else
-	if self:GetParent():HasModifier( "modifier_little_devil" ) then
-	EmitGlobalSound("star.theme2_23")
-	else
-	if self:GetParent():HasModifier( "modifier_hopes_and_dreams" ) then
-	EmitGlobalSound("star.theme2_22")
-	end
-	end
-	end
+		if self:GetParent():HasModifier( "modifier_devilovania" ) then
+			EmitGlobalSound("star.theme2_24")
+		else
+			if self:GetParent():HasModifier( "modifier_little_devil" ) then
+				EmitGlobalSound("star.theme2_23")
+			else
+				if self:GetParent():HasModifier( "modifier_hopes_and_dreams" ) then
+					EmitGlobalSound("star.theme2_22")
+				end
+			end
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_nevermore" then
-	if self:GetParent():HasModifier( "modifier_rumia_pre_awaken" ) then
-	EmitGlobalSound("star.theme2_40")
-	else
-	EmitGlobalSound("star.theme2_41")
-	end
+		if self:GetParent():HasModifier( "modifier_rumia_pre_awaken" ) then
+			EmitGlobalSound("star.theme2_40")
+		else
+			EmitGlobalSound("star.theme2_41")
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_bloodseeker" then
-	EmitGlobalSound("star.theme2_20")
+		EmitGlobalSound("star.theme2_20")
 	elseif caster:GetUnitName()== "npc_dota_hero_night_stalker" then
-	EmitGlobalSound("star.theme2_19")
+		EmitGlobalSound("star.theme2_19")
 	elseif caster:GetUnitName()== "npc_dota_hero_kunkka" then
-	EmitGlobalSound("star.theme2_6")
+		EmitGlobalSound("star.theme2_6")
 	elseif caster:GetUnitName()== "npc_dota_hero_lich" then
-	if self:GetParent():HasItemInInventory("item_chomusuke") then
-	EmitGlobalSound("star.theme2_26")
-	else
-	EmitGlobalSound("star.theme2_8")
-	end
+		if self:GetParent():HasItemInInventory("item_chomusuke") then
+			EmitGlobalSound("star.theme2_26")
+		else
+			EmitGlobalSound("star.theme2_8")
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_tusk" then
-	EmitGlobalSound("star.theme2_9")
+		EmitGlobalSound("star.theme2_9")
 	elseif caster:GetUnitName()== "npc_dota_hero_antimage" then
-	EmitGlobalSound("star.theme2_10")
+		EmitGlobalSound("star.theme2_10")
 	elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
-	EmitGlobalSound("star.theme2_18")
+		EmitGlobalSound("star.theme2_18")
 	elseif caster:GetUnitName()== "npc_dota_hero_ancient_apparition" then
-	EmitGlobalSound("star.theme2_11")
+		EmitGlobalSound("star.theme2_11")
 	elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
-	EmitGlobalSound("star.theme2_12")
+		EmitGlobalSound("star.theme2_12")
 	elseif caster:GetUnitName()== "npc_dota_hero_alchemist" then
-	if IsASBPatreon(self:GetCaster()) then
-	EmitGlobalSound("star.theme2_48")
-	else
-	EmitGlobalSound("star.theme2_13")
-	end
+		if IsASBPatreon(self:GetCaster()) then
+			EmitGlobalSound("star.theme2_48")
+		else
+			EmitGlobalSound("star.theme2_13")
+		end
 	elseif caster:GetUnitName()== "npc_dota_hero_void_spirit" then
-	EmitGlobalSound("star.theme2_14")
+		EmitGlobalSound("star.theme2_14")
 	elseif caster:GetUnitName()== "npc_dota_hero_legion_commander" then
-	EmitGlobalSound("star.theme2_47")
+		EmitGlobalSound("star.theme2_47")
 	elseif caster:GetUnitName()== "npc_dota_hero_abaddon" then
-	EmitGlobalSound("star.theme2_29")
+		EmitGlobalSound("star.theme2_29")
 	elseif caster:GetUnitName()== "npc_dota_hero_ursa" then
-	EmitGlobalSound("star.theme2_31")
+		EmitGlobalSound("star.theme2_31")
 	elseif caster:GetUnitName()== "npc_dota_hero_death_prophet" then
-
-	EmitGlobalSound("star.theme2_30")
-		elseif caster:GetUnitName()== "npc_dota_hero_pangolier" then
-	EmitGlobalSound("star.theme2_37")
+		EmitGlobalSound("star.theme2_30")
+	elseif caster:GetUnitName()== "npc_dota_hero_pangolier" then
+		EmitGlobalSound("star.theme2_37")
 	elseif caster:GetUnitName()== "npc_dota_hero_drow_ranger" then
-
-	EmitGlobalSound("star.theme2_16")
-	else 
+		EmitGlobalSound("star.theme2_16")
+	elseif caster:GetUnitName()== "npc_dota_hero_arc_warden" then
+		EmitGlobalSound("star.theme2_49")
+	elseif caster:GetUnitName()== "npc_dota_hero_sven" then
+		EmitGlobalSound("star.theme2_50")
+	else
 	end
-
-	
-	
-	
 
 	if not IsServer() or not self.parent:IsRealHero() then
 		return nil
 	end
 	
-self:StartIntervalThink(2)
-	
+	self:StartIntervalThink(2)	
 end
 function modifier_star_tier2:OnIntervalThink()
 	if IsServer() then
@@ -150,88 +148,91 @@ function modifier_star_tier2:OnDestroy()
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
 	local caster = self:GetCaster()
-if caster:GetUnitName()== "npc_dota_hero_oracle" then
-	StopGlobalSound("star.theme2_15")
+	if caster:GetUnitName()== "npc_dota_hero_oracle" then
+		StopGlobalSound("star.theme2_15")
 	elseif caster:GetUnitName()== "npc_dota_hero_dragon_knight" then
-	StopGlobalSound("star.theme2_2")
+		StopGlobalSound("star.theme2_2")
 	elseif caster:GetUnitName()== "npc_dota_hero_legion_commander" then
-	StopGlobalSound("star.theme2_47")
+		StopGlobalSound("star.theme2_47")
 	elseif caster:GetUnitName()== "npc_dota_hero_chaos_knight" then
-	StopGlobalSound("star.theme2_25")
+		StopGlobalSound("star.theme2_25")
 	elseif caster:GetUnitName()== "npc_dota_hero_monkey_king" then
-	StopGlobalSound("star.theme2_3")
+		StopGlobalSound("star.theme2_3")
 	elseif caster:GetUnitName()== "npc_dota_hero_kunkka" then
-	StopGlobalSound("star.theme2_6")
+		StopGlobalSound("star.theme2_6")
 	elseif caster:GetUnitName()== "npc_dota_hero_lich" then
-	StopGlobalSound("star.theme2_8")
+		StopGlobalSound("star.theme2_8")
 		StopGlobalSound("star.theme2_26")
 	elseif caster:GetUnitName()== "npc_dota_hero_slark" then
-	StopGlobalSound("star.theme2_45")
-	StopGlobalSound("star.theme2_46")
+		StopGlobalSound("star.theme2_45")
+		StopGlobalSound("star.theme2_46")
 	elseif caster:GetUnitName()== "npc_dota_hero_tusk" then
-	StopGlobalSound("star.theme2_9")
-		elseif caster:GetUnitName()== "npc_dota_hero_juggernaut" then
-	StopGlobalSound("star.theme2_38")
+		StopGlobalSound("star.theme2_9")
+	elseif caster:GetUnitName()== "npc_dota_hero_juggernaut" then
+		StopGlobalSound("star.theme2_38")
 	elseif caster:GetUnitName()== "npc_dota_hero_spectre" then
-	StopGlobalSound("star.theme2_22")
-	StopGlobalSound("star.theme2_23")
-	StopGlobalSound("star.theme2_24")
+		StopGlobalSound("star.theme2_22")
+		StopGlobalSound("star.theme2_23")
+		StopGlobalSound("star.theme2_24")
 	elseif caster:GetUnitName()== "npc_dota_hero_life_stealer" then
-	StopGlobalSound("star.theme2_39")
+		StopGlobalSound("star.theme2_39")
 	elseif caster:GetUnitName()== "npc_dota_hero_dark_willow" then
-	StopGlobalSound("star.theme2_34")
+		StopGlobalSound("star.theme2_34")
 	elseif caster:GetUnitName()== "npc_dota_hero_ember_spirit" then
-	StopGlobalSound("star.theme2_36")
+		StopGlobalSound("star.theme2_36")
 	elseif caster:GetUnitName()== "npc_dota_hero_mars" then
-	StopGlobalSound("star.theme2_44")
-		elseif caster:GetUnitName()== "npc_dota_hero_bane" then
-	StopGlobalSound("star.theme2_42")
-	StopGlobalSound("star.theme2_43")
+		StopGlobalSound("star.theme2_44")
+	elseif caster:GetUnitName()== "npc_dota_hero_bane" then
+		StopGlobalSound("star.theme2_42")
+		StopGlobalSound("star.theme2_43")
 	elseif caster:GetUnitName()== "npc_dota_hero_nevermore" then
-	StopGlobalSound("star.theme2_40")
-	StopGlobalSound("star.theme2_41")
+		StopGlobalSound("star.theme2_40")
+		StopGlobalSound("star.theme2_41")
 	elseif caster:GetUnitName()== "npc_dota_hero_pangolier" then
-	StopGlobalSound("star.theme2_37")
+		StopGlobalSound("star.theme2_37")
 	elseif caster:GetUnitName()== "npc_dota_hero_pudge" then
-	StopGlobalSound("star.theme2_33")
+		StopGlobalSound("star.theme2_33")
 	elseif caster:GetUnitName()== "npc_dota_hero_faceless_void" then
-	StopGlobalSound("star.theme2_32")
+		StopGlobalSound("star.theme2_32")
 	elseif caster:GetUnitName()== "npc_dota_hero_queenofpain" then
-	StopGlobalSound("star.theme2_21")
+		StopGlobalSound("star.theme2_21")
 	elseif caster:GetUnitName()== "npc_dota_hero_abyssal_underlord" then
-	StopGlobalSound("star.theme2_27")
+		StopGlobalSound("star.theme2_27")
 	elseif caster:GetUnitName()== "npc_dota_hero_bloodseeker" then
-	StopGlobalSound("star.theme2_20")
+		StopGlobalSound("star.theme2_20")
 	elseif caster:GetUnitName()== "npc_dota_hero_night_stalker" then
-	StopGlobalSound("star.theme2_19")
+		StopGlobalSound("star.theme2_19")
 	elseif caster:GetUnitName()== "npc_dota_hero_antimage" then
-	StopGlobalSound("star.theme2_10")
+		StopGlobalSound("star.theme2_10")
 	elseif caster:GetUnitName()== "npc_dota_hero_skeleton_king" then
-	StopGlobalSound("star.theme2_28")
+		StopGlobalSound("star.theme2_28")
 	elseif caster:GetUnitName()== "npc_dota_hero_ancient_apparition" then
-	StopGlobalSound("star.theme2_11")
+		StopGlobalSound("star.theme2_11")
 	elseif caster:GetUnitName()== "npc_dota_hero_beastmaster" then
-	StopGlobalSound("star.theme2_35")
+		StopGlobalSound("star.theme2_35")
 	elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
-	StopGlobalSound("star.theme2_18")
+		StopGlobalSound("star.theme2_18")
 	elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
-	StopGlobalSound("star.theme2_12")
+		StopGlobalSound("star.theme2_12")
 	elseif caster:GetUnitName()== "npc_dota_hero_alchemist" then
-	StopGlobalSound("star.theme2_13")
-	StopGlobalSound("star.theme2_48")
+		StopGlobalSound("star.theme2_13")
+		StopGlobalSound("star.theme2_48")
 	elseif caster:GetUnitName()== "npc_dota_hero_void_spirit" then
-	StopGlobalSound("star.theme2_14")
+		StopGlobalSound("star.theme2_14")
 	elseif caster:GetUnitName()== "npc_dota_hero_abaddon" then
-	StopGlobalSound("star.theme2_29")
+		StopGlobalSound("star.theme2_29")
 	elseif caster:GetUnitName()== "npc_dota_hero_death_prophet" then
-	StopGlobalSound("star.theme2_30")
+		StopGlobalSound("star.theme2_30")
     elseif caster:GetUnitName()== "npc_dota_hero_ursa" then
-	StopGlobalSound("star.theme2_31")
-	StopGlobalSound("star.theme2_30")
+		StopGlobalSound("star.theme2_31")
+		StopGlobalSound("star.theme2_30")
 	elseif caster:GetUnitName()== "npc_dota_hero_drow_ranger" then
-
-	StopGlobalSound("star.theme2_16")
-	else 
+		StopGlobalSound("star.theme2_16")
+	elseif caster:GetUnitName()== "npc_dota_hero_arc_warden" then
+		StopGlobalSound("star.theme2_49")
+	elseif caster:GetUnitName()== "npc_dota_hero_sven" then
+		StopGlobalSound("star.theme2_50")
+	else
 	end
 end
 function modifier_star_tier2:StopAllMusic()

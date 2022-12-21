@@ -1,0 +1,381 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	kumagawa.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.392000
+	}
+	kumagawa.1_1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_1_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.768000
+	}
+	kumagawa.2_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_2_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.528000
+	}
+	kumagawa.5_death = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5_death.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.232000
+	}
+	kumagawa.6_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_6_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.128000
+	}
+	kumagawa.1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.720000
+	}
+	kumagawa.fall = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa.fall.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.272000
+	}
+	kumagawa.lightning = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/zuus/lightning_bolt.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.651565
+	}
+	kumagawa.hitted = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_hitted.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.200000
+	}
+	kumagawa.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.825958
+	}
+	kumagawa.3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_3_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kumagawa.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.897958
+	}
+	kumagawa.4_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_4_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.344000
+	}
+	kumagawa.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.545958
+	}
+	kumagawa.5_alter = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5_ulti.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.608000
+	}
+	kumagawa.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.312000
+	}
+	kumagawa.5_1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.369958
+	}
+	kumagawa.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.536000
+	}
+	kumagawa.rocket = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ambient/newyear/rocket_explode01.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.491746
+	}
+	kumagawa.sfx = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kumagawa.5_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kumagawa.shot = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_shot.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kumagawa.7_sfx = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_7_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kumagawa.5_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_5_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+}

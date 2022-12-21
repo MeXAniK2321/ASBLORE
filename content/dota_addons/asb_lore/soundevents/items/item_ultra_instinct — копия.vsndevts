@@ -1,0 +1,565 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	serp.molot = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/serp_molot.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.312000
+	}
+	drip.effect = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/drip_effect.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.626939
+	}
+	super.idol_water = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/water_splash.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.133152
+	}
+	super.idol_water2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/super_idol.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.968000
+	}
+	gay_hammer.theme_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/devils_lyre/unknown_truth/1.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/2.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/3.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/5.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/6.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/7.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/8.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/9.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/10.vsnd",
+			"sounds/items/devils_lyre/unknown_truth/11.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 238.332977
+	}
+	seal.open = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/terrorblade/demon_zeal.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.314966
+	}
+	paimon.scream = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_105.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.137958
+	}
+	seal.strike = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/crit1.vsnd",
+			"sounds/weapons/crit2.vsnd",
+			"sounds/weapons/crit3.vsnd",
+			"sounds/weapons/crit4.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.612245
+	}
+	lyre.casino = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_81.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.913958
+	}
+	spamton.start = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/spamton_activated_first_time.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 9.336000
+	}
+	spamton.deal_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/special_deal.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.632000
+	}
+	spamton.hyperlink_blocked = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/hyperlink_blocked.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.488000
+	}
+	spamton.sad = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/strange_voice.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.432000
+	}
+	spamton.deal_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/big_shot.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.296000
+	}
+	spamton.deal_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/deal_for_you.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.784000
+	}
+	spamton.deal_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/youre_lightner.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.304000
+	}
+	spamton.deal_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/sales_gona_drain_drain.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.232000
+	}
+	spamton.deal_enemy_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/you_lost_control_of_your_life.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.592000
+	}
+	spamton.deal_enemy_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/all_alone_at_the_late_night.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.736000
+	}
+	spamton.deal_enemy_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/all_friends_abandoned_you.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.696000
+	}
+	spamton.theme_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/spamton_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 59.736000
+	}
+	spamton.theme_2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/strapon.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.119999
+	}
+	spamton.theme_3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/spamton_neo_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 63.695999
+	}
+	spamton.theme_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/dialtone_gaster.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 49.017323
+	}
+	spamton.theme_5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/sex_robot.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.504002
+	}
+	spamton.theme_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/big_samurai.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 60.240002
+	}
+	spamton.deal_6 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/wtf_laught.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.824000
+	}
+	spamton.deal_5_1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/its_for_you.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.392000
+	}
+	spamton.deal_enemy_4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/you_and_hochi_mama.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	spamton.deal_7 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/deals_so_good.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.360000
+	}
+	spamton.deal_9 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/enlarge_yourself.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.608000
+	}
+	spamton.deal_8 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/keygen.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.400000
+	}
+	spamton.trash_explosion = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/explosion.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.160000
+	}
+	spamton.garbage = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/living_in_a_garbage_can.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.592000
+	}
+	spamton.garbage_loh = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/big_shit.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.960000
+	}
+	spamton.deal_11 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/friendship.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.205896
+	}
+	spamton.friendship_theme = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/spamton_friendship_theme.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.992000
+	}
+	spamton.deal_enemy_loh = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/hyperlink_blocked_boom.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.897869
+	}
+	kazahstan.yes = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/kazahstan.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.304000
+	}
+	kiberbulling.yes = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/kiberbulling.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.520000
+	}
+	spamton.deal_10 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/spamton/my_eyes_are_burning.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.864000
+	}
+}

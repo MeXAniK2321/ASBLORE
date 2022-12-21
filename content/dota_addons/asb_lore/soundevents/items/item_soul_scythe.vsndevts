@@ -1,0 +1,555 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	soul.piano = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/piano_soul.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 5.760000
+	}
+	fatality.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/finish_him.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.718277
+	}
+	fatality.1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/falatity_theme1.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.296000
+	}
+	fatality.2_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/impostor-kill.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.880000
+	}
+	fatality.2_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/kill_knife.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.941769
+	}
+	fatality.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/fatality.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.089796
+	}
+	fatality.3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/fatality_theme2.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.704000
+	}
+	hell.staff = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hell_staff.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 17.448000
+	}
+	hell.staff_cast = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/dark_willow/fear_location.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.958821
+	}
+	avalon.cast = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/avalon.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.936000
+	}
+	avalon.effect = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/keeper/solar_bind_cast.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.887347
+	}
+	avalon.passive = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/dawnbreaker/healing_touch_powerup.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.942812
+	}
+	magic_girl.cringe = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/cringe.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.400000
+	}
+	voodoo.sfx = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/vodoo_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	horn.slash = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/juggernaut/omnislash_attack1.vsnd",
+			"sounds/weapons/hero/juggernaut/omnislash_attack2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.334354
+	}
+	bash.bash = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/skull_basher.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.197279
+	}
+	van.dark = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/van_dark.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.449958
+	}
+	bash.active = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/dawnbreaker/fire_wreath_smash.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.999500
+	}
+	bonk = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/bonk.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.456000
+	}
+	kyoka.hit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/mkb_pierce.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.574104
+	}
+	ne.vmerla = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chatwheel/new/chatwheel_103.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 6.024000
+	}
+	kyoka.use = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/nullifier_target.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.240590
+	}
+	black.march_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/march1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.657958
+	}
+	escalibur.self = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/escalibur2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 21.384001
+	}
+	escalibur = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/escalibur3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.545958
+	}
+	black.march = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/march.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.097958
+	}
+	gay.hammer = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gay_hammer.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.393958
+	}
+	tryme.bitch = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/try_me_bitch.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.912000
+	}
+	chomusuke.exp = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/big_magic_explosion.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.536000
+	}
+	power.of_youth = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/power_of_youth.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.048000
+	}
+	trans_am = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/trans_am.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.529958
+	}
+	hidnotea.tea = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hidnotea_tea.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.800000
+	}
+	crucible.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/crucible.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 15.792000
+	}
+	rocket.team = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/team_rocket.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 4.297958
+	}
+	betelgeuse.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/betelgeuse.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.209958
+	}
+	betelgeuse.subaru = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/subaru_betelgeuse.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 3.289958
+	}
+	betelgeuse.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/betelgeuse2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.761958
+	}
+}

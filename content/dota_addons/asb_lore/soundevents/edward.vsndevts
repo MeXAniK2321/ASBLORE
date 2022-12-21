@@ -1,0 +1,279 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	edward.clap = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/edwardelric_clap.vsnd",
+			"sounds/edward/edward_clap_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.720000
+	}
+	edward.transmute = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/transmutation_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.064000
+	}
+	edward.fallen_stone = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/visage/stone_form02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320454
+	}
+	edward.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/edward_pathwall_up.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.695057
+	}
+	edward.3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/canon_fire.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.784000
+	}
+	edward.attack = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/sven/attack01.vsnd",
+			"sounds/weapons/hero/sven/attack02.vsnd",
+			"sounds/weapons/hero/sven/attack03.vsnd",
+			"sounds/weapons/hero/sven/attack04.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.710884
+	}
+	edward.3_1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/explosion1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.264000
+	}
+	edward.4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/edward_4.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.429388
+	}
+	edward.4_2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/edward_4_2.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.536000
+	}
+	edward.5_theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/gates_of_truth_theme.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.336000
+	}
+	edward.5_begin = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/eye_of_truth_sound.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.656000
+	}
+	edward.5_gate_open = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/gate_open.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.152000
+	}
+	edward.spear_throw = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/mars/spear_projectile.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.798571
+	}
+	edward.spear_throw_impact = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/mars/spear_target.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	edward.5_gate_close = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/gates_close.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.920000
+	}
+	edward.5_truth_speak = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/gate_of_truth_start.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.008000
+	}
+	edward.4_2_impact = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/sand_king/sand_king_burrow_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.174467
+	}
+}

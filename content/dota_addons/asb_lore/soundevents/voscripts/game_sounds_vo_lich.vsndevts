@@ -1,0 +1,1364 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	lich_lich_spawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_spawn_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/spawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.828571
+	}
+	lich_lich_move_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_21 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_22 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_23 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_24 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_25 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_26 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_27 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.731429
+	}
+	lich_lich_move_28 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 0.992653
+	}
+	lich_lich_move_29 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_move_30 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/move_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.925714
+	}
+	lich_lich_attack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.037551
+	}
+	lich_lich_attack_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_attack_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/attack_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.847347
+	}
+	lich_lich_kill_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.977959
+	}
+	lich_lich_kill_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.123265
+	}
+	lich_lich_kill_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.985306
+	}
+	lich_lich_kill_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.977959
+	}
+	lich_lich_kill_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.123265
+	}
+	lich_lich_kill_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.985306
+	}
+	lich_lich_kill_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.977959
+	}
+	lich_lich_kill_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.123265
+	}
+	lich_lich_kill_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.985306
+	}
+	lich_lich_kill_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.985306
+	}
+	lich_lich_kill_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.977959
+	}
+	lich_lich_kill_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.977959
+	}
+	lich_lich_kill_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/kill_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.123265
+	}
+	lich_lich_death_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	lich_lich_death_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	lich_lich_death_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	lich_lich_death_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	lich_lich_death_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_death_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.880816
+	}
+	lich_lich_death_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/death_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 6.661224
+	}
+	lich_lich_respawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.410612
+	}
+	lich_lich_respawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.410612
+	}
+	lich_lich_respawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.410612
+	}
+	lich_lich_respawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.410612
+	}
+	lich_lich_respawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_respawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/respawn.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.854694
+	}
+	lich_lich_rare_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lich_lich_rare_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lich_lich_rare_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lich_lich_rare_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lich_lich_firstblood_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/sans/voicelines/first_blood.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 4.179592
+	}
+}

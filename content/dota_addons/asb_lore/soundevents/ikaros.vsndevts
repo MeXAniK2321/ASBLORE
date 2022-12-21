@@ -1,0 +1,289 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	ikaros.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.528000
+	}
+	ikaros.1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.176000
+	}
+	ikaros.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.321958
+	}
+	ikaros.3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_3_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.081958
+	}
+	ikaros.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.984000
+	}
+	ikaros.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.976000
+	}
+	ikaros.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.120000
+	}
+	ikaros.5_1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.720000
+	}
+	ikaros.rocket = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ambient/newyear/rocket_explode01.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.491746
+	}
+	ikaros.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.680000
+	}
+	ikaros.6_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_6_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.856000
+	}
+	ikaros.sfx = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320000
+	}
+	ikaros.7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_7.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	ikaros.5_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320000
+	}
+	ikaros.shot = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_shot.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.018775
+	}
+	ikaros.shot_exp = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/big_magic_explosion.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.536000
+	}
+	ikaros.7_sfx = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_7_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	ikaros.5_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_5_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.777958
+	}
+}

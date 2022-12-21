@@ -1,0 +1,195 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	tanjiro.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.856000
+	}
+	tanjiro.9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_9.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.920000
+	}
+	tanjiro.9_blink = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/antimage/blink_in_persona.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.853605
+	}
+	tanjiro.1_hinokami = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hinokami_kagura1.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.632000
+	}
+	tanjiro.3_hinokami = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hinokami_kagura2.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.224000
+	}
+	tanjiro.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.763175
+	}
+	tanjiro.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.088000
+	}
+	tanjiro.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 25.416000
+	}
+	tanjiro.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.144000
+	}
+	tanjiro.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.496000
+	}
+	tanjiro.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_5_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.704000
+	}
+	tanjiro.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/morphling/preattack.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.998685
+	}
+}

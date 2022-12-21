@@ -230,8 +230,8 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				"naofumi_fast_heal",
 				"blood_sacrifice",
 
-				"tohka_inversion",
-				"tatsuya_seal_off",
+				-- "tohka_inversion", --ULTIMATES LEARN'S ON 30 LVL
+				-- "tatsuya_seal_off", --ULTIMATES LEARN'S ON 30 LVL
 				"regrowth",
 				"flash_cast",
 			}

@@ -1,0 +1,259 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	vergil.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.321958
+	}
+	vergil.judgment_cut_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/judgment_cut_1.vsnd",
+		]
+		volume = "20.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.864000
+	}
+	vergil.judgment_cut = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/judgment_cut.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.128000
+	}
+	vergil.judgment_cut_end_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/judgment_cut_end_start.vsnd",
+		]
+		volume = "17.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.752000
+	}
+	vergil.hell_on_earth_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vergil_hell_on_earth_start.vsnd",
+		]
+		volume = "40.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.512000
+	}
+	vergil.hell_on_earth_slam = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vergil_hell_on_earth_slam.vsnd",
+		]
+		volume = "25.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.048000
+	}
+	vergil.motivated = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/motivated.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.112000
+	}
+	vergil.judgment_cut_end_ended = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/judgment_cut_end_ended.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.376000
+	}
+	vergil.4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vergil_4.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.569958
+	}
+	vergil.1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.537958
+	}
+	vergil.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.577958
+	}
+	vergil.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_5_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.017958
+	}
+	vergil.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.384000
+	}
+	vergil.fuck_u = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vergil_fuck_u.vsnd",
+		]
+		volume = "8.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.849958
+	}
+	vergil.5_1_exp = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_5_1_exp.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.640000
+	}
+	vergil.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.513958
+	}
+}

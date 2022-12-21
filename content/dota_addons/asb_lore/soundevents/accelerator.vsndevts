@@ -1,0 +1,211 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Accel.vector = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vector1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.188000
+	}
+	Accel.ikaraga = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikaraga.vsnd",
+		]
+		volume = "8.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.801958
+	}
+	Accel.vector2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vector2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.764000
+	}
+	Accel.Laught = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/laught.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.680000
+	}
+	Accel.Building1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/building1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.904000
+	}
+	Accel.building2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/building2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.508000
+	}
+	Accel.Building3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/building3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.320000
+	}
+	Accel.plasma1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/plasma1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.744000
+	}
+	Accel.plasma2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/plasma2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.628000
+	}
+	Accel.plasma3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/plasma3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.780000
+	}
+	Black.wings = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/black_wings.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99990.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.760000
+	}
+	Black.tornado = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/black_tornado.vsnd",
+		]
+		volume = "7.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.960000
+	}
+	Accel.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/accel_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.576000
+	}
+}

@@ -1,0 +1,1196 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	star.theme2_36 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shana_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 38.736000
+	}
+	star.theme2_48 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/drip_goku_theme.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.048000
+	}
+	star.theme2_39 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shuichi/shuichi_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 37.632000
+	}
+	star.theme2_45 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/red_arc_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.336000
+	}
+	star.theme2_46 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/neko_arc_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 29.808001
+	}
+	star.theme3_17 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/arhetype_earth_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 33.048000
+	}
+	star.theme3_19 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/naofumi/rage_shield.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.288000
+	}
+	star.theme3_20 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/naofumi/blood_sacrifice_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 27.504000
+	}
+	star.theme2_37 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ulquiorra/ressurection_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 39.167999
+	}
+	star.theme2_38 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikki/ikki_raiko_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 24.959999
+	}
+	star.theme_17 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ulquiorra/pablo_escobar_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 29.520000
+	}
+	star.theme_3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/edward/edward_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 25.896000
+	}
+	star.theme_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/other_items/depression.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 16.608000
+	}
+	star.theme_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/lelouch_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 36.647999
+	}
+	star.theme2_42 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 39.888000
+	}
+	star.theme2_43 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_2nd_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 38.256001
+	}
+	star.theme_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikki_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 38.903999
+	}
+	star.theme2_47 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/esdeath_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 28.680000
+	}
+	star.theme_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/deidara_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 25.200001
+	}
+	star.theme_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kanade_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.097958
+	}
+	star.theme2_40 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rumia_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.408001
+	}
+	star.theme2_41 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia_rofl_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.792000
+	}
+	star.theme_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/blackrock_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.384001
+	}
+	star.theme_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tsuna_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.431999
+	}
+	star.theme_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/crucible.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 15.792000
+	}
+	star.theme_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kurapika_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 29.544001
+	}
+	star.theme_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jellal_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.143999
+	}
+	star.theme_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_legends/legend9.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 70.056000
+	}
+	star.theme_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/daisuke_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.600000
+	}
+	star.theme3_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rimuru_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 49.824001
+	}
+	star.theme2_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/issei_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.455999
+	}
+	star.theme2_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jin_mori_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 34.200001
+	}
+	star.theme2_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rimuru_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 49.824001
+	}
+	star.theme2_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rimuru_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 49.824001
+	}
+	star.theme2_6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/madara_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 33.888000
+	}
+	star.theme2_7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rimuru_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 49.824001
+	}
+	star.theme2_8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/item_anime_boombox/anime_themes/anime_theme_12.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 156.167999
+	}
+	star.theme2_9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shinobu_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.072001
+	}
+	star.theme2_10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tanjiro_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 25.416000
+	}
+	star.theme2_11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yoshino_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 24.864000
+	}
+	star.theme2_12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/accel_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.576000
+	}
+	star.theme2_13 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ultra_instinct.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 40.175999
+	}
+	star.theme2_14 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/len_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 31.296000
+	}
+	star.theme2_15 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rimuru_harvest_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 35.688000
+	}
+	star.theme2_26 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/saness_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.360001
+	}
+	star.theme2_17 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jin_mori_theme2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 36.287998
+	}
+	star.theme2_44 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/dante/dante_theme.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.504000
+	}
+	star.theme2_18 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/miku_5.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.664001
+	}
+	star.theme2_19 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/subaru_5_1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 43.703999
+	}
+	star.theme2_20 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/aizen_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.400002
+	}
+	star.theme2_21 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/homura_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 34.369957
+	}
+	star.theme2_22 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/pacifist_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 28.416000
+	}
+	star.theme2_23 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 33.383999
+	}
+	star.theme2_24 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_pacifist_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 31.176001
+	}
+	star.theme2_25 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/flandr_theme1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.484898
+	}
+	star.theme2_27 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/escanor_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 39.000000
+	}
+	star.theme2_28 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/shu_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 31.511999
+	}
+	star.theme2_16 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ikaros/ikaros_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 37.328979
+	}
+	star.theme2_32 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kumagawa/kumagawa_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 38.136002
+	}
+	star.theme2_33 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/pika_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.736000
+	}
+	star.theme2_34 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jibril/jibril_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.664001
+	}
+	star.theme3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/flandr_theme2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 63.264000
+	}
+	star.theme3_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/escanor_ultimate_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 71.903999
+	}
+	star.theme2_30 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/pandora_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 29.856001
+	}
+	star.theme2_31 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kanade_theme2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 24.973061
+	}
+	star.theme2_29 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vergil_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.160000
+	}
+	star.theme2_35 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/billy/billy_theme.vsnd",
+		]
+		volume = "7.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.936962
+	}
+	star.theme3_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jin_mori_theme3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 41.520000
+	}
+	star.theme3_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/pika_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 32.736000
+	}
+	star.theme3_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/pikachu/pika_hunting_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 59.304001
+	}
+	star.theme3_6 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/shana/josai.vsnd",
+		]
+		volume = "7.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 9.600000
+	}
+	star.theme3_7 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/yoshino_inverse_theme.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.864000
+	}
+	star.theme3_8 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia_3_theme.vsnd",
+		]
+		volume = "3.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 36.000000
+	}
+	star.theme3_9 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/shana/shana_theme_after_tenpa.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.959999
+	}
+	star.theme3_10 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/chara_genocide_theme2.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 34.680000
+	}
+	star.theme3_11 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/issei/juggernaut_drive_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 32.736000
+	}
+	star.theme3_12 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/baal/baal_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 31.584000
+	}
+	star.theme3_13 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/baal/ei_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 32.639999
+	}
+	star.theme3_14 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/arcueid/arhetype_earth_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 33.048000
+	}
+	star.theme3_15 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/sans_last_breath_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 20.808001
+	}
+	star.theme3_18 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/naofumi/iron_maiden_theme.vsnd",
+		]
+		volume = "0.500000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 25.271999
+	}
+	star.theme2_49 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tatsuya/tatsuya_theme.vsnd",
+			"sounds/tatsuya/tatsuya_strange_theme.vsnd",
+
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 38.736000
+	}
+	star.theme2_50 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tohka/inversion_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 38.736000
+	}
+}

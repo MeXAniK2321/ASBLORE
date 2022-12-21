@@ -1,0 +1,387 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	frisk.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.672000
+	}
+	chara.true_appearance = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_appearience.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.176000
+	}
+	chara.idea = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.633958
+	}
+	frisk.1_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320000
+	}
+	frisk.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.633958
+	}
+	frisk.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.960000
+	}
+	frisk.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.409958
+	}
+	frisk.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.296000
+	}
+	frisk.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.824000
+	}
+	frisk.7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_7.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.160000
+	}
+	frisk.8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_8.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.416000
+	}
+	frisk.8_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_8_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.056000
+	}
+	chara.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/centaur/double_edge_precast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.013492
+	}
+	frisk.7_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/frisk_7_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.992000
+	}
+	frisk.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gaster_blaster.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.111474
+	}
+	chara.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/phantom_assassin/arcana_layer.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.893538
+	}
+	chara_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.624000
+	}
+	chara.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.624000
+	}
+	chara.41 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_slash.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.400000
+	}
+	chara.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.080000
+	}
+	chara.5_rofl = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.128000
+	}
+	chara.5_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_5_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 8.520000
+	}
+	chara.8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_8.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.081958
+	}
+	chara.died = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chara_died.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.681958
+	}
+}

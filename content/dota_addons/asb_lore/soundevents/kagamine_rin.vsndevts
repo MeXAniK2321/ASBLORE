@@ -1,0 +1,211 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Sound.rip = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sound_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.944000
+	}
+	len.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/len_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.072000
+	}
+	len.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/len_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.272000
+	}
+	len.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/len_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 31.296000
+	}
+	Sound.lullaby = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/lullaby.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.312000
+	}
+	Sound.hurricane = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/nyan_nyan.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.372000
+	}
+	Vocaloid_Rin_music_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rin_music_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 69.071999
+	}
+	Vocaloid_Rin_music_2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rin_music_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 89.304001
+	}
+	Vocaloid_Rin_music_3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rin_music_3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 74.112000
+	}
+	Vocaloids.concert = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vocaloids_concert.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 30.072001
+	}
+	Miku.sonic = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/miku_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.032000
+	}
+	Yukari.nova = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yukari_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.628000
+	}
+	mayu.earth = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/mayu_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.392000
+	}
+}

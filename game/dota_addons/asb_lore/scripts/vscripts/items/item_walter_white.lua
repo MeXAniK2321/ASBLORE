@@ -27,7 +27,7 @@ modifier_item_walter_white = modifier_item_walter_white or class({})
 function modifier_item_walter_white:IsHidden()                          return true end
 function modifier_item_walter_white:RemoveOnDeath()                     return false end
 function modifier_item_walter_white:IsPurgable()                        return false end
-function modifier_item_walter_white:GetAttributes()                     return MODIFIER_ATTRIBUTE_MULTIPLE end
+--function modifier_item_walter_white:GetAttributes()                     return MODIFIER_ATTRIBUTE_MULTIPLE end
 function modifier_item_walter_white:DeclareFunctions()
     local tFunc =   {
                         MODIFIER_PROPERTY_HEALTH_BONUS,

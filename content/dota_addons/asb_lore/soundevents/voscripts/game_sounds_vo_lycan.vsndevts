@@ -1,0 +1,1364 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	lycan_lycan_spawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_spawn_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/spawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 10.240000
+	}
+	lycan_lycan_move_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_15 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_16 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_17 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_18 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_19 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_20 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_21 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_22 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_23 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_24 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_25 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_26 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_27 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.795102
+	}
+	lycan_lycan_move_28 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.227755
+	}
+	lycan_lycan_move_29 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_move_30 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/move_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.742857
+	}
+	lycan_lycan_attack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_attack_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_attack_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/attack_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.533878
+	}
+	lycan_lycan_kill_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.970612
+	}
+	lycan_lycan_kill_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.918367
+	}
+	lycan_lycan_kill_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_kill_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.970612
+	}
+	lycan_lycan_kill_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.918367
+	}
+	lycan_lycan_kill_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_kill_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.970612
+	}
+	lycan_lycan_kill_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.918367
+	}
+	lycan_lycan_kill_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_kill_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_kill_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.970612
+	}
+	lycan_lycan_kill_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.970612
+	}
+	lycan_lycan_kill_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/kill_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.918367
+	}
+	lycan_lycan_death_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_death_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_death_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_death_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_death_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_death_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 3.239184
+	}
+	lycan_lycan_death_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/death_1.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.115918
+	}
+	lycan_lycan_respawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.873469
+	}
+	lycan_lycan_respawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.873469
+	}
+	lycan_lycan_respawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.873469
+	}
+	lycan_lycan_respawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn_2.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.873469
+	}
+	lycan_lycan_respawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_respawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/respawn.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 1.358367
+	}
+	lycan_lycan_rare_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/rare.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lycan_lycan_rare_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/rare.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lycan_lycan_rare_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/rare.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lycan_lycan_rare_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/rare.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+	}
+	lycan_lycan_firstblood_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/jellal/voicelines/first_blood.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 7.183673
+	}
+}

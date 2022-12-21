@@ -1,0 +1,258 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	reinforce.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/1.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.142041
+	}
+	reinforce.darkness_parade = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/8.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.592000
+	}
+	reinforce.parade_exp = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/sfx explosion 2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.914399
+	}
+	reinforce.2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/7.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.960000
+	}
+	reinforce.rockets = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.324898
+	}
+	reinforce.rockets_exp = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/sfx explosion 1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.607596
+	}
+	reinforce.barrier = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.403265
+	}
+	reinforce.cage = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/13.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.808000
+	}
+	reinforce.demolish = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/11.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.944000
+	}
+	reinforce.4_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/reinforce_4_voiceline.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+	}
+	reinforce.4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/15.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.690612
+	}
+	reinforce.4_storm = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/mirana/starstorm_impact01.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.027506
+	}
+	reinforce.5 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/5.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.928000
+	}
+	reinforce.5_5 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/12.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 14.160000
+	}
+	reinforce.starlight = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/reinforce/10.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 12.648000
+	}
+	starlight.breker_beam = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/luna/luna_eclipse_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.558073
+	}
+}

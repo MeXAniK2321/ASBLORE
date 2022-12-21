@@ -1,0 +1,325 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	yoshino.snowball = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/snejok.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.332000
+	}
+	yoshino.snowball_hit = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/misc/snowball_target.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.095510
+	}
+	yoshino.tornado = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino_tornado.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.656000
+	}
+	yoshino.tornado_pre = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/creep/neutral/wildkin_summon_tornado_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.534240
+	}
+	yoshino.rite = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/inversion.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.160000
+	}
+	yoshino.rite2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/creep/neutral/orgremagi_iceboost.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.846009
+	}
+	yoshino.black_rite = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/yoshino_black_rite_sfx.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.992000
+	}
+	yoshino.black_sword = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/falling_sword.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.696000
+	}
+	yoshino.black_age = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/black_age.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.385958
+	}
+	yoshino.inversion_blizzard_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/inversion_blizzard_start.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.000000
+	}
+	yoshino.cry = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino_cry.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.536000
+	}
+	yoshino.spikes = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/ice_spike.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.792000
+	}
+	yoshino.cry_loop = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/ancient_apparition/ice_vortex_lp.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.299637
+	}
+	yoshino.frost_explosion = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/frost_explosion1.vsnd",
+			"sounds/yoshino/frost_explosion2.vsnd",
+			"sounds/yoshino/frost_explosion3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.704000
+	}
+	yoshino.black_tornado = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/invoker/tornado_cast_ti6.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.501814
+	}
+	yoshino.inversion_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/yoshino/inversion_start.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 8.304000
+	}
+	yoshino.zayac = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/zayac.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.276000
+	}
+	yoshino.zayac_attack = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/zayac_attack_1_0.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.368000
+	}
+	yoshino.theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/yoshino_theme.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 24.864000
+	}
+	yoshino.zayac_attack2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/zayac_attack_1_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.692000
+	}
+}

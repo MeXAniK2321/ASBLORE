@@ -1,0 +1,299 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	rumia.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/vengeful_spirit/missile_target_ti8.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.822417
+	}
+	rumia.1_impact = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/vengeful_spirit/attack_impact2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.968254
+	}
+	rumia.3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_kill_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.880000
+	}
+	rumia.3_sfx = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia_3_sfx.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.520000
+	}
+	rumia.5_2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_attack_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.716735
+	}
+	rumia.awake = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia_awake.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.048000
+	}
+	rumia.1_ex = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia1_ex.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.852971
+	}
+	rumia.ex_5_start = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/earthshaker/enc/echo_slam_arcana.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.541701
+	}
+	rumia_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/drow_ranger/silence.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.420952
+	}
+	rumia_ex.2_pre = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/nightstalker/crippling_fear_aura_ti10.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 7.556576
+	}
+	rumia.ex_attack = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia_attack1.vsnd",
+			"sounds/rumia/rumia_attack2.vsnd",
+			"sounds/rumia/rumia_attack3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.128000
+	}
+	rumia_ex.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rumia/rumia2_ex.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.448000
+	}
+	rumia_ex.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/pangolier/heart_piercer_creep.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.503401
+	}
+	rumia_ex.3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/queenofpain/blink_in_layer.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.863708
+	}
+	rumia_ex.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/vo/nevermore/nev_kill_01.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.089796
+	}
+	rumia_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/lifestealer/consume.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.178685
+	}
+	rumia_theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/rumia_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 30.408001
+	}
+	rumia_crit1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/crit1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.612245
+	}
+	rumia_crit2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/crit2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.612245
+	}
+}

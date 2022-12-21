@@ -1,0 +1,420 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	touma.1_fail = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/swoosh.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.944000
+	}
+	touma.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_10.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.744000
+	}
+	touma.1_1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_11.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.744000
+	}
+	touma.1_2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_3.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.600000
+	}
+	touma.imagine = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_sfx1.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.366894
+	}
+	touma.imagine_counter = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_sfx_alt.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.688000
+	}
+	touma.4_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_punch_start.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.664490
+	}
+	touma.4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/hero/shared/general07.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.363810
+	}
+	touma.grow = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/treant/overgrowth_target04.vsnd",
+		]
+		volume = "0.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.927619
+	}
+	touma.4_voiceline_end = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_puch_end.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.933061
+	}
+	touma.3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_5.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.864000
+	}
+	touma.3_2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_4.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.600000
+	}
+	touma.3_3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_9.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.090408
+	}
+	touma.3_4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_3.vsnd",
+		]
+		volume = "6.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.600000
+	}
+	touma.3_base_voice = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_combo2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.176576
+	}
+	touma.3rd_alt_combo_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_combo_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.575760
+	}
+	touma.alt_combo_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_combo3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.045964
+	}
+	touma.3rd_combo_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_combo4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.751270
+	}
+	touma.arm_loss = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_arm_loss.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.392000
+	}
+	Touma.5 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_5.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.120000
+	}
+	Touma.dragon_cry = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_dragon_sfx.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.424000
+	}
+	Touma.5_kill = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/gore_bite.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.590583
+	}
+	touma.punch_theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_punch_theme.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 37.799183
+	}
+	touma.punch_theme_true = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_theme.vsnd",
+		]
+		volume = "2.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 26.304001
+	}
+	touma.true_gender_equiality_voiceline = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_rech.vsnd",
+		]
+		volume = "8.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 7.992000
+	}
+	touma.gender_theme = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/babe_po_ebalu_theme.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 13.248000
+	}
+	touma.gender_rech = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/touma_true_gender_equality_start.vsnd",
+		]
+		volume = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.430454
+	}
+}

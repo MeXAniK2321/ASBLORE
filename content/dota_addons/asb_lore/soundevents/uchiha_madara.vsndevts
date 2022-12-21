@@ -1,0 +1,195 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Goka.Mekkaku = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/katon.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.104000
+	}
+	ryen.hoka = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ryen_hoka.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.590204
+	}
+	Madara.Sharingan = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/sharingan.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.592000
+	}
+	Jukai.Kotan = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jukai_kotan.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.456000
+	}
+	JukaiKotan.Grow = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jukai_kotan_grow.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.228000
+	}
+	Tengai.Shinsei = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tengai_shinsei.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.520000
+	}
+	Tengai.Shinsei_land = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/elder_titan/stomp_cast_layer.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.945465
+	}
+	Tengai.Shinsei_second = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/tengai_shinsei_second_meteorite.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.016000
+	}
+	Perfect.Susano = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/perfect_susano.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.952000
+	}
+	Susano.Hit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/perfect_susano_hit.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 5.472000
+	}
+	katon.flame = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/katon_flame.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	Susano.Theme = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/madara_theme.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		volume_fallof_min = "599999.000000"
+		limiter_on = "0.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 33.888000
+	}
+}

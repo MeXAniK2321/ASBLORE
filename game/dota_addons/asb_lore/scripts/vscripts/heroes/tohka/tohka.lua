@@ -745,6 +745,7 @@ function tohka_inversion:OnSpellStart()
 -- 	if not _G.MusicBox:HasModifier("modifier_star_tier3") then
 -- _G.MusicBox:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
 -- end
+	caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
     self:EndCooldown()
 	self:PlayEffects()
 

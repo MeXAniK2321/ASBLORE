@@ -694,11 +694,6 @@ tatsuya_seal_off = class({})
 
 function tatsuya_seal_off:IsStealable() return true end
 function tatsuya_seal_off:IsHiddenWhenStolen() return false end
-function tatsuya_seal_off:Spawn()
-	if IsServer() then
-		self:SetLevel(1)
-	end
-end
 function tatsuya_seal_off:OnUpgrade()
     local ability = self:GetCaster():FindAbilityByName("material_burst")
     if ability and ability:GetLevel() < self:GetLevel() then
@@ -730,6 +725,7 @@ function tatsuya_seal_off:OnSpellStart()
 -- 	if not _G.MusicBox:HasModifier("modifier_star_tier3") then
 -- _G.MusicBox:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
 -- end
+	caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
     self:EndCooldown()
 	self:PlayEffects(500)
 end

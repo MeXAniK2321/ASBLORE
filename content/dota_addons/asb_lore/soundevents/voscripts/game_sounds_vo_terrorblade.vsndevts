@@ -1,0 +1,1081 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	terrorblade_terr_spawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_spawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_spawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_spawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_spawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_battlebegins_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_battlebegins_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_firstblood_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_firstblood.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_firstblood_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_firstblood.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_firstblood_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_firstblood.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_firstblood_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_firstblood.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_03.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_04.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_05.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_06.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_03.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_04.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_03.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_move_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_04.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_attack.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_05.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_06.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_03.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_06.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_attack_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_move_04.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_levelup_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_levelup.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_12 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_13 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_kill_14 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_kill.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_death_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_die.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_10 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_respawn_11 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_spawn_01.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_thanks_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_arigato.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_thanks_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_arigato.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_thanks_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_arigato.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_underattack_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_arigato.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_rare_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_rare_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_rare_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_01 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_02 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_03 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_04 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_05 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_06 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_07 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_08 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+	terrorblade_terr_laugh_09 = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/miku/miku_rare.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+		vsnd_duration = 0.000000
+	}
+}
