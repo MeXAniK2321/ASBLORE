@@ -66,187 +66,187 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
                 }
                else if (playerInfo.player_selected_hero == "npc_dota_hero_alchemist")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/goku.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/goku.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_axe")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/bogdan.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/bogdan.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_elder_titan")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/reinforce.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/reinforce.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_beastmaster")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/billy.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/billy.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_bristleback")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/accelerator.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/accelerator.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_bounty_hunter")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/edward_elric.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/edward_elric.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_chaos_knight")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/flandre.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/flandre.png" );
 				}
-					else if (playerInfo.player_selected_hero == "npc_dota_hero_sven")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_sven")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/tohka.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/tohka.png" );
 				}
-				else if (playerInfo.player_selected_hero == "npc_dota_hero_tidehunter")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_marci")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/naofumi.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/naofumi.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_slark")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/arcueid.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/arcueid.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_dragon_knight")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/issei.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/issei.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_life_stealer")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/shuichi.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/shuichi.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_omniknight")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/keyaru.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/keyaru.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_pangolier")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/ulquiorra.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/ulquiorra.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_kunkka")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/madara.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/madara.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_antimage")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/tanjiro.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/tanjiro.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_phantom_lancer")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/baal.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/baal.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_lycan")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/jellal.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/jellal.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_magnataur")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/kambe.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/kambe.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_night_stalker")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/subaru.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/subaru.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_juggernaut")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/ikki.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/ikki.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_centaur")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/shu.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/shu.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_undying")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/touma.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/touma.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_pudge")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/pika.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/pika.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_abyssal_underlord")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/escanor.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/escanor.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_bloodseeker")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/aizen.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/aizen.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_tusk")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/shinobu.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/shinobu.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_drow_ranger")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/ikaros.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/ikaros.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_faceless_void")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/kumagawa.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/kumagawa.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_monkey_king")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/mori.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/mori.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_naga_siren")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/brs.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/brs.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_nyx_assassin")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/kurapika.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/kurapika.png" );
 				}
-					else if (playerInfo.player_selected_hero == "npc_dota_hero_nevermore")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_nevermore")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/rumia.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/rumia.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_spectre")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/frisk.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/frisk.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_terrorblade")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/miku.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/miku.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_ursa")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/kanade.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/kanade.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_ancient_apparition")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/yoshino.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/yoshino.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_bane")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/yukari.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/yukari.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_dark_seer")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/tsuna.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/tsuna.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_dark_willow")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/jibril.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/jibril.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_obsidian_destroyer")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/pandora.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/pandora.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_lich")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/sans.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/sans.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_oracle")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/rimuru.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/rimuru.png" );
 				}
-					else if (playerInfo.player_selected_hero == "npc_dota_hero_arc_warden")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_arc_warden")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/tatsuya.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/tatsuya.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_queenofpain")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/homura.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/homura.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_techies")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/deidara.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/deidara.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_void_spirit")
 				{
@@ -254,27 +254,27 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_winter_wyvern")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/lelouch.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/lelouch.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_ember_spirit")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/shana.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/shana.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_legion_commander")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/esdeath.png" );
+			    		playerPortrait.SetImage( "file://{images}/heroes/esdeath.png" );
 				}
-					else if (playerInfo.player_selected_hero == "npc_dota_hero_mars")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_mars")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/dante.png" );
+			  		playerPortrait.SetImage( "file://{images}/heroes/dante.png" );
 				}
-					else if (playerInfo.player_selected_hero == "npc_dota_hero_riki")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_riki")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/shiki.png" );
+			 		playerPortrait.SetImage( "file://{images}/heroes/riki.png" );
 				}
-				else if (playerInfo.player_selected_hero == "npc_dota_hero_chen")
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_razor")
 				{
-			    		playerPortrait.SetImage( "file://{images}heroes/new_leloch.png" );
+			 		playerPortrait.SetImage( "file://{images}/heroes/ichigo.png" );
 				}
 				else
 				{
