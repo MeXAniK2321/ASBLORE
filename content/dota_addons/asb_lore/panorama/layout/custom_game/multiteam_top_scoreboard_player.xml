@@ -1,8 +1,8 @@
 <root>
 	<styles>
 		<include src="s2r://panorama/styles/dotastyles.css" />
-		<include src="s2r://panorama/styles/custom_game/multiteam_top_scoreboard.css" />
-		<include src="s2r://panorama/styles/custom_game/shared_scoreboard_styles.css" />
+		<include src="file://{resources}/styles/custom_game/multiteam_top_scoreboard.css" />
+		<include src="file://{resources}/styles/custom_game/shared_scoreboard_styles.css" />
 	</styles>
 	<script>
 	function PortraitClicked()
@@ -20,7 +20,7 @@
 				<Panel hittest="false" id="PlayerColorBar" />
 				<Image hittest="false" id="HeroIcon" />
 			</Button>
-			<Image hittest="false" id="DisconnectionIndicator" src="s2r://panorama/images/custom_game/icon_disconnect_png.vtex" />
+			<Image hittest="false" id="DisconnectionIndicator" src="file://{resources}/images/custom_game/icon_disconnect.png" />
 		</Panel>
 		<Panel hittest="false" id="UltimateIndicatorContainer">
 			<Panel hittest="false" id="UltimateIndicatorBG" class="UltimateIndicatorShared" />

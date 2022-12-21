@@ -1,6 +1,6 @@
 <!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/custom_game/timer_png.vtex" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/custom_game/timer.png" />
 	</Panel>
 </root>

@@ -1,7 +1,7 @@
 <root>
 <scripts>
-		<include src="s2r://panorama/scripts/custom_game/playertables_base.js" />
-		<include src="s2r://panorama/scripts/custom_game/vector_target.js" />
+		<include src="file://{resources}/scripts/custom_game/playertables_base.js" />
+		<include src="file://{resources}/scripts/custom_game/vector_target.js" />
 	</scripts>
 	<script>
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
@@ -38,16 +38,16 @@
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "#8c2af4;"; // { 140, 42, 244 }	--		Purple
 
 		GameUI.CustomUIConfig().team_icons = {}
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "s2r://panorama/images/custom_game/team_icons/team_icon_tiger_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "s2r://panorama/images/custom_game/team_icons/team_icon_monkey_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_1] = "s2r://panorama/images/custom_game/team_icons/team_icon_dragon_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "s2r://panorama/images/custom_game/team_icons/team_icon_dog_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "s2r://panorama/images/custom_game/team_icons/team_icon_rooster_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "s2r://panorama/images/custom_game/team_icons/team_icon_ram_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "s2r://panorama/images/custom_game/team_icons/team_icon_rat_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "s2r://panorama/images/custom_game/team_icons/team_icon_boar_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "s2r://panorama/images/custom_game/team_icons/team_icon_snake_01_png.vtex";
-		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "s2r://panorama/images/custom_game/team_icons/team_icon_horse_01_png.vtex";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "file://{resources}/images/custom_game/team_icons/team_icon_tiger_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "file://{resources}/images/custom_game/team_icons/team_icon_monkey_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_1] = "file://{resources}/images/custom_game/team_icons/team_icon_dragon_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "file://{resources}/images/custom_game/team_icons/team_icon_dog_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "file://{resources}/images/custom_game/team_icons/team_icon_rooster_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "file://{resources}/images/custom_game/team_icons/team_icon_ram_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "file://{resources}/images/custom_game/team_icons/team_icon_rat_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "file://{resources}/images/custom_game/team_icons/team_icon_boar_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "file://{resources}/images/custom_game/team_icons/team_icon_snake_01.png";
+		GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "file://{resources}/images/custom_game/team_icons/team_icon_horse_01.png";
 		
 		function FindDotaHudElementTest(id)
    		{  

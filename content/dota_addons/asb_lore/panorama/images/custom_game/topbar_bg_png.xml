@@ -1,5 +1,5 @@
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/custom_game/topbar_bg_png.vtex" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/custom_game/topbar_bg.png" />
 	</Panel>
 </root>

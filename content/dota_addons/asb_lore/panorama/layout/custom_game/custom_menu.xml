@@ -1,10 +1,10 @@
 <root>
 	<styles>
-    	<include src="s2r://panorama/styles/custom_game/custom_menu.css"/>
+    	<include src="file://{resources}/styles/custom_game/custom_menu.css"/>
 	</styles>
 	<scripts>
-		<include src="s2r://panorama/scripts/custom_game/custom_menu.js" />
-		<include src="s2r://panorama/scripts/custom_game/custom_utils.js" />
+		<include src="file://{resources}/scripts/custom_game/custom_menu.js" />
+		<include src="file://{resources}/scripts/custom_game/custom_utils.js" />
 	</scripts>
 
 	<Panel class="CustomMenu" hittest="false">

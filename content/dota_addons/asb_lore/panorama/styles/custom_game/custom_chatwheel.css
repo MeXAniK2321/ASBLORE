@@ -108,7 +108,7 @@
 	transform: translateY( 4px );
 	vertical-align: middle;
 	margin-top: -8px;
-	background-image: url("s2r://panorama/images/hud/reborn/icon_scoreboard_mute_sound_psd.vtex");
+	background-image: url("file://{resources}/images/hud/reborn/icon_scoreboard_mute_sound.psd");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-color: green;
@@ -157,7 +157,7 @@
 	horizontal-align: center;
 	width: 14px;
 	height: 14px;
-	background-image: url("s2r://panorama/images/control_icons/lock_small_png.vtex");
+	background-image: url("file://{resources}/images/control_icons/lock_small.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -190,7 +190,7 @@
 
 #WheelBG
 {
-	background-image: url("s2r://panorama/images/chat_wheel/circle_bg_png.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/circle_bg.png");
 	background-size: contain;
 	horizontal-align: center;
 	vertical-align: middle;
@@ -202,7 +202,7 @@
 
 #WheelCenter
 {
-	background-image: url("s2r://panorama/images/chat_wheel/circle_png.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/circle.png");
 	background-size: contain;
 	horizontal-align: center;
 	vertical-align: middle;
@@ -212,7 +212,7 @@
 
 #WheelBG2
 {
-	background-image: url("s2r://panorama/images/chat_wheel/circle_bg2_png.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/circle_bg2.png");
 	background-size: contain;
 	horizontal-align: center;
 	vertical-align: middle;
@@ -223,7 +223,7 @@
 
 #WheelPointer
 {
-	background-image: url("s2r://panorama/images/chat_wheel/circle_pointer_png.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/circle_pointer.png");
 	background-size: contain;
 	horizontal-align: center;
 	vertical-align: middle;
@@ -242,7 +242,7 @@
 
 #Bubble
 {
-	background-image: url("s2r://panorama/images/chat_wheel/cursor_png.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/cursor.png");
 	horizontal-align: center;
 	vertical-align: middle;
 	height: 46px;
@@ -275,7 +275,7 @@
 	margin-left: 2px;
 	brightness: 2.0;
 	transform: rotateZ( -90deg ) rotateX( 0deg ) translate3d( 0px, -60px, 0px );
-	background-image: url("s2r://panorama/images/chat_wheel/arrow_psd.vtex");
+	background-image: url("file://{resources}/images/chat_wheel/arrow.psd");
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;

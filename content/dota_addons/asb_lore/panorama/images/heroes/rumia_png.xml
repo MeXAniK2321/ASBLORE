@@ -1,6 +1,6 @@
 <!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/heroes/rumia_png.vtex" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/heroes/rumia.png" />
 	</Panel>
 </root>

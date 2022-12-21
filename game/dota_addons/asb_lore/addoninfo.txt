@@ -1,53 +1,59 @@
-"AddonInfo"
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
-	"addontitle"					"LoreASB"
-	"addon_game_name"				"LoreASB"
-	"addonversion"					"1.0"
-	"addontagline"					"LoreASB"
-	"addonauthor"					"All Fiction"
-
-	"HeroGuidesSupported" 			"1"
-	"ShouldForceDefaultGuide"		"0"
-	"PenaltiesEnabled"				"0"
-	"EnablePickRules"				"1"
-	"CheckAFKPlayers"				"0"
-
-	maps			"ruin_solo balance_duo mines_trio desert_quintet"  
-	
-	"IsPlayable"	"1"
-	
-	"ruin_solo"
-	{
-					"MaxPlayers"                    "10"
-	}
-
-	
-	"balance_duo"
-	{
-					"MaxPlayers"                    "10"
-	}
-	"mines_trio"
-	{
-					"MaxPlayers"                    "9"
-	}
-	"desert_quintet"
-	{
-					"MaxPlayers"                    "15"
-	}
-	
-
-	
-	"Default_Keys"
-	{
-		"01"
+	addontitle = "LoreASB"
+	addon_game_name = "LoreASB"
+	addonversion = 1.0
+	addontagline = "LoreASB"
+	addonauthor = "All Fiction"
+	HeroGuidesSupported = 1
+	ShouldForceDefaultGuide = 0
+	PenaltiesEnabled = 0
+	EnablePickRules = 1
+	CheckAFKPlayers = 0
+	maps = 
+	[
+		"ruin_solo",
+		"balance_duo",
+		"mines_trio",
+		"desert_quintet",
+	]
+	IsPlayable = 1
+	Default_Keys = 
+	[
 		{
-			"Key"       "L"
-			"Command"   "+WheelButton"
-			"Name"      "CustomCommand"
-		}
-
-		
-	}
-
-	
+			Key = "L"
+			Command = "+WheelButton"
+			Name = "CustomCommand"
+		},
+	]
+	map_options = 
+	[
+		{
+			MaxPlayers = 15
+			map = "desert_quintet"
+		},
+		{
+			MaxPlayers = 9
+			map = "mines_trio"
+		},
+		{
+			MaxPlayers = 10
+			map = "balance_duo"
+		},
+		{
+			MaxPlayers = 10
+			map = "ruin_solo"
+		},
+	]
+	HideInTools = false
+	IsTemplate = false
+	DefaultMap = ""
+	DisableIK = false
+	EventGame = false
+	hero_picker = null
+	ForceDefaultGuide = true
+	MinimalPrecache = false
+	MinPlayers = 1
+	MaxPlayers = 10
+	TeamCount = -1
 }

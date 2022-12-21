@@ -1,11 +1,11 @@
 <!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image src="s2r://panorama/images/heroes/shiki_png.vtex" />
-		<Image src="s2r://panorama/images/heroes/new_leloch_png.vtex" />
-		<Image src="s2r://panorama/images/heroes/selection/npc_dota_hero_riki_png.vtex" />
-		<Image src="s2r://panorama/images/custom_game/portrait/npc_dota_hero_riki_png.vtex" />
-		<Image src="s2r://panorama/images/custom_game/selection/npc_dota_hero_riki_png.vtex" />
-		<Image src="s2r://panorama/images/heroes/selection/npc_dota_hero_riki_png.vtex" />
+		<Image src="file://{resources}/images/heroes/shiki.png" />
+		<Image src="file://{resources}/images/heroes/new_leloch.png" />
+		<Image src="file://{resources}/images/heroes/selection/npc_dota_hero_riki.png" />
+		<Image src="file://{resources}/images/custom_game/portrait/npc_dota_hero_riki.png" />
+		<Image src="file://{resources}/images/custom_game/selection/npc_dota_hero_riki.png" />
+		<Image src="file://{resources}/images/heroes/selection/npc_dota_hero_riki.png" />
 	</Panel>
 </root>

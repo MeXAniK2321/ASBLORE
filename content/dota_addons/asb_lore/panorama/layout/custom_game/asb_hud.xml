@@ -1,7 +1,7 @@
 <root>
 	<styles />
 	<scripts>
-		<include src="s2r://panorama/scripts/custom_game/asb_hud.js" />
+		<include src="file://{resources}/scripts/custom_game/asb_hud.js" />
 	</scripts>
 	<snippets />
 	<Panel />

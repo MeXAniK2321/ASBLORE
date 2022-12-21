@@ -1,6 +1,6 @@
 <!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/heroes/brs_png.vtex" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/heroes/brs.png" />
 	</Panel>
 </root>

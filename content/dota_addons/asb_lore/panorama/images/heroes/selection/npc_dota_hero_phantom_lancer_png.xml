@@ -1,6 +1,6 @@
 <!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
 <root>
 	<Panel class="AddonLoadingRoot">
-		<Image id="gamemode" class="SeqImg" src="s2r://panorama/images/heroes/selection/npc_dota_hero_phantom_lancer_png.vtex" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/heroes/selection/npc_dota_hero_phantom_lancer.png" />
 	</Panel>
 </root>
