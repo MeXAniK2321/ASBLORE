@@ -270,7 +270,7 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_riki")
 				{
-			 		playerPortrait.SetImage( "file://{images}/heroes/riki.png" );
+			 		playerPortrait.SetImage( "file://{images}/heroes/shiki.png" );
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_razor")
 				{
