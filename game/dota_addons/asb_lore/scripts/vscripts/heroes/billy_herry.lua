@@ -1268,3 +1268,727 @@ function modifier_gay_website_debuff:CheckState()
 
 	return state
 end
+
+modifier_bike_check = class({})
+
+--------------------------------------------------------------------------------
+
+function modifier_bike_check:IsHidden()
+    return false
+end
+
+function modifier_bike_check:IsPurgable()
+    return false
+	end
+
+
+
+
+
+
+
+
+
+
+
+
+
+LinkLuaModifier("modifier_imba_spirit_breaker_charge_of_darkness", "heroes/billy_herry", LUA_MODIFIER_MOTION_HORIZONTAL)
+LinkLuaModifier("modifier_imba_spirit_breaker_charge_of_darkness_vision", "heroes/billy_herry", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_imba_spirit_breaker_charge_of_darkness_clothesline", "heroes/billy_herry", LUA_MODIFIER_MOTION_HORIZONTAL)
+LinkLuaModifier("modifier_bike_check", "heroes/billy_herry", LUA_MODIFIER_MOTION_HORIZONTAL)
+
+billy_bike							= class({})
+modifier_imba_spirit_breaker_charge_of_darkness					= class({})
+modifier_imba_spirit_breaker_charge_of_darkness_vision			= class({})
+modifier_imba_spirit_breaker_charge_of_darkness_clothesline		= class({})
+modifier_imba_spirit_breaker_charge_of_darkness_taxi			= class({})
+modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter	= class({})
+modifier_imba_spirit_breaker_charge_of_darkness_taxi_tracker	= class({})
+
+
+
+
+function billy_bike:GetBehavior()
+	return DOTA_ABILITY_BEHAVIOR_UNIT_TARGET + DOTA_ABILITY_BEHAVIOR_DONT_ALERT_TARGET + DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES + DOTA_ABILITY_BEHAVIOR_AUTOCAST
+end
+
+
+
+function billy_bike:OnSpellStart()
+	-- Debug line
+	self.charge_cancel_reason = nil
+
+	local target = self:GetCursorTarget()
+
+	if target:TriggerSpellAbsorb(self) then
+		return nil
+	end
+	
+	self:GetCaster():Interrupt()
+	
+	self:GetCaster():EmitSound("billy.bike")
+
+
+   
+
+	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_imba_spirit_breaker_charge_of_darkness", 
+	{
+		ent_index = target:GetEntityIndex()
+	})
+	
+	-- IDK how to replicate 0 second CD so gonna go with activation disabling as usual
+	self:SetActivated(false)
+end
+
+---------------------------------
+-- CHARGE OF DARKNESS MODIFIER --
+---------------------------------
+
+function modifier_imba_spirit_breaker_charge_of_darkness:IsPurgable()	return false end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetEffectName()
+	return "particles/billy_bike_visual.vpcf"
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetStatusEffectName()
+	return "particles/status_fx/status_effect_charge_of_darkness.vpcf"
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:OnCreated(params)
+	if self:GetAbility() then
+		self.movement_speed		= self:GetAbility():GetSpecialValueFor("movement_speed")
+		self.stun_duration		= self:GetAbility():GetSpecialValueFor("stun_duration")
+		self.bash_radius		= self:GetAbility():GetSpecialValueFor("bash_radius")
+		self.scepter_speed		= self:GetAbility():GetSpecialValueFor("scepter_speed")
+		
+		-- These aren't used
+		-- self.vision_radius		= self:GetAbility():GetSpecialValueFor("vision_radius")
+		-- self.vision_duration	= self:GetAbility():GetSpecialValueFor("vision_duration")
+		
+		self.darkness_speed			= self:GetAbility():GetSpecialValueFor("darkness_speed")
+		local str = self:GetCaster():GetIntellect() * (1.0 + self:GetCaster():FindTalentValue("special_bonus_billy_25"))
+		self.damage			= self:GetAbility():GetSpecialValueFor("damage") +str
+		self.damage2			= self:GetAbility():GetSpecialValueFor("damage2")
+		self.clothesline_duration	= self:GetAbility():GetSpecialValueFor("clothesline_duration")
+
+	else
+		return
+	end
+
+	if not IsServer() then return end
+		
+	if self:ApplyHorizontalMotionController() == false then 
+		self:Destroy()
+		return
+	end
+	
+
+
+	self.launcher_charge_fx = 	ParticleManager:CreateParticle("particles/billy_bike_vpcf.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
+								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 0, self:GetCaster(), 5, "billy_bike", Vector(0,0,0), true)
+								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 1, self:GetCaster(), 5, "billy_bike", Vector(0,0,0), true)
+	
+	-- Set sights on the target
+	self.target					= EntIndexToHScript(params.ent_index)
+	-- Initialize empty table to add bashed enemies into (as they can only be bashed once per charge)
+	self.bashed_enemies			= {}
+	-- ???????????
+	self.trees					= {}
+	-- IMBAfication: Darkness Imprisoning Me
+	-- Initialize counter to track how long the charge has lasted under fog of war
+	self.darkness_counter		= 0
+	-- IMBAfication: Taxi!
+	-- Initialize empty table to add allies attempting to board (allows for smooth boarding when they get close enough, somewhat like Tusk's Snowball)
+	self.attempting_to_board	= {}
+	
+	-- Add the vision modifier to the target
+	self.vision_modifier = self.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_imba_spirit_breaker_charge_of_darkness_vision", {})
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:UpdateHorizontalMotion( me, dt )
+	if not IsServer() then return end
+	local caster = self:GetCaster()
+	
+	-- Rubick/Morphling stuff I guess
+	if not self:GetAbility() then
+		-- Okay this line should never run but...
+		self:GetAbility().charge_cancel_reason = "Ability Does Not Exist"
+		self:Destroy()
+		return
+	end
+	
+	-- "If the target dies during the charge, it is transferred to the nearest valid target within 4000 range of the previous target."
+	if not self.target:IsAlive() then
+		local new_targets = FindUnitsInRadius(self:GetCaster():GetTeamNumber(), self.target:GetAbsOrigin(), nil, 700, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE, FIND_CLOSEST, false)
+		
+		-- Set this to nil and begin looking for a new target if applicable
+		self.target = nil
+		
+		if #new_targets == 0 then
+			self:GetAbility().charge_cancel_reason = "Primary target dead; no other valid targets within 4000 radius"
+			self:Destroy()
+			return
+		end
+		
+		for _, target in pairs(new_targets) do 
+			if target ~= self.clothesline_target then
+				self.target = target
+				self.vision_modifier = self.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_imba_spirit_breaker_charge_of_darkness_vision", {})
+				break
+			end
+		end
+		
+		if not self.target then
+			self:GetAbility().charge_cancel_reason = "Primary target dead; only valid target within 4000 radius is being Clotheslined"
+			self:Destroy()
+			return
+		end
+	end
+	
+	-- "Any unit which comes within 300 radius of Spirit Breaker during the charge gets hit by the current level of Greater Bash."
+	-- "The bash radius is offset by 20 units in front of Spirit Breaker, so it can hit units 280 range behind and 320 range in front of him."
+
+	local enemies = FindUnitsInRadius(self:GetCaster():GetTeamNumber(), self:GetParent():GetAbsOrigin() + (self:GetParent():GetForwardVector() * 20), nil, self.bash_radius, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, FIND_CLOSEST, false)
+	
+	for _, enemy in pairs(enemies) do
+		-- IMBAfication: Clothesline
+		if not enemy:HasModifier("modifier_bike_check") then
+		enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_bike_check", {duration = 0.4})
+		 local damage_table = {
+                    attacker = self:GetCaster(),
+                    damage = self.damage2,
+                    damage_type = DAMAGE_TYPE_MAGICAL,
+                    ability = self:GetAbility()
+                }
+		damage_table.victim = enemy
+		ApplyDamage(damage_table)
+		self:PlayEffects(enemy)
+		end
+		end
+
+	
+	-- Check anyone that's currently following Spirit Breaker as well before the cast...
+	
+	
+	-- Play...tree breaking particles when charging through a tree, but don't actually break it
+	local trees = GridNav:GetAllTreesAroundPoint( me:GetOrigin(), me:GetHullRadius(), false )
+	
+	for _, tree in pairs(trees) do
+		if not self.trees[tree] then
+			local tree_particle = ParticleManager:CreateParticle("particles/units/heroes/hero_spirit_breaker/spirit_breaker_charge_tree.vpcf", PATTACH_POINT, me)
+			ParticleManager:ReleaseParticleIndex(tree_particle)
+			self.trees[tree] = true
+		end
+	end
+	
+	-- "The charge is cancelled when Spirit Breaker gets stunned, cycloned, hexed, rooted, slept, hidden, feared, hypnotized or hit by Forced Movement."
+	if (self.target:GetOrigin() - me:GetOrigin()):Length2D() <= 128 then
+		self:GetParent():EmitSound("billy.crash")
+	self:PlayEffects2(self.target)
+		if not self.target:IsMagicImmune() and self:GetAbility() then
+		 local damage_table = {
+                    attacker = self:GetCaster(),
+                    damage = self.damage,
+                    damage_type = DAMAGE_TYPE_MAGICAL,
+                    ability = self:GetAbility()
+                }
+		damage_table.victim = self.target
+		ApplyDamage(damage_table)
+			self.target:AddNewModifier(me, self:GetAbility(), "modifier_stunned", {duration = self.stun_duration * (1 - self.target:GetStatusResistance())})
+		end
+		
+		-- IMBAfication: Mad Cow (if the target is NOT alive after the charge connects, the charge modifier is not necessarily destroyed)
+		if self.target:IsAlive() then
+			self:GetAbility().charge_cancel_reason = "Charge connected with target and they were still alive after impact"
+			me:SetAggroTarget(self.target)
+			self:Destroy()
+		end
+		
+		return
+	elseif me:IsStunned() or me:IsOutOfGame() or me:IsHexed() or me:IsRooted() then
+		self:GetAbility().charge_cancel_reason = "Caster was disabled mid-charge"
+		self:Destroy()
+		return
+	end
+
+	-- IDK which ones to use properly, cause some break run animations and some break the modifier
+	-- me:SetForwardVector((self.target:GetOrigin() - me:GetOrigin()):Normalized())
+	me:FaceTowards(self.target:GetOrigin())
+	-- me:MoveToPosition(self.target:GetOrigin())
+
+	local distance = (GetGroundPosition(self.target:GetOrigin(), nil) - GetGroundPosition(me:GetOrigin(), nil)):Normalized()
+	me:SetOrigin( me:GetOrigin() + distance * me:GetIdealSpeed() * dt )
+	
+
+end
+function modifier_imba_spirit_breaker_charge_of_darkness:OnIntervalThink()
+local caster = self:GetCaster()
+local sexy_body = self:GetCaster():FindAbilityByName("sexy_body")
+	local modifier = caster:FindModifierByNameAndCaster("modifier_sexy_body",caster)
+		 if sexy_body:IsFullyCastable() then
+
+		self.damageTable11 = {
+	
+		attacker = self:GetCaster(),
+		damage = 200,
+		damage_type = DAMAGE_TYPE_MAGICAL,
+		ability = self:GetAbility(), --Optional.
+	}
+
+				local enemies = FindUnitsInRadius(
+		self:GetCaster():GetTeamNumber(),	-- int, your team number
+		self:GetCaster():GetOrigin(),	-- point, center point
+		nil,	-- handle, cacheUnit. (not known)
+		400,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+		DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+		0,	-- int, flag filter
+		0,	-- int, order filter
+		false	-- bool, can grow cache
+	)
+
+	for _,enemy in pairs(enemies) do
+		-- damage
+		self.damageTable11.victim = enemy
+		ApplyDamage( self.damageTable11 )
+		
+		end
+		caster:AddNewModifier(
+			caster, -- player source
+			self, -- ability source
+			"modifier_muscle_flex_stack", -- modifier name
+			{ duration = 7 + self:GetCaster():FindTalentValue("special_bonus_billy_20_alt")} -- kv
+		)
+		local count = modifier:GetStackCount()
+		if count == 10 then
+		else
+		modifier:SetStackCount(modifier:GetStackCount() + 1)
+		end
+		local radius = 400
+		self:PlayEffects5(radius)
+		
+local cooldown = 1.5
+		sexy_body:StartCooldown(cooldown)
+			
+			end
+		end
+function modifier_imba_spirit_breaker_charge_of_darkness:PlayEffects( target )
+	-- Load effects
+	local particle_cast = "particles/billy_bike_impact_bashed.vpcf"
+
+
+target:EmitSound("billy.crash_bash")
+	
+	
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, target )
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		0,
+		target,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		target:GetOrigin(), -- unknown
+		true -- unknown, true
+	)
+	ParticleManager:SetParticleControlForward( effect_cast, 1, (self:GetParent():GetOrigin()-target:GetOrigin()):Normalized() )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+
+end
+function modifier_imba_spirit_breaker_charge_of_darkness:PlayEffects2( target )
+	-- Load effects
+	local particle_cast = "particles/dante_bicycle_explosion.vpcf"
+
+
+
+	
+	
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, target )
+	ParticleManager:SetParticleControlEnt(
+		effect_cast,
+		0,
+		target,
+		PATTACH_POINT_FOLLOW,
+		"attach_hitloc",
+		target:GetOrigin(), -- unknown
+		true -- unknown, true
+	)
+	ParticleManager:SetParticleControlForward( effect_cast, 1, (self:GetParent():GetOrigin()-target:GetOrigin()):Normalized() )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:PlayEffects5( radius )
+	local particle_cast = "particles/billy_body_damage.vpcf"
+	local sound_cast = "billy.2"
+
+	-- Create Particle
+	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetCaster() )
+	ParticleManager:SetParticleControl( effect_cast, 0, self:GetCaster():GetOrigin() )
+	ParticleManager:SetParticleControl( effect_cast, 1, Vector( radius, radius, radius ) )
+	ParticleManager:ReleaseParticleIndex( effect_cast )
+
+	EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
+end
+
+-- This typically gets called if the caster uses a position breaking tool (ex. Blink Dagger) while in mid-motion
+function modifier_imba_spirit_breaker_charge_of_darkness:OnHorizontalMotionInterrupted()
+	self:GetAbility().charge_cancel_reason = "Horizontal Motion Interrupted"
+
+	self:Destroy()
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:OnDestroy()
+	if not IsServer() then return end
+	
+	self:GetParent():RemoveHorizontalMotionController( self )
+	
+	if self.launcher_charge_fx then
+	    ParticleManager:DestroyParticle(self.launcher_charge_fx, false)
+	    ParticleManager:ReleaseParticleIndex(self.launcher_charge_fx)
+	end
+	
+	-- Gonna call these first cause they're arguably more important and don't want to brick the hero if code fails
+	if self:GetAbility() then
+		self:GetAbility():SetActivated(true)
+		self:GetAbility():UseResources(false, false, true)
+	end
+	
+	self:GetParent():StopSound("billy.bike")
+	
+	self:GetParent():StartGesture(ACT_DOTA_DIE)
+	
+	-- "Destroys trees within a small radius around Spirit Breaker whenever the charge ends."
+	-- ...YEAH BUT HOW BIG IS THE RADIUS
+	GridNav:DestroyTreesAroundPoint( self:GetParent():GetOrigin(), self:GetParent():GetHullRadius(), true )
+	
+	-- Remove the vision modifier from targets if applicable
+	if self.vision_modifier and not self.vision_modifier:IsNull() then
+		self.vision_modifier:Destroy()
+	end
+	
+	-- Clean up any taxi counter modifiers if they persisted after charge end for some reason
+
+end
+
+-- This is so Spirit Breaker doesn't spaz out at random pathing while charging
+function modifier_imba_spirit_breaker_charge_of_darkness:CheckState()
+--if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then
+
+  -- return {[MODIFIER_STATE_MAGIC_IMMUNE] = true,
+  -- [MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true
+   
+  -- }
+--else
+	return {[MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true}
+	
+	--end
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:DeclareFunctions()
+	return {
+		MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
+		-- MODIFIER_PROPERTY_MOVESPEED_LIMIT,
+		
+		-- This violates the "When auto-attack is enabled, Spirit Breaker can automatically attack units when close enough, without cancelling the charge." clause, but Spirit Breaker runs in weird-ass directions when he aggros things he charges by so this is a...compromise
+		MODIFIER_PROPERTY_DISABLE_AUTOATTACK,
+        MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE,
+		--MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
+		MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+		MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS,
+		MODIFIER_EVENT_ON_ORDER
+	}
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierIgnoreMovespeedLimit()
+	return 1
+end
+
+-- function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierMoveSpeed_Limit()
+	-- return 10000
+-- end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetDisableAutoAttack()
+	return 1
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierMoveSpeedOverride()
+	return 100
+end
+--[[function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierMoveSpeedBonus_Constant()
+	if self:GetCaster():HasScepter() then
+		return self.movement_speed + self:GetStackCount() + self.scepter_speed
+	else
+		return self.movement_speed + self:GetStackCount()
+	end
+end]]
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetOverrideAnimation()
+	return ACT_DOTA_CAST_ABILITY_7
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:GetActivityTranslationModifiers()
+	return "charge"
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness:OnOrder(keys)
+	if not IsServer() then return end
+	
+	if keys.unit == self:GetParent() then
+		local cancel_commands = 
+		{
+			[DOTA_UNIT_ORDER_MOVE_TO_POSITION] 	= true,
+			[DOTA_UNIT_ORDER_MOVE_TO_TARGET] 	= true,
+			[DOTA_UNIT_ORDER_ATTACK_MOVE] 		= true,
+			[DOTA_UNIT_ORDER_ATTACK_TARGET] 	= true,
+			[DOTA_UNIT_ORDER_CAST_POSITION]		= true,
+			[DOTA_UNIT_ORDER_CAST_TARGET]		= true,
+			[DOTA_UNIT_ORDER_CAST_TARGET_TREE]	= true,
+			[DOTA_UNIT_ORDER_HOLD_POSITION] 	= true,
+			[DOTA_UNIT_ORDER_STOP]				= true
+		}
+		
+		-- Testing something to try and stop randomly cancelled charges but IDK what the issue is
+		if cancel_commands[keys.order_type] then -- and self:GetElapsedTime() >= 0.1 then
+			self:GetAbility().charge_cancel_reason = "Cancel Order Issued: "..keys.order_type
+			
+			self:Destroy()
+		end
+	-- IMBAfication: Taxi!
+	elseif keys.unit:GetTeamNumber() == self:GetParent():GetTeamNumber() then
+		if keys.order_type == DOTA_UNIT_ORDER_MOVE_TO_TARGET and keys.target == self:GetParent() and not keys.unit:HasModifier("modifier_imba_spirit_breaker_charge_of_darkness_taxi") then
+			self.attempting_to_board[keys.unit] = true
+		elseif self.attempting_to_board[keys.unit] then
+			self.attempting_to_board[keys.unit] = nil
+		end
+	end
+end
+
+----------------------------------------
+-- CHARGE OF DARKNESS VISION MODIFIER --
+----------------------------------------
+
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:IsHidden()		return true end
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:IsPurgable()	return false end
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:ShouldUseOverheadOffset() return true end -- I have no idea when this works but it might be particle-specific
+
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:OnCreated()
+	if not IsServer() then return end
+	self:StartIntervalThink(0.01)
+	self.particle = ParticleManager:CreateParticleForTeam("particles/billy_mark.vpcf", PATTACH_OVERHEAD_FOLLOW, self:GetParent(), self:GetCaster():GetTeamNumber())
+	self:AddParticle(self.particle, false, false, -1, false, true)
+end
+function modifier_imba_spirit_breaker_charge_of_darkness_vision:OnIntervalThink()
+ AddFOWViewer(self:GetCaster():GetTeamNumber(), self:GetParent():GetAbsOrigin(), 400, 0.2, false)
+end
+---------------------------------------------
+-- CHARGE OF DARKNESS CLOTHESLINE MODIFIER --
+---------------------------------------------
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:OnCreated(params)
+	if not IsServer() then return end
+	
+	if self:ApplyHorizontalMotionController() == false then 
+		self:Destroy()
+		return
+	end
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:UpdateHorizontalMotion( me, dt )
+	if not IsServer() then return end
+	
+	-- "The charge is cancelled when Spirit Breaker gets stunned, cycloned, hexed, rooted, slept, hidden, feared, hypnotized or hit by Forced Movement."
+	if not self:GetCaster():HasModifier("modifier_imba_spirit_breaker_charge_of_darkness") or me:IsOutOfGame() then
+		self:Destroy()
+		return
+	end
+	
+	me:SetOrigin( self:GetCaster():GetOrigin() + (self:GetCaster():GetForwardVector() * 128) )
+end
+
+-- This typically gets called if the caster uses a position breaking tool (ex. Blink Dagger) while in mid-motion
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:OnHorizontalMotionInterrupted()
+	self:Destroy()
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:OnDestroy()
+	if not IsServer() then return end
+	
+	self:GetParent():RemoveHorizontalMotionController( self )
+
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:CheckState()
+	local state = {[MODIFIER_STATE_STUNNED] = true}
+	
+	return state
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:DeclareFunctions()
+	local decFuncs = {MODIFIER_PROPERTY_OVERRIDE_ANIMATION}
+	
+	return decFuncs
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_clothesline:GetOverrideAnimation()
+	return ACT_DOTA_FLAIL
+end
+
+--------------------------------------
+-- CHARGE OF DARKNESS TAXI MODIFIER --
+--------------------------------------
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:IsPurgable()	return false end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:GetEffectName()
+	return "particles/units/heroes/hero_spirit_breaker/spirit_breaker_charge.vpcf"
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:GetStatusEffectName()
+	return "particles/status_fx/status_effect_charge_of_darkness.vpcf"
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:OnCreated(params)
+	if not IsServer() then return end
+	
+	self.passenger_num	= params.passenger_num
+	self.taxi_distance	= params.taxi_distance
+	
+	self:GetParent():EmitSound("Hero_Spirit_Breaker.ChargeOfDarkness.FP")
+	
+	if self:ApplyHorizontalMotionController() == false then 
+		self:Destroy()
+		return
+	end
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:UpdateHorizontalMotion( me, dt )
+	if not IsServer() then return end
+	
+	-- "The charge is cancelled when Spirit Breaker gets stunned, cycloned, hexed, rooted, slept, hidden, feared, hypnotized or hit by Forced Movement."
+	if not self:GetCaster():HasModifier("modifier_imba_spirit_breaker_charge_of_darkness") or me:IsStunned() or me:IsOutOfGame() or me:IsHexed() or me:IsRooted() then
+		self:Destroy()
+		return
+	end
+	
+	me:SetOrigin( self:GetCaster():GetOrigin() + (self:GetCaster():GetForwardVector() * (-1) * (self.passenger_num * self.taxi_distance)) ) -- Another AbilitySpecial
+end
+
+-- This typically gets called if the caster uses a position breaking tool (ex. Blink Dagger) while in mid-motion
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:OnHorizontalMotionInterrupted()
+	self:Destroy()
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:OnDestroy()
+	if not IsServer() then return end
+	
+	self:GetParent():RemoveHorizontalMotionController( self )
+	
+	-- If targets get off of the ride early, free the index to allow other units to sit closer to the front
+	local charge_modifier = self:GetCaster():FindModifierByNameAndCaster("modifier_imba_spirit_breaker_charge_of_darkness", self:GetCaster())
+	
+	if charge_modifier and charge_modifier.passengers then
+		charge_modifier.passengers = math.max(charge_modifier.passengers - 1, 0)
+	end
+	
+	-- Destroy the cooresponding taxi counter on the main charging unit's end
+	local counter_modifiers = self:GetCaster():FindAllModifiersByName("modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter")
+	
+	for num = 1, #counter_modifiers do
+		if counter_modifiers[num].target == self:GetParent() then
+			counter_modifiers[num]:Destroy()
+			break
+		end
+	end
+	
+	-- Call the table again (since everything should be shifted now), and re-assign passenger numbers
+	local counter_modifiers = self:GetCaster():FindAllModifiersByName("modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter")
+	
+	for num = 1, #counter_modifiers do
+		if counter_modifiers[num].target then
+			local taxi_modifier = counter_modifiers[num].target:FindModifierByName("modifier_imba_spirit_breaker_charge_of_darkness_taxi")
+
+			if taxi_modifier then
+				taxi_modifier.passenger_num = num
+			end
+		end
+	end	
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:DeclareFunctions()
+	local decFuncs = {MODIFIER_EVENT_ON_ORDER}
+	
+	return decFuncs
+end
+
+-- Slightly less restrictive set of cancel orders compared to standard charge (passengers get a bit more freedom, after all)
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi:OnOrder(keys)
+	if not IsServer() then return end
+	
+	if keys.unit == self:GetParent() then
+		local cancel_commands = 
+		{
+			-- [DOTA_UNIT_ORDER_MOVE_TO_POSITION] 	= true,
+			-- [DOTA_UNIT_ORDER_MOVE_TO_TARGET] 	= true,
+			[DOTA_UNIT_ORDER_HOLD_POSITION] 	= true,
+			[DOTA_UNIT_ORDER_STOP]				= true
+		}
+		
+		if cancel_commands[keys.order_type] then
+			self:Destroy()
+		end
+	end
+end
+
+----------------------------------------------
+-- CHARGE OF DARKNESS TAXI COUNTER MODIFIER --
+----------------------------------------------
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter:IsHidden()		return true end
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter:IsPurgable()		return false end
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter:GetAttributes()	return MODIFIER_ATTRIBUTE_MULTIPLE end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_counter:OnCreated(params)
+	if not IsServer() then return end
+	
+	self.target					= EntIndexToHScript(params.ent_index)
+end
+
+----------------------------------------------
+-- CHARGE OF DARKNESS TAXI TRACKER MODIFIER --
+----------------------------------------------
+
+-- This is just for QOL stuff and latching to Spirit Breaker before he actually charges...hopefully it's not laggy as hell
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_tracker:IsHidden()	return true end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_tracker:OnCreated()
+	if not IsServer() then return end
+	
+	-- Initialize empty table to add allies hoping to board before an actual charge
+	self.attempting_to_board	= {}
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_tracker:DeclareFunctions()
+	local decFuncs = 
+
+	{
+		MODIFIER_EVENT_ON_ORDER
+	}
+	
+	return decFuncs
+end
+
+function modifier_imba_spirit_breaker_charge_of_darkness_taxi_tracker:OnOrder(keys)
+	if not IsServer() then return end
+
+	if keys.unit:GetTeamNumber() == self:GetParent():GetTeamNumber() then
+		if keys.order_type == DOTA_UNIT_ORDER_MOVE_TO_TARGET and keys.target == self:GetParent() and not keys.unit:HasModifier("modifier_imba_spirit_breaker_charge_of_darkness_taxi") then
+			self.attempting_to_board[keys.unit] = true
+		elseif self.attempting_to_board[keys.unit] then
+			self.attempting_to_board[keys.unit] = nil
+		end
+	end
+	end

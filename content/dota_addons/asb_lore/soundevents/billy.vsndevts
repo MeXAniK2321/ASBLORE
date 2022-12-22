@@ -295,3 +295,103 @@
 		}
 	}
 }
+
+ "billy.crash"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/billy.crash.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"5.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+ "billy.crash_bash"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/weapons/hero/rattletrap/battery_assault_impact.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"5.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"billy.bike"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/billy/mybike.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"5.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
