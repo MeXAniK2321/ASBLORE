@@ -93,11 +93,6 @@ function COverthrowGameMode:OnNPCSpawned( event )
 	    local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
 		local hero = PlayerResource:GetSelectedHeroEntity(PID)
 	
-	
-		
-		local nNewState = GameRules:State_Get()
-		local state = GameRules:State_Get()
-		if nNewState == DOTA_GAMERULES_STATE_PRE_GAME then
 			if IsASBAdmin(player) then
 				--local item = CreateItem("item_gay_hammer", player, self)
 				if player:HasModifier( "modifier_replaced" ) then
@@ -134,7 +129,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 					player:SetModelScale(1.25)
 				end
 			end
-		end
+	
 
 		if self.allSpawned == false then
 			if GetMapName() == "mines_trio" then
@@ -145,13 +140,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				ParticleManager:SetParticleControlEnt( particleSpawn, PATTACH_ABSORIGIN, spawnedUnit, PATTACH_ABSORIGIN, "attach_origin", spawnedUnit:GetAbsOrigin(), true )
 			end
 		end
-	end
 
-	local player = EntIndexToHScript(event.entindex)
-	if player:IsRealHero() then
-		if GameRules:State_Get() == DOTA_GAMERULES_STATE_PRE_GAME then
-			local playerID = player:GetPlayerID()
-			local playerSteamID = PlayerResource:GetSteamAccountID(playerID)
 			local FastAbilities = 
 			{
 				"determination",
@@ -237,14 +226,14 @@ function COverthrowGameMode:OnNPCSpawned( event )
 			}
 
 			for _,FastAbility in pairs(FastAbilities) do
-				FastAbility = player:FindAbilityByName(FastAbility)
-				if player:IsRealHero() then
+				FastAbility = spawnedUnit:FindAbilityByName(FastAbility)
+				if spawnedUnit:IsRealHero() then
 				    if FastAbility then
 				        FastAbility:SetLevel(1)
 				    end
 				end
 			end
-		end
+
 	end
 end
 
