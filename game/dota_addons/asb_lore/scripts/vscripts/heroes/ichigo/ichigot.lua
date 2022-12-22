@@ -210,7 +210,7 @@ function ichigoT:OnSpellStart()
                             attacker = caster,
                             damage = damage,
                             damage_type = damageType,
-                            damage_flags = damageFlags
+                            damage_flags = DOTA_DAMAGE_FLAG_BYPASSES_INVULNERABILITY,
                         })
                     end
                 end,
@@ -316,6 +316,7 @@ function modifier_combo:CheckState()
 		[MODIFIER_STATE_DISARMED] = true,
 		[MODIFIER_STATE_SILENCED] = true,
 		[MODIFIER_STATE_MUTED] = true,
+        [MODIFIER_STATE_INVULNERABLE] = true
 	}
   
   return funcs2

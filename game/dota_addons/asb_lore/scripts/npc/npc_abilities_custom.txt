@@ -1737,7 +1737,7 @@
 		"08"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"main_damage"			"2300"
+			"main_damage"			"1800"
 			
 		}
 		"09"
@@ -1748,7 +1748,7 @@
 		"10"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"burn_dps"				"2000"
+			"burn_dps"				"1500"
 			
 		}
 		"11"
@@ -3099,7 +3099,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"ring_radius"					"500"
+				"ring_radius"					"600"
 				
 			}
 			"02"
@@ -3120,7 +3120,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"ring_dot_damage"				"100 125 150"
+				"ring_dot_damage"				"100 125 250"
 				"LinkedSpecialBonus"			"special_bonus_shana_20"
 				
 			}
@@ -6844,7 +6844,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"2.0 2.2 2.4 2.6"
+				"duration"				"1.5 1.8 2.0 2.2"
 			}
 			"04"
 			{
@@ -7054,7 +7054,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"sand_storm_damage"		"800"
+				"sand_storm_damage"		"700"
 				"LinkedSpecialBonus"    "special_bonus_bogdan_25"
 			}
 			"05"
@@ -17342,18 +17342,18 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage"		"500 700 800 900"
+				"powershot_damage"		"400 500 600 700"
 				"LinkedSpecialBonus"			"special_bonus_goku_20"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage2"     "500 800 1100 1700"
+				"powershot_damage2"     "500 800 1100 1600"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage3"     "700 1100 1400 2500"
+				"powershot_damage3"     "700 1100 1400 2200"
 			}
 			"02"
 			{
@@ -17708,7 +17708,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"2600"
 		"AbilityCastPoint"				"0.1"
-		"AbilityChannelTime"			"1.0"
+		"AbilityChannelTime"			"0.5"
 		
 
 		// Ability Resource
@@ -17981,12 +17981,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"dagger_speed"			"1200"
+				"dagger_speed"			"800"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"0.5 0.6 0.7 0.8"
+				"duration"				"0.3 0.5 0.6 0.7"
 			}
 			"04"
 			{
@@ -23299,7 +23299,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage"						"100 200 275 350"
+				"damage"						"100 200 375 550"
 				"LinkedSpecialBonus"			"special_bonus_kurapika_20"
 				
 			}
@@ -23359,7 +23359,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"				"50 75 100 125"
+				"heal"				"50 75 100 150"
 			}
 			"06"
 			{
@@ -23413,7 +23413,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_per_second_tooltip"			"100 125 150"
+				"damage_per_second_tooltip"			"100 125 180"
 				"LinkedSpecialBonus"			"special_bonus_kurapika_25"
 				
 			}
@@ -27909,7 +27909,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
+		"AbilityCooldown"				"80"
 		"AbilityManaCost"				"200"
 
 		// Damage
@@ -27932,7 +27932,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"duration1"			"20"
+				"duration1"			"10"
 			}
 			"02"
 			{
@@ -32089,7 +32089,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"pit_damage"					    "100 120 170 200"
+				"pit_damage"					    "100 120 170 250"
 				"LinkedSpecialBonus"			"special_bonus_shana_25"
 				
 			}
@@ -32133,7 +32133,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1600"
+		"AbilityDamage"					"2000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -32147,7 +32147,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"225"
+				"radius"			"325"
 			}
 			"03"
 			{
@@ -32196,7 +32196,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage"	                        "400"
+				"damage"	                        "900"
 				
 			}
 			"03"
@@ -32208,7 +32208,7 @@
 				"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"global_damage"	                        "1250"
+				"global_damage"	                        "2500"
 				
 			}
 			"05"
@@ -32276,7 +32276,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"800"
+				"damage"					"1000"
 			}
 		}
 	}
@@ -38570,18 +38570,18 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"armor_per_level"				"0.75"
+				"armor_per_level"				"0.55"
 				
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"magic_resist_per_level"				"0.14"
+				"magic_resist_per_level"				"0.9"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_reduction"				"100"
+				"damage_reduction"				"70"
 			}
 			"03"
 			{
@@ -43441,7 +43441,7 @@
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"18.0 16.0 14.0 10.0"
+		"AbilityCooldown"				"18.0 16.0 14.0 14.0"
 		"AbilityManaCost"				"45 65 85 100"
 		//"AbilityDamage"					"25 50 100"
 		"AbilityCastRange"				"1500"
@@ -43456,7 +43456,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"80 160 240 320"
+				"damage"	"200 300 450 500"
 			}
 			"02"
 			{
@@ -43471,7 +43471,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"strength"	"2.0"
+				"strength"	"2.5"
 			}
 		}
 	}
@@ -43494,15 +43494,15 @@
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"MaxLevel"						"1"
-		"RequiredLevel"					"18"
-		"LevelsBetweenUpgrades"		"6"
+		"RequiredLevel"					"6"
+		"LevelsBetweenUpgrades"		"3"
 		"AbilityCastPoint"				"1.0"
 		"AbilityCastAnimation"			"empty"
 		//"AnimationPlaybackRate"			"1"
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"30.0"
+		"AbilityCooldown"				"32.0"
 		"AbilityManaCost"				"150"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"100"
@@ -43522,7 +43522,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"700"
+				"damage"	"500"
 			}
 			"03"
 			{
@@ -43568,7 +43568,7 @@
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"30.0 20.0 16.0 12.0"
+		"AbilityCooldown"				"35.0 35.0 32.0 30.0"
 		"AbilityManaCost"				"25 45 65 95"
 		//"AbilityDamage"					"25 50 100"
 		"AbilityCastRange"				"1250"
@@ -43598,7 +43598,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"strength"	"1.0 2.0 3.0 4.0"
+				"strength"	"4.0 6.0 8.0 8.0"
 			}
 		}
 	}
@@ -43626,7 +43626,7 @@
 		//"AnimationIgnoresModelScale"	"1"
         "IsGrantedByScepter"    "1"
 
-		"AbilityCooldown"				"20"
+		"AbilityCooldown"				"40"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"900"
 		//"AbilityCastRangeBuffer"		"250"
@@ -43662,17 +43662,17 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"MaxLevel"						"4"
-		"RequiredLevel"					"1"
-		"LevelsBetweenUpgrades"		"1"
-		"AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"18"
+		"LevelsBetweenUpgrades"		"3"
+		"AbilityCastPoint"				"0.5 0.5 0.5"
 		"AbilityCastAnimation"			"empty"
 		//"AnimationPlaybackRate"			"1"
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"28.0 24.0 18.0 14.0"
-		"AbilityManaCost"				"30 60 90 120"
+		"AbilityCooldown"				"28.0 24.0 20.0"
+		"AbilityManaCost"				"30 60 120"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"1800"
 		//"AbilityCastRangeBuffer"		"250"
@@ -43692,12 +43692,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"80 160 240 320"
+				"damage"	"300 400 600"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration_stun"	"1.6 2.0 2.4 2.8"
+				"duration_stun"	"1.6 2.0 2.8"
 			}
 			"04"
 			{
@@ -43752,10 +43752,10 @@
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"120.0"
+		"AbilityCooldown"				"190.0"
 		"AbilityManaCost"				"0"
 		//"AbilityDamage"					"25 50 100"
-		"AbilityCastRange"				"500"
+		"AbilityCastRange"				"9000"
 		//"AbilityCastRangeBuffer"		"250"
 		//"AbilityChannelTime"			"0.0 0.0 0.0"
 		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
@@ -43787,17 +43787,17 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"vision"	"1200"
+				"vision"	"2000"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"3000"
+				"speed"	"2000"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration_last"	"8.0"
+				"duration_last"	"8.3"
 			}
 		}
 	}

@@ -649,7 +649,7 @@
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		"AbilityCastRange"						"365"
-		"AbilityCastPoint"						"0.1"
+		"AbilityCastPoint"						"0.3"
 		"AbilityCooldown"						"50"
 		"AbilityManaCost"						"100"
 
@@ -711,7 +711,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"slow"					"-25"
+				"slow"					"-15"
 			}
 		
 		}
@@ -1401,7 +1401,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"as"							"120"
+				"as"							"150"
 			}
 			"08"
 			{
@@ -2141,12 +2141,12 @@
 			"10"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"cooldown"					"70"
+				"cooldown"					"5"
 			}
 			"14"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"buff_hp_loss"					"14"
+				"buff_hp_loss"					"10"
 			}
 		}
 	}
@@ -4258,7 +4258,7 @@
 		    "02"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"str"				"20"
+		    	"str"				"40"
 		    }
 		
 			
@@ -5532,7 +5532,7 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"500"
+		    	"health"				"1000"
 		    }
 		    
 		    "02"
@@ -5549,7 +5549,7 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
+				"all_stats"				"50"
 			}
 			"05"
 			{
@@ -5600,7 +5600,7 @@
 			 "03"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"0"
+		    	"arm"				"15"
 		    }
 		    
 		   "04"
@@ -7120,7 +7120,7 @@
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
 
-		"ItemCost"								"12000"
+		"ItemCost"								"3000"
 		"ItemShopTags"							"buff;unique"
 		"ItemQuality"							"artifact"
 		"ItemAliases"							"ww"
@@ -7128,8 +7128,8 @@
 		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
 		"ShouldBeSuggested"						"1"
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
-		//"AbilityCooldown"						"55"
-		//"AbilityManaCost"						"400"
+		"AbilityCooldown"						"55"
+		"AbilityManaCost"						"400"
 		//"AbilitySharedCooldown"					"angel_halo"
 
 		"AbilitySpecial"
@@ -7137,7 +7137,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_hp"						"600"
+				"bonus_hp"						"200"
 			}
 			"02"
 			{
@@ -7147,7 +7147,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_magic_resist"			"15"
+				"bonus_magic_resist"			"10"
 			}
 			"04"
 			{
@@ -7157,13 +7157,18 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"active_damage"					"80"
+				"active_damage"					"40"
 			}
 			"06"
 			{
 				"var_type"						"FIELD_FLOAT"
 				"active_duration"				"15"
 			}
+			"07"
+			{
+			    "var_type"						"FIELD_INTEGER"
+		        "bonus_strength"				     "30"
+		    }
 		}
 	}
 }

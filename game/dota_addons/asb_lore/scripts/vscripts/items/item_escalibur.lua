@@ -51,13 +51,13 @@ function modifier_item_escalibur:DeclareFunctions()
 end
 
 function modifier_item_escalibur:GetModifierAttackSpeedBonus_Constant()
-	 return 50
+	 return 150
 end
 function modifier_item_escalibur:GetModifierBonusStats_Strength()
     return 20
 end
 function modifier_item_escalibur:GetModifierPreAttack_BonusDamage()
-    return 180
+    return 250
 end
  function modifier_item_escalibur:OnAttackLanded(params)
 	if IsServer() then

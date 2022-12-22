@@ -27,12 +27,13 @@ modifier_item_walter_white = modifier_item_walter_white or class({})
 function modifier_item_walter_white:IsHidden()                          return true end
 function modifier_item_walter_white:RemoveOnDeath()                     return false end
 function modifier_item_walter_white:IsPurgable()                        return false end
---function modifier_item_walter_white:GetAttributes()                     return MODIFIER_ATTRIBUTE_MULTIPLE end
+function modifier_item_walter_white:GetAttributes()                     return MODIFIER_ATTRIBUTE_MULTIPLE end
 function modifier_item_walter_white:DeclareFunctions()
     local tFunc =   {
                         MODIFIER_PROPERTY_HEALTH_BONUS,
                         MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
                         MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
+                        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS
                     }
     return tFunc
 end
@@ -44,6 +45,9 @@ function modifier_item_walter_white:GetModifierAttackSpeedBonus_Constant(keys)
 end
 function modifier_item_walter_white:GetModifierMagicalResistanceBonus(keys)
     return self.nBonusMagicResist
+ end
+function modifier_item_walter_white:GetModifierBonusStats_Strength(keys)
+    return self.nBonusStrength
 end
 function modifier_item_walter_white:OnCreated(table)
     self.hCaster  = self:GetCaster()
@@ -53,6 +57,7 @@ function modifier_item_walter_white:OnCreated(table)
     self.nBonusHP = self.hAbility:GetSpecialValueFor("bonus_hp")
     self.nBonusAS = self.hAbility:GetSpecialValueFor("bonus_as")
     self.nBonusMagicResist = self.hAbility:GetSpecialValueFor("bonus_magic_resist")
+    self.nBonusStrength = self.hAbility:GetSpecialValueFor("bonus_stats_strength")
 end
 function modifier_item_walter_white:OnRefresh(tTable)
     self:OnCreated(tTable)
