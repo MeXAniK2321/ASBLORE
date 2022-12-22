@@ -509,7 +509,7 @@
 		"VersusScale"				"1.00000"
 		
 		"Ability1" "bondage"
-		"Ability2" "sexy_body"
+		"Ability2" "billy_bike"
 		"Ability3" "muscule_flex"
 		"Ability4" "fisting"
 		"Ability6" "ascend_to_heaven"

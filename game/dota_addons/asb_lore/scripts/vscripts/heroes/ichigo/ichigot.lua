@@ -222,11 +222,12 @@ function ichigoT:OnSpellStart()
             return 0.4
         end)
 
-        local dummy = CreateUnitByName("npc_dummy_unit_vision", casterPt, true, caster, caster, caster:GetTeamNumber())
-        casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
-        dummy:SetOrigin(casterPt)
-        dummy:SetDayTimeVisionRange(2000) 
-    dummy:SetNightTimeVisionRange(2000)
+        local dummy1 = CreateUnitByName("npc_dummy_unit_vision", casterPt, true, caster, caster, caster:GetTeamNumber())
+        local dummy = CreateUnitByName("npc_dummy_unit", casterPt, true, caster, caster, caster:GetTeamNumber())
+        visiondummy = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
+        dummy1:SetOrigin(visiondummy)
+        dummy1:SetDayTimeVisionRange(2000) 
+    dummy1:SetNightTimeVisionRange(2000)
         local knockback_push = caster:GetAbsOrigin() - caster:GetForwardVector()*300
     local knockback = { should_stun = false,
     knockback_duration = 8,
@@ -237,7 +238,7 @@ function ichigoT:OnSpellStart()
     center_x = knockback_push.x,
     center_y = knockback_push.y,
     center_z = caster:GetAbsOrigin().z }
-    dummy:AddNewModifier(caster, self, "modifier_knockback", knockback)
+    dummy1:AddNewModifier(caster, self, "modifier_knockback", knockback)
     --caster:AddNewModifier(caster, self, "modifier_knockback", knockback)
         self:PlayEffects(caster, dummy, casterPt, duration_last)
        
@@ -250,12 +251,12 @@ function ichigoT:OnSpellStart()
 end
 
 function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
-    --local dummyTimer = Timers:CreateTimer(function()
-        --casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
-        --dummy:SetOrigin(casterPt)
+    local dummyTimer = Timers:CreateTimer(function()
+        casterPt = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
+        dummy:SetOrigin(casterPt)
         
-       -- return 0
-   -- end)
+        return 0
+    end)
 
     local plus300 = 0
 
