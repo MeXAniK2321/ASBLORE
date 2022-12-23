@@ -1646,8 +1646,12 @@ function modifier_imba_spirit_breaker_charge_of_darkness:OnDestroy()
 	self:GetParent():RemoveHorizontalMotionController( self )
 	
 	if self.launcher_charge_fx then
-	    ParticleManager:DestroyParticle(self.launcher_charge_fx, false)
-	    ParticleManager:ReleaseParticleIndex(self.launcher_charge_fx)
+		print (self.launcher_charge_fx)
+	    --ParticleManager:DestroyParticle(self.launcher_charge_fx, false)
+	    Timers:CreateTimer(2, function() 
+	    	ParticleManager:DestroyParticle(self.launcher_charge_fx, true)
+        ParticleManager:ReleaseParticleIndex(self.launcher_charge_fx)
+    end)
 	end
 	
 	-- Gonna call these first cause they're arguably more important and don't want to brick the hero if code fails
