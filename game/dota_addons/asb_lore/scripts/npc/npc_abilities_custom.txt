@@ -17329,7 +17329,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20 17 15 10"
+		"AbilityCooldown"				"32 30 25 20"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -17348,12 +17348,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage2"     "500 800 1100 1600"
+				"powershot_damage2"     "500 800 1100 1500"
 			}
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage3"     "700 1100 1400 2200"
+				"powershot_damage3"     "700 1100 1400 2000"
 			}
 			"02"
 			{
@@ -17959,11 +17959,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"525 550 600 700"
 		"AbilityCastPoint"				"0.2"
-		"AbilityDuration"				"1 1.3 1.6 2"
+		"AbilityDuration"				"1 1.3 1.6 1.8"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"10 8 6 4"
+		"AbilityCooldown"				"10 8 6 5"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -43752,10 +43752,10 @@
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"190.0"
+		"AbilityCooldown"				"210.0"
 		"AbilityManaCost"				"0"
 		//"AbilityDamage"					"25 50 100"
-		"AbilityCastRange"				"9000"
+		"AbilityCastRange"				"1000"
 		//"AbilityCastRangeBuffer"		"250"
 		//"AbilityChannelTime"			"0.0 0.0 0.0"
 		//"AbilityChannelledManaCostPerSecond"	"30 35 40"
@@ -43782,12 +43782,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"distance"	"99999"
+				"distance"	"1000"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"vision"	"2000"
+				"vision"	"3000"
 			}
 			"06"
 			{
@@ -43879,7 +43879,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"scepter_speed"		"100"
+				"scepter_speed"		"150"
 				"RequiresScepter"			"1"
 			}
 			
