@@ -1719,7 +1719,7 @@ function modifier_imba_spirit_breaker_charge_of_darkness:GetDisableAutoAttack()
 end
 
 function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierMoveSpeedOverride()
-	return 100
+	return 300
 end
 --[[function modifier_imba_spirit_breaker_charge_of_darkness:GetModifierMoveSpeedBonus_Constant()
 	if self:GetCaster():HasScepter() then

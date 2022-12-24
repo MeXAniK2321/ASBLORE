@@ -151,7 +151,7 @@ IsNotNull = function(hScript)
 end
 IsASBPatreon = function(player)
     if true then
-        return true
+        --return true
     end
 local PID = player:GetPlayerOwnerID()
     local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
@@ -176,6 +176,7 @@ local patreon =
         1485615139,
         1815983811,
         82664205,
+        215924558,
 	}
 	for _,patr in pairs(patreon) do
        if id32 == patr then
@@ -202,6 +203,7 @@ local patreon =
         1815983811,
         82664205,
         1485615139,
+        215924558,
 	}
 	for _,patr in pairs(patreon) do
        if id32 == patr then
