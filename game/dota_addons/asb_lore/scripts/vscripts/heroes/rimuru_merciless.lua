@@ -59,7 +59,7 @@ local damageTable = {
 		if enemy:GetHealth() <= hp_to_kill and enemy:IsHero() and not enemy:IsIllusion()  then
         enemy:Kill(self, caster)
 		local target_stack = caster:GetModifierStackCount("modifier_rimuru_merciless",self:GetCaster())
-			if target_stack == 5 or self:GetCaster():HasModifier( "modifier_rimuru_harvest_begin" )  then return end
+			if target_stack == 3 or self:GetCaster():HasModifier( "modifier_rimuru_harvest_begin" )  then return end
 		caster:AddNewModifier(caster, self, "modifier_rimuru_merciless", {} )
 		else
 		end

@@ -428,7 +428,7 @@
 		"Ability17"					"special_bonus_tohka_25_alt"
 			"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"25"
-				"MagicalResistance"			"40"
+				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"2.4"
 		"AttributeBaseIntelligence"	"20"
 		"BaseAttackSpeed"			"100"
@@ -2466,12 +2466,12 @@
 			"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"35"
 				"MagicalResistance"			"45"
-		"AttackRange"				"150"
+		"AttackRange"				"200"
 		"AttributeStrengthGain"		"1.5"
 		"AttributeBaseIntelligence"	"15"
 		"AttributeIntelligenceGain"	"1.5"
 					"BaseAttackSpeed"			"125"
-		"AttackAnimationPoint"		"0.300000"
+		"AttackAnimationPoint"		"0.2"
 		"AttributeBaseAgility"		"35"
 		"ArmorPhysical"				"4"
 		"AttributeAgilityGain"		"3.0"
@@ -2906,7 +2906,7 @@
 	   
 			"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"22"
-				"MagicalResistance"			"40"
+				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"3.0"
 		"AttributeBaseIntelligence"	"25"
 		"AttributeIntelligenceGain"	"2.3"
@@ -2960,8 +2960,8 @@
 		
 			"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"38"
-				"MagicalResistance"			"35"
-		"AttributeStrengthGain"		"3.0"
+				"MagicalResistance"			"45"
+		"AttributeStrengthGain"		"2.0"
 		"AttributeBaseIntelligence"	"25"
 		"AttributeIntelligenceGain"	"1.7"
 		"AttributeBaseAgility"		"35"
@@ -3019,7 +3019,7 @@
 		
 			"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"30"
-				"MagicalResistance"			"40"
+				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"2.8"
 		"AttributeBaseIntelligence"	"40"
 		"AttributeIntelligenceGain"	"4.5"
@@ -3072,7 +3072,7 @@
 		"AbilityTalentStart"		"10"
 
     "ArmorPhysical"       "2"                 // Physical protection.
-    "MagicalResistance"       "40"                 // Magical protection (percentage).
+    "MagicalResistance"       "45"                 // Magical protection (percentage).
 
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
     "AttackDamageMin"     "50"                   // Damage range min.
@@ -3140,7 +3140,7 @@
 		"AbilityTalentStart"		"10"
 
     "ArmorPhysical"       "0"                 // Physical protection.
-    "MagicalResistance"       "25"                 // Magical protection (percentage).
+    "MagicalResistance"       "45"                 // Magical protection (percentage).
 
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
     "AttackDamageMin"     "40"                   // Damage range min.

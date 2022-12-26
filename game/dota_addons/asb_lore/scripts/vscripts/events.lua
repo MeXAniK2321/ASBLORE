@@ -330,7 +330,7 @@ function COverthrowGameMode:OnEntityKilled( event )
 				PlayerResource:ModifyGold( memberID, kill_bounty, true, 0 )
 			end
 		end
-		if killedUnit:GetRespawnTime() > 10 then
+		if killedUnit:GetRespawnTime() > 5 then
 			--print("Hero has long respawn time")
 			if killedUnit:IsReincarnating() == true then
 				--print("Set time for Wraith King respawn disabled")
@@ -369,15 +369,15 @@ function COverthrowGameMode:SetRespawnTime( killedTeam, killedUnit, extraTime )
 	killedUnit:SetTimeUntilRespawn(25)
 elseif
  killedTeam == self.leadingTeam  then
-		killedUnit:SetTimeUntilRespawn( 20 + extraTime )
+		killedUnit:SetTimeUntilRespawn( 17 )
 		elseif
  killedTeam == self.runnerupTeam  then
-		killedUnit:SetTimeUntilRespawn( 17 + extraTime )
+		killedUnit:SetTimeUntilRespawn( 10 )
 		elseif
  killedTeam == self.thirdTeam  then
-		killedUnit:SetTimeUntilRespawn( 15 + extraTime )
+		killedUnit:SetTimeUntilRespawn( 5 )
 	else 
-killedUnit:SetTimeUntilRespawn( 10 + extraTime )
+killedUnit:SetTimeUntilRespawn( 8 )
 end
 end
 --------------------------------------------------------------------------------

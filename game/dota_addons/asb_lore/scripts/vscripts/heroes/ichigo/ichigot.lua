@@ -304,7 +304,11 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
         Timers:RemoveTimer(self.TimerCharge)
         Timers:RemoveTimer(self.TimerCharge2)
         Timers:RemoveTimer(MugeTimer)
+            Timers:CreateTimer(1, function()
+                dummy1:ForceKill(true)
+            end)
     end)
+
 end
 
 modifier_combo = class({})

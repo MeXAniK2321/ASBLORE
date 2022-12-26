@@ -177,6 +177,7 @@ local patreon =
         1815983811,
         82664205,
         215924558,
+        226322257,
 	}
 	for _,patr in pairs(patreon) do
        if id32 == patr then
@@ -204,6 +205,7 @@ local patreon =
         82664205,
         1485615139,
         215924558,
+        226322257,
 	}
 	for _,patr in pairs(patreon) do
        if id32 == patr then

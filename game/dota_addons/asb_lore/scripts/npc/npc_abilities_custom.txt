@@ -14366,7 +14366,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"70"
+		"AbilityCooldown"				"60"
 		"AbilityManaCost"				"300"
 
 		// Damage
@@ -14719,7 +14719,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"70"
+		"AbilityCooldown"				"60"
 		"AbilityManaCost"				"300"
 
 		// Damage
@@ -28824,7 +28824,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"45"
+		"AbilityCooldown"				"55"
 		"AbilityManaCost"				"600"
 
 		// Damage
@@ -31138,7 +31138,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"550"
+				"radius"					"500"
 			}
 			"02"
 			{
@@ -31149,7 +31149,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"500"
+				"damage"					"400"
 			}
 		}
 	}
@@ -40394,7 +40394,7 @@
       "01"
       {
         "var_type"          "FIELD_INTEGER"
-        "base_damage"         "100 150 180 200"
+        "base_damage"         "100 150 180 190"
         
       }
       "02"
@@ -40647,12 +40647,12 @@
       "02"
       {
         "var_type"        "FIELD_FLOAT"
-        "damage_return"   "2500"
+        "damage_return"   "2000"
       }
       "02"
       {
         "var_type"        "FIELD_FLOAT"
-        "agi_scale"   "1.9"
+        "agi_scale"   "1.8"
       }
       
     }

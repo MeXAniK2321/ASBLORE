@@ -1108,12 +1108,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"150"
+				"bonus_damage"					"130"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"evasion"			"50"
+				"evasion"			"30"
 			}
 			"03"
 			{
@@ -1123,12 +1123,12 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_chance_damage"			"300"
+				"bonus_chance_damage"			"200"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"pure"			"180"
+				"pure"			"130"
 			}
 			"06"
 			{
@@ -1138,7 +1138,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"agility"			"70"
+				"agility"			"60"
 			}
 				
 		}
@@ -1887,7 +1887,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor"							"18"
+				"armor"							"5"
 			}
 			"08"
 			{
@@ -2091,7 +2091,7 @@
 
 		
 		"AbilityCastPoint"						"0.0"
-		"AbilityCooldown"						"20.0"
+		"AbilityCooldown"						"5.0"
 
 		
 		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
