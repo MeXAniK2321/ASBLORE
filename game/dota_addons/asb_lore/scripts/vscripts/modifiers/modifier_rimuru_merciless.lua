@@ -32,7 +32,7 @@ end
 function modifier_rimuru_merciless:OnRefresh( kv )
 	-- references
    
-	local max_stack = 5
+	local max_stack = 3
 
 	if IsServer() then
 		if self:GetStackCount()<max_stack then
@@ -40,7 +40,7 @@ function modifier_rimuru_merciless:OnRefresh( kv )
 			
 		end
 	end
-	 if self:GetStackCount() == 5 then
+	 if self:GetStackCount() == 3 then
 	self:GetParent():AddNewModifier(
 		self:GetCaster(), -- player source
 		self:GetAbility(), -- ability source

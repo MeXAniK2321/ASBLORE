@@ -94,6 +94,7 @@ function modifier_hogyoku_evolution_invul:CheckState()
 	local state = {
 		[MODIFIER_STATE_INVULNERABLE] = true,
 		[MODIFIER_STATE_STUNNED] = true,
+		[MODIFIER_STATE_FLYING] = true,
 		
 	}
 
