@@ -299,7 +299,11 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
         caster:SetOriginalModel("models/characters/ichigo/ichigo.vmdl")
         caster:SetModelScale(1.20)
         caster:ForceKill(true)
+<<<<<<< Updated upstream
        Timers:RemoveTimer(dummyTimer)
+=======
+        Timers:RemoveTimer(dummyTimer)
+>>>>>>> Stashed changes
         Timers:RemoveTimer(chargeTimer)
         Timers:RemoveTimer(self.TimerCharge)
         Timers:RemoveTimer(self.TimerCharge2)
