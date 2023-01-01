@@ -648,11 +648,11 @@ end
 function modifier_melty_blood_debuff:OnRefresh( kv )
 	self.damage = kv.damage  + self:GetCaster():FindTalentValue("special_bonus_arcueid_25")
 self:IncrementStackCount()	
-	if self:GetStackCount() == 8 then
+	if self:GetStackCount() == 10 then
 	local damageTable = {
 		victim = self:GetParent(),
 		attacker = self:GetCaster(),
-		damage = 500,
+		damage = 400,
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self,
 damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,		--Optional.

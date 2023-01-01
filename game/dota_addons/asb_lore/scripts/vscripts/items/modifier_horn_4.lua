@@ -25,18 +25,18 @@ function modifier_horn_4:DeclareFunctions()
 end
 
 function modifier_horn_4:GetModifierPreAttack_BonusDamage()
-    return 300
+    return 0
 end
 function modifier_horn_4:GetModifierBonusStats_Strength()
-    return 25
+    return 10
 end
 
 function modifier_horn_4:GetModifierBonusStats_Agility()
-    return 25
+    return 10
 end
 
 function modifier_horn_4:GetModifierBonusStats_Intellect()
-    return 25
+    return 10
 end
 
 function modifier_horn_4:GetTexture()

@@ -24,8 +24,8 @@ function item_lerolero:OnSpellStart()
 		end
 	end
 
-	EmitSoundOn("DOTA_Item.BlackKingBar.Activate", caster)
-	EmitSoundOn("anime_chatwheel_non_sorted_8_8", caster)
+	--EmitSoundOn("DOTA_Item.BlackKingBar.Activate", caster)--
+	--EmitSoundOn("anime_chatwheel_non_sorted_8_8", caster)--
 
 	caster:Purge(false, true, false, true, true)
 

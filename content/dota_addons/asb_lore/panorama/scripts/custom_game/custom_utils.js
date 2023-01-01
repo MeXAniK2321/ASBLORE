@@ -292,6 +292,11 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/ichigo.png" );
 		}
+        else if (sHeroName == "npc_dota_hero_brewmaster")
+		{
+			pPanel.SetImage( "file://{images}/heroes/nanaya.png" );
+		}
+
 		else
 		{
 			pPanel.SetImage( "file://{images}/custom_game/unassigned.png" );

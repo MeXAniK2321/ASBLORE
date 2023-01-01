@@ -2316,9 +2316,9 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
 		"AbilityCastPoint"						"0.2"
-		"AbilityCooldown"						"60"
+		"AbilityCooldown"						"90"
 		"AbilityManaCost"						"0"
-		"AbilityCastRange"						"600"
+		"AbilityCastRange"						"1200"
 
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
 		"AbilitySharedCooldown"					"divine_lyre"
@@ -2345,7 +2345,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"50"
+				"duration"						"40"
 			}
 			"05"
 			{
@@ -4270,10 +4270,51 @@
 			
 	
 		}
+		}
+
+		"item_nanaya_knife"
+	{
+	"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_nanaya_knife.lua"
+	"AbilityTextureName"			"nanaya_knife"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"0"
+	"ItemIsNeutralDrop"						"1"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"dmg"				"100"
+		    }
+		    
+		    "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"agi"				"40"
+		    }
 		
+			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"hp"				"1000"
+			}
+			
+	
+		}
+		}
 	
 	
-	}
+	
 	"item_papyrus"
 	{
 	"BaseClass"						"item_lua"

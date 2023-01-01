@@ -1,5 +1,6 @@
 #base reimport/tatsuya_abilities.txt
 #base reimport/tohka_abilities.txt
+#base "abilities/nanaya/nanaya_abilities.kv"
 
 "DOTAAbilities"
 {
@@ -12204,7 +12205,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.3"
 		"AbilityChannelTime"				"1.5"
-		"AbilityCastRange"				"250"
+		"AbilityCastRange"				"450"
 		"AbilityChannelAnimation" "ACT_DOTA_IDLE"
 		"AbilityCastAnimation" "ACT_DOTA_IDLE"
 
@@ -12334,7 +12335,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"radius"						"1100"
+				"radius"						"1200"
 			}
 			"02"
 			{
@@ -14942,7 +14943,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1700"
+		"AbilityDamage"					"1900"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -15018,12 +15019,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"250"
+				"damage"				"390"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"root"		"0.5"
+				"root"		"0.8"
 			}
 			"05"
 			{
@@ -20807,7 +20808,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"400"
+				"value"					"2000"
 			}			
 		}
 	}
@@ -25531,7 +25532,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"7000"
+		"AbilityDamage"					"15000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -25694,7 +25695,7 @@
 		    "01"
 		    {
 		        "var_type"         			    "FIELD_FLOAT"
-		        "duration"          			"40"
+		        "duration"          			"60"
 				
 		    }
 		   
@@ -25855,7 +25856,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1200"
+		"AbilityDamage"					"2000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -29007,7 +29008,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"1000"
+				"damage"					"1500"
 			}
 			"03"
 			{
@@ -29070,7 +29071,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"1500"
+				"damage"					"2200"
 			}
 		}
 	}
@@ -31748,7 +31749,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"75"
+				"damage"			"55"
 				
 			}
 			"04"
@@ -32772,12 +32773,12 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"movement_speed"			"1550"
+				"movement_speed"			"2500"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"600"
+				"radius"					"800"
 			}
 		}
 	}
@@ -36528,7 +36529,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"				"100 150 200 220"
+				"damage"				"100 150 160 180"
 					"LinkedSpecialBonus"			"special_bonus_arcueid_25"
 				
 			}
@@ -36540,7 +36541,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max"				"8"
+				"max"				"10"
 			}
 			
 			
@@ -36597,7 +36598,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"1.8"
+				"duration"				"1.2"
 				
 			}
 			"03"
@@ -36618,7 +36619,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"damage"			"130"
+				"damage"			"100"
 			}
 			"06"
 			{
@@ -36670,7 +36671,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"500"
+				"radius"					"700"
 			}
 			"02"
 			{
@@ -36681,7 +36682,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"8"
+				"damage"					"7"
 			}
 		}
 	}
@@ -43626,7 +43627,7 @@
 		//"AnimationIgnoresModelScale"	"1"
         "IsGrantedByScepter"    "1"
 
-		"AbilityCooldown"				"40"
+		"AbilityCooldown"				"80"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"900"
 		//"AbilityCastRangeBuffer"		"250"
@@ -43896,12 +43897,12 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"100 200 300 400"
+				"damage"			"100 200 300 600"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage2"			"50 100 200 300"
+				"damage2"			"50 100 200 400"
 			}
 			"11"
 			{

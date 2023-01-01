@@ -4,6 +4,11 @@ LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_M
 LinkLuaModifier("modifier_generic_stunned_lua", "modifiers/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_star_tier1", "modifiers/modifier_star_tier1", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_star_tier2", "modifiers/modifier_star_tier2", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_dying_will", "heroes/dying_will", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_star_tier1", "modifiers/modifier_star_tier1", LUA_MODIFIER_MOTION_NONE)
+dying_will = class({})
+
 
 
 hogyoku_evolution = class({})
@@ -17,6 +22,7 @@ function hogyoku_evolution:OnUpgrade()
         ability:SetLevel(self:GetLevel())
     end
 end
+local state = { [MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true,}
 --[[function hogyoku_evolution:GetBehavior()
     return self:GetCaster():HasTalent("special_bonus_anime_zenitsu_25R") and (self.BaseClass.GetBehavior(self) + DOTA_ABILITY_BEHAVIOR_IMMEDIATE + DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE) or self.BaseClass.GetBehavior(self)
 end]]
@@ -24,7 +30,7 @@ function hogyoku_evolution:OnSpellStart()
     local caster = self:GetCaster()
     local fixed_duration = self:GetSpecialValueFor("fixed_duration")
 	local radius = 400
-	local duration = 2.4
+	local duration = 1.4
 	local damage = 1000
 
 	-- logic
@@ -61,7 +67,7 @@ function hogyoku_evolution:OnSpellStart()
 	
 
     caster:AddNewModifier(caster, self, "modifier_hogyoku_evolution", {duration = fixed_duration})
-	caster:AddNewModifier(caster, self, "modifier_hogyoku_evolution_invul", {duration = 1.3})
+	caster:AddNewModifier(caster, self, "modifier_hogyoku_evolution_invul", {duration = 30})
 	
 caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
 
@@ -92,8 +98,8 @@ function modifier_hogyoku_evolution_invul:IsPurgeException() return false end
 function modifier_hogyoku_evolution_invul:RemoveOnDeath() return true end
 function modifier_hogyoku_evolution_invul:CheckState()
 	local state = {
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_STUNNED] = true,
+		
+		
 		[MODIFIER_STATE_FLYING] = true,
 		
 	}
@@ -105,6 +111,7 @@ function modifier_hogyoku_evolution_invul:DeclareFunctions()
     				
 	                
 					MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+                    
                    
                     
                      }
@@ -134,7 +141,8 @@ function modifier_hogyoku_evolution:DeclareFunctions()
                     MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
 					MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
 					MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
-                    MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL, }
+                    MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL,
+                     }
     return func
 end
 

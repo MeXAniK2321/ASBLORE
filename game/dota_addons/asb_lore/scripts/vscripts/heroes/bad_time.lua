@@ -171,7 +171,7 @@ function modifier_bad_time:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
-	self.mana = self.caster:GetMaxMana() * 1.4
+	self.mana = self.caster:GetMaxMana() * 2.5
 	self.hp = self.caster:GetMaxHealth()
 
 
