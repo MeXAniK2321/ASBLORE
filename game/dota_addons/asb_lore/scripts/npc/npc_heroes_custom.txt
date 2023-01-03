@@ -1,3 +1,5 @@
+#base "heroes/npc_fate_hero_nanaya.kv"
+
 "DOTAHeroes"
 {
     "npc_dota_hero_dark_seer"
@@ -3058,16 +3060,16 @@
 
     //Talents
     "Ability10"					"special_bonus_mp_400"
-		"Ability11"					"special_bonus_agility_30"
+		"Ability11"					"special_bonus_agility_20"
 
-		"Ability12"					"special_bonus_movement_speed_40"
-		"Ability13"					"special_bonus_attack_damage_100"
+		"Ability12"					"special_bonus_movement_speed_20"
+		"Ability13"					"special_bonus_attack_damage_60"
 
-		"Ability14"					"special_bonus_armor_20"
+		"Ability14"					"special_bonus_armor_10"
 		"Ability15"					"special_bonus_all_stats_20"
 
 		"Ability16"					"special_bonus_hp_500"
-		"Ability17"					"special_bonus_attack_speed_100"
+		"Ability17"					"special_bonus_attack_speed_60"
 
 		"AbilityTalentStart"		"10"
 
@@ -3100,7 +3102,7 @@
     "StatusManaRegen"     "0.2"                 // Mana regeneration rate.
     "HealthBarOffset"			"190"
 
-    "VisionDaytimeRange"    "1200"                  // Range of vision at night time.
+    "VisionDaytimeRange"    "1600"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1200"                  // Range of vision at night time.
   }
 
@@ -3139,7 +3141,7 @@
 
 		"AbilityTalentStart"		"10"
 
-    "ArmorPhysical"       "0"                 // Physical protection.
+    "ArmorPhysical"       "10"                 // Physical protection.
     "MagicalResistance"       "45"                 // Magical protection (percentage).
 
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
@@ -3172,7 +3174,7 @@
     "StatusManaRegen"     "0.2"                 // Mana regeneration rate.
     "HealthBarOffset"			"210"
 
-    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
-    "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
+    "VisionDaytimeRange"    "1600"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
   }
   }

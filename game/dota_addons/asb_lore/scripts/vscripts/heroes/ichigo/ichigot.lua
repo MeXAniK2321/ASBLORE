@@ -189,9 +189,9 @@ function ichigoT:OnSpellStart()
                 fGroundOffset = 0,
                 nChangeMax = 1,
                 bRecreateOnChange = true,
-                bZCheck = true,
+                bZCheck = false,
                 bGroundLock = false,
-                bProvidesVision = true,
+                bProvidesVision = false,
                 iVisionRadius = vision,
                 iVisionTeamNumber = caster:GetTeam(),
                 bFlyingVision = false,
@@ -205,13 +205,18 @@ function ichigoT:OnSpellStart()
                 end,
                 OnUnitHit = function(self, unit)
                     if unit ~= nil and not unit:IsMagicImmune() then
-                        ApplyDamage({
-                            victim = unit,
-                            attacker = caster,
-                            damage = damage,
-                            damage_type = damageType,
-                            damage_flags = DOTA_DAMAGE_FLAG_BYPASSES_INVULNERABILITY,
-                        })
+                        local tDamageTable =    {
+                                                    victim = unit,
+                                                    attacker = caster,
+                                                    damage = damage,
+                                                    damage_type = damageType,
+                                                    damage_flags = DOTA_DAMAGE_FLAG_NONE
+                                                }
+                        if unit == target then
+                            tDamageTable.damage_flags = DOTA_DAMAGE_FLAG_BYPASSES_INVULNERABILITY
+                        end
+                        
+                        ApplyDamage(tDamageTable)
                     end
                 end,
                 OnFinish = function(self, pos)
@@ -222,12 +227,12 @@ function ichigoT:OnSpellStart()
             return 0.4
         end)
 
-        local dummy1 = CreateUnitByName("npc_dummy_unit_vision", casterPt, true, caster, caster, caster:GetTeamNumber())
+       local dummy1 = CreateUnitByName("npc_dummy_unit_vision", casterPt, true, caster, caster, caster:GetTeamNumber())
         local dummy = CreateUnitByName("npc_dummy_unit", casterPt, true, caster, caster, caster:GetTeamNumber())
-        visiondummy = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
-        dummy1:SetOrigin(visiondummy)
-        dummy1:SetDayTimeVisionRange(2000) 
-    dummy1:SetNightTimeVisionRange(2000)
+        local visiondummy = caster:GetAbsOrigin() + caster:GetForwardVector() * 300
+       dummy1:SetOrigin(visiondummy)
+        dummy1:SetDayTimeVisionRange(1000) 
+   dummy1:SetNightTimeVisionRange(1000)
         local knockback_push = caster:GetAbsOrigin() - caster:GetForwardVector()*300
     local knockback = { should_stun = false,
     knockback_duration = 8,
@@ -238,13 +243,15 @@ function ichigoT:OnSpellStart()
     center_x = knockback_push.x,
     center_y = knockback_push.y,
     center_z = caster:GetAbsOrigin().z }
-    dummy1:AddNewModifier(caster, self, "modifier_knockback", knockback)
+  dummy1:AddNewModifier(caster, self, "modifier_knockback", knockback)
     --caster:AddNewModifier(caster, self, "modifier_knockback", knockback)
         self:PlayEffects(caster, dummy, casterPt, duration_last)
        
         Timers:CreateTimer(duration_last, function()
             if kameTimer then
+              dummy1:ForceKill(true)
                 Timers:RemoveTimer(kameTimer)
+
             end
         end)
     end)
@@ -280,7 +287,6 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
 
     Timers:CreateTimer(duration_last, function()
         dummy:ForceKill(true)
-
         local ParticleCharge4 = "particles/ichigo_eff/ichigo_t/ichigo_t_charge1f.vpcf"
         local GinFx4 = ParticleManager:CreateParticle(ParticleCharge4, PATTACH_POINT_FOLLOW, caster)
         ParticleManager:SetParticleControl(GinFx4, 0, caster:GetAbsOrigin())
@@ -299,16 +305,13 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
         caster:SetOriginalModel("models/characters/ichigo/ichigo.vmdl")
         caster:SetModelScale(1.20)
         caster:ForceKill(true)
-       Timers:RemoveTimer(dummyTimer)
+        --local dummy1
+        Timers:RemoveTimer(dummyTimer)
         Timers:RemoveTimer(chargeTimer)
         Timers:RemoveTimer(self.TimerCharge)
         Timers:RemoveTimer(self.TimerCharge2)
         Timers:RemoveTimer(MugeTimer)
-            Timers:CreateTimer(3, function()
-                dummy1:ForceKill(true)
-            end)
     end)
-
 end
 
 modifier_combo = class({})

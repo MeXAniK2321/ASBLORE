@@ -22,7 +22,7 @@ function modifier_horn_1:DeclareFunctions()
 end
 
 function modifier_horn_1:GetModifierPreAttack_BonusDamage()
-    return 200
+    return 100
 end
 
 

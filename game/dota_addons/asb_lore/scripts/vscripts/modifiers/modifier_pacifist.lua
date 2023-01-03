@@ -57,5 +57,5 @@ end
 
 
 function modifier_pacifist:GetModifierDamageOutgoing_Percentage()
-	return -50
+	return -100
 end

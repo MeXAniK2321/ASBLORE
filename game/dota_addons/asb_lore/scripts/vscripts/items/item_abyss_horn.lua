@@ -146,7 +146,7 @@ self:PlayEffects3(target)
 elseif  caster:HasModifier("modifier_hero_route_5") then
 EmitSoundOn("halo.magic", caster)
 	EmitSoundOn("halo.magic_exp", caster)
-	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 1.0})
+	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 0.0})
 	local delay = 1
 	Timers:CreateTimer(delay,function()
 	local damageTable = {
@@ -380,13 +380,13 @@ if  self.current_counter < 200 then
 	elseif self.current_counter == 800  then
 	
 	if caster:HasModifier("modifier_hero_route_true") then
-		 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 60})
-	caster:AddNewModifier(caster, self, "modifier_hero_route_5", {duration = 60})
+		 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 50})
+	caster:AddNewModifier(caster, self, "modifier_hero_route_5", {duration = 50})
 	self:EndCooldown()
 	else
 	
-	 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 60})
-	caster:AddNewModifier(caster, self, "modifier_hero_route_6", {duration = 60})
+	 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 50})
+	caster:AddNewModifier(caster, self, "modifier_hero_route_6", {duration = 50})
 	self:EndCooldown()
 	end
 	end
@@ -421,14 +421,14 @@ if  self.current_counter < 200 then
 	elseif self.current_counter == 800  then
 	
 	if caster:HasModifier("modifier_demon_route_true") then
-		 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 60})
-	caster:AddNewModifier(caster, self, "modifier_demon_route_5", {duration = 60})
+		 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 50})
+	caster:AddNewModifier(caster, self, "modifier_demon_route_5", {duration = 50})
 	caster:AddNewModifier(caster, self, "modifier_angel_halo_stage_10_invul", {duration = 3})
 	self:EndCooldown()
 	else
 	
-	 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 60})
-	caster:AddNewModifier(caster, self, "modifier_demon_route_6", {duration = 60})
+	 caster:AddNewModifier(caster, self, "modifier_abyss_start", {duration = 50})
+	caster:AddNewModifier(caster, self, "modifier_demon_route_6", {duration = 50})
 	caster:AddNewModifier(caster, self, "modifier_lust_armor_invul", {duration = 3})
 	self:EndCooldown()
 	end
@@ -1085,7 +1085,7 @@ end
 
 elseif caster:HasModifier("modifier_hero_route") then
 
-if death < 15 then
+if death < 3 then
 target:AddNewModifier(caster, self, "modifier_hero_route_true", {})
 
 else
@@ -1345,7 +1345,7 @@ function modifier_hero_route_1:OnAttackLanded(params)
 	
 end
 function modifier_hero_route_1:GetModifierPreAttack_BonusDamage()
-    return 2
+    return 0
 end
 
 function modifier_hero_route_1:GetModifierHealthBonus()
@@ -1444,7 +1444,7 @@ function modifier_hero_route_2:OnAttackLanded(params)
 	
 
 function modifier_hero_route_2:GetModifierPreAttack_BonusDamage()
-    return 10
+    return 0
 end
 
 function modifier_hero_route_2:GetModifierHealthBonus()
@@ -1545,7 +1545,7 @@ function modifier_hero_route_3:OnAttackLanded(params)
 	
 
 function modifier_hero_route_3:GetModifierPreAttack_BonusDamage()
-    return 20
+    return 0
 end
 
 function modifier_hero_route_3:GetModifierHealthBonus()
@@ -1646,7 +1646,7 @@ function modifier_hero_route_4:OnAttackLanded(params)
 	end
 	
 function modifier_hero_route_4:GetModifierPreAttack_BonusDamage()
-    return 25
+    return 0
 end
 
 function modifier_hero_route_4:GetModifierHealthBonus()
@@ -1871,7 +1871,7 @@ function modifier_hero_route_5:OnAttackLanded(params)
 			if self.shit == 1 then
 			local damageTable = {
 		attacker = self:GetParent(),
-		damage =  100,
+		damage =  0,
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self,
 	}
@@ -2069,7 +2069,7 @@ end
 -- Initializations
 function modifier_halo_fire:OnCreated( kv )
 	-- references
-	local damage = 3
+	local damage = 0
 	
 
 	if not IsServer() then return end
@@ -2090,7 +2090,7 @@ end
 
 function modifier_halo_fire:OnRefresh( kv )
 	-- references
-	local damage = 3
+	local damage = 0
 	
 
 	if not IsServer() then return end
@@ -2147,7 +2147,7 @@ function modifier_halo_spirits_stats_1:DeclareFunctions()
 end
 function modifier_halo_spirits_stats_1:GetModifierMagicalResistanceBonus()
 
-    return 12
+    return 0
 	
 end
 
@@ -2180,7 +2180,7 @@ function modifier_halo_spirits_stats_2:DeclareFunctions()
 end
 function modifier_halo_spirits_stats_2:GetModifierPhysicalArmorBonus()
 
-    return 10
+    return 5
 
 end
 function modifier_halo_spirits_stats_2:GetModifierHealthBonus()
@@ -2219,7 +2219,7 @@ function modifier_halo_spirits_stats_3:GetModifierMoveSpeedBonus_Constant()
 	
 function modifier_halo_spirits_stats_3:GetModifierAttackSpeedBonus_Constant()
 
-	 return 30
+	 return 0
 
 end
 function modifier_halo_spirits_stats_3:GetModifierHealthBonus()
@@ -2256,7 +2256,7 @@ function modifier_halo_spirits_stats_4:GetModifierHealthBonus()
 	end
 
 function modifier_halo_spirits_stats_4:GetModifierPreAttack_BonusDamage()
-    return 5
+    return 0
 end
 
 
@@ -2392,7 +2392,7 @@ function modifier_hero_route_6:OnAttackLanded(params)
 	end
 	
 function modifier_hero_route_6:GetModifierPreAttack_BonusDamage()
-    return 5
+    return 0
 end
 
 function modifier_hero_route_6:GetModifierHealthBonus()
@@ -3693,7 +3693,7 @@ end
 return 15
 end   
   function modifier_samurai_route_6:GetModifierPreAttack_BonusDamage()
-return 300
+return 200
 end 
 function modifier_samurai_route_6:OnAttackLanded(params)
 	if IsServer() then
@@ -3916,7 +3916,7 @@ function modifier_samurai_full_counter:AllowIllusionDuplicate()
 --------------------------------------------------------------------------------
 
 function modifier_samurai_full_counter:OnCreated( kv )
-	self.block_passive = 1000
+	self.block_passive = 100
 	
 	self.block_chance = 100
 	
@@ -3924,7 +3924,7 @@ end
 
 function modifier_samurai_full_counter:OnRefresh( kv )
 	-- get references
-	self.block_passive = 1000
+	self.block_passive = 100
   self.block_chance = 1000
 end
 

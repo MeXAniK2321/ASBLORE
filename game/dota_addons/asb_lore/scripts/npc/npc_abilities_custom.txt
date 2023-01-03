@@ -1,5 +1,6 @@
 #base reimport/tatsuya_abilities.txt
 #base reimport/tohka_abilities.txt
+#base "abilities/nanaya/nanaya_abilities.kv"
 
 "DOTAAbilities"
 {
@@ -1163,7 +1164,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"launcher_damage"				"8000"
+				"launcher_damage"				"10000"
 				
 			}
 			"02"
@@ -1737,7 +1738,7 @@
 		"08"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"main_damage"			"1800"
+			"main_damage"			"1200"
 			
 		}
 		"09"
@@ -1748,7 +1749,7 @@
 		"10"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"burn_dps"				"1500"
+			"burn_dps"				"1000"
 			
 		}
 		"11"
@@ -3120,7 +3121,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"ring_dot_damage"				"100 125 250"
+				"ring_dot_damage"				"100 125 225"
 				"LinkedSpecialBonus"			"special_bonus_shana_20"
 				
 			}
@@ -3137,7 +3138,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"75"
+				"value"					"50"
 			}			
 		}
 	}
@@ -7054,7 +7055,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"sand_storm_damage"		"700"
+				"sand_storm_damage"		"900"
 				"LinkedSpecialBonus"    "special_bonus_bogdan_25"
 			}
 			"05"
@@ -7909,7 +7910,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"amp"	"50"
+				"amp"	"70"
 				
 			}
 			"03"
@@ -12204,7 +12205,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.3"
 		"AbilityChannelTime"				"1.5"
-		"AbilityCastRange"				"250"
+		"AbilityCastRange"				"450"
 		"AbilityChannelAnimation" "ACT_DOTA_IDLE"
 		"AbilityCastAnimation" "ACT_DOTA_IDLE"
 
@@ -12334,7 +12335,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"radius"						"1100"
+				"radius"						"1200"
 			}
 			"02"
 			{
@@ -14942,7 +14943,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1700"
+		"AbilityDamage"					"1900"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -15018,12 +15019,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"250"
+				"damage"				"390"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"root"		"0.5"
+				"root"		"0.8"
 			}
 			"05"
 			{
@@ -20347,7 +20348,7 @@
 			"12"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"44 50 70 110"
+				"damage"				"44 50 70 190"
 			}
 		}
 	}
@@ -20807,7 +20808,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"400"
+				"value"					"2000"
 			}			
 		}
 	}
@@ -25531,7 +25532,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"7000"
+		"AbilityDamage"					"15000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -25694,7 +25695,7 @@
 		    "01"
 		    {
 		        "var_type"         			    "FIELD_FLOAT"
-		        "duration"          			"40"
+		        "duration"          			"60"
 				
 		    }
 		   
@@ -25855,7 +25856,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1200"
+		"AbilityDamage"					"2000"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -29007,7 +29008,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"1000"
+				"damage"					"1500"
 			}
 			"03"
 			{
@@ -29070,7 +29071,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"1500"
+				"damage"					"2200"
 			}
 		}
 	}
@@ -31748,7 +31749,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"75"
+				"damage"			"55"
 				
 			}
 			"04"
@@ -32133,7 +32134,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"2000"
+		"AbilityDamage"					"1600"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -32772,12 +32773,12 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"movement_speed"			"1550"
+				"movement_speed"			"2500"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"600"
+				"radius"					"800"
 			}
 		}
 	}
@@ -36528,7 +36529,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"				"100 150 200 220"
+				"damage"				"100 150 160 180"
 					"LinkedSpecialBonus"			"special_bonus_arcueid_25"
 				
 			}
@@ -36540,7 +36541,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max"				"8"
+				"max"				"10"
 			}
 			
 			
@@ -36597,7 +36598,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"1.8"
+				"duration"				"1.2"
 				
 			}
 			"03"
@@ -36618,7 +36619,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"damage"			"130"
+				"damage"			"100"
 			}
 			"06"
 			{
@@ -36670,7 +36671,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"500"
+				"radius"					"700"
 			}
 			"02"
 			{
@@ -36681,7 +36682,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"8"
+				"damage"					"7"
 			}
 		}
 	}
@@ -40722,7 +40723,7 @@
     "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
 
     "AbilityManaCost"           "300"
-    "AbilityCastRange"            "1500"
+    "AbilityCastRange"            "900"
     "AbilityCastPoint"            "0.3"
     "AbilityCooldown"           "180"
      
@@ -43005,7 +43006,7 @@
     //"AnimationIgnoresModelScale"  "1"
 
 
-    "AbilityCooldown"       "40.0 30.0 25.0 20.0"
+    "AbilityCooldown"       "40.0 30.0 25.0 23.0"
     "AbilityManaCost"       "25 35 45 65"
     //"AbilityDamage"         "25 50 100"
     //"AbilityCastRange"        "1500"
@@ -43096,7 +43097,7 @@
     //"AnimationIgnoresModelScale"  "1"
 
 
-    "AbilityCooldown"       "35.0 30.0 25.0 20.0"
+    "AbilityCooldown"       "35.0 30.0 25.0 23.0"
     "AbilityManaCost"       "25 50 75 100"
     //"AbilityDamage"         "25 50 100"
     //"AbilityCastRange"        "100"
@@ -43177,7 +43178,7 @@
     //"AnimationIgnoresModelScale"  "1"
 
 
-    "AbilityCooldown"       "60.0 50.0 40.0 30.0"
+    "AbilityCooldown"       "60.0 50.0 40.0 32.0"
     "AbilityManaCost"       "30 60 90 120"
     //"AbilityDamage"         "25 50 100"
     //"AbilityCastRange"        "300"
@@ -43502,7 +43503,7 @@
 		//"AnimationIgnoresModelScale"	"1"
 
 
-		"AbilityCooldown"				"32.0"
+		"AbilityCooldown"				"40.0"
 		"AbilityManaCost"				"150"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"100"
@@ -43626,7 +43627,7 @@
 		//"AnimationIgnoresModelScale"	"1"
         "IsGrantedByScepter"    "1"
 
-		"AbilityCooldown"				"40"
+		"AbilityCooldown"				"15"
 		//"AbilityDamage"					"25 50 100"
 		//"AbilityCastRange"				"900"
 		//"AbilityCastRangeBuffer"		"250"
@@ -43640,7 +43641,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"range"	"600"
+				"range"	"520"
 			}
 		}
 	}
@@ -43687,7 +43688,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"200"
+				"radius"	"210"
 			}
 			"02"
 			{
@@ -43896,12 +43897,12 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"100 200 300 400"
+				"damage"			"100 200 300 600"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage2"			"50 100 200 300"
+				"damage2"			"50 100 200 400"
 			}
 			"11"
 			{

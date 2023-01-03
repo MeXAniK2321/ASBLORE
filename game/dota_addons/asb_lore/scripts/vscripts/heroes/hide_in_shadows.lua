@@ -42,7 +42,7 @@ end
 function hide_in_shadows:OnSpellStart()
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()
-    local duration = 30
+    local duration = 10
 	local radius = 400
 	
 	if caster:GetTeamNumber() == target:GetTeamNumber() then
@@ -50,7 +50,7 @@ function hide_in_shadows:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"hide_in_shadows_target", -- modifier name
-		{ duration = 100 } -- kv
+		{ duration = 10 } -- kv
 	)
 	
     self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_hide_in_shadows", { duration = 100.05 } )

@@ -55,24 +55,24 @@ end
 
 
 function modifier_horn_truth:GetModifierSpellAmplify_PercentageUnique()
-    return 100
+    return 10
 end
 
 function modifier_horn_truth:GetModifierPreAttack_BonusDamage()
-    return 1000
+    return 10
 end
 
 
 function modifier_horn_truth:GetModifierBonusStats_Strength()
-    return 150
+    return 15
 end
 
 function modifier_horn_truth:GetModifierBonusStats_Agility()
-    return 150
+    return 15
 end
 
 function modifier_horn_truth:GetModifierBonusStats_Intellect()
-    return 150
+    return 15
 end
 function modifier_horn_truth:GetModifierIncomingDamage_Percentage( params )
 	
