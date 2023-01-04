@@ -47,11 +47,60 @@ function item_chomusuke:OnSpellStart()
 
 	local vision_radius = 900
 	local vision_duration = 6
+	local speed = 900
+	
+	local info = {	Target = target,
+    				Source = caster,
+   					Ability = self,    
+    
+    				EffectName = "particles/chomuske_projectile.vpcf",
+    				iMoveSpeed = speed,
+    				bDodgeable = true,                           			-- Optional
 
+    				--iSourceAttachmet = DOTA_PROJECTILE_ATTACHMENT_ATTACK_1,  -- Optional
+    				--vSourceLoc = caster:GetAbsOrigin(),                -- Optional (HOW)
+    				--bIsAttack = false,                                -- Optional
+    				bReplaceExisting = false,                         -- Optional
+    				flExpireTime = GameRules:GetGameTime() + 10,      -- Optional but recommended
+    
+    				bDrawsOnMinimap = false,                          -- Optional
+    				bVisibleToEnemies = true,                         -- Optional
+    				bProvidesVision = false,                           -- Optional
+    				iVisionRadius = 400,                              -- Optional
+    				iVisionTeamNumber = caster:GetTeamNumber()        -- Optional
+				}
+	
+	ProjectileManager:CreateTrackingProjectile(info)
+
+
+
+end
+
+function item_chomusuke:OnProjectileHit(hTarget, vLocation)
+	local caster = self:GetCaster()
+	
+	
+
+	-- load data
+	local damage = 200
+	local radius = self:GetSpecialValueFor("radius")
+	local debuffDuration = 2.5
+
+	local vision_radius = 900
+	local vision_duration = 6
+	local speed = 900
+	 
+	if not hTarget then
+		return nil
+	end
+
+	if hTarget:TriggerSpellAbsorb(self) then
+		return nil
+	end
 	-- Find Units in Radius
 	local enemies = FindUnitsInRadius(
 		self:GetCaster():GetTeamNumber(),	-- int, your team number
-		point,	-- point, center point
+		vLocation,	-- point, center point
 		nil,	-- handle, cacheUnit. (not known)
 		radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
 		DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
@@ -91,7 +140,8 @@ function item_chomusuke:OnSpellStart()
 
 	
 
-	self:PlayEffects( point, radius, debuffDuration )
+	self:PlayEffects( vLocation, radius, debuffDuration )
+	 
 end
 
 --------------------------------------------------------------------------------

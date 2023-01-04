@@ -71,7 +71,7 @@ function nanaya_q2jump:OnProjectileHitHandle(hTarget, vLocation, iProjectileHand
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 
@@ -88,7 +88,7 @@ function nanaya_q2jump:OnProjectileHitHandle(hTarget, vLocation, iProjectileHand
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 
@@ -155,7 +155,7 @@ local knockback4 = { should_stun = true,
                     attacker = caster,
                     damage = dmg*2,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 

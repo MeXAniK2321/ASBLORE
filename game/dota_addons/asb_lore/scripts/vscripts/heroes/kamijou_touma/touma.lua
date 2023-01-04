@@ -99,6 +99,7 @@ caster:StartGesture(ACT_DOTA_ATTACK_SPECIAL)
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -177,6 +178,7 @@ caster:StartGesture(ACT_DOTA_ATTACK)
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -254,6 +256,7 @@ caster:StartGesture(ACT_DOTA_ATTACK)
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -332,6 +335,7 @@ caster:AddNewModifier(
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -799,6 +803,7 @@ self.damage = self:GetSpecialValueFor("base_damage")
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -888,6 +893,7 @@ self.damage = self:GetSpecialValueFor("base_damage")
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -977,6 +983,7 @@ self.damage = self:GetSpecialValueFor("base_damage")
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -1066,6 +1073,7 @@ self.damage = self:GetSpecialValueFor("base_damage")
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 
 
@@ -1315,6 +1323,7 @@ caster:AddNewModifier(
 		damage = damage,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -1363,6 +1372,7 @@ function touma_second_combo:Hit2( target )
 		damage = damage,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -1413,6 +1423,7 @@ function touma_second_combo:Hit3( target )
 		damage = damage,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -1473,6 +1484,7 @@ function touma_second_combo:Hit4( target )
 		damage = damage,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -1527,6 +1539,7 @@ function touma_second_combo:Hit5( target )
 		damage = damage,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -1581,6 +1594,7 @@ caster:AddNewModifier(
 		damage = damage * 0.5,
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage(damageTable)
 
@@ -2058,6 +2072,7 @@ local damageTable = {
 		damage = damage,
 		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self:GetAbility(), --Optional.
+		damage_flags = 1024,
 	}
 	self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_stunned", {duration = 1.5 })
 	ApplyDamage(damageTable)
@@ -2218,7 +2233,7 @@ end
 		damage = self.dip,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self:GetAbility(),
-damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,		--Optional.
+		damage_flags = 1024,		--Optional.
 	}
 	-- update damage
 	
@@ -2532,6 +2547,7 @@ local damageTable = {
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	ApplyDamage( damageTable )
 	self:PlayEffects(600)
@@ -2781,6 +2797,7 @@ local damageTable = {
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	--local delay = 0.1
 --Timers:CreateTimer(delay,function()
@@ -2940,7 +2957,7 @@ function modifier_touma_gender_equality_combo:OnIntervalThink()
 			attacker = self:GetCaster(),
 			damage = 200,
 			damage_type = DAMAGE_TYPE_PHYSICAL,
-			damage_flags = DOTA_DAMAGE_FLAG_NONE, --Optional.
+			damage_flags = 1024, --Optional.
 			ability = self, --Optional.
 		}
 		ApplyDamage( self.damageTable )
@@ -3144,6 +3161,7 @@ local damageTable = {
 		damage = self.damage,
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self, --Optional.
+		damage_flags = 1024,
 	}
 	--local delay = 0.1
 --Timers:CreateTimer(delay,function()
@@ -3303,7 +3321,7 @@ function modifier_touma_true_gender_equality_combo:OnIntervalThink()
 			attacker = self:GetCaster(),
 			damage = 200,
 			damage_type = DAMAGE_TYPE_PHYSICAL,
-			damage_flags = DOTA_DAMAGE_FLAG_NONE, --Optional.
+			damage_flags = 1024, --Optional.
 			ability = self, --Optional.
 		}
 		ApplyDamage( self.damageTable )

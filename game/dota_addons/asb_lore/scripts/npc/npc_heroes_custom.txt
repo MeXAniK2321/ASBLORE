@@ -1803,11 +1803,11 @@
 		"Ability6"                 "bad_time"
 		"Ability21"                "gaster_blaster"
 		"Ability22"                "sans_punch"
-		"Ability29"                 "sans_slap"
+		"Ability29"                 "sans_global_shortcut"
 		"Ability23"                "sans_multiple_boner"
 		"Ability27"                "sans_evade"
 		"Ability28"                "circle_gaster_blaster"
-		"Ability5"                "sans_global_shortcut"
+		"Ability5"                "sans_slap"
 		"Ability10"					"special_bonus_mana_reduction_9"
 		"Ability11"					"special_bonus_spell_amplify_8"
 

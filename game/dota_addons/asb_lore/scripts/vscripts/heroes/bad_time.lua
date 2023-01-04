@@ -185,7 +185,7 @@ if self:GetParent():HasItemInInventory("item_chomusuke") then
    self.skills_table = {
                             ["sans_bone_throw"] = "gaster_blaster",
                             ["skelejoke"] = "sans_punch",
-							["boner"] = "sans_slap",
+							["boner"] = "sans_global_shortcut",
 							["bad_time"] = "circle_gaster_blaster",
                         }
 else

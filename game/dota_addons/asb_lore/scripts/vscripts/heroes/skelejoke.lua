@@ -7,7 +7,7 @@ function skelejoke:GetIntrinsicModifierName()
     return "modifier_jokk"
 end
 function skelejoke:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("sans_slap")
+    local ability = self:GetCaster():FindAbilityByName("sans_global_shortcut")
     if ability and ability:GetLevel() < self:GetLevel() then
         ability:SetLevel(self:GetLevel())
     end
@@ -119,7 +119,7 @@ end
 
 function modifier_jokk:OnIntervalThink()
     if IsServer() then
-        local skeleton = self:GetParent():FindAbilityByName("sans_global_shortcut")
+        local skeleton = self:GetParent():FindAbilityByName("sans_slap")
         if skeleton and not skeleton:IsNull() then
             if self:GetParent():HasScepter() then
                 if skeleton:IsHidden() then

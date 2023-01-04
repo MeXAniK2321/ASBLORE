@@ -153,7 +153,7 @@ function modifier_q_nanaya:hit()
                     attacker = self.parent,
                     damage = self.dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self.ability
                 })
 	self.target:EmitSound("nanaya.slash")

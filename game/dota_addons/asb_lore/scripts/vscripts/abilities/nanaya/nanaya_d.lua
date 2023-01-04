@@ -128,7 +128,7 @@ if slash > 0 and target:HasModifier("nanaya_slashes_modifier1") then
                     attacker = caster,
                     damage = 150,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 
@@ -241,7 +241,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 			ScreenShake(target:GetOrigin(), 10, 1.0, 0.1, 2000, 0, true)
@@ -366,7 +366,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 			ScreenShake(target:GetOrigin(), 10, 1.0, 0.1, 2000, 0, true)

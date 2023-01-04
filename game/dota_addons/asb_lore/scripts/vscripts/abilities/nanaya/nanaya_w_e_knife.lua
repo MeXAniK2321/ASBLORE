@@ -70,7 +70,7 @@ function jump_ahead_nanaya:OnProjectileHitHandle(hTarget, vLocation, iProjectile
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 
@@ -118,7 +118,7 @@ function jump_ahead_nanaya:OnProjectileHitHandle(hTarget, vLocation, iProjectile
                     attacker = caster,
                     damage = dmg2,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 
@@ -290,7 +290,7 @@ function nanaya_knife:OnProjectileHitHandle(hTarget, vLocation, iProjectileHandl
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 		end
@@ -516,7 +516,7 @@ units:EmitSound(test)
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 		--DoDamage(caster, units, 250, DAMAGE_TYPE_PHYSICAL, 0, self, false)
@@ -564,7 +564,7 @@ ApplyDamage({
                     attacker = caster,
                     damage = 700,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 local knockback = { should_stun = true,
@@ -612,7 +612,7 @@ ApplyDamage({
                     attacker = caster,
                     damage = 1200,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 ParticleManager:CreateParticle("particles/nanaya_work_2.vpcf", PATTACH_ABSORIGIN, v)

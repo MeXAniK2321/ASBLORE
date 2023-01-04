@@ -373,7 +373,7 @@ print (hTarget)
                     attacker = caster,
                     damage = 400,
                     damage_type = DAMAGE_TYPE_MAGICAL,
-                    damage_flags = 0,
+                    damage_flags = 1024,
                     ability = self
                 })
 end
