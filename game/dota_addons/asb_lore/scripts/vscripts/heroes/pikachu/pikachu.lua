@@ -1426,7 +1426,8 @@ function modifier_pikachu_swap:OnCreated(table)
     self.projectile_avoid_chance = self.ability:GetSpecialValueFor("projectile_avoid_chance")
     self.turn_rate = self.ability:GetSpecialValueFor("turn_rate")
     self.awake_mana = self.ability:GetSpecialValueFor("awake_mana")
-    self.skills_table = {
+	if(self.parent:GetAbilityByIndex(5):GetName() == "hunting" ) then
+    	self.skills_table = {
                             ["presence_of_evil"] = "pikachu_nit",
 							["aura_of_exe"] = "pikachu_cry",
 							["pika_fear"] = "saske_vernis_v_konohu",
@@ -1435,7 +1436,16 @@ function modifier_pikachu_swap:OnCreated(table)
 							["hunting"] = "pukachu_pukachu",
                             
                         }
-
+	else
+		self.skills_table = {
+			["presence_of_evil"] = "pikachu_nit",
+			["aura_of_exe"] = "pikachu_cry",
+			["pika_fear"] = "saske_vernis_v_konohu",
+			["scary_scary_tale"] = "dejavu_pikachu",
+			["throw_booga"] = "gayrang",
+			[self.parent:GetAbilityByIndex(5):GetName()] = "pukachu_pukachu",
+		}
+	end
 
     if IsServer() then
         for k, v in pairs(self.skills_table) do
@@ -1454,6 +1464,7 @@ function modifier_pikachu_swap:OnCreated(table)
                 end
             end
         end
+		 
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
         if IsServer() then
      

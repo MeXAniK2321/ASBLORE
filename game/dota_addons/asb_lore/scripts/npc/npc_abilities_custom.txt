@@ -31603,7 +31603,7 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"damage"				"100 150 200 250"
-				"LinkedSpecialBonus"			"special_bonus_billy_25"
+				
 				
 			}
 			"02"
@@ -31710,12 +31710,12 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-
+    "LinkedSpecialBonus"      "special_bonus_billy_25"
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"400"
 		"AbilityCastPoint"				"0.3"
-		"AbilityChannelTime"			"6.0"
+		//"AbilityChannelTime"			"6.0"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -32022,7 +32022,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"0"
+				"value"					"0.2"
 			}			
 		}
 	}

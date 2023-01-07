@@ -327,7 +327,7 @@ function modifier_sexy_body:AllowIllusionDuplicate()
 end
 function modifier_sexy_body:OnAbilityFullyCast(params)
 	if IsServer() then
-	self.damage = self:GetAbility():GetSpecialValueFor("damage") + self:GetCaster():FindTalentValue("special_bonus_billy_25")
+	self.damage = self:GetAbility():GetSpecialValueFor("damage")-- + self:GetCaster():FindTalentValue("special_bonus_billy_25")
 	self.duration = self:GetAbility():GetSpecialValueFor("duration")
 			local unit = params.unit
 	local pass = false
@@ -544,10 +544,13 @@ end
 fisting = class({})
 LinkLuaModifier( "modifier_generic_stunned_lua", "modifiers/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_fisting", "heroes/billy_herry", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_fisting_stacks", "heroes/billy_herry", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_fisting_immune", "heroes/billy_herry", LUA_MODIFIER_MOTION_NONE )
 --------------------------------------------------------------------------------
 -- Custom KV
-
+function fisting:GetIntrinsicModifierName()
+		return "modifier_fisting_stacks"
+end
 
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -563,7 +566,10 @@ function fisting:OnSpellStart()
 	
 	local debuffDuration = 1.5
 
-
+	self.fisting_duration =    self:GetSpecialValueFor("stun_duration")
+	if( caster:HasTalent("special_bonus_billy_25"))  then
+		self.fisting_duration = self.fisting_duration +	caster:GetModifierStackCount("modifier_fisting_stacks", caster) * 0.2 
+	end
 
 if target:TriggerSpellAbsorb( self ) then return end
 
@@ -582,7 +588,7 @@ if target:TriggerSpellAbsorb( self ) then return end
 	
 	caster:AddNewModifier( self:GetCaster(), self, "modifier_fisting_immune", { duration = self:GetChannelTime() } )
 	target:AddNewModifier( self:GetCaster(), self, "modifier_fisting", { duration = self:GetChannelTime() } )
-	
+	print(self:GetChannelTime())
 	
 	
 	
@@ -591,6 +597,10 @@ if target:TriggerSpellAbsorb( self ) then return end
 	else
 		EmitSoundOn("billy.4", caster)
 	end
+end
+
+function fisting:GetChannelTime()
+	return self.fisting_duration
 end
 
 function fisting:OnChannelFinish( bInterrupted )
@@ -605,6 +615,48 @@ end
 
 
 
+modifier_fisting_stacks = class({})
+
+--------------------------------------------------------------------------------
+
+function modifier_fisting_stacks:IsDebuff()
+	return false
+end
+
+--------------------------------------------------------------------------------
+ 
+function modifier_fisting_stacks:IsPurgable()
+	return false
+end
+
+function modifier_fisting_stacks:IsHidden()
+	return false
+end
+
+
+function modifier_fisting_stacks:OnHeroKilled(args)
+	if args.attacker == nil or args.target == nil then
+		return
+	end
+
+	if args.attacker == self:GetCaster() and   args.inflictor ~= nil then
+		if(args.inflictor:GetName()~= "fisting" ) then return end
+		if self.nKills == nil then
+			self.nKills = 0
+		end
+		self.nKills = self.nKills + 1
+		self:SetStackCount(self.nKills)
+		 
+	end
+end
+  function modifier_fisting_stacks:DeclareFunctions()
+    	return {	MODIFIER_EVENT_ON_HERO_KILLED	}
+   end
+
+
+--------------------------------------------------------------------------------
+
+ 
 
 modifier_fisting = class({})
 
@@ -1367,7 +1419,7 @@ function modifier_imba_spirit_breaker_charge_of_darkness:OnCreated(params)
 		-- self.vision_duration	= self:GetAbility():GetSpecialValueFor("vision_duration")
 		
 		self.darkness_speed			= self:GetAbility():GetSpecialValueFor("darkness_speed")
-		local str = self:GetCaster():GetIntellect() * (1.0 + self:GetCaster():FindTalentValue("special_bonus_billy_25"))
+		local str = self:GetCaster():GetIntellect()  -- (1.0 + self:GetCaster():FindTalentValue("special_bonus_billy_25"))
 		self.damage			= self:GetAbility():GetSpecialValueFor("damage") +str
 		self.damage2			= self:GetAbility():GetSpecialValueFor("damage2")
 		self.clothesline_duration	= self:GetAbility():GetSpecialValueFor("clothesline_duration")

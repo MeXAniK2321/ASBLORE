@@ -5,8 +5,19 @@ item_book_of_darkness = class({})
 
 function item_book_of_darkness:GetIntrinsicModifierName()
     return "modifier_book_of_darknaass"
-	end
+end
 
+function item_book_of_darkness:OnSpellStart()
+    if(self.dummy ~= nil and self.dummy:IsAlive()  ) then
+        self.dummy:ForceKill(false)
+    end
+    self.dummy = CreateUnitByName("reinforce_toilet", self:GetCaster():GetAbsOrigin() +
+    self:GetCaster():GetForwardVector() * 100 + Vector(0, 0, 150), true, self:GetCaster(), self:GetCaster(),
+    self:GetCaster():GetTeamNumber())
+	self.dummy:SetControllableByPlayer(self:GetCaster():GetPlayerID(), true)
+     
+    self.dummy:SetForwardVector(self:GetCaster():GetForwardVector())
+end
 
 modifier_book_of_darknaass = class({})
 

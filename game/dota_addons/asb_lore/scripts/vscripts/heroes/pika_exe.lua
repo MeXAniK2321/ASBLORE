@@ -935,7 +935,12 @@ function modifier_hunting_self:OnDestroy()
         if self.parent and not self.parent:IsNull() then
             for k, v in pairs(self.skills_table) do
                 if k and v then
-                    self.parent:SwapAbilities(k, v, true, false)
+					if(self.parent:GetAbilityByIndex(0):GetName() == "pikachu_nit") then
+
+					else
+
+                   		 self.parent:SwapAbilities(k, v, true, false)
+					end
                     --k:SetHidden(false)
                     --v:SetHidden(true)
                 end
@@ -1376,7 +1381,13 @@ function modifier_exe_awakening:OnDestroy()
         if self.parent and not self.parent:IsNull() then
             for k, v in pairs(self.skills_table) do
                 if k and v then
-                    self.parent:SwapAbilities(k, v, true, false)
+					if(self.parent:GetAbilityByIndex(0):GetName() == "pikachu_nit") then
+
+					else
+
+                   		 self.parent:SwapAbilities(k, v, true, false)
+					end
+                 
                     --k:SetHidden(false)
                     --v:SetHidden(true)
                 end
