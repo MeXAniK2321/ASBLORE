@@ -3615,7 +3615,7 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
+		    	"amp"				"10"
 		    }
 		    
 		    "02"
@@ -3637,7 +3637,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
+				"bonus_hp"				"500"
 			}
 			"06"
 			{

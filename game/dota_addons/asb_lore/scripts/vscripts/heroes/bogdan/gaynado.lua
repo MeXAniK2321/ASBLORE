@@ -1,7 +1,7 @@
 gaynado = class({})
-LinkLuaModifier("modifier_gaynado", "heroes/gaynado", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_gaynado", "heroes/bogdan/gaynado", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_generic_silenced_lua", "modifiers/modifier_generic_silenced_lua", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_gaynado_pull", "heroes/gaynado", LUA_MODIFIER_MOTION_HORIZONTAL)
+LinkLuaModifier("modifier_gaynado_pull", "heroes/bogdan/gaynado", LUA_MODIFIER_MOTION_HORIZONTAL)
 
 function gaynado:IsStealable() return true end
 function gaynado:IsHiddenWhenStolen() return false end

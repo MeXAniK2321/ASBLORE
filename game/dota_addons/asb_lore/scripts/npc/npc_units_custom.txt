@@ -1686,4 +1686,51 @@
 		"VisionNighttimeRange"		"800"		// Range of vision at night time.
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+"npc_dota_bogdan_slave"
+	{										
+		"Model"						"models/bogdan/slave_model/gachi_brother.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"IdleExpression"			"scenes/brewmaster/brewmaster_spirits_exp_idle_01.vcd"
+		"Level"						"30"
+		"ModelScale"				"0.8"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ArmorPhysical"				"50"
+        "MagicalResistance"			"55"		
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"500"		
+		"AttackDamageMax"			"1000"			
+		"AttackRate"				"0.6"
+"BountyGoldMin"				"1000"		// Gold earned min.
+		"BountyGoldMax"				"1000"		// Gold earned max.				
+		"AttackAnimationPoint"		"0.3"		
+		"AttackAcquisitionRange"	"600"		
+		"AttackRange"				"128"		
+		"HealthBarOffset"			"160"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"500"		
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			
+		"StatusHealth"				"13000"		
+		"StatusHealthRegen"			"50"			
+		"StatusMana"				"1300"		
+		"StatusManaRegen"			"25"			
+		"VisionDaytimeRange"		"700"		
+		"VisionNighttimeRange"		"700"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
 }
