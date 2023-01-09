@@ -36619,7 +36619,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"damage"			"100"
+				"damage"			"120"
 			}
 			"06"
 			{
@@ -43621,7 +43621,7 @@
 		"MaxLevel"						"1"
 		"RequiredLevel"					"1"
 		"LevelsBetweenUpgrades"		"0"
-		"AbilityCastPoint"				"0.1"
+		"AbilityCastPoint"				"1"
 		"AbilityCastAnimation"			"empty"
 		//"AnimationPlaybackRate"			"1"
 		//"AnimationIgnoresModelScale"	"1"
@@ -43747,7 +43747,7 @@
 		"MaxLevel"						"1"
 		"RequiredLevel"					"30"
 		"LevelsBetweenUpgrades"		"1"
-		"AbilityCastPoint"				"0.1"
+		"AbilityCastPoint"				"1.5"
 		"AbilityCastAnimation"			"empty"
 		//"AnimationPlaybackRate"			"1"
 		//"AnimationIgnoresModelScale"	"1"

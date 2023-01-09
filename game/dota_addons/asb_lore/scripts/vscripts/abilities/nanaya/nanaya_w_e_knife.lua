@@ -62,8 +62,8 @@ function jump_ahead_nanaya:OnProjectileHitHandle(hTarget, vLocation, iProjectile
 		caster:RemoveModifierByName("jump_ahead_nanaya_modifier")
 		local target = hTarget:GetAbsOrigin()
 		local target_2 = hTarget:entindex()
-		local dmg = self:GetSpecialValueFor("dmg_knife") + math.floor(self:GetCaster():GetAgility()*2)
-		local dmg2 = self:GetSpecialValueFor("dmg_hit") + math.floor(self:GetCaster():GetAgility()*2)
+		local dmg = self:GetSpecialValueFor("dmg_knife") + math.floor(self:GetCaster():GetAgility()*3)
+		local dmg2 = self:GetSpecialValueFor("dmg_hit") + math.floor(self:GetCaster():GetAgility()*3)
 		--DoDamage(caster, hTarget, 500, DAMAGE_TYPE_PHYSICAL, 0, self, false)
 		ApplyDamage({
                     victim = hTarget,
@@ -284,7 +284,7 @@ function nanaya_knife:OnProjectileHitHandle(hTarget, vLocation, iProjectileHandl
 		local target = hTarget:GetAbsOrigin()
 		local target_2 = hTarget:entindex()
 		if hTarget:GetHealthPercent() >= 25 then
-		local dmg = self:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*2)
+		local dmg = self:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*3)
 			ApplyDamage({
                     victim = hTarget,
                     attacker = caster,
@@ -453,7 +453,7 @@ function nanaya_clones:Clones(caster, units, secondtime)
 local table = {12, 13, 21, 23, 24}	
 local knockback_push = 0
 local knockback_push1 = caster:GetForwardVector()
-local dmg = 350 + math.floor(caster:GetAgility()*2)
+local dmg = 350 + math.floor(caster:GetAgility()*3)
 units:EmitSound("nanaya.combo2")
 
 										local numberhit = 0

@@ -182,7 +182,7 @@ target:AddNewModifier(caster, self, "modifier_halo_slow", {duration = 2})
 	EmitSoundOn("halo.dark_1", caster)
 	local damageTable = {
 		attacker = caster,
-		damage = 700,
+		damage = 400,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self,
 		damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
@@ -197,7 +197,7 @@ target:AddNewModifier(caster, self, "modifier_halo_root", {duration = 1})
 	EmitSoundOn("halo.dark_1", caster)
 	local damageTable = {
 		attacker = caster,
-		damage = 800,
+		damage = 500,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self,
 		damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
@@ -211,7 +211,7 @@ target:AddNewModifier(caster, self, "modifier_halo_root", {duration = 1})
 	EmitSoundOn("halo.dark_2", caster)
 	local damageTable = {
 		attacker = caster,
-		damage = 1000,
+		damage = 600,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self,
 		damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
@@ -219,14 +219,14 @@ target:AddNewModifier(caster, self, "modifier_halo_root", {duration = 1})
 	damageTable.victim = target
 		ApplyDamage(damageTable)
 		self:PlayEffects15(target)
-		caster:Heal(800,caster)
+		caster:Heal(100,caster)
 		
 				elseif caster:HasModifier("modifier_demon_route_4") then
 target:AddNewModifier(caster, self, "modifier_halo_root", {duration = 1})
 	EmitSoundOn("halo.dark_2", caster)
 	local damageTable = {
 		attacker = caster,
-		damage = 1300,
+		damage = 700,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self,
 		damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
@@ -234,7 +234,7 @@ target:AddNewModifier(caster, self, "modifier_halo_root", {duration = 1})
 	damageTable.victim = target
 		ApplyDamage(damageTable)
 		self:PlayEffects16(target)
-		caster:Heal(1000,caster)
+		caster:Heal(100,caster)
 elseif caster:HasModifier("modifier_demon_route_6") then
 
 	if target:GetUnitName()== "npc_dota_hero_axe" or  target:GetUnitName()== "npc_dota_hero_beastmaster" then
@@ -260,10 +260,10 @@ elseif caster:HasModifier("modifier_demon_route_5") then
 		else
 	self:PlayEffects9( target)
 	end
-	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 1})
+	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 0.5})
 	local damageTable = {
 		attacker = caster,
-		damage = 1300,
+		damage = 800,
 		damage_type = DAMAGE_TYPE_PURE,
 		ability = self,
 		damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
@@ -2463,7 +2463,7 @@ function modifier_demon_route_1:OnAttackLanded(params)
 			local caster = self:GetParent()
 			local max_health = self:GetParent():GetMaxHealth()
 			local health = self:GetParent():GetHealth()
-			local damage = 120
+			local damage = 30
 			local damageTable = {
 		attacker = self:GetParent(),
 		damage = damage,
@@ -2472,7 +2472,7 @@ function modifier_demon_route_1:OnAttackLanded(params)
 	}
 	damageTable.victim = params.target
 		ApplyDamage(damageTable)
-		self.crit_chance = 2
+		self.crit_chance = 1
 		if RandomInt(0, 100)<self.crit_chance then
 		params.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_halo_slow", {duration = 2 })
 			end
@@ -2561,7 +2561,7 @@ function modifier_demon_route_2:OnAttackLanded(params)
 			local caster = self:GetParent()
 			local max_health = self:GetParent():GetMaxHealth()
 			local health = self:GetParent():GetHealth()
-			local damage = 120
+			local damage = 30
 			local damageTable = {
 		attacker = self:GetParent(),
 		damage = damage,
@@ -2570,7 +2570,7 @@ function modifier_demon_route_2:OnAttackLanded(params)
 	}
 	damageTable.victim = params.target
 		ApplyDamage(damageTable)
-		self.crit_chance = 5
+		self.crit_chance = 2
 		if RandomInt(0, 100)<self.crit_chance then
 		params.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_halo_slow", {duration = 2 })
 			end
@@ -2662,7 +2662,7 @@ function modifier_demon_route_3:OnAttackLanded(params)
 			local caster = self:GetParent()
 			local max_health = self:GetParent():GetMaxHealth()
 			local health = self:GetParent():GetHealth()
-			local damage = 200
+			local damage = 30
 			local damageTable = {
 		attacker = self:GetParent(),
 		damage = damage,
@@ -2671,7 +2671,7 @@ function modifier_demon_route_3:OnAttackLanded(params)
 	}
 	damageTable.victim = params.target
 		ApplyDamage(damageTable)
-		self.crit_chance = 5
+		self.crit_chance = 2
 		if RandomInt(0, 100)<self.crit_chance then
 		params.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_halo_root", {duration = 0.8 })
 			end
@@ -2761,7 +2761,7 @@ function modifier_demon_route_4:OnAttackLanded(params)
 			local caster = self:GetParent()
 			local max_health = self:GetParent():GetMaxHealth()
 			local health = self:GetParent():GetHealth()
-			local damage = 200
+			local damage = 30
 			local damageTable = {
 		attacker = self:GetParent(),
 		damage = damage,
@@ -2770,7 +2770,7 @@ function modifier_demon_route_4:OnAttackLanded(params)
 	}
 	damageTable.victim = params.target
 		ApplyDamage(damageTable)
-		self.crit_chance = 15
+		self.crit_chance = 2
 		if RandomInt(0, 100)<self.crit_chance then
 		params.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_halo_root", {duration = 0.8 })
 			end
@@ -2912,9 +2912,9 @@ function modifier_demon_route_5:OnAttackLanded(params)
 			local max_health = params.target:GetMaxHealth()
 			self.crit_chance = 5
 			if RandomInt(0, 100)<self.crit_chance then
-			self.damage = max_health * 0.02
+			self.damage = max_health * 0.01
 			else
-			self.damage = 500
+			self.damage = 100
 			end
 			local damageTable = {
 		attacker = self:GetParent(),
@@ -3029,12 +3029,12 @@ function modifier_demon_route_6:OnAttackLanded(params)
 			if not params.attacker:IsIllusion() then
 			local caster = self:GetParent()
 			local max_health = params.target:GetMaxHealth()
-			self.crit_chance = 5
+			self.crit_chance = 2
 			if RandomInt(0, 100)<self.crit_chance then
-			self.heal = max_health * 0.02
+			self.heal = max_health * 0.01
 			self:GetParent():Heal(self.heal, nil)
 		end
-			self.damage = 400
+			self.damage = 30
 			local damageTable = {
 		attacker = self:GetParent(),
 		damage = self.damage,

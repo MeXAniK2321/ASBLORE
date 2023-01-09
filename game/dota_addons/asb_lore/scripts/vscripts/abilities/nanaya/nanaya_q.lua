@@ -147,7 +147,7 @@ end]]
 
 function modifier_q_nanaya:hit()
 	--DoDamage(self.parent, self.target, 250, DAMAGE_TYPE_MAGICAL, 0, self.ability, false)
-	self.dmg = self.ability:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*2)
+	self.dmg = self.ability:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*3)
 						 ApplyDamage({
                     victim = self.target,
                     attacker = self.parent,
