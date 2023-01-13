@@ -8,15 +8,19 @@ function item_book_of_darkness:GetIntrinsicModifierName()
 end
 
 function item_book_of_darkness:OnSpellStart()
-    if(self.dummy ~= nil and self.dummy:IsAlive()  ) then
-        self.dummy:ForceKill(false)
-    end
-    self.dummy = CreateUnitByName("reinforce_toilet", self:GetCaster():GetAbsOrigin() +
-    self:GetCaster():GetForwardVector() * 100 + Vector(0, 0, 150), true, self:GetCaster(), self:GetCaster(),
-    self:GetCaster():GetTeamNumber())
-	self.dummy:SetControllableByPlayer(self:GetCaster():GetPlayerID(), true)
-     
-    self.dummy:SetForwardVector(self:GetCaster():GetForwardVector())
+    local hCaster = self:GetCaster()
+
+    local vRespawnPos = hCaster:GetAbsOrigin() + hCaster:GetForwardVector() * 100
+
+    self.hReinforcePet = self.hReinforcePet or CreateUnitByName("reinforce_toilet", vRespawnPos, true, hCaster, hCaster, hCaster:GetTeamNumber())
+    self.hReinforcePet:RespawnUnit()
+    self.hReinforcePet:SetForwardVector(hCaster:GetForwardVector())
+    self.hReinforcePet:SetAbsOrigin(vRespawnPos)
+    self.hReinforcePet:FaceTowards(hCaster:GetAbsOrigin() + hCaster:GetForwardVector() * 150)
+    self.hReinforcePet:SetUnitCanRespawn(true)
+    self.hReinforcePet:SetControllableByPlayer(hCaster:GetPlayerOwnerID(), false)
+    
+    self.hReinforcePet:AddNewModifier(hCaster, self, "modifier_kill", {duration = 30})
 end
 
 modifier_book_of_darknaass = class({})
