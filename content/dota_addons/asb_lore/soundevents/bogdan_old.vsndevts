@@ -23,7 +23,7 @@
 		[
 			"sounds/Take_it_boy.vsnd",
 		]
-		volume_min = "1.000000"
+		volume_min = "0.800000"
 		volume_max = "1.000000"
 		pitch_min = "1.000000"
 		pitch_max = "1.000000"

@@ -173,7 +173,7 @@ function bogdan_key9:OnProjectileHit_ExtraData( hTarget, vLocation, extraData )
 		self:GetCaster(),
 		self,
 		"modifier_bogdan_key9",
-		{duration = 10}
+		{duration = 2.5}
 	)
 	local caster = self:GetCaster()
 if IsASBPatreon(caster) then

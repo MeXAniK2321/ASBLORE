@@ -43035,7 +43035,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"200 300 450 500"
+				"damage"	"200 300 450 600"
 			}
 			"02"
 			{
@@ -43101,7 +43101,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"900"
+				"damage"	"950"
 			}
 			"03"
 			{
@@ -43177,7 +43177,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"strength"	"4.0 6.0 8.0 8.0"
+				"strength"	"4.0 6.0 8.0 9.0"
 			}
 		}
 	}
@@ -43199,7 +43199,7 @@
 		"MaxLevel"						"1"
 		"RequiredLevel"					"1"
 		"LevelsBetweenUpgrades"		"0"
-		"AbilityCastPoint"				"1"
+		"AbilityCastPoint"				"0.6"
 		"AbilityCastAnimation"			"empty"
 		//"AnimationPlaybackRate"			"1"
 		//"AnimationIgnoresModelScale"	"1"
@@ -43271,7 +43271,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"300 400 600"
+				"damage"	"300 400 800"
 			}
 			"03"
 			{

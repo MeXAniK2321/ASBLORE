@@ -509,7 +509,7 @@ end
 
 
 function modifier_unlimited_gay_works:GetModifierSpellAmplify_Percentage()
-    return 30
+    return 50
 end
 function modifier_unlimited_gay_works:GetModifierBonusStats_Strength()
     return 100

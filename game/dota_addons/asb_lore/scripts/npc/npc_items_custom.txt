@@ -2477,7 +2477,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
 		"AbilityCastPoint"						"0.0"
-		"AbilityCooldown"						"45"
+		"AbilityCooldown"						"12"
 		"AbilityManaCost"						"0"
 
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
@@ -2505,7 +2505,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"6.2"
+				"duration"						"2"
 			}
 			"04"
 			{
