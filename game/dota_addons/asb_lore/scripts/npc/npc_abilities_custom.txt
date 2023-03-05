@@ -28794,7 +28794,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"1 1.2 1.4 1.6"
+				"duration"				"1 1.1 1.2 1.3"
 			}
 			"04"
 			{
@@ -28870,17 +28870,17 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"				"400"
+				"damage"				"600"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage2"				"600"
+				"damage2"				"1200"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage3"				"800"
+				"damage3"				"1500"
 			}
 			"05"
 			{
@@ -28959,7 +28959,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"pit_damage"					    "50 70 100"
+				"pit_damage"					    "50 70 90"
 				"LinkedSpecialBonus"			"special_bonus_kumagawa_25"
 			}
 			
@@ -29233,7 +29233,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
+		"AbilityCooldown"				"70"
 		"AbilityManaCost"				"250"
 
 		// Damage
@@ -29256,7 +29256,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"10"
+				"duration"				"6"
 			}
 			"04"
 			{
@@ -31311,7 +31311,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			"6"
+				"stun_duration"			"13"
 			}
 			"02"
 			{
@@ -31327,7 +31327,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"55"
+				"damage"			"20"
 				
 			}
 			"04"

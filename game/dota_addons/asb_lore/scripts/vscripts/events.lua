@@ -30,15 +30,15 @@ function COverthrowGameMode:OnGameRulesStateChange()
 			self.AnimeGameKills = 30
 			self.ban  = 0
 		elseif GetMapName() == "balance_duo" then
-			self.AnimeGameKills = 60
+			self.AnimeGameKills = 48
 			self.ban = 1
         elseif GetMapName() == "mines_trio" then
-			self.AnimeGameKills = 72		
+			self.AnimeGameKills = 60		
             self.ban = 0			
 		elseif GetMapName() == "desert_quintet" then
 			self.AnimeGameKills = 100
 		elseif GetMapName() == "temple_quartet" then
-			self.AnimeGameKills = 120
+			self.AnimeGameKills = 100
 		else
 			self.AnimeGameKills = 30
 		end
@@ -369,15 +369,15 @@ function COverthrowGameMode:SetRespawnTime( killedTeam, killedUnit, extraTime )
 	killedUnit:SetTimeUntilRespawn(25)
 elseif
  killedTeam == self.leadingTeam  then
-		killedUnit:SetTimeUntilRespawn( 20 )
+		killedUnit:SetTimeUntilRespawn( 10 )
 		elseif
  killedTeam == self.runnerupTeam  then
-		killedUnit:SetTimeUntilRespawn( 15 )
+		killedUnit:SetTimeUntilRespawn( 10 )
 		elseif
  killedTeam == self.thirdTeam  then
 		killedUnit:SetTimeUntilRespawn( 10 )
 	else 
-killedUnit:SetTimeUntilRespawn( 5 )
+killedUnit:SetTimeUntilRespawn( 2 )
 end
 end
 --------------------------------------------------------------------------------

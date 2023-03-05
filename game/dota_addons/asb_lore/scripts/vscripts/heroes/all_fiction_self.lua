@@ -15,7 +15,7 @@ function all_fiction_self:OnSpellStart()
   if self:GetCaster():HasModifier("modifier_all_fiction") then
   EmitSoundOn("kumagawa.4_1", caster)
 		EmitSoundOn("kumagawa.4", caster)
-		caster:AddNewModifier(caster, self, "modifier_item_asta_sword_buff", {duration = 2.5})
+		caster:AddNewModifier(caster, self, "modifier_item_asta_sword_buff", {duration = 1.0})
 		self:PlayEffects()
 		local radius = 400
 	local duration = 0.5

@@ -222,7 +222,7 @@
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		"AbilityCastRange"						"700"
-		"AbilityCastPoint"						"2.0"
+		"AbilityCastPoint"						"1.5"
 		"AbilityCooldown"						"120"
 		"AbilityManaCost"						"100"
 
@@ -246,7 +246,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"3.0"
+				"duration"						"4.0"
 			}
 			"05"
 			{
@@ -2477,7 +2477,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
 		"AbilityCastPoint"						"0.0"
-		"AbilityCooldown"						"12"
+		"AbilityCooldown"						"15"
 		"AbilityManaCost"						"0"
 
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
@@ -2505,7 +2505,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"2"
+				"duration"						"5.2"
 			}
 			"04"
 			{
@@ -2525,7 +2525,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"42"
+				"cooldown"						"38"
 			}
 			
 		}
@@ -2570,7 +2570,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"3.5"
+				"duration"						"3"
 			}
 			"04"
 			{

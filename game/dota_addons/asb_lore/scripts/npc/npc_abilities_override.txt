@@ -369,7 +369,7 @@
 	}
 	"item_cyclone"
 	{
-		
+	"ItemCost"                      "2450"
 	}
 	"item_ghost"
 	{

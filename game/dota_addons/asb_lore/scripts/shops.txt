@@ -74,6 +74,7 @@
    "item"      "item_pandora_box"
    "item"      "item_pandora_treasure"
    "item"       "item_will_of_the_fallen"
+   "item"    "item_cyclone"
 }  
   
   // Level 1 - Green Recipes
