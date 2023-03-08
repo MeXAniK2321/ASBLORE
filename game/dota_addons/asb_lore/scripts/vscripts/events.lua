@@ -50,14 +50,14 @@ function COverthrowGameMode:OnGameRulesStateChange()
 
 		self._fPreGameStartTime = GameRules:GetGameTime()
     	
-	         	local pause = function(pause)
-			GameRules:GetGameModeEntity():SetPauseEnabled(false)
-			PauseGame(pause)
-		end
+	    --      	local pause = function(pause)
+		-- 	GameRules:GetGameModeEntity():SetPauseEnabled(false)
+		-- 	PauseGame(pause)
+		-- end
 
-		pause(true)
+		-- pause(true)
 
-    	GameRules:GetGameModeEntity():SetContextThink( "OnGameStartUnpauseGame10Sec", function() return pause(false) end, 10)
+    	-- GameRules:GetGameModeEntity():SetContextThink( "OnGameStartUnpauseGame10Sec", function() return pause(false) end, 10)
       
     end
 	
