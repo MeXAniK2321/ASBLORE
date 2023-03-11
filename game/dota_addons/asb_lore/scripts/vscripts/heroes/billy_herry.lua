@@ -644,7 +644,7 @@ function modifier_fisting_stacks:OnHeroKilled(args)
 		if self.nKills == nil then
 			self.nKills = 0
 		end
-		self.nKills = self.nKills + 1
+		self.nKills = self.nKills + 2
 		self:SetStackCount(self.nKills)
 		 
 	end

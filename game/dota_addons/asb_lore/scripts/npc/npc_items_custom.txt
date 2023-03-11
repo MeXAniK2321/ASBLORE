@@ -1108,7 +1108,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"130"
+				"bonus_damage"					"110"
 			}
 			"02"
 			{
@@ -1138,7 +1138,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"agility"			"60"
+				"agility"			"50"
 			}
 				
 		}
@@ -1386,12 +1386,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"200"
+				"bonus_damage"					"170"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"150"
+				"bonus_attack_speed"			"120"
 			}
 			"06"
 			{
@@ -2039,7 +2039,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"int"			"30"
+				"int"			"60"
 			}
 			"04"
 			{
@@ -2049,7 +2049,7 @@
 			"06"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"ms"						"45"
+				"ms"						"55"
 			}
 			
 		}
@@ -3615,7 +3615,7 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"10"
+		    	"amp"				"25"
 		    }
 		    
 		    "02"
@@ -3632,7 +3632,7 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
+				"all_stats"				"35"
 			}
 			"05"
 			{
@@ -6510,7 +6510,7 @@
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		"AbilityCastRange"						"700"
-		"AbilityCastPoint"						"2"
+		"AbilityCastPoint"						"0.8"
 		"AbilityCooldown"						"50"
 		"AbilityManaCost"						"100"
 
@@ -6545,7 +6545,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"5.0"
+				"duration"						"3.5"
 			}
 			"05"
 			{
@@ -7162,7 +7162,7 @@
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
 
-		"ItemCost"								"1300"
+		"ItemCost"								"2000"
 		"ItemShopTags"							"buff;unique"
 		"ItemQuality"							"artifact"
 		"ItemAliases"							"ww"
@@ -7179,12 +7179,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_hp"						"200"
+				"bonus_hp"						"250"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_as"						"40"
+				"bonus_as"						"60"
 			}
 			"03"
 			{
@@ -7194,7 +7194,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"active_spell_amp"				"5"
+				"active_spell_amp"				"10"
 			}
 			"05"
 			{

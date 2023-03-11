@@ -604,7 +604,7 @@ function modifier_unlimited_gay_works:OnDestroy()
 
 
             if self.parent:IsRealHero() then
-                self.ability:StartCooldown(250)
+                self.ability:StartCooldown(160)
                 local ability = self.parent:FindAbilityByName("unlimited_gay_works_awake")
                 if ability and not ability:IsNull() and ability:IsTrained() then
                     --SetZenitsuAwakeLongCd(self.parent, self.ability)

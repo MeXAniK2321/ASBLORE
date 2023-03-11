@@ -82,13 +82,13 @@
 		    "01"
 		    {
 		        "var_type"          				"FIELD_FLOAT"
-		        "armor_to_attack"             "1.0 1.0 1.0 2.0"
+		        "armor_to_attack"             "1.0 1.1 1.2 2.3"
 				
 		    }
 		    "02"
 		    {
 		        "var_type"         			    "FIELD_FLOAT"
-		        "duration"          			"10 12 14 16"
+		        "duration"          			"9 10 10 12"
 				
 		    }
 		    "03"
@@ -338,7 +338,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"speed"							"1700"
+				"speed"							"2200"
 			}
 			"02"
 			{

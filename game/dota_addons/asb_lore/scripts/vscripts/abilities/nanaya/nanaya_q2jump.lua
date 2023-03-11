@@ -61,7 +61,7 @@ function nanaya_q2jump:OnProjectileHitHandle(hTarget, vLocation, iProjectileHand
 	local hit = 2
 	if hTarget == nil then return true 
 	else
-		local dmg = self:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*3)
+		local dmg = self:GetSpecialValueFor("dmg") + math.floor(self:GetCaster():GetAgility()*4)
 		hTarget:EmitSound("nanaya.hitleg")
 		ParticleManager:CreateParticle("particles/nanaya_work_22.vpcf", PATTACH_ABSORIGIN, hTarget)
 		   ScreenShake(hTarget:GetOrigin(), 10, 1.0, 0.7, 2000, 0, true)
