@@ -366,7 +366,7 @@ function COverthrowGameMode:SetRespawnTime( killedTeam, killedUnit, extraTime )
   if killedUnit:GetUnitName()== "npc_dota_hero_faceless_void" and killedUnit:HasModifier("modifier_all_fiction_self") then
 	killedUnit:SetTimeUntilRespawn(0)
 	elseif killedUnit:HasModifier("modifier_debuff_10") or  killedUnit:HasModifier("modifier_emit_video") then
-	killedUnit:SetTimeUntilRespawn(25)
+	killedUnit:SetTimeUntilRespawn(15)
 elseif
  killedTeam == self.leadingTeam  then
 		killedUnit:SetTimeUntilRespawn( 10 )
@@ -377,7 +377,7 @@ elseif
  killedTeam == self.thirdTeam  then
 		killedUnit:SetTimeUntilRespawn( 10 )
 	else 
-killedUnit:SetTimeUntilRespawn( 2 )
+killedUnit:SetTimeUntilRespawn( 10 )
 end
 end
 --------------------------------------------------------------------------------

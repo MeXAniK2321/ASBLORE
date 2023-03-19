@@ -23970,7 +23970,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		"120 200 360 450"
+				"damage"		"120 200 360 400"
 				"LinkedSpecialBonus"			"special_bonus_flandr_20"
 			}
 		}
@@ -24050,7 +24050,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pop_damage"			"500 730 900"
+				"pop_damage"			"400 530 700"
 			}
 			"08"
 			{
@@ -24131,7 +24131,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"base_damage"			"600"
+				"base_damage"			"400"
 			}
 		}
 	}
@@ -24413,7 +24413,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"900"
+				"damage"					"800"
 			}
 		}
 	}
@@ -26164,7 +26164,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"1400"
+				"damage"			"1600"
 			}
 		}
 	}

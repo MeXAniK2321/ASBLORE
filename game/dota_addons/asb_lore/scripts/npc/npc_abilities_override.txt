@@ -1262,15 +1262,11 @@
 			"01"								"item_rapier;item_rapier;item_rapier"
 		}
 	}
-	item_recipe_cyclone
+	"item_recipe_cyclone"
     {
-	"ItemCost"           "99995"
-	"ItemPurchasable"           "0"
+	"ItemCost"           "30000"
 	}
-	item_cyclone
-    {
-	"ItemPurchasable"           "0"
-	}
+	
 	
 //=============================================================================================================================
 "item_sheepstick"
