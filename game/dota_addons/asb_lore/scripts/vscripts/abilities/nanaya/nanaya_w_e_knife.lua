@@ -337,9 +337,9 @@ function modifier_nanaya_animation_knife:OnCreated(args)
 		
 		print ("this is", args.enemy_health)
 		if args.enemy_health <= 25 then 
-			self.parent:AddNewModifier(self.parent, self, "modifier_combo", {Duration = 1.8})
+			self.parent:AddNewModifier(self.parent, self:GetAbility(), "modifier_nanaya_combo", {duration = 1.8})
 			
-			self.target:AddNewModifier(self.parent, self, "modifier_combo", {Duration = 1.8})
+			self.target:AddNewModifier(self.parent, self:GetAbility(), "modifier_nanaya_combo", {duration = 1.8})
 			self.parent:StartGestureWithPlaybackRate(ACT_SCRIPT_CUSTOM_7, 0.64)
 			else
 			

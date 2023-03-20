@@ -3,7 +3,7 @@ LinkLuaModifier("modifier_ichigoT_eff", "heroes/ichigo/modifier_ichigoT_eff", LU
 LinkLuaModifier("modifier_ichigoT_casting", "heroes/ichigo/modifier_ichigoT_casting", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_ichigoT_throw", "heroes/ichigo/modifier_ichigoT_throw", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_jellalT_slow", "heroes/jellal/modifier_jellalT_slow", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_combo", "heroes/ichigo/ichigot", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_ichigo_combo", "heroes/ichigo/ichigot", LUA_MODIFIER_MOTION_NONE)
 
 function ichigoT:OnAbilityPhaseStart()
     return true
@@ -25,8 +25,9 @@ function ichigoT:OnSpellStart()
     local damageType = self:GetAbilityDamageType()
     local damageFlags = self:GetAbilityTargetFlags()
     local target = self:GetCursorTarget()
-    target:AddNewModifier(caster, caster, "modifier_combo", {Duration = 20})
-    caster:AddNewModifier(caster, caster, "modifier_combo", {Duration = 20})
+    target:AddNewModifier(caster, self, "modifier_ichigo_combo", {duration = 20})
+    caster:AddNewModifier(caster, self, "modifier_ichigo_combo", {duration = 20})
+    print("POGCHAMP")
     --[[  if caster:FindAbilityByName("ichigoD"):IsInAbilityPhase() then
         EndAnimation(self:GetCaster())
         Timers:CreateTimer(1.0, function() StopGlobalSound("ichigo.T1") end)
@@ -314,8 +315,10 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
     end)
 end
 
-modifier_combo = class({})
-function modifier_combo:CheckState()
+modifier_ichigo_combo = class({})
+
+function modifier_ichigo_combo:RemoveOnDeath() return true end
+function modifier_ichigo_combo:CheckState()
  local funcs2 = {
     [MODIFIER_STATE_NO_HEALTH_BAR] = true, 
     [MODIFIER_STATE_COMMAND_RESTRICTED] = true,

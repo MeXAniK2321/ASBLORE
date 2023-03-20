@@ -1,4 +1,4 @@
-LinkLuaModifier("modifier_combo", "abilities/nanaya/nanaya_combo", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_nanaya_combo", "abilities/nanaya/nanaya_combo", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("nanaya_combo_attack", "abilities/nanaya/nanaya_combo", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("nanaya_combo_cd", "abilities/nanaya/nanaya_combo", LUA_MODIFIER_MOTION_NONE)
 
@@ -23,8 +23,8 @@ print ("that", caster:GetOrigin())
        -- ParticleManager:SetParticleControl(combo_part, 0, GetGroundPosition(Vector(-4910.000000, -4398.000000, 170.000000), nil))
 --caster:SetRenderAlpha(0)
 caster:Stop()
-target:AddNewModifier(caster, caster, "modifier_combo", {Duration = 3})
-caster:AddNewModifier(caster, caster, "modifier_combo", {Duration = 3})
+target:AddNewModifier(caster, self, "modifier_nanaya_combo", {duration = 3})
+caster:AddNewModifier(caster, self, "modifier_nanaya_combo", {duration = 3})
 target:Stop()
 --local check4 = nil
 local sec2 = target:GetAbsOrigin()
@@ -213,7 +213,7 @@ CustomGameEventManager:Send_ServerToPlayer(player, "disable_ui", {angles = ff2})
 target:SetForwardVector(Vector(1, 0, 0))
 target:FaceTowards(Vector(1, 0, 0))
 --target:SetAbsOrigin(Vector(-5000, -4398, 200))
---target:AddNewModifier(caster, caster, "modifier_combo", {Duration = 5})
+--target:AddNewModifier(caster, caster, "modifier_nanaya_combo", {Duration = 5})
 	--local table = {12, 13, 21, 13, 23}
 	local table = {12, 13, 46, 12, 23}
 	--local table = {13, 12, 13, 23, 24}	
@@ -344,8 +344,8 @@ local nanaya_clone4 = ParticleManager:CreateParticle("particles/nanaya_work_21.v
 	end)
 end
 
-modifier_combo = class({})
-function modifier_combo:CheckState()
+modifier_nanaya_combo = class({})
+function modifier_nanaya_combo:CheckState()
  local funcs2 = {
     [MODIFIER_STATE_COMMAND_RESTRICTED] = true, 
     [MODIFIER_STATE_NO_HEALTH_BAR] = true,
