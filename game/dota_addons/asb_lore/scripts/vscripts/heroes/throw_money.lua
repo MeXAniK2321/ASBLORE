@@ -98,7 +98,15 @@ function throw_money:Hit( target, dragonform )
 		{duration = self.money_duration}
 	)
 	end
-	
+	-- damage
+	local damageTable = {
+		victim = target,
+		attacker = caster,
+		damage = damage,
+		damage_type = self:GetAbilityDamageType(),
+		ability = self, --Optional.
+	}
+	ApplyDamage(damageTable)
 	
 
 	
