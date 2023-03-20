@@ -176,6 +176,12 @@ function item_pandora_box:OnSpellStart()
 	     elseif caster:GetUnitName()== "npc_dota_hero_brewmaster" then
 		local item = CreateItem("item_nanaya_knife", caster, self)
 	    caster:AddItem(item)
+		elseif caster:GetUnitName()== "npc_dota_hero_skywrath_mage" then
+		local item = CreateItem("item_drift_mania", caster, self)
+	    caster:AddItem(item)
+		elseif caster:GetUnitName()== "npc_dota_hero_dawnbreaker" then
+		local item = CreateItem("item_national_contract", caster, self)
+	    caster:AddItem(item)
 		else
 		local item = CreateItem("item_vongolla_primo_ring", caster, self)
 	    caster:AddItem(item)

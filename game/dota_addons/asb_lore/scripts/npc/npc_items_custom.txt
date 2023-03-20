@@ -7213,4 +7213,92 @@
 		    }
 		}
 	}
+
+	"item_drift_mania"
+	{
+	"BaseClass"						"item_lua"
+	"ScriptFile"					"items/item_drift_mania.lua"
+	"AbilityTextureName"			"ae86_toilet"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"0"
+	"ItemIsNeutralDrop"						"1"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"//// ебись сам раз не написал че коробка дает
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"spell_amp"				"50"
+		    }
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp"				"500"
+			}
+			
+		   
+		}
+	}
+
+	"item_national_contract"
+	{
+	"BaseClass"						"item_lua"
+	"ScriptFile"					"items/item_national_contract.lua"
+	"AbilityTextureName"			"makima_chains"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"0"
+	"ItemIsNeutralDrop"						"1"
+	"ItemSellable"							"0"
+	"ItemShopTags"				"damage"
+	"ItemQuality"				"magicks"
+	"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"amp"				"20"
+		    }
+		    
+		    "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"int"				"35"
+		    }
+			 "03"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"arm"				"5"
+		    }
+		    
+		   "04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"all_stats"				"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp"				"500"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana"				"1000"
+			}
+			
+		   
+		}
+	}
 }

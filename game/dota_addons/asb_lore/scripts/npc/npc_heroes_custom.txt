@@ -2,6 +2,214 @@
 
 "DOTAHeroes"
 {
+"Makima"
+	{
+		"override_hero"				"npc_dota_hero_dawnbreaker"
+		"Model"                     "models/makima/makima_model/model_rwrk/makima.vmdl"
+		"ModelScale"				"1.30000"
+		"LoadoutScale"				"1.30000"
+		"SpectatorLoadoutScale" 	"1.30000"
+		"VersusScale"				"1.30000"
+
+		"DisableWearables" 			"1"
+		"Ability1"              "makima_contract"
+		"Ability2"              "control_devil"
+		"Ability3"              "makima_slavebook"
+		"Ability5" 				"makima_bang"
+		"Ability6" 				"temple_of_death"
+		"Ability21"             "angel_devil"
+		"Ability24"             "bomb_devil"
+		"Ability22"             "makima_slavebook_close"
+		"Ability26"             "temple_sacrifice"
+		"Ability27"             "temple_sacrifice_execute"
+		"Ability28"             "makima_big_bang"
+		"Ability23"             "katana_devil"
+		"Ability4"               "makima_control"
+		"Ability10"					"special_bonus_armor_4"
+		"Ability11"					"special_bonus_spell_lifesteal_8"
+
+		"Ability12"					"special_bonus_hp_150"
+		"Ability13"					"special_bonus_intelligence_10"
+
+		"Ability14"					"special_bonus_makima_20_alt"
+		"Ability15"					"special_bonus_makima_20"
+
+		"Ability16"					"special_bonus_makima_25_alt"
+		"Ability17"					"special_bonus_makima_25"
+
+		"ItemSlots"
+  		{ }
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"20"
+				"MagicalResistance"			"35"
+		"AttributeStrengthGain"		"1.6"
+		"AttributeBaseIntelligence"	"27"
+					"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.700000"
+		"AttributeIntelligenceGain"	"2.6"
+		"AttributeBaseAgility"		"10"
+			"ArmorPhysical"				"2"
+		"AttributeAgilityGain"		"1.0"
+		"MovementSpeed"				"325"
+		"AttackDamageMin"			"55"
+		"AttackDamageMax"			"65"
+				"VisionDaytimeRange"		"1600"
+		"VisionNighttimeRange"		"1000"
+
+		
+
+	}
+//-----------AE86--------------------------------------------------------------------------------------------------------------------------------
+	"npc_dota_hero_skywrath_mage"
+	{
+		"override_hero"				"npc_dota_hero_skywrath_mage"
+		"Model"						"models/heroes/anime/initial_d/ae86/ae86_mdoc.vmdl"//"models/heroes/anime/initial_d/ae86/ae86.vmdl"
+		"ModelScale"				"1.00000"
+		"LoadoutScale"				"1.00000"
+		"SpectatorLoadoutScale" 	"1.00000"
+		"VersusScale"				"1.00000"
+		"DisableWearables" 			"1"
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"model"					"models/heroes/anime/initial_d/impreza/impreza_mdoc.vmdl"
+		}
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_loadout_v2.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+  		{ }
+  		
+		//"MovementSpeedActivityModifiers" //CRASHING IF USES SAME MODIFIER PROPERTIES AT SAME TIME
+		//{
+			//"haste"					"450"
+		//} 
+
+		"Ability1"					"ae86_repair"
+		"Ability2"					"ae86_charge"
+		"Ability3"					"ae86_theme"
+		
+		"Ability4"					"ae86_drift"
+		"Ability5"					"ae86_limit"
+
+		"Ability6"					"ae86_suicide"
+		
+		"Ability7"					"generic_hidden"
+		"Ability8"					"generic_hidden"
+		"Ability9"					"generic_hidden"
+		
+		"Ability10"					"special_bonus_movement_speed_10"
+		"Ability11"					"special_bonus_hp_200"//"special_bonus_anime_ae86_10l"
+
+		"Ability12"					"special_bonus_magic_resistance_15"
+		"Ability13"					"special_bonus_night_vision_600"//"special_bonus_anime_ae86_15l"
+
+		"Ability14"					"special_bonus_anime_ae86_20r"
+		"Ability15"					"special_bonus_anime_ae86_10r"//"special_bonus_anime_ae86_20l"
+
+		"Ability16"					"special_bonus_anime_ae86_25r"
+		"Ability17"					"special_bonus_anime_ae86_15r"//"special_bonus_anime_ae86_25l"
+
+		"AbilityTalentStart"		"10"
+		//-------------------------------------------------------------------------------------------------------------
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"41"
+		"AttackDamageMax"			"51"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"2.000000"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.200000"
+		"AttackAcquisitionRange"	"800"
+		"AttackRange"				"240"
+		"ProjectileModel"			"particles/units/heroes/hero_snapfire/hero_snapfire_cookie_projectile.vpcf"
+		"ProjectileSpeed"			"1400"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"23"
+		"AttributeStrengthGain"		"1.9"
+		"AttributeBaseIntelligence"	"28"
+		"AttributeIntelligenceGain"	"2.6"
+		"AttributeBaseAgility"		"19"
+		"AttributeAgilityGain"		"2.1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"					"62"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"140"
+		//-------------------------------------------------------------------------------------------------------------
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"340"
+		"MovementTurnRate"			"0.500000"
+		"HasAggressiveStance"		"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"HealthBarOffset"			"200" 
+		"StatusHealth"				"400"
+		"StatusHealthRegen"			"2"
+		"StatusMana"				"150"
+		"StatusManaRegen"			"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		//-------------------------------------------------------------------------------------------------------------
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Inventory
+		//-------------------------------------------------------------------------------------------------------------
+		"HasInventory"				"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Voice
+		//-------------------------------------------------------------------------------------------------------------
+		"GameSoundsFile"			"soundevents/heroes/anime_hero_ae86.vsndevts"
+		//"VoiceFile"					"soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		"SoundSet"					"Hero_Snapfire"
+		//"VoiceBackgroundSound"		""
+		//"IdleSoundLoop"				""
+		//"HeroSelectSoundEffect"		""
+		//-------------------------------------------------------------------------------------------------------------
+		// Particle
+		//-------------------------------------------------------------------------------------------------------------
+		"particle_folder"			"particles/heroes/anime_hero_ae86"
+		//-------------------------------------------------------------------------------------------------------------
+		// Role
+		"Role"						"Carry,Support,Nuker,Disabler,Jungler,Durable,Escape,Pusher,Initiator"
+		"Rolelevels"				"1,1,2,2,1,1,2,2,1"
+		//-------------------------------------------------------------------------------------------------------------
+	}	
+	
     "npc_dota_hero_dark_seer"
 	{
 		"override_hero"				"npc_dota_hero_dark_seer"

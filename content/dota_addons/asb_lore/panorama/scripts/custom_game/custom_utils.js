@@ -292,6 +292,14 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/ichigo.png" );
 		}
+		else if (sHeroName == "npc_dota_hero_skywrath_mage")
+		{
+			pPanel.SetImage( "file://{images}/heroes/ae86.png" );
+		}
+		else if (sHeroName == "npc_dota_hero_dawnbreaker")
+		{
+			pPanel.SetImage( "file://{images}/heroes/makima.png" );
+		}
 		else
 		{
 			pPanel.SetImage( "file://{images}/custom_game/unassigned.png" );

@@ -1,0 +1,8 @@
+<!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
+<root>
+	<Panel class="AddonLoadingRoot">
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/heroes/ae86.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/custom_game/portrait/npc_dota_hero_skywrath_mage.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{resources}/images/heroes/npc_dota_hero_skywrath_mage.png" />
+	</Panel>
+</root>

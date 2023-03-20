@@ -1,6 +1,57 @@
 (function () {
     GameEvents.Subscribe("hero_selection", HeroSelection )
+	const iRandomNumberCringe = Math.floor(Math.random() * 99999999);
+    const sConvarCommandName  = "anime_controll_key_move" + "_number_" + iRandomNumberCringe;
+
+    Game.AddCommand("+" + sConvarCommandName + "_up", ACKMoveCheck(1, -1, 0, -1), "" + iRandomNumberCringe, 512);
+    Game.AddCommand("-" + sConvarCommandName + "_up", ACKMoveCheck(0, -1, -1, -1), "" + iRandomNumberCringe, 512);
+
+    Game.AddCommand("+" + sConvarCommandName + "_left", ACKMoveCheck(-1, 1, -1, 0), "" + iRandomNumberCringe, 512);
+    Game.AddCommand("-" + sConvarCommandName + "_left", ACKMoveCheck(-1, 0, -1, -1), "" + iRandomNumberCringe, 512);
+
+    Game.AddCommand("+" + sConvarCommandName + "_down", ACKMoveCheck(0, -1, 1, -1), "" + iRandomNumberCringe, 512);
+    Game.AddCommand("-" + sConvarCommandName + "_down", ACKMoveCheck(-1, -1, 0, -1), "" + iRandomNumberCringe, 512);
+
+    Game.AddCommand("+" + sConvarCommandName + "_right", ACKMoveCheck(-1, 0, -1, 1), "" + iRandomNumberCringe, 512);
+    Game.AddCommand("-" + sConvarCommandName + "_right", ACKMoveCheck(-1, -1, -1, 0), "" + iRandomNumberCringe, 512);
+
+    Game.CreateCustomKeyBind("UPARROW", "+" + sConvarCommandName + "_up");
+    Game.CreateCustomKeyBind("LEFTARROW", "+" + sConvarCommandName + "_left");
+    Game.CreateCustomKeyBind("RIGHTARROW", "+" + sConvarCommandName + "_right");
+    Game.CreateCustomKeyBind("DOWNARROW", "+" + sConvarCommandName + "_down");
 })();
+
+function ACKMoveCheck(bACK_MOVE_UP, bACK_MOVE_LEFT, bACK_MOVE_DOWN, bACK_MOVE_RIGHT)
+{   
+    return function()
+    {   
+        const iPID = Players.GetLocalPlayer();
+
+        const iTest_PlayerID    = Players.GetLocalPlayer();
+        const bTest_IsSpectator = Players.IsSpectator(iTest_PlayerID);
+        if ( iTest_PlayerID === -1 && !bTest_IsSpectator )
+        {
+            $.Msg(iTest_PlayerID, ' -- ', bTest_IsSpectator, ' ЕБАТЬ КЛОУНАДА СУКА ACKMoveCheck , IS VALID PLAYER???', Players.IsValidPlayerID(iTest_PlayerID));
+            return
+        }
+        
+        if ( iPID !== -1 )
+        {   
+            const iEnt  = Players.GetPlayerHeroEntityIndex(iPID);
+            const sName = Entities.GetUnitName(iEnt);
+            if (sName === "npc_dota_hero_skywrath_mage")
+            {
+                GameEvents.SendCustomGameEventToServer("ACK_MOVE_CHECK",    {
+                                                                                bACK_MOVE_UP: bACK_MOVE_UP, 
+                                                                                bACK_MOVE_LEFT: bACK_MOVE_LEFT, 
+                                                                                bACK_MOVE_DOWN: bACK_MOVE_DOWN, 
+                                                                                bACK_MOVE_RIGHT: bACK_MOVE_RIGHT
+                                                                            });
+            }
+        }
+    }
+}
+
 
 let InterfaceID = 0;
 

@@ -1,7 +1,7 @@
 #base reimport/tatsuya_abilities.txt
 #base reimport/tohka_abilities.txt
 #base reimport/bogdan_abilities.txt
-
+#base anime/anime_hero_talents.txt
 #base "abilities/nanaya/nanaya_abilities.kv"
 
 "DOTAAbilities"
@@ -43491,6 +43491,1273 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+  //-------AE86-------------------------------------------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------------------------------------------------------
+  "ae86_repair"
+  {
+    "BaseClass"               "ability_lua"
   
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_repair"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+
+    //"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+
+    //"AbilityCastPoint"            "0.45"
+    //"AbilityChannelTime"            "0.0"
+    "AbilityCooldown"           "15 14 13 12"
+    "AbilityManaCost"           "150 160 170 180"
+    //"AbilityCastRange"              "650"
+
+    //"HasScepterUpgrade"           "1"
+
+    //"MaxLevel"                "1"
+    //"RequiredLevel"             "1"
+    //"LevelsBetweenUpgrades"         "1"
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "duration"            "3.0"
+        "LinkedSpecialBonus"      "special_bonus_anime_ae86_10R"
+      }
+      "02"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "heal_hp"           "15 20 25 30"
+      }
+      "03"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "heal_hp_pct"         "2 3 4 5"
+      }
+      "04"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "heal_mp"           "30 40 50 60"
+      }
+      "05"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "heal_mp_pct"         "2.5"
+      }
+    }
+  }
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+    "ae86_charge"
+    {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_charge"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+    //"AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    //"AbilityCastPoint"            "0.45"
+    //"AbilityChannelTime"            "0.0"
+    "AbilityCooldown"           "20 19 18 17"
+    "AbilityManaCost"           "90 120 150 180"
+    //"AbilityCastRange"              "650"
+
+    "HasScepterUpgrade"             "0"
+
+    //"MaxLevel"                "1"
+    //"RequiredLevel"             "1"
+    //"LevelsBetweenUpgrades"         "1"
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_2"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_FLOAT"
+                "distance"                    "600"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_FLOAT"
+                "fly_time"                  "0.5"
+            }
+            "03"
+            {
+                "var_type"                      "FIELD_FLOAT"
+                "scepter_charges"             "3"
+                "RequiresScepter"       "1"
+            }
+        }
+    }
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+  "ae86_limit"
+  {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_limit"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+
+    //"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    //"AbilityCastPoint"            "0.45"
+    //"AbilityChannelTime"            "0.0"
+    //"AbilityCooldown"           "20 19 18 17"
+    //"AbilityManaCost"           "90 120 150 180"
+    //"AbilityCastRange"              "650"
+
+    //"HasScepterUpgrade"           "1"
+
+    //"MaxLevel"                "1"
+    //"RequiredLevel"             "1"
+    //"LevelsBetweenUpgrades"         "1"
+
+    //"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "bonus_ms"            "33 44 55"
+        "LinkedSpecialBonus"      "special_bonus_anime_ae86_25R"
+        "LinkedSpecialBonusOperation" "SPECIAL_BONUS_MULTIPLY"
+      }
+      "02"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "bonus_armor"         "7 9 11"
+        "LinkedSpecialBonus"      "special_bonus_anime_ae86_25R"
+        "LinkedSpecialBonusOperation" "SPECIAL_BONUS_MULTIPLY"
+      }
+    }
+  }
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+  "ae86_drift"
+  {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_drift"
+
+    //"AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE | DOTA_UNIT_TARGET_BUILDING"
+
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    "AbilityCastPoint"            "0.3" 
+    "AbilityChannelTime"          "10.0"
+   	"MaxLevel"						"1"
+	"RequiredLevel"					"1"
+
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "accel_time"          "2.0"
+      }
+      "02"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "brake_time"          "4.0"
+      }
+      "03"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "turn_time"           "1.0"
+      }
+      "04"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "reverse_boost"         "4.0"
+      }
+      "05"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "max_degrees"         "400"
+      }
+      "06"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "auto_length"         "480"
+      }
+      "07"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "auto_width"          "125"
+      }
+      "08"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "limit_ms"            "1650"
+      }
+      "08"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "turn_drift"          "175"
+      }
+      "09"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "damage_increase"       "0.1"
+      }
+    }
+  }
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+  "ae86_theme"
+  {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_taxi"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+
+    //"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    //"AbilityCastPoint"            "0.45"
+    //"AbilityChannelTime"            "0.0"
+    "AbilityCooldown"           "20"
+    "AbilityManaCost"           "150 200 250 300"
+    //"AbilityCastRange"              "650"
+
+    //"HasScepterUpgrade"           "1"
+
+    //"MaxLevel"                "1"
+    //"RequiredLevel"             "1"
+    //"LevelsBetweenUpgrades"         "1"
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "duration"            "4.5"
+      }
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "bonus_ms"            "100 200 300 400"
+      }
+      "02"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "bonus_as"            "50 100 150 200"
+      }
+    }
+  }  
+
+  "ae86_suicide"
+  {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_suicide"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_CHANNELLED|DOTA_ABILITY_BEHAVIOR_AOE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    "AbilityCastPoint"            "0.1" 
+    "AbilityChannelTime"          "3"
+    "AbilityCooldown"           "100"
+    "AbilityManaCost"           "600"
+    "AbilityCastRange"              "2500"
+
+   "HasScepterUpgrade"           "1"
+	"AOERadius"						"500"
+    "MaxLevel"                "1"
+    "RequiredLevel"             "30"
+    //"LevelsBetweenUpgrades"         "1"
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "base_damage"            "1000"
+      }
+      "01"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "damage_max_channel"            "6000"
+      }
+      "03"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "minimum_channel_time"            "1"
+      }
+      "04"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "speed"            "3500"
+      }
+      "05"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "explosion_radius"            "500"
+      }
+      "06"
+      {
+        "var_type"            "FIELD_FLOAT"
+        "not_casted_cd"            "30"
+      }
+    }
+  }  
+
+
+  //==========================================================
+//Makima
+//==========================================================
+"makima_contract"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/1"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "1"
+		"LevelsBetweenUpgrades" "1"
+		"RequiredLevel" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			
+		}
+	}
+
+	"control_devil"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/makima/makima.lua"
+		"AbilityTextureName" 					"makima/2"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET| DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_CAST_ABILITY_1"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+    //"HasShardUpgrade" "0"
+    "HasScepterUpgrade" "1"
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"30"
+		"AbilityManaCost"						"100 200 300 400 500"
+		"AbilityCastRange"						"2500"
+
+
+
+		"MaxLevel"								"5"
+		"LevelsBetweenUpgrades" "3"
+		"RequiredLevel"							"1"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"          "FIELD_FLOAT"
+        "damage"           "300 600 900 1200 1500"
+      }
+
+    }
+		
+
+		
+
+		}
+	
+	"makima_slavebook"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/makima/makima.lua"
+		"AbilityTextureName" 					"makima/3"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+        
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"0"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+
+
+		"MaxLevel"								"4"
+		"LevelsBetweenUpgrades" "4"
+		"RequiredLevel"							"1"
+		
+
+		
+
+		}
+	
+	"makima_slavebook_close"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/makima/makima.lua"
+		"AbilityTextureName" 					"dante/dante_close"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"0"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"            "1"
+		
+
+		
+
+		}
+	"angel_devil"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"			        	"ability_lua"
+		"ScriptFile"					"heroes/makima/makima.lua"
+		"AbilityTextureName"			"makima/3_1"
+		"MaxLevel" "4"
+		"LevelsBetweenUpgrades" "4"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"precache"
+		{
+			"soundfile"							"soundevents/makima/Makima.vsndevts"
+		}
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 23 21 19"
+
+		
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100 125 150 175"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.2"
+  		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"width"						"150"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed"				"1500"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"				"100 150 200 250"
+				
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"			"1300"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"300"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow"					"-20"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"					"1.5"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"int_scale"					"0.6 0.7 0.8 0.9"
+			}
+		}
+	}
+	
+	"bomb_devil"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/3_2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades" "4"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE  | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"1.0"
+
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 37 33 28"
+		"AbilityManaCost"				"150 170 190 210"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"130 250 370 500"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"delay"				"1.0"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"400"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"1.0"
+			}
+		}
+	}
+	
+	"katana_devil"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/3_3"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "4"
+		"LevelsBetweenUpgrades" "4"
+		"RequiredLevel" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 36 32 28"
+		"AbilityManaCost"				"100 120 140 160"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"			"1.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"			"1600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"arm"			"-3 -3 -4 -4 -5 -5 -6 -6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"100 200 300 400"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"1.0 1.05 1.1 1.15 1.2 1.25 1.3 1.35"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"			"1.0 1.1 1.2 1.3"
+			}
+		}
+	}
+	"makima_control"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/4"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "3"
+		"LevelsBetweenUpgrades" "8"
+		"RequiredLevel" "8"
+		//"HasShardUpgrade" "0"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 45 30"
+		"AbilityManaCost"				"150 200 250"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"			"1.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.3 1.5 1.7"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"agro_duration"			"2.0 2.5 3.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"120 240 360 480"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"11 13 15"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"			"2.0 2.5 3.0"
+			}
+			
+		}
+	}
+	
+	"temple_of_death"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/makima/makima.lua"
+		"AbilityTextureName" 					"makima/5"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.5"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"180"
+		"AbilityManaCost"						"300"
+		//"AbilityCastRange"						"1200"
+
+		//"IsGrantedByScepter"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"30"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+
+		
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"hp" "100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magic"	                        "50"
+				
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"int"	"150"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"as"	"120"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"zenitsu_hear_upgrade_flash_charges"	"0 0 2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_movespeed"				"40 60 80"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"projectile_avoid_chance"		"40"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"turn_rate"						"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"awake_mana"					"0"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"fixed_duration"				"50"
+			}
+		}
+	}
+	"makima_bang"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/5_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+			"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_3"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"250"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"3000"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"			"1600"
+			}
+		}
+	}
+	"temple_sacrifice"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/5_2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"LevelsBetweenUpgrades" "1"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"100"
+		"AbilityManaCost"				"300"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"7"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"dragon_cast_range"			"400"
+				
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"			"1600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"9999"
+
+			}
+			
+		}
+	}
+"temple_sacrifice_execute"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	"FightRecapLevel"				"2"
+	"BaseClass"						"ability_lua"
+	"AbilityTextureName"					"makima/5_1"
+	"ScriptFile"						"heroes/makima/makima.lua"
+	"AbilityCastAnimation"			"ACT_DOTA_CHANNEL_ABILITY_7"
+	"MaxLevel"								"1"
+	
+
+	// Precache
+	//-------------------------------------------------------------------------------------------------------------
+		
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"999999"
+	"AbilityCastPoint"				"0.1"
+
+	"AbilityCooldown"				"60"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"200"
+		
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"dismember_damage"		"500"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"strength_damage_scepter"		"0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"hero_duration"				"3"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"creep_duration"			"1.5"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"tick_rate"				"0.1"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"hits"				"4"
+		}
+	}
+}
+
+	"makima_big_bang"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/makima/makima"
+		"AbilityTextureName"			"makima/5_3"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE  | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"99999"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"2.5"
+
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"110"
+		"AbilityManaCost"				"600"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"7000"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"delay"				"2.0"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1000"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"2.5"
+			}
+		}
+	}
+"special_bonus_makima_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1"
+			}			
+		}
+	}
+	"special_bonus_makima_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0"
+			}			
+		}
+	}
+	"special_bonus_makima_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"200"
+			}			
+		}
+	}
+	"special_bonus_makima_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0"
+			}			
+		}
+	}
+	
 }
   

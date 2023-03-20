@@ -21,6 +21,8 @@ end
 -- Required .lua files
 ---------------------------------------------------------------------------
 require( "disconnect_events" )
+require("anime_events")
+require("anime_functions_server_client")
 require("illusion")
 require( "events" )
 require('internal/util')
@@ -29,6 +31,7 @@ require( "utility_functions" )
 require("playertables")
 require("timers")
 require("vector_target")
+require("anime_control_keys")
 require("anime_chatwheel")
 require("addon_init")
 require("modifiers/modifiers")
@@ -37,6 +40,7 @@ require('libraries/animations')
 require('libraries/projectiles')
 require("modifiers/player")
 require("util/tempTable")
+require("anime_modifiers_server_client")
 
 ---------------------------------------------------------------------------
 -- Precache
@@ -115,6 +119,7 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/yukari_yakumo.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/Hatsune_miku.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/billy.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/makima/makima.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/sans.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kagamine_rin.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts", context )
@@ -130,6 +135,7 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/touma.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/tohka.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/tatsuya.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/ae86.vsndevts", context )
 
 		PrecacheResource( "model", "models/susano/susano1.vmdl", context )
 		PrecacheResource( "model", "models/shinobu_vampie/shinobu_success.vmdl", context )
@@ -629,3 +635,4 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 	end
 	return true
 end
+
