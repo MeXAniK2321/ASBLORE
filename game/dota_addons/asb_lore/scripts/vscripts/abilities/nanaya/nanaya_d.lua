@@ -1,6 +1,6 @@
 LinkLuaModifier("nanaya_slashes_modifier", "abilities/nanaya/nanaya_d", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("nanaya_slashes_modifier1", "abilities/nanaya/nanaya_d", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("nanaya_jump_revoke", "abilities/nanaya/nanaya_r", LUA_MODIFIER_MOTION_NONE)
+
 
 nanaya_slashes = class ({})
 function nanaya_slashes:OnAbilityPhaseStart()	
