@@ -1501,8 +1501,8 @@ function modifier_makima_control:OnDestroy()
 	end
 local delay = 0.3
 
-	if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then
-	self:GetParent():Kill(self:GetAbility(),self:GetCaster())
+	if self:GetCaster():HasScepter() then
+		self:GetParent():Kill(self:GetAbility(),self:GetCaster())
 	end
 	Timers:CreateTimer(delay,function()
 	for o = 0, 15 do
@@ -1551,7 +1551,7 @@ function temple_of_death:OnSpellStart()
     local origin = caster:GetOrigin()
 	if caster:HasModifier("modifier_temple_of_death_2nd_arc") then
 	caster:RemoveModifierByName("modifier_temple_of_death_2nd_arc") 
-	
+	EmitSoundOn( "makima.2nd_theme", caster )
 	 caster:AddNewModifier(caster, self, "modifier_temple_of_death_true", {duration = 25})
 	else
     caster:AddNewModifier(caster, self, "modifier_temple_of_death", {duration = fixed_duration})
@@ -1743,9 +1743,10 @@ function modifier_temple_of_death_2nd_arc:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
-
+	if IsServer() then
       self.ability:EndCooldown()
-    end
+	end
+end
 
 modifier_temple_of_death_true = class({})
 function modifier_temple_of_death_true:IsHidden() return false end
@@ -1801,6 +1802,7 @@ function modifier_temple_of_death_true:OnRefresh(table)
     self:OnCreated(table)
 end
 function modifier_temple_of_death_true:OnDestroy()
+	StopSoundOn( "makima.2nd_theme", caster )
     if IsServer() then
 	if self.parent:HasModifier("modifier_temple_sacrifice_begin") then
 	self.parent:RemoveModifierByName("modifier_temple_sacrifice_begin")
