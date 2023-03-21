@@ -213,7 +213,7 @@ CustomGameEventManager:Send_ServerToPlayer(player, "disable_ui", {angles = ff2})
 target:SetForwardVector(Vector(1, 0, 0))
 target:FaceTowards(Vector(1, 0, 0))
 --target:SetAbsOrigin(Vector(-5000, -4398, 200))
---target:AddNewModifier(caster, caster, "modifier_nanaya_combo", {Duration = 5})
+--target:AddNewModifier(caster, caster, "modifier_nanaya_combo", {duration = 5})
 	--local table = {12, 13, 21, 13, 23}
 	local table = {12, 13, 46, 12, 23}
 	--local table = {13, 12, 13, 23, 24}	

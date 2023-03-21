@@ -321,7 +321,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
 	local numberhit = 0
 	local clone_dmg = dmg
 	Timers:CreateTimer(0.1, function()
-			target:AddNewModifier(caster, self, "modifier_stunned", { Duration = 0.4 })
+			target:AddNewModifier(caster, self, "modifier_stunned", { duration = 0.4 })
 											if numberhit < 3 then
 											--knockback_push = units:GetAbsOrigin() - units:GetForwardVector() * 120
 											knockback_push = target:GetAbsOrigin() + knockback_push1*120

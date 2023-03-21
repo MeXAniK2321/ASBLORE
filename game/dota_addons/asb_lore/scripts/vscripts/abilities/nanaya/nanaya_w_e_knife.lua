@@ -576,7 +576,7 @@ local knockback = { should_stun = true,
 								    center_x = knockback_push.x,
 									center_y = knockback_push.y,
 	                                center_z = center_unit_z }
-	                                units:AddNewModifier(caster, self, "modifier_stunned", { Duration = 4 })
+	                                units:AddNewModifier(caster, self, "modifier_stunned", { duration = 4 })
 									ParticleManager:CreateParticle("particles/nanaya_jump_back.vpcf", PATTACH_ABSORIGIN, units)
 									units:AddNewModifier(caster, self, "modifier_knockback", knockback)
 									Timers:CreateTimer(0.2, function()

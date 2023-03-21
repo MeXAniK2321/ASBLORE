@@ -129,7 +129,7 @@ local slash = 7
 if hTarget == nil or self.kappa == true then return end
 self.kappa = true
 hTarget:EmitSound("nanaya.finalhit")
-hTarget:AddNewModifier(caster, self, "modifier_stunned", { Duration = 1 })
+hTarget:AddNewModifier(caster, self, "modifier_stunned", { duration = 1 })
 local caster = self:GetCaster()
 local modifier = caster:FindModifierByName("nanaya_blood_modifier")
 local dmg = self:GetSpecialValueFor("dmg")

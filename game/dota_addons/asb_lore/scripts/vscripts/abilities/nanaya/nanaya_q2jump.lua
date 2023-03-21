@@ -149,7 +149,7 @@ local knockback4 = { should_stun = true,
                 	hTarget:EmitSound("nanaya.hit")
                  ScreenShake(hTarget:GetOrigin(), 10, 1.0, 0.4, 2000, 0, true)
 		   --DoDamage(caster, hTarget, 700, DAMAGE_TYPE_PHYSICAL, 0, self, false)
-		   hTarget:AddNewModifier(caster, self, "modifier_stunned", { Duration = 1 })
+		   hTarget:AddNewModifier(caster, self, "modifier_stunned", { duration = 1 })
 		   ApplyDamage({
                     victim = hTarget,
                     attacker = caster,
