@@ -1643,7 +1643,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"
-		"Model"							"models/items/beastmaster/hawk/bm_king_of_beasts_bird/bm_king_of_beasts_bird.vmdl"
+		"Model"							"models/props_wildlife/wildlife_birdlarge001.vmdl"
 		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"	
 		"ConsideredHero"		"1"
 		"HasInventory"				"0"

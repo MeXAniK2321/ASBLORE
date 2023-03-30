@@ -19,6 +19,6 @@ function modifier_fountain_damage:GetModifierPreAttack_BonusDamage()
 end
 function modifier_fountain_damage:GetModifierAttackRangeBonusUnique()
 	
-		return -440
+		return -500
 
 end

@@ -31,13 +31,13 @@ function modifier_fountain_aura_knockback:OnIntervalThink()
 		0,	-- int, order filter
 		false	-- bool, can grow cache
 	)
-local radius = 400
+local radius = 350
 	for _,enemy in pairs(enemies) do
 		-- apply damage
 		local knockback = { should_stun = 0,
                         knockback_duration = 0.1,
                         duration = 0.1,
-                        knockback_distance = 700,
+                        knockback_distance = 650,
                         knockback_height = 0,
                         center_x = self:GetParent():GetAbsOrigin().x,
                         center_y = self:GetParent():GetAbsOrigin().y,

@@ -199,7 +199,7 @@
 		"AbilityTextureName" 					"hell_staff"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"6000"
+		"ItemCost"								"10000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_hell_staff"
@@ -307,7 +307,7 @@
 		"ScriptFile"				"items/item_watch"
   		"AbilityTextureName"        "watch"
   		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-  		"ItemCost"					"10500"
+  		"ItemCost"					"13500"
 		"ItemShopTags"				"damage"
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -1061,7 +1061,7 @@
 		"AbilityTextureName" 					"black_march"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"500"
+		"ItemCost"								"2000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_black_march"
@@ -1344,7 +1344,7 @@
 		"AbilityTextureName" 					"escalibur"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"500"
+		"ItemCost"								"2000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_escalibur"
@@ -2345,7 +2345,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"40"
+				"duration"						"60"
 			}
 			"05"
 			{
@@ -2623,7 +2623,7 @@
 		"FightRecapLevel"				"1"
 		"AbilityCastRange"				"0"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"20"
 		"AbilityManaCost"				"0"
 		"AbilitySharedCooldown"					"minato_kunai"
 		"ItemCost"						"2250"
@@ -2810,7 +2810,7 @@
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"1"
-		"ItemCost"								"25000"
+		"ItemCost"								"30000"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -4706,12 +4706,12 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
+				"all_stats"				"5"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
+				"attack"				"30"
 			}
 			"06"
 			{

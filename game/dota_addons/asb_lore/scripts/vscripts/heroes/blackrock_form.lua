@@ -73,7 +73,7 @@ function modifier_blackrock_form:GetModifierModelScale()
 	return 1
 end
 function modifier_blackrock_form:GetModifierPreAttack_BonusDamage()
-    return 90
+    return 130
 end
 function modifier_blackrock_form:GetAttackSound()
 	return "Brs.range_attack"
@@ -84,10 +84,10 @@ function modifier_blackrock_form:GetModifierProjectileName()
 end
 
 function modifier_blackrock_form:GetModifierProjectileSpeedBonus()
-	return 900
+	return 1000
 end
 function modifier_blackrock_form:GetModifierAttackRangeBonus()
-	return 90
+	return 1000
 end
 
 

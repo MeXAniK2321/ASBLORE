@@ -68,7 +68,7 @@ function all_fiction_self:OnSpellStart()
 			local delay = 0.2
 		Timers:CreateTimer(delay,function()	
 		EmitSoundOn("kumagawa.4", caster)
-		caster:AddNewModifier(caster, self, "modifier_item_asta_sword_buff", {duration = 2.5})
+		caster:AddNewModifier(caster, self, "modifier_item_asta_sword_buff", {duration = 1.3})
 		end)
 		self:PlayEffects()
 		local radius = 400

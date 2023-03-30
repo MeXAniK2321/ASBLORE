@@ -199,4 +199,20 @@
 		event_type = "1.000000"
 		vsnd_duration = 16.222040
 	}
+	gay.bar = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gay_bar.vsnd_c",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 10.222040
+	}
 }

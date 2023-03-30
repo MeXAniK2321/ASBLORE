@@ -2887,7 +2887,7 @@ function archetype_last_arc:OnSpellStart()
 	local caster = self:GetCaster()
 
 	-- load data
-	local radius = 9999
+	local radius = 2000
 	local duration = 10
 	local damage = 99999
 	local point = self:GetCaster():GetOrigin()
@@ -3039,7 +3039,7 @@ function modifier_archetype_last_arc_invul:OnDestroy()
 		caster:GetTeamNumber(),	-- int, your team number
 		caster:GetOrigin(),	-- point, center point
 		nil,	-- handle, cacheUnit. (not known)
-		99999,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+		2000,	-- float, radius. or use FIND_UNITS_EVERYWHERE
 		DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
 		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
 		0,	-- int, flag filter
@@ -3166,7 +3166,7 @@ function modifier_archetype_last_arc_thinker:GetModifierAura()
 end
 
 function modifier_archetype_last_arc_thinker:GetAuraRadius()
-	return 99999
+	return 2000
 end
 
 function modifier_archetype_last_arc_thinker:GetAuraDuration()

@@ -7,7 +7,7 @@ function modifier_fountain_aura_effect_lua:DeclareFunctions()
 		MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE,
 		MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE,
 		MODIFIER_PROPERTY_MANA_REGEN_CONSTANT,
-		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
+		--MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
 	}
 	return funcs
 end
@@ -30,7 +30,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_fountain_aura_effect_lua:GetModifierHealthRegenPercentage( params )
-	return 20
+	return 25
 end
 
 --------------------------------------------------------------------------------
