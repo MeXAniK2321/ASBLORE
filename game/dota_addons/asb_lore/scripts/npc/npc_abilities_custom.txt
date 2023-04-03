@@ -3,7 +3,7 @@
 #base reimport/bogdan_abilities.txt
 #base anime/anime_hero_talents.txt
 #base "abilities/nanaya/nanaya_abilities.kv"
-
+#base "abilities/muramasa/muramasa_abilities.kv"
 "DOTAAbilities"
 {
   "Version"   "1"

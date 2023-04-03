@@ -1,5 +1,5 @@
 #base "heroes/npc_fate_hero_nanaya.kv"
-
+#base "heroes/npc_fate_hero_muramasa.kv"
 "DOTAHeroes"
 {
 "Makima"

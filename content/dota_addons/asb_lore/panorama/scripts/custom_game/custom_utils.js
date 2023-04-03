@@ -300,6 +300,10 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/makima.png" );
 		}
+		else if (sHeroName == "npc_dota_hero_tiny")
+		{
+			pPanel.SetImage( "file://{images}/heroes/muramasa.png" );
+		}
 		else
 		{
 			pPanel.SetImage( "file://{images}/custom_game/unassigned.png" );

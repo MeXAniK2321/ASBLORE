@@ -181,6 +181,8 @@ function item_pandora_box:OnSpellStart()
 	    caster:AddItem(item)
 		elseif caster:GetUnitName()== "npc_dota_hero_dawnbreaker" then
 		local item = CreateItem("item_national_contract", caster, self)
+		elseif caster:GetUnitName()== "npc_dota_hero_tiny" then
+		local item = CreateItem("item_myoujingiri", caster, self)
 	    caster:AddItem(item)
 		else
 		local item = CreateItem("item_vongolla_primo_ring", caster, self)
