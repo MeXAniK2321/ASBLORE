@@ -24,17 +24,24 @@ caster:FindAbilityByName("muramasa_tsumukari_release"):StartCooldown(20)
 ------------------------------------------------------------------------------------------------
 Timers:CreateTimer(0, function() 
     EmitGlobalSound("muramasa_combo_cast")
+    EmitGlobalSound("muramasa_theme")
+end)
+Timers:CreateTimer(60, function() 
+   StopGlobalSound("muramasa_theme")
 
 end)
 
 local marble_fx = ParticleManager:CreateParticle("particles/muramasa/muramasa_combo_swords_base.vpcf", PATTACH_ABSORIGIN_FOLLOW  , caster)
+local firering = ParticleManager:CreateParticle("particles/custom/archer/ubw/firering.vpcf", PATTACH_ABSORIGIN, caster)
+ParticleManager:SetParticleControl(firering, 6, caster:GetAbsOrigin())
 ParticleManager:SetParticleControl(marble_fx, 0, caster:GetAbsOrigin()) 
-Timers:CreateTimer(1, function() 
+Timers:CreateTimer(2.3, function() 
     ParticleManager:DestroyParticle(marble_fx, true)
     ParticleManager:ReleaseParticleIndex(marble_fx)
 
 end)
-Timers:CreateTimer(0, function() 
+Timers:CreateTimer(1.0, function() 
+
     local sword_location =  caster:GetAbsOrigin()+Vector(0,0,130)+caster:GetForwardVector()*50
     local energy_fx_1 = ParticleManager:CreateParticle("particles/muramasa/muramasa_combo_swords_energy.vpcf", PATTACH_CUSTOMORIGIN  , nil)
     ParticleManager:SetParticleControl(energy_fx_1, 0, sword_location)   
@@ -60,7 +67,7 @@ Timers:CreateTimer(0, function()
     local energy_fx_8 = ParticleManager:CreateParticle("particles/muramasa/muramasa_combo_swords_energy.vpcf", PATTACH_CUSTOMORIGIN  , nil)
     ParticleManager:SetParticleControl(energy_fx_8, 0, sword_location)   
     ParticleManager:SetParticleControl(energy_fx_8, 1, caster:GetAbsOrigin()+Vector(-100,70,70))   
-    Timers:CreateTimer(1, function() 
+    Timers:CreateTimer(2.3, function() 
         ParticleManager:DestroyParticle(energy_fx_1, true)
         ParticleManager:ReleaseParticleIndex(energy_fx_1)
         ParticleManager:DestroyParticle(energy_fx_2, true)
@@ -85,8 +92,8 @@ end)
  
 caster:AddNewModifier(caster, self, "modifier_merlin_self_pause", {duration = 2}) 
 caster:AddNewModifier(caster, self, "modifier_muramasa_combo_cd", {duration = self:GetCooldown(-1)}) 
-StartAnimation(caster, {duration=1, activity=ACT_DOTA_ECHO_SLAM, rate=1})
-Timers:CreateTimer(1, function() 
+StartAnimation(caster, {duration=2.5, activity=ACT_DOTA_ECHO_SLAM, rate=1})
+Timers:CreateTimer(2.5, function() 
     StartAnimation(caster, {duration=0.5, activity=ACT_DOTA_CAST_ABILITY_6, rate=1})
 
 end)
@@ -98,7 +105,7 @@ end)
 ------------------------------------------------------------------------------------------------
 local slash_range = 500 
 local slash_damage = self:GetSpecialValueFor("damage_first")
-Timers:CreateTimer(1.5, function()   
+Timers:CreateTimer(3, function()   
     if(caster:IsAlive() == false) then return end
     EmitGlobalSound("muramasa_slash") 
     StartAnimation(caster, {duration=1, activity=ACT_DOTA_ARCTIC_BURN_END, rate=1})
@@ -179,7 +186,7 @@ local tsumukariProjectile =
 ------------------------------------------------------------------------------------------------
 -------------------------------------explosion--------------------------------------------------
 ------------------------------------------------------------------------------------------------
-Timers:CreateTimer(4, function()   
+Timers:CreateTimer(5.5, function()   
     if(self.casted == false ) then return end
     EmitGlobalSound("muramasa_explosion")
     Timers:CreateTimer(0, function()  
@@ -262,7 +269,7 @@ for i = 1, 10 do
 end)
 
 
-Timers:CreateTimer(1.7, function() 
+Timers:CreateTimer(3.2, function() 
     if(caster:IsAlive() == false) then 
         StopGlobalSound("muramasa_combo_cast")
         self.casted = false
