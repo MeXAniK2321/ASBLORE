@@ -69,7 +69,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"200 300 400 500"
+				"damage"			"200 300 500 600"
 				
 			}
 			"04"
@@ -179,7 +179,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"150 275 500"
+				"damage"					"150 275 700"
 
 			}
 			"01"
@@ -200,7 +200,7 @@
 		"ScriptFile"					"heroes/tatsuya/tatsuya"
 		"AbilityTextureName"			"tatsuya/4"
 		"FightRecapLevel"				"1"
-			"MaxLevel"						"3"
+			"MaxLevel"						"1"
 		"RequiredLevel" "8"
 		"LevelsBetweenUpgrades" "8"
 			
@@ -221,7 +221,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"5"
+		"AbilityManaCost"				"4"
 		"AbilityCooldown"				"0"
 
 		// Damage
@@ -235,7 +235,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"int_damage"		"0.8 1.1 1.4"
+				"int_damage"		"1.4"
 			}
 		
 			"02"

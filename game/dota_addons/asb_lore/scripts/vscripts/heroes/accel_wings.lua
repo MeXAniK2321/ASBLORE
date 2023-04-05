@@ -63,7 +63,7 @@ end
 
 
 function modifier_accel_wings:GetModifierMoveSpeedBonus_Constant()
-    return 0
+    return 600
 end
 function modifier_accel_wings:GetModifierSpellAmplify_PercentageUnique()
     return self.bonus_amplify 

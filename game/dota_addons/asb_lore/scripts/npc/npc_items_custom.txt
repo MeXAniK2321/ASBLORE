@@ -4706,12 +4706,12 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"5"
+				"all_stats"				"15"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack"				"30"
+				"attack"				"100"
 			}
 			"06"
 			{
@@ -4984,7 +4984,7 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
+		    	"health"				"700"
 		    }
 		    
 		    "02"
@@ -4995,7 +4995,7 @@
 			 "03"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
+		    	"res"				"10"
 		    }
 		    
 		   "04"
@@ -5006,7 +5006,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
+				"attack"				"150"
 			}
 			"06"
 			{
@@ -5523,7 +5523,7 @@
 		    "02"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"70"
+		    	"ms"				"50"
 		    }
 			 "03"
 		    {
@@ -5534,12 +5534,12 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
+				"all_stats"				"15"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
+				"attack"				"100"
 			}
 			"06"
 			{
@@ -5945,7 +5945,7 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"500"
+		    	"health"				"700"
 		    }
 		    
 		    "02"
@@ -5967,7 +5967,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack"				"50"
+				"attack"				"100"
 			}
 			"06"
 			{
@@ -7268,13 +7268,13 @@
 		    "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"20"
+		    	"amp"				"40"
 		    }
 		    
 		    "02"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"35"
+		    	"int"				"65"
 		    }
 			 "03"
 		    {
@@ -7285,12 +7285,12 @@
 		   "04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
+				"all_stats"				"35"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"500"
+				"bonus_hp"				"800"
 			}
 			"06"
 			{

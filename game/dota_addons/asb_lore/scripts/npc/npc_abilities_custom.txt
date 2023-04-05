@@ -4885,7 +4885,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"ms"	"550"
+				"ms"	"800"
 			}
 			"04"
 			{
@@ -11208,7 +11208,7 @@
 
 		"AbilityCastPoint"						"0.5"
 		//"AbilityChannelTime"					"5.0"
-		"AbilityCooldown"						"210"
+		"AbilityCooldown"						"180"
 		"AbilityManaCost"						"300"
 		//"AbilityCastRange"						"1200"
 
@@ -17583,7 +17583,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"400 600 900"
+				"damage"					"300 500 700"
 				"LinkedSpecialBonus"			"special_bonus_esdeath_25"
 			}
 		}
@@ -18003,7 +18003,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"cooldown"					"5 4 3 2"
+				"cooldown"					"5 4 4 2.5"
 			}
 		}
 	}
@@ -19957,12 +19957,12 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"500"
-		"AbilityCastPoint"				"0.4"
+		"AbilityCastPoint"				"0.5"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50 40 30"
-		"AbilityManaCost"				"200 250 300"
+		"AbilityCooldown"				"40 27 20"
+		"AbilityManaCost"				"100 150 300"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -19989,7 +19989,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"duration"			"1.0 1.4 1.6"
+				"duration"			"0.7 1 1.6"
 			}
 			"05"
 			{
@@ -19999,7 +19999,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"500 700 1200"
+				"damage"			"350 600 1100"
 			}
 		}
 	}
@@ -27305,7 +27305,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage"		"450 600 900"
+				"powershot_damage"		"450 600 800"
 				"LinkedSpecialBonus"			"special_bonus_shu_25"
 			}
 			"01"
@@ -27316,7 +27316,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"powershot_damage3"     "700 1100 1400 1900"
+				"powershot_damage3"     "700 1100 1400 2000"
 			}
 			"02"
 			{
@@ -29526,7 +29526,7 @@
         "01"
         {
             "var_type"                  "FIELD_INTEGER"
-            "bonus_movement_speed"             "700"
+            "bonus_movement_speed"             "800"
         
         }
         "02"
@@ -31327,7 +31327,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"23"
+				"damage"			"50"
 				
 			}
 			"04"
@@ -36922,7 +36922,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_from_hp_int"				"2 3 4 5"
+				"damage_from_hp_int"				"1 2 3 4"
 
 			}
 			
@@ -36968,7 +36968,7 @@
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"1600"
+		"AbilityDamage"					"1200"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -44122,7 +44122,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"int_scale"					"0.6 0.7 0.8 0.9"
+				"int_scale"					"1 1 1 2.0"
 			}
 		}
 	}

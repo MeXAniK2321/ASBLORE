@@ -84,10 +84,10 @@ function modifier_blackrock_form:GetModifierProjectileName()
 end
 
 function modifier_blackrock_form:GetModifierProjectileSpeedBonus()
-	return 1000
+	return 800
 end
 function modifier_blackrock_form:GetModifierAttackRangeBonus()
-	return 1000
+	return 530
 end
 
 

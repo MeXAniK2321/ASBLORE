@@ -2889,7 +2889,7 @@ function archetype_last_arc:OnSpellStart()
 	-- load data
 	local radius = 2000
 	local duration = 10
-	local damage = 99999
+	local damage = 9999
 	local point = self:GetCaster():GetOrigin()
 
 
@@ -3031,8 +3031,8 @@ if IsServer() then
     end
 end
 function modifier_archetype_last_arc_invul:OnDestroy()
-	self.damage2 = 99999
-	self.damage = 99999
+	self.damage2 = 9999
+	self.damage = 9999
 	self:PlayEffects()
 	local caster = self:GetCaster()
 	local enemies = FindUnitsInRadius(
@@ -3125,7 +3125,7 @@ modifier_archetype_last_arc_thinker = class({})
 -- Initializations
 function modifier_archetype_last_arc_thinker:OnCreated( kv )
 	-- references
-	self.radius = 999999
+	self.radius = 2000
 
 	if IsServer() then
 		self:PlayEffects()
