@@ -35,12 +35,21 @@ end
 function muramasa_tsumukari:OnSpellStart()
 local caster = self:GetCaster()
 local selfstacks = caster:GetModifierStackCount("modifier_muramasa_tsumukari", caster)
+
  
     local sound = "muramasa_chant_"..(selfstacks+1) 
     if(selfstacks == 7) then
+        Timers:CreateTimer(0, function() 
+    EmitGlobalSound("muramasa_themus")
+end)
+Timers:CreateTimer(30, function() 
+   StopGlobalSound("muramasa_themus")
+
+end)
         EmitGlobalSound(sound) 
     else
         caster:EmitSound(sound)
+
     end
     if(caster:FindTalentValue("special_bonus_fate_muramasa_15r") == 5) then
         local targets = FindUnitsInRadius(caster:GetTeam(), caster:GetAbsOrigin(), nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false) 
