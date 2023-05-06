@@ -20,7 +20,7 @@ function mars_spear_of_mars_lua:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
 	local point = self:GetCursorPosition() + (caster:GetForwardVector() * 1)
-
+	
 	-- load data
 	local projectile_name = "particles/mars_spear1.vpcf"
 	local projectile_distance = self:GetSpecialValueFor("spear_range")

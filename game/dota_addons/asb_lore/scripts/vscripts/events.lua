@@ -234,6 +234,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				end
 			end
 
+			spawnedUnit:AddNewModifier(spawnedUnit, nil, "modifier_for_asb_mehanic_intellect_zero", {})
 	end
 end
 

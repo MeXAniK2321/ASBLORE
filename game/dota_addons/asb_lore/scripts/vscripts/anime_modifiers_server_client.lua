@@ -3658,8 +3658,51 @@ end
 
 
 
+--!!----------------------------------------------------------------------------------------------------------------------------------------------------------
+LinkLuaModifier("modifier_for_asb_mehanic_intellect_zero", "anime_modifiers_server_client", LUA_MODIFIER_MOTION_NONE)
 
+modifier_for_asb_mehanic_intellect_zero = modifier_for_asb_mehanic_intellect_zero or class({})
 
+function modifier_for_asb_mehanic_intellect_zero:IsHidden()                                             return true end
+function modifier_for_asb_mehanic_intellect_zero:IsDebuff()                                             return false end
+function modifier_for_asb_mehanic_intellect_zero:IsPurgable()                                           return false end
+function modifier_for_asb_mehanic_intellect_zero:IsPurgeException()                                     return false end
+function modifier_for_asb_mehanic_intellect_zero:RemoveOnDeath()                                        return false end
+function modifier_for_asb_mehanic_intellect_zero:GetAttributes()                                        return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_for_asb_mehanic_intellect_zero:GetPriority()                                          return MODIFIER_PRIORITY_ULTRA end
+function modifier_for_asb_mehanic_intellect_zero:IsMarbleException()                                    return true end
+function modifier_for_asb_mehanic_intellect_zero:DeclareFunctions()
+    local tFunc =   {
+                        MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION
+                    }
+    return tFunc
+end
+function modifier_for_asb_mehanic_intellect_zero:GetModifierMagicalResistanceDirectModification(keys)
+    return self.hParent:GetIntellect() * self:GetStackCount() * 0.001
+end
+function modifier_for_asb_mehanic_intellect_zero:OnCreated(hTable)
+    self.hCaster  = self:GetCaster()
+    self.hParent  = self:GetParent()
+    self.hAbility = self:GetAbility()
+
+    if IsServer() then
+        local nMagicResistPerInt = GameRules:GetGameModeEntity():GetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MAGIC_RESIST)
+
+        self:SetStackCount(nMagicResistPerInt * -1000)
+        --NOTE: This is not ideal fix because using self.hParent:GetBaseMagicalResistanceValue() still return TRUE value, as self.hParent:Script_GetMagicalArmorValue(true, nil) with experimental return something strange.
+        --print(self.hParent:Script_GetMagicalArmorValue(true, nil), self.hParent:Script_GetMagicalArmorValue(false, nil), nMagicResistPerInt, "START", self.hParent:GetBaseMagicalResistanceValue())
+    end
+
+    --self:StartIntervalThink(1)
+end
+function modifier_for_asb_mehanic_intellect_zero:OnRefresh(hTable)
+    self:OnCreated(hTable)
+end
+function modifier_for_asb_mehanic_intellect_zero:OnDestroy()
+end
+function modifier_for_asb_mehanic_intellect_zero:OnIntervalThink()
+    --print(self.hParent:Script_GetMagicalArmorValue(true, nil), self.hParent:Script_GetMagicalArmorValue(false, nil), "INTERVAL", self.hParent:GetBaseMagicalResistanceValue())
+end
 
 
 

@@ -16,6 +16,7 @@
 		"balance_duo",
 		"mines_trio",
 		"desert_quintet",
+		"asb_fate_nasral"
 	]
 	IsPlayable = 1
 	Default_Keys = 
@@ -43,6 +44,10 @@
 		{
 			MaxPlayers = 10
 			map = "ruin_solo"
+		},
+		{
+			MaxPlayers = 14
+			map = "asb_fate_nasral"
 		},
 	]
 	HideInTools = false

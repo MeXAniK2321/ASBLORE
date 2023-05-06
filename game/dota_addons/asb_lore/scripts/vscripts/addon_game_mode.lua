@@ -280,7 +280,7 @@ function COverthrowGameMode:InitGameMode()
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-	GameRules:SetCustomGameBansPerTeam(2)
+		GameRules:SetCustomGameBansPerTeam(2)
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 5 )
@@ -295,6 +295,11 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
 		self.m_GoldDropPercent = 10
+	elseif GetMapName() == "asb_fate_nasral" then
+		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 7 )
+		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
+		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
+		GameRules:SetCustomGameBansPerTeam(7)
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
@@ -330,7 +335,7 @@ function COverthrowGameMode:InitGameMode()
 	GameRules:GetGameModeEntity():SetBountyRunePickupFilter( Dynamic_Wrap( COverthrowGameMode, "BountyRunePickupFilter" ), self )
 	GameRules:GetGameModeEntity():SetExecuteOrderFilter( Dynamic_Wrap( COverthrowGameMode, "ExecuteOrderFilter" ), self )
 
-
+	GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MAGIC_RESIST, 0)
 
 	ListenToGameEvent( "game_rules_state_change", Dynamic_Wrap( COverthrowGameMode, 'OnGameRulesStateChange' ), self )
 	ListenToGameEvent( "npc_spawned", Dynamic_Wrap( COverthrowGameMode, "OnNPCSpawned" ), self )
@@ -459,7 +464,7 @@ function COverthrowGameMode:UpdateScoreboard()
 	--print("Leader = " .. leader)
 	self.leadingTeam = leader
 	self.runnerupTeam = sortedTeams[2].teamID
-	self.thirdTeam = sortedTeams[3].teamID
+	--self.thirdTeam = sortedTeams[3].teamID
 	self.leadingTeamScore = sortedTeams[1].teamScore
 	self.runnerupTeamScore = sortedTeams[2].teamScore
 	if sortedTeams[1].teamScore == sortedTeams[2].teamScore then

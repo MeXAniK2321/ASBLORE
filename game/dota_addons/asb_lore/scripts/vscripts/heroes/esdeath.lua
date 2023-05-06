@@ -530,7 +530,7 @@ function ice_lances:OnProjectileHit_ExtraData(hTarget, vLocation, hTable)
 
         SendOverheadEventMessage(nil, OVERHEAD_ALERT_DAMAGE, hTarget, hDamageTable.damage, nil)
 
-    
+    	
     end
 
     return true
