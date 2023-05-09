@@ -26,7 +26,7 @@ function item_black_heart:OnToggle()
 			if caster:HasModifier("modifier_item_black_heart_buff") then
 				caster:RemoveModifierByNameAndCaster("modifier_item_black_heart_buff", caster)
 			end
-			--self:UseResources(true, false, true)
+			--self:UseResources(true, false, false, true)
 		end
 	end
 end

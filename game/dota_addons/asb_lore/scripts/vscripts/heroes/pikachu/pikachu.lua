@@ -447,7 +447,7 @@ function volt_tackle:OnSpellStart()
 	)
 EmitSoundOn( "pikachu.3", caster )
 	-- set cooldown
-	self.sub:UseResources( false, false, true )
+	self.sub:UseResources( false, false, false, true )
 end
 
 function volt_tackle:OnChargeFinish( interrupt )

@@ -34,7 +34,7 @@ damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,		--Optional.
 		ApplyDamage(damageTable)
 		EmitSoundOn("seal.open", caster)
 	end
-	caster:ReduceMana( mana )
+	caster:Script_ReduceMana( mana, self:GetAbility() )
 end
 ---------------------------------------------------------------------------------------------------------------------
 modifier_item_seal_of_chaos = class({})

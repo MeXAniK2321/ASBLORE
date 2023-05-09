@@ -1368,7 +1368,7 @@ function modifier_soul_eater_shield:OnIntervalThink()
 	local empty = false
 	if mana<mana_given then	
 	local mana_drained = mana
-	self:GetParent():ReduceMana( mana_drained )
+	self:GetParent():Script_ReduceMana( mana_drained , self:GetAbility())
 	self:GetCaster():GiveMana( mana_drained )
 	local damageTable = {
 		victim = self:GetParent(),
@@ -1387,7 +1387,7 @@ function modifier_soul_eater_shield:OnIntervalThink()
 		ability = self, --Optional.
 	}
 	ApplyDamage(damageTable)
-	self:GetParent():ReduceMana( mana_given )
+	self:GetParent():Script_ReduceMana( mana_given,  self:GetAbility() )
 	self:GetCaster():GiveMana( mana_given )
 
 	end

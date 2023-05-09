@@ -2697,7 +2697,7 @@ function modifier_anime_mechanic_parent_new:OnSpentMana(keys)
         end
     end
     --NOTE: Using in Tanya [Q]
-    --NOTE: Calls when unit spend mana for abilities, not triggers when ReduceMana or manaburn
+    --NOTE: Calls when unit spend mana for abilities, not triggers when Script_ReduceMana or manaburn
     --print("IsClient: ", IsClient(), "OnSpentMana(keys)")
 end
 function modifier_anime_mechanic_parent_new:OnStateChanged(keys)

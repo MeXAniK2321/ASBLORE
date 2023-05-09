@@ -187,6 +187,9 @@ function COverthrowGameMode:PlanNextSpawn()
 	end
 	local path_track = "item_spawn_" .. r
 	local spawnPoint = Vector( 0, 0, 700 )
+	if GetMapName() == "asb_fate_nasral" then
+		spawnPoint = Vector(944, 2120, 368)
+	end
 	local spawnLocation = Entities:FindByName( nil, path_track )
 
 	if spawnLocation == nil then

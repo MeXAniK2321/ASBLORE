@@ -1028,7 +1028,7 @@ if self.shield_init_value > mana2 then
 self.shield_init_value = mana2
 else
 end
-caster:ReduceMana( self.shield_init_value )
+caster:Script_ReduceMana( self.shield_init_value, self:GetAbility() )
 		self.shield_remaining = self.shield_init_value
 		self.target_current_health = target:GetHealth()
 

@@ -1709,7 +1709,7 @@ function modifier_imba_spirit_breaker_charge_of_darkness:OnDestroy()
 	-- Gonna call these first cause they're arguably more important and don't want to brick the hero if code fails
 	if self:GetAbility() then
 		self:GetAbility():SetActivated(true)
-		self:GetAbility():UseResources(false, false, true)
+		self:GetAbility():UseResources(false, false, false, true)
 	end
 	
 	self:GetParent():StopSound("billy.bike")

@@ -255,7 +255,7 @@ function modifier_sans_control:EndTransition()
 			parent:EmitSound("Sans.down")
 		end
 		
-		ability:UseResources(true, false, true)
+		ability:UseResources(true, false, false, true)
 		
 		-- Special considerations for ally telekinesis		
 		if self.is_ally then

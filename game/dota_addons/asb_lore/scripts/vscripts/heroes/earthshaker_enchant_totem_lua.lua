@@ -89,7 +89,7 @@ function earthshaker_enchant_totem_lua:OnAbilityPhaseStart()
 
 		-- do normal
 		self:OnSpellStart()
-		self:UseResources( true, false, true )
+		self:UseResources( true, false, false, true )
 	end)
 	self.ability = caster:FindAbilityByName("earthshaker_enchant_totem_lua")
 	if caster:IsRealHero() then

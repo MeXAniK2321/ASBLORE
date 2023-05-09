@@ -28,7 +28,7 @@ local damageTable = {
 	ApplyDamage(damageTable)
 
 	
-target:ReduceMana( mana )
+target:Script_ReduceMana( mana, self )
 target:Purge(true, false, false, false, false)
 	self:PlayEffects( target )
  EmitSoundOn("kyoka.use", caster)
@@ -110,7 +110,7 @@ function modifier_samehada:GetModifierProcAttack_BonusDamage_Physical( params )
 		self.base = 150
 		end
 			local mana_burn =  math.min( target:GetMana(), self.mana_break )
-			target:ReduceMana( mana_burn )
+			target:Script_ReduceMana( mana_burn, self:GetAbility() )
 
 			self:PlayEffects( target )
 			local burned_damage = mana_burn + self.base

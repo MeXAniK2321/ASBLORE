@@ -300,6 +300,10 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
 		GameRules:SetCustomGameBansPerTeam(7)
+		self.m_GoldRadiusMin = 600
+		self.m_GoldRadiusMax = 3000
+		self.m_GoldDropPercent = 0
+		CreateUnitByName("npc_dota_xp_global", Vector(944, 2120, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550

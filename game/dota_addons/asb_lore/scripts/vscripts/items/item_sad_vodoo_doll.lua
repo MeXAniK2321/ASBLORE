@@ -110,7 +110,7 @@ function modifier_item_sad_vodoo_doll_debuff:OnAbilityFullyCast(params)
 damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,		--Optional.
 	}
 		local mana_burn =  math.min( self:GetParent():GetMana(), self.damage )
-        self:GetParent():ReduceMana( mana_burn )		
+        self:GetParent():Script_ReduceMana( mana_burn, self:GetAbility() )		
 		ApplyDamage( self.damageTable )
 		self:PlayEffects()
 		

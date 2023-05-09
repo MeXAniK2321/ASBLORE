@@ -29,7 +29,7 @@ function modifier_antimage_spell_shield_lua:GetAbsorbSpell( params )
 	if IsServer() then
 		if not self:GetParent():PassivesDisabled() then
 			-- use resources
-			self:GetAbility():UseResources( true, false, true )
+			self:GetAbility():UseResources( true, false, false, true )
 
 			self:PlayEffects( true )
 			return 1

@@ -475,7 +475,7 @@ function modifier_ten_i_muho:OnDestroy()
 	self:GetAbility():SetActivated( true )
 
 	-- start cooldown
-	self:GetAbility():UseResources( false, false, true )
+	self:GetAbility():UseResources( false, false, false, true )
 
 
 	if self.interrupted then return end

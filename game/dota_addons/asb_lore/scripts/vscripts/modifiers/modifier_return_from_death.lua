@@ -53,7 +53,7 @@ end
 -- Helper Function
 function modifier_return_from_death:Reincarnate()
 	-- spend resources
-	self:GetAbility():UseResources(true, false, true)
+	self:GetAbility():UseResources(true, false, false, true)
 
 	-- find affected enemies
 	local enemies = FindUnitsInRadius(

@@ -90,7 +90,7 @@ function modifier_zenitsu_sleep:OnCreated(table)
     self.ability = self:GetAbility()
     self.mana = self.caster:GetMana() * 0.5
     self.hp = self.mana * 0.5
-	self.caster:ReduceMana( self.mana )
+	
     self.ability_level = self.ability:GetLevel()
 
     self.bonus_movespeed = self.ability:GetSpecialValueFor("bonus_movespeed")
@@ -105,8 +105,11 @@ function modifier_zenitsu_sleep:OnCreated(table)
 
 
     if IsServer() then
+        self.caster:Script_ReduceMana( self.mana, self.ability)
+
         for k, v in pairs(self.skills_table) do
             if k and v then
+                print(k, v)
                 self.parent:SwapAbilities(k, v, false, true)
                 --k:SetHidden(true)
                 --v:SetHidden(false)

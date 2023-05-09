@@ -10,7 +10,7 @@ function mana_transfer:OnSpellStart()
 	local target = self:GetCursorTarget()
 	local mana = self:GetSpecialValueFor("mana")
     if target:GetUnitName()== "npc_dota_hero_night_stalker" then
-	target:ReduceMana( mana )
+	target:Script_ReduceMana( mana, self )
 	caster:GiveMana( mana )
 	
 
