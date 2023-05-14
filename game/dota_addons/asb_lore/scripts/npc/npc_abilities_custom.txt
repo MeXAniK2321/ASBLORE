@@ -43603,7 +43603,7 @@
             "01"
             {
                 "var_type"                      "FIELD_FLOAT"
-                "distance"                    "600"
+                "distance"                    "700"
             }
             "02"
             {
@@ -43660,7 +43660,7 @@
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "bonus_ms"            "33 55"
+        "bonus_ms"            "33 75"
         "LinkedSpecialBonus"      "special_bonus_anime_ae86_25R"
         "LinkedSpecialBonusOperation" "SPECIAL_BONUS_MULTIPLY"
       }
@@ -43780,7 +43780,7 @@
 
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
-    "AbilityCooldown"           "20"
+    "AbilityCooldown"           "18"
     "AbilityManaCost"           "150 200 300"
     //"AbilityCastRange"              "650"
 
@@ -43800,12 +43800,12 @@
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "duration"            "4.5"
+        "duration"            "6.0"
       }
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "bonus_ms"            "100 200 400"
+        "bonus_ms"            "100 270 500"
       }
       "02"
       {

@@ -29,14 +29,14 @@ local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 if target:TriggerSpellAbsorb( self ) then return end
 
-	local blinkDistance = 50
+	local blinkDistance = 180
 	local blinkDirection = (caster:GetOrigin() - target:GetOrigin()):Normalized() * blinkDistance
 	local blinkPosition = target:GetOrigin() + blinkDirection
 	target:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
 		"modifier_generic_stunned_lua", -- modifier name
-		{ duration = 1.0 } -- kv
+		{ duration = 0.0 } -- kv
 	)
 	target:AddNewModifier(
 		caster, -- player source
