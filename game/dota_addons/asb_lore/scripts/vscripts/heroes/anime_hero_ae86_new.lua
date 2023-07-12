@@ -1,10 +1,43 @@
 --PATENTED BY EIEOFLIE (C) SPECIAL FOR ANIME CUSTOM GAME IN DOTA 2--
  
- 
+ ae86_clown_horn = ae86_clown_horn or class({})
+-------------
+local xd = 1
+-------------
+function ae86_clown_horn:OnSpellStart()
+     local hCaster = self:GetCaster()
+     
+	 -- Seriously wtf
+	 if xd then
+	   if xd < 10 then
+	     xd = xd + 1
+	   elseif xd >= 10 then
+	     self:StartCooldown(self:GetSpecialValueFor("cooldown"))
+		 xd = 1
+	   end
+	 end
+	 
+	 -- Emit Sounds
+	 EmitSoundOn("skywrath_mage_drag_deny_01", hCaster)
+     EmitSoundOn("DOTA_Item.Hand_Of_Midas", hCaster)
+	 
+	 -- Apply the gold gain effect particle
+     local particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+     ParticleManager:ReleaseParticleIndex(particle)
+	
+	 -- Gain the gold
+     hCaster:ModifyGold(self:GetSpecialValueFor("gold"), true, DOTA_ModifyGold_Unspecified)
+end
 ---------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
 ae86_drift = ae86_drift or class({})
 
+function ae86_drift:GetOnUpgradeAbilities()
+    local hTable =  {
+                        "ae86_clown_horn"
+                    }
+    return hTable
+end
 function ae86_drift:GetChannelTime()
     return IsInToolsMode() 
            and 0.5 

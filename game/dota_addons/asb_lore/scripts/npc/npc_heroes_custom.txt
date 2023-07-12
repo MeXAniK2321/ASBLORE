@@ -102,7 +102,7 @@
 
 		"Ability6"					"ae86_suicide"
 		
-		"Ability7"					"generic_hidden"
+		"Ability7"					"ae86_clown_horn"
 		"Ability8"					"generic_hidden"
 		"Ability9"					"generic_hidden"
 		
@@ -128,8 +128,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"-280"
-		"AttackDamageMax"			"-280"
+		"AttackDamageMin"			"-278"
+		"AttackDamageMax"			"-278"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"2.000000"
 		"BaseAttackSpeed"			"100"
@@ -672,10 +672,10 @@
 		"Ability2"                  "bogdan_key9"
 		"Ability3"                  "pangolier_shield_crash_lua"
 		"Ability4"                  "gay_bar"
-		//"Ability5"                  "gachi_storm"
 		"Ability5"                  "bogdan_chill"
 		"Ability6" 					"unlimited_gay_works"
-		"Ability7"            		"gaynado"
+		"Ability7"                  "gachi_storm"
+		"Ability8"            		"gaynado"
 
 		
 		"Ability10"					"special_bonus_mp_200"
@@ -1005,21 +1005,79 @@
 		"Ability6"                       "generic_hidden"
     }
 	//--------------------------------------------------------------------------------------------------------------------------------------
-	"npc_dota_hero_earthshaker"
-	{
-	"override_hero"                       "npc_dota_hero_earthshaker"
-	"Model"                               "models/heroes/earthshaker/earthshaker.vmdl"
-	"ModelScale"				"1.00000"
-		"LoadoutScale"				"1.00000"
-		"SpectatorLoadoutScale" 	"1.00000"
-		"VersusScale"				"1.00000"
+"Gogeta"
+  {
+    //"AbilityLayout"     "6"
+    "override_hero"     "npc_dota_hero_earthshaker"
+    "Model"             "models/gogeta/gogeta_ssjb.vmdl"
+    "ModelScale"        "1.20"
+    "DisableWearables"  "1"
+    "IdleExpression"		"empty"
+    "PickSound"		"empty"
+		"BanSound"		"empty"
+    "HeroSelectSoundEffect"		"empty"
+    //"SoundSet"          "1"
+    "VoiceFile"		"empty"  
+    "Ability1"        "gogeta_kamehameha"
+    "Ability2"        "gogeta_aerial_kick" 
+    "Ability3"        "gogeta_kick_combo" 
+    "Ability4"        "gogeta_backhand"
+    "Ability5"        "gogeta_upper_kick"
+    "Ability6"        "gogeta_ultimate_form"
+    "Ability7"        "gogeta_ultimate"
+	"Ability8"        "gogeta_downward_punch"
 
-		"DisableWearables" 			"1"
+    //Talents
+    "Ability10"					"special_bonus_hp_175"
+		"Ability11"					"special_bonus_hp_175"
 
-		"ItemSlots"
-  		{ }
-		"Ability1"                         "fissure_datadriven"
-		
+		"Ability12"					"special_bonus_hp_175"
+		"Ability13"					"special_bonus_hp_175"
+
+		"Ability14"					"special_bonus_hp_175"
+		"Ability15"					"special_bonus_hp_175"
+
+		"Ability16"					"special_bonus_hp_175"
+		"Ability17"					"special_bonus_hp_175"
+
+		"AbilityTalentStart"		"10"
+
+    "ArmorPhysical"       "10"                 // Physical protection.
+    "MagicalResistance"       "45"                 // Magical protection (percentage).
+
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
+    "AttackDamageMin"     "140"                   // Damage range min.
+    "AttackDamageMax"     "200"                   // Damage range max.
+    "AttackRange"				"100"
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "30"                   // Base strength
+    "AttributeStrengthGain"   "2"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "30"                   // Base intelligence
+    "AttributeIntelligenceGain" "1"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "30"                   // Base agility
+    "AttributeAgilityGain"    "1.5"                   // Agility bonus per level.
+
+    "BountyXP"          "100"                 // Experience earn.
+    "BountyGoldMin"       "250"                   // Gold earned min.
+    "BountyGoldMax"       "400"                   // Gold earned max.
+
+    "BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    "RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "300"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "180"                 // Base health.
+    "StatusHealthRegen"     "0.5"                 // Health regeneration rate.
+    "StatusMana"        "150"                   // Base mana.
+    "StatusManaRegen"     "0.2"                 // Mana regeneration rate.
+    "HealthBarOffset"			"210"
+
+    "VisionDaytimeRange"    "1600"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
+	
     }
 	//-----------------------------------------------------------------------------------------------------------------------------------------------
 	"npc_dota_hero_templar_assassin"

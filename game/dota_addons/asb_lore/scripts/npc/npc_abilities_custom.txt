@@ -2585,8 +2585,9 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20 18 16 14"
-		"AbilityManaCost"				"100 110 120 130"
+		"AbilityCooldown"				"5 4 3 2"
+		//"AbilityManaCost"				"100 110 120 130"
+        "AbilityHealthCost"				"20"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -3715,9 +3716,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 						}
-						"XPAmount"		"10"
+						"XPAmount"		"23"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"4"
+						"GoldAmount"	"15"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -3774,9 +3775,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 						}
-						"XPAmount"		"10"
+						"XPAmount"		"23"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"9"
+						"GoldAmount"	"15"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -3833,9 +3834,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD"
 						}
-						"XPAmount"		"23"
+						"XPAmount"		"20"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"23"
+						"GoldAmount"	"15"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -13256,7 +13257,7 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700"
+		"AbilityCastRange"				"99999"
 		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
@@ -16985,7 +16986,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"32 30 25 20"
+		"AbilityCooldown"				"25 20 20 18"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -17308,11 +17309,11 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.4"
+		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"350"
 
 		// Damage
@@ -19857,7 +19858,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 23 21 18"
+		"AbilityCooldown"				"25 35 45 50"
 		"AbilityManaCost"				"125 140 160 180"
 
 		// Damage
@@ -19870,7 +19871,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"3 4 5 6"
+				"duration"				"45 50 55 60"
 			}			
 			"02"
 			{
@@ -20845,7 +20846,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.35"
+		"AbilityCastPoint"				"1.0"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -21462,7 +21463,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"225 350 400 700"
+				"damage"			"275 400 500 750"
 				"LinkedSpecialBonus"			"special_bonus_frisk_20"
 			}
 			"04"
@@ -25658,7 +25659,7 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"600"
+		"AbilityCastRange"				"750"
 		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
@@ -25693,7 +25694,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"500 700 900"
+				"damage"			"600 800 1000"
 				
 			}
 		}
@@ -26734,7 +26735,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"22 18 14 10"
+		"AbilityCooldown"				"21 20 19 18"
 		"AbilityManaCost"				"100 125 150 180"
 
 		// Damage
@@ -27149,7 +27150,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"40"
-		"AbilityManaCost"				"130 160 200"
+		"AbilityManaCost"				"400 450 500"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -27177,7 +27178,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"sand_storm_damage"		"1400"
+				"sand_storm_damage"		"140"
 			}
 		}
 	}
@@ -27477,7 +27478,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
@@ -27501,7 +27502,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"1600"
+				"damage"			"600"
 			}
 			"02"
 			{
@@ -27517,6 +27518,11 @@
 			{
 				"var_type"			"FIELD_FLOAT"
 				"stun_duration"			"1.5"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"stack_damage"			"25"
 			}
 			
 			
@@ -27552,7 +27558,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"5"
+		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -27638,12 +27644,17 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"crit_mult"			"200 250 300"
+				"crit_mult"			"150 175 200"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"damage"			"10 15 20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_amount"			"500 700 1000"
 			}
 		}
 	}
@@ -30261,7 +30272,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"425"
+				"radius"				"700"
 			}
 			"02"
 			{
@@ -30281,7 +30292,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"vision_radius"			"475"
+				"vision_radius"			"700"
 			}
 			"06"
 			{
@@ -30519,7 +30530,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
@@ -30559,7 +30570,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"100 200 550 600"
+				"damage"			"200 350 500 666"
 				"LinkedSpecialBonus"			"special_bonus_pikachu_20"
 			}
 			
@@ -32035,6 +32046,11 @@
 				"var_type"						"FIELD_FLOAT"
 				"launcher_width"				"300"
 			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"ulti_cero_range_multiplier"	"1.0"
+			}
 		}
 	}
 	"ulquiorra_ressurection"
@@ -32884,7 +32900,7 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------		
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.4"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 		// Time
@@ -32965,7 +32981,7 @@
 			"12"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cast_range"				"550"
+				"cast_range"				"500"
 			}
 		}
 	}
@@ -33113,7 +33129,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"tick_rate"				"0.5"
+				"tick_rate"				"1.0"
 			}
 			"06"
 			{
@@ -33124,6 +33140,21 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"stack_damage_max"				"20"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"multiple_cast_times_enabled"		"1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"multiple_cast_times"				"2"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"multiple_cast_times_mod_duration"	"0.8"
 			}
 		}
 	}
@@ -36089,7 +36120,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityCooldown"				"100"
+		"AbilityCooldown"				"80"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -43884,7 +43915,60 @@
         "not_casted_cd"            "30"
       }
     }
+  }
+
+ "ae86_clown_horn"
+  {
+    "BaseClass"               "ability_lua"
+  
+    "ScriptFile"              "heroes/anime_hero_ae86_new"
+    "AbilityTextureName"          "anime_hero_ae86/ae86_clown_horn"
+
+    "AbilityType"             "DOTA_ABILITY_TYPE_BASIC"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+    
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+
+    //"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+    "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+    //"AbilityCastPoint"            "0.45"
+    //"AbilityChannelTime"            "0.0"
+    "AbilityCooldown"           "0"
+    "AbilityManaCost"           "0"
+    //"AbilityCastRange"              "650"
+
+    //"HasScepterUpgrade"           "1"
+
+    "MaxLevel"                "1"
+    //"RequiredLevel"             "1"
+    //"LevelsBetweenUpgrades"         "1"
+
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+    //"AbilityChannelAnimation"         "ACT_DOTA_CHANNEL_ABILITY_1"
+    
+    //"AbilitySharedCooldown"         "tome"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "gold"                "50"
+      }
+      "02"
+      {
+        "var_type"            "FIELD_INTEGER"
+        "cooldown"            "60"
+      }
+
+    }
   }  
+
 
 
   //==========================================================
@@ -44756,6 +44840,463 @@
 				"var_type"				"FIELD_FLOAT"
 				"value"					"0"
 			}			
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: Q
+  //=================================================================================================================
+  
+	"gogeta_kamehameha"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gogeta.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.4"
+		"AbilityChannelTime"			"1.5"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"400 500 600 700"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"width"		"250 250 250 275"
+			}
+
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: W
+  //=================================================================================================================
+  
+	"gogeta_aerial_kick"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gogeta.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.4"
+		"AbilityChannelTime"			"1.5"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"400 500 600 700"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"width"		"250 250 250 275"
+			}
+
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: E
+  //=================================================================================================================
+  
+	"gogeta_kick_combo"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"0.4"
+		"AbilityChannelTime"			"3.0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"400 500 600 700"
+			}
+
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: D
+  //=================================================================================================================
+  
+	"gogeta_backhand"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"1.0"
+			}
+
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: F
+  //=================================================================================================================
+  
+	"gogeta_upper_kick"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_EARTHSHAKER_TOTEM_ATTACK"
+		"AbilityCastPoint"				"1.0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"1.0"
+			}
+
+		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: F - Combo Finish Punch
+  //=================================================================================================================
+  
+	"gogeta_downward_punch"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"touma/1_2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastPoint"				"0.1"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"1.0"
+			}
+
+		}
+	}
+
+  //=================================================================================================================
+  // Gogeta: R
+  //=================================================================================================================
+  
+	"gogeta_ultimate_form"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCastPoint"				"1.0"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"1.0"
+			}
+
+		}
+	}
+  
+	"gogeta_ultimate"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"goku_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 20 18"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"1.0"
+			}
+
 		}
 	}
 	
