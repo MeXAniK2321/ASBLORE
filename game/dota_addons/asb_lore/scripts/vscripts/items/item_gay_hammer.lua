@@ -15,6 +15,7 @@ function item_gay_hammer:OnSpellStart()
 	local arcana2 = 167912041	--Miku
     local arcana6 = 174719954	--Sanya
 	local arcana7 = 117795030   --Tlen
+	local arcana8 = 82664205    -- M1
 		 if id32 == arcana then
 	 if target == caster then
 	 local items = {}
@@ -103,6 +104,8 @@ if target == caster then
 	self.hero = "npc_dota_hero_marci"
 	elseif id32 == arcana7 then
     self.hero = "npc_dota_hero_marci"
+	elseif id32 == arcana8 then
+	self.hero = "npc_dota_hero_earthshaker"
 	else
 	self.hero = "npc_dota_hero_lich"
 	end
@@ -123,9 +126,11 @@ if target == caster then
 
 	local table_sounds = {	"gay.hammer" }
 	
-	else
 	
-	caster:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+	elseif target ~= caster and id32 == arcana8 then
+	target:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+	else
+    caster:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
 end
 	
 end

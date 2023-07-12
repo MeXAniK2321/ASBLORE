@@ -57,7 +57,7 @@ function modifier_presence_of_evil:OnDestroy()
 		victim = self:GetParent(),
 		attacker = self:GetCaster(),
 		damage = self.damage,
-		damage_type = DAMAGE_TYPE_MAGICAL,
+		damage_type = DAMAGE_TYPE_PURE,
 		ability = self:GetAbility(), --Optional.
 	}
 	ApplyDamage(damageTable)

@@ -18,6 +18,9 @@ if target:TriggerSpellAbsorb( self ) then return end
 	-- load data
 	local damage = self:GetAbilityDamage()
 	local duration = self:GetSpecialValueFor( "stun_duration" )
+	
+	-- Heal
+	caster:Heal(self:GetSpecialValueFor( "heal_amount" ), caster)
     
 	-- damage
 	local buff = caster:AddNewModifier(

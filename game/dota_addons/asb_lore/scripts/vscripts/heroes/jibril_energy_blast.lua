@@ -2,6 +2,7 @@ jibril_energy_blast = class({})
 
 LinkLuaModifier( "modifier_jibril_energy_blast_thinker", "heroes/jibril_energy_blast.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_angel_devil", "heroes/jibril_energy_blast.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_generic_burn", "modifiers/modifier_generic_burn.lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
 
@@ -71,7 +72,7 @@ function jibril_energy_blast:OnProjectileHit( hTarget, vLocation )
     
             local nearby_targets = FindUnitsInRadius(caster:GetTeam(), vLocation, nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
     
-            for i, target in pairs(nearby_targets) do
+            for _, target in pairs(nearby_targets) do
                 local dist = (target:GetAbsOrigin() - vLocation):Length2D()
                 local r = self:GetSpecialValueFor("max_damage") + self:GetCaster():FindTalentValue("special_bonus_jibril_20")
     

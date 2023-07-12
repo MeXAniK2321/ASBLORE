@@ -12,7 +12,7 @@ function item_earth:OnSpellStart()
 local modifier = caster:FindModifierByNameAndCaster("modifier_valera",caster)
 if modifier == nil then return end
 	local current = modifier:GetStackCount()
-	if current == 10 then
+	if current == 8 then
 	if not caster:HasModifier("modifier_red_arcueid")  then
     caster:AddNewModifier(caster, self, "modifier_neko_arc", {duration = 30})
 	caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = 30})

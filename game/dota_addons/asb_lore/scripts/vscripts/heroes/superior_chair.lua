@@ -38,6 +38,7 @@ end
 function superior_chair:OnChannelFinish( bInterrupted )
 	self:GetCaster():RemoveModifierByName("modifier_superior_chair")
 	local caster = self:GetCaster()
+    local special_damage = self:GetSpecialValueFor("sand_storm_damage")
 	local enemies = FindUnitsInRadius(
 		caster:GetTeamNumber(),	-- int, your team number
 		caster:GetOrigin(),	-- point, center point
@@ -54,7 +55,7 @@ function superior_chair:OnChannelFinish( bInterrupted )
 	local damageTable = {
 		-- victim = target,
 		attacker = caster,
-		damage = 800,
+		damage = 40 * caster:GetLevel() + special_damage,
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		ability = self, --Optional.
 		damage_flags = DOTA_DAMAGE_FLAG_NONE, --Optional.

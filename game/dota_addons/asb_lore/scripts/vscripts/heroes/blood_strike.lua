@@ -14,6 +14,7 @@ function mars_gods_rebuke_lua:OnSpellStart()
 	if caster:HasModifier("modifier_kisshot") then
 	self.damage = self:GetSpecialValueFor("crit_mult") + self:GetCaster():FindTalentValue("special_bonus_shinobu_20") +1000
 	self.radius = self:GetSpecialValueFor("radius") +300
+	self:EndCooldown()
 	else
 	self.damage = self:GetSpecialValueFor("crit_mult") + self:GetCaster():FindTalentValue("special_bonus_shinobu_20")
 	self.radius = self:GetSpecialValueFor("radius")
@@ -36,14 +37,22 @@ function mars_gods_rebuke_lua:OnSpellStart()
 	)
 	local damageTable = {
 		attacker = caster,
-		damage = self.damage,
-		damage_type = DAMAGE_TYPE_PHYSICAL,
 		ability = self, --Optional.
 	}
+	
+	-- Damage yourself
+	damageTable.victim = caster
+    damageTable.damage = caster:GetMaxHealth() * 0.20
+    damageTable.damage_type = DAMAGE_TYPE_PURE
+	damageTable.damage_flags = DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS 
+	ApplyDamage(damageTable)
 
 	for _,enemy in pairs(enemies) do
 		-- Apply damage
 		damageTable.victim = enemy
+        damageTable.damage = self.damage
+        damageTable.damage_type = DAMAGE_TYPE_PHYSICAL
+	    damageTable.damage_flags = DOTA_DAMAGE_FLAG_NONE
 		ApplyDamage(damageTable)
 	end
 

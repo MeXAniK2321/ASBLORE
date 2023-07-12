@@ -1,5 +1,8 @@
+require('timers')
+
 hide_in_shadows = class({})
 LinkLuaModifier( "modifier_hide_in_shadows", "heroes/hide_in_shadows.lua",LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_hide_in_shadows_bonus", "heroes/hide_in_shadows.lua",LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "hide_in_shadows_target", "heroes/hide_in_shadows.lua",LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_silence_item", "heroes/hide_in_shadows.lua",LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_stunned_lua", "modifiers/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE )
@@ -177,7 +180,12 @@ FindClearSpaceForUnit(self:GetParent(), self:GetCaster():GetAbsOrigin(), true)
 			end
 			local radius = 400
 	local duration = 1.0
-	local damage = 1800
+	local damage = self:GetAbility():GetSpecialValueFor( "damage" )
+	
+	-- Increase damage per stack
+	if caster:HasModifier("modifier_hide_in_shadows_bonus") then
+	damage = self:GetAbility():GetSpecialValueFor( "damage" ) + self:GetAbility():GetSpecialValueFor( "stack_damage" ) * caster:FindModifierByName("modifier_hide_in_shadows_bonus"):GetStackCount()
+	end
 
 	-- logic
 	local enemies = FindUnitsInRadius(
@@ -197,7 +205,7 @@ FindClearSpaceForUnit(self:GetParent(), self:GetCaster():GetAbsOrigin(), true)
 		-- victim = target,
 		attacker = caster,
 		damage = damage,
-		damage_type = DAMAGE_TYPE_PHYSICAL,
+		damage_type = DAMAGE_TYPE_PURE,
 		ability = self, --Optional.
 		damage_flags = DOTA_DAMAGE_FLAG_NONE, --Optional.
 	}
@@ -213,6 +221,15 @@ FindClearSpaceForUnit(self:GetParent(), self:GetCaster():GetAbsOrigin(), true)
 			"modifier_generic_stunned_lua", -- modifier name
 			{ duration = duration } -- kv
 		)
+		
+		-- Check if unit was killed
+		Timers:CreateTimer(0.1, function ()
+		if enemy ~= nil and not enemy:IsNull() and not enemy:IsAlive() then
+         if enemy:IsRealHero() then 
+         caster:AddNewModifier( caster, caster, "modifier_hide_in_shadows_bonus", {} )
+		 caster:Heal(caster:GetMaxHealth(), caster)
+		 end
+		end end)
 	end
 	if caster:HasModifier("modifier_kisshot") then
 	self:PlayEffects2( radius )
@@ -319,3 +336,15 @@ end
 function modifier_silence_item:IsHidden()
     return true
 end
+
+-- Bonus Damage Modifier on kill
+modifier_hide_in_shadows_bonus = class({})
+
+function modifier_hide_in_shadows_bonus:IsHidden() return false end
+function modifier_hide_in_shadows_bonus:IsPurgable() return false end
+function modifier_hide_in_shadows_bonus:RemoveOnDeath() return false end
+function modifier_hide_in_shadows_bonus:GetTexture() return "shinobu_hide1" end
+function modifier_hide_in_shadows_bonus:OnCreated() 
+ if self:GetStackCount() <= 1 then self:IncrementStackCount() end
+end
+function modifier_hide_in_shadows_bonus:OnRefresh() self:IncrementStackCount() end

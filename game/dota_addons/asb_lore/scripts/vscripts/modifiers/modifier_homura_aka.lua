@@ -62,12 +62,21 @@ function modifier_homura_aka:OnCreated( kv )
 	local projectile_name
 	
 		projectile_name = "particles/test_projectile_1.vpcf"
+		
+	-- Take Player Origin and change it a bit for the M249
+	local Gun_Origin = caster:GetOrigin()
+	Gun_Origin.x = Gun_Origin.x + 30.0
+	Gun_Origin.y = Gun_Origin.y + 30.0
+	Gun_Origin.z = Gun_Origin.z + 30.0
 	
 
 	self.info = {
 		Source = caster,
 		Ability = self:GetAbility(),
-		vSpawnOrigin = caster:GetAttachmentOrigin( caster:ScriptLookupAttachment( "attach_attack1" ) ),
+      -- Old Code seriously wtf, do not use Attachment as Origin or the projectiles cannot be spawned sometimes. The game tries to spawn them with coordinates out of range and it doesn't work.
+	  -- Drow Ranger in Dota 2, her Multi Shot Arrows spawn from the ground, Valve are not stupid. Functionality > Realism.
+	  --  vSpawnOrigin = caster:GetAttachmentOrigin( caster:ScriptLookupAttachment( "attach_attack1" ) ),
+		vSpawnOrigin = Gun_Origin,
 		
 	    bDeleteOnHit = true,
 	    

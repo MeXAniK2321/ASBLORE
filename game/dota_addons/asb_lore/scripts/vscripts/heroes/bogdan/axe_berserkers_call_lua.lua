@@ -83,20 +83,19 @@ end
 		-- Apply Damage
 		damageTable.victim = enemy
 		ApplyDamage(damageTable)
-	enemy:AddNewModifier(
-		caster, -- player source
-		self, -- ability source
-		"modifier_generic_slow", -- modifier name
-		{ duration = 1.5 } -- kv
-	)
+
+		local spank_ass_duration = 2.0
 		if caster:HasTalent("special_bonus_bogdan_20") then
+		spank_ass_duration = 3.0
+		end
+		
+		-- Apply Spank Taunt
 		enemy:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
-		"modifier_generic_silenced_lua", -- modifier name
-		{ duration = 1.0 } -- kv
+		"modifier_axe_berserkers_call_lua_debuff", -- modifier name
+		{ duration = spank_ass_duration } -- kv
 	)
-		end
 		-- Apply stun debuff
 		
 	end

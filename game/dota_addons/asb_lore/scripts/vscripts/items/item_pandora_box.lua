@@ -3,6 +3,11 @@ function item_pandora_box:IsStealable() return true end
 function item_pandora_box:IsHiddenWhenStolen() return false end
 function item_pandora_box:OnSpellStart()
 	local caster = self:GetCaster()
+   if caster:HasScepter() and caster:GetUnitName()== "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
+    self:SpendCharge()
+	    local item = CreateItem("item_yamato", caster, self)
+	    caster:AddItem(item)
+   end
 	if caster:HasScepter() then
 	else
 	self:SpendCharge()

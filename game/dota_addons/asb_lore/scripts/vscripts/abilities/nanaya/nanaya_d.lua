@@ -178,7 +178,7 @@ function nanaya_clones1:ComboD(caster, target, dmg)
 	Timers:CreateTimer(0.1, function()
 	--caster:AddEffects(32)
 	--caster:SetBodygroup(1, 0)
-	target:AddNewModifier(caster, self, "modifier_stunned", { Duration = 0.4 })
+	target:AddNewModifier(caster, self, "modifier_generic_stun", { Duration = 0.4 })
 	caster:SetRenderAlpha(0)
 	if not somerandom[numslash] == nil then
 	--caster:RemoveGesture(somerandom[numslash])
@@ -213,7 +213,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
 	local test = string.format("nanaya.clonetp%s", numslash)
 																				--print (ACT_DOTA_CAST_ABILITY_3)
 	caster:EmitSound(test)
-		local knockback = { should_stun = true,
+		local knockback = { should_stun = 1,
 										knockback_duration = 0.05,
 										duration = 0.05,
 										knockback_distance = 250,
@@ -321,7 +321,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
 	local numberhit = 0
 	local clone_dmg = dmg
 	Timers:CreateTimer(0.1, function()
-			target:AddNewModifier(caster, self, "modifier_stunned", { duration = 0.4 })
+			target:AddNewModifier(caster, self, "modifier_generic_stun", { duration = 0.4 })
 											if numberhit < 3 then
 											--knockback_push = units:GetAbsOrigin() - units:GetForwardVector() * 120
 											knockback_push = target:GetAbsOrigin() + knockback_push1*120
@@ -338,7 +338,7 @@ ParticleManager:SetParticleControl(knife, 4, target:GetAbsOrigin())
 	--ParticleManager:SetParticleControl(nanaya_clone_jump, 1, knockback_push)
 	
 	 
-		local knockback = { should_stun = true,
+		local knockback = { should_stun = 1,
 										knockback_duration = 0.1,
 										duration = 0.1,
 										knockback_distance = 250,

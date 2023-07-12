@@ -18,7 +18,7 @@ function item_hidnotea:OnSpellStart()
 caster:AddNewModifier(caster, self, "modifier_valera", {} )
 end
 if not caster:HasModifier("modifier_item_super_idol_water") then
-	caster:AddNewModifier(caster, self, "modifier_hidnotea", { duration = 6.0 } )
+	caster:AddNewModifier(caster, self, "modifier_hidnotea", { duration = 14.0 } )
 	EmitSoundOn("hidnotea.tea", caster)
 	self:SpendCharge()
 	end
@@ -52,7 +52,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_hidnotea:GetModifierConstantHealthRegen( params )
-	return 75
+	return 50
 end
 
 --------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_hidnotea:GetModifierConstantManaRegen( params )
-	return 30
+	return 20
 end
 function modifier_hidnotea:GetEffectName()
 	return "particles/econ/events/fall_major_2016/radiant_fountain_regen_fm06_ribbon_c_b.vpcf"
@@ -111,7 +111,7 @@ end
 function modifier_valera:OnRefresh( kv )
 	-- references
 	
-	local max_stack = 10
+	local max_stack = 8
 
 	if IsServer() then
 		if self:GetStackCount()<max_stack then

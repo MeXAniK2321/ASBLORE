@@ -311,7 +311,7 @@ modifier_bogdan_key9 = class({})
 function modifier_bogdan_key9:IsHidden()
 	return false
 end
-function modifier_bogdan_key9:OnCreated()
+function modifier_bogdan_key9:OnCreated(hTable)
 self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
 local damageTable = {
 		victim = self:GetParent(),
@@ -343,8 +343,8 @@ end
 --------------------------------------------------------------------------------
 
 
-function modifier_bogdan_key9:OnRefresh( kv )
-	
+function modifier_bogdan_key9:OnRefresh(hTable)
+    self:OnCreated(hTable)	
 end
 
 function modifier_bogdan_key9:OnRemoved()

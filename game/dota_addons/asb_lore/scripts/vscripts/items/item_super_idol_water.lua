@@ -65,7 +65,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_item_super_idol_water:GetModifierConstantHealthRegen( params )
-	return 100
+	return 125
 end
 
 --------------------------------------------------------------------------------

@@ -444,6 +444,7 @@ EmitSoundOn("ulquiorra.3_sfx", caster)
 	self.launcher_damage = self.launcher_damage * (GameRules:GetGameTime() - self:GetChannelStartTime())
 
 	local width = self:GetSpecialValueFor("launcher_width")
+	local bonus_ult_range = self:GetSpecialValueFor("ulti_cero_range_multiplier")
 	--print(width)
 	local distance = self:GetCastRange(caster:GetAbsOrigin(),caster) + caster:GetCastRangeBonus()
 if self:GetCaster():HasModifier("modifier_ulquiorra_ressurection") or self:GetCaster():HasModifier("modifier_ulquiorra_ressurection_segunda_etapa") or  self:GetCaster():HasModifier("modifier_passive_ressurection")then
@@ -455,6 +456,9 @@ local cero_particle = "particles/ulquiorra_cero_osciras.vpcf"
 
 	ParticleManager:SetParticleControl(pfx, 0, caster:GetAttachmentOrigin(attach_point))
 	ParticleManager:SetParticleControl(pfx_end, 0, caster:GetAttachmentOrigin(attach_point))
+	
+	-- Increase Cero range during ultimate ability
+	if self:GetCaster():HasModifier("modifier_ulquiorra_ressurection_segunda_etapa") then distance = distance * bonus_ult_range end
 
 	local endcapPos = caster:GetAbsOrigin() + caster:GetForwardVector() * distance
 	

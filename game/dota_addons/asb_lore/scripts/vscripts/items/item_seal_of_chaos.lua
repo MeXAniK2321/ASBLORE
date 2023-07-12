@@ -47,6 +47,7 @@ function modifier_item_seal_of_chaos:DeclareFunctions()
     local funcs = {
         MODIFIER_PROPERTY_HEALTH_BONUS,
        MODIFIER_PROPERTY_MANA_BONUS,
+	   MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
     }
 
     return funcs
@@ -58,6 +59,9 @@ end
 
 function modifier_item_seal_of_chaos:GetModifierManaBonus()
     return self:GetAbility():GetSpecialValueFor('mana')
+end
+function modifier_item_seal_of_chaos:GetModifierSpellAmplify_Percentage()
+    return self:GetAbility():GetSpecialValueFor('mag_ampf')
 end
 function modifier_item_seal_of_chaos:OnCreated(table)
 	self.parent = self:GetParent()

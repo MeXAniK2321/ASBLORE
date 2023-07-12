@@ -306,6 +306,8 @@ function ichigoT:PlayEffects(caster, dummy, casterPt, duration_last)
         caster:SetOriginalModel("models/characters/ichigo/ichigo.vmdl")
         caster:SetModelScale(1.20)
         caster:ForceKill(true)
+        -- Quick Fixed respawn time bug, i suggest leave this at 10.0 seconds as an additional mechanic
+		caster:SetTimeUntilRespawn(10.0)
         --local dummy1
         Timers:RemoveTimer(dummyTimer)
         Timers:RemoveTimer(chargeTimer)

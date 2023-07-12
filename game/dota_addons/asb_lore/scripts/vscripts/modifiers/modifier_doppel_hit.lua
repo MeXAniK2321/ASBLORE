@@ -30,10 +30,36 @@ self.ability = self:GetAbility()
 	self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
 	self.duration2 = self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction()
 	self.crit_bonus = 100
+	
+    -- Vergil particle effect aura from ANIME Illya hero
+	if IsClient() then
+        if not self.iBerserkPFX then
+            self.iBerserkPFX =  ParticleManager:CreateParticle("particles/heroes/anime_hero_illya/illya_berserk_summon_buff.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+                                --[[ParticleManager:SetParticleControlEnt(  self.iBerserkPFX,
+                                                                        1,
+                                                                        self.parent,
+                                                                        PATTACH_POINT_FOLLOW,
+                                                                        "attach_hitloc",
+                                                                        Vector(0,0,0),
+                                                                        true)]]
+                                --ParticleManager:SetParticleControl(self.iBerserkPFX, 1, Vector(self.fRadius, 0, 0))
+                                ParticleManager:SetParticleControl(self.iBerserkPFX, 60, Vector(0, 0, 0))
+                                ParticleManager:SetParticleControl(self.iBerserkPFX, 61, Vector(0, 0, 0))
+
+            self:AddParticle(self.iBerserkPFX, false, false, -1, false, false)
+			
+	    end
+    end
 
 	if IsServer() then
 		self:SetStackCount(0)
 	end
+	
+	-- Add Aghanim Scepter
+	if IsServer() then
+      self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
+	end
+
 end
 
 function modifier_doppel_hit:OnRefresh( kv )

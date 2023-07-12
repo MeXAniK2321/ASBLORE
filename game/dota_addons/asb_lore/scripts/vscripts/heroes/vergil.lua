@@ -1,6 +1,7 @@
 judgment_cut = class({})
 LinkLuaModifier( "modifier_judgment_cut", "heroes/vergil", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_judgment_cut_cd", "heroes/vergil.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_judgment_multiple", "heroes/vergil.lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
 -- Custom KV
@@ -18,7 +19,15 @@ function judgment_cut:OnSpellStart()
 
 	-- load data
 	local duration = self:GetSpecialValueFor( "duration" )
+	local multiple_cast_times_enabled = self:GetSpecialValueFor( "multiple_cast_times_enabled" )
+	local multiple_cast_times = self:GetSpecialValueFor( "multiple_cast_times" )
+	local multiple_cast_times_mod_duration = self:GetSpecialValueFor( "multiple_cast_times_mod_duration" )
 	caster:AddNewModifier(self:GetCaster(), self, "modifier_judgment_cut_cd", {duration = duration + 0.1})
+    
+	-- Do not apply the Multiple Judgement Cuts modifier if Vergil has the Motivated Modifier
+	if caster:HasModifier("modifier_motivated") == false and multiple_cast_times_enabled > 0 then
+	caster:AddNewModifier(self:GetCaster(), self, "modifier_judgment_multiple", {duration = multiple_cast_times_mod_duration})
+	end
 
 	-- create thinker
 	CreateModifierThinker(
@@ -31,10 +40,34 @@ function judgment_cut:OnSpellStart()
 		false
 	)
 	
-	if caster:HasModifier("modifier_motivated") then
+	-- Casting Judgement Cut multiple times
+	if caster:GetModifierStackCount("modifier_judgment_multiple", caster) == multiple_cast_times then
+    caster:RemoveModifierByNameAndCaster("modifier_judgment_multiple", caster)	
+	end
+	
+	if caster:HasModifier("modifier_motivated") or caster:HasModifier("modifier_judgment_multiple") then
 	self:EndCooldown()
 	else
 	end
+end
+
+modifier_judgment_multiple = class({})
+
+--------------------------------------------------------------------------------
+-- Classifications
+function modifier_judgment_multiple:IsHidden()return false end
+function modifier_judgment_multiple:RemoveOnDeath() return false end
+function modifier_judgment_multiple:IsPurgable() return false end
+function modifier_judgment_multiple:OnRefresh() self:IncrementStackCount() end -- Increment Modifier stacks on refresh
+function modifier_judgment_multiple:OnDestroy()
+   if not IsServer() then return end
+   local caster = self:GetCaster()
+   local ability = self:GetAbility() -- Get the ability that generated the modifier.
+  
+   -- Do not set the ability on cooldown if Vergil uses the Motivated Modifier during this modifier
+   if caster:HasModifier("modifier_motivated") == false then
+   ability:StartCooldown(ability:GetCooldown(-1) * caster:GetCooldownReduction())
+   end
 end
 
 modifier_judgment_cut_cd = class({})
