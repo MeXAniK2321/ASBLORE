@@ -1,9 +1,9 @@
 --PATENTED BY EIEOFLIE (C) SPECIAL FOR ANIME CUSTOM GAME IN DOTA 2--
  
  ae86_clown_horn = ae86_clown_horn or class({})
--------------
+-----------------------------------------------
 local xd = 1
--------------
+-----------------------------------------------
 function ae86_clown_horn:OnSpellStart()
      local hCaster = self:GetCaster()
      
@@ -18,11 +18,11 @@ function ae86_clown_horn:OnSpellStart()
 	 end
 	 
 	 -- Emit Sounds
-	 EmitSoundOn("skywrath_mage_drag_deny_01", hCaster)
+	 EmitSoundOn("skywrath_mage_drag_laugh_02", hCaster)
      EmitSoundOn("DOTA_Item.Hand_Of_Midas", hCaster)
 	 
 	 -- Apply the gold gain effect particle
-     local particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+	 local particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
      ParticleManager:ReleaseParticleIndex(particle)
 	
 	 -- Gain the gold
