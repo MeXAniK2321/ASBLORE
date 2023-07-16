@@ -107,8 +107,8 @@
   //"item_sheepstick"     "REMOVE"
   //"item_recipe_orchid"      "REMOVE"
   //"item_orchid"     "REMOVE"
-  //"item_recipe_cyclone"     "REMOVE"
-  //"item_cyclone"      "REMOVE"
+  "item_recipe_cyclone"     "REMOVE"
+  "item_cyclone"      "REMOVE"
   //"item_recipe_force_staff"     "REMOVE"
   //"item_force_staff"      "REMOVE"
   "item_recipe_dagon"     "REMOVE"
@@ -129,8 +129,8 @@
   //"item_necronomicon_3"     "REMOVE"
   "item_recipe_ultimate_scepter"      "REMOVE"
   "item_ultimate_scepter"     "REMOVE"
-  "item_recipe_refresher"     "REMOVE"
-  "item_refresher"      "REMOVE"
+  //"item_recipe_refresher"     "REMOVE"
+  //"item_refresher"      "REMOVE"
   //"item_recipe_assault"     "REMOVE"
   //"item_assault"      "REMOVE"
   //"item_recipe_heart"     "REMOVE"
@@ -361,11 +361,11 @@
 	}
 	"item_force_staff"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_recipe_force_staff"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_cyclone"
 	{
@@ -488,7 +488,7 @@
 	}
 	"item_basher"
 	{
-		
+	"ItemPurchasable" "1"	
 	}
 	"item_invis_sword"
 	{
@@ -934,11 +934,12 @@
 	}
 	"item_recipe_refresher"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
+        "ItemCost"           "66666"
 	}
 	"item_refresher"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_ward_sentry"
 	{
@@ -1307,12 +1308,99 @@
 	}
 	"item_recipe_basher"
 {
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		
 	}
 	"item_basher"
 {
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
+		
+	}
+	
+	"item_recipe_assault"
+{
+		"ItemPurchasable"				"1"
+		"ItemCost"						"300"
+		
+	}
+	
+	"item_assault"
+{
+		"ItemPurchasable"				"1"
+		"ItemCost"						"300"
+		
+		"AbilitySpecial"
+		{
+
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"	        "15"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"50"
+			}
+
+		}
+		
+	}
+	
+	"item_recipe_meteor_hammer"
+	{
+	
+		"ItemPurchasable"				"1"
+		"ItemCost"						"3150"
+		
+	}
+	
+	"item_meteor_hammer"
+{
+		"ItemPurchasable"				"1"
+		
+		"AbilitySpecial"
+		{
+
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_health_regen"		"25.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_mana_regen"		"25.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"burn_dps_units"		"125"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burn_duration"		"6"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"impact_damage_units"		"800"
+			}
+
+		}
+		
+	}
+	
+	"item_magic_stick"
+{
+		"ItemPurchasable"				"1"
+		"ItemCost"						"0"
 		
 	}
 	

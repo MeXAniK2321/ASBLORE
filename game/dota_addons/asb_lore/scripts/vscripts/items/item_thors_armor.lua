@@ -22,11 +22,11 @@ function item_thors_armor:OnSpellStart()
 end
 
 -- Item stats
-
+---------------------------------------------------------------------------------------------------------------
 modifier_item_thors_armor = modifier_item_thors_armor or class({})
 
 function modifier_item_thors_armor:IsHidden()                          return false end
-function modifier_item_thors_armor:RemoveOnDeath()                     return false end
+function modifier_item_thors_armor:RemoveOnDeath()                     return true end
 function modifier_item_thors_armor:IsPurgable()                        return false end
 function modifier_item_thors_armor:GetAttributes()                     return MODIFIER_ATTRIBUTE_MULTIPLE end
 function modifier_item_thors_armor:DeclareFunctions()
@@ -71,6 +71,7 @@ function modifier_item_thors_armor:OnRefresh(tTable)
     self:OnCreated(tTable)
 end
 function modifier_item_thors_armor:OnIntervalThink()
+    if not IsServer() then return end
     -- Increment charges per second
 	if self:GetStackCount() < 10 then
 	self:IncrementStackCount()
@@ -118,7 +119,7 @@ function modifier_item_thors_armor:OnIntervalThink()
 end
 
 -- Modifier for 100% Dmg Reduction
-
+---------------------------------------------------------------------------------------------------------
 modifier_item_thors_armor_active = modifier_item_thors_armor_active or class({})
 
 function modifier_item_thors_armor_active:IsHidden()                                   return false end

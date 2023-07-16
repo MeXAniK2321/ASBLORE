@@ -1019,7 +1019,7 @@
     //"SoundSet"          "1"
     "VoiceFile"		"empty"  
     "Ability1"        "gogeta_kamehameha"
-    "Ability2"        "gogeta_aerial_kick" 
+    "Ability2"        "gogeta_powerup" 
     "Ability3"        "gogeta_kick_combo" 
     "Ability4"        "gogeta_backhand"
     "Ability5"        "gogeta_upper_kick"

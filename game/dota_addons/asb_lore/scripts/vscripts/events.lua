@@ -32,8 +32,8 @@ function COverthrowGameMode:OnGameRulesStateChange()
 		elseif GetMapName() == "balance_duo" then
 			self.AnimeGameKills = 48
 			self.ban = 1
-        elseif GetMapName() == "mines_trio" then
-			self.AnimeGameKills = 60		
+        elseif GetMapName() == "5x5" then
+			self.AnimeGameKills = 100		
             self.ban = 0			
 		elseif GetMapName() == "desert_quintet" then
 			self.AnimeGameKills = 100

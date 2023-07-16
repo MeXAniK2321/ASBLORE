@@ -14,7 +14,7 @@
 	[
 		"ruin_solo",
 		"balance_duo",
-		"mines_trio",
+		"birzhamemov_5v5",
 		"desert_quintet",
 		"asb_fate_nasral"
 	]
@@ -34,8 +34,8 @@
 			map = "desert_quintet"
 		},
 		{
-			MaxPlayers = 9
-			map = "mines_trio"
+			MaxPlayers = 10
+			map = "birzhamemov_5v5"
 		},
 		{
 			MaxPlayers = 10

@@ -26,6 +26,7 @@ require("anime_functions_server_client")
 require("illusion")
 require( "events" )
 require('internal/util')
+require('internal/gold_filter')
 require( "items" )
 require( "utility_functions" )
 require("playertables")
@@ -138,6 +139,7 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/tohka.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/tatsuya.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/ae86.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/kumagawa.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/hero_fa.vsndevts", context )
 		PrecacheResource( "model", "models/susano/susano1.vmdl", context )
 		PrecacheResource( "model", "models/shinobu_vampie/shinobu_success.vmdl", context )
@@ -164,6 +166,11 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/items/item_walter_white.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_idol_water.vsndevts", context )
 		
+		-- Load Screen
+        PrecacheResource( "soundfile", "soundevents/anime_special.vsndevts", context )
+		-- Temporarily Here
+		PrecacheResource( "soundfile", "soundevents/heroes/gogeta.vsndevts", context )
+		
 end
 
 function Activate()
@@ -183,6 +190,12 @@ function COverthrowGameMode:InitGameMode()
 	
 --	CustomNetTables:SetTableValue( "test", "value 1", {} );
 --	CustomNetTables:SetTableValue( "test", "value 2", { a = 1, b = 2 } );
+
+    -- Gold Filter
+	local hGameModeEntity = GameRules:GetGameModeEntity()
+    hGameModeEntity:SetModifyGoldFilter( self.OnModifyGoldFilter, self )
+	GameRules:SetUseBaseGoldBountyOnHeroes( true )
+	GameRules:SetFilterMoreGold( false )
     
 
 	self.m_TeamColors = {}
@@ -257,11 +270,11 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameBansPerTeam(0)
 			self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 4
+		self.m_GoldDropPercent = 10
 		elseif GetMapName() == "balance_duo" then
-		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
+		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(1)
+		GameRules:SetCustomGameBansPerTeam(0)
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 2 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 2 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 2 )
@@ -269,14 +282,17 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_3, 2 )
 			self.m_GoldRadiusMin = 400
 		self.m_GoldRadiusMax = 700
-		self.m_GoldDropPercent = 6
-        elseif GetMapName() == "mines_trio" then
+		self.m_GoldDropPercent = 10
+        elseif GetMapName() == "5x5" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(2)
-			self.m_GoldRadiusMin = 250
-		self.m_GoldRadiusMax = 800
-		self.m_GoldDropPercent = 8
+		GameRules:SetCustomGameBansPerTeam(1)
+		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
+		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
+		self.m_GoldRadiusMin = 100
+		self.m_GoldRadiusMax = 1400
+		self.m_GoldDropPercent = 10
+		self.effectradius = 1400
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -326,12 +342,12 @@ function COverthrowGameMode:InitGameMode()
 	GameRules:SetHideKillMessageHeaders( true )
 	GameRules:SetUseUniversalShopMode( true )
 	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_DOUBLEDAMAGE , false ) --Double Damage
-	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_HASTE, false ) --Haste
+	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_HASTE, true ) --Haste
 	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_ILLUSION, false ) --Illusion
 	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_INVISIBILITY, false ) --Invis
-	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_REGENERATION, false ) --Regen
+	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_REGENERATION, true ) --Regen
 	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_ARCANE, false ) --Arcane
-	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_BOUNTY, false ) --Bounty
+	GameRules:GetGameModeEntity():SetRuneEnabled( DOTA_RUNE_BOUNTY, true ) --Bounty
 	GameRules:GetGameModeEntity():SetLoseGoldOnDeath( false )
 	GameRules:GetGameModeEntity():SetFountainPercentageHealthRegen( 0 )
 	GameRules:GetGameModeEntity():SetFountainPercentageManaRegen( 0 )

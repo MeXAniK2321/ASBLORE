@@ -74,16 +74,13 @@
    "item"      "item_pandora_box"
    "item"      "item_pandora_treasure"
    "item"       "item_will_of_the_fallen"
-   "item"    "item_cyclone"
+   "item"    "item_thors_armor"
 }  
   
   // Level 1 - Green Recipes
   "basics"
   {
-    "item"    "item_wraith_band"
-    "item"    "item_null_talisman"
     "item"    "item_magic_wand"
-    "item"    "item_bracer"
     "item"    "item_poor_mans_shield"
     "item"    "item_soul_ring"
     "item"    "item_phase_boots"

@@ -199,7 +199,7 @@
 		"AbilityTextureName" 					"hell_staff"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"10000"
+		"ItemCost"								"6000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_hell_staff"
@@ -222,8 +222,8 @@
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		"AbilityCastRange"						"700"
-		"AbilityCastPoint"						"1.5"
-		"AbilityCooldown"						"120"
+		"AbilityCastPoint"						"1.2"
+		"AbilityCooldown"						"80"
 		"AbilityManaCost"						"100"
 
 		"AbilitySharedCooldown"					"sad_vodoo_doll"
@@ -631,7 +631,7 @@
 
 		"ItemRequirements"
 		{
-			"01"								"item_rebellion;item_mystic_staff;"
+			"01"								"item_rebellion;item_basher;"
 		}	
 	}
 	//=================================================================================================================
@@ -641,7 +641,7 @@
 
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_yoru.lua"
-		"AbilityTextureName" 					"mihawk_sword"
+		"AbilityTextureName" 					"abyssal_blade"
 		//"Model"									"models/props_items/bloodstone.vmdl"
 				"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -743,7 +743,7 @@
 		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_beast_spear"
-		"AbilityTextureName" 					"beast_spear"
+		"AbilityTextureName" 					"monkey_king_bar"
 		//"Model"									"models/props_gameplay/sentry_ward_bundle.vmdl"
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -920,7 +920,7 @@
 
 		"ItemRequirements"
 		{
-			"01"								"item_dragon_lance;item_ultimate_orb;item_debate_club"
+			"01"								"item_hurricane_pike;item_debate_club"
 		}
 	}
 	//=================================================================================================================
@@ -1731,14 +1731,14 @@
 		"AbilityTextureName" 					"betelgeuse"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"2000"
+		"ItemCost"								"1"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_trans_am"
 
 		"ItemRequirements"
 		{
-			"01"								"item_betelgeuse;item_rod_of_atos"
+			"01"								"item_betelgeuse;item_rod_of_atos;item_force_staff;"
 		}	
 	}
 	//=================================================================================================================
@@ -2345,7 +2345,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"60"
+				"duration"						"55"
 			}
 			"05"
 			{
@@ -2472,7 +2472,7 @@
 		"ID"									"3006"
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_asta_sword"
-		"AbilityTextureName" 					"asta_sword"
+		"AbilityTextureName" 					"black_king_bar"
 		//"Model"									"models/props_items/bloodstone.vmdl"
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
@@ -2888,6 +2888,11 @@
 				"var_type"						"FIELD_FLOAT"
 				"converted_spell_damage_addition"					"0.1"
 			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"mag_ampf" 				      "10"
+			}
 			
 			
 		}
@@ -2960,9 +2965,9 @@
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"2"
-		"ItemCost"								"125"
+		"ItemCost"								"225"
 		"AbilitySharedCooldown" "hidnotea"
-		"AbilityCooldown"						"30"
+		"AbilityCooldown"						"35"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -2972,12 +2977,12 @@
 		 "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"hp"				"75"
+		    	"hp"				"50"
 		    }
 			"01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"mp"				"12"
+		    	"mp"				"20"
 		    }
 			
 		}
@@ -6091,12 +6096,12 @@
 		"Model"											"models/props_gameplay/recipe.mdl"
 		"BaseClass"										"item_datadriven"
 		"AbilityTextureName"    						"recipe"
-		"ItemCost"										"800"    
+		"ItemCost"										"550"    
 		"ItemRecipe"									"1"
 		"ItemResult"									"item_super_idol_water"
 		"ItemRequirements"
 		{
-			"01"									"item_hidnotea;item_bottle"
+			"01"									"item_hidnotea;item_bottle;item_magic_wand;"
 		}
 	}
 	
@@ -6122,7 +6127,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal"				"100"
+				"heal"				"125"
 			}
 			"02"
 			{
@@ -6140,12 +6145,12 @@
 		"Model"											"models/props_gameplay/recipe.mdl"
 		"BaseClass"										"item_datadriven"
 		"AbilityTextureName"    						"recipe"
-		"ItemCost"										"6000"    
+		"ItemCost"										"3875"    
 		"ItemRecipe"									"1"
 		"ItemResult"									"item_van_dark"
 		"ItemRequirements"
 		{
-			"01"									"item_hyperstone;item_hyperstone"
+			"01"									"item_assault;item_hyperstone"
 		}
 	}
 	
@@ -6284,14 +6289,14 @@
 		"AbilityTextureName" 					"chomusuke"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"3000"
+		"ItemCost"								"10"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_chomusuke"
 
 		"ItemRequirements"
 		{
-			"01"								"item_axis_sheet;item_bloodstone;item_last_star"
+			"01"								"item_axis_sheet;item_bloodstone;item_last_star;item_radiance"
 		}	
 	}
 	//=================================================================================================================
@@ -6348,7 +6353,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"burn"					"100"
+				"burn"					"120"
 			}
 			"03"
 			{
@@ -7355,4 +7360,83 @@
 		   
 		}
 	}
+	
+	//=================================================================================================================
+	// Thor's Armor
+	//=================================================================================================================
+	
+	"item_recipe_thors_armor"
+	{
+	
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"recipe"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"8000"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_thors_armor"
+
+		"ItemRequirements"
+		{
+			"01"								"item_assault;item_maelstrom;item_ultimate_orb;"
+		}	
+	}
+	//=================================================================================================================
+	"item_thors_armor"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_thors_armor.lua"
+		"AbilityTextureName" 					"thors_armor"
+		//"Model"									"models/props_items/bloodstone.vmdl"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+
+		//"ItemCost"								"10000"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemAliases"							"ww"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+		"ShouldBeSuggested"						"1"
+		"ItemShareability"						"ITEM_NOT_SHAREABLE"
+		"AbilityCooldown"						"50"
+		"AbilityManaCost"						"400"
+		//"AbilitySharedCooldown"					""
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_allstats"				"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"bonus_armor"						"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"active_duration"						"1.5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"300"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"					      "0.1"
+			}
+		}
+	}
+
 }

@@ -11,6 +11,11 @@ local gold = self:GetSpecialValueFor("gold") + self:GetCaster():FindTalentValue(
      if target:IsMagicImmune() then
         return UF_FAIL_ENEMY
     end
+   if caster == target then
+        return UF_FAIL_CUSTOM
+   end
+   
+   return UF_SUCCESS
 end 
 function throw_money:GetCustomCastErrorTarget(target)
 local caster = self:GetCaster()
@@ -19,6 +24,11 @@ local caster = self:GetCaster()
    if gold > gold1  then
         return "#dota_hud_error_not_enough_gold"
     end
+   if caster == target then
+        return "#dota_hud_error_cant_cast_on_self"
+   end
+   
+   -- return "" -- Maybe ???
 end
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -51,7 +61,6 @@ function throw_money:OnSpellStart()
 
 	self:PlayEffects1()
 end
-
 function throw_money:OnProjectileHit( hTarget, vLocation )
 	local target = hTarget
 	if target==nil then return end
@@ -59,10 +68,6 @@ function throw_money:OnProjectileHit( hTarget, vLocation )
 	if not target then return end
 if target == caster then return end
 	self:Hit( target, true )
-	
-	
-
-	
 
 	self:PlayEffects2( hTarget )
 end
@@ -80,8 +85,17 @@ function throw_money:Hit( target, dragonform )
 
 	-- load data
 	local damage = self:GetSpecialValueFor( "damage" ) + self:GetCaster():FindTalentValue("special_bonus_daisuke_20")
+	
+	-- damage table
+	local damageTable = {
+		victim = target,
+		attacker = caster,
+		damage = damage,
+		damage_type = self:GetAbilityDamageType(),
+		ability = self, --Optional.
+	}
 
-	-- damage
+	-- If the target is an ally, give money
 	if target:GetTeamNumber() == self:GetCaster():GetTeamNumber() then
 	target:AddNewModifier(
 		self:GetCaster(),
@@ -97,21 +111,10 @@ function throw_money:Hit( target, dragonform )
 		"modifier_throw_money",
 		{duration = self.money_duration}
 	)
-	end
-	-- damage
-	local damageTable = {
-		victim = target,
-		attacker = caster,
-		damage = damage,
-		damage_type = self:GetAbilityDamageType(),
-		ability = self, --Optional.
-	}
+	-- Apply the damage
 	ApplyDamage(damageTable)
-	
-
-	
+	end
 end
-
 --------------------------------------------------------------------------------
 function throw_money:PlayEffects1()
 	-- Get Resources
@@ -120,7 +123,6 @@ function throw_money:PlayEffects1()
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetCaster() )
 end
-
 function throw_money:PlayEffects2( target )
 	-- Get Resources
 	local sound_target = "daisuke_2"
