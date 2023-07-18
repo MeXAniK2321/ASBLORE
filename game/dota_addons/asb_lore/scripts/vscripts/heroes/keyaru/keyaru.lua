@@ -2289,6 +2289,12 @@ function pain_of_the_weak:OnSpellStart()
 	local target = self:GetCursorTarget()
 	local point = target:GetOrigin()
     local duration = self:GetSpecialValueFor("duration")
+	
+	-- Absorb spell if enemy has Linken
+	if target:TriggerSpellAbsorb(self) then
+		return nil
+	end
+	
 	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 7})
 	target:AddNewModifier(caster, self, "modifier_pain_of_the_weak_damage", {duration = 7.02})
 	target:AddNewModifier(caster, self, "modifier_pain_of_the_weak_enemy", {duration = 7})

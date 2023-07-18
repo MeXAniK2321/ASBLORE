@@ -25,6 +25,11 @@ function ichigoT:OnSpellStart()
     local damageType = self:GetAbilityDamageType()
     local damageFlags = self:GetAbilityTargetFlags()
     local target = self:GetCursorTarget()
+	
+	-- Absorb spell if enemy has Linken
+	if target:TriggerSpellAbsorb(self) then
+		return nil
+	end
     target:AddNewModifier(caster, self, "modifier_ichigo_combo", {duration = 20})
     caster:AddNewModifier(caster, self, "modifier_ichigo_combo", {duration = 20})
     print("POGCHAMP")

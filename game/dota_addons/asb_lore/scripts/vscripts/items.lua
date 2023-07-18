@@ -31,6 +31,35 @@ function COverthrowGameMode:SpawnGoldEntity( spawnPoint )
 	local dropRadius = RandomFloat( self.m_GoldRadiusMin, self.m_GoldRadiusMax )
 	newItem:LaunchLootInitialHeight( false, 0, 500, 0.75, spawnPoint + RandomVector( dropRadius ) )
 	newItem:SetContextThink( "KillLoot", function() return self:KillLoot( newItem, drop ) end, 20 )
+	
+    -- 70% Chance to create a Rune with each Gold Coin spawn
+	local randomChance = RandomInt(1, 10)
+	if randomChance <= 7 then
+	  -- Runes Allowed
+	  local runeTypes = {
+                            DOTA_RUNE_HASTE,
+                            DOTA_RUNE_REGENERATION,
+                            DOTA_RUNE_ARCANE,
+					        DOTA_RUNE_BOUNTY,
+					        DOTA_RUNE_SHIELD,
+							DOTA_RUNE_WATER,
+							-- DOTA_RUNE_DOUBLEDAMAGE,
+							-- DOTA_RUNE_ILLUSION,
+							-- DOTA_RUNE_INVISIBILITY,
+                        } 
+	  -- Select random rune from Table
+	  local randomRuneInt = RandomInt(1, #runeTypes)
+	  local randomRune = runeTypes[randomRuneInt]
+	
+	  -- Make sure Rune spawns on the ground and create Rune
+      local groundSpawnPoint = GetGroundPosition(spawnPoint, nil)
+	  local newRune = CreateRune( groundSpawnPoint + RandomVector( dropRadius ), randomRune )
+	  local particlePosition = newRune:GetOrigin()
+      local particle = ParticleManager:CreateParticle("particles/earthshaker_arcana_blink_start1.vpcf", PATTACH_WORLDORIGIN, nil)
+      ParticleManager:SetParticleControl(particle, 0, particlePosition)
+      ParticleManager:ReleaseParticleIndex(particle)
+	  newRune:SetContextThink( "KillRune", function() return self:KillRune( newRune ) end, 7 )
+	end
 end
 
 
@@ -49,6 +78,16 @@ function COverthrowGameMode:KillLoot( item, drop )
 
 	UTIL_Remove( item )
 	UTIL_Remove( drop )
+end
+
+--Removes Runes after they expire
+function COverthrowGameMode:KillRune( runeName )
+
+	if runeName:IsNull() then
+		return
+	end
+
+	UTIL_Remove( runeName )
 end
 
 function COverthrowGameMode:SpecialItemAdd( event )

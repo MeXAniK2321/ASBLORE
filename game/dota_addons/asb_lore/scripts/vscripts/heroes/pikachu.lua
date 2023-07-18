@@ -619,6 +619,11 @@ function oooga_booga:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
+	
+	-- Absorb spell if enemy has Linken
+	if target:TriggerSpellAbsorb(self) then
+		return nil
+	end
 
 	-- check dragon modifier
 	local modifier = caster:FindModifierByNameAndCaster( "modifier_dragon_knight_elder_dragon_form_lua", caster )

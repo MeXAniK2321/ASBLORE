@@ -65,7 +65,10 @@ function Precache( context )
         PrecacheUnitByNameSync( "npc_dota_treasure_courier", context )
         PrecacheModel( "npc_dota_treasure_courier", context )
 
-    --Cache new particles
+    -- Cache Particle for fountain range
+		PrecacheResource( "particle", "particles/heroes/anime_hero_kc/kc_erase_ring.vpcf", context )
+	
+	--Cache new particles
        	PrecacheResource( "particle", "particles/econ/events/nexon_hero_compendium_2014/teleport_end_nexon_hero_cp_2014.vpcf", context )
        	PrecacheResource( "particle", "particles/leader/leader_overhead.vpcf", context )
        	PrecacheResource( "particle", "particles/last_hit/last_hit.vpcf", context )
@@ -270,7 +273,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameBansPerTeam(0)
 			self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 10
+		self.m_GoldDropPercent = 15
 		elseif GetMapName() == "balance_duo" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -282,7 +285,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_3, 2 )
 			self.m_GoldRadiusMin = 400
 		self.m_GoldRadiusMax = 700
-		self.m_GoldDropPercent = 10
+		self.m_GoldDropPercent = 17
         elseif GetMapName() == "5x5" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -291,7 +294,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
 		self.m_GoldRadiusMin = 100
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 10
+		self.m_GoldDropPercent = 17
 		self.effectradius = 1400
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
@@ -302,7 +305,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 5 )
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 8
+		self.m_GoldDropPercent = 20
 	elseif GetMapName() == "temple_quartet" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 3 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 3 )
@@ -310,7 +313,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_2, 3 )
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 10
+		self.m_GoldDropPercent = 20
 	elseif GetMapName() == "asb_fate_nasral" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 7 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
@@ -323,7 +326,7 @@ function COverthrowGameMode:InitGameMode()
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 4
+		self.m_GoldDropPercent = 15
 	end
 	
 
@@ -395,6 +398,7 @@ end
 function COverthrowGameMode:SetUpFountains()
 
 	LinkLuaModifier( "modifier_fountain_aura_lua", LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_fountain_aura_linken_lua", "modifier_fountain_aura_lua", LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_fountain_aura_knockback", LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_fountain_aura_effect_lua", LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_fountain_damage", LUA_MODIFIER_MOTION_NONE )
@@ -405,10 +409,35 @@ function COverthrowGameMode:SetUpFountains()
 	for _,fountainEnt in pairs( fountainEntities ) do
 		--print("fountain unit " .. tostring( fountainEnt ) )
 		fountainEnt:AddNewModifier( fountainEnt, fountainEnt, "modifier_fountain_aura_lua", {} )
-		fountainEnt:AddNewModifier( fountainEnt, fountainEnt, "modifier_fountain_aura_knockback", {} )
+		fountainEnt:AddNewModifier( fountainEnt, fountainEnt, "modifier_fountain_aura_linken_lua", {} )
+		--fountainEnt:AddNewModifier( fountainEnt, fountainEnt, "modifier_fountain_aura_knockback", {} )
 		fountainEnt:AddNewModifier( fountainEnt, fountainEnt, "modifier_fountain_damage", {} )
-		
 	end
+	
+	-- Fountain Rings Credits: @EYEOFLIE
+	Timers:CreateTimer(1, function()
+      if GameRules:State_Get() ~= DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+        return 1
+      end
+        
+		local hFountainEnts = Entities:FindAllByClassname("ent_dota_fountain")
+        for _, hFountainEnt in pairs(hFountainEnts) do
+            if IsNotNull(hFountainEnt) then
+                --local iIDFowViewer = AddFOWViewer(hFountainEnt:GetTeamNumber(), hFountainEnt:GetAbsOrigin(), 2750, 99999, false)
+                --print(iIDFowViewer, "PEPEGS")
+                local iRingPFX =    ParticleManager:CreateParticle("particles/heroes/anime_hero_kc/kc_erase_ring.vpcf", PATTACH_WORLDORIGIN, nil)
+                                    ParticleManager:SetParticleShouldCheckFoW(iRingPFX, false)
+                                    ParticleManager:SetParticleControl(iRingPFX, 0, hFountainEnt:GetAbsOrigin())
+                                    ParticleManager:SetParticleControl(iRingPFX, 1, Vector(hFountainEnt:Script_GetAttackRange() + hFountainEnt:GetAttackRangeBuffer(), 0, 0))
+                                    ParticleManager:SetParticleControl(iRingPFX, 2, hFountainEnt:GetAbsOrigin())
+
+                                    ParticleManager:SetParticleControl(iRingPFX, 60, Vector(255, 0, 0))
+                                    ParticleManager:SetParticleControl(iRingPFX, 61, Vector(255, 0, 0))
+                                    ParticleManager:SetParticleControl(iRingPFX, 62, Vector(255, 0, 0))
+
+            end
+        end
+	end)
 end
 
 ---------------------------------------------------------------------------
