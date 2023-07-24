@@ -4,21 +4,9 @@ LinkLuaModifier("modifier_item_sword_breaker_debuff", "items/item_sword_breaker"
 LinkLuaModifier("modifier_item_sword_breaker_ghost", "items/item_sword_breaker", LUA_MODIFIER_MOTION_NONE)
 function item_sword_breaker:CastFilterResultTarget( hTarget )
 
-
-local caster = self:GetCaster()
-
-
-	local result = UnitFilter(
-		hTarget,	-- Target Filter
-		DOTA_UNIT_TARGET_TEAM_BOTH,	-- Team Filter
-		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_CREEP,	-- Unit Filter
-		0,	-- Unit Flag
-		self:GetCaster():GetTeamNumber()	-- Team reference
-	)
-	
-	if result ~= UF_SUCCESS then
-		return result
-	end
+    if hTarget:GetTeamNumber() == self:GetCaster():GetTeamNumber() and hTarget:IsMagicImmune() then
+        return UF_FAIL_MAGIC_IMMUNE_ALLY
+    end
 
 	return UF_SUCCESS
 end

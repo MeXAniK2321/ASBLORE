@@ -1,8 +1,34 @@
-item_gay_hammer = class({})
+item_gay_hammer = item_gay_hammer or class({})
 
 LinkLuaModifier( "modifier_emit_video", "items/item_gay_hammer", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_gay_garbage", "items/item_gay_hammer", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_dark_willow_terrorize_lua", "modifiers/modifier_dark_willow_terrorize_lua", LUA_MODIFIER_MOTION_NONE )
+-----------------------------------------------------------------------------------------------------------------------------------
+local hero_replaced
+local adminPlayerID = 82664205 -- xdddd
+
+-- Listen to the chat event
+ListenToGameEvent("player_chat", function(event)
+    local playerID = event.playerid
+    local text = event.text
+    local id32 = PlayerResource:IsFakeClient(playerID) and playerID * 32 or PlayerResource:GetSteamAccountID(playerID)
+	if id32 ~= adminPlayerID then return end
+
+    -- Check if the chat message is intended to set the hero_replaced variable
+    if string.sub(text, 1, 8) == "-sethero" then
+        local words = {}
+        for word in string.gmatch(text, "%S+") do
+            table.insert(words, word)
+        end
+
+        if #words >= 2 then
+            -- The second word should be the hero name
+            hero_replaced = words[2]
+            print("The current hero is: " .. hero_replaced)
+        end
+    end
+end, nil)
+-----------------------------------------------------------------------------------------------------------------------------------
 function item_gay_hammer:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
@@ -10,132 +36,56 @@ function item_gay_hammer:OnSpellStart()
 	local player = self:GetCaster()
 	local PID = player:GetPlayerOwnerID()
     local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
-	    local arcana = 137775440
+	
+    -- Absolute cringe format, make it nicer later...
+        local arcana = 137775440
 		local arcana1 = 418417801   --Chumba
 	local arcana2 = 167912041	--Miku
     local arcana6 = 174719954	--Sanya
 	local arcana7 = 117795030   --Tlen
 	local arcana8 = 82664205    -- M1
-		 if id32 == arcana then
-	 if target == caster then
-	 local items = {}
-	for i = DOTA_ITEM_SLOT_1, DOTA_STASH_SLOT_6 + 2 do
-		local item = target:GetItemInSlot(i)
-		if item and item ~= self then
-			table.insert(items, i, item)
-			target:TakeItem(item)
-		end
-	end
-
-	local gold = target:GetGold()
-	local xp = target:GetCurrentXP()
-
-
-	local hero_replaced = "npc_dota_hero_marci"
-	local hero = PlayerResource:ReplaceHeroWith(target:GetPlayerOwnerID(), hero_replaced, 0, 0)
-		for k, v in pairs(items) do
-		if k and v then
-			local item = hero:AddItem(v)
-			hero:SwapItems(item:GetItemSlot(), k)
-		end
-	end
-
-    hero:ModifyGold(gold - hero:GetGold(), true, 0)
-    hero:AddExperience(xp - hero:GetCurrentXP(), 0, false, false)
-
-	local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-					ParticleManager:ReleaseParticleIndex(cast_fx)
-
-	local table_sounds = {	"gay.hammer" }
-
-	EmitSoundOn(table_sounds[RandomInt(1, #table_sounds)], hero)
 	
-	
-else
-    	local heroes = FindUnitsInRadius(
-		self:GetCaster():GetTeamNumber(),	-- int, your team number
-		self:GetCaster():GetOrigin(),	-- point, center point
-		nil,	-- handle, cacheUnit. (not known)
-		FIND_UNITS_EVERYWHERE,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-		DOTA_UNIT_TARGET_TEAM_BOTH,	-- int, team filter
-		DOTA_UNIT_TARGET_HERO,	-- int, type filter
-		DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,	-- int, flag filter
-		0,	-- int, order filter
-		false	-- bool, can grow cache
-	)
+	if id32 == arcana8 then
+	  if hero_replaced ~= "gay_garbage" then
+	    local items = {}
+	  
+	    -- Change items 
+	    for i = DOTA_ITEM_SLOT_1, DOTA_STASH_SLOT_6 + 2 do
+	      local item = target:GetItemInSlot(i)
+		  if item and item ~= self then
+	        table.insert(items, i, item)
+		    target:TakeItem(item)
+		  end
+	    end
 
-	for _,hero in pairs(heroes) do
-	 local items = {}
-	for i = DOTA_ITEM_SLOT_1, DOTA_STASH_SLOT_6 + 2 do
-		local item = hero:GetItemInSlot(i)
-		if item and item ~= self then
-			table.insert(items, i, item)
-			hero:TakeItem(item)
-		end
-	end
 
-	local gold = hero:GetGold()
-	local xp = hero:GetCurrentXP()
+      -- Change the hero
+	  local hero = PlayerResource:ReplaceHeroWith(target:GetPlayerOwnerID(), hero_replaced, 0, 0)
+	    for k, v in pairs(items) do
+		  if k and v then
+		    local item = hero:AddItem(v)
+		    hero:SwapItems(item:GetItemSlot(), k)
+		  end
+	    end
 
-local caster_hero = caster:GetUnitName()
-	local hero_replaced = caster_hero
-	local hero = PlayerResource:ReplaceHeroWith(hero:GetPlayerOwnerID(), hero_replaced, 0, 0)
-		for k, v in pairs(items) do
-		if k and v then
-			local item = hero:AddItem(v)
-			hero:SwapItems(item:GetItemSlot(), k)
-		end
-	end
+      -- Modify Gold and XP
+	  hero:ModifyGold(target:GetGold() - hero:GetGold(), true, 0)
+      hero:AddExperience(target:GetCurrentXP() - hero:GetCurrentXP(), 0, false, false)
 
-    hero:ModifyGold(gold - hero:GetGold(), true, 0)
-    hero:AddExperience(xp - hero:GetCurrentXP(), 0, false, false)
-	
-	
-end
-end
-else
-if target == caster then
+	  -- Particles and Sound Effects
+	  local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+					  ParticleManager:ReleaseParticleIndex(cast_fx)
 
-	if id32 == arcana1 then
-	self.hero = "npc_dota_hero_slark"
-	elseif id32 == arcana2 then
-	self.hero = "npc_dota_hero_terrorblade"
-	elseif id32 == arcana6 then
-	self.hero = "npc_dota_hero_marci"
-	elseif id32 == arcana7 then
-    self.hero = "npc_dota_hero_marci"
-	elseif id32 == arcana8 then
-	self.hero = "npc_dota_hero_earthshaker"
+	  local table_sounds = {	"gay.hammer" }
+
+	  EmitSoundOn(table_sounds[RandomInt(1, #table_sounds)], hero)
+	  else
+	    target:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+      end
 	else
-	self.hero = "npc_dota_hero_lich"
-	end
-	local gold = caster:GetGold()
-	local xp = caster:GetCurrentXP()
-
-	--local hero = CreateUnitByName("npc_dota_hero_sniper", caster:GetAbsOrigin(), false, caster, caster, caster:GetTeamNumber())
-	--PlayerResource:GetPlayer(caster:GetPlayerOwnerID()):SetAssignedHeroEntity(hero)
-	local hero = PlayerResource:ReplaceHeroWith(caster:GetPlayerOwnerID(), self.hero, 0, 0)
-	
-
-
-    hero:ModifyGold(gold - hero:GetGold(), true, 0)
-    hero:AddExperience(xp - hero:GetCurrentXP(), 0, false, false)
-
-	local cast_fx = ParticleManager:CreateParticle("particles/items_fx/aegis_respawn.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-					ParticleManager:ReleaseParticleIndex(cast_fx)
-
-	local table_sounds = {	"gay.hammer" }
-	
-	
-	elseif target ~= caster and id32 == arcana8 then
-	target:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
-	else
-    caster:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+      caster:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+    end
 end
-	
-end
-end
-
 
 
 modifier_emit_video = class({})
@@ -219,32 +169,15 @@ end
 end
 
 
-
-
-modifier_gay_garbage = class({})
+modifier_gay_garbage = modifier_gay_garbage or class({})
 
 --------------------------------------------------------------------------------
 -- Classifications
-function modifier_gay_garbage:IsHidden()
-	return false
-end
-
-function modifier_gay_garbage:IsDebuff()
-	return self:GetCaster():GetTeamNumber()~=self:GetParent():GetTeamNumber()
-end
-
-function modifier_gay_garbage:IsStunDebuff()
-	return true
-end
-
-function modifier_gay_garbage:IsPurgable()
-	return true
-end
-
-function modifier_gay_garbage:RemoveOnDeath()
-	return false
-end
-
+function modifier_gay_garbage:IsHidden() return false end
+function modifier_gay_garbage:IsDebuff() return self:GetCaster():GetTeamNumber()~=self:GetParent():GetTeamNumber() end
+function modifier_gay_garbage:IsStunDebuff() return true end
+function modifier_gay_garbage:IsPurgable() return true end
+function modifier_gay_garbage:RemoveOnDeath() return false end
 --------------------------------------------------------------------------------
 -- Initializations
 function modifier_gay_garbage:OnCreated( kv )
@@ -270,8 +203,6 @@ function modifier_gay_garbage:OnCreated( kv )
 	self:PlayEffects()
 	
 end
-
-
 function modifier_gay_garbage:OnRefresh( kv )
 	-- references
 	local damage = 0
@@ -280,10 +211,8 @@ function modifier_gay_garbage:OnRefresh( kv )
 	if not IsServer() then return end
 	self.damageTable.damage = damage
 end
-
 function modifier_gay_garbage:OnRemoved()
 end
-
 function modifier_gay_garbage:OnDestroy()
 	if not IsServer() then return end
 	-- find enemies
@@ -334,7 +263,6 @@ function modifier_gay_garbage:OnDestroy()
     self:GetParent():AddNewModifier(caster, self, "modifier_knockback", knockback)
 	self:PlayEffects2()
 end
-
 --------------------------------------------------------------------------------
 -- Status Effects
 function modifier_gay_garbage:CheckState()
@@ -347,7 +275,6 @@ function modifier_gay_garbage:CheckState()
 
 	return state
 end
-
 --------------------------------------------------------------------------------
 -- Graphics & Animations
 function modifier_gay_garbage:PlayEffects()

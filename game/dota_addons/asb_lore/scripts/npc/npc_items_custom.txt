@@ -2157,7 +2157,7 @@
 		"ScriptFile"				"items/item_asha_tear"
   		"AbilityTextureName"        "asha_tear"
   		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-  		"ItemCost"					"5000"
+  		"ItemCost"					"4000"
 		"ItemShopTags"				"damage"
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -2291,7 +2291,7 @@
 		"AbilityTextureName" 					"divine_lyre"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"1500"
+		"ItemCost"								"1"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_abyss_horn"
@@ -6655,8 +6655,8 @@
 		"AbilityTextureName" 					"sword_breaker"
 		//"Model"									"models/props_gameplay/sentry_ward_bundle.vmdl"
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		"AbilityCastRange"						"800"
@@ -6700,12 +6700,12 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"4.0"
+				"duration"						"2.0"
 			}
 			"06"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"range"							"750"
+				"range"							"800"
 			}
 		
 		}
@@ -6714,7 +6714,7 @@
 "item_concert_ticket_1"
 	{
 	"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_concert_ticket_1.lua"
+		"ScriptFile"					"items/item_concert_ticket.lua"
 	"AbilityTextureName"			"boombox"	
 	"ItemPurchasable"						"0"
 	"ItemCost"					"0"
@@ -6744,7 +6744,7 @@
 	"item_concert_ticket_2"
 	{
 	"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_concert_ticket_2.lua"
+		"ScriptFile"					"items/item_concert_ticket.lua"
 	"AbilityTextureName"			"ticket_level2"	
 	"ItemPurchasable"						"0"
 	"ItemCost"					"0"
@@ -6774,7 +6774,7 @@
 	"item_concert_ticket_3"
 	{
 	"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_concert_ticket_3.lua"
+		"ScriptFile"					"items/item_concert_ticket.lua"
 	"AbilityTextureName"			"ticket_level4"	
 	"ItemPurchasable"						"0"
 	"ItemCost"					"0"
@@ -6804,7 +6804,7 @@
 	"item_concert_ticket_4"
 	{
 	"BaseClass"						"item_lua"
-		"ScriptFile"					"items/item_concert_ticket_4.lua"
+		"ScriptFile"					"items/item_concert_ticket.lua"
 	"AbilityTextureName"			"padoru_ticket"	
 	"ItemPurchasable"						"0"
 	"ItemCost"					"0"

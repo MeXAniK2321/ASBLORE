@@ -33,8 +33,7 @@ function COverthrowGameMode:SpawnGoldEntity( spawnPoint )
 	newItem:SetContextThink( "KillLoot", function() return self:KillLoot( newItem, drop ) end, 20 )
 	
     -- 70% Chance to create a Rune with each Gold Coin spawn
-	local randomChance = RandomInt(1, 10)
-	if randomChance <= 7 then
+	if RandomInt(1, 10) <= 7 then
 	  -- Runes Allowed
 	  local runeTypes = {
                             DOTA_RUNE_HASTE,
@@ -48,8 +47,7 @@ function COverthrowGameMode:SpawnGoldEntity( spawnPoint )
 							-- DOTA_RUNE_INVISIBILITY,
                         } 
 	  -- Select random rune from Table
-	  local randomRuneInt = RandomInt(1, #runeTypes)
-	  local randomRune = runeTypes[randomRuneInt]
+	  local randomRune = runeTypes[RandomInt(1, #runeTypes)]
 	
 	  -- Make sure Rune spawns on the ground and create Rune
       local groundSpawnPoint = GetGroundPosition(spawnPoint, nil)

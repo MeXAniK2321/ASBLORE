@@ -235,7 +235,7 @@ function COverthrowGameMode:InitGameMode()
 	self.m_GatheredShuffledTeams = {}
 	self.numSpawnCamps = 5
 	self.specialItem = ""
-	self.spawnTime = 120
+	self.spawnTime = 80
 	self.nNextSpawnItemNumber = 1
 	self.hasWarnedSpawn = false
 	self.allSpawned = false
@@ -273,7 +273,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameBansPerTeam(0)
 			self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 15
+		self.m_GoldDropPercent = 25
 		elseif GetMapName() == "balance_duo" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -285,8 +285,8 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_3, 2 )
 			self.m_GoldRadiusMin = 400
 		self.m_GoldRadiusMax = 700
-		self.m_GoldDropPercent = 17
-        elseif GetMapName() == "5x5" then
+		self.m_GoldDropPercent = 25
+        elseif GetMapName() == "birzhamemov_5v5" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
 		GameRules:SetCustomGameBansPerTeam(1)
@@ -294,7 +294,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
 		self.m_GoldRadiusMin = 100
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 17
+		self.m_GoldDropPercent = 30
 		self.effectradius = 1400
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
@@ -305,7 +305,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 5 )
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 20
+		self.m_GoldDropPercent = 35
 	elseif GetMapName() == "temple_quartet" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 3 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 3 )
@@ -313,7 +313,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_2, 3 )
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 20
+		self.m_GoldDropPercent = 35
 	elseif GetMapName() == "asb_fate_nasral" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 7 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
@@ -326,7 +326,7 @@ function COverthrowGameMode:InitGameMode()
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 15
+		self.m_GoldDropPercent = 25
 	end
 	
 

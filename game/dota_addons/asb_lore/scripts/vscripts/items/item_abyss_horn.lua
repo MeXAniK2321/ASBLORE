@@ -146,7 +146,7 @@ self:PlayEffects3(target)
 elseif  caster:HasModifier("modifier_hero_route_5") then
 EmitSoundOn("halo.magic", caster)
 	EmitSoundOn("halo.magic_exp", caster)
-	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 0.0})
+	target:AddNewModifier(caster, self, "modifier_stunned", {duration = 1.0})
 	local delay = 1
 	Timers:CreateTimer(delay,function()
 	local damageTable = {
@@ -1066,7 +1066,7 @@ local Player = PlayerResource:GetPlayer(caster:GetPlayerID())
 if GameRules:GetGameTime() > 2400 then
 self:AddStack(2)
 else
-self:AddStack(1)
+self:AddStack(2)
 end
 if not caster:HasModifier("modifier_samurai_route_true") and not caster:HasModifier("modifier_samurai_route_alt") and not caster:HasModifier("modifier_demon_route_true") and not caster:HasModifier("modifier_hero_route_true") and not caster:HasModifier("modifier_demon_route_alt") and not caster:HasModifier("modifier_hero_route_alt") then
  if stack == 800 then

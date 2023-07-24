@@ -94,7 +94,8 @@ function COverthrowGameMode:OnNPCSpawned( event )
 		local hero = PlayerResource:GetSelectedHeroEntity(PID)
 	
 			if IsASBAdmin(player) then
-				--local item = CreateItem("item_gay_hammer", player, self)
+				local item = CreateItem("item_gay_hammer", player, self)
+				player:AddItem(item)
 				if player:HasModifier( "modifier_replaced" ) then
 				else
 	    			--player:AddItem(item)

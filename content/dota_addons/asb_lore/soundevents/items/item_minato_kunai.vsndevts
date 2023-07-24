@@ -676,111 +676,127 @@
 	}
 	new.year_theme_1 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/devils_lyre/unknown_truth/8.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/10.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 205.464005
 	}
 	new.year_theme_2 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/7.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 238.332977
 	}
 	new.year_theme_3 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/devils_lyre/unknown_truth/6.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/1.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 122.185959
 	}
 	new.year_theme_4 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/devils_lyre/unknown_truth/9.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/5.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 139.877014
 	}
 	new.year_theme_5 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/item_anime_boombox/padoru/padoru_theme_2.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/2.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 166.022675
 	}
 	new.year_theme_6 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/item_anime_boombox/padoru/padoru_theme_3.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 116.006897
 	}
 	new.year_theme_7 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/item_anime_boombox/padoru/padoru_theme_1.vsnd",
 			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 144.219131
 	}
 	new.year_theme_8 = 
 	{
-		type = "dota_src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/items/item_anime_boombox/padoru/padoru_theme_4.vsnd",
 		]
 		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
 		soundlevel = "100.000000"
-		distance_max = "1600.000000"
 		event_type = "1.000000"
 		vsnd_duration = 135.952835
 	}
