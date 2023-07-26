@@ -371,15 +371,15 @@ function COverthrowGameMode:SetRespawnTime( killedTeam, killedUnit, extraTime )
 	killedUnit:SetTimeUntilRespawn(15)
 elseif
  killedTeam == self.leadingTeam  then
-		killedUnit:SetTimeUntilRespawn( 10 )
+		killedUnit:SetTimeUntilRespawn( 4 )
 		elseif
  killedTeam == self.runnerupTeam  then
-		killedUnit:SetTimeUntilRespawn( 10 )
+		killedUnit:SetTimeUntilRespawn( 4 )
 		elseif
  killedTeam == self.thirdTeam  then
-		killedUnit:SetTimeUntilRespawn( 10 )
+		killedUnit:SetTimeUntilRespawn( 4 )
 	else 
-killedUnit:SetTimeUntilRespawn( 10 )
+killedUnit:SetTimeUntilRespawn( 4 )
 end
 end
 --------------------------------------------------------------------------------

@@ -317,7 +317,7 @@
 		    "01"
 		    {
 		        "var_type"          "FIELD_INTEGER"
-		        "cd"       			"20"
+		        "cd"       			"25"
 		    }
 		    "02"
 		    {
@@ -327,12 +327,12 @@
 		    "03"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"hp"				"600"
+		    	"hp"				"625"
 		    }
 		    "04"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"mp"				"600"
+		    	"mp"				"625"
 		    }
 		    "05"
 		    {
@@ -362,12 +362,12 @@
   		"BaseClass"                 "item_datadriven"
   		"AbilityTextureName"        "recipe"
   		"Model"						"models/props_gameplay/recipe.mdl"
-  		"ItemCost"					"2000"
+  		"ItemCost"					"500"
 		"ItemRecipe"				"1"
 		"ItemResult"				"item_watch"
 		"ItemRequirements"
 		{
-			"01" "item_aether_lens;item_soul_booster;item_kaya;"
+			"01" "item_octarine_core;item_aether_lens;item_kaya;"
 		}
   	}
 	//======================================================================
@@ -422,7 +422,7 @@
 	{
 
 		"BaseClass"								"item_datadriven"
-		"AbilityTextureName" 					"rebellion"
+		"AbilityTextureName" 					"nullifier"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
 		"ItemCost"								"700"
@@ -442,7 +442,7 @@
 
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_rebellion.lua"
-		"AbilityTextureName" 					"rebellion"
+		"AbilityTextureName" 					"nullifier"
 		//"Model"									"models/props_items/bloodstone.vmdl"
 				"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -2071,7 +2071,7 @@
 
 		"ItemRequirements"
 		{
-			"01"								"item_armlet;item_rebellion;item_reaver"
+			"01"								"item_armlet;item_heart;item_kaya"
 		}	
 	}
 	//=================================================================================================================
@@ -2110,7 +2110,7 @@
 			"01"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"bonus_damage"					"80"
+				"bonus_damage"					"15"
 			}
 			"02"
 			{	
@@ -2120,33 +2120,58 @@
 			"03"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"bonus_armor"					"2"
+				"bonus_health"					"300"
 			}
 			"04"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"bonus_hp_regen"				"10"
+				"bonus_hp_regen_percent"		"1.6"
 			}
 			"05"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"buff_as"				"30"
+				"bonus_armor"					"2"
 			}
-			
 			"06"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"bonus_str"						"15"
+				"bonus_hp_regen"				"10"
+			}
+			"07"
+			{	
+				"var_type"						"FIELD_FLOAT"
+				"buff_as"				        "30"
+			}
+			
+			"08"
+			{	
+				"var_type"						"FIELD_FLOAT"
+				"bonus_str"						"40"
+			}
+			"09"
+			{	
+				"var_type"						"FIELD_FLOAT"
+				"bonus_spell_amp"				"10"
 			}
 			"10"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"cooldown"					"5"
+				"cooldown"					    "5"
 			}
 			"14"
 			{	
 				"var_type"						"FIELD_FLOAT"
 				"buff_hp_loss"					"10"
+			}
+			"15"
+			{	
+				"var_type"						"FIELD_FLOAT"
+				"lifesteal"					    "50"
+			}
+			"15"
+			{	
+				"var_type"						"FIELD_FLOAT"
+				"str_mult"					    "0.8"
 			}
 		}
 	}
@@ -6578,7 +6603,7 @@
 	{
 
 		"BaseClass"								"item_datadriven"
-		"AbilityTextureName" 					"dress"
+		"AbilityTextureName" 					"pipe"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
 		"ItemCost"								"2900"
@@ -6596,12 +6621,12 @@
   	{
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/item_dress"
-  		"AbilityTextureName"        "dress"
-  		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+  		"AbilityTextureName"        "pipe"
+  		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
   		"ItemCost"					"500"
 		"ItemShopTags"				"damage"
 		"ItemQuality"				"magicks"
-		"AbilityCooldown" "1"
+		"AbilityCooldown"           "20"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		"AbilitySpecial"
@@ -6621,6 +6646,16 @@
 		    {
 		    	"var_type"			"FIELD_INTEGER"
 		    	"mp_regen"				"15"
+		    }
+			"04"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"barrier_block"			"250"
+		    }
+			"05"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"barrier_duration"		"20"
 		    }
 		    
 		   

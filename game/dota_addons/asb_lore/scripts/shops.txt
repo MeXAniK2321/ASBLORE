@@ -66,6 +66,7 @@
 				 "item" "item_marionette"
 				  "item" "item_spamton"
 				    "item" "item_super_idol_water"
+					"item"      "item_meteor_hammer"
 				 
       
   }
@@ -82,7 +83,7 @@
   {
     "item"    "item_magic_wand"
     "item"    "item_poor_mans_shield"
-    "item"    "item_soul_ring"
+    //"item"    "item_soul_ring"
     "item"    "item_phase_boots"
     "item"    "item_power_treads"
     "item"    "item_oblivion_staff"
@@ -99,14 +100,15 @@
     "item"    "item_ring_of_basilius"
     "item"    "item_headdress"
     "item"    "item_buckler"
-    "item"    "item_urn_of_shadows"
+    //"item"    "item_urn_of_shadows"
+    "item"    "item_spirit_vessel"
     //"item"    "item_natures_mend"
     "item"    "item_ring_of_aquila" 
     //"item"    "item_iron_talon" 
     "item"    "item_tranquil_boots"
     //"item"    "item_nightfall_striders"
     "item"    "item_guardian_greaves"
-    "item"    "item_medallion_of_courage"
+    //"item"    "item_medallion_of_courage"
     "item"    "item_arcane_boots"
     //"item"    "item_arcane_boots2"
     "item"    "item_ancient_janggo"
@@ -131,6 +133,8 @@
     "item"    "item_orchid" 
     "item"    "item_refresher"
     "item"    "item_glimmer_cape"
+	"item"      "item_meteor_hammer"
+	"item"      "item_kaya"
   }
     
   // Level 3 - Purple Recipes 
@@ -138,7 +142,8 @@
   {
     "item"    "item_hood_of_defiance"
     "item"    "item_blade_mail"
-    "item"    "item_vanguard"
+    //"item"    "item_vanguard"
+    "item"    "item_dress"
     "item"    "item_soul_booster"
     "item"    "item_black_king_bar"
     "item"    "item_shivas_guard"

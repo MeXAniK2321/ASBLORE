@@ -14,9 +14,7 @@
 	[
 		"ruin_solo",
 		"balance_duo",
-		"birzhamemov_5v5",
-		"desert_quintet",
-		"asb_fate_nasral"
+		"birzhamemov_5v5"
 	]
 	IsPlayable = 1
 	Default_Keys = 
@@ -29,11 +27,7 @@
 	]
 	map_options = 
 	[
-		{
-			MaxPlayers = 15
-			map = "desert_quintet"
-		},
-		{
+	    {
 			MaxPlayers = 10
 			map = "birzhamemov_5v5"
 		},
@@ -44,10 +38,6 @@
 		{
 			MaxPlayers = 10
 			map = "ruin_solo"
-		},
-		{
-			MaxPlayers = 14
-			map = "asb_fate_nasral"
 		},
 	]
 	HideInTools = false

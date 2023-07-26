@@ -184,8 +184,10 @@
   //"item_skadi"      "REMOVE"
   //"item_recipe_sange"     "REMOVE"
   //"item_sange"      "REMOVE"
-  //"item_recipe_helm_of_the_dominator"     "REMOVE"
-  //"item_helm_of_the_dominator"      "REMOVE"
+  "item_recipe_helm_of_the_dominator"     "REMOVE"
+  "item_helm_of_the_dominator"      "REMOVE"
+  "item_recipe_helm_of_the_overlord"       "REMOVE"
+  "item_helm_of_the_overlord"       "REMOVE"
   //"item_recipe_maelstrom"     "REMOVE"
   //"item_maelstrom"      "REMOVE"
   //"item_recipe_desolator"     "REMOVE"
@@ -370,6 +372,7 @@
 	"item_cyclone"
 	{
 	"ItemCost"                      "2450"
+	"ItemPurchasable"				"0"
 	}
 	"item_ghost"
 	{
@@ -468,7 +471,15 @@
 	}
 	"item_helm_of_the_dominator"
 	{
-		
+	    "ItemPurchasable" "0"	
+	}
+    "item_recipe_helm_of_the_overlord"
+	{
+        "ItemPurchasable" "0"
+    }
+	"item_helm_of_the_overlord"
+	{
+        "ItemPurchasable" "0"
 	}
 	"item_mekansm"
 	{
@@ -817,13 +828,11 @@
 	}
 	"item_octarine_core"
 	{
-	"ItemCost"				"99999"
-		"ItemPurchasable" "0"
+		"ItemPurchasable" "1"
 	}
 	"item_recipe_octarine_core"
 	{
-	"ItemCost"				"99999"
-	"ItemPurchasable" "0"
+	"ItemPurchasable" "1"
 	}
 	"item_tome_of_knowledge"
 	{
@@ -1244,15 +1253,12 @@
 	}
 	"item_recipe_heart"
 	{
-	
-	"ItemCost"						"4500"
-	"ItemPurchasable"				"0"
+	"ItemCost"						"5000"
+	"ItemPurchasable"				"1"
 	}
 	"item_heart"
 	{
-	
-	"ItemCost"						"4500"
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
 	}
 	"item_recipe_ethereal_blade"
 	{
@@ -1266,6 +1272,7 @@
 	"item_recipe_cyclone"
     {
 	"ItemCost"           "30000"
+	"ItemPurchasable"				"0"
 	}
 	
 	
@@ -1380,7 +1387,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"burn_dps_units"		"125"
+				"burn_dps_units"		"250"
 			}
 			"05"
 			{
@@ -1390,7 +1397,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"impact_damage_units"		"800"
+				"impact_damage_units"		"1400"
 			}
 
 		}
