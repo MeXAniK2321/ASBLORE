@@ -1026,19 +1026,22 @@
     "Ability6"        "gogeta_ultimate_form"
     "Ability7"        "gogeta_ultimate"
 	"Ability8"        "gogeta_downward_punch"
+	"Ability9"        "gogeta_kick_combo_air_finisher"
+	"Ability10"       "gogeta_rainbow_orb"
+	"Ability11"       "gogeta_ultimate_finisher"
 
     //Talents
-    "Ability10"					"special_bonus_hp_175"
-		"Ability11"					"special_bonus_hp_175"
+        "Ability12"					"special_bonus_spell_amplify_10"
+		"Ability13"					"special_bonus_hp_500"
 
-		"Ability12"					"special_bonus_hp_175"
-		"Ability13"					"special_bonus_hp_175"
+		"Ability14"					"special_bonus_gogeta_15"
+		"Ability15"					"special_bonus_armor_10"
 
-		"Ability14"					"special_bonus_hp_175"
-		"Ability15"					"special_bonus_hp_175"
+		"Ability16"					"special_bonus_gogeta_20"
+		"Ability17"					"special_bonus_gogeta_20_alt"
 
-		"Ability16"					"special_bonus_hp_175"
-		"Ability17"					"special_bonus_hp_175"
+		"Ability18"					"special_bonus_gogeta_25"
+		"Ability19"					"special_bonus_spell_lifesteal_13"
 
 		"AbilityTalentStart"		"10"
 
