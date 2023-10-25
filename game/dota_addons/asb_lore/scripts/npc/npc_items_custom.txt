@@ -7144,46 +7144,52 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"int"					"80"
+				"int"					        "100"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"hp"				"500"
+				"hp"				            "625"
 			}
-		
-			
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_increase"							"15"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"base_duration"						"10"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"advance_duration"						"50"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"ultimate_duration"						"80"
-			}
-	
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"kill_cap"					"15"
+				"damage_increase"				"15"
 			}
-			
-			"12"
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"base_duration"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"advance_duration"				"50"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"ultimate_duration"				"80"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"kill_cap"					    "15"
+			}
+			"08"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"int_increase"					"50"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cast_range"					"150"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"dmg_proc_amount"				"350"
 			}
 		}
 	}
@@ -7454,7 +7460,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"active_duration"						"1.5"
+				"active_duration"						"2.3"
 			}
 			"04"
 			{
@@ -7471,6 +7477,615 @@
 				"var_type"						"FIELD_FLOAT"
 				"stun_duration"					      "0.1"
 			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Monster Energy
+	//=================================================================================================================
+	"item_monster_energy"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_monster_energy.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "monster_energy"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"3"
+		"ItemCost"								"4000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"40"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"heal_amount"		"1000"
+		    }
+		 "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"damage_bonus"		"5"
+		    }
+		"03"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"stats_bonus"		"3"
+		    }
+		"04"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"spell_amp"         "1"
+		    }
+			
+		}
+	}
+	
+	"item_fusion_dance"
+	{
+	    "BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_fusion_dance.lua"
+	    "AbilityTextureName"			"dragon_ball"	
+		"ItemPurchasable"				"0"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"0"
+		"ItemCost"					    "20000"
+		"ItemDroppable" 				"0"
+		"ItemIsNeutralDrop"				"1"
+		"ItemSellable"					"0"
+		"ItemShopTags"				    "damage"
+		"ItemQuality"				    "magicks"
+		"ItemDeclarations"			    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		    
+		    "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"vision"				"25"
+		    }
+		    
+		    "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"int"				"20"
+		    }
+			 "03"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"arm"				"5"
+		    }
+		    
+		   "04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"all_stats"				"25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack"				"200"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana"				"700"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"amp"				"25"
+			}
+		   
+		}
+	
+	}
+	
+	//=================================================================================================================
+	// Hand of Gaben
+	//=================================================================================================================
+	
+	"item_recipe_hand_of_gaben"
+	{
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"axis_sheet"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"1200"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_hand_of_gaben"
+
+		"ItemRequirements"
+		{
+			"01"								"item_hand_of_midas;"
+		}	
+	}
+	
+	"item_hand_of_gaben"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_hand_of_gaben.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "hand_of_gaben"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"0"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"45"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"gold"		"1000"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Chibbi Marci
+	//=================================================================================================================
+	
+	"item_chibi_marci"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_chibi_marci.lua"
+	    "AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			        "DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			        "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			        "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				        "SPELL_IMMUNITY_ENEMIES_NO"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "chibi_marci"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"5000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"15"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"health_bonus"		"1000"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Jetstream Sam Muramasa
+	//=================================================================================================================
+	
+	"item_jetstream_sam_muramasa"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_jetstream_sam_muramasa.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "jetstream_muramasa"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"25000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"40"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_attack_speed"		"200"
+		    }
+		 "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bloodshed_crit_chance"		"50"
+		    }
+		 "03"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bloodshed_lightning_chance"		"100"
+		    }
+		 "04"
+		    {
+		    	"var_type"			"FIELD_FLOAT"
+		    	"bloodshed_duration"		"2.5"
+		    }
+		 "05"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"high_freq_chance"		"15"
+		    }
+		 "06"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"high_freq_crit"		"150"
+		    }
+		 "07"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"lightning_chance"		"25"
+		    }
+		 "08"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"lightning_base_damage"		"125"
+		    }
+		 "09"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"lightning_percent_damage"		"17"
+		    }
+		 "10"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"neco_chance"		"25"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Red Spear
+	//=================================================================================================================
+	
+	"item_recipe_red_spear"
+	{
+	
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"axis_sheet"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"17000"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_red_spear"
+
+		"ItemRequirements"
+		{
+			"01"								"item_phylactery;"
+		}	
+	}
+	
+	"item_red_spear"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_red_spear.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "red_spear"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"0"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"0.1"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_health"		"1500"
+		    }
+		 "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_spell_amp"   "15"
+		    }
+		 "03"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_armor"		"15"
+		    }
+		 "04"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_str"		    "15"
+		    }
+		 "05"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_agi"		    "15"
+		    }
+		 "06"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"bonus_int"		    "15"
+		    }
+		 "07"
+		    {
+		    	"var_type"			"FIELD_FLOAT"
+		    	"mana_drain"		"3.5"
+		    }
+		 "08"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"base_percent"		"5"
+		    }
+		 "9"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"damage"		    "1500"
+		    }
+		 "10"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"percent_bonus"		"1"
+		    }
+		 "11"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"percent_limit"		"99"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Ambulance (Lore Version)
+	//=================================================================================================================
+	
+	"item_ambulance"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_ambulance.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "monster_energy"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"10000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"40"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"heal_amount"		"1000"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// STANDO POWA
+	//=================================================================================================================
+	
+	"item_stando_powa"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_stando_powa.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "stando_powa"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"7000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"0"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"stando_powa_spell_amp"		"35"
+		    }
+		 "02"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"stando_powa_chance"		"14"
+		    }
+		 "03"
+		    {
+		    	"var_type"			"FIELD_FLOAT"
+		    	"stando_powa_stun_duration"		"0.32"
+		    }
+		 "04"
+		    {
+		    	"var_type"			"FIELD_FLOAT"
+		    	"stando_powa_spell_amp_mult"		"1"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Diablo
+	//=================================================================================================================
+	
+	"item_diablo"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_diablo.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "monster_energy"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"20000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"40"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"heal_amount"		"1000"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// Estus Flask
+	//=================================================================================================================
+	
+	"item_estus_flask"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_estus_flask.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "monster_energy"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"3"
+		"ItemCost"								"1000"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"40"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"heal_amount"		"1000"
+		    }
+			
+		}
+	}
+	
+	//=================================================================================================================
+	// NONONO YESYESYES
+	//=================================================================================================================
+	
+	"item_nonono_yesyesyes"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_nonono_yesyesyes.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "YESYESYES"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"7500"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"0"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		 
+		 "01"
+		    {
+		    	"var_type"			"FIELD_INTEGER"
+		    	"heal_amount"		"1000"
+		    }
+			
 		}
 	}
 

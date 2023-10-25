@@ -15,7 +15,7 @@
 
 "DOTA_Tooltip_modifier_fountain_aura_effect_lua"	"Fountain Aura"
 
-"DOTA_Tooltip_modifier_fountain_aura_effect_lua_Description"	"Heal and invulnerable"
+"DOTA_Tooltip_modifier_fountain_aura_effect_lua_Description"	"Healing, 25%% Bonus Movespeed and 35%% Damage Resistance"
 
 "DOTA_Tooltip_ability_item_bag_of_gold"	"300 USD"
 
@@ -2981,18 +2981,18 @@ DOTA_Tooltip_ability_banner_air_scepter_Description" "Pandora:Добавляет
 "DOTA_Tooltip_ability_item_axis_sheet_bonus_bonus_hp" "+Mana"
 "DOTA_Tooltip_ability_item_watch" "Sakuya's watch"
 "DOTA_Tooltip_ability_item_watch_Lore" "Sakuya:TIMESTOP"
-"DOTA_Tooltip_ability_item_watch_Description" "Снижает время перезарядки способностей на 20%.Также увеличивает дальность применения способностей на 300"
+"DOTA_Tooltip_ability_item_watch_Description" "Снижает время перезарядки способностей на %cd%%%.Также увеличивает дальность применения способностей на %castrange%"
 "DOTA_Tooltip_ability_item_watch_hp" "+$health"
 "DOTA_Tooltip_ability_item_watch_mp" "+$mana"
 "DOTA_Tooltip_ability_item_watch_int" "+$int"
 "DOTA_Tooltip_ability_item_watch_dmg" "%MagicDamageBonus:"
 "DOTA_Tooltip_ability_item_watch_reduce_mana"	"%+Manacost and Manaloss Reduction"
-"DOTA_Tooltip_ability_item_dress" "Index Dress"
-"DOTA_Tooltip_ability_item_dress_Description" "Антимагическая одежда Индекс.Дарует пользователю увеличенную защиту от заклинаний."
+"DOTA_Tooltip_ability_item_dress" "Pipe of Insight"
+"DOTA_Tooltip_ability_item_dress_Description" "<h1>Active: Magic Barrier</h1>Create a barrier that absorbs %barrier_block% Magic Damage. Lasts %barrier_duration% seconds. Works only on self.</h1>"
 "DOTA_Tooltip_ability_item_dress_mag_res" "BonusMagicResist:"
 "DOTA_Tooltip_ability_item_dress_hp_regen" "HpRegen:"
 "DOTA_Tooltip_ability_item_dress_mp_regen" "MpRegen:"
-"DOTA_Tooltip_ability_item_rebellion" "Rebellion"
+"DOTA_Tooltip_ability_item_rebellion" "Nullifier"
 "DOTA_Tooltip_ability_item_rebellion_Description" "<h1>Target:</h1>При активации налаживает эффект постоянного развеивания положительных эффектов на указанного противника.Пассивно имеет шанс замедлить противника при атаке, нанеся дополнительный урон"
 "DOTA_Tooltip_ability_item_rebellion_Lore" "Меч лучшего танцора."
 "DOTA_Tooltip_ability_item_rebellion_proc_damage" "ProcDamage:"
@@ -3550,10 +3550,13 @@ DOTA_Tooltip_ability_banner_air_scepter_Description" "Pandora:Добавляет
 "DOTA_Tooltip_ability_item_marionette_int" "BonusInt:"
 "DOTA_Tooltip_ability_item_marionette_Lore" "Потрёпанная временем марионетка, пережившая ни 1 своего хозяина"
 "DOTA_Tooltip_ability_item_black_heart" "<h1><font color='#800000'>Black Heart"
-"DOTA_Tooltip_ability_item_black_heart_Description" "<h1><font color='#800000'>Toggle:</h1>При активации начинает вытягивать жизнь из пользователя,даруя взамен бонусную силу атаки,зависящую от силы пользователя * 0.8,а также удваивает скорость атаки с этого предмета,также в активном состоянии пользователь получает 12% вампиризма."
-"DOTA_Tooltip_ability_item_black_heart_Lore" "Говорят Питер бессердечная мразь.И правда вот оно!"
+"DOTA_Tooltip_ability_item_black_heart_Description" "<h1><font color='#800000'>Toggle:</h1>Activate to drain life, granting bonus attack power = str * %str_mult%, doubling item AS/Spell Amplification and providing %lifesteal%%% Vampirism/Spell Lifesteal."
+"DOTA_Tooltip_ability_item_black_heart_Lore" "They say Peter is a heartless scum.And thats true!"
 "DOTA_Tooltip_ability_item_black_heart_bonus_as"  "+AS"
 "DOTA_Tooltip_ability_item_black_heart_bonus_str" "+STR"
+"DOTA_Tooltip_ability_item_black_heart_bonus_health" "+HP"
+"DOTA_Tooltip_ability_item_black_heart_bonus_hp_regen_percent" "%+MAX HEALTH REGEN"
+"DOTA_Tooltip_ability_item_black_heart_bonus_spell_amp" "%+Spell Amplification"
 "DOTA_Tooltip_ability_item_black_heart_bonus_damage"  "+Damage"
 "DOTA_Tooltip_ability_item_black_heart_bonus_armor" "+Armor"
 "DOTA_Tooltip_ability_item_earth" "Pocket Earth"
@@ -3575,10 +3578,12 @@ DOTA_Tooltip_ability_banner_air_scepter_Description" "Pandora:Добавляет
 "DOTA_Tooltip_ability_item_spamton_attack" "+AttackDamage"
 
 "DOTA_Tooltip_ability_item_will_of_the_fallen" "<font color='#FFD700'>Will Of The Fallen"
-"DOTA_Tooltip_ability_item_will_of_the_fallen_Lore" "Этот предмет не сделает вас умнее в реальной жизни."
-"DOTA_Tooltip_ability_item_will_of_the_fallen_Description" "<h1><font color='#DC143C'>Passive:</h1>При нанесении 250 и более магического урона срабатывает прок наносящий урон в размере х1.5 от интеллекта.Дарует 150 дальности применения заклинаний."
+"DOTA_Tooltip_ability_item_will_of_the_fallen_Lore" "This item will not make you smarter in real life"
+"DOTA_Tooltip_ability_item_will_of_the_fallen_Description" "<h1><font color='#DC143C'>Passive:</h1>Every Magical attack that cause more than %dmg_proc_amount% magic damage will deal your Intelligence as damage to the target enemy.Interval between procs are 2 seconds."
 "DOTA_Tooltip_ability_item_will_of_the_fallen_hp" "+Health"
 "DOTA_Tooltip_ability_item_will_of_the_fallen_int" "+Intellect"
+"DOTA_Tooltip_ability_item_will_of_the_fallen_cast_range" "+Cast Range"
+"DOTA_Tooltip_ability_item_will_of_the_fallen_damage_increase" "%+Spell Amplification"
 
 
 
@@ -3844,11 +3849,11 @@ DOTA_Tooltip_ability_banner_air_scepter_Description" "Pandora:Добавляет
 		//Thors Armor
 		
 		"DOTA_Tooltip_ability_item_thors_armor" 							"Thor's Armor"
-		"DOTA_Tooltip_ability_item_thors_armor_Description" 				"<h1>Active: Thor's Shield</h1>Reduce all incoming damage by 100%.\n<h1>Passive: Thor's Lightning</h1> Strike the nearest visible enemy in a %radius% radius with lightning every 10 seconds. Does %damage% magic damage and mini-stuns for %stun_duration% seconds. Does not work on Channeling enemies."
+		"DOTA_Tooltip_ability_item_thors_armor_Description" 				"<h1>Active: Thor's Shield</h1>Reduce all incoming damage by 100% for %active_duration% seconds.\n<h1>Passive: Thor's Lightning</h1> Strike the nearest visible enemy in a %radius% radius with lightning every 10 seconds. Does %damage% magic damage and mini-stuns for %stun_duration% seconds. Does not work on Channeling enemies.<br><br> <font color='green'>MULTIPLE THORS STACK FOR PASSIVE </font>"
 		"DOTA_Tooltip_ability_item_thors_armor_lore" 				        "A legendary armor with very effective properties."
 		"DOTA_Tooltip_ability_item_thors_armor_bonus_armor" 				"+$armor"
-		"DOTA_Tooltip_ability_item_thors_armor_active_duration" 			"Active Duration:"
-		"DOTA_Tooltip_ability_item_thors_armor_bonus_allstats" 				"AllStats:"
+		"DOTA_Tooltip_ability_item_thors_armor_active_duration" 			""
+		"DOTA_Tooltip_ability_item_thors_armor_bonus_allstats" 				"+All Stats"
 
         "DOTA_Tooltip_modifier_item_thors_armor"					    "Thor's Blessing"
 		"DOTA_Tooltip_modifier_item_thors_armor_Description"		    "Strike the nearest enemy with lightning every 10 seconds."	

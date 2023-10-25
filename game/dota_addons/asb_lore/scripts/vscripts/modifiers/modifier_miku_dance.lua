@@ -20,6 +20,7 @@ function modifier_miku_dance:OnCreated( kv )
 	-- references
 	self.damage = self:GetAbility():GetSpecialValueFor( "sand_storm_damage" ) -- special value
 	self.radius = self:GetAbility():GetSpecialValueFor( "sand_storm_radius" ) -- special value
+	self.caster = self:GetParent()
 	self.interval = 2
 
 	if IsServer() then
@@ -39,7 +40,9 @@ function modifier_miku_dance:OnCreated( kv )
 		self:OnIntervalThink()
 
 		-- start effects
-		self:PlayEffects( self.radius )
+		local Play = not IsASBPatreon(self.caster)
+		             and self:PlayEffects( self.radius )
+					 or  self:PlayEffects2( self.radius )
 	end
 end
 
@@ -130,6 +133,19 @@ function modifier_miku_dance:PlayEffects( radius )
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )
 end
+function modifier_miku_dance:PlayEffects2( radius )
+	-- Get Resources
+	local particle_cast = "particles/miku_song_aura_kizuna_ai.vpcf"
+	local sound_cast = "miku.kizuna_ai.song_1"
+
+	-- Create Particle
+	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
+	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
+	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+
+	-- Create Sound
+	EmitSoundOn( sound_cast, self:GetParent() )
+end
 
 function modifier_miku_dance:StopEffects()
 	-- Stop particles
@@ -141,5 +157,6 @@ function modifier_miku_dance:StopEffects()
 	StopSoundOn( "miku.song_1", self:GetParent() )
 	StopSoundOn( "miku.song_2", self:GetParent() )
 	StopSoundOn( "miku.song_3", self:GetParent() )
+	StopSoundOn( "miku.kizuna_ai.song_1", self:GetParent() )
 
 end

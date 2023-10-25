@@ -45,6 +45,7 @@
 			"item"       "item_power_of_youth"
                         "item"	     "item_beast_boots"
                         "item"       "item_abyss_horn"
+						"item"      "item_meteor_hammer"
                     
                      
                         

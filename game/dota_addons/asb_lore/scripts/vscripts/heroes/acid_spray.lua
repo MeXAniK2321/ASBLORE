@@ -11,5 +11,4 @@ function AcidSpraySound( event)
 	Timers:CreateTimer(duration-0.1, function() 
 		target:StopSound("sounds/weapons/hero/crystal_maiden/frostbite.vsnd") 
 	end)
-
 end

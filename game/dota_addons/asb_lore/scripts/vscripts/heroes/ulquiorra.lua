@@ -1114,12 +1114,6 @@ function lansa_de_relampago:OnProjectileHit( hTarget, vLocation )
 
         if IsServer() then
             local caster = self:GetCaster()
-  
-          local particle_fx = "particles/lansa_de_relampago_exp.vpcf"
-
-        local effect_fx =   ParticleManager:CreateParticle(particle_fx, PATTACH_WORLDORIGIN, caster)
-                            ParticleManager:SetParticleControl(effect_fx, 0, vLocation)
-                            ParticleManager:SetParticleControl(effect_fx, 3, vLocation)
     
             local nearby_targets = FindUnitsInRadius(caster:GetTeam(), vLocation, nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
     

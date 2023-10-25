@@ -16,34 +16,26 @@ function item_vongolla_primo_ring:OnSpellStart()
 					
 	self:EndCooldown()
 	self:StartCooldown(self:GetSpecialValueFor("cooldown"))
-
-	
 end
 ---------------------------------------------------------------------------------------------------------------------
 modifier_item_vongolla_primo_ring = class({})
-function modifier_item_vongolla_primo_ring:IsHidden()
-	return true
-end
 
-function modifier_item_vongolla_primo_ring:AllowIllusionDuplicate()
-	return true
-end
-
-function modifier_item_vongolla_primo_ring:IsPurgable()
-    return false
-end
-
+function modifier_item_vongolla_primo_ring:IsHidden() return true end
+function modifier_item_vongolla_primo_ring:AllowIllusionDuplicate() return true end
+function modifier_item_vongolla_primo_ring:IsPurgable() return false end
 function modifier_item_vongolla_primo_ring:DeclareFunctions()
-	local func = {  MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-	                MODIFIER_PROPERTY_HEALTH_BONUS,
-					MODIFIER_PROPERTY_STATS_INTELLECT_BONUS, }
+	local func = {  
+	                 MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+	                 MODIFIER_PROPERTY_HEALTH_BONUS,
+					 MODIFIER_PROPERTY_STATS_INTELLECT_BONUS, 
+				 }
 	return func
 end
 
 function modifier_item_vongolla_primo_ring:GetModifierSpellAmplify_Percentage()
-if self:GetParent():HasItemInInventory("item_crucible_of_the_executioner") or self:GetParent():HasItemInInventory("item_yoru") or self:GetParent():HasItemInInventory("item_angel_halo")  then self.cd = 0 return end
- self.cd = self:GetAbility():GetSpecialValueFor('mag_ampf')
-    return self.cd
+    if self.parent:HasItemInInventory("item_crucible_of_the_executioner") or self.parent:HasItemInInventory("item_yoru") or self.parent:HasItemInInventory("item_angel_halo")  then return 0 end
+    
+	return self.magic_amp
 end
 function modifier_item_vongolla_primo_ring:GetModifierBonusStats_Intellect()
 	return self:GetAbility():GetSpecialValueFor('intellect')
@@ -57,8 +49,7 @@ function modifier_item_vongolla_primo_ring:OnCreated(table)
 	self.ability = self:GetAbility()
 
 	self.bonus_all_stats = self.ability:GetSpecialValueFor("bonus_all_stats")
-	
-	
+	self.magic_amp = self.ability:GetSpecialValueFor('mag_ampf')
 end
 function modifier_item_vongolla_primo_ring:OnRefresh(table)
 	self:OnCreated(table)
@@ -69,37 +60,29 @@ function modifier_item_vongolla_primo_ring:OnDestroy()
 end
 
 
-
 modifier_item_vongolla_primo_ring_buff = class({})
+
 function modifier_item_vongolla_primo_ring_buff:IsHidden() return false end
 function modifier_item_vongolla_primo_ring_buff:IsDebuff() return false end
 function modifier_item_vongolla_primo_ring_buff:IsPurgable() return true end
 function modifier_item_vongolla_primo_ring_buff:IsPurgeException() return true end
 function modifier_item_vongolla_primo_ring_buff:RemoveOnDeath() return true end
 function modifier_item_vongolla_primo_ring_buff:DeclareFunctions()
-	local func = {	MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-					 }
+	local func = {	
+	                 MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+			     }
 	return func
 end
 function modifier_item_vongolla_primo_ring_buff:GetModifierSpellAmplify_Percentage()
 	return 30
 end
-
 function modifier_item_vongolla_primo_ring_buff:OnCreated(table)
-    
 end
 function modifier_item_vongolla_primo_ring_buff:OnRefresh(table)
-	if IsServer() then
-		self:OnCreated(table)
-	end
+    self:OnCreated(table)
 end
 function modifier_item_vongolla_primo_ring_buff:OnDestroy()
    local caster = self:GetCaster()
-
-
-		
-
-		
 end
 
 function modifier_item_vongolla_primo_ring_buff:GetEffectName()

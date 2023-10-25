@@ -89,16 +89,36 @@ function COverthrowGameMode:OnNPCSpawned( event )
 			spawnedUnit:DeleteAttribute( "effectsID" )
 		end
 		
+		-- Level Ultimates if option is enabled
+		if _G.LoreStartWithUlts and _G.LoreStartWithUlts ~= nil then
+	        for i = 0, spawnedUnit:GetAbilityCount() - 1 do
+		        local iAbility = spawnedUnit:GetAbilityByIndex(i)
+		        if iAbility then
+		            -- Get Ability by name
+		            local sAbilityName = iAbility:GetName()
+			        -- Check if Abiltiy is a certain level and then learn it + start cooldown
+		            if LoreIsAbilityRequiredLevel(sAbilityName, 30) then
+                        if iAbility:GetLevel() == 0 then
+						    local iCooldown = _G.LoreStartUltsCD or 400
+					        -- Start the Cooldown first just in case
+					        iAbility:StartCooldown(iCooldown)
+					        -- Set the ability level
+					        iAbility:SetLevel(1)
+				        end
+			        end
+		        end
+	        end
+		end
+		
 		local PID = player:GetPlayerOwnerID()
 	    local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
 		local hero = PlayerResource:GetSelectedHeroEntity(PID)
 	
 			if IsASBAdmin(player) then
 				local item = CreateItem("item_gay_hammer", player, self)
-				player:AddItem(item)
 				if player:HasModifier( "modifier_replaced" ) then
 				else
-	    			--player:AddItem(item)
+	    			player:AddItem(item)
 					player:AddNewModifier(caster, self, "modifier_replaced", {})
 				end
 			end
@@ -126,8 +146,8 @@ function COverthrowGameMode:OnNPCSpawned( event )
 
 			if player:GetUnitName() == "npc_dota_hero_terrorblade" then
 				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/hatsune_miku/arcana/arcana_form/arcana_monster.vmdl")
-					player:SetModelScale(1.25)
+					player:SetOriginalModel("models/kizuna_ai/kizuna_ai.vmdl")
+					player:SetModelScale(1.4)
 				end
 			end
 	

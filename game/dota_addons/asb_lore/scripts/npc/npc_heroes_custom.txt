@@ -1013,9 +1013,9 @@
     "ModelScale"        "1.20"
     "DisableWearables"  "1"
     "IdleExpression"		"empty"
-    "PickSound"		"empty"
-		"BanSound"		"empty"
-    "HeroSelectSoundEffect"		"empty"
+    "PickSound"		        "empty"
+	"BanSound"		        "empty"
+    "HeroSelectSoundEffect" "empty"
     //"SoundSet"          "1"
     "VoiceFile"		"empty"  
     "Ability1"        "gogeta_kamehameha"
@@ -1028,22 +1028,23 @@
 	"Ability8"        "gogeta_downward_punch"
 	"Ability9"        "gogeta_kick_combo_air_finisher"
 	"Ability10"       "gogeta_rainbow_orb"
-	"Ability11"       "gogeta_ultimate_finisher"
+	"Ability11"       "gogeta_meteor_explosion"
+	"Ability12"       "gogeta_combo_list"
 
     //Talents
-        "Ability12"					"special_bonus_spell_amplify_10"
-		"Ability13"					"special_bonus_hp_500"
+    "Ability13"					"special_bonus_spell_amplify_10"
+	"Ability14"					"special_bonus_hp_500"
 
-		"Ability14"					"special_bonus_gogeta_15"
-		"Ability15"					"special_bonus_armor_10"
+	"Ability15"					"special_bonus_gogeta_15"
+	"Ability16"					"special_bonus_armor_10"
 
-		"Ability16"					"special_bonus_gogeta_20"
-		"Ability17"					"special_bonus_gogeta_20_alt"
+	"Ability17"					"special_bonus_gogeta_20"
+	"Ability18"					"special_bonus_gogeta_20_alt"
 
-		"Ability18"					"special_bonus_gogeta_25"
-		"Ability19"					"special_bonus_spell_lifesteal_13"
+	"Ability19"					"special_bonus_gogeta_25"
+	"Ability20"					"special_bonus_spell_lifesteal_13"
 
-		"AbilityTalentStart"		"10"
+	"AbilityTalentStart"		"10"
 
     "ArmorPhysical"       "10"                 // Physical protection.
     "MagicalResistance"       "45"                 // Magical protection (percentage).
@@ -1061,12 +1062,12 @@
     "AttributeBaseAgility"    "30"                   // Base agility
     "AttributeAgilityGain"    "1.5"                   // Agility bonus per level.
 
-    "BountyXP"          "100"                 // Experience earn.
+    "BountyXP"            "100"                   // Experience earn.
     "BountyGoldMin"       "250"                   // Gold earned min.
     "BountyGoldMax"       "400"                   // Gold earned max.
 
     "BoundsHullName"      "DOTA_HULL_SIZE_HERO"
-    "RingRadius"        "70"
+    "RingRadius"          "70"
 
     "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"       "300"                 // Speed.

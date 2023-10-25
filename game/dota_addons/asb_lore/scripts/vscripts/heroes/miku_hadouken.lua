@@ -24,7 +24,9 @@ function miku_hadouken:OnSpellStart()
 	end
 
 	-- load data
-	local projectile_name = "particles/miku_hadouken.vpcf"
+	local projectile_name = not IsASBPatreon(caster)
+	                        and "particles/miku_hadouken.vpcf"
+							or "particles/miku_hadouken_kizuna_ai.vpcf"
 	local projectile_distance = self:GetSpecialValueFor( "dragon_slave_distance" )
 	local projectile_speed = self:GetSpecialValueFor( "dragon_slave_speed" )
 	local projectile_start_radius = self:GetSpecialValueFor( "dragon_slave_width_initial" )

@@ -48,6 +48,7 @@
                           
                            "item" "item_abyss_horn"
                         "item"	     "item_beast_boots"
+						"item"      "item_meteor_hammer"
                           
                                             
 

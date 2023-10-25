@@ -113,13 +113,13 @@ end
 function arc_warden_tempest_double_modifier:GetIsIllusion()
 	return true
 end
---[[function arc_warden_tempest_double_modifier:OnTakeDamage( event )
+function arc_warden_tempest_double_modifier:OnTakeDamage( event )
     if event.unit:HasModifier( "arc_warden_tempest_double_modifier" ) then
 	  if event.unit:IsAlive() == false then
 		event.unit:MakeIllusion()
 	  end
     end
-end]]--
+end
 function arc_warden_tempest_double_modifier:GetModifierTempestDouble()
 	return true
 end

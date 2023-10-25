@@ -96,7 +96,9 @@ function modifier_star_tier2:OnCreated(table)
 	elseif caster:GetUnitName()== "npc_dota_hero_antimage" then
 		EmitGlobalSound("star.theme2_10")
 	elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
-		EmitGlobalSound("star.theme2_18")
+	    local Emit = not IsASBPatreon(self.parent)
+		             and EmitGlobalSound("star.theme2_18")
+					 or EmitGlobalSound("miku.kizuna_ai.7")
 	elseif caster:GetUnitName()== "npc_dota_hero_ancient_apparition" then
 		EmitGlobalSound("star.theme2_11")
 	elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
@@ -125,6 +127,8 @@ function modifier_star_tier2:OnCreated(table)
 		EmitGlobalSound("star.theme2_49")
 	elseif caster:GetUnitName()== "npc_dota_hero_sven" then
 		EmitGlobalSound("star.theme2_50")
+	elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
+		EmitGlobalSound("Gogeta.ulti_mp3")
 	else
 	end
 
@@ -212,6 +216,7 @@ function modifier_star_tier2:OnDestroy()
 		StopGlobalSound("star.theme2_35")
 	elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
 		StopGlobalSound("star.theme2_18")
+        StopGlobalSound("miku.kizuna_ai.7")
 	elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
 		StopGlobalSound("star.theme2_12")
 	elseif caster:GetUnitName()== "npc_dota_hero_alchemist" then
@@ -232,6 +237,8 @@ function modifier_star_tier2:OnDestroy()
 		StopGlobalSound("star.theme2_49")
 	elseif caster:GetUnitName()== "npc_dota_hero_sven" then
 		StopGlobalSound("star.theme2_50")
+	elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
+		StopGlobalSound("Gogeta.ulti_mp3")
 	else
 	end
 end

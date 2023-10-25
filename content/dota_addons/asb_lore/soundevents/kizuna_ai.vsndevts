@@ -1,0 +1,163 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	miku.kizuna_ai.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_fak_you.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.608000
+	}
+	miku.kizuna_ai.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_i_just_did.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.008000
+	}
+	miku.kizuna_ai.3_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_nice_to_meet_you.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.800000
+	}
+	miku.kizuna_ai.3_2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_oh_may_god.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.320000
+	}
+	miku.kizuna_ai.3_3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_wtf.vsnd",
+		]
+		volume = "4.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.776000
+	}
+	miku.kizuna_ai.3_4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_ono.vsnd",
+		]
+		volume = "1.250000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.776000
+	}
+	miku.kizuna_ai.song_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_sky_high.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1000.000000"
+		event_type = "1.000000"
+		vsnd_duration = 119.255997
+	}
+	miku.kizuna_ai.5_5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_fak_you.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.416000
+	}
+	miku.kizuna_ai.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_the_light.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 32.375999
+	}
+	miku.kizuna_ai.7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/kizuna_ai/kizuna_ai_bumblebee.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 14.401958
+	}
+}

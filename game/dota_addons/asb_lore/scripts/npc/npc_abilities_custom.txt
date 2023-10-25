@@ -3834,9 +3834,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD"
 						}
-						"XPAmount"		"20"
+						"XPAmount"		"35"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"15"
+						"GoldAmount"	"32"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -20264,7 +20264,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"dagger_speed"			"20000"
+				"dagger_speed"			"5000"
 			}
 			"03"
 			{
@@ -20846,7 +20846,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"1.0"
+		"AbilityCastPoint"				"0.7"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -44855,7 +44855,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
+		"AbilityTextureName"			"gogeta_kamehameha"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
 		"precache"
@@ -44883,8 +44883,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"35 32 28 25"
+		"AbilityManaCost"				"200 300 400 500"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -44896,14 +44896,19 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		        "400 500 600 700"
+				"damage"		        "800 1000 1200 1400"
 			}
 			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"		        "1.8"
+			}
+			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"width"		             "250 250 250 275"
 			}
-			"03"
+			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"slow"		             "-80 -80 -80 -80"
@@ -44924,9 +44929,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
+		"AbilityTextureName"			"gogeta_powerup"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades"					"3"
 		"precache"
 		{
 			"soundfile"	"soundevents/heroes/gogeta.vsndevts"
@@ -44951,7 +44957,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
+		"AbilityCooldown"				"50 45 40 40"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -44965,6 +44971,11 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"spellamp"		        "10 15 20 25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"		        "20.0"
 			}
 
 		}
@@ -44982,9 +44993,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_kick_combo"
+		"FightRecapLevel"				"2"
 		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades"					"5"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -45005,8 +45017,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"25 20 20"
+		"AbilityManaCost"				"90 100 110"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45052,7 +45064,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
+		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -45088,8 +45100,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_backhand"
+		"RequiredLevel"				    "18"
 		"MaxLevel"						"1"
 		
 		// Ability General
@@ -45110,8 +45122,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"110"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45146,8 +45158,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_upper_kick"
+		"RequiredLevel"				    "18"
 		"MaxLevel"						"1"
 		
 		// Ability General
@@ -45162,8 +45174,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"110"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45214,8 +45226,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"90"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45227,12 +45239,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		"900"
+				"damage"		        "900"
 			}
 			"02"
 			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_ground"		    "900"
+			}
+			"03"
+			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"		"1.0"
+				"stun_duration"		    "1.5"
 			}
 
 		}
@@ -45250,13 +45267,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_ultimate_form"
+		"RequiredLevel"				    "30"
 		"MaxLevel"						"1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
 		// Ability Casting
@@ -45271,8 +45288,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"130"
+		"AbilityManaCost"				"250"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45283,13 +45300,18 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"		"900"
+				"var_type"			"FIELD_INTEGER"
+				"spellamp"		    "50"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"stun_duration"		"1.0"
+				"var_type"			"FIELD_FLOAT"
+				"hpbonus"		    "1000"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"		    "60.0"
 			}
 
 		}
@@ -45303,13 +45325,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_high_speed"
+		"RequiredLevel"				    "30"
 		"MaxLevel"						"1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -45325,8 +45347,8 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"300"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45338,12 +45360,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		"900"
+				"damage"		        "500"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"		"1.0"
+				"duration"		        "4.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackspersec"		    "20"
 			}
 
 		}
@@ -45361,13 +45388,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
-		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gogeta_rainbow"
+		"RequiredLevel"				    "18"
 		"MaxLevel"						"1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -45378,13 +45405,13 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
         "AbilityCastAnimation"          "ACT_DOTA_IDLE"
-		"AbilityCastRange"				"2000"
+		"AbilityCastRange"				"5000"
 		"AbilityCastPoint"				"0.0"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"7"
+		"AbilityManaCost"				"0"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45403,10 +45430,10 @@
 	}
 	
   //=================================================================================================================
-  // Gogeta: R (W) - Ultimate Finisher Combo
+  // Gogeta: R (W) - Meteor Explosion Combo
   //=================================================================================================================
 	
-	"gogeta_ultimate_finisher"
+	"gogeta_meteor_explosion"
 	{
 		// Ability Technical Aspect
 		// base script folder	: scripts/vscripts
@@ -45414,14 +45441,14 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gogeta/gogeta.lua"
-		"AbilityTextureName"			"goku_1"
+		"AbilityTextureName"			"gogeta_meteor_explosion"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
@@ -45431,13 +45458,13 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
         "AbilityCastAnimation"          "ACT_DOTA_IDLE"
-		"AbilityCastRange"				"200"
-		"AbilityCastPoint"				"0.4"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCooldown"				"90"
+		"AbilityManaCost"				"250"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45449,10 +45476,53 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		        "170 230 280"
+				"damage"		        "4000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"		        "1000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius_pre"		    "450"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		    "3.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration_pre"		"0.2"
 			}
 
 		}
+	}
+	
+  //=================================================================================================================
+  // Gogeta: Combo List
+  //=================================================================================================================
+	
+	"gogeta_combo_list"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gogeta/gogeta.lua"
+		"AbilityTextureName"			"invoker_invoke"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
 	}
 	
   //=================================================================================================================
@@ -45542,6 +45612,58 @@
 				}			
 			}
 		}
+		
+  //=================================================================================================================
+  // Dark Souls Roll Test
+  //=================================================================================================================
+  
+	"dark_souls_roll"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"items/item_chibi_marci.lua"
+		"AbilityTextureName"			"gogeta_powerup"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          ""
+		"AbilityCastPoint"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spellamp"		        "10 15 20 25"
+			}
+
+		}
+	}
 	
 }
   

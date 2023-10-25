@@ -1,0 +1,8 @@
+"settings"
+{
+	"nomip"		"1"
+	"nocompress"		"1"
+	"nolod"		"1"
+	"minimum_encode_quality"		"4"
+	"maxres"		"2048"
+}

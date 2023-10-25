@@ -16,9 +16,11 @@
 		
 		"#DOTA_Item_Build_Early_Game"
 		{
-		        "item"		"item_blink"
+		    "item"		"item_blink"
 			"item"		"item_lerolero"
-                        "item"		"item_minato_kunai"
+            "item"		"item_minato_kunai"
+			"item"      "item_octarine_core"
+			"item"      "item_asha_tear"
                         
 		}
 		
@@ -49,6 +51,7 @@
                        "item"          "item_beast_boots"
                        "item"          "item_serp_molot" 
                        "item"          "item_magic_girl_wand"
+					   "item"      "item_meteor_hammer"
                        
                                             
 

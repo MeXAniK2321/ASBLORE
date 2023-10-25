@@ -1,12 +1,10 @@
-item_rocket = class({})
-
+item_rocket = item_rocket or class({})
 
 --------------------------------------------------------------------------------
 -- AOE Radius
 function item_rocket:GetAOERadius()
 	return self:GetSpecialValueFor( "radius" )
 end
-
 --------------------------------------------------------------------------------
 -- Ability Start
 function item_rocket:OnSpellStart()
@@ -15,10 +13,7 @@ function item_rocket:OnSpellStart()
 	local point = self:GetCursorPosition()
 
 	-- load data
-	
 	local radius = self:GetSpecialValueFor("radius")
-	
-
 	local vision_radius = 700
 	local vision_duration = 5
 
@@ -37,16 +32,12 @@ function item_rocket:OnSpellStart()
 
 	-- Precache damage	 
 	
-
-	
-
 	AddFOWViewer( self:GetCaster():GetTeamNumber(), point, vision_radius, vision_duration, false )
 
 	self:PlayEffects( point, radius, debuffDuration )
 	EmitSoundOn("rocket.team", caster)
 	self:SpendCharge()
 end
-
 --------------------------------------------------------------------------------
 -- Ability Considerations
 function item_rocket:AbilityConsiderations()
@@ -68,7 +59,6 @@ function item_rocket:AbilityConsiderations()
 	-- Illusion Copy
 	local bIllusion = target:IsIllusion()
 end
-
 --------------------------------------------------------------------------------
 function item_rocket:PlayEffects( point, radius, duration )
 	-- Get Resources

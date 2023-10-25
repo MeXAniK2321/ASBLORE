@@ -1,5 +1,6 @@
 muramasa_dance = class({})
 LinkLuaModifier("modifier_merlin_self_pause","abilities/muramasa/muramasa_dance", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier( "modifier_animation", "libraries/modifiers/modifier_animation.lua", LUA_MODIFIER_MOTION_NONE )
 
 
 

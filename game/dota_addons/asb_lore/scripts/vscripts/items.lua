@@ -32,16 +32,17 @@ function COverthrowGameMode:SpawnGoldEntity( spawnPoint )
 	newItem:LaunchLootInitialHeight( false, 0, 500, 0.75, spawnPoint + RandomVector( dropRadius ) )
 	newItem:SetContextThink( "KillLoot", function() return self:KillLoot( newItem, drop ) end, 20 )
 	
-    -- 70% Chance to create a Rune with each Gold Coin spawn
-	if RandomInt(1, 10) <= 7 then
+    -- 40% Chance to create a Rune with each Gold Coin spawn
+	if RandomInt(1, 10) <= 4 then
 	  -- Runes Allowed
 	  local runeTypes = {
                             DOTA_RUNE_HASTE,
-                            DOTA_RUNE_REGENERATION,
+                            --DOTA_RUNE_REGENERATION,
                             DOTA_RUNE_ARCANE,
 					        DOTA_RUNE_BOUNTY,
 					        DOTA_RUNE_SHIELD,
 							DOTA_RUNE_WATER,
+							DOTA_RUNE_WISDOM,
 							-- DOTA_RUNE_DOUBLEDAMAGE,
 							-- DOTA_RUNE_ILLUSION,
 							-- DOTA_RUNE_INVISIBILITY,

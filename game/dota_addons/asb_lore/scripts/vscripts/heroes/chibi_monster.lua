@@ -6,27 +6,19 @@ chibi_monster = class({})
 
 function chibi_monster:IsStealable() return true end
 function chibi_monster:IsHiddenWhenStolen() return false end
-
 function chibi_monster:OnUpgrade()
     local ability = self:GetCaster():FindAbilityByName("chibi_hit")
     if ability and ability:GetLevel() < self:GetLevel() then
         ability:SetLevel(self:GetLevel())
     end
 end
-
-
 function chibi_monster:OnSpellStart()
     local caster = self:GetCaster()
     local fixed_duration = self:GetSpecialValueFor("fixed_duration")
 	
-
-
     caster:AddNewModifier(caster, self, "modifier_chibi_monster", {duration = fixed_duration})
 	caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
-
     self:EndCooldown()
-
-    
 end
 ---------------------------------------------------------------------------------------------------------------------
 modifier_chibi_monster = class({})
@@ -38,7 +30,7 @@ function modifier_chibi_monster:RemoveOnDeath() return true end
 function modifier_chibi_monster:AllowIllusionDuplicate() return true end
 function modifier_chibi_monster:CheckState()
     local state = { 
-                }
+                  }
 
     if IsServer() and self.parent and not self.parent:IsNull() and self.parent:GetMana() <= self.awake_mana + 10 then
         local awake = self.parent:FindAbilityByName("zenitsu_awake")
@@ -50,21 +42,28 @@ function modifier_chibi_monster:CheckState()
     return state
 end
 function modifier_chibi_monster:DeclareFunctions()
-    local func = {  MODIFIER_PROPERTY_MODEL_CHANGE,
-    				MODIFIER_PROPERTY_MODEL_SCALE,
+    local func = {  
+    				MODIFIER_PROPERTY_MODEL_CHANGE,
+					MODIFIER_PROPERTY_MODEL_SCALE,
 	                MODIFIER_PROPERTY_HEALTH_BONUS,
                     MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
                     MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
                     MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
                     MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-MODIFIER_PROPERTY_STATS_AGILITY_BONUS,					}
+                    MODIFIER_PROPERTY_STATS_AGILITY_BONUS,					
+				}
+
     return func
 end
 function modifier_chibi_monster:GetModifierModelChange()
-    return "models/hatsune_miku/chibi2.vmdl"
+    return not IsASBPatreon(self.parent)
+	       and "models/hatsune_miku/chibi2.vmdl"
+		   or "models/kizuna_ai/kizuna_ai.vmdl"
 end
 function modifier_chibi_monster:GetModifierModelScale()
-	return 120
+	return not IsASBPatreon(self.parent)
+	       and 120
+		   or -35
 end
 function modifier_chibi_monster:GetModifierHealthBonus()
     return 1500
@@ -75,8 +74,6 @@ end
 function modifier_chibi_monster:GetModifierBonusStats_Agility()
     return 100
 end
-
-
 function modifier_chibi_monster:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
@@ -91,7 +88,6 @@ function modifier_chibi_monster:OnCreated(table)
 
     self.skills_table = {
                             ["chibi_monster"] = "chibi_hit",
-                            
                         }
 
 
@@ -111,16 +107,12 @@ function modifier_chibi_monster:OnCreated(table)
         end
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
        if not self.particle_time then
-            self.particle_time =    ParticleManager:CreateParticle("particles/chibi_monster.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            self.particle_time = not IsASBPatreon(self.parent)  
+			                     and ParticleManager:CreateParticle("particles/chibi_monster.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+								 or ParticleManager:CreateParticle("particles/chibi_monster_kizuna_ai.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
                                     
         end
 		
-
-        
-		
-        
-        
-
         self.parent:Purge(false, true, false, true, true)
     end
 end
@@ -139,10 +131,8 @@ function modifier_chibi_monster:OnDestroy()
             end
 
            ParticleManager:DestroyParticle(self.particle_time, false)
-        ParticleManager:ReleaseParticleIndex(self.particle_time)
-		
-        
-			
+           ParticleManager:ReleaseParticleIndex(self.particle_time)
+
 
             if self.parent:IsRealHero() then
                 self.ability:StartCooldown(self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction())

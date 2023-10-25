@@ -1,4 +1,5 @@
 ichigoQ = class({})
+LinkLuaModifier( "modifier_animation", "libraries/modifiers/modifier_animation.lua", LUA_MODIFIER_MOTION_NONE )
 
 function ichigoQ:OnAbilityPhaseStart()
     StartAnimation(self:GetCaster(), {

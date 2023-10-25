@@ -1,13 +1,13 @@
-item_pandora_box = class({})
+item_pandora_box = item_pandora_box or class({})
 function item_pandora_box:IsStealable() return true end
 function item_pandora_box:IsHiddenWhenStolen() return false end
 function item_pandora_box:OnSpellStart()
 	local caster = self:GetCaster()
-   if caster:HasScepter() and caster:GetUnitName()== "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
-    self:SpendCharge()
+    if caster:HasScepter() and caster:GetUnitName()== "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
+        self:SpendCharge()
 	    local item = CreateItem("item_yamato", caster, self)
 	    caster:AddItem(item)
-   end
+    end
 	if caster:HasScepter() then
 	else
 	self:SpendCharge()
@@ -188,6 +188,9 @@ function item_pandora_box:OnSpellStart()
 		local item = CreateItem("item_national_contract", caster, self)
 		elseif caster:GetUnitName()== "npc_dota_hero_tiny" then
 		local item = CreateItem("item_myoujingiri", caster, self)
+	    caster:AddItem(item)
+		elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
+		local item = CreateItem("item_fusion_dance", caster, self)
 	    caster:AddItem(item)
 		else
 		local item = CreateItem("item_vongolla_primo_ring", caster, self)

@@ -44,7 +44,7 @@ function mars_gods_rebuke_lua:OnSpellStart()
 	damageTable.victim = caster
     damageTable.damage = caster:GetMaxHealth() * 0.20
     damageTable.damage_type = DAMAGE_TYPE_PURE
-	damageTable.damage_flags = DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS 
+	damageTable.damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION
 	ApplyDamage(damageTable)
 
 	for _,enemy in pairs(enemies) do

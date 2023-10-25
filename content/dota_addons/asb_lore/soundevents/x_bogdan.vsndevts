@@ -1,0 +1,346 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	bogdan.spank = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/spank.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "800.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.977664
+	}
+	bogdan.boy = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/Take_it_boy.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 0.684921
+	}
+	bogdan.jump = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jump.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.555737
+	}
+	bogdan.gasm = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/daxgasm.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.931188
+	}
+	bogdan.kach = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kach.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 12.678095
+	}
+	bogdan.gaynado = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gaynado.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 11.308118
+	}
+	hurk.spank = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hurk1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.010113
+	}
+	hurk.cum_1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hurk2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.469274
+	}
+	hurk.cum = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hurk2_2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 2.215374
+	}
+	hurk.gachi_jump = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hurk3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.037800
+	}
+	hurk.gachi_jump_land = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/hurk3_1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.226485
+	}
+	hurk.arcana_gaynado = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/gaynado_hurk.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 11.328000
+	}
+	hurk.push_up = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gachi_push_up.vsnd",
+		]
+		volume = "2.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 16.222040
+	}
+	unlimited.gay_works_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/1.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.256000
+	}
+	unlimited.gay_works_2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/2.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.120000
+	}
+	unlimited.gay_works_3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/3.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.672000
+	}
+	unlimited.gay_works_4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/4.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.976000
+	}
+	unlimited.gay_works_5 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/5.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.864000
+	}
+	unlimited.gay_works_6 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/6.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.104000
+	}
+	unlimited.gay_works_7 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/7.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.568000
+	}
+	unlimited.gay_works_8 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/bogdan/8.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "2500.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.048000
+	}
+	gay.bar = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = 
+		[
+			"sounds/gay_bar.vsnd_c",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 10.222040
+	}
+}

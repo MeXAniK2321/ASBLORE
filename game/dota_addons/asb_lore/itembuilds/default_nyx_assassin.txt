@@ -19,6 +19,8 @@
 			"item"		"item_lerolero"
 			"item"		"item_blink"
 			"item"		"item_minato_kunai"
+			"item"      "item_octarine_core"
+			"item"      "item_asha_tear"
                    
 		}
 		
@@ -46,6 +48,7 @@
                         "item"		"item_magic_girl_wand"                 
                         "item"		"item_sad_vodoo_doll"
                         "item"          "item_trans_am" 
+						"item"      "item_meteor_hammer"
 
 
 		}

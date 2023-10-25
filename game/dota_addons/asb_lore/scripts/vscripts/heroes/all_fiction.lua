@@ -9,18 +9,16 @@ LinkLuaModifier("modifier_star_tier1", "modifiers/modifier_star_tier1", LUA_MODI
 LinkLuaModifier("modifier_star_tier2", "modifiers/modifier_star_tier2", LUA_MODIFIER_MOTION_NONE)
 
 
-all_fiction = class({})
+all_fiction = all_fiction or class({})
 
 function all_fiction:IsStealable() return true end
 function all_fiction:IsHiddenWhenStolen() return false end
-
 function all_fiction:OnUpgrade()
     local ability = self:GetCaster():FindAbilityByName("april_fiction")
     if ability and ability:GetLevel() < self:GetLevel() then
         ability:SetLevel(self:GetLevel())
     end
 end
-
 function all_fiction:OnSpellStart()
     local caster = self:GetCaster()
     local fixed_duration = self:GetSpecialValueFor("fixed_duration")
@@ -44,23 +42,21 @@ function all_fiction:OnSpellStart()
 		-- damage
 		
 		-- silence
-		enemy:AddNewModifier(
-			caster, -- player source
-			self, -- ability source
-			"modifier_all_fiction_debuff", -- modifier name
-			{ duration = 1.6 } -- kv
-		)
+		enemy:AddNewModifier(caster, -- player source
+			                 self, -- ability source
+			                 "modifier_all_fiction_debuff", -- modifier name
+			                 { duration = 1.6 } -- kv
+		                    )
 	end
 
 	
-
     caster:AddNewModifier(caster, self, "modifier_all_fiction", {duration = fixed_duration})
 	caster:AddNewModifier(caster, self, "modifier_all_fiction_invul", {duration = 1.6})	
-caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
+    caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
     self:EndCooldown()
 end
 
-modifier_all_fiction_invul = class({})
+modifier_all_fiction_invul = modifier_all_fiction_invul or class({})
 function modifier_all_fiction_invul:IsHidden() return false end
 function modifier_all_fiction_invul:IsDebuff() return true end
 function modifier_all_fiction_invul:IsPurgable() return false end
@@ -68,45 +64,41 @@ function modifier_all_fiction_invul:IsPurgeException() return false end
 function modifier_all_fiction_invul:RemoveOnDeath() return true end
 function modifier_all_fiction_invul:CheckState()
 	local state = {
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_STUNNED] = true,
-		
-	}
+		              [MODIFIER_STATE_INVULNERABLE] = true,
+		              [MODIFIER_STATE_STUNNED] = true,
+	              }
 
 	return state
 end
 function modifier_all_fiction_invul:OnCreated()
-if IsServer() then
+    if IsServer() then
         --self:SetStackCount(0)
-self.screw_fx = 	ParticleManager:CreateParticle("particles/all_fiction_screw.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
-								ParticleManager:SetParticleControlEnt(self.screw_fx, 0, self:GetCaster(), 5, "attach_left_foot", Vector(0,0,0), true)
-								ParticleManager:SetParticleControlEnt(self.screw_fx, 1, self:GetCaster(), 5, "attach_left_foot", Vector(0,0,0), true)
+        self.screw_fx = 	ParticleManager:CreateParticle("particles/all_fiction_screw.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
+							ParticleManager:SetParticleControlEnt(self.screw_fx, 0, self:GetCaster(), 5, "attach_left_foot", Vector(0,0,0), true)
+							ParticleManager:SetParticleControlEnt(self.screw_fx, 1, self:GetCaster(), 5, "attach_left_foot", Vector(0,0,0), true)
        
     end
 end
 function modifier_all_fiction_invul:OnDestroy()
-local caster = self:GetCaster()
-caster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
-if self.screw_fx then
+    local caster = self:GetCaster()
+    caster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
+    if self.screw_fx then
 	    ParticleManager:DestroyParticle(self.screw_fx, false)
 	    ParticleManager:ReleaseParticleIndex(self.screw_fx)
 	end
 end
 function modifier_all_fiction_invul:DeclareFunctions()
     local func = {  
-    				
-	                
-					MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
-                   
-                    
-                     }
+				     MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+                 }
     return func
 end
-
 function modifier_all_fiction_invul:GetOverrideAnimation()
 	return ACT_DOTA_CHANNEL_ABILITY_5
 end
-modifier_all_fiction_stunned = class({})
+
+
+modifier_all_fiction_stunned = modifier_all_fiction_stunned or class({})
 function modifier_all_fiction_stunned:IsHidden() return false end
 function modifier_all_fiction_stunned:IsDebuff() return true end
 function modifier_all_fiction_stunned:IsPurgable() return false end
@@ -114,17 +106,16 @@ function modifier_all_fiction_stunned:IsPurgeException() return false end
 function modifier_all_fiction_stunned:RemoveOnDeath() return true end
 function modifier_all_fiction_stunned:CheckState()
 	local state = {
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_STUNNED] = true,
-		
-	}
+		              [MODIFIER_STATE_INVULNERABLE] = true,
+		              [MODIFIER_STATE_STUNNED] = true,
+	              }
 
 	return state
 end
 
 
 ---------------------------------------------------------------------------------------------------------------------
-modifier_all_fiction = class({})
+modifier_all_fiction = modifier_all_fiction or class({})
 function modifier_all_fiction:IsHidden() return false end
 function modifier_all_fiction:IsDebuff() return true end
 function modifier_all_fiction:IsPurgable() return false end
@@ -133,7 +124,7 @@ function modifier_all_fiction:RemoveOnDeath() return true end
 function modifier_all_fiction:AllowIllusionDuplicate() return true end
 function modifier_all_fiction:CheckState()
     local state = { 
-                }
+                  }
 
     if IsServer() and self.parent and not self.parent:IsNull() and self.parent:GetMana() <= self.awake_mana + 10 then
         local awake = self.parent:FindAbilityByName("all_fiction_awake")
@@ -146,76 +137,56 @@ function modifier_all_fiction:CheckState()
 end
 function modifier_all_fiction:DeclareFunctions()
     local func = {  
-    				
-	                MODIFIER_PROPERTY_EVASION_CONSTANT,
-                    MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
-                    MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-					MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-					MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
-                    MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL,
-MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,	
-MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND,
-		MODIFIER_PROPERTY_PROJECTILE_NAME,
-		MODIFIER_EVENT_ON_TAKEDAMAGE,
-		MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS,
-		MODIFIER_PROPERTY_MIN_HEALTH
-		}
+	                 MODIFIER_PROPERTY_EVASION_CONSTANT,
+	                 MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+	                 MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+	                 MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+	                 MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+	                 MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL,
+	                 MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,	
+	                 MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND,
+	                 MODIFIER_PROPERTY_PROJECTILE_NAME,
+	                 MODIFIER_EVENT_ON_TAKEDAMAGE,
+	                 MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS,
+	                 MODIFIER_PROPERTY_MIN_HEALTH
+		         }
     return func
 end
 function modifier_all_fiction:GetMinHealth()
-   if self:GetParent():HasModifier( "modifier_all_fiction_fount_debugg" ) then
- return 
-else 
-	return 1 
-	end
+    return self:GetParent():HasModifier( "modifier_all_fiction_fount_debugg" )
+           and 0
+		   or 1
 end
 function modifier_all_fiction:GetModifierPreAttack_BonusDamage()
 	return 400
 end
-
 function modifier_all_fiction:GetModifierAttackSpeedBonus_Constant()
 	return 100
 end
 function modifier_all_fiction:OnTakeDamage(keys)
 	if IsServer() then
-    local caster = self:GetCaster()
+      local caster = self:GetCaster()
+      local attacker = keys.attacker
+	  local target = keys.unit
 	
-		local attacker = keys.attacker
-	local target = keys.unit
-	
-	if attacker:HasModifier( "modifier_fountain_damage" ) then 
-   self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_all_fiction_fount_debugg", {duration = 1.0})			
-					else
-			
-			
-		   
-			
-				
-				if self:GetParent():GetHealth() <= 20 then
-				if not self:GetParent():IsIllusion() then
-				local hp = self:GetParent():GetMaxHealth() * 0.8
-			     
-				 self:GetParent():SetHealth(hp)
-				
-				
-					
-					self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_all_fiction_stunned", {duration = 4})
-					EmitSoundOn("kumagawa.5_death", self.parent)
-					self:PlayEffects()
-					
-					self:Destroy()
-					self:GetParent():RemoveModifierByName("modifier_star_tier2")
-					
-					
-					return
-				end
-               
-		end
-			end
-		end
-	end
+	   if attacker:HasModifier( "modifier_fountain_damage" ) then 
+          self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_all_fiction_fount_debugg", {duration = 1.0})			
+	   else
+	      if self:GetParent():GetHealth() <= 20 and not self:GetParent():IsIllusion() then
+	        local hp = self:GetParent():GetMaxHealth() * 0.8
+		    self:GetParent():SetHealth(hp)
+		    self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_all_fiction_stunned", {duration = 4})
+		    EmitSoundOn("kumagawa.5_death", self.parent)
+		    self:PlayEffects()
 
-
+		    self:Destroy()
+            self:GetParent():RemoveModifierByName("modifier_star_tier2")
+						
+		    return
+          end
+	   end
+    end
+end
 function modifier_all_fiction:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
@@ -236,10 +207,6 @@ function modifier_all_fiction:OnCreated(table)
                         }
 						
 					
-					
-	
- 
-
     if IsServer() then
         for k, v in pairs(self.skills_table) do
             if k and v then
@@ -255,24 +222,15 @@ function modifier_all_fiction:OnCreated(table)
             end
         end
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
-        if IsServer() then
         if not self.particle_time then
             self.particle_time =    ParticleManager:CreateParticle("particles/all_fiction.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
                                     
         end
 
-      
-		 
         EmitSoundOn("kumagawa.5", self.parent)
-		
-		end
-        
-
         self.parent:Purge(false, true, false, true, true)
     end
-	end
-
-
+end
 function modifier_all_fiction:OnRefresh(table)
     self:OnCreated(table)
 end
@@ -287,9 +245,7 @@ function modifier_all_fiction:OnDestroy()
                 end
             end
 			ParticleManager:DestroyParticle(self.particle_time, false)
-        ParticleManager:ReleaseParticleIndex(self.particle_time)
-
-           
+            ParticleManager:ReleaseParticleIndex(self.particle_time)
 
             if self.parent:IsRealHero() then
                 self.ability:StartCooldown(self.ability:GetCooldown(-1)* self.parent:GetCooldownReduction())
@@ -299,11 +255,8 @@ function modifier_all_fiction:OnDestroy()
                     --ability:CastAbility()
                 end
             end
-				if IsServer() then
-       
+        end
     end
-end
-end
 end
 function modifier_all_fiction:PlayEffects()
 	-- Get Resources
@@ -313,35 +266,25 @@ function modifier_all_fiction:PlayEffects()
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
-
-	-- Create Sound
-
 end
 ---------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
 
-modifier_all_fiction_debuff = class({})
+modifier_all_fiction_debuff = modifier_all_fiction_debuff or class({})
 
 --------------------------------------------------------------------------------
 
-function modifier_all_fiction_debuff:IsHidden()
-    return false
-end
-
-function modifier_all_fiction_debuff:IsPurgable()
-    return false
-end
+function modifier_all_fiction_debuff:IsHidden() return false end
+function modifier_all_fiction_debuff:IsPurgable() return false end
 function modifier_all_fiction_debuff:OnCreated()
-self:PlayEffects()
-	
+    self:PlayEffects()
 end
 function modifier_all_fiction_debuff:OnDestroy()
-if self:GetParent():HasModifier("modifier_bookmaker") then
-	self:GetParent():Kill(self, self:GetCaster())
+    if self:GetParent():HasModifier("modifier_bookmaker") then
+	  self:GetParent():Kill(self, self:GetCaster())
 	  EmitSoundOn("kumagawa.5_alter", self:GetParent())
 	  self:PlayEffects1()
 	end
-	
 end
 function modifier_all_fiction_debuff:PlayEffects1()
 	-- Get Resources
@@ -351,34 +294,27 @@ function modifier_all_fiction_debuff:PlayEffects1()
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, self:GetParent() )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
-
-	-- Create Sound
-
 end
 --------------------------------------------------------------------------------
 
 function modifier_all_fiction_debuff:CheckState()
 	local state = {
-		[MODIFIER_STATE_COMMAND_RESTRICTED] = true,
-	}
+		              [MODIFIER_STATE_COMMAND_RESTRICTED] = true,
+	              }
 
 	return state
 end
 function modifier_all_fiction_debuff:PlayEffects( target, dragonform )
 	-- Get Resources
 	local particle_cast = "particles/all_fiction_screen.vpcf"
-	 if not IsServer() then return end
+	if not IsServer() then return end
     if not self:GetParent():IsIllusion() then
-        local Player = PlayerResource:GetPlayer(self:GetParent():GetPlayerID())
+      local Player = PlayerResource:GetPlayer(self:GetParent():GetPlayerID())
 
-	-- Get Data
-	
-
-	-- Create Particle
-	local effect_cast = ParticleManager:CreateParticleForPlayer( particle_cast, PATTACH_ABSORIGIN_FOLLOW, Player,Player )
-	
-	
+	  -- Create Particle
+	  local effect_cast = ParticleManager:CreateParticleForPlayer( particle_cast, PATTACH_ABSORIGIN_FOLLOW, Player,Player )
+	end
 end
 
-end
+-- ?????
 modifier_all_fiction_fount_debugg = class({})

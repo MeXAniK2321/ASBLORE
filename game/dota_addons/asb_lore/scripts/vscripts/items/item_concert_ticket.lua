@@ -4,26 +4,26 @@ LinkLuaModifier("modifier_item_anime_boombox_ticket", "items/item_concert_ticket
 local TicketSounds = {
     -- Sounds for item_concert_ticket_1
 	item_concert_ticket_1 = {
-        {SoundName = "new.year_theme_1", duration = 205.464005},
-        {SoundName = "new.year_theme_2", duration = 238.332977},
+        {SoundName = "new.year_theme_1", duration = 100.000000},
+        {SoundName = "new.year_theme_2", duration = 100.000000},
     },
 	
     -- Sounds for item_concert_ticket_2
     item_concert_ticket_2 = {
-        {SoundName = "new.year_theme_3", duration = 122.185959},
-        {SoundName = "new.year_theme_4", duration = 139.877014},
+        {SoundName = "new.year_theme_3", duration = 100.000000},
+        {SoundName = "new.year_theme_4", duration = 100.000000},
     },
 	
     -- Sounds for item_concert_ticket_3
     item_concert_ticket_3 = {
-        {SoundName = "new.year_theme_5", duration = 166.022675},
-        {SoundName = "new.year_theme_6", duration = 116.006897},
+        {SoundName = "new.year_theme_5", duration = 100.000000},
+        {SoundName = "new.year_theme_6", duration = 100.000000},
     },
 	
     -- Sounds for item_concert_ticket_4
     item_concert_ticket_4 = {
-        {SoundName = "new.year_theme_7", duration = 144.219131},
-        {SoundName = "new.year_theme_8", duration = 135.952835},
+        {SoundName = "new.year_theme_7", duration = 100.000000},
+        {SoundName = "new.year_theme_8", duration = 100.000000},
     },
 }
 -- Create all 4 tickets without repeating the same code 4 times

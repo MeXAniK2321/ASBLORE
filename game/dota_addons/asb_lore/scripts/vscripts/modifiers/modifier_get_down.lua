@@ -18,6 +18,7 @@ end
 -- Initializations
 function modifier_get_down:OnCreated( kv )
 	-- references
+	self.parent = self:GetParent()
 	self.damage = self:GetAbility():GetSpecialValueFor( "sand_storm_damage" ) -- special value
 	self.radius = self:GetAbility():GetSpecialValueFor( "sand_storm_radius" ) -- special value
 	self.interval = 0.3
@@ -38,7 +39,9 @@ function modifier_get_down:OnCreated( kv )
 		self:OnIntervalThink()
 
 		-- start effects
-		self:PlayEffects( self.radius )
+		local Play = not IsASBPatreon(self.parent)
+		             and self:PlayEffects( self.radius )
+					 or self:PlayEffects2( self.radius )
 	end
 end
 
@@ -126,6 +129,19 @@ function modifier_get_down:PlayEffects( radius )
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )
 end
+function modifier_get_down:PlayEffects2( radius )
+	-- Get Resources
+	local particle_cast = "particles/get_down_kizuna_ai.vpcf"
+	local sound_cast = "miku.kizuna_ai.6"
+
+	-- Create Particle
+	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
+	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
+	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+
+	-- Create Sound
+	EmitSoundOn( sound_cast, self:GetParent() )
+end
 
 function modifier_get_down:StopEffects()
 	-- Stop particles
@@ -137,5 +153,6 @@ function modifier_get_down:StopEffects()
 	StopSoundOn( "miku.6", self:GetParent() )
 	StopSoundOn( "miku.6", self:GetParent() )
 	StopSoundOn( "miku.6", self:GetParent() )
+	StopSoundOn( "miku.kizuna_ai.6", self:GetParent() )
 
 end

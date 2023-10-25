@@ -25,9 +25,8 @@ function item_lerolero:OnSpellStart()
 	end
 
 	--EmitSoundOn("DOTA_Item.BlackKingBar.Activate", caster)--
-	--EmitSoundOn("anime_chatwheel_non_sorted_8_8", caster)--
-
-	caster:Purge(false, true, false, true, true)
+	EmitSoundOn("anime_chatwheel_non_sorted_8_8", caster)
+    caster:Purge(false, true, false, true, true)
 
 	caster:AddNewModifier(caster, self, "modifier_item_lerolero_buff", {duration = duration})
 	self:EndCooldown()

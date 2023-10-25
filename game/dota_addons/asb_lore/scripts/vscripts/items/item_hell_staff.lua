@@ -14,12 +14,10 @@ function item_hell_staff:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 
-
-	
 	target:AddNewModifier(self:GetCaster(), self, "modifier_item_hell_staff_true", {duration = 8.0})
 	if not target:HasModifier("modifier_item_hell_staff_debuff2") then
-	target:AddNewModifier(self:GetCaster(), self, "modifier_item_hell_staff_debuff", {duration = 8.0})
-end
+	  target:AddNewModifier(self:GetCaster(), self, "modifier_item_hell_staff_debuff", {duration = 8.0})
+    end
 	caster:EmitSound("hell.staff_cast")
 end
 modifier_item_hell_staff_cooldown = class({})
@@ -49,7 +47,6 @@ end
 function modifier_item_hell_staff:GetModifierHealthBonus()
     return self:GetAbility():GetSpecialValueFor('bonus_hp')
 end
-
 function modifier_item_hell_staff:GetModifierManaBonus()
     return self:GetAbility():GetSpecialValueFor('mana')
 end
@@ -65,7 +62,6 @@ function modifier_item_hell_staff:OnCreated(table)
 	self.intellect = self.ability:GetSpecialValueFor("bonus_intellect")
 
 end
-
 function modifier_item_hell_staff:OnTakeDamage(keys)
 	if IsServer() then
 	local caster = self:GetParent()

@@ -4,6 +4,7 @@ LinkLuaModifier("modifier_ryougi_shikiQ_last", "heroes/ryougi_shiki/modifier_ryo
 LinkLuaModifier("modifier_generic_kb", "heroes/modifiers/modifier_generic_kb", LUA_MODIFIER_MOTION_BOTH)
 
 ryougi_shikiQ = class({})
+LinkLuaModifier( "modifier_animation", "libraries/modifiers/modifier_animation.lua", LUA_MODIFIER_MOTION_NONE )
 
 function ryougi_shikiQ:OnAbilityPhaseStart()
     if not RYOUGIQ then 

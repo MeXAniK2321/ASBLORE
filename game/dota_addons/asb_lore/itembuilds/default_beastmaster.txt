@@ -18,7 +18,9 @@
 		{
 			 "item"		"item_blink"
 			 "item"		"item_lerolero"
-                         "item"	        "item_minato_kunai"
+             "item"	    "item_minato_kunai"
+			"item"      "item_octarine_core"
+			"item"      "item_asha_tear"
                          
 			
 		}
@@ -47,6 +49,7 @@
 			"item"          "item_avalon"	   
                         "item"      	"item_serp_molot"
                         "item" 		"item_seal_of_chaos"
+						"item"      "item_meteor_hammer"
                        
                                             
 

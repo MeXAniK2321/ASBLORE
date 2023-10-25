@@ -18,7 +18,7 @@
 		{
 			"item"		"item_blink"
 			"item"		"item_lerolero"               
-		        "item"	        "item_minato_kunai"  
+		    "item"	    "item_minato_kunai"  
                         
                 }
 		
@@ -43,6 +43,7 @@
                        "item"	     "item_van_dark"
                        "item"	     "item_beast_boots"
                        "item"        "item_abyss_horn"
+					   "item"      "item_meteor_hammer"
                         
 
 		}

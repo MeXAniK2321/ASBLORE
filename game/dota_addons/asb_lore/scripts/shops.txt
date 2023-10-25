@@ -8,6 +8,8 @@
       "item"      "item_beast_boots"
 	  "item"      "item_van_dark"
 	  "item" "item_tome_of_knowledge"
+	  "item" "item_monster_energy"
+	  "item" "item_chibi_marci"
 	 
   }
 
@@ -19,6 +21,7 @@
 		      "item"          "item_pandora_heart"
 			  "item" "item_sword_breaker"
         "item" "item_walter_white"
+		"item" "item_hand_of_gaben"
 	 
   }
 
@@ -44,6 +47,8 @@
    "item" "item_avalon"
    "item" "item_seal_of_chaos"
 "item" "item_angel_halo"
+"item" "item_jetstream_sam_muramasa"
+"item"    "item_thors_armor"
 
   }
       
@@ -63,10 +68,11 @@
 				 "item" "item_magic_girl_wand"
 				 "item" "item_sad_vodoo_doll"
 				 "item" "item_hell_staff"
-				 "item" "item_marionette"
+				 "item"    "item_phylactery"
 				  "item" "item_spamton"
 				    "item" "item_super_idol_water"
 					"item"      "item_meteor_hammer"
+					"item" "item_red_spear"
 				 
       
   }
@@ -75,7 +81,8 @@
    "item"      "item_pandora_box"
    "item"      "item_pandora_treasure"
    "item"       "item_will_of_the_fallen"
-   "item"    "item_thors_armor"
+   "item"      "item_stando_powa"
+   "item"      "item_nonono_yesyesyes"
 }  
   
   // Level 1 - Green Recipes
@@ -133,8 +140,9 @@
     "item"    "item_orchid" 
     "item"    "item_refresher"
     "item"    "item_glimmer_cape"
-	"item"      "item_meteor_hammer"
-	"item"      "item_kaya"
+	"item"    "item_meteor_hammer"
+	"item"    "item_kaya"
+	"item"    "item_phylactery"
   }
     
   // Level 3 - Purple Recipes 

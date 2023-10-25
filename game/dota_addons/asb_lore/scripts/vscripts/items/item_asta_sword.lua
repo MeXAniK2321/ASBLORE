@@ -40,9 +40,11 @@ function modifier_item_asta_sword:IsPurgable() return false end
 function modifier_item_asta_sword:IsPurgeException() return false end
 function modifier_item_asta_sword:RemoveOnDeath() return false end
 function modifier_item_asta_sword:DeclareFunctions()
-	local func = { 	MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-	MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
-					MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,}
+	local func = { 	
+	                 MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+	                 MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
+					 MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+				 }
 	return func
 end
 function modifier_item_asta_sword:GetModifierBonusStats_Strength()
@@ -51,8 +53,6 @@ end
 function modifier_item_asta_sword:GetModifierPreAttack_BonusDamage()
 	return self.bonus_damage
 end
-
-
 function modifier_item_asta_sword:OnCreated(table)
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
@@ -105,10 +105,7 @@ function modifier_item_asta_sword_buff:GetModifierMagicalResistanceBonus()
 	return 1
 end
 function modifier_item_asta_sword_buff:OnCreated(table)
-	
-
 	self.scale = 30
-	
 end
 function modifier_item_asta_sword_buff:OnRefresh(table)
 	self:OnCreated(table)

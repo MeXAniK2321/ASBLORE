@@ -80,10 +80,10 @@ function item_gay_hammer:OnSpellStart()
 
 	  EmitSoundOn(table_sounds[RandomInt(1, #table_sounds)], hero)
 	  else
-	    target:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+	    target:AddNewModifier(caster, self, "modifier_gay_garbage", {})
       end
 	else
-      caster:AddNewModifier(caster, self, "modifier_gay_garbage", {duration = 30})
+      caster:AddNewModifier(caster, self, "modifier_gay_garbage", {})
     end
 end
 
@@ -202,6 +202,11 @@ function modifier_gay_garbage:OnCreated( kv )
 	self:GetParent():AddNoDraw()
 	self:PlayEffects()
 	
+	self:StartIntervalThink(7.0)
+	
+end
+function modifier_gay_garbage:OnIntervalThink()
+    self:Destroy()
 end
 function modifier_gay_garbage:OnRefresh( kv )
 	-- references

@@ -1,4 +1,4 @@
-item_crucible_of_the_executioner = class({})
+item_crucible_of_the_executioner = item_crucible_of_the_executioner or class({})
 LinkLuaModifier("modifier_item_crucible_of_the_executioner", "items/item_crucible_of_the_executioner", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_crucible_of_the_executioner_buff", "items/item_crucible_of_the_executioner", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_MODIFIER_MOTION_NONE)
@@ -7,18 +7,13 @@ LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_M
 function item_crucible_of_the_executioner:GetIntrinsicModifierName()
 	return "modifier_item_crucible_of_the_executioner"
 end
-
-
 function item_crucible_of_the_executioner:OnSpellStart()
 	local caster = self:GetCaster()
 	local duration = self:GetSpecialValueFor("duration")
 	
-	
-
 	--EmitSoundOn("DOTA_Item.BlackKingBar.Activate", caster)
 
-
-	caster:AddNewModifier(caster, self, "modifier_item_crucible_of_the_executioner_buff", {duration = duration})
+    caster:AddNewModifier(caster, self, "modifier_item_crucible_of_the_executioner_buff", {duration = duration})
 	caster:AddNewModifier(caster, self, "modifier_item_anime_boombox", {duration = 0.01})
 	--EmitGlobalSound("star.theme_12")
 	self:EndCooldown()
@@ -33,14 +28,16 @@ function modifier_item_crucible_of_the_executioner:IsPurgeException() return fal
 function modifier_item_crucible_of_the_executioner:RemoveOnDeath() return false end
 function modifier_item_crucible_of_the_executioner:DeclareFunctions()
 	local func = {	
-	MODIFIER_PROPERTY_HEALTH_BONUS,
-	MODIFIER_EVENT_ON_DEATH,
-        MODIFIER_PROPERTY_MANA_BONUS,
-        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-        MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
-        MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
-		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-		MODIFIER_EVENT_ON_TAKEDAMAGE,}
+	                 MODIFIER_PROPERTY_HEALTH_BONUS,
+	                 MODIFIER_EVENT_ON_DEATH,
+                     MODIFIER_PROPERTY_MANA_BONUS,
+                     MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+                     MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+                     MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+		             MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+		             MODIFIER_EVENT_ON_TAKEDAMAGE,
+			     }
+	
 	return func
 end
 function modifier_item_crucible_of_the_executioner:OnTakeDamage(keys)
@@ -75,7 +72,7 @@ function modifier_item_crucible_of_the_executioner:OnTakeDamage(keys)
                                    		damage_type = DAMAGE_TYPE_PURE,
                                       	ability = self.ability,
                                       	damage_flags = keys.damage_flags + DOTA_DAMAGE_FLAG_IGNORES_MAGIC_ARMOR + DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION + DOTA_DAMAGE_FLAG_NO_DAMAGE_MULTIPLIERS}
-end
+                end
              	ApplyDamage(self.damage_table)
 			end
 		end
@@ -84,26 +81,20 @@ end
 function modifier_item_crucible_of_the_executioner:GetModifierHealthBonus()
     return self:GetAbility():GetSpecialValueFor('bonus_hp')
 end
-
 function modifier_item_crucible_of_the_executioner:GetModifierManaBonus()
     return self:GetAbility():GetSpecialValueFor('mana')
 end
-
 function modifier_item_crucible_of_the_executioner:GetModifierBonusStats_Agility()
     return self:GetAbility():GetSpecialValueFor('all_stats')
 end
-
 function modifier_item_crucible_of_the_executioner:GetModifierBonusStats_Intellect()
     return self:GetAbility():GetSpecialValueFor('int')
 end
 function modifier_item_crucible_of_the_executioner:GetModifierSpellAmplify_Percentage()
- if self:GetParent():HasItemInInventory("item_yoru") then
-	 return 0
-	 else
-return self:GetAbility():GetSpecialValueFor('amp') + math.min(self.kill,self:GetStackCount())
+    return self:GetParent():HasItemInInventory("item_yoru")
+	       and 0
+           or self:GetAbility():GetSpecialValueFor('amp') + math.min(self.kill,self:GetStackCount())
 end
-end
-
 function modifier_item_crucible_of_the_executioner:OnCreated( kv )
 	self.parent = self:GetParent()
 	self.kill = self:GetAbility():GetSpecialValueFor("kill_charges")
@@ -113,11 +104,9 @@ function modifier_item_crucible_of_the_executioner:OnCreated( kv )
 		self:SetStackCount(0)
 	end
 end
-
 function modifier_item_crucible_of_the_executioner:OnRefresh( kv )
 	-- get references
 	self.kill = self:GetAbility():GetSpecialValueFor("kill_charges")
-	
 end
 function modifier_item_crucible_of_the_executioner:OnDeath( params )
 	if IsServer() then
@@ -137,8 +126,8 @@ function modifier_item_crucible_of_the_executioner:KillLogic( params )
 
 	-- logic
 	if pass and (not self:GetParent():PassivesDisabled()) then
-		self:AddStack(0)
-local Player = PlayerResource:GetPlayer(target:GetPlayerID())
+	   self:AddStack(0)
+       local Player = PlayerResource:GetPlayer(target:GetPlayerID())
 	   local kills = PlayerResource:GetKills(target:GetPlayerID())
 	   local death = PlayerResource:GetDeaths(target:GetPlayerID())
 	   if death - kills > 10 then
@@ -147,11 +136,8 @@ local Player = PlayerResource:GetPlayer(target:GetPlayerID())
 			self:AddStack(1)
 		end
 		end
-
-		
-	end
+    end
 end
-
 function modifier_item_crucible_of_the_executioner:AddStack( value )
 	local current = self:GetStackCount()
 	local after = current + value
@@ -167,12 +153,11 @@ function modifier_item_crucible_of_the_executioner:AddStack( value )
 	self:SetStackCount( after )
 end
 function modifier_item_crucible_of_the_executioner:GetAbilityTextureName()
-	
-	return "crucible"
+    return "crucible"
 end
 
 ---------------------------------------------------------------------------------------------------------------------
-modifier_item_crucible_of_the_executioner_buff = class({})
+modifier_item_crucible_of_the_executioner_buff = modifier_item_crucible_of_the_executioner_buff or class({})
 function modifier_item_crucible_of_the_executioner_buff:IsHidden() return false end
 function modifier_item_crucible_of_the_executioner_buff:IsDebuff() return false end
 function modifier_item_crucible_of_the_executioner_buff:IsPurgable() return true end
@@ -240,7 +225,6 @@ end
 function modifier_item_crucible_of_the_executioner_buff:OnRefresh(table)
 	self:OnCreated(table)
 end
-
 function modifier_item_crucible_of_the_executioner_buff:GetEffectName()
 	return "particles/crucible.vpcf"
 end
@@ -253,6 +237,5 @@ function modifier_item_crucible_of_the_executioner_buff:OnDestroy()
 	end
 end
 function modifier_item_crucible_of_the_executioner_buff:GetAbilityTextureName()
-	
-	return "crucible"
+    return "crucible"
 end

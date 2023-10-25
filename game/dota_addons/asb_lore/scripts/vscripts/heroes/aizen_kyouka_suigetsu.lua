@@ -1,12 +1,8 @@
-aizen_kyouka_suigetsu = class({})
+aizen_kyouka_suigetsu = aizen_kyouka_suigetsu or class({})
 LinkLuaModifier( "modifier_generic_stunned_lua2", "heroes/aizen_kyouka_suigetsu", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_aizen_kyouka_suigetsu_hit", "modifiers/modifier_aizen_kyouka_suigetsu_hit", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_aizen_kyouka_suigetsu_hit_debuff", "modifiers/modifier_aizen_kyouka_suigetsu_hit_debuff", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_aizen_kyouka_damage", "modifiers/modifier_aizen_kyouka_damage", LUA_MODIFIER_MOTION_NONE )
-
---------------------------------------------------------------------------------
--- Custom KV
-
 
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -92,7 +88,6 @@ function aizen_kyouka_suigetsu:OnSpellStart()
 		}
 	ProjectileManager:CreateTrackingProjectile(info)
 end
-
 -- Helper
 function aizen_kyouka_suigetsu:Hit( target, dragonform )
 	local caster = self:GetCaster()
@@ -128,51 +123,32 @@ function aizen_kyouka_suigetsu:Hit( target, dragonform )
 end
 
 --------------------------------------------------------------------------------
--- Projectile
 
-
---------------------------------------------------------------------------------
-
-
-modifier_generic_stunned_lua2 = class({})
+modifier_generic_stunned_lua2 = modifier_generic_stunned_lua2 or class({})
 
 --------------------------------------------------------------------------------
 
-function modifier_generic_stunned_lua2:IsHidden()
-    return false
-end
-
-function modifier_generic_stunned_lua2:IsPurgable()
-    return false
-end
+function modifier_generic_stunned_lua2:IsHidden() return false end
+function modifier_generic_stunned_lua2:IsPurgable() return false end
 function modifier_generic_stunned_lua2:OnDestroy()
-
-	self:PlayEffects()
+    self:PlayEffects()
 end
-
---------------------------------------------------------------------------------
-
 function modifier_generic_stunned_lua2:CheckState()
     local state = {
-        [MODIFIER_STATE_STUNNED] = true,
-    }
+                      [MODIFIER_STATE_STUNNED] = true,
+                  }
 
     return state
 end
 function modifier_generic_stunned_lua2:PlayEffects( target, dragonform )
 	-- Get Resources
 	local particle_cast = "particles/test3.vpcf"
-	 if not IsServer() then return end
+	if not IsServer() then return end
     if not self:GetParent():IsIllusion() then
-        local Player = PlayerResource:GetPlayer(self:GetParent():GetPlayerID())
-
-	-- Get Data
+      local Player = PlayerResource:GetPlayer(self:GetParent():GetPlayerID())
 	
 
-	-- Create Particle
-	local effect_cast = ParticleManager:CreateParticleForPlayer( particle_cast, PATTACH_ABSORIGIN_FOLLOW, Player,Player )
-	
-	
-end
-
+	  -- Create Particle
+	  local effect_cast = ParticleManager:CreateParticleForPlayer( particle_cast, PATTACH_ABSORIGIN_FOLLOW, Player,Player )
+	end
 end

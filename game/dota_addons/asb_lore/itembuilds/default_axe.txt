@@ -17,8 +17,10 @@
 		"#DOTA_Item_Build_Early_Game"
 		{
 			"item"		"item_blink"
-		        "item"		"item_lerolero"
+		    "item"		"item_lerolero"
 			"item"		"item_minato_kunai"
+			"item"      "item_octarine_core"
+			"item"      "item_asha_tear"
 		}
 		
 		"#DOTA_Item_Build_Mid_Items"
@@ -44,6 +46,7 @@
 			"item"		"item_serp_molot"
                        	"item" 		"item_hell_staff"
                     	"item" 		"item_seal_of_chaos"    
+						"item"      "item_meteor_hammer"			
 
 		}
 	}

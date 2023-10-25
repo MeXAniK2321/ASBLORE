@@ -1,4 +1,4 @@
-kanade_delay = class({})
+kanade_delay = kanade_delay or class({})
 
 --------------------------------------------------------------------------------
 -- Ability Start

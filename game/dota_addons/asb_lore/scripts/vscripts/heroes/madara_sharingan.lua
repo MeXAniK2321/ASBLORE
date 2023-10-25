@@ -1,5 +1,6 @@
-madara_sharingan = class({})
+madara_sharingan = madara_sharingan or class({})
 LinkLuaModifier( "modifier_generic_stunned_lua", "modifiers/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_generic_stunned_lua2", "heroes/madara_sharingan.lua", LUA_MODIFIER_MOTION_NONE )
 
 --------------------------------------------------------------------------------
 -- Custom KV
@@ -74,7 +75,7 @@ function madara_sharingan:Hit( target, dragonform )
 	target:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
-		"modifier_generic_stunned_lua", -- modifier name
+		"modifier_generic_stunned_lua2", -- modifier name
 		{ duration = duration } -- kv
 	)
 
@@ -98,7 +99,7 @@ function madara_sharingan:PlayEffects( target, dragonform )
 	local particle_cast = "particles/hero_levelup_ti6_flash_hit_aegis125.vpcf"
 
 	-- Get Data
-	local vec = target:GetOrigin()-self:GetCaster():GetOrigin()
+	local vec = GetGroundPosition(target:GetAbsOrigin(), nil)
 	local attach = "attach_attack1"
 	if dragonform then
 		attach = "attach_attack2"
@@ -106,39 +107,17 @@ function madara_sharingan:PlayEffects( target, dragonform )
 
 	-- Create Particle
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_ABSORIGIN_FOLLOW, target )
-	ParticleManager:SetParticleControl( effect_cast, 3, vec )
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		2,
-		self:GetCaster(),
-		PATTACH_POINT_FOLLOW,
-		attach,
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
-	ParticleManager:SetParticleControlEnt(
-		effect_cast,
-		4,
-		target,
-		PATTACH_POINT_FOLLOW,
-		"attach_hitloc",
-		Vector(0,0,0), -- unknown
-		true -- unknown, true
-	)
+	ParticleManager:SetParticleControl( effect_cast, 0, vec )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 end
 
-modifier_generic_stunned_lua2 = class({})
+modifier_generic_stunned_lua2 = modifier_generic_stunned_lua2 or class({})
 
 --------------------------------------------------------------------------------
 
-function modifier_generic_stunned_lua2:IsHidden()
-    return false
-end
-
-function modifier_generic_stunned_lua2:IsPurgable()
-    return false
-end
+function modifier_generic_stunned_lua2:RemoveOnDeath() return true end
+function modifier_generic_stunned_lua2:IsHidden() return false end
+function modifier_generic_stunned_lua2:IsPurgable() return true end
 
 --------------------------------------------------------------------------------
 

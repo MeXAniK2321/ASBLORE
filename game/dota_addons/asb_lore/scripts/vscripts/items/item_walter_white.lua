@@ -8,20 +8,15 @@ function item_walter_white:OnSpellStart()
     local hTarget = self:GetCursorTarget()
 
     hTarget:Purge(false, true, false, false, false)
-
     hTarget:AddNewModifier(hCaster, self, "modifier_item_walter_white_active", {duration = self:GetSpecialValueFor("active_duration")})
 
     local nCastPFX = ParticleManager:CreateParticle("particles/units/heroes/hero_alchemist/alchemist_berserk_potion_projectile_explosion.vpcf", PATTACH_ABSORIGIN_FOLLOW, hTarget)
                      ParticleManager:SetParticleControl(nCastPFX, 3, hTarget:GetAbsOrigin() + Vector(0, 0, 128))
                      ParticleManager:ReleaseParticleIndex(nCastPFX)
 end
-	
-
-
 
 
 LinkLuaModifier("modifier_item_walter_white", "items/item_walter_white", LUA_MODIFIER_MOTION_NONE)
-
 modifier_item_walter_white = modifier_item_walter_white or class({})
 
 function modifier_item_walter_white:IsHidden()                          return true end
@@ -45,7 +40,7 @@ function modifier_item_walter_white:GetModifierAttackSpeedBonus_Constant(keys)
 end
 function modifier_item_walter_white:GetModifierMagicalResistanceBonus(keys)
     return self.nBonusMagicResist
- end
+end
 function modifier_item_walter_white:GetModifierBonusStats_Strength(keys)
     return self.nBonusStrength
 end
@@ -65,7 +60,6 @@ end
 
 
 LinkLuaModifier("modifier_item_walter_white_active", "items/item_walter_white", LUA_MODIFIER_MOTION_NONE)
-
 modifier_item_walter_white_active = modifier_item_walter_white_active or class({})
 
 function modifier_item_walter_white_active:IsHidden()                                   return false end

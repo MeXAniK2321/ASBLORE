@@ -1,0 +1,398 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	"Gogeta.q1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 1.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_q1.vsnd",
+		]
+	}
+	"Gogeta.q2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 1.5
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_q2.vsnd",
+		]
+	}
+    "Gogeta.e1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_e1.vsnd",
+		]
+	}
+    "Gogeta.e2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_e2.vsnd",
+		]
+	}
+    "Gogeta.e3" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_e3.vsnd",
+		]
+	}
+    "Gogeta.e4" = 
+	{
+		type = "dota_src1_3d"
+		volume = 0.8
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_e4.vsnd",
+		]
+	}
+    "Gogeta.d1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_d1.vsnd",
+		]
+	}
+    "Gogeta.r1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_r1.vsnd",
+		]
+	}
+    "Gogeta.r2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.4
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_r2.vsnd",
+		]
+	}
+    "Gogeta.d1_alt" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_d1_alt.vsnd",
+		]
+	}
+    "Gogeta.d2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_d2.vsnd",
+		]
+	}
+    "Gogeta.kamehameha" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_kamehameha.vsnd",
+		]
+	}
+    "Gogeta.hit1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/hit0.vsnd",
+		]
+	}
+    "Gogeta.hit2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 4.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/hit1.vsnd",
+		]
+	}
+    "Gogeta.hit3" = 
+	{
+		type = "dota_src1_3d"
+		volume = 4.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/hit2.vsnd",
+		]
+	}
+    "Gogeta.hit4" = 
+	{
+		type = "dota_src1_3d"
+		volume = 4.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/hit3.vsnd",
+		]
+	}
+    "Gogeta.yosh" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/yosh.vsnd",
+		]
+	}
+    "Gogeta.warida" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/warida.vsnd",
+		]
+	}
+    "Gogeta.ulti_mp3" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_ulti_mp3.vsnd",
+		]
+	}
+    "Gogeta.meteorhit" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorhit.vsnd",
+		]
+	}
+    "Gogeta.meteorscream" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorscream.vsnd",
+		]
+	}
+    "Gogeta.meteorf" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.1
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorf.vsnd",
+		]
+	}
+    "Gogeta.meteorex1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorex.vsnd",
+		]
+	}
+    "Gogeta.meteorex2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorex2.vsnd",
+		]
+	}
+    "Gogeta.meteorpower" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_meteorpower.vsnd",
+		]
+	}
+	
+
+}

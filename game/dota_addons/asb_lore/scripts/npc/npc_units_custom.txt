@@ -1825,4 +1825,147 @@
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}
+	
+	
+	
+	
+	"npc_dota_boss_astral_3"
+	{
+		"vscripts"					"ai/ai_neutral"
+		"AIZone"					"AI_ASTRAL_ZONE"
+		"UseNeutralCreepBehavior"	"0"
+		// General
+
+		"PathfindingSearchDepthScale"	"0.1"
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/anime/berserk/berserk/berserk.vmdl"
+		"SoundSet"					"Hero_Spectre"					// Name of sound set.
+		"ModelScale"				"2.0"								// old 1.0
+		"Level"						"30"
+		"IsAncient"					"1"
+		"HasInventory"				"0"
+		"IsBossMonster"				"1"
+		"MinimapIcon"				"minimap_death"
+		"MinimapIconSize"			"550"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts"
+
+	// Abilities
+		//----------------------------------------------------------------
+
+		"Ability1"					""			
+		"Ability2"					""			
+		"Ability3"					""
+		"Ability4"					""
+		"Ability5"					""
+		"Ability6"					""
+		"Ability7"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"70"			// Physical protection.
+		"MagicalResistance"			"15"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"1000"		// Damage range min.
+		"AttackDamageMax"			"1500"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.50"			// Speed of attack.
+		"AttackAnimationPoint"		"1.45"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"900"		// Range within a target can be acquired.
+		"AttackRange"				"250"		// Range within a target can be attacked.
+		"ProjectileModel"			"particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"			// Particle system model for projectile.
+		"ProjectileSpeed"			"900"			// Speed of projectile.
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"3000"		// Gold earned min.
+		"BountyGoldMax"				"5000"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"140"
+		"HealthBarOffset"		"500"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"550"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"30000"		// Base health.
+		"StatusHealthRegen"			"200.00"		// Health regeneration rate.
+		"StatusMana"				"200.00"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+
+		//Inventory
+		"Creature"
+		{
+			"AttachWearables"
+			{
+
+			}
+		}
+	}
+	
+	
+	
+"npc_dota_fisting_billy"
+	{										
+		"Model"						"models/pikapika/billy.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"IdleExpression"			""
+		"Level"						"30"
+		"ModelScale"				"2.3"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ArmorPhysical"				"50"
+        "MagicalResistance"			"55"		
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"500"		
+		"AttackDamageMax"			"1000"			
+		"AttackRate"				"0.6"
+"BountyGoldMin"				"1000"		// Gold earned min.
+		"BountyGoldMax"				"1000"		// Gold earned max.				
+		"AttackAnimationPoint"		"0.3"		
+		"AttackAcquisitionRange"	"600"		
+		"AttackRange"				"128"		
+		"HealthBarOffset"			"160"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"500"		
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			
+		"StatusHealth"				"13000"		
+		"StatusHealthRegen"			"50"			
+		"StatusMana"				"1300"		
+		"StatusManaRegen"			"25"			
+		"VisionDaytimeRange"		"700"		
+		"VisionNighttimeRange"		"700"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+
+	
+	
+	
+	
 }

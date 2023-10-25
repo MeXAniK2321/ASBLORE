@@ -1,4 +1,4 @@
-april_fiction = class({})
+april_fiction = april_fiction or class({})
 LinkLuaModifier( "modifier_april_fiction", "modifiers/modifier_april_fiction", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_generic_stunned_lua", "modifiers/modifier_generic_stunned_lua", LUA_MODIFIER_MOTION_NONE )
 
@@ -8,7 +8,6 @@ LinkLuaModifier( "modifier_generic_stunned_lua", "modifiers/modifier_generic_stu
 function april_fiction:GetAOERadius()
 	return self:GetSpecialValueFor( "radius" )
 end
-
 --------------------------------------------------------------------------------
 -- Ability Start
 function april_fiction:OnSpellStart()

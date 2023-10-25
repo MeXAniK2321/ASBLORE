@@ -1,6 +1,4 @@
-black_destroy = class({})
-
-
+black_destroy = black_destroy or class({})
 
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -10,9 +8,7 @@ function black_destroy:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 	local point = self:GetCursorPosition() + (caster:GetForwardVector() * 1)
-
 	
-
 	-- load data
 	local projectile_name = "particles/aksel_tornado.vpcf"
 	local projectile_distance = self:GetSpecialValueFor( "dragon_slave_distance" )
@@ -31,7 +27,7 @@ function black_destroy:OnSpellStart()
 		Ability = self,
 
 		bHasFrontalCone		= false,
-									bReplaceExisting	= false,
+		bReplaceExisting	= false,
 	    bDeleteOnHit = false,
 	    
 	    iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
@@ -48,9 +44,10 @@ function black_destroy:OnSpellStart()
 		vVelocity			= Vector(direction.x,direction.y,0) * projectile_speed,
 		bProvidesVision = false,
 	}
+	
 	local direction   = (point - caster:GetAbsOrigin()):Normalized()
 	info.vSpawnOrigin = caster:GetAbsOrigin() + direction * 125
-		info.vVelocity = Vector(direction.x,direction.y,0) * projectile_speed
+	info.vVelocity = Vector(direction.x,direction.y,0) * projectile_speed
 	ProjectileManager:CreateLinearProjectile(info)
 
 	-- Play effects
@@ -98,4 +95,3 @@ function black_destroy:PlayEffects( target, direction )
 	ParticleManager:SetParticleControlForward( effect_cast, 1, direction )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
 end
-

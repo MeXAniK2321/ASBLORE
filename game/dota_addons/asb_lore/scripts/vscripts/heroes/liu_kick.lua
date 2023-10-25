@@ -1,6 +1,6 @@
 LinkLuaModifier("modifier_liu_kick", "heroes/liu_kick", LUA_MODIFIER_MOTION_HORIZONTAL)
 
-liu_kick = class({})
+liu_kick = liu_kick or class({})
 
 function liu_kick:IsStealable() return true end
 function liu_kick:IsHiddenWhenStolen() return false end
@@ -12,27 +12,21 @@ function liu_kick:OnSpellStart()
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()
     local damage = self:GetSpecialValueFor("damage")
-    if target:TriggerSpellAbsorb(self) then
+    
+	if target:TriggerSpellAbsorb(self) then
         self.TriggerSpellAbsorb = true
-        
         caster:Interrupt()
-        
         return nil
     end
-
-   
-    
-																	
-caster:AddNewModifier(caster, self, "modifier_liu_kick", {damage = damage})
+	
+	caster:AddNewModifier(caster, self, "modifier_liu_kick", {damage = damage})
     EmitSoundOn("miku.3_"..RandomInt(1, 3), self:GetCaster())
-
-    
-        end
+end
    
 
 
 ---------------------------------------------------------------------------------------------------------------------
-modifier_liu_kick = class({})
+modifier_liu_kick = modifier_liu_kick or class({})
 function modifier_liu_kick:IsHidden() return true end
 function modifier_liu_kick:IsDebuff() return false end
 function modifier_liu_kick:IsPurgable() return false end
@@ -65,12 +59,9 @@ function modifier_liu_kick:OnCreated(hTable)
 
     if IsServer() then
         self.target = self.ability:GetCursorTarget()
-        
         self.damage = hTable.damage
         self.speed = self.ability:GetSpecialValueFor("speed")
-
         self.range_knockback = self.ability:GetSpecialValueFor("range_knockback")
-
         self.latch_offset = 150
 
 
@@ -85,8 +76,6 @@ end
 function modifier_liu_kick:OnDestroy()
     if IsServer() then
         self.parent:InterruptMotionControllers(true)
-
-        
     end
 end
 function modifier_liu_kick:UpdateHorizontalMotion(me, dt)
@@ -128,7 +117,10 @@ function modifier_liu_kick:PlayEffects()
 
                     ParticleManager:ReleaseParticleIndex(beam_fx)]]
 
-    local hit_fx =  ParticleManager:CreateParticle("particles/miku_3_exp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+    local particle_name = not IsASBPatreon(self.parent)
+	                      and "particles/miku_3_exp.vpcf"
+						  or "particles/miku_3_exp_kizuna_ai.vpcf"
+	local hit_fx =  ParticleManager:CreateParticle(particle_name, PATTACH_ABSORIGIN_FOLLOW, self.parent)
                     ParticleManager:SetParticleControlEnt(  hit_fx, 
                                                             0, 
                                                             self.target, 

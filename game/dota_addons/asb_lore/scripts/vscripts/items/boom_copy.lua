@@ -2,7 +2,7 @@ LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_M
 LinkLuaModifier("modifier_item_anime_boombox_drop", "items/item_anime_boombox", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_anime_boombox_stop", "items/item_anime_boombox", LUA_MODIFIER_MOTION_NONE)
 
-item_anime_boombox = class({})
+item_anime_boombox = item_anime_boombox or class({})
 
 function item_anime_boombox:IsStealable() return true end
 function item_anime_boombox:IsHiddenWhenStolen() return false end

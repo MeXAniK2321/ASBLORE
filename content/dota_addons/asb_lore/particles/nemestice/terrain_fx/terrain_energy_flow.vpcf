@@ -1,0 +1,49 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf35:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 11
+	m_BoundingBoxMin = [ -10000.0, -10000.0, -100000.0 ]
+	m_BoundingBoxMax = [ 100000.0, 10000.0, 10000.0 ]
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = [  ]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_nCP1 = 3
+			m_vecCP1Pos = [ 0.0, 0.0, 0.0 ]
+		},
+		{
+			_class = "C_OP_SetCPOrientationToPointAtCP"
+			m_nOutputCP = 3
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_rope.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_elec.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_ember.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_scrolling_trail.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_scrolling.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/terrain_fx/terrain_energy_flow_glow.vpcf"
+		},
+	]
+}

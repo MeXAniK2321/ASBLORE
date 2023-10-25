@@ -1,67 +1,56 @@
-modifier_pantsushot = class({})
+modifier_pantsushot = modifier_pantsushot or class({})
 
 --------------------------------------------------------------------------------
 -- Classifications
-function modifier_pantsushot:IsHidden()
-	-- actual true
-	return false
-end
-
-function modifier_pantsushot:IsPurgable()
-	return false
-end
-function modifier_pantsushot:AllowIllusionDuplicate()
- return false 
- end
-
+function modifier_pantsushot:IsHidden() return false end
+function modifier_pantsushot:IsPurgable() return false end
+function modifier_pantsushot:AllowIllusionDuplicate() return false end
 --------------------------------------------------------------------------------
 -- Initializations
 function modifier_pantsushot:OnCreated( kv )
 	-- references
+	self.caster = self:GetCaster()
+	self.parent = self:GetParent()
+	self.ability = self:GetAbility()
+	
 	self.crit_chance = self:GetAbility():GetSpecialValueFor( "crit_chance" )
 	self.crit_bonus = self:GetAbility():GetSpecialValueFor( "crit_bonus" )
+	self.cooldown = self:GetAbility():GetSpecialValueFor( "cooldown" )
 end
-
 function modifier_pantsushot:OnRefresh( kv )
-	-- references
-	self.crit_chance = self:GetAbility():GetSpecialValueFor( "crit_chance" )
-	self.crit_bonus = self:GetAbility():GetSpecialValueFor( "crit_bonus" )
+    self:OnCreated( kv )
 end
-
 function modifier_pantsushot:OnDestroy( kv )
-
 end
-
 --------------------------------------------------------------------------------
 -- Modifier Effects
 function modifier_pantsushot:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
-		MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
-		MODIFIER_EVENT_ON_ATTACK_LANDED,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
-	}
+		              MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+		              MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
+		              MODIFIER_EVENT_ON_ATTACK_LANDED,
+		              MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+                      MODIFIER_EVENT_ON_TAKEDAMAGE,
+	              }
 
 	return funcs
 end
-
 function modifier_pantsushot:GetModifierBaseAttackTimeConstant()
 	return 1.7
 end
 function modifier_pantsushot:GetModifierPreAttack_CriticalStrike( params )
-	if IsServer() and (not self:GetParent():PassivesDisabled()) then
-	   if self:GetAbility():IsFullyCastable() then
-		if self:RollChance( self.crit_chance ) and ( not self:GetParent():IsIllusion() ) then
-			self.record = params.record
-			local target = params.target
-			self:GetAbility():StartCooldown(self:GetAbility():GetSpecialValueFor( "cooldown" ))
-			params.target:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_generic_stunned_lua", {duration = 0.3})
-			return self.crit_bonus
-		end
-	end
+	if IsServer() and (not self.parent:PassivesDisabled()) then
+	    if self.ability:IsFullyCastable() then
+		    if self:RollChance( self.crit_chance ) and ( not self.parent:IsIllusion() ) then
+			    self.record = params.record
+			    self.ability:StartCooldown(self.cooldown)
+			    params.target:AddNewModifier(self.caster, self.ability, "modifier_generic_stunned_lua", {duration = 0.3})
+			
+			    return self.crit_bonus
+		   end
+	    end
+    end
 end
-end
-
 function modifier_pantsushot:GetModifierProcAttack_Feedback( params )
 	if IsServer() then
 		if self.record then
@@ -70,6 +59,16 @@ function modifier_pantsushot:GetModifierProcAttack_Feedback( params )
 		end
 	end
 end
+function modifier_pantsushot:OnTakeDamage(keys)
+	if IsServer() and IsASBPatreon(self.parent) then
+       if keys.unit == self.parent and keys.attacker ~= self.parent and keys.inflictor ~= self.ability then 
+	     local Emit = self:RollChance(25) 
+		       and EmitSoundOn("miku.kizuna_ai.3_"..RandomInt(2, 4), self.parent)
+			   or nil
+	   end
+    end
+end
+
 --------------------------------------------------------------------------------
 -- Helper
 function modifier_pantsushot:RollChance( chance )

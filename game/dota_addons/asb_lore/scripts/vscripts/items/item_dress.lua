@@ -6,6 +6,7 @@ item_dress = class({})
 function item_dress:GetIntrinsicModifierName()
     return "modifier_item_dress"
 end
+function item_dress:OnSpellStart()
     local caster = self:GetCaster()
     local particle = "particles/items2_fx/pipe_of_insight_launch.vpcf"
 	self.duration = self:GetSpecialValueFor("barrier_duration") or 20

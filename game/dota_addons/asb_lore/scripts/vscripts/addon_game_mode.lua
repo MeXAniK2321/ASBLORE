@@ -9,6 +9,8 @@ _G.CurrentMusicUltima = {}
 _G.SoundCheck = {}
 _G.ToumaCombo = 0
 _G.ToumaGenderCombo = 0
+_G.LoreStartWithUlts = true
+_G.LoreStartUltsCD = 400
 ---------------------------------------------------------------------------
 -- COverthrowGameMode class
 ---------------------------------------------------------------------------
@@ -27,6 +29,7 @@ require("illusion")
 require( "events" )
 require('internal/util')
 require('internal/gold_filter')
+require("internal/custom_func")
 require( "items" )
 require( "utility_functions" )
 require("playertables")
@@ -43,6 +46,9 @@ require('libraries/projectiles')
 require("modifiers/player")
 require("util/tempTable")
 require("anime_modifiers_server_client")
+
+--require('libraries/ai_behaviours')
+--require('ai/core/ai_core')
 
 ---------------------------------------------------------------------------
 -- Precache
@@ -136,7 +142,7 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/ryougisounds.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/hero_nanaya.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/hero_muramasa.vsndevts", context )
-                PrecacheResource( "soundfile", "soundevents/ichigosounds.vsndevts", context )
+        PrecacheResource( "soundfile", "soundevents/ichigosounds.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/keyaru_music.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/touma.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/tohka.vsndevts", context )
@@ -173,6 +179,8 @@ function Precache( context )
         PrecacheResource( "soundfile", "soundevents/anime_special.vsndevts", context )
 		-- Temporarily Here
 		PrecacheResource( "soundfile", "soundevents/heroes/gogeta.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
+	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
 end
 
@@ -271,9 +279,9 @@ function COverthrowGameMode:InitGameMode()
 	    GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(60)
 		GameRules:SetCustomGameBansPerTeam(0)
-			self.m_GoldRadiusMin = 250
+		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 25
+		self.m_GoldDropPercent = 15
 		elseif GetMapName() == "balance_duo" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -285,7 +293,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_3, 2 )
 			self.m_GoldRadiusMin = 400
 		self.m_GoldRadiusMax = 700
-		self.m_GoldDropPercent = 25
+		self.m_GoldDropPercent = 15
         elseif GetMapName() == "birzhamemov_5v5" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -294,7 +302,7 @@ function COverthrowGameMode:InitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
 		self.m_GoldRadiusMin = 100
 		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 30
+		self.m_GoldDropPercent = 20
 		self.effectradius = 1400
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
@@ -326,7 +334,7 @@ function COverthrowGameMode:InitGameMode()
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 25
+		self.m_GoldDropPercent = 15
 	end
 	
 

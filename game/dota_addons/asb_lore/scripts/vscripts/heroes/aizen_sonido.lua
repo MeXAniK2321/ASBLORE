@@ -1,4 +1,4 @@
-aizen_sonido = class({})
+aizen_sonido = aizen_sonido or class({})
 
 --------------------------------------------------------------------------------
 -- Ability Start

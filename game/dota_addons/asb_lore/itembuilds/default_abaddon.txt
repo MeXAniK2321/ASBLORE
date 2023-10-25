@@ -46,6 +46,7 @@
 		{			      
                         
                          "item"      "item_abyss_horn"
+						 "item"      "item_meteor_hammer"
                                             
 
 		}

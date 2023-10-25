@@ -80,7 +80,9 @@ function chibi_hit:Hit( target, dragonform )
 
 	-- Play effects
 	self:PlayEffects( target, dragonform )
-	local sound_cast = "miku.5_5"
+	local sound_cast = not IsASBPatreon(caster) 
+	                   and "miku.5_5"
+					   or "miku.kizuna_ai.1"
 	EmitSoundOn( sound_cast, target )
 end
 

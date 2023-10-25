@@ -2,11 +2,10 @@ LinkLuaModifier("modifier_accel_wings", "heroes/accel_wings", LUA_MODIFIER_MOTIO
 LinkLuaModifier("modifier_item_anime_boombox", "items/item_anime_boombox", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_star_tier1", "modifiers/modifier_star_tier1", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_star_tier2", "modifiers/modifier_star_tier2", LUA_MODIFIER_MOTION_NONE)
-accel_wings = class({})
+accel_wings = accel_wings or class({})
 
 function accel_wings:IsStealable() return true end
 function accel_wings:IsHiddenWhenStolen() return false end
-
 function accel_wings:OnUpgrade()
     local ability = self:GetCaster():FindAbilityByName("black_destroy")
     if ability and ability:GetLevel() < self:GetLevel() then
@@ -22,14 +21,12 @@ function accel_wings:OnSpellStart()
 
     caster:AddNewModifier(caster, self, "modifier_accel_wings", {duration = fixed_duration})
 	caster:AddNewModifier(caster, self, "modifier_star_tier2", {duration = fixed_duration})
-	
-
     self:EndCooldown()
 
     StopSoundOn("Zenitsu.Hear.Upgrade.Cast.1", caster)
 end
 ---------------------------------------------------------------------------------------------------------------------
-modifier_accel_wings = class({})
+modifier_accel_wings = modifier_accel_wings or class({})
 function modifier_accel_wings:IsHidden() return false end
 function modifier_accel_wings:IsDebuff() return true end
 function modifier_accel_wings:IsPurgable() return false end
@@ -38,7 +35,7 @@ function modifier_accel_wings:RemoveOnDeath() return true end
 function modifier_accel_wings:AllowIllusionDuplicate() return true end
 function modifier_accel_wings:CheckState()
     local state = { 
-                }
+                  }
 
     if IsServer() and self.parent and not self.parent:IsNull() and self.parent:GetMana() <= self.awake_mana + 10 then
         local awake = self.parent:FindAbilityByName("accel_wings_awake")
@@ -57,11 +54,10 @@ function modifier_accel_wings:DeclareFunctions()
 	                MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
                     MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_UNIQUE,
                     MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
-                    MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS, }
+                    MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS, 
+				 }
     return func
 end
-
-
 function modifier_accel_wings:GetModifierMoveSpeedBonus_Constant()
     return 600
 end
@@ -74,7 +70,6 @@ end
 function modifier_accel_wings:GetModifierPhysicalArmorBonus()
     return 0
 end
-
 function modifier_accel_wings:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
@@ -157,7 +152,7 @@ function modifier_accel_wings:OnDestroy()
 end
 ---------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
-accel_wings_awake = class({})
+accel_wings_awake = accel_wings_awake or class({})
 
 function accel_wings_awake:IsStealable() return true end
 function accel_wings_awake:IsHiddenWhenStolen() return false end
@@ -167,19 +162,14 @@ function accel_wings_awake:OnUpgrade()
         ability:SetLevel(self:GetLevel())
     end
 end
-
 function accel_wings_awake:OnSpellStart()
     local caster = self:GetCaster()
 
     if caster:FindModifierByNameAndCaster("modifier_accel_wings", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_accel_wings", caster)
-
-        --return nil
     end
 
     caster:Purge(true, true, false, true, true)
-
-    
 
     local ability = caster:FindAbilityByName("accel_wings")
     if ability and ability:IsTrained() and ability:GetCooldown(-1) > 0 then
@@ -219,5 +209,3 @@ function SetZenitsuAwakeLongCd(parent, ability)
         accel_wings_awake.accel_wings_awake_skills_used = true
     end
 end
-
-
