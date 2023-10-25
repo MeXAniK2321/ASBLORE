@@ -679,125 +679,864 @@
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/devils_lyre/unknown_truth/8.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/10.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 205.464005
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_2 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/7.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 238.332977
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_3 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/devils_lyre/unknown_truth/6.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/1.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 122.185959
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_4 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/devils_lyre/unknown_truth/9.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/5.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 139.877014
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_5 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/item_anime_boombox/padoru/padoru_theme_2.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/2.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 166.022675
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_6 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/item_anime_boombox/padoru/padoru_theme_3.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 116.006897
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_7 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/item_anime_boombox/padoru/padoru_theme_1.vsnd",
-			"sounds/items/devils_lyre/unknown_truth/4.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
 		]
-		volume = "1.000000"
+		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
 		event_type = "1.000000"
-		vsnd_duration = 144.219131
+		vsnd_duration = 100.000000
 	}
 	new.year_theme_8 = 
 	{
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/items/item_anime_boombox/padoru/padoru_theme_4.vsnd",
+			"sounds/BoomBox/ayaya_jojo.vsnd",
+			"sounds/BoomBox/butterfly.vsnd",
+			"sounds/BoomBox/chainsaw_man.vsnd",
+			"sounds/BoomBox/gigachad_theme.vsnd",
+			"sounds/BoomBox/gojo_hollow_purple.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/moonlight.vsnd",
+			"sounds/BoomBox/neco_stuff.vsnd",
+			"sounds/BoomBox/poppy.vsnd",
+			"sounds/BoomBox/psy_gentleman.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	beer.monster_energy = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/items/beer_pivo.vsnd",
+		]
+		volume = "5.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	gaben.1 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/hand_of_gaben/advanced_scam.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"
 		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	gaben.2 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/hand_of_gaben/learning_from_customers.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	gaben.3 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/hand_of_gaben/piracy_service_problem.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	gaben.4 = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/hand_of_gaben/goodness.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	gay.gay = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/gay/gay.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.048980
+	}
+	jetstream.1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/know_for_real.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/blood_shed.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/nods_his_head.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/forgotten_my_name.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.5 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/dragons_back.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.6 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/realizing.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.7 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/know_for_real_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.8 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/blood_shed_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.9 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/nods_his_head_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.10 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/forgotten_my_name_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.11 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/dragons_back_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.12 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/realizing_neco.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.swing1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/swing1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.swing2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/swing2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.swing3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/swing3.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.swing4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/swing4.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.crit1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/crit1.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	jetstream.crit2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/jetstream_muramasa/crit2.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.slave = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/slave_theme.vsnd",
+		]
+		volume = "3.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
 		event_type = "1.000000"
 		vsnd_duration = 135.952835
+	}
+	chibi.amaterasu = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/amaterasu.vsnd",
+		]
+		volume = "5.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.balloon1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/balloon_inflate.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.balloon2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/balloon_pop.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.darksouls = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/dark_souls.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.spotted = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/enemy_spotted.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.holyshit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/holy_shit.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.icecream = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/ice_cream_so_good.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.trash = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/instant_trash.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.jojo_omg = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/jojo_omg.vsnd",
+		]
+		volume = "3.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.godzilla = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/run_its_godzilla.vsnd",
+		]
+		volume_min = "1.000000"
+		volume_max = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.csgo_awp = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/csgo_awp.vsnd",
+		]
+		volume = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.ayaya = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/ayaya.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.activate = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_activate.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.stack1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.stack2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.stack3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.immortal = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_immortality.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		vsnd_duration = 1.160998
+	}
+	chibi.surprised = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_surprised.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.sad = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/marci_sad.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	chibi.golden_legendary = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/chibi_marci/golden_legendary.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
 	}
 }

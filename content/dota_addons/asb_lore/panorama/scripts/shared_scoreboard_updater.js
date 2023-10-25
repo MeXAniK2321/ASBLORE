@@ -278,7 +278,11 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 				}
 				else if (playerInfo.player_selected_hero == "npc_dota_hero_skywrath_mage")
 				{
-			 		playerPortrait.SetImage( "file://{images}/heroes/ae86.png" );
+			 		playerPortrait.SetImage( "file://{images}/heroes/ae86.png" );	
+				}
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_earthshaker")
+				{
+			 		playerPortrait.SetImage( "file://{images}/heroes/gogeta.png" );
 				}
 				else
 				{

@@ -304,6 +304,18 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/muramasa.png" );
 		}
+		else if (sHeroName == "npc_dota_hero_brewmaster")
+		{
+			pPanel.SetImage( "file://{images}/heroes/nanaya.png" );
+		}
+		else if (sHeroName == "npc_dota_hero_skeleton_king")
+		{
+			pPanel.SetImage( "file://{images}/heroes/shu.png" );
+		}
+		else if (sHeroName == "npc_dota_hero_earthshaker")
+		{
+			pPanel.SetImage( "file://{images}/heroes/gogeta.png" );
+		}
 		else
 		{
 			pPanel.SetImage( "file://{images}/custom_game/unassigned.png" );
