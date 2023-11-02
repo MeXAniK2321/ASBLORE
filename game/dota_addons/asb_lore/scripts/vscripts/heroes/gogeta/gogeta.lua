@@ -5,6 +5,7 @@ LinkLuaModifier("modifier_gogeta_COMBO_DFE","heroes/gogeta/gogeta.lua", LUA_MODI
 LinkLuaModifier("modifier_disable_actions","heroes/gogeta/gogeta.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_gogeta_stunned","heroes/gogeta/gogeta.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_marked","heroes/gogeta/gogeta.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier( "modifier_generic_burn", "modifiers/modifier_generic_burn.lua", LUA_MODIFIER_MOTION_NONE )
 
 Gogeta_Air_Time_Ready = 0
 
@@ -18,6 +19,8 @@ function gogeta_track_combos:RemoveOnDeath() return false end
 function gogeta_track_combos:DeclareFunctions()
     return {
                --MODIFIER_EVENT_ON_ABILITY_EXECUTED,
+			   
+			   
 			   MODIFIER_EVENT_ON_ABILITY_FULLY_CAST,
            }
 end
@@ -42,60 +45,58 @@ function gogeta_track_combos:OnAbilityFullyCast(keys)
     local ability = keys.ability
     local Combo_Timer = self.Combo
     
-	if Combo_Timer then
-	  Timers:RemoveTimer(Combo_Timer)
-	end
+	if Combo_Timer then Timers:RemoveTimer(Combo_Timer) end
     
 	-- Ability Q casted
 	if ability:GetName() == "gogeta_kamehameha" then
-      --self:SetStackCount(0)
-	  --print("It works")
+        --self:SetStackCount(0)
+	    --print("It works")
     end
 	
 	-- Ability E casted
 	if ability:GetName() == "gogeta_kick_combo" then
-      self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_EQ,{duration = 4.0})
-	  self:SetStackCount(self:GetStackCount() + 2)
-	  --print("It works")
+        self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_EQ,{duration = 4.0})
+	    self:SetStackCount(self:GetStackCount() + 2)
+	    --print("It works")
 	end
 	
 	-- Ability D casted
 	if ability:GetName() == "gogeta_backhand" then
-      self:SetStackCount(self:GetStackCount() + 2)
-      --print("It works")
+        self:SetStackCount(self:GetStackCount() + 2)
+        --print("It works")
     end
 	
 	-- Ability F casted
 	if ability:GetName() == "gogeta_upper_kick" then
-      self:SetStackCount(self:GetStackCount() + 3)
-	  --print("It works")
+        self:SetStackCount(self:GetStackCount() + 3)
+        --print("It works")
     end
 	
 	-- Ability D swapped casted
 	if ability:GetName() == "gogeta_downward_punch" then
-      self.caster:RemoveModifierByName(self.hComboTable.COMBO_DFD)
-      self.caster:RemoveModifierByName(self.hComboTable.COMBO_DFE)
-      self:SetStackCount(0)
-	  --print("It works")
+        self.caster:RemoveModifierByName(self.hComboTable.COMBO_DFD)
+        self.caster:RemoveModifierByName(self.hComboTable.COMBO_DFE)
+        self:SetStackCount(0)
+        --print("It works")
 	end
 	
        -- Ability E and D have been casted, change functionality of Ability Q
        -- Give Ability Q different behavior, change the Kamehameha's properties and animation
 	   if self:GetStackCount() == 4 then
 	   
-         --self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_EWQ_or_WEQ,{duration = 3.0})
-		 --self:SetStackCount(0)
+           --self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_EWQ_or_WEQ,{duration = 3.0})
+		   --self:SetStackCount(0)
 	   -- Ability D and F have been casted, change functionality of ability D
 	   -- Swap abiltiy D with a different ability
        elseif self:GetStackCount() >= 5 and self:GetStackCount() <= 7 and Gogeta_Air_Time_Ready > 0 then
-	     self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_DFD,{duration = 3.0})
-	     self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_DFE,{duration = 3.0})
-		 self:SetStackCount(0)
+	       self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_DFD,{duration = 3.0})
+	       self.caster:AddNewModifier(self.caster, self, self.hComboTable.COMBO_DFE,{duration = 3.0})
+		   self:SetStackCount(0)
        end
 	   
 	   if self:GetStackCount() > 0 then
-	     self.Combo = Timers:CreateTimer(3.5,function() 
-		 self:SetStackCount(0)
+	       self.Combo = Timers:CreateTimer(3.5,function() 
+		   self:SetStackCount(0)
 		 end)
 	   end
     
@@ -149,16 +150,8 @@ function modifier_gogeta_stunned:CheckState()
                   }
     return state
 end
-function modifier_gogeta_stunned:OnCreated(keys)
-    self.effect = keys.effect or 0
-end
-function modifier_gogeta_stunned:OnRefresh(keys)
-    self:OnCreated(keys)
-end
 function modifier_gogeta_stunned:GetEffectName()
-	return self.effect
-	       and "particles/gogeta_punch_trail.vpcf"
-		   or nil
+	return "particles/gogeta_punch_trail.vpcf"
 end
 function modifier_gogeta_stunned:GetEffectAttachType()
 	return PATTACH_ABSORIGIN_FOLLOW
@@ -185,25 +178,13 @@ function modifier_gogeta_COMBO_DFD:OnCreated(hTable)
                             ["gogeta_backhand"] = "gogeta_downward_punch",
                         }
 
-    if IsServer() then
-	  for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, false, true)
-        end
-      end
-    end
+    SwapAbilitiesClean(self.skills_table, self.parent, false, true)
 end
 function modifier_gogeta_COMBO_DFD:OnRefresh(hTable)
     self:OnCreated(hTable)
 end
 function modifier_gogeta_COMBO_DFD:OnDestroy()
-    if IsServer() then
-      for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, true, false)
-        end
-      end
-    end
+    SwapAbilitiesClean(self.skills_table, self.parent, true, false)
 end
 ---------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
@@ -220,25 +201,13 @@ function modifier_gogeta_COMBO_DFE:OnCreated(hTable)
                             ["gogeta_kick_combo"] = "gogeta_kick_combo_air_finisher",
                         }
 
-    if IsServer() then
-	  for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, false, true)
-        end
-      end
-    end
+    SwapAbilitiesClean(self.skills_table, self.parent, false, true)
 end
 function modifier_gogeta_COMBO_DFE:OnRefresh(hTable)
     self:OnCreated(hTable)
 end
 function modifier_gogeta_COMBO_DFE:OnDestroy()
-    if IsServer() then
-      for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, true, false)
-        end
-      end
-    end
+    SwapAbilitiesClean(self.skills_table, self.parent, true, false)
 end
 
 
@@ -289,6 +258,7 @@ function gogeta_kamehameha:OnSpellStart()
     local fDamage = self:GetSpecialValueFor("damage") * (bAnimation and 0.1 or 0.05)
 	local hModifierName = bAnimation and "modifier_gogeta_q_pause" or "gogeta_track_combos"
 	local fGetDuration = self:GetSpecialValueFor("duration")
+	local bBigBang = hCaster:HasTalent("special_bonus_gogeta_25_alt")
 	
 	-- Values
 	local timer_delay = bAnimation and fGetDuration or fGetDuration - 1.4
@@ -296,8 +266,12 @@ function gogeta_kamehameha:OnSpellStart()
 	local timer_duration = bAnimation and fGetDuration or fGetDuration - 0.5
     local self_distance = bAnimation and 20 or 40  -- Distance to push the enemy in units
     local self_speed = bAnimation and 100 or 125    -- Speed at which the enemy is pushed in units per second
+    local fBigBangMult = 1.4
+	local fBigBangTrue = 1.0
+	local fIterations = fBigBangTrue / timer_stop
+	local fBigBangReduce = (fBigBangMult - fBigBangTrue) / fIterations
     
-	-- Cringe Particle
+	-- Particles
 	local start_loc = hCaster:GetAbsOrigin() + hCaster:GetForwardVector() * 32
     local cero_particle = bAnimation
 	                      and "particles/gogeta_kamehameha_test.vpcf"
@@ -306,15 +280,25 @@ function gogeta_kamehameha:OnSpellStart()
 	local attach_point = hCaster:ScriptLookupAttachment("attach_attack1")
     local distance = self:GetCastRange(hCaster:GetAbsOrigin(),hCaster) + hCaster:GetCastRangeBonus()
 	local endcapPos = hCaster:GetAbsOrigin() + hCaster:GetForwardVector() * distance
+	local ball_particle = (bBigBang and hCaster:HasModifier("modifier_gogeta_ultimate_form"))
+	                      and "particles/gogeta_kamehameha_big_ball_bigbang.vpcf"
+						  or "particles/gogeta_kamehameha_big_ball.vpcf"
+	cero_particle = (bBigBang and hCaster:HasModifier("modifier_gogeta_ultimate_form"))
+	                and "particles/gogeta_kamehameha_bigbang.vpcf"
+					or cero_particle
 	
 	-- Begin animation lock
 	if bAnimation then
-	  hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
-      hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_q_pause",{duration = 4.0})
-      EmitSoundOn("Gogeta.q1", hCaster)
+	    hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
+        hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_q_pause",{duration = 4.0})
+	    if bBigBang and hCaster:HasModifier("modifier_gogeta_ultimate_form") then
+	        EmitSoundOn("Gogeta.bigbang", hCaster)
+        else 
+	        EmitSoundOn("Gogeta.q1", hCaster)
+	    end
 	else
-      hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
-      hCaster:AddNewModifier(hCaster, self, "modifier_disable_actions",{duration = 0.8})
+        hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
+        hCaster:AddNewModifier(hCaster, self, "modifier_disable_actions",{duration = 0.8})
 	end
 	
 	-- Particles
@@ -325,13 +309,11 @@ function gogeta_kamehameha:OnSpellStart()
 		 if hCaster:IsStunned() or not hCaster:IsAlive() or not hCaster:HasModifier(hModifierName) then return end
 		
 	     -- Start Animation
-		 if bAnimation then
-		   hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1_END)
-		 end
+		 if bAnimation then hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1_END) end
 		
 		 -- Create Particle Effects
 		 pfx = ParticleManager:CreateParticle(cero_particle, PATTACH_WORLDORIGIN, nil )
-		 pfx_ball = ParticleManager:CreateParticle("particles/gogeta_kamehameha_big_ball.vpcf", PATTACH_WORLDORIGIN, nil )
+		 pfx_ball = ParticleManager:CreateParticle(ball_particle, PATTACH_WORLDORIGIN, nil )
 		 pfx_air = ParticleManager:CreateParticle("particles/gogeta_kamehameha_ground_air.vpcf", PATTACH_WORLDORIGIN, nil )
 	     pfx_end = ParticleManager:CreateParticle(cero_particle_end, PATTACH_WORLDORIGIN, nil )
 		 --pfx = ParticleManager:CreateParticle(cero_particle, PATTACH_ABSORIGIN_FOLLOW, hCaster )
@@ -348,48 +330,59 @@ function gogeta_kamehameha:OnSpellStart()
 	     ParticleManager:SetParticleControl( pfx_end, 3, endcapPos ) --IN ir EndCap your effect
 		 
 		 -- Sound Effects
-         EmitSoundOn("Gogeta.kamehameha", hCaster)
+        EmitSoundOn("Gogeta.kamehameha", hCaster)
 		
 		end)
 	
 	-- Set a timer for finding enemies in a straight line
 	Timers:CreateTimer(timer_delay, function()
-	    if timer_stop >= timer_duration or hCaster:IsStunned() or not hCaster:IsAlive() or not hCaster:HasModifier(hModifierName)  then
-		  if IsNotNull(pfx) then 
-		   ParticleManager:DestroyParticle( pfx, true )
-		   ParticleManager:ReleaseParticleIndex( pfx )
-		  end
-		  if IsNotNull(pfx_ball) then 
-		   ParticleManager:DestroyParticle( pfx_ball, true )
-		   ParticleManager:ReleaseParticleIndex( pfx_ball )
-		  end
-		  if IsNotNull(pfx_air) then 
-		   ParticleManager:DestroyParticle( pfx_air, true )
-		   ParticleManager:ReleaseParticleIndex( pfx_air )
-		  end
-		  if IsNotNull(pfx_end) then
-		   ParticleManager:DestroyParticle( pfx_end, true )
-		   ParticleManager:ReleaseParticleIndex( pfx_end )
-		  end
-		  if IsServer() then
-		    hCaster:RemoveModifierByName("modifier_gogeta_q_pause")
-			hCaster:StopSound("Gogeta.q1")
-			hCaster:StopSound("Gogeta.kamehameha")
-            hCaster:RemoveGesture(ACT_DOTA_CAST_ABILITY_1)
-            hCaster:RemoveGesture(ACT_DOTA_CAST_ABILITY_1_END)
-		  end
-		 return
+	    if timer_stop >= timer_duration or hCaster:IsStunned() or not hCaster:IsAlive() or not hCaster:HasModifier(hModifierName) then
+		    if IsNotNull(pfx) then 
+		        ParticleManager:DestroyParticle( pfx, true )
+		        ParticleManager:ReleaseParticleIndex( pfx )
+		    end
+		    if IsNotNull(pfx_ball) then 
+		        ParticleManager:DestroyParticle( pfx_ball, true )
+		        ParticleManager:ReleaseParticleIndex( pfx_ball )
+		    end
+		    if IsNotNull(pfx_air) then 
+		        ParticleManager:DestroyParticle( pfx_air, true )
+		        ParticleManager:ReleaseParticleIndex( pfx_air )
+		    end
+		    if IsNotNull(pfx_end) then
+		        ParticleManager:DestroyParticle( pfx_end, true )
+		        ParticleManager:ReleaseParticleIndex( pfx_end )
+		    end
+		    if IsServer() then
+		        hCaster:RemoveModifierByName("modifier_gogeta_q_pause")
+			    hCaster:StopSound("Gogeta.q1")
+			    hCaster:StopSound("Gogeta.kamehameha")
+			    hCaster:StopSound("Gogeta.bigbang")
+                hCaster:RemoveGesture(ACT_DOTA_CAST_ABILITY_1)
+                hCaster:RemoveGesture(ACT_DOTA_CAST_ABILITY_1_END)
+		    end
+		    return
 		end
+		
+		-- BIG BANG KAMEHAMEHA width scaling
+		local iBigBangWidth = math.floor(self:GetSpecialValueFor("width") * fBigBangMult)
+		local iDetermineWidth = bBigBang
+		                        and iBigBangWidth
+							    or self:GetSpecialValueFor("width")		   
 		
 	    -- Find enemies in a line
 		local enemies = FindUnitsInLine(hCaster:GetTeamNumber(),
 										start_loc,
 										endcapPos,
 										nil,
-										self:GetSpecialValueFor("width"),
+										iDetermineWidth,
 										self:GetAbilityTargetTeam(),
 										self:GetAbilityTargetType(),
 										self:GetAbilityTargetFlags() )
+										
+		fBigBangMult = fBigBangMult <= fBigBangTrue
+		               and fBigBangTrue
+		               or fBigBangMult - fBigBangReduce
 							
 ---------------------------------------------------------------------------------------------------		
 		for _,enemy in pairs(enemies) do
@@ -399,24 +392,33 @@ function gogeta_kamehameha:OnSpellStart()
 									damage_type = self:GetAbilityDamageType(),
 									ability = self }
 									
-			local direction = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()
-            local pushTarget = enemy:GetAbsOrigin() + direction * self_distance
-            local pushDuration = self_distance / self_speed						
+			local vDirection = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()
+            local vPushTarget = enemy:GetAbsOrigin() + vDirection * self_distance
+            local fPushDuration = self_distance / self_speed						
 
 			ApplyDamage(damage_table)
-            enemy:AddNewModifier(hCaster, self, "modifier_phased", { duration = pushDuration })
-            if hCaster:HasModifier("modifier_gogeta_powerup") or hCaster:HasModifier("modifier_gogeta_ultimate_form") then
-              enemy:AddNewModifier(hCaster, self, "modifier_generic_stunned_lua", { duration = pushDuration })
+            enemy:AddNewModifier(hCaster, self, "modifier_phased", { duration = fPushDuration })
+            
+			-- Stun enemies if Powered Up
+			if hCaster:HasModifier("modifier_gogeta_powerup") or hCaster:HasModifier("modifier_gogeta_ultimate_form") then
+                enemy:AddNewModifier(hCaster, self, "modifier_generic_stunned_lua", { duration = fPushDuration })
 			else
-			  enemy:AddNewModifier(hCaster, self, "modifier_generic_slow", { duration = pushDuration })
+			-- Slow Enemies in base
+			    enemy:AddNewModifier(hCaster, self, "modifier_generic_slow", { duration = fPushDuration })
 			end
-            enemy:SetAbsOrigin(pushTarget)		
+			-- Push Enemies
+            enemy:SetAbsOrigin(vPushTarget)		
+			
+			-- Apply burn with talent
+			if hCaster:HasTalent("special_bonus_gogeta_20") then
+                enemy:AddNewModifier(self:GetCaster(), self, "modifier_generic_burn", {duration = 2.0})
+			end
 		end
 		
 		-- Remove this timer after a certain set of time
 		if timer_stop < timer_duration then
-		 timer_stop = timer_stop + 0.1
-         return 0.1
+		    timer_stop = timer_stop + 0.1
+            return 0.1
 		end
 	end)
 end
@@ -488,7 +490,9 @@ function modifier_gogeta_powerup:DeclareFunctions()
 	return func
 end
 function modifier_gogeta_powerup:GetModifierSpellAmplify_Percentage()
-    return self:GetAbility():GetSpecialValueFor("spellamp")
+    return self:GetParent():HasTalent("special_bonus_gogeta_20_alt")
+	       and self:GetAbility():GetSpecialValueFor("spellamp") + 15
+		   or self:GetAbility():GetSpecialValueFor("spellamp")
 end
 function modifier_gogeta_powerup:OnCreated( kv )
 	if IsClient() then
@@ -523,15 +527,12 @@ function gogeta_kick_combo:GetOnUpgradeAbilities()
                     }
     return hTable
 end
-function gogeta_kick_combo:CastFilterResult()
-	local hCaster         = self:GetCaster()
-
-    return UF_SUCCESS
-end
 function gogeta_kick_combo:OnSpellStart()
 	local hCaster 	= self:GetCaster()
 	local hTarget   = self:GetCursorTarget()
 	local fDuration = 3.0
+	
+	if hTarget:HasModifier("modifier_knockback") then hTarget:RemoveModifierByName("modifier_knockback") end
 
 	hCaster:AddNewModifier(hCaster, self, "modifier_akame_headbump", {duration = fDuration, enemy_target = hTarget:GetEntityIndex()})
 	EmitSoundOn("Gogeta.e1", hCaster)
@@ -539,9 +540,7 @@ end
 function gogeta_kick_combo:OnChannelFinish()
 	local hCaster 	= self:GetCaster()
 	
-	if hCaster:HasModifier("modifier_akame_headbump") then
-	  hCaster:RemoveModifierByName("modifier_akame_headbump")
-	end
+	if hCaster:HasModifier("modifier_akame_headbump") then hCaster:RemoveModifierByName("modifier_akame_headbump") end
 end
 ---------------------------------------------------------------------------------------------------------------------
 LinkLuaModifier("modifier_akame_headbump", "heroes/gogeta/gogeta.lua", LUA_MODIFIER_MOTION_HORIZONTAL)
@@ -588,9 +587,6 @@ function modifier_akame_headbump:OnCreated(hTable)
         self.ability = self:GetAbility()
 
         self.CASTER_TEAM          = self.caster:GetTeamNumber()
-        self.ABILITY_TARGET_TEAM  = "DOTA_UNIT_TARGET_TEAM_ENEMY" 
-        self.ABILITY_TARGET_TYPE  = "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        self.ABILITY_TARGET_FLAGS = "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
         
         self.hMainModifier = self.parent:FindModifierByNameAndCaster("modifier_akame_headbump", self.parent)
 		self.hMainTarget = EntIndexToHScript(hTable.enemy_target)
@@ -660,19 +656,19 @@ function modifier_akame_headbump:OnIntervalThink()
         if IsNotNull(self.hMainTarget) then
     		local vParentLoc = self.parent:GetOrigin()
 			
-        local hDamageTable = {
-                                victim       = self.hMainTarget,
-                                attacker     = self.parent, 
-                                damage       = self.fAttacksDamage,
-                                damage_type  = DAMAGE_TYPE_MAGICAL,
-                                ability      = self.ability,
-                                --damage_flags = DOTA_DAMAGE_FLAG_BYPASSES_BLOCK
-                            }
+            local hDamageTable = {
+                                    victim       = self.hMainTarget,
+                                    attacker     = self.parent, 
+                                    damage       = self.fAttacksDamage,
+                                    damage_type  = DAMAGE_TYPE_MAGICAL,
+                                    ability      = self.ability,
+                                    --damage_flags = DOTA_DAMAGE_FLAG_BYPASSES_BLOCK
+                                }
 			
 			if self.Test >= 7 then
-		      self.hKnockBackTable.knockback_distance = 1100
-              self.hKnockBackTable.knockback_duration = 0.7
-			  self.hKnockBackTable.duration = 1.2
+		        self.hKnockBackTable.knockback_distance = 1100
+                self.hKnockBackTable.knockback_duration = 0.7
+			    self.hKnockBackTable.duration = 1.2
             end			
 			
             self.hKnockBackTable.center_x = vParentLoc.x
@@ -686,40 +682,40 @@ function modifier_akame_headbump:OnIntervalThink()
     		ApplyDamage(hDamageTable)
 			
 			if self.parent:HasModifier("modifier_gogeta_powerup") or self.parent:HasModifier("modifier_gogeta_ultimate_form") then
-              hDamageTable.damage = self.hMainTarget:GetMaxHealth() * 0.01
-              hDamageTable.damage_type = DAMAGE_TYPE_PURE
-	          hDamageTable.damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION
-              ApplyDamage(hDamageTable)
+                hDamageTable.damage = self.hMainTarget:GetMaxHealth() * 0.01
+                hDamageTable.damage_type = DAMAGE_TYPE_PURE
+	            hDamageTable.damage_flags = DOTA_DAMAGE_FLAG_NONE --DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION
+                ApplyDamage(hDamageTable)
 			end
 
             --self:SetStackCount(self:GetStackCount() + 1)
             if not self.AuraEffect then
-			  local vCurPos = self.parent:GetAbsOrigin()
-			  local vForwardVector = self.parent:GetForwardVector()
-              local vEnemyPos = self.hMainTarget:GetAbsOrigin() + vForwardVector * 230
-			  self.AuraEffect = (self.parent:HasModifier("modifier_gogeta_powerup") or self.parent:HasModifier("modifier_gogeta_ultimate_form"))
-			                    and ParticleManager:CreateParticle("particles/gogeta_hit_effect2.vpcf", PATTACH_WORLDORIGIN, nil)
-                                or ParticleManager:CreateParticle("particles/gogeta_hit_effect1.vpcf", PATTACH_WORLDORIGIN, nil)	
-              ParticleManager:SetParticleControl(self.AuraEffect, 0, vEnemyPos)
-			  ParticleManager:SetParticleControl(self.AuraEffect, 1, vCurPos)
-			  self.AuraEffect = nil
+			    local vCurPos = self.parent:GetAbsOrigin()
+			    local vForwardVector = self.parent:GetForwardVector()
+                local vEnemyPos = self.hMainTarget:GetAbsOrigin() + vForwardVector * 230
+			    self.AuraEffect = (self.parent:HasModifier("modifier_gogeta_powerup") or self.parent:HasModifier("modifier_gogeta_ultimate_form"))
+			                      and ParticleManager:CreateParticle("particles/gogeta_hit_effect2.vpcf", PATTACH_WORLDORIGIN, nil)
+                                  or ParticleManager:CreateParticle("particles/gogeta_hit_effect1.vpcf", PATTACH_WORLDORIGIN, nil)	
+                ParticleManager:SetParticleControl(self.AuraEffect, 0, vEnemyPos)
+			    ParticleManager:SetParticleControl(self.AuraEffect, 1, vCurPos)
+			    self.AuraEffect = nil
 		    end
 			
 			if self.Test2 > 3 then
-			  self.Test2 = RandomInt(3, 5)
+			    self.Test2 = RandomInt(3, 5)
 			end
 
             EmitSoundOn("Gogeta.hit"..self.Test2 - 1, self.hMainTarget)
 			
            if self.Test == 3 then
-		    if self.hMainTarget:HasModifier("modifier_knockback") then
-             self.hMainTarget:RemoveModifierByName("modifier_knockback")
-            end 
-			-- Trigger AddNewModifier and ApplyDamage twice on self.Test reaching 3
-			self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_knockback", self.hKnockBackTable, self.hMainTarget:IsOpposingTeam(self.CASTER_TEAM))
-			EmitSoundOn("Gogeta.hit"..self.Test2 + 1, self.hMainTarget)
-			ApplyDamage(hDamageTable)
-		   end	
+		       if self.hMainTarget:HasModifier("modifier_knockback") then
+                   self.hMainTarget:RemoveModifierByName("modifier_knockback")
+               end 
+		       -- Trigger AddNewModifier and ApplyDamage twice on self.Test reaching 3
+		       self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_knockback", self.hKnockBackTable, self.hMainTarget:IsOpposingTeam(self.CASTER_TEAM))
+		       EmitSoundOn("Gogeta.hit"..self.Test2 + 1, self.hMainTarget)
+		       ApplyDamage(hDamageTable)
+           end	
         end
 	end
 end
@@ -809,8 +805,8 @@ function modifier_gogeta_kick_combo_air_finisher_tp:OnCreated( kv )
 	for _,enemy in pairs(enemies) do
         -- Get enemy in the AIR
 	    if (enemy:HasModifier("modifier_gogeta_upper_kick_state") and enemy:HasModifier("modifier_marked")) or enemy:HasModifier("modifier_gogeta_stunned") then
-		  closestEnemy = enemy
-		  break
+		    closestEnemy = enemy
+		    break
 		end
     end
 	
@@ -901,9 +897,8 @@ function modifier_gogeta_kick_combo_air_finisher:OnCreated(hTable)
                    or EmitSoundOn("Gogeta.e3", self.parent)				   
 					
         local hAbility = self.parent:FindAbilityByName("gogeta_kick_combo_air_finisher")
-		if hAbility and not self.stage then
-		   hAbility:EndCooldown()
-		end
+		
+		if hAbility and not self.stage then hAbility:EndCooldown() end
 		
 		self.fKnockbackDistance = 270
         self.fKnockbackDuration = 0.2
@@ -928,22 +923,22 @@ function modifier_gogeta_kick_combo_air_finisher:OnCreated(hTable)
 		--self.parent:SetForwardVector(GetDirection(self.hMainTarget, self.parent))
 		
 		if self.hMainTarget:HasModifier("modifier_gogeta_upper_kick_state") or self.hMainTarget:HasModifier("modifier_marked") then
-		   self.hMainTarget:RemoveModifierByName("modifier_gogeta_upper_kick_state")
-		   self.hMainTarget:RemoveModifierByName("modifier_marked")
+		    self.hMainTarget:RemoveModifierByName("modifier_gogeta_upper_kick_state")
+		    self.hMainTarget:RemoveModifierByName("modifier_marked")
 		end
 		
         -- Check Abilities
 	    for i = 0, self.parent:GetAbilityCount() - 1 do
-		   local ability = self.parent:GetAbilityByIndex(i)
-		   if ability then
-		      -- Disable certain abilities
-		       local ability_name = ability:GetName()
-			   -- Make a table for the abilities maybe ?
-		       if ability_name == "gogeta_downward_punch" or ability_name == "gogeta_kick_combo_air_finisher" or ability_name == "gogeta_rainbow_orb" then
-			   else
-                  ability:SetActivated(false)
-			   end
-		   end
+		    local ability = self.parent:GetAbilityByIndex(i)
+		    if ability then
+		        -- Disable certain abilities
+		        local ability_name = ability:GetName()
+			    -- Make a table for the abilities maybe ?
+		        if ability_name == "gogeta_downward_punch" or ability_name == "gogeta_kick_combo_air_finisher" or ability_name == "gogeta_rainbow_orb" then
+			    else
+                ability:SetActivated(false)
+			    end
+		    end
 	    end
 
 		self:StartIntervalThink(self.fAttacksInterval)
@@ -981,67 +976,67 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateHorizontalMotion(me, dt)
 	--=================================================================================================--
 	
 	if not self.stage then
-	   -- First Stage
+	    -- First Stage
 
- 	   self.parent:SetOrigin(vNextPos)
- 	   self.hMainTarget:SetOrigin(vPushTarget)
- 	   self.parent:SetForwardVector(vDirection, true)
- 	   --self.parent:FaceTowards(self.hMainTarget:GetOrigin())
- 	   --FindClearSpaceForUnit(self.parent, self.hMainTarget:GetAbsOrigin(), true) -- Interrupts motion controller
+ 	    self.parent:SetOrigin(vNextPos)
+ 	    self.hMainTarget:SetOrigin(vPushTarget)
+ 	    self.parent:SetForwardVector(vDirection, true)
+ 	    --self.parent:FaceTowards(self.hMainTarget:GetOrigin())
+ 	    --FindClearSpaceForUnit(self.parent, self.hMainTarget:GetAbsOrigin(), true) -- Interrupts motion controller
 	
- 	   else
-	   -- Second Stage
-	   if not self.stage3 then
- 	      self.hMainTarget:SetAbsOrigin(vNewPos)
-          self.parent:SetOrigin(vNewPos)
-	   else
-		  -- A LOT OF THIS CAN BE PUT ONINTERVALTHINK BUT STRANGE INTERACTION WITH KNOCKBACK MODIFIER
-		  -- SO I WILL LEAVE IT HERE FOR NOW
-		  ---------------------------------------------------------------------------------------------
-		  ---------------------------------------------------------------------------------------------
-		  if not self.finish then
-		     self.parent:RemoveNoDraw()
-             self.parent:StartGesture(ACT_DOTA_MK_FUR_ARMY)
-		     self.finish = 1
+ 	else
+	    -- Second Stage
+	    if not self.stage3 then
+ 	        self.hMainTarget:SetAbsOrigin(vNewPos)
+            self.parent:SetOrigin(vNewPos)
+	    else
+		    -- A LOT OF THIS CAN BE PUT ONINTERVALTHINK BUT STRANGE INTERACTION WITH KNOCKBACK MODIFIER
+		    -- SO I WILL LEAVE IT HERE FOR NOW
+		    ---------------------------------------------------------------------------------------------
+		    ---------------------------------------------------------------------------------------------
+		    if not self.finish then
+		        self.parent:RemoveNoDraw()
+                self.parent:StartGesture(ACT_DOTA_MK_FUR_ARMY)
+		        self.finish = 1
 			 
-		     StopSoundOn("Gogeta.e3", self.parent)
-		     StopSoundOn("Gogeta.e4", self.parent)
+		        StopSoundOn("Gogeta.e3", self.parent)
+		        StopSoundOn("Gogeta.e4", self.parent)
 		  
-			 local knockback = { should_stun = true,
-			    knockback_duration = 0.5,
-				duration = 0.5,
-				knockback_distance = 1100,
-				knockback_height = 150,
-				center_x = self.parent:GetAbsOrigin().x - self.parent:GetForwardVector().x * 800,
-				center_y = self.parent:GetAbsOrigin().y - self.parent:GetForwardVector().y * 800,
-			    center_z = 4000 }	
+			    local knockback = { should_stun = true,
+			       knockback_duration = 0.5,
+				   duration = 0.5,
+				   knockback_distance = 1100,
+				   knockback_height = 150,
+				   center_x = self.parent:GetAbsOrigin().x - self.parent:GetForwardVector().x * 800,
+				   center_y = self.parent:GetAbsOrigin().y - self.parent:GetForwardVector().y * 800,
+			       center_z = 4000 }	
          
-			 self.hMainTarget:AddNewModifier(self.parent, self, "modifier_knockback", knockback)
-		  end
-		  if self.counter > 1.0 and self.counter < 1.2 then
-             self.parent:RemoveGesture(ACT_DOTA_MK_FUR_ARMY)
-		     self.parent:StartGesture(ACT_DOTA_CAST_GHOST_SHIP)
-		  elseif self.counter > 1.4 and self.counter < 1.6 and not self.rainbow then
-             local hAbility = self.parent:FindAbilityByName("gogeta_rainbow_orb")
-			 if hAbility then
-			    hAbility:SetHidden(false)
-			    self.parent:CastAbilityOnTarget(self.hMainTarget, hAbility, self.parent:GetPlayerID())
-				self.hiddenA = hAbility
-                EmitSoundOn("Gogeta.warida", self.parent)
-			 else
-			    self:Destroy()
-				return
-			 end
-             self.rainbow = 1
+			    self.hMainTarget:AddNewModifier(self.parent, self, "modifier_knockback", knockback)
+		    end
+		    if self.counter > 1.0 and self.counter < 1.2 then
+                self.parent:RemoveGesture(ACT_DOTA_MK_FUR_ARMY)
+		        self.parent:StartGesture(ACT_DOTA_CAST_GHOST_SHIP)
+		    elseif self.counter > 1.4 and self.counter < 1.6 and not self.rainbow then
+                local hAbility = self.parent:FindAbilityByName("gogeta_rainbow_orb")
+			    if hAbility then
+			        hAbility:SetHidden(false)
+			        self.parent:CastAbilityOnTarget(self.hMainTarget, hAbility, self.parent:GetPlayerID())
+				    self.hiddenA = hAbility
+                    EmitSoundOn("Gogeta.warida", self.parent)
+			    else
+			        self:Destroy()
+				    return
+			    end
+                self.rainbow = 1
 			 
-             self.parent:RemoveGesture(ACT_DOTA_CAST_GHOST_SHIP)
-		     self.parent:StartGesture(ACT_DOTA_MK_SPRING_CAST)
+                self.parent:RemoveGesture(ACT_DOTA_CAST_GHOST_SHIP)
+		        self.parent:StartGesture(ACT_DOTA_MK_SPRING_CAST)
 		  
-		  end
+		    end
 		  ---------------------------------------------------------------------------------------------
 		  ---------------------------------------------------------------------------------------------
  	      if not self.rainbow then
-		     self.parent:SetForwardVector(vDirection, true)
+		      self.parent:SetForwardVector(vDirection, true)
 		  end
 	   end
 	end
@@ -1051,11 +1046,11 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateVerticalMotion(me, dt)
     if IsServer() then
         me:SetOrigin(Vector(me:GetOrigin().x, me:GetOrigin().y, 750))
 		if not self.stage3 then
-		   if not self.stage then
-		      self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, 750))
-		   else
-		      self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, RandomInt(550, 750)))
-		   end
+		    if not self.stage then
+		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, 750))
+		    else
+		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, RandomInt(550, 750)))
+		    end
 		end
     end
 end
@@ -1081,9 +1076,9 @@ function modifier_gogeta_kick_combo_air_finisher:OnIntervalThink()
     		self.hDamageTable.damage = self.fAttacksDamage -- + ( self.parent:GetAgility() * self.fAttacksAgiDamage )
 
 		    if not self.ShockwaveEffect and self.stage then
-			self.ShockwaveEffect =  ParticleManager:CreateParticle("particles/gogeta_shockwave.vpcf", PATTACH_WORLDORIGIN, nil)
-                                    ParticleManager:SetParticleControl(self.ShockwaveEffect, 0, self.hMainTarget:GetOrigin() + Vector(0, 0, 100))            
-                                    ParticleManager:ReleaseParticleIndex(self.ShockwaveEffect)
+			    self.ShockwaveEffect =  ParticleManager:CreateParticle("particles/gogeta_shockwave.vpcf", PATTACH_WORLDORIGIN, nil)
+                                        ParticleManager:SetParticleControl(self.ShockwaveEffect, 0, self.hMainTarget:GetOrigin() + Vector(0, 0, 100))            
+                                        ParticleManager:ReleaseParticleIndex(self.ShockwaveEffect)
 			end
 			self.ShockwaveEffect = nil
 			ApplyDamage(self.hDamageTable)
@@ -1104,23 +1099,23 @@ end
 function modifier_gogeta_kick_combo_air_finisher:OnDestroy()
     if IsServer() then
 	    if self.hiddenA then
-	       self.hiddenA:SetHidden(true)
+	        self.hiddenA:SetHidden(true)
 		end
 		
         -- Check Abilities
 	    for i = 0, self.parent:GetAbilityCount() - 1 do
-		   local ability = self.parent:GetAbilityByIndex(i)
-		   if ability then
-		      -- Enable disabled abilities
-		       local ability_name = ability:GetName()
-		       if ability_name == "gogeta_downward_punch" or ability_name == "gogeta_kick_combo_air_finisher" or ability_name == "gogeta_rainbow_orb" then
-               else   
-			      ability:SetActivated(true)
-			   end
-		   end
+		    local ability = self.parent:GetAbilityByIndex(i)
+		    if ability then
+		        -- Enable disabled abilities
+		        local ability_name = ability:GetName()
+		        if ability_name == "gogeta_downward_punch" or ability_name == "gogeta_kick_combo_air_finisher" or ability_name == "gogeta_rainbow_orb" then
+                else   
+			    ability:SetActivated(true)
+			    end
+		    end
 	    end
 	
-        self.parent:RemoveGesture(ACT_DOTA_ENFEEBLE)
+	    self.parent:RemoveGesture(ACT_DOTA_ENFEEBLE)
         self.parent:RemoveGesture(ACT_DOTA_MK_FUR_ARMY)
         self.parent:RemoveGesture(ACT_DOTA_CAST_GHOST_SHIP)
         self.parent:RemoveGesture(ACT_DOTA_MK_SPRING_CAST)
@@ -1134,7 +1129,7 @@ function modifier_gogeta_kick_combo_air_finisher:OnDestroy()
 		StopSoundOn("Gogeta.e4", self.parent)
 		
 		if self.hMainTarget:HasModifier("modifier_gogeta_stunned") then
-		   self.hMainTarget:RemoveModifierByName("modifier_gogeta_stunned")
+		    self.hMainTarget:RemoveModifierByName("modifier_gogeta_stunned")
 		end
     end
 end
@@ -1180,7 +1175,9 @@ function gogeta_backhand:OnSpellStart()
 
 	-- Add state modifier
 	hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_backhand_state", {duration = 0.2})
-    hCaster:AddNewModifier(hCaster, self, "modifier_disable_actions",{duration = 0.5})
+    if not hCaster:HasTalent("special_bonus_gogeta_15") then
+        hCaster:AddNewModifier(hCaster, self, "modifier_disable_actions",{duration = 0.5})
+	end
    	EmitSoundOn("Gogeta.d1", hCaster)   
 end
 
@@ -1243,7 +1240,7 @@ function modifier_gogeta_backhand_state:OnDestroy()
                       
         -- Remove Knockback modifier before applying it
         if enemy:HasModifier("modifier_knockback") then
-          enemy:RemoveModifierByName("modifier_knockback")
+            enemy:RemoveModifierByName("modifier_knockback")
         end
 					  
         -- Add knockback modifier and do Damage
@@ -1333,7 +1330,7 @@ function gogeta_upper_kick:OnSpellStart()
                       
         -- Remove Knockback modifier before applying it
         if enemy:HasModifier("modifier_knockback") then
-          enemy:RemoveModifierByName("modifier_knockback")
+            enemy:RemoveModifierByName("modifier_knockback")
         end
 					  
         -- Add knockback air modifier and do Damage
@@ -1368,9 +1365,7 @@ function gogeta_downward_punch:OnSpellStart()
     hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_downward_punch_teleport", {duration = 0.3, 
 	                                                                                  param = "modifier_gogeta_upper_kick_state"
 																			         })
-	if hCaster:HasModifier("modifier_gogeta_kick_combo_air_finisher") then
-      hCaster:RemoveModifierByName("modifier_gogeta_kick_combo_air_finisher")
-	end																		 
+	if hCaster:HasModifier("modifier_gogeta_kick_combo_air_finisher") then hCaster:RemoveModifierByName("modifier_gogeta_kick_combo_air_finisher") end																		 
     
 	EmitSoundOn("Gogeta.d1", hCaster)
 end
@@ -1411,19 +1406,19 @@ function modifier_gogeta_downward_punch_teleport:OnCreated( kv )
 	for _,enemy in pairs(enemies) do
         -- Get enemy in the AIR
 	    if (enemy:HasModifier("modifier_gogeta_upper_kick_state") and enemy:HasModifier("modifier_marked")) or enemy:HasModifier("modifier_gogeta_stunned") then
-		  closestEnemy = enemy
-		  break
+		    closestEnemy = enemy
+		    break
 		end
     end
 	
 	-- Add another modifier
     if self.modifier_param and closestEnemy then
-      hCaster:AddNewModifier(hCaster, self.ability, self.modifier_param, { duration = 1.4, -- duration
-	                                                                       hTarget = closestEnemy:entindex(), -- target 
-																           identifier = 1, -- Self 1 or Enemy 0
-																           path_control = 1 -- UP 1 or 0 Down
-																         })
-	  self.enemy = closestEnemy
+        hCaster:AddNewModifier(hCaster, self.ability, self.modifier_param, { duration = 1.4, -- duration
+	                                                                         hTarget = closestEnemy:entindex(), -- target 
+																             identifier = 1, -- Self 1 or Enemy 0
+																             path_control = 1 -- UP 1 or 0 Down
+																           })
+	    self.enemy = closestEnemy
 	end
 end
 function modifier_gogeta_downward_punch_teleport:OnDestroy()
@@ -1534,17 +1529,17 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
     -- Get the current position
 	local pos = self.target
 	            and self.target:GetOrigin()
-				or me:GetOrigin() 
+				or me:GetOrigin()			
 
     -- Apply vertical motion
 	if self.identifier <= 0 then
-	  if self.path_control then
-        pos.z = pos.z + self.vertical_speed * dt
-	  else
-	    pos.z = pos.z - self.vertical_speed * dt * 2
-	  end
+	    if self.path_control then
+            pos.z = pos.z + self.vertical_speed * dt
+	    else
+	        pos.z = pos.z - self.vertical_speed * dt * 2
+	    end
 	else
-	   pos.z = 890
+	    pos.z = 890
 	end
 
     -- Apply horizontal motion
@@ -1586,9 +1581,9 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
         me:AddNewModifier(me, self, "modifier_knockback", self.knockback)
 		-- Apply Effect
         if not self.StompEffect then
-		  self.StompEffect =  ParticleManager:CreateParticle("particles/decompiled_particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())            
-          self:AddParticle(self.StompEffect, false, false, -1, false, false)
-		  EmitSoundOn("Gogeta.r2", me)
+		    self.StompEffect =  ParticleManager:CreateParticle("particles/decompiled_particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())            
+            self:AddParticle(self.StompEffect, false, false, -1, false, false)
+		    EmitSoundOn("Gogeta.r2", me)
 		end
     end
 end
@@ -1685,11 +1680,7 @@ function modifier_gogeta_ultimate_form:OnCreated(hTable)
 	     self.parent:RemoveModifierByName("modifier_gogeta_powerup")
 	  end
 	  self.parent:AddNewModifier(self.parent, self, "modifier_star_tier2", {duration = 60})
-      for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, false, true)
-        end
-      end
+      SwapAbilitiesClean(self.skills_table, self.parent, false, true)
     end
 end
 function modifier_gogeta_ultimate_form:OnRefresh(hTable)
@@ -1700,11 +1691,7 @@ function modifier_gogeta_ultimate_form:OnDestroy()
       if self.parent:HasModifier("modifier_star_tier2") then
 	    self.parent:RemoveModifierByName("modifier_star_tier2")
 	  end
-      for k, v in pairs(self.skills_table) do
-        if k and v then
-          self.parent:SwapAbilities(k, v, true, false)
-        end
-      end
+      SwapAbilitiesClean(self.skills_table, self.parent, true, false)
     end
 end
 
@@ -1900,16 +1887,13 @@ LinkLuaModifier("modifier_gogeta_meteor_explosion_target", "heroes/gogeta/gogeta
 
 gogeta_meteor_explosion = gogeta_meteor_explosion or class({})
 
-function gogeta_meteor_explosion:CastFilterResult()
-	local hCaster         = self:GetCaster()
-
-    return UF_SUCCESS
-end
 function gogeta_meteor_explosion:OnSpellStart()
 	if not IsServer() then return end
 	local hCaster 	= self:GetCaster()
 	local hTarget   = self:GetCursorTarget()
 	local fDuration = 7.0
+	
+	if hTarget:HasModifier("modifier_knockback") then hTarget:RemoveModifierByName("modifier_knockback") end
 
 	hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_meteor_explosion", {duration = fDuration, enemy_target = hTarget:GetEntityIndex()})
 	EmitSoundOn("Gogeta.e1", hCaster)
@@ -1968,9 +1952,6 @@ function modifier_gogeta_meteor_explosion:OnCreated(hTable)
 		end
 
         self.CASTER_TEAM          = self.caster:GetTeamNumber()
-        self.ABILITY_TARGET_TEAM  = "DOTA_UNIT_TARGET_TEAM_ENEMY" 
-        self.ABILITY_TARGET_TYPE  = "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        self.ABILITY_TARGET_FLAGS = "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
         
         self.hMainModifier = self.parent:FindModifierByNameAndCaster("modifier_gogeta_ultimate_finisher", self.parent)
 		self.hMainTarget = EntIndexToHScript(hTable.enemy_target)
@@ -2022,25 +2003,25 @@ function modifier_gogeta_meteor_explosion:UpdateHorizontalMotion(me, dt)
  		  				or vNextPos
 
 	if not self.stage then
-	  self.parent:SetOrigin(vNextPos)
+	    self.parent:SetOrigin(vNextPos)
 	end
 	
 	if fDistance <= self.fFollowDistance then
-      self.parent:RemoveGesture(ACT_DOTA_COLD_FEET)
-      self.parent:RemoveGesture(ACT_DOTA_CUSTOM_TOWER_TAUNT)
-	  self.stage = 1
-	  if self.AuraEffect then
-	    ParticleManager:DestroyParticle( self.AuraEffect, true )
-	    ParticleManager:ReleaseParticleIndex( self.AuraEffect )
-		self.iAttacksCount = 70
-        self.parent:AddNewModifier(self.parent, self, "modifier_gogeta_meteor_explosion", {duration = 7.6, enemy_target = self.hMainTarget})
-		self.AuraEffect = nil
-	  end
+        self.parent:RemoveGesture(ACT_DOTA_COLD_FEET)
+        self.parent:RemoveGesture(ACT_DOTA_CUSTOM_TOWER_TAUNT)
+	    self.stage = 1
+	    if self.AuraEffect then
+	        ParticleManager:DestroyParticle( self.AuraEffect, true )
+	        ParticleManager:ReleaseParticleIndex( self.AuraEffect )
+		    self.iAttacksCount = 70
+            self.parent:AddNewModifier(self.parent, self, "modifier_gogeta_meteor_explosion", {duration = 7.6, enemy_target = self.hMainTarget})
+		    self.AuraEffect = nil
+	    end
 	end
 	
 	if fDistance <= 800 and not self.meteorscream then
-      EmitGlobalSound("Gogeta.meteorscream")
-	  self.meteorscream = 1
+        EmitGlobalSound("Gogeta.meteorscream")
+	    self.meteorscream = 1
 	end
     
 	self.parent:SetForwardVector(vDirection, true)
@@ -2051,11 +2032,11 @@ function modifier_gogeta_meteor_explosion:OnIntervalThink()
 	
         -- Make sure the effect doesn't end just in case
 		if not self.hMainTarget:IsAlive() then 
-		  if self.iAttacksCount <= 1 and self.stage then
-          else
+		    if self.iAttacksCount <= 1 and self.stage then
+            else
 		    self:Destroy() 
 		    return 
-		  end
+		    end
 		end 
 
         self.iAttacksCount = self.iAttacksCount - 1
@@ -2063,64 +2044,49 @@ function modifier_gogeta_meteor_explosion:OnIntervalThink()
 		self.Test2 = self.Test
 		
 		if self.iAttacksCount < 50 and not self.stage and not self.animation then
-          self.parent:RemoveGesture(ACT_DOTA_COLD_FEET)
-          self.parent:StartGesture(ACT_DOTA_CUSTOM_TOWER_TAUNT)
-		  self.animation = 1
+            self.parent:RemoveGesture(ACT_DOTA_COLD_FEET)
+            self.parent:StartGesture(ACT_DOTA_CUSTOM_TOWER_TAUNT)
+		    self.animation = 1
 		end
 		
 		if self.stage then
-		   if self.iAttacksCount > 60 and not self.anim1 then
-             self.parent:StartGesture(ACT_DOTA_ATTACK2)
-			 if self.hMainTarget:HasModifier("modifier_knockback") then
-			    self.hMainTarget:RemoveModifierByName("modifier_knockback")
-			 end
-             self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_gogeta_meteor_explosion_target", {duration = 7.0})
-             EmitGlobalSound("Gogeta.meteorhit")
-             if not self.ring then
-			    self.ring =  ParticleManager:CreateParticle("particles/gogeta_meteor_explosion_ring.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hMainTarget)
-				ParticleManager:SetParticleControl(self.ring, 5, self.parent:GetAbsOrigin())		
-                self:AddParticle(self.ring, false, false, -1, false, false)
-			 end
-             if not self.impact then
-			    self.impact =  ParticleManager:CreateParticle("particles/gogeta_punch_impact.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
-				ParticleManager:SetParticleControl(self.impact, 1, self.hMainTarget:GetAbsOrigin())
-                self:AddParticle(self.impact, false, false, -1, false, false)
-			 end
-             if not self.energyball then
-			    self.energyball =  ParticleManager:CreateParticle("particles/gogeta_meteor_explosion_punch_sphere.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hMainTarget)   
-				ParticleManager:SetParticleControl(self.energyball, 1, self.hMainTarget:GetAbsOrigin())				
-                self:AddParticle(self.energyball, false, false, -1, false, false)
-			 end
-             if not self.blackvoid then
-			   self.blackvoid =  ParticleManager:CreateParticle("particles/xddd.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hMainTarget)            
-               self:AddParticle(self.blackvoid, false, false, -1, false, false)
-			 end
-		     self.anim1 = 1
-		   elseif self.iAttacksCount > 50 and self.iAttacksCount < 60 and not self.anim2 then
-		     self.parent:StartGesture(ACT_DOTA_EARTHSHAKER_TOTEM_ATTACK)
-             if not self.kickeffect then
-			    self.kickeffect =  ParticleManager:CreateParticle("particles/gogeta_meteor_explosion_kick.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)   			
-                self:AddParticle(self.kickeffect, false, false, -1, false, false)
-			 end
-			 if self.hMainTarget:HasModifier("modifier_knockback") then
-			    self.hMainTarget:RemoveModifierByName("modifier_knockback")
-			 end
-		     self.anim2 = 1
-		   elseif self.iAttacksCount > 30 and self.iAttacksCount < 40 and not self.anim3 then
-		     self.parent:StartGesture(ACT_DOTA_ECHO_SLAM)
-             if not self.particlefield then
-			    self.particlefield =  ParticleManager:CreateParticle("particles/testxd.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hMainTarget)            
-                self:AddParticle(self.particlefield, false, false, -1, false, false)
-			 end
-             if not self.fulleffect then
-			    self.fulleffect =  ParticleManager:CreateParticle("particles/gogeta_meteor_explosion_fulleffect.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hMainTarget)            
-                self:AddParticle(self.fulleffect, false, false, -1, false, false)
-			 end
-		     self.anim3 = 1
-		   elseif self.iAttacksCount > 20 and self.iAttacksCount < 30 and not self.anim4 then
-             self.parent:StartGesture(ACT_DOTA_KINETIC_FIELD)
-		     self.anim4 = 1
-		   end
+		    if self.iAttacksCount > 60 and not self.anim1 then
+                self.parent:StartGesture(ACT_DOTA_ATTACK2)
+			    if self.hMainTarget:HasModifier("modifier_knockback") then
+			        self.hMainTarget:RemoveModifierByName("modifier_knockback")
+			    end
+                self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_gogeta_meteor_explosion_target", {duration = 7.0})
+                EmitGlobalSound("Gogeta.meteorhit")
+
+               -- Ring Particle
+               ParticleCreateClean(self, "particles/gogeta_meteor_explosion_ring.vpcf", self.hMainTarget, true, 5, self.parent:GetAbsOrigin())
+               -- Impact Particle
+               ParticleCreateClean(self, "particles/gogeta_punch_impact.vpcf", self.parent, true, 1, self.hMainTarget:GetAbsOrigin())
+               -- Energy Ball Particle
+               ParticleCreateClean(self, "particles/gogeta_meteor_explosion_punch_sphere.vpcf", self.hMainTarget, true, 1, self.hMainTarget:GetAbsOrigin())
+               -- Black Void Particle
+               ParticleCreateClean(self, "particles/xddd.vpcf", self.hMainTarget, false)
+
+               self.anim1 = 1
+		    elseif self.iAttacksCount > 50 and self.iAttacksCount < 60 and not self.anim2 then
+               self.parent:StartGesture(ACT_DOTA_EARTHSHAKER_TOTEM_ATTACK)
+			 
+               -- Kick Particle
+               ParticleCreateClean(self, "particles/gogeta_meteor_explosion_kick.vpcf", self.parent, false)
+               if self.hMainTarget:HasModifier("modifier_knockback") then self.hMainTarget:RemoveModifierByName("modifier_knockback") end
+               self.anim2 = 1
+		    elseif self.iAttacksCount > 30 and self.iAttacksCount < 40 and not self.anim3 then
+               self.parent:StartGesture(ACT_DOTA_ECHO_SLAM)
+			 
+               -- Rising Field Particle
+               ParticleCreateClean(self, "particles/testxd.vpcf", self.hMainTarget, false)
+               -- Full Effect Particle
+               ParticleCreateClean(self, "particles/gogeta_meteor_explosion_fulleffect.vpcf", self.hMainTarget, false)
+               self.anim3 = 1
+		    elseif self.iAttacksCount > 20 and self.iAttacksCount < 30 and not self.anim4 then
+               self.parent:StartGesture(ACT_DOTA_KINETIC_FIELD)
+               self.anim4 = 1
+		    end
 		end
 
         if IsNotNull(self.hMainTarget) then		
@@ -2236,53 +2202,53 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
 	self.timer = self.timer + 0.1
 
     if self.timer >= 1.4 and not self.meteorf then
-      -- Meteor Explosion Gogeta pre explosion quote sound
-	  EmitGlobalSound("Gogeta.meteorf")
-	  self.meteorf = 1
+        -- Meteor Explosion Gogeta pre explosion quote sound
+	    EmitGlobalSound("Gogeta.meteorf")
+	    self.meteorf = 1
 	end
 	if self.timer >= 1.7 then
-	  -- Apply vertical motion
-      pos.z = pos.z + self.vertical_speed * dt
+	    -- Apply vertical motion
+        pos.z = pos.z + self.vertical_speed * dt
 	
-      -- Check if the target has reached the desired height
-      local maxHeight = 400
-      if pos.z >= maxHeight then
-        -- Stop updating the position
-        pos.z = maxHeight
-      end
+        -- Check if the target has reached the desired height
+        local maxHeight = 400
+        if pos.z >= maxHeight then
+            -- Stop updating the position
+            pos.z = maxHeight
+        end
 
-      -- Update the position
-      me:SetOrigin(pos)
+        -- Update the position
+        me:SetOrigin(pos)
 	  
-	  -- Sound
-	  if not self.meteorhit then
-        EmitGlobalSound("Gogeta.meteorhit")
-		self.meteorhit = 1
-	  end
+	    -- Sound
+	    if not self.meteorhit then
+            EmitGlobalSound("Gogeta.meteorhit")
+		    self.meteorhit = 1
+	    end
 	end
     if self.timer >= 4.6 and not self.meteorpower then
-      -- Meteor Explosion Gogeta powerup sound
-	  EmitGlobalSound("Gogeta.meteorpower")
-	  self.meteorpower = 1
+        -- Meteor Explosion Gogeta powerup sound
+	    EmitGlobalSound("Gogeta.meteorpower")
+	    self.meteorpower = 1
 	end
     if self.timer >= 6.0 and self.timer <= 6.5 then
 	    -- Find the closest enemy in a radius
         local enemies = FUnitsRadShort(self.parent, self.radius_pre, FIND_CLOSEST, self.caster)
 ---------------------------------------------------------------------------------------------------------------
 	    for _,enemy in pairs(enemies) do
-          enemy:AddNewModifier(self.caster, self, "modifier_generic_stunned_lua", {duration = self.stun_pre})
+            enemy:AddNewModifier(self.caster, self, "modifier_generic_stunned_lua", {duration = self.stun_pre})
 	    end
 		
 		if not self.meteorex1 then
-		  -- Meteor Explosion pre explosion sound
-          EmitGlobalSound("Gogeta.meteorex1")
-		  self.meteorex1 = 1
+		    -- Meteor Explosion pre explosion sound
+            EmitGlobalSound("Gogeta.meteorex1")
+		    self.meteorex1 = 1
 		end
     end
 	if self.timer >= 6.8 and not self.meteorex2 then
-      -- Meteor Explosion explosion sound
-	  EmitGlobalSound("Gogeta.meteorex2")
-	  self.meteorex2 = 1
+        -- Meteor Explosion explosion sound
+	    EmitGlobalSound("Gogeta.meteorex2")
+	    self.meteorex2 = 1
 	end
 end
 function modifier_gogeta_meteor_explosion_target:OnDestroy()
@@ -2298,11 +2264,11 @@ function modifier_gogeta_meteor_explosion_target:OnDestroy()
 ---------------------------------------------------------------------------------------------------------------
     -- Make sure strange things don't happen
 	if self.timer >= 6.5 then
-	  for _,enemy in pairs(enemies) do
-         self.hDamageTable.victim = enemy
-         enemy:AddNewModifier(self.caster, self, "modifier_generic_stunned_lua", {duration = self.stun})
-	     ApplyDamage(self.hDamageTable)
-	  end
+	    for _,enemy in pairs(enemies) do
+            self.hDamageTable.victim = enemy
+            enemy:AddNewModifier(self.caster, self, "modifier_generic_stunned_lua", {duration = self.stun})
+	        ApplyDamage(self.hDamageTable)
+	    end
 	end
 end
 
@@ -2313,20 +2279,20 @@ end
 function FUnitsRadShort(hCaster, radius, order, teamplayer)
 	-- Find the closest enemy in a radius
 	if hCaster then
-	  radius = radius or 200
-	  order = order or FIND_CLOSEST
-	  teamplayer = teamplayer or hCaster
-	  local enemies = FindUnitsInRadius( teamplayer:GetTeamNumber(),	-- int, your team number
-			                             hCaster:GetOrigin(),	-- point, center point
-			                             nil,	-- handle, cacheUnit. (not known)
-			                             radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-			                             DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
-			                             DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
-			                             0,	-- int, flag filter
-			                             order,	-- int, order filter
-			                             false	-- bool, can grow cache
-		                              )
-      return enemies
+	    radius = radius or 200
+	    order = order or FIND_CLOSEST
+	    teamplayer = teamplayer or hCaster
+	    local enemies = FindUnitsInRadius( teamplayer:GetTeamNumber(),	-- int, your team number
+			                               hCaster:GetOrigin(),	-- point, center point
+			                               nil,	-- handle, cacheUnit. (not known)
+			                               radius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+			                               DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+			                               DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+			                               0,	-- int, flag filter
+			                               order,	-- int, order filter
+			                               false	-- bool, can grow cache
+		                                )
+        return enemies
 	end
 	return 0
 end
@@ -2338,7 +2304,6 @@ function Teleport_Effect(hCaster)
 	
 	-- Get Resources
 	local particle_cast1 = "particles/vergil_blur.vpcf"
-	local particle_cast2 = ""
 
 
 	-- Create Particle
@@ -2348,6 +2313,36 @@ function Teleport_Effect(hCaster)
 	
 	-- buff particle
     ParticleManager:ReleaseParticleIndex(effect_cast1)
+end
+
+function SwapAbilitiesClean(hTableAbilities, hPlayer, bEnableFirst, bEnableSecond) 
+    if IsServer() and hPlayer and hTableAbilities and next(hTableAbilities) ~= nil then
+	    if hPlayer:IsRealHero() then
+            for k, v in pairs(hTableAbilities) do
+                if k and v and type(bEnableFirst) == "boolean" and type(bEnableSecond) == "boolean" then
+                    hPlayer:SwapAbilities(k, v, bEnableFirst, bEnableSecond)
+                end
+            end
+        end
+	end
+end
+
+function ParticleCreateClean(hSelf, sParticlePath, hTarget, bControl, iPoint, vLocation)
+    if hSelf and not hSelf[sParticlePath] and hTarget then
+	    iPoint = iPoint or 1
+		vLocation = vLocation or hTarget:GetAbsOrigin()
+		local bIsVector = type(vLocation) == "userdata" and IsNotNull(vLocation.x) 
+		                                                and IsNotNull(vLocation.y)
+									                    and IsNotNull(vLocation.z)
+														
+	    hSelf[sParticlePath] = ParticleManager:CreateParticle(sParticlePath, PATTACH_ABSORIGIN_FOLLOW, hTarget) 
+	                           if bControl and type(iPoint) == "number" and bIsVector then
+							   ParticleManager:SetParticleControl( hSelf[sParticlePath], iPoint, vLocation )
+							   end		
+                               hSelf:AddParticle(hSelf[sParticlePath], false, false, -1, false, false)
+	    return hSelf[sParticlePath]
+	end
+	return nil
 end
 
 -----------------------------------------------------------------------------------------------------------
@@ -2362,7 +2357,7 @@ function gogeta_rainbow_orb:OnSpellStart()
     local hCaster = self:GetCaster()
     local hTarget = self:GetCursorTarget()
 	
-    local target = CreateModifierThinker(self:GetCaster(), self, "modifier_lansa_de_relampago_thinker", nil, hTarget:GetAbsOrigin(), self:GetCaster():GetTeamNumber(), false)
+    local target = CreateModifierThinker(hCaster, self, "modifier_lansa_de_relampago_thinker", nil, hTarget:GetAbsOrigin(), hCaster:GetTeamNumber(), false)
 	   local info = {
 			        EffectName = "particles/gogeta_rainbow_orb_main.vpcf",
 			        Ability = self,
@@ -2376,29 +2371,28 @@ function gogeta_rainbow_orb:OnSpellStart()
 end
 function gogeta_rainbow_orb:OnProjectileHit( hTarget, vLocation )
 	if hTarget ~= nil then
-      local caster = self:GetCaster()
+      local hCaster = self:GetCaster()
 
         if IsServer() then
-            local caster = caster
             local particle_fx = "particles/holy_bomb_explosion.vpcf"
-            local effect_fx =   ParticleManager:CreateParticle(particle_fx, PATTACH_WORLDORIGIN, caster)
+            local effect_fx =   ParticleManager:CreateParticle(particle_fx, PATTACH_WORLDORIGIN, hCaster)
                                 ParticleManager:SetParticleControl(effect_fx, 0, vLocation)
                                 ParticleManager:SetParticleControl(effect_fx, 3, vLocation)
     
-            local nearby_targets = FindUnitsInRadius(caster:GetTeam(), vLocation, nil, 1000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
+            local nearby_targets = FindUnitsInRadius(hCaster:GetTeam(), vLocation, nil, 1000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
 
             for i, target in pairs(nearby_targets) do
                 local dist = (target:GetAbsOrigin() - vLocation):Length2D()
 
                 local damage = {
                     victim = target,
-                    attacker = caster,
+                    attacker = hCaster,
                     damage = 1400,
                     damage_type = DAMAGE_TYPE_MAGICAL,
                     ability = self
                 }
                 
-                target:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration = 2})
+                target:AddNewModifier(hCaster, self, "modifier_stunned", {duration = 2})
     
                 ApplyDamage(damage)  
             end
