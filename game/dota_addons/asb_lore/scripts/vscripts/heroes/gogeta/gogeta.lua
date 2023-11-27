@@ -1044,12 +1044,14 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateHorizontalMotion(me, dt)
 end
 function modifier_gogeta_kick_combo_air_finisher:UpdateVerticalMotion(me, dt)
     if IsServer() then
-        me:SetOrigin(Vector(me:GetOrigin().x, me:GetOrigin().y, 750))
+        -- Get ground position
+	    local vGroundPos = GetGroundPosition(me:GetOrigin(), me)
+        me:SetOrigin(Vector(me:GetOrigin().x, me:GetOrigin().y, vGroundPos.z + 750))
 		if not self.stage3 then
 		    if not self.stage then
-		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, 750))
+		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + 750))
 		    else
-		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, RandomInt(550, 750)))
+		        self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + RandomInt(550, 750)))
 		    end
 		end
     end
@@ -1200,6 +1202,7 @@ function modifier_gogeta_backhand_state:CheckState()
 	return state
 end
 function modifier_gogeta_backhand_state:OnCreated( kv )
+    if not IsServer() then return end
     self:GetParent():AddNoDraw()
 end
 function modifier_gogeta_backhand_state:OnDestroy()
@@ -1529,8 +1532,11 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
     -- Get the current position
 	local pos = self.target
 	            and self.target:GetOrigin()
-				or me:GetOrigin()			
+				or me:GetOrigin()
 
+    -- Get ground position
+	local vGroundPos = GetGroundPosition(me:GetOrigin(), me)
+   
     -- Apply vertical motion
 	if self.identifier <= 0 then
 	    if self.path_control then
@@ -1539,14 +1545,14 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
 	        pos.z = pos.z - self.vertical_speed * dt * 2
 	    end
 	else
-	    pos.z = 890
+	    pos.z = vGroundPos.z + 780
 	end
 
     -- Apply horizontal motion
     pos = pos + self.direction * self.horizontal_speed * dt
 	
     -- Check if the target has reached the desired height
-    local maxHeight = 900
+    local maxHeight = vGroundPos.z + 790
     if pos.z >= maxHeight then
         -- Stop updating the position
         pos.z = maxHeight
@@ -1766,7 +1772,7 @@ function gogeta_ultimate:OnSpellStart()
                            ParticleManager:SetParticleControl(hParticle, 0, endcapPos)
 		local hParticle2 = nil
 
-        local units = FindUnitsInRadius(self:GetCaster():GetTeamNumber(), vParticlePosition, nil, iParticleRadius + iRadiusExtra, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
+        local units = FindUnitsInRadius(self:GetCaster():GetTeamNumber(), vParticlePosition, nil, iParticleRadius + iRadiusExtra, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
         for _, unit in pairs(units) do
             local damageTable = {
                 victim = unit,
@@ -1866,14 +1872,15 @@ function modifier_gogeta_ultimate_invuln:CheckState()
 	return state
 end
 function modifier_gogeta_ultimate_invuln:OnCreated(keys)
+    if not IsServer() then return end
     self.parent = self:GetParent()
-	
 	self.parent:AddNoDraw()
 end
 function modifier_gogeta_ultimate_invuln:OnRefresh(keys)
     self:OnCreated(keys)
 end
 function modifier_gogeta_ultimate_invuln:OnDestroy()
+    if not IsServer() then return end
     self.parent:RemoveNoDraw()
 	Teleport_Effect(self.parent)
     EmitSoundOn("Gogeta.d1_alt", self.parent)
@@ -1895,7 +1902,7 @@ function gogeta_meteor_explosion:OnSpellStart()
 	
 	if hTarget:HasModifier("modifier_knockback") then hTarget:RemoveModifierByName("modifier_knockback") end
 
-	hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_meteor_explosion", {duration = fDuration, enemy_target = hTarget:GetEntityIndex()})
+	hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_meteor_explosion", {duration = fDuration, enemy_target = hTarget:entindex()})
 	EmitSoundOn("Gogeta.e1", hCaster)
 end
 ---------------------------------------------------------------------------------------------------------------------
@@ -1954,7 +1961,7 @@ function modifier_gogeta_meteor_explosion:OnCreated(hTable)
         self.CASTER_TEAM          = self.caster:GetTeamNumber()
         
         self.hMainModifier = self.parent:FindModifierByNameAndCaster("modifier_gogeta_ultimate_finisher", self.parent)
-		self.hMainTarget = EntIndexToHScript(hTable.enemy_target)
+		self.hMainTarget = self.hMainTarget or EntIndexToHScript(hTable.enemy_target)
 		self.Test = 1
 		
         
@@ -2014,7 +2021,7 @@ function modifier_gogeta_meteor_explosion:UpdateHorizontalMotion(me, dt)
 	        ParticleManager:DestroyParticle( self.AuraEffect, true )
 	        ParticleManager:ReleaseParticleIndex( self.AuraEffect )
 		    self.iAttacksCount = 70
-            self.parent:AddNewModifier(self.parent, self, "modifier_gogeta_meteor_explosion", {duration = 7.6, enemy_target = self.hMainTarget})
+            self.parent:AddNewModifier(self.parent, self.ability, "modifier_gogeta_meteor_explosion", {duration = 7.6, enemy_target = self.hMainTarget})
 		    self.AuraEffect = nil
 	    end
 	end
@@ -2198,6 +2205,9 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
     -- Get the current position
 	local pos = me:GetOrigin() 
 	
+    -- Get ground position
+	local vGroundPos = GetGroundPosition(me:GetOrigin(), me)
+	
 	-- Timer
 	self.timer = self.timer + 0.1
 
@@ -2211,7 +2221,7 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
         pos.z = pos.z + self.vertical_speed * dt
 	
         -- Check if the target has reached the desired height
-        local maxHeight = 400
+        local maxHeight = vGroundPos.z + 400
         if pos.z >= maxHeight then
             -- Stop updating the position
             pos.z = maxHeight

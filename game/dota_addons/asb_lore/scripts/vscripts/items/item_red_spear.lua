@@ -131,47 +131,45 @@ function modifier_item_red_spear_buff:OnTakeDamage(params)
         local AlphaModifierStacks = self.parent:FindModifierByName("modifier_item_red_spear_souls")
         local TrueStacks = 0
         
-		if AlphaModifierStacks then
-          TrueStacks = AlphaModifierStacks:GetStackCount()
+        if AlphaModifierStacks then
+            TrueStacks = AlphaModifierStacks:GetStackCount()
         end
 		
-          -- Check if the damage has killed the target
-          local FinalHP = params.unit:GetHealth()
-          if FinalHP <= 0 and
-             params.attacker == self:GetParent() and
-             params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL then
-		    -- Add the stacks modifier
-		    if not self.parent:HasModifier("modifier_item_red_spear_souls") then
-              self.parent:AddNewModifier(self.parent, self, "modifier_item_red_spear_souls", {})
-			end
-			-- Check if the parent has the modifier and increment the stacks
-            local iStacksModifier = self.parent:FindModifierByName("modifier_item_red_spear_souls")
-            if iStacksModifier then
-              local iCurStacks = iStacksModifier:GetStackCount()
-              iStacksModifier:SetStackCount(iCurStacks + self.percent_bonus)
+        -- Check if the damage has killed the target
+        local FinalHP = params.unit:GetHealth()
+        if FinalHP <= 0 
+            and params.attacker == self:GetParent() 
+            and params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL 
+            and TrueStacks <= self.percent_limit then
+            -- Add the stacks modifier
+            if not AlphaModifierStacks then
+                AlphaModifierStacks = self.parent:AddNewModifier(self.parent, self, "modifier_item_red_spear_souls", {})
             end
-          end
+            -- Check if the parent has the modifier and increment the stacks
+            if AlphaModifierStacks then
+                AlphaModifierStacks:SetStackCount(TrueStacks + self.percent_bonus)
+            end
+        end
 		
-		-- Set the pure damage chance and perform the necessary checks
-		local extra_pure_dmg_chance = self.base_percent + TrueStacks
-		local randFloat = RandomFloat(0, 1) <= extra_pure_dmg_chance / 100
+        -- Set the pure damage chance and perform the necessary checks
+        local extra_pure_dmg_chance = self.base_percent + TrueStacks
+        local randFloat = RandomFloat(0, 1) <= extra_pure_dmg_chance / 100
 		
-	    if params.attacker == self:GetParent() and 
-		   params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL and 
-		   randFloat and
-           params.unit and params.unit:IsAlive() then
-          local hDamageTable = {
-            victim = params.unit,
-            attacker = self:GetParent(),
-            damage = self.damage,
-            damage_type = DAMAGE_TYPE_PURE,
-            damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
-          }
-          -- Add Crit Particle
-          local CritParticle = ParticleManager:CreateParticle("particles/red_spear_crit.vpcf", PATTACH_ABSORIGIN, params.unit)
-          ParticleManager:ReleaseParticleIndex(CritParticle)
-		  -- Apply the Damage
-		  ApplyDamage(hDamageTable)
+        if params.attacker == self:GetParent() 
+            and params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL and randFloat 
+            and params.unit and params.unit:IsAlive() then
+            local hDamageTable = {
+                                   victim = params.unit,
+                                   attacker = self:GetParent(),
+                                   damage = self.damage,
+                                   damage_type = DAMAGE_TYPE_PURE,
+                                   damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
+                                 }
+            -- Add Crit Particle
+            local CritParticle = ParticleManager:CreateParticle("particles/red_spear_crit.vpcf", PATTACH_ABSORIGIN, params.unit)
+            ParticleManager:ReleaseParticleIndex(CritParticle)
+            -- Apply the Damage
+            ApplyDamage(hDamageTable)
         end
 end
 function modifier_item_red_spear_buff:OnRefresh(table)
@@ -200,10 +198,10 @@ function modifier_item_red_spear_buff:OnIntervalThink()
 	   local ManaDrained = Manamax * self.mana_drain / 100
 	   
 	   if (Mana/Manamax) * 100 < self.mana_drain then
-	      if self.ability:GetToggleState() == true then
-		    self.ability:ToggleAbility()
-		  end
-	    end
+	       if self.ability:GetToggleState() == true then
+		       self.ability:ToggleAbility()
+		   end
+	   end
 
 	   self.parent:Script_ReduceMana( ManaDrained , self:GetAbility())
 	end
@@ -216,14 +214,8 @@ function modifier_item_red_spear_buff:GetEffectAttachType()
 end
 
 
-
-
-
-
-
-modifier_item_red_spear_souls = modifier_item_red_spear_souls or class({})
-
 --------------------------------------------------------------------------------
+modifier_item_red_spear_souls = modifier_item_red_spear_souls or class({})
 
 function modifier_item_red_spear_souls:IsDebuff() return false end
 function modifier_item_red_spear_souls:IsStunDebuff() return false end

@@ -123,13 +123,13 @@
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
 		"ArmorPhysical"				"0"
-		"MagicalResistance"			"25"
+		"MagicalResistance"			"45"
 		//-------------------------------------------------------------------------------------------------------------
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"-50"
-		"AttackDamageMax"			"-50"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"2.000000"
 		"BaseAttackSpeed"			"100"
@@ -143,11 +143,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"23"
-		"AttributeStrengthGain"		"1.4"
+		"AttributeStrengthGain"		"0"
 		"AttributeBaseIntelligence"	"28"
-		"AttributeIntelligenceGain"	"2.6"
+		"AttributeIntelligenceGain"	"0"
 		"AttributeBaseAgility"		"19"
-		"AttributeAgilityGain"		"2.1"
+		"AttributeAgilityGain"		"0"
 		//-------------------------------------------------------------------------------------------------------------
 		// Bounty
 		//-------------------------------------------------------------------------------------------------------------
@@ -2406,8 +2406,8 @@
 		"ArmorPhysical"				"5"
 		"AttributeAgilityGain"		"3"
 		"MovementSpeed"				"300"
-		"AttackDamageMin"			"40"
-		"AttackDamageMax"			"50"
+		"AttackDamageMin"			"90"
+		"AttackDamageMax"			"100"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
