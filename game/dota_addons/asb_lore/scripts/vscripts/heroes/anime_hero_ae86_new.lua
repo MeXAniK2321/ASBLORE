@@ -2,18 +2,22 @@
  
  ae86_clown_horn = ae86_clown_horn or class({})
 -----------------------------------------------
-local xd = 1
+local xd = {}
 -----------------------------------------------
 function ae86_clown_horn:OnSpellStart()
      local hCaster = self:GetCaster()
+	 local iPlayerID = hCaster:GetPlayerOwnerID()
+	 
+	 -- Top KEK
+	 xd[iPlayerID] = xd[iPlayerID] or 1
      
 	 -- Seriously wtf
-	 if xd then
-	   if xd < 10 then
-	     xd = xd + 1
-	   elseif xd >= 10 then
+	 if xd[iPlayerID] then
+	   if xd[iPlayerID] < 10 then
+	     xd[iPlayerID] = xd[iPlayerID] + 1
+	   elseif xd[iPlayerID] >= 10 then
 	     self:StartCooldown(self:GetSpecialValueFor("cooldown"))
-		 xd = 1
+		 xd[iPlayerID] = 1
 	   end
 	 end
 	 

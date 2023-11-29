@@ -7,23 +7,23 @@ LinkLuaModifier("modifier_item_imba_chain_lightning", "items/item_jetstream_sam_
 LinkLuaModifier("modifier_neko_arc", "items/item_earth", LUA_MODIFIER_MOTION_NONE)
 
 function item_jetstream_sam_muramasa:GetIntrinsicModifierName()
-	return "modifier_item_jetstream_sam_muramasa"
+    return "modifier_item_jetstream_sam_muramasa"
 end
 function item_jetstream_sam_muramasa:OnSpellStart()
     local hCaster = self:GetCaster()
-	local iDuration = self:GetSpecialValueFor("bloodshed_duration") or 2.5
-	local rNecoChance = RollPseudoRandom(self:GetSpecialValueFor("neco_chance"), self)
+    local iDuration = self:GetSpecialValueFor("bloodshed_duration") or 2.5
+    local rNecoChance = RollPseudoRandom(self:GetSpecialValueFor("neco_chance"), self)
     
-	if rNecoChance or hCaster:GetUnitName()== "npc_dota_hero_slark" then
-	   hCaster:EmitSound("jetstream."..RandomInt(7, 12))
-	   if hCaster:GetUnitName() == "npc_dota_hero_slark" then
-	      hCaster:AddNewModifier(hCaster, self, "modifier_neko_arc", {duration = iDuration})
-	   end
-	   hCaster:AddNewModifier(hCaster, self, "modifier_item_jetstream_sam_muramasa_neco", {duration = iDuration})
-	else
-	   hCaster:EmitSound("jetstream."..RandomInt(1, 6))
-	   hCaster:AddNewModifier(hCaster, self, "modifier_item_jetstream_sam_muramasa_buff", {duration = iDuration})
-	end
+    if rNecoChance or hCaster:GetUnitName()== "npc_dota_hero_slark" then
+        hCaster:EmitSound("jetstream."..RandomInt(7, 12))
+        if hCaster:GetUnitName() == "npc_dota_hero_slark" then
+            hCaster:AddNewModifier(hCaster, self, "modifier_neko_arc", {duration = iDuration})
+        end
+        hCaster:AddNewModifier(hCaster, self, "modifier_item_jetstream_sam_muramasa_neco", {duration = iDuration})
+    else
+        hCaster:EmitSound("jetstream."..RandomInt(1, 6))
+        hCaster:AddNewModifier(hCaster, self, "modifier_item_jetstream_sam_muramasa_buff", {duration = iDuration})
+    end
 end
 
 modifier_item_jetstream_sam_muramasa_buff = modifier_item_jetstream_sam_muramasa_buff or class({})
@@ -36,13 +36,13 @@ function modifier_item_jetstream_sam_muramasa_buff:RemoveOnDeath() return true e
 function modifier_item_jetstream_sam_muramasa_buff:OnCreated( kv )
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
-	self.ability = self:GetAbility()
+    self.ability = self:GetAbility()
 end
 function modifier_item_jetstream_sam_muramasa_buff:GetEffectName()
-	return "particles/jetstream_sam_buff.vpcf"
+    return "particles/jetstream_sam_buff.vpcf"
 end
 function modifier_item_jetstream_sam_muramasa_buff:GetEffectAttachType()
-	return PATTACH_ABSORIGIN_FOLLOW
+    return PATTACH_ABSORIGIN_FOLLOW
 end
 
 modifier_item_jetstream_sam_muramasa_neco = modifier_item_jetstream_sam_muramasa_neco or class({})
@@ -54,27 +54,27 @@ function modifier_item_jetstream_sam_muramasa_neco:IsPurgeException() return fal
 function modifier_item_jetstream_sam_muramasa_neco:RemoveOnDeath() return true end
 function modifier_item_jetstream_sam_muramasa_neco:DeclareFunctions()
     local func = {  
-    				MODIFIER_PROPERTY_MODEL_SCALE,
-					MODIFIER_PROPERTY_MODEL_CHANGE,
-				 }
+                     MODIFIER_PROPERTY_MODEL_SCALE,
+                     MODIFIER_PROPERTY_MODEL_CHANGE,
+                 }
     return func
 end
 function modifier_item_jetstream_sam_muramasa_neco:OnCreated( kv )
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
-	self.ability = self:GetAbility()
+    self.ability = self:GetAbility()
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetModifierModelChange()
-	return "models/arcueid/neko_arc.vmdl"
+    return "models/arcueid/neko_arc.vmdl"
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetModifierModelScale()
-	return -20
+    return -20
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetEffectName()
-	return "particles/jetstream_sam_buff.vpcf"
+    return "particles/jetstream_sam_buff.vpcf"
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetEffectAttachType()
-	return PATTACH_ABSORIGIN_FOLLOW
+    return PATTACH_ABSORIGIN_FOLLOW
 end
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -86,65 +86,66 @@ function modifier_item_jetstream_sam_muramasa:IsPurgable() return false end
 function modifier_item_jetstream_sam_muramasa:IsPurgeException() return false end
 function modifier_item_jetstream_sam_muramasa:RemoveOnDeath() return false end
 function modifier_item_jetstream_sam_muramasa:DeclareFunctions()
-	local func = {
-	                 MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
-					 MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
-	                 MODIFIER_EVENT_ON_ATTACK_LANDED,
-		         }
-	return func
+    local func = {
+                     MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+                     MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+                     MODIFIER_EVENT_ON_ATTACK_LANDED,
+                 }
+    return func
 end
 function modifier_item_jetstream_sam_muramasa:OnCreated( kv )
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
-	self.ability = self:GetAbility()
-	
-	self.crit = false
-	self.curtarget = nil
+    self.ability = self:GetAbility()
 end
 function modifier_item_jetstream_sam_muramasa:GetModifierPreAttack_CriticalStrike()
-	if self.crit == false then
-		return
-	end
-	-- Just WTF.....
-	self.crit = false
-	self.curtarget:AddNewModifier(self.parent, self.ability, "modifier_item_jetstream_sam_muramasa_armor", {duration = 0.3})
-	self.curtarget = nil
-	self.parent:EmitSound("jetstream.crit"..RandomInt(1, 2))
-	return self.ability:GetSpecialValueFor("high_freq_crit")
+    -- For Server and Client
+    if IsServer() then
+        local bIsBuffed   = self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_buff") or self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_neco")
+        local fCritChance = bIsBuffed and self.ability:GetSpecialValueFor("bloodshed_crit_chance") or self.ability:GetSpecialValueFor("high_freq_chance")
+        local fRandFloat  = RandomFloat(0, 1) <= fCritChance / 100
+        
+        self.bAttackSuccess = fRandFloat
+        
+        -- If the Server returns then the Client does too
+        -- NOTE: Client Side is only for Visual Crit Numbers Effect
+        if not fRandFloat then return end
+    end
+    return self.ability:GetSpecialValueFor("high_freq_crit")
 end
 function modifier_item_jetstream_sam_muramasa:OnAttackLanded(params)
-	if IsServer() then
-	    --Check for buff
-		local IsBuffed = self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_buff") or self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_neco")
-		local CritChance = IsBuffed and self.ability:GetSpecialValueFor("bloodshed_crit_chance") or self.ability:GetSpecialValueFor("high_freq_chance")
-		-- Sword Slash Effect
-        if params.attacker == self:GetParent() and params.damage_category == DOTA_DAMAGE_CATEGORY_ATTACK and IsBuffed then
-		   local SlashParticle = ParticleManager:CreateParticle("particles/jetstream_sam_attack.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
-		                         ParticleManager:ReleaseParticleIndex(SlashParticle)
-		   self.parent:EmitSound("jetstream.swing"..RandomInt(1, 4))				 
-	    end
-		-- Armor reduction + critical strike
-		local randFloat = RandomFloat(0, 1) <= CritChance / 100
-	    if params.attacker == self:GetParent() and 
-		   params.damage_category == DOTA_DAMAGE_CATEGORY_ATTACK and 
-		   randFloat and
-           params.target and params.target:IsAlive() then
-		self.curtarget = params.target
-		self.crit = true
-	    end
-		-- Chain Lightning
-		local iLightningChance = IsBuffed and self.ability:GetSpecialValueFor("bloodshed_lightning_chance") or self.ability:GetSpecialValueFor("lightning_chance")
-	    if params.attacker == self:GetParent() and self:GetParent():IsAlive() and not self.bChainCooldown and not self:GetParent():IsIllusion() and not params.target:IsMagicImmune() and not params.target:IsBuilding() and not params.target:IsOther() and self:GetParent():GetTeamNumber() ~= params.target:GetTeamNumber() and RollPseudoRandom(iLightningChance, self:GetAbility()) then
-		-- -- This line is if you don't want multiple of any Chain Lightning items stacking
-		-- if self:GetCaster():HasModifier("modifier_item_imba_chain_lightning_cooldown") then return end
+    if IsServer() then
+        --Check for buff
+        local bIsBuffed = self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_buff") or self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_neco")
+        -- Sword Slash Effect
+        if params.attacker == self:GetParent() and params.damage_category == DOTA_DAMAGE_CATEGORY_ATTACK and bIsBuffed then
+            local SlashParticle = ParticleManager:CreateParticle("particles/jetstream_sam_attack.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+                                  ParticleManager:ReleaseParticleIndex(SlashParticle)
+            self.parent:EmitSound("jetstream.swing"..RandomInt(1, 4))				 
+        end
+        -- Armor reduction + critical strike
+        if params.attacker == self:GetParent() 
+            and params.damage_category == DOTA_DAMAGE_CATEGORY_ATTACK 
+            and params.target and params.target:IsAlive()
+            and self.bAttackSuccess then
+            
+            params.target:AddNewModifier(self.parent, self.ability, "modifier_item_jetstream_sam_muramasa_armor", {duration = 0.3})
+            self.parent:EmitSound("jetstream.crit"..RandomInt(1, 2))
+            self.bAttackSuccess = false -- Adding just in case
+        end
+        -- Chain Lightning
+        local iLightningChance = bIsBuffed and self.ability:GetSpecialValueFor("bloodshed_lightning_chance") or self.ability:GetSpecialValueFor("lightning_chance")
+        if params.attacker == self:GetParent() and self:GetParent():IsAlive() and not self.bChainCooldown and not self:GetParent():IsIllusion() and not params.target:IsMagicImmune() and not params.target:IsBuilding() and not params.target:IsOther() and self:GetParent():GetTeamNumber() ~= params.target:GetTeamNumber() and RollPseudoRandom(iLightningChance, self:GetAbility()) then
+        -- -- This line is if you don't want multiple of any Chain Lightning items stacking
+        -- if self:GetCaster():HasModifier("modifier_item_imba_chain_lightning_cooldown") then return end
 		
-		self:GetParent():EmitSound("Item.Maelstrom.Chain_Lightning")
+        self:GetParent():EmitSound("Item.Maelstrom.Chain_Lightning")
 	
-		self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_item_imba_chain_lightning", {
-			starting_unit_entindex	= params.target:entindex(), chainDmg = self.ability:GetSpecialValueFor("lightning_base_damage")
-		})
-	   end
-	end
+        self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_item_imba_chain_lightning", {
+            starting_unit_entindex	= params.target:entindex(), chainDmg = self.ability:GetSpecialValueFor("lightning_base_damage")
+        })
+       end
+    end
 end
 function modifier_item_jetstream_sam_muramasa:GetModifierAttackSpeedBonus_Constant()
     return self:GetAbility():GetSpecialValueFor('bonus_attack_speed')
@@ -158,10 +159,10 @@ modifier_item_jetstream_sam_muramasa_armor = modifier_item_jetstream_sam_muramas
 function modifier_item_jetstream_sam_muramasa_armor:IsHidden() return false end
 function modifier_item_jetstream_sam_muramasa_armor:IsPurgable() return false end
 function modifier_item_jetstream_sam_muramasa_armor:DeclareFunctions()
-	local func = { 	
-	                 MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-		         }
-	return func
+    local func = { 	
+                     MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+                 }
+    return func
 end
 function modifier_item_jetstream_sam_muramasa_armor:OnCreated(hTable)
     self.reduction = -math.abs(self:GetParent():GetPhysicalArmorValue(false))

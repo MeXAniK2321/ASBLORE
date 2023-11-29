@@ -1622,7 +1622,7 @@
 
 		"AbilityManaCost"						"400"
 		"AbilityCastRange"						"2500"
-		"AbilityCastPoint"						"1.6"
+		"AbilityCastPoint"						"1.4"
 		"AbilityCooldown"						"60"
 		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
 		"MaxLevel"                      "1"
@@ -2580,7 +2580,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"500"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.1"
 		"AbilityCastAnimation"					"ACT_DOTA_ATTACK"
 
 		// Ability Resource
@@ -3716,9 +3716,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 						}
-						"XPAmount"		"23"
+						"XPAmount"		"1"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"15"
+						"GoldAmount"	"0"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -3775,9 +3775,9 @@
 							"Types"			"DOTA_UNIT_TARGET_HERO"
 							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 						}
-						"XPAmount"		"23"
+						"XPAmount"		"1"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"15"
+						"GoldAmount"	"0"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}
@@ -13380,7 +13380,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"300"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -17309,7 +17309,7 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -17552,7 +17552,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -18023,7 +18023,7 @@
 		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
 
-		"AbilityCastPoint"						"0.3"
+		"AbilityCastPoint"						"0.2"
 		"AbilityCooldown"						"40 35 30"
 		"AbilityManaCost"						"100 130 160"
 		"AbilityCastRange"						"1000"
@@ -19776,7 +19776,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -20421,7 +20421,7 @@
 		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
 
-		"AbilityCastPoint"						"0.3"
+		"AbilityCastPoint"						"0.2"
 		//"AbilityChannelTime"					"5.0"
 		"AbilityCooldown"						"20"
 		"AbilityManaCost"						"80 100 120 140"
@@ -29417,7 +29417,7 @@
     // Ability Casting
     //-------------------------------------------------------------------------------------------------------------
     
-    "AbilityCastPoint"        "0.2"
+    "AbilityCastPoint"        "0.1"
 
     // Ability Resource
     //-------------------------------------------------------------------------------------------------------------
@@ -29577,7 +29577,7 @@
     "SpellImmunityType"           "SPELL_IMMUNITY_ENEMIES_YES"
     "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
 
-    "AbilityCastPoint"            "0.3"
+    "AbilityCastPoint"            "0.2"
     //"AbilityChannelTime"          "5.0"
     "AbilityCooldown"           "200"
     "AbilityManaCost"           "150"
@@ -29683,7 +29683,7 @@
     // Ability Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"        "500"
-    "AbilityCastPoint"        "0.3"
+    "AbilityCastPoint"        "0.2"
 
     // Ability Resource
     //-------------------------------------------------------------------------------------------------------------
@@ -29749,7 +29749,7 @@
     // Ability Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"        "1200"
-    "AbilityCastPoint"        "0.25"
+    "AbilityCastPoint"        "0.2"
     "AbilityDuration"       "0.6875 0.6875 0.6875 0.6875"
 
     // Ability Resource
@@ -30652,7 +30652,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"750"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -30711,7 +30711,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"750"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.1"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -30772,7 +30772,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -30988,7 +30988,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -33184,7 +33184,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"500"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -35182,7 +35182,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.25"
+		"AbilityCastPoint"				"0.2"
 		"AbilityDuration"				"0.6875 0.6875 0.6875 0.6875"
 
 		// Ability Resource
@@ -35252,7 +35252,7 @@
 		
 		"AbilityManaCost"						"50 70 90"
 		"AbilityCastRange"						"800"
-		"AbilityCastPoint"						"0.3"
+		"AbilityCastPoint"						"0.2"
 		"AbilityCooldown"						"40 30 25"
 		
 
@@ -35472,7 +35472,7 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.1"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -35566,7 +35566,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"           "60"
 		"AbilityManaCost"				"200"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.1"
 		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
 		"MaxLevel" "1"
 		"RequiredLevel" "18"
@@ -35615,7 +35615,7 @@
 		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
 
-		"AbilityCastPoint"						"0.4"
+		"AbilityCastPoint"						"0.3"
 		//"AbilityChannelTime"					"5.0"
 		"AbilityCooldown"						"190"
 		"AbilityManaCost"						"300"
@@ -35716,7 +35716,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"700"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -35937,7 +35937,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"700"
-		"AbilityCastPoint"				"0.3"
+		"AbilityCastPoint"				"0.25"
 		"AbilityChannelTime"			"20"
 		"AbilityCastAnimation"          "ACT_DOTA_CHANNEL_ABILITY_6"
 
@@ -38105,7 +38105,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.1"
 		"AbilityDuration"				"3 3.5 4 4.5"
 
 		// Ability Resource
@@ -43548,7 +43548,7 @@
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
     "AbilityCooldown"           "15 14 13 12"
-    "AbilityManaCost"           "150 160 170 180"
+    "AbilityManaCost"           "0"
     //"AbilityCastRange"              "650"
 
     //"HasScepterUpgrade"           "1"
@@ -43614,8 +43614,8 @@
 
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
-    "AbilityCooldown"           "20 19 18 17"
-    "AbilityManaCost"           "90 120 150 180"
+    "AbilityCooldown"           "10 9 8 7"
+    "AbilityManaCost"           "0"
     //"AbilityCastRange"              "650"
 
     "HasScepterUpgrade"             "0"
@@ -43785,7 +43785,7 @@
       "09"
       {
         "var_type"            "FIELD_FLOAT"
-        "damage_increase"       "0.1"
+        "damage_increase"       "0.04"
       }
     }
   }
@@ -43812,7 +43812,7 @@
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
     "AbilityCooldown"           "18"
-    "AbilityManaCost"           "150 200 300"
+    "AbilityManaCost"           "0"
     //"AbilityCastRange"              "650"
 
     //"HasScepterUpgrade"           "1"
@@ -43867,8 +43867,8 @@
 
     "AbilityCastPoint"            "0.1" 
     "AbilityChannelTime"          "3"
-    "AbilityCooldown"           "100"
-    "AbilityManaCost"           "600"
+    "AbilityCooldown"           "90"
+    "AbilityManaCost"           "0"
     "AbilityCastRange"              "2500"
 
    "HasScepterUpgrade"           "1"
@@ -44913,6 +44913,11 @@
 				"var_type"				"FIELD_INTEGER"
 				"slow"		             "-80 -80 -80 -80"
 			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"burn_damage"		     "80 100 120 140"
+			}
 
 		}
 	}
@@ -45288,7 +45293,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"130"
+		"AbilityCooldown"				"250"
 		"AbilityManaCost"				"250"
 
 		// Damage
@@ -45529,7 +45534,7 @@
   // Gogeta: Talents
   //=================================================================================================================
   
-	"special_bonus_gogeta_25" // BACKHAND 2 CHARGES
+	"special_bonus_gogeta_25_alt" // BIG BANG KAMEHAMEHA
 		{
 			"BaseClass"						"special_bonus_undefined"														
 			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
@@ -45537,7 +45542,7 @@
 		
 			"LinkedAbility"
 			{
-				"01"        				"gogeta_backhand"
+				"01"        				"gogeta_kamehameha"
 			}
 
 			"AbilitySpecial"
@@ -45586,8 +45591,8 @@
 			{
 				"01"
 				{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"5"
+				"var_type"				"FIELD_INTEGER"
+				"spellamp"				 "25"
 				}			
 			}
 		}
