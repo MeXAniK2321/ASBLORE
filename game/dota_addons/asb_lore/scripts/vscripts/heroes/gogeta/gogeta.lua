@@ -597,7 +597,7 @@ function modifier_akame_headbump:OnCreated(hTable)
 		self.Test = 1
 		
         
-		self.fKnockbackDistance = 270
+		self.fKnockbackDistance = 170
         self.fKnockbackDuration = 0.2
 		self.iAttacksCount 		= 50
 		self.fAttacksInterval   = 0.5
@@ -606,7 +606,7 @@ function modifier_akame_headbump:OnCreated(hTable)
 		  
 
 		--self.fFollowSpeed       = self.fKnockbackDistance / self.fKnockbackDuration
-		self.fFollowDistance 	= 180
+		self.fFollowDistance 	= 100
 
 		self.hKnockBackTable = {
 									should_stun        = 1,
@@ -670,7 +670,7 @@ function modifier_akame_headbump:OnIntervalThink()
                             }
 			
 			if self.Test >= 7 then
-		      self.hKnockBackTable.knockback_distance = 1100
+		      self.hKnockBackTable.knockback_distance = 700
               self.hKnockBackTable.knockback_duration = 0.7
 			  self.hKnockBackTable.duration = 1.2
             end			
@@ -1009,9 +1009,9 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateHorizontalMotion(me, dt)
 		  
 			 local knockback = { should_stun = true,
 			    knockback_duration = 0.5,
-				duration = 0.5,
-				knockback_distance = 1100,
-				knockback_height = 150,
+				duration = 0.6,
+				knockback_distance = 800,
+				knockback_height = 100,
 				center_x = self.parent:GetAbsOrigin().x - self.parent:GetForwardVector().x * 800,
 				center_y = self.parent:GetAbsOrigin().y - self.parent:GetForwardVector().y * 800,
 			    center_z = 4000 }	
@@ -1227,7 +1227,7 @@ function modifier_gogeta_backhand_state:OnDestroy()
     local knockback = { should_stun = 1,
                         knockback_duration = fDuration - 0.5,
                         duration = fDuration,
-                        knockback_distance = 700,
+                        knockback_distance = 650,
                         knockback_height = 0,
                         center_x = hCaster:GetAbsOrigin().x,
                         center_y = hCaster:GetAbsOrigin().y,
@@ -1652,10 +1652,10 @@ function modifier_gogeta_ultimate_form:GetModifierIgnoreMovespeedLimit(keys)
     return 1
 end
 function modifier_gogeta_ultimate_form:GetModifierMoveSpeed_Limit(keys)
-    return 850
+    return 650
 end
 function modifier_gogeta_ultimate_form:GetModifierMoveSpeedBonus_Percentage(keys)
-    return 40
+    return 20
 end
 function modifier_gogeta_ultimate_form:GetModifierSpellAmplify_Percentage()
     return self.ability:GetSpecialValueFor("spellamp")
@@ -1909,7 +1909,7 @@ function gogeta_meteor_explosion:OnSpellStart()
 	if not IsServer() then return end
 	local hCaster 	= self:GetCaster()
 	local hTarget   = self:GetCursorTarget()
-	local fDuration = 7.0
+	local fDuration = 5.0
 
 	hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_meteor_explosion", {duration = fDuration, enemy_target = hTarget:GetEntityIndex()})
 	EmitSoundOn("Gogeta.e1", hCaster)
