@@ -186,5 +186,8 @@
 		{
 			m_ChildRef = resource:"particles/gogeta_kamehameha_start_bigbang.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/gogeta_kamehameha_bigbang_end_fix.vpcf"
+		},
 	]
 }
