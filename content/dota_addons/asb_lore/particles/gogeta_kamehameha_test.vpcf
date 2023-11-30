@@ -186,5 +186,8 @@
 		{
 			m_ChildRef = resource:"particles/gogeta_kamehameha_beam_fix.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/gogeta_kamehameha_alt_end_fix.vpcf"
+		},
 	]
 }
