@@ -103,7 +103,7 @@ function modifier_item_jetstream_sam_muramasa:GetModifierPreAttack_CriticalStrik
     if IsServer() then
         local bIsBuffed   = self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_buff") or self.parent:HasModifier("modifier_item_jetstream_sam_muramasa_neco")
         local fCritChance = bIsBuffed and self.ability:GetSpecialValueFor("bloodshed_crit_chance") or self.ability:GetSpecialValueFor("high_freq_chance")
-        local fRandFloat  = RandomFloat(0, 1) <= fCritChance / 100
+        local fRandFloat  = RandomFloat(0, 1) <= fCritChance / 90
         
         self.bAttackSuccess = fRandFloat
         
@@ -199,10 +199,10 @@ function modifier_item_imba_chain_lightning:OnCreated(keys)
 	if self:GetAbility() then
 		self.bonus_damage	= 0
 		self.chain_damage	= keys.chainDmg or 125
-		self.chain_damagea  = (self:GetAbility():GetSpecialValueFor("lightning_percent_damage") / 100) or 0.17
+		self.chain_damagea  = (self:GetAbility():GetSpecialValueFor("lightning_percent_damage") / 100) or 0.16
 		self.chain_damage2  = self.chain_damage + self:GetParent():GetAttackDamage() * self.chain_damagea
 		self.chain_strikes	= 10
-		self.chain_radius	= 1000
+		self.chain_radius	= 800
 		self.chain_delay	= 0.2
 	else
 		self.bonus_damage	= 0

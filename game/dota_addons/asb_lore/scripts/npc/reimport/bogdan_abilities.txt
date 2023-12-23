@@ -43,7 +43,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"str"	                        "50"
+				"str"	                        "75"
 				
 			}
 			"03"
@@ -243,7 +243,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"200 300 400 500"
+				"damage"				"300 400 450 600"
 				
 			}
 				"04"
@@ -382,7 +382,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"250 350 550"
+				"damage"				"400 600 800"
 			}
 			"02"
 			{
@@ -553,7 +553,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"damage_per_sec"				"2800"
+				"damage_per_sec"				"3500"
 			}
 			"03"
 			{
@@ -648,7 +648,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"200 270 310 600"
+				"damage"			"200 300 450 600"
 			}
 			"05"
 			{

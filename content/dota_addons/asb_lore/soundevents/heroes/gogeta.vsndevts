@@ -259,7 +259,7 @@
     "Gogeta.yosh" = 
 	{
 		type = "dota_src1_3d"
-		volume = 1.1
+		volume = 1.2
 		pitch_rand_min = -0.05
 		pitch_rand_max = 0.05
 		pitch = 1.0

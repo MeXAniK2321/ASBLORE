@@ -179,7 +179,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"250 450 700"
+				"damage"					"350 550 700"
 
 			}
 			"01"
@@ -235,7 +235,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"int_damage"		"1.4"
+				"int_damage"		"1.1"
 			}
 		
 			"02"
@@ -262,7 +262,7 @@
 
 		"AbilityCastPoint"						"0.5"
 		//"AbilityChannelTime"					"5.0"
-		"AbilityCooldown"						"170"
+		"AbilityCooldown"						"180"
 		"AbilityManaCost"						"400"
 		//"AbilityCastRange"						"1200"
 
@@ -378,13 +378,13 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"delay"				"3.5"
+				"delay"				"2.5"
 				
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"1000"
+				"radius"			"1200"
 			}
 			"03"
 			{
@@ -474,7 +474,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50"
+		"AbilityCooldown"				"40"
 		"AbilityManaCost"				"350"
 		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
 
@@ -658,7 +658,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"1500"
+				"damage"			"1300"
 				
 			}
 			"04"
