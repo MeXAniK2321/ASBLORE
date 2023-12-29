@@ -27,6 +27,7 @@ end
 function item_yoru:OnSpellStart()
     local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
+	local fDuration = self:GetSpecialValueFor("duration") or 0.1
     if target:TriggerSpellAbsorb( self ) then return end
 
 	local blinkDistance = 180
@@ -36,7 +37,7 @@ function item_yoru:OnSpellStart()
 		caster, -- player source
 		self, -- ability source
 		"modifier_generic_stunned_lua", -- modifier name
-		{ duration = 0.0 } -- kv
+		{ duration = fDuration } -- kv
 	)
 	target:AddNewModifier(
 		caster, -- player source

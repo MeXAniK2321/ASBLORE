@@ -273,7 +273,7 @@ function gogeta_kamehameha:OnSpellStart()
     local bBigBang      = hCaster:HasTalent("special_bonus_gogeta_25_alt")
     
     -- Values
-    local timer_delay    = bAnimation and fGetDuration or fGetDuration - 1.4
+    local timer_delay    = bAnimation and fGetDuration or fGetDuration - 1.3
     local timer_stop     = 0
     local timer_duration = bAnimation and fGetDuration or fGetDuration - 0.5
     local self_distance  = bAnimation and 20 or 40  -- Distance to push the enemy in units
@@ -402,7 +402,7 @@ function gogeta_kamehameha:OnSpellStart()
         for _,enemy in pairs(enemies) do
             local damage_table = {  victim = enemy,
                                     attacker = hCaster,
-                                    damage = fDamage * (bAnimation and fInterval or fInterval * 0.5),
+                                    damage = fDamage * (bAnimation and fInterval or fInterval * 0.75),
                                     damage_type = self:GetAbilityDamageType(),
                                     ability = self }
                                     
@@ -442,6 +442,8 @@ modifier_gogeta_q_pause = modifier_gogeta_q_pause or class({})
 
 function modifier_gogeta_q_pause:IsHidden() return true end
 function modifier_gogeta_q_pause:IsPurgeable() return false end
+function modifier_gogeta_q_pause:IsDebuff() return false end
+function modifier_gogeta_q_pause:IsStunDebuff() return false end
 function modifier_gogeta_q_pause:RemoveOnDeath() return true end
 function modifier_gogeta_q_pause:GetModifierDisableTurning() return 1 end
 function modifier_gogeta_q_pause:DeclareFunctions()
@@ -576,7 +578,8 @@ function modifier_akame_headbump:GetPriority()                              retu
 function modifier_akame_headbump:CheckState()
     local state =     {
                         [MODIFIER_STATE_MAGIC_IMMUNE] = true,
-                        [MODIFIER_STATE_DISARMED]      = true
+                        [MODIFIER_STATE_DISARMED]     = true,
+                        [MODIFIER_STATE_UNTARGETABLE] = true,
                     }
     return state
 end
@@ -793,7 +796,7 @@ function gogeta_kick_combo_air_finisher:OnSpellStart()
     hCaster:AddNewModifier(hCaster, self, "modifier_gogeta_kick_combo_air_finisher_tp", {duration = 0.2, 
                                                                                          param = "modifier_gogeta_kick_combo_air_finisher"
                                                                                         })
-       EmitSoundOn("Gogeta.d1", hCaster)       
+    EmitSoundOn("Gogeta.d1", hCaster)       
 end
 ---------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
@@ -827,7 +830,7 @@ function modifier_gogeta_kick_combo_air_finisher_tp:OnCreated( kv )
                     and 1
                     or 0
     self.duration = self.parent:HasModifier("modifier_gogeta_kick_combo_air_finisher") 
-                    and 9.0
+                    and 6.5
                     or 2.5
     self.stage    = self.parent:HasModifier("modifier_gogeta_kick_combo_air_finisher")
                     and 1
@@ -1270,7 +1273,7 @@ function modifier_gogeta_backhand_state:OnDestroy()
                      }
     
     -- Find the closest enemy in a radius
-    local enemies = FUnitsRadShort(hCaster, 100, FIND_CLOSEST)
+    local enemies = FUnitsRadShort(hCaster, 115, FIND_CLOSEST)
 ------------------------------------------------------------------------------------------------------------
     for _,enemy in pairs(enemies) do
         -- Animation should only play if there is a target
@@ -1319,7 +1322,7 @@ end
 function gogeta_upper_kick:GetPlaybackRateOverride()
     return self:GetCaster():HasModifier("modifier_gogeta_ultimate_form")
            and GetScalingAnimationRate( 1.0, self:GetSpecialValueFor("ultimate_cast_point") )
-           or 1.0
+           or GetScalingAnimationRate( 1.0, self.BaseClass.GetCastPoint(self) )
 end
 function gogeta_upper_kick:OnAbilityPhaseStart() 
     local hCaster = self:GetCaster()
@@ -1369,10 +1372,14 @@ function gogeta_upper_kick:OnSpellStart()
         damage_type = self:GetAbilityDamageType(),
         ability = self, --Optional.
     }
- 
+    
+    -- Kick Particle Effect
+    local iParticle = ParticleManager:CreateParticle("particles/gogeta_blue_kick_trail.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+                      ParticleManager:SetParticleControl( iParticle, 2, Vector( self:GetCastPoint() * 0.5, 0, 0 ) )
+    ParticleManager:ReleaseParticleIndex(iParticle)    
     
     -- Find the closest enemy in a radius
-    local enemies = FUnitsRadShort(hCaster, 200, FIND_CLOSEST)
+    local enemies = FUnitsRadShort(hCaster, 225, FIND_CLOSEST)
 -------------------------------------------------------------------------------------------------------------
     for _,enemy in pairs(enemies) do
         local vDirection = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()
@@ -2227,7 +2234,7 @@ function modifier_gogeta_meteor_explosion_target:OnCreated(keys)
  --==============================================================================--   
     
     -- Start the motion
-    self:StartIntervalThink(0.1)
+    self:StartIntervalThink(0.01)
     
     -- Damage Table
     self.hDamageTable = {
@@ -2247,7 +2254,7 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
     if not IsServer() then return end
 
     local me = self:GetParent()
-    local dt = FrameTime()
+    local dt = 0.01 --FrameTime()
     -- Get the current position
     local pos = me:GetOrigin() 
     
@@ -2255,7 +2262,7 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
     local vGroundPos = GetGroundPosition(me:GetOrigin(), me)
     
     -- Timer
-    self.timer = self.timer + 0.1
+    self.timer = self.timer + 0.01
 
     if self.timer >= 1.4 and not self.meteorf then
         -- Meteor Explosion Gogeta pre explosion quote sound
@@ -2294,6 +2301,8 @@ function modifier_gogeta_meteor_explosion_target:OnIntervalThink()
         for _,enemy in pairs(enemies) do
             enemy:AddNewModifier(self.caster, self, "modifier_generic_stunned_lua", {duration = self.stun_pre})
         end
+        
+        self.parent:AddNewModifier(self.parent, self, "modifier_gogeta_q_pause", {duration = self.stun_pre}) -- Fix for target being able to use BKB before Explosion. 
         
         if not self.meteorex1 then
             -- Meteor Explosion pre explosion sound

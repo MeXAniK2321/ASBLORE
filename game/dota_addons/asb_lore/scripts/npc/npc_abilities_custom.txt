@@ -45026,7 +45026,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
@@ -45034,7 +45034,7 @@
 		//-------------------------------------------------------------------------------------------------------------
         "AbilityCastAnimation"          "ACT_DOTA_IDLE"
 		"AbilityCastRange"				"150"
-		"AbilityCastPoint"				"0.4"
+		"AbilityCastPoint"				"0.2"
 		"AbilityChannelTime"			"3.0"
 
 		// Ability Resource
@@ -45565,12 +45565,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		        "900"
+				"damage"		        "2500"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movespeed"		        "525"
+				"movespeed"		        "825"
 			}
 			"03"
 			{
@@ -45653,7 +45653,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration_pre"		"5.2"
+				"stun_duration_pre"		"1.0"
 			}
 			"06"
 			{

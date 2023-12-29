@@ -531,18 +531,21 @@ function modifier_chibi_marci_slave:OnCreated(hTable)
 		
 	    self.bDestroy = nil
 	
-        local sMessage = "F**** Slave."
+        local sMessage = "Leather man."
         GameRules:SendCustomMessage(sMessage, 0, 0)
 		
-		EmitGlobalSound("chibi.slave")
+		--EmitGlobalSound("chibi.slave")
 	    self:StartIntervalThink(7.0)
 	end
 end
 function modifier_chibi_marci_slave:OnIntervalThink()
     if not IsServer() then return end
+	
+	self:Destroy()
 
-    if not self.bDestroy then
-	    -- NPC spawned name
+   	-- MARKED FOR INAPPROPRIATE CONTENT I THINK, SO REMOVED.
+	--[[  if not self.bDestroy then
+        -- NPC spawned name
         local sNpc = "npc_dota_fisting_billy"
 
 	    -- Parameters for cone
@@ -597,7 +600,7 @@ function modifier_chibi_marci_slave:OnIntervalThink()
 	else
 	    self:Destroy()
 	    self:StartIntervalThink(-1)
-    end
+    end]]--
 end
 function modifier_chibi_marci_slave:OnRefresh(hTable)
 	self:OnCreated(hTable)
@@ -614,7 +617,7 @@ function modifier_chibi_marci_slave:OnDestroy()
 	if not self.parent:IsAlive() then return end
 	self.parent:ForceKill(false)
     self.parent:SetTimeUntilRespawn(2.0)
-	StopGlobalSound("chibi.slave")
+	--StopGlobalSound("chibi.slave")
 end
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -1074,6 +1077,7 @@ end
 ---------------------------------------------------------------------------------------------------------------------
 -- SLAVE MODIFIER FISTING
 ---------------------------------------------------------------------------------------------------------------------
+--[[
 LinkLuaModifier("modifier_chibi_marci_slave_fisting", "items/item_chibi_marci", LUA_MODIFIER_MOTION_NONE)
 modifier_chibi_marci_slave_fisting = modifier_chibi_marci_slave_fisting or class({})
 
@@ -1146,4 +1150,5 @@ function modifier_chibi_marci_slave_fisting:OnDestroy()
 		end
     end
 end
+]]--
 

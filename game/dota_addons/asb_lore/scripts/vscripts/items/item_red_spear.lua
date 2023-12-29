@@ -157,13 +157,15 @@ function modifier_item_red_spear_buff:OnTakeDamage(params)
 		
         if params.attacker == self:GetParent() 
             and params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL and randFloat 
-            and params.unit and params.unit:IsAlive() then
+            and params.unit and params.unit:IsAlive()
+            and params.inflictor ~= self.ability then
             local hDamageTable = {
                                    victim = params.unit,
                                    attacker = self:GetParent(),
                                    damage = self.damage,
                                    damage_type = DAMAGE_TYPE_PURE,
                                    damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
+                                   ability = self.ability
                                  }
             -- Add Crit Particle
             local CritParticle = ParticleManager:CreateParticle("particles/red_spear_crit.vpcf", PATTACH_ABSORIGIN, params.unit)

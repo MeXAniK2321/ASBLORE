@@ -2588,31 +2588,98 @@
 			}
 		}
 	}
-	     "models/nanaya/animno.vmdl"
+		"models/nanaya/animno.vmdl"
 	{
-		"PortraitLightPosition"		"-31.86 -0.90 206.39"
-		"PortraitLightAngles"		"60.57 10.88 0.00"
-		"PortraitLightFOV"		"47"
-		"PortraitLightDistance"		"77"
-		"PortraitLightColor"		"153 200 254"
-		"PortraitShadowColor"		"0 97 111"
-		"PortraitShadowScale"		"1.500000"
-		"PortraitAmbientColor"		"123 146 195"
-		"PortraitAmbientScale"		"3.575000"
+		"PortraitLightPosition"		"112.73 -41.13 174.53"
+		"PortraitLightAngles"		"42.54 149.30 0.00"
+		"PortraitLightFOV"		"90"
+		"PortraitLightDistance"		"133"
+		"PortraitLightColor"		"255 255 255"
+		"PortraitShadowColor"		"69 84 56"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"192 0 56"
+		"PortraitAmbientScale"		"5.000000"
 		"PortraitSpecularColor"		"251 74 84"
 		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_moon.vmat"
-		"PortraitLightScale"		"5.000000"
+		"PortraitLightScale"		"1.950000"
 		"PortraitGroundShadowScale"		"1.500000"
-		"PortraitAmbientDirection"		"27.620 5.440 1.230"
-		"PortraitAnimationActivity"		"ACT_DOTA_CAPTURE"
+		"PortraitAmbientDirection"		"-31.670 34.840 37.060"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"167.72 73.39 147.18"
-				"PortraitAngles"		"354.81 203.27 0"
-				"PortraitFOV"		"30"
+				
+				"PortraitPosition"		"500 -125 160"
+				"PortraitAngles"		"355.89 166.83 0.00"
+				"PortraitFOV"		"16"
 			}
 		}
 	}
+    
+        "models/gogeta/gogeta_ssjb.vmdl"
+    {
+        "PortraitLightPosition"     "8.34 -51.72 127.79"
+        "PortraitLightAngles"       "12.96 83.92 0.00"
+        "PortraitLightFOV"      "51"
+        "PortraitLightDistance"     "85"
+        "PortraitLightColor"        "254 210 218"
+        "PortraitShadowColor"       "93 93 93"
+        "PortraitShadowScale"       "4.025000"
+        "PortraitAmbientColor"      "241 165 97"
+        "PortraitAmbientScale"      "5.000000"
+        "PortraitSpecularColor"     "251 74 84"
+        "PortraitBackgroundTexture"     "materials/vgui/hud/heroportraits/portraitbackground_oracle.vmat"
+        "PortraitBackgroundColor1"      "0 .1 1"
+        "PortraitBackgroundColor2"      "0.1 0.3 0.9"
+        "PortraitBackgroundColor3"      "0.3 0.6 0.8"
+        "PortraitBackgroundColor4"      "0.3 0.8 0.8"
+        "PortraitLightScale"        "4.100000"
+        "PortraitGroundShadowScale"     "1.500000"
+        "PortraitAmbientDirection"      "-3.070 17.250 4.660"
+        "PortraitAnimationActivity"     "ACT_DOTA_IDLE"
+        "cameras"
+        {
+                "default"
+            {               
+				"PortraitPosition"		"500 -125 0"
+				"PortraitAngles"		"355.89 166.83 0.00"
+				"PortraitFOV"		"16"
+            }
+        }
+    }
+    
+        "models/heroes/anime/jujutsu_kaisen/gojo/gojo.vmdl"
+    {
+        "PortraitLightPosition"     "8.34 -51.72 127.79"
+        "PortraitLightAngles"       "12.96 83.92 0.00"
+        "PortraitLightFOV"      "51"
+        "PortraitLightDistance"     "85"
+        "PortraitLightColor"        "254 210 218"
+        "PortraitShadowColor"       "93 93 93"
+        "PortraitShadowScale"       "4.025000"
+        "PortraitAmbientColor"      "241 165 97"
+        "PortraitAmbientScale"      "5.000000"
+        "PortraitSpecularColor"     "251 74 84"
+        "PortraitBackgroundTexture"     "materials/vgui/hud/heroportraits/portraitbackground_oracle.vmat"
+        "PortraitBackgroundColor1"      "0 .1 1"
+        "PortraitBackgroundColor2"      "0.1 0.3 0.9"
+        "PortraitBackgroundColor3"      "0.3 0.6 0.8"
+        "PortraitBackgroundColor4"      "0.3 0.8 0.8"
+        "PortraitLightScale"        "4.100000"
+        "PortraitGroundShadowScale"     "1.500000"
+        "PortraitAmbientDirection"      "-3.070 17.250 4.660"
+        "PortraitAnimationActivity"     "ACT_DOTA_IDLE"
+        "cameras"
+        {
+                "default"
+            {               
+                "PortraitPosition"      "280 -17 150"
+                "PortraitAngles"        "355.89 177.83 0.00"
+                "PortraitFOV"       "16"
+            }
+        }
+    }
+    
+    
 	}

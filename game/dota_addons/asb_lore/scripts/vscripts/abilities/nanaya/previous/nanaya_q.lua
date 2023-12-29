@@ -53,7 +53,7 @@ modifier_q_nanaya = class ({})
 function modifier_q_nanaya:OnCreated(args)
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()	
-	self.speed = 2900
+	self.speed = 2800
 	self.caster = self:GetCaster()
 	
 	if IsServer() then

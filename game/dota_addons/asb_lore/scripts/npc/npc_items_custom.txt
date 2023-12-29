@@ -4291,7 +4291,10 @@
 		"ScriptFile"					"items/item_nanaya_knife.lua"
 	"AbilityTextureName"			"nanaya_knife"	
 	"ItemPurchasable"						"0"
-	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+	"AbilityCastPoint"						"0.0"
+	"AbilityCooldown"						"180"
+	"AbilityManaCost"						"0"
 	"ItemCost"					"20000"
 	"ItemDroppable" 						"0"
 	"ItemIsNeutralDrop"						"1"
@@ -4315,16 +4318,38 @@
 		    	"agi"				"40"
 		    }
 		
-			
+
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"hp"				"1000"
 			}
 			
-	
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ghoul_duration"		"35"
+			}
+            
+            "05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ghoul_kills"			"10"
+			}
+            
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ghoul_cd"			    "20"
+			}
+            
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ghoul_movespeed"		"600"
+			}
 		}
-		}
+	}
 	
 	
 	
@@ -7480,7 +7505,7 @@
 		"ItemInitiallySellable"					"1"
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
-		"ItemInitialCharges"					"3"
+		"ItemInitialCharges"					"2"
 		"ItemCost"								"4000"
 		"AbilitySharedCooldown"                 ""
 		"AbilityCooldown"						"40"
@@ -7504,7 +7529,7 @@
 		"03"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"stats_bonus"		"3"
+		    	"stats_bonus"		"2"
 		    }
 		"04"
 		    {
@@ -7655,9 +7680,9 @@
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"0"
-		"ItemCost"								"3500"
+		"ItemCost"								"2500"
 		"AbilitySharedCooldown"                 ""
-		"AbilityCooldown"						"8"
+		"AbilityCooldown"						"4"
 		"ItemShopTags"							"buff;unique"
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -7668,7 +7693,7 @@
 		 "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"health_bonus"		"1000"
+		    	"health_bonus"		"1250"
 		    }
 			
 		}

@@ -159,7 +159,7 @@ modifier_item_samehada_debuff = modifier_item_samehada_debuff or class({})
 
 --------------------------------------------------------------------------------
 -- Classifications
-function modifier_item_samehada_debuff:IsHidden() return false en
+function modifier_item_samehada_debuff:IsHidden() return false end
 function modifier_item_samehada_debuff:IsDebuff() return true end
 function modifier_item_samehada_debuff:IsPurgable() return true end
 --------------------------------------------------------------------------------

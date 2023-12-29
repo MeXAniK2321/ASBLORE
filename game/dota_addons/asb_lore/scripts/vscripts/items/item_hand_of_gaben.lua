@@ -18,6 +18,7 @@ function item_hand_of_gaben:OnSpellStart()
 	 
 	 -- Apply the gold gain effect particle
 	 local particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+	                  ParticleManager:SetParticleControl(particle, 1, hCaster:GetAbsOrigin())
      ParticleManager:ReleaseParticleIndex(particle)
 	
 	 -- Gain the gold

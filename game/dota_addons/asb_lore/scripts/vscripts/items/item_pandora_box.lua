@@ -12,7 +12,6 @@ function item_pandora_box:OnSpellStart()
 	else
 	self:SpendCharge()
 
-	
 		if caster:GetUnitName()== "npc_dota_hero_naga_siren" then
 		local item = CreateItem("item_brs_canon", caster, self)
 	    caster:AddItem(item)
