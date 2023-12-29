@@ -785,7 +785,9 @@ function nanaya_knife:OnProjectileHitHandle(hTarget, vLocation, iProjectileHandl
 		local player2 = hTarget:GetPlayerOwner()
 		local target = hTarget:GetAbsOrigin()
 		local target_2 = hTarget:entindex()
-        local iHPPercent = self:GetSpecialValueFor("hp_percent")
+        local iHPPercent = (self:GetSpecialValueFor("hp_percent") or 10)+ (self:GetCaster():HasTalent("special_bonus_nanaya_15r")
+                                                                          and self:GetCaster():FindTalentValue("special_bonus_nanaya_15r")
+                                                                          or 0)
 		
         if hTarget:GetHealthPercent() >= iHPPercent then -->= 25 then
             
@@ -857,9 +859,8 @@ function modifier_nanaya_animation_knife:OnCreated(args)
         self.parent = self:GetParent()
 		
 		self.health = args.enemy_health
-        self.iHPPerc = (args.hp_percent or 10) + (self.caster:HasTalent("special_bonus_nanaya_15r")
-                                                     and self.caster:FindTalentValue("special_bonus_nanaya_15r")
-                                                     or 0)
+        self.iHPPerc = (args.hp_percent or 10)
+        
         print("Nanaya Knife %: " .. self.iHPPerc)
 		self.origin = args.origin
 		self.d = args.d
@@ -1675,8 +1676,8 @@ function nanaya_jump_slashes:OnSpellStart()
                                     iMoveSpeed = 700,
                                     vSpawnOrigin = caster:GetOrigin(),
                                     fDistance =  700,
-                                    fStartRadius = 150,
-                                    fEndRadius = 150,
+                                    fStartRadius = 185,
+                                    fEndRadius = 185,
                                     Source = caster,
                                      bHasFrontalCone = true,
                                     bReplaceExisting = true,

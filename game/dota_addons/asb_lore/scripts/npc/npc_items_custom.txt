@@ -7682,7 +7682,7 @@
 		"ItemInitialCharges"					"0"
 		"ItemCost"								"2500"
 		"AbilitySharedCooldown"                 ""
-		"AbilityCooldown"						"4"
+		"AbilityCooldown"						"5"
 		"ItemShopTags"							"buff;unique"
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -7748,7 +7748,7 @@
 		 "01"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_attack_speed"		"100"
+		    	"bonus_attack_speed"		"175"
 		    }
 		 "02"
 		    {
@@ -7763,7 +7763,7 @@
 		 "04"
 		    {
 		    	"var_type"			"FIELD_FLOAT"
-		    	"bloodshed_duration"		"1.5"
+		    	"bloodshed_duration"		"2.3"
 		    }
 		 "05"
 		    {

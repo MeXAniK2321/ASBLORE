@@ -404,10 +404,10 @@ function modifier_chibi_marci_giant:GetModifierHealthBonus()
     return 10000
 end
 function modifier_chibi_marci_giant:GetModifierMoveSpeedBonus_Constant()
-	return -400
+	return -50
 end
 function modifier_chibi_marci_giant:GetModifierAttackSpeedBonus_Constant()
-    return -700
+    return -100
 end
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -515,7 +515,7 @@ function modifier_chibi_marci_slave:IsPurgable() return false end
 function modifier_chibi_marci_slave:CheckState()
 	local state = {
 		              [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
-		              [MODIFIER_STATE_INVULNERABLE] = true,
+		              --[MODIFIER_STATE_INVULNERABLE] = true,
 		              [MODIFIER_STATE_STUNNED] = true,
 	              }
 
@@ -852,8 +852,8 @@ function modifier_chibi_marci_instant_trash_think:OnCreated( kv )
         self.hDamageTable = {
              victim = nil,
              attacker = self.caster,
-             damage = 1500,
-             damage_type = DAMAGE_TYPE_MAGICAL,
+             damage = 1700,
+             damage_type = DAMAGE_TYPE_PURE,
              ability = self.ability
             }
 		
@@ -1021,7 +1021,7 @@ function modifier_chibi_marci_amaterasu_target:OnIntervalThink()
             victim = self.parent,
             attacker = self.caster,
             damage = damage,
-            damage_type = DAMAGE_TYPE_MAGICAL,
+            damage_type = DAMAGE_TYPE_PURE,
             ability = self.ability
         }
 

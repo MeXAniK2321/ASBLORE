@@ -144,8 +144,8 @@ function modifier_nanaya_instinct:OnCreated()
     if IsServer() then
     	self.parent:SetMaterialGroup("WhiteShadow")
     	self.sex = true
-		local sAbil1 = self.parent:GetAbilityByIndex(4)
-	    if sAbil1:GetAbilityName() == "nanaya_slashes" then
+		local sAbil1 = self.parent:GetAbilityByIndex(2)
+	    if sAbil1:GetAbilityName() == "nanaya_knife" then
 			sAbil1:EndCooldown()
 		end
 		self.nanaya_right_eye = ParticleManager:CreateParticle("particles/nanaya_eyes.vpcf", PATTACH_CUSTOMORIGIN, self.parent)
