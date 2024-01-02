@@ -1,0 +1,76 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	"Gojo.red" = 
+	{
+		type = "dota_src1_3d"
+		volume = 22.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_red.vsnd",
+		]
+	}
+	"Gojo.purple_activate" = 
+	{
+		type = "dota_src1_3d"
+		volume = 11.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/hollow_purple_activate.vsnd",
+		]
+	}
+	"Gojo.purple_theme" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/hollow_purple_theme.vsnd",
+		]
+	}
+    
+	"Gojo.purple_snap" = 
+	{
+		type = "dota_src1_3d"
+		volume = 11.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_purple_snap.vsnd",
+		]
+	}
+    
+	"Gojo.purple_full" = 
+	{
+		type = "dota_src1_3d"
+		volume = 11.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_purple_full.vsnd",
+		]
+	}
+	
+}

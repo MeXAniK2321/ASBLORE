@@ -552,7 +552,7 @@ function jump_ahead_nanaya:OnSpellStart()
             caster:SwapAbilities("nanaya_q_strike", "nanaya_q2jump", true, false)
     end
 	
-    if caster:FindModifierByName("nanaya_blood_modifier"):GetStackCount() > 9 then
+    if caster:FindModifierByName("nanaya_blood_modifier"):GetStackCount() > 9 or caster:HasModifier("modifier_nanaya_instinct") then
 	    Timers:CreateTimer(0.1, function()
 		    local hKnifeProjectile =    {
 			                              Source            = caster,
@@ -1141,7 +1141,7 @@ function nanaya_blood_modifier:GetMaxStackCount()
 end
 function nanaya_blood_modifier:OnTakeDamage(keys)
     if IsServer() then
-        if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() then
+        if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() and not keys.inflictor:IsItem() then
             local iStacks = self:GetStackCount()
             if self.iNanayaParticle ~= nil then 
                 ParticleManager:DestroyParticle(self.iNanayaParticle, true)
@@ -1675,7 +1675,7 @@ function nanaya_jump_slashes:OnSpellStart()
                                     EffectName = nil,
                                     iMoveSpeed = 700,
                                     vSpawnOrigin = caster:GetOrigin(),
-                                    fDistance =  700,
+                                    fDistance =  1200,
                                     fStartRadius = 185,
                                     fEndRadius = 185,
                                     Source = caster,
@@ -1907,7 +1907,7 @@ nanaya_combo = nanaya_combo or class({})
 
 function nanaya_combo:OnSpellStart()
     local hCaster = self:GetCaster()
-    hCaster:AddNewModifier(hCaster, self, "nanaya_combo_attack", { duration = 1})			
+    hCaster:AddNewModifier(hCaster, self, "nanaya_combo_attack", { duration = 0.5})			
 end					
 function nanaya_combo:Alternate(caster, target, ability)
     PlayerResource:SetCameraTarget(target:GetPlayerID(), caster)

@@ -690,6 +690,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -715,6 +717,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -740,6 +744,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -765,6 +771,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -790,6 +798,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -815,6 +825,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -840,6 +852,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -865,6 +879,8 @@
 			"sounds/BoomBox/poppy.vsnd",
 			"sounds/BoomBox/psy_gentleman.vsnd",
 			"sounds/BoomBox/berserk_brother.vsnd",
+			"sounds/BoomBox/berserk_sign.vsnd",
+			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -1531,6 +1547,62 @@
 		vsnd_files = 
 		[
 			"sounds/chibi_marci/golden_legendary.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	berserker.activate = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/heroes/anime_hero_guts/guts_berserk.vsnd",
+		]
+		volume = "1.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	berserker.passive = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/berserker_armor/berserker_passive.vsnd",
+		]
+		volume = "3.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	MGB.launch = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/moonlight_goddess_bow/arrow_launch.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	MGB.hit = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/moonlight_goddess_bow/arrow_hit.vsnd",
 		]
 		volume = "2.000000"
 		pitch_min = "1.000000"

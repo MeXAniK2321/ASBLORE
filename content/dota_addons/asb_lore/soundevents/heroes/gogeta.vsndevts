@@ -259,7 +259,7 @@
     "Gogeta.yosh" = 
 	{
 		type = "dota_src1_3d"
-		volume = 1.2
+		volume = 1.1
 		pitch_rand_min = -0.05
 		pitch_rand_max = 0.05
 		pitch = 1.0
@@ -391,6 +391,22 @@
 		vsnd_files = 
 		[
 			"sounds/gogeta/gogeta_meteorpower.vsnd",
+		]
+	}
+	"Gogeta.bigbang" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 1.4
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gogeta/gogeta_bigbang.vsnd",
 		]
 	}
 	

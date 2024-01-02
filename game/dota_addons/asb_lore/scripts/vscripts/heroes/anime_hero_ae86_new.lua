@@ -27,6 +27,7 @@ function ae86_clown_horn:OnSpellStart()
 	 
 	 -- Apply the gold gain effect particle
 	 local particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+	                  ParticleManager:SetParticleControl(particle, 1, hCaster:GetAbsOrigin())
      ParticleManager:ReleaseParticleIndex(particle)
 	
 	 -- Gain the gold
@@ -242,7 +243,7 @@ function modifier_ae86_gas:OnCreated(hTable)
         self.bMoveDown  = false
         self.bMoveRight = false
 
-        self.fFrameTime = FrameTime()
+        self.fFrameTime = 0.01--FrameTime()
 
         self:StartIntervalThink(self.fFrameTime)
     end
@@ -463,8 +464,8 @@ function modifier_ae86_gas:OnIntervalThink()
                 if math.abs(iVectorFix) > self.fTurnDrift then
                     local hDriftTable = {
                                             vDriftVec      = iVectorFix / math.abs(iVectorFix),
-                                            fDriftSpeed    = math.abs(iMoveUpStacks) * self.fAccelTime,
-                                            fDriftDistance = math.abs(iMoveUpStacks) * self.fAccelTime
+                                            fDriftSpeed    = math.abs(math.min(400, iMoveUpStacks)) * self.fAccelTime,
+                                            fDriftDistance = math.abs(math.min(400, iMoveUpStacks)) * self.fAccelTime
                                         }
 
                     table.insert(self.hDriftTable, hDriftTable)
@@ -554,7 +555,7 @@ function modifier_ae86_gas:UpdateHorizontalMotion(me, dt)
                     and not self.parent:HasModifier("modifier_anime_special_respawn") then --NEW LINE 23.10.2021 FOR FIX INVUL
                         
                     --local fSecondsPerAttack = self.parent:GetSecondsPerAttack() + self.parent:GetAttackAnimationPoint()
-                    local fAttacksPerSecond = math.ceil(self.parent:GetAttacksPerSecond())
+                    local fAttacksPerSecond = math.ceil(self.parent:GetAttacksPerSecond(false))
                     --print(fAttacksPerSecond)
                     self.hKnockBackTable.center_x = vCurrentLoc.x
                     self.hKnockBackTable.center_y = vCurrentLoc.y
@@ -1127,7 +1128,9 @@ function modifier_ae86_theme:IsPurgable()              return not self.parent:Ha
 function modifier_ae86_theme:IsPurgeException()        return not self.parent:HasTalent("special_bonus_anime_ae86_15R") end
 function modifier_ae86_theme:RemoveOnDeath()           return true end
 function modifier_ae86_theme:CheckState()
-    local state = {}
+    local state = {
+                        [MODIFIER_STATE_PROVIDES_VISION] = true
+	              }
      
     if self.parent:HasTalent("special_bonus_anime_ae86_15R") then
         state[MODIFIER_STATE_UNSLOWABLE] = true

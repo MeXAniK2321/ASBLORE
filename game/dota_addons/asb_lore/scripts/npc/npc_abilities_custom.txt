@@ -1622,7 +1622,7 @@
 
 		"AbilityManaCost"						"400"
 		"AbilityCastRange"						"2500"
-		"AbilityCastPoint"						"2.2"
+		"AbilityCastPoint"						"1.3"
 		"AbilityCooldown"						"60"
 		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
 		"MaxLevel"                      "1"
@@ -17823,7 +17823,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			"1.5 1.8 2 2.2"
+				"stun_duration"			"1.5 1.8 2.1 2.4"
 			}
 			"02"
 			{
@@ -26302,7 +26302,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"gold"				"7 11 15 35"
+				"gold"				"5 8 11 15"
 			
 			}
 			
@@ -43934,7 +43934,7 @@
     //"AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
 
     "SpellImmunityType"           "SPELL_IMMUNITY_ALLIES_YES"
-    "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+    //"SpellDispellableType"          "SPELL_DISPELLABLE_YES"
 
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
@@ -43958,12 +43958,12 @@
       "01"
       {
         "var_type"            "FIELD_INTEGER"
-        "gold"                "50"
+        "gold"                "100"
       }
       "02"
       {
         "var_type"            "FIELD_INTEGER"
-        "cooldown"            "60"
+        "cooldown"            "50"
       }
 
     }

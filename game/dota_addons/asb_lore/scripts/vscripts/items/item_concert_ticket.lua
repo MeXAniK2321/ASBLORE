@@ -35,7 +35,7 @@ for i = 1, 4 do
    local caster = self:GetCaster()
 
    -- Set Gold
-   self.bonus_gold = 1000 * i
+   self.bonus_gold = 1250 * i
    -- Spend item charge
    self:SpendCharge()
    -- Give Gold to player
@@ -65,8 +65,18 @@ function modifier_item_anime_boombox_ticket:CheckState()
 	return state
 end
 function modifier_item_anime_boombox_ticket:DeclareFunctions()
-	local func = { MODIFIER_EVENT_ON_DEATH, }
+	local func = { MODIFIER_EVENT_ON_DEATH,
+                   MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,    
+                   MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT }
 	return func
+end
+function modifier_item_anime_boombox_ticket:GetModifierIncomingDamage_Percentage() 
+    if IsServer() then        
+        return -15
+    end
+end		
+function modifier_item_anime_boombox_ticket:GetModifierMoveSpeedBonus_Constant(keys)
+    return 50
 end
 function modifier_item_anime_boombox_ticket:OnDeath(keys)
 	--print("NANI")
