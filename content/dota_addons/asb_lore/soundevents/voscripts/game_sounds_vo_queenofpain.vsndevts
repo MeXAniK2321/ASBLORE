@@ -1,8 +1,7 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+ <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 
 "queenofpain_pain_spawn_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -15,7 +14,6 @@
 
 "queenofpain_pain_spawn_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -28,7 +26,6 @@
 
 "queenofpain_pain_spawn_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -41,7 +38,6 @@
 
 "queenofpain_pain_spawn_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -54,7 +50,6 @@
 
 "queenofpain_pain_begin_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -67,7 +62,7 @@
 
 "queenofpain_pain_first_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -80,7 +75,7 @@
 
 "queenofpain_pain_first_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -93,7 +88,7 @@
 
 "queenofpain_pain_move_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -106,7 +101,7 @@
 
 "queenofpain_pain_move_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -119,7 +114,7 @@
 
 "queenofpain_pain_move_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -132,7 +127,7 @@
 
 "queenofpain_pain_move_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -145,7 +140,7 @@
 
 "queenofpain_pain_move_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -158,7 +153,7 @@
 
 "queenofpain_pain_move_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -171,7 +166,7 @@
 
 "queenofpain_pain_move_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -184,7 +179,7 @@
 
 "queenofpain_pain_move_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -197,7 +192,7 @@
 
 "queenofpain_pain_move_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -210,7 +205,7 @@
 
 "queenofpain_pain_move_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -223,7 +218,7 @@
 
 "queenofpain_pain_move_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -236,7 +231,7 @@
 
 "queenofpain_pain_move_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -249,7 +244,7 @@
 
 "queenofpain_pain_move_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -262,7 +257,7 @@
 
 "queenofpain_pain_attack_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -275,7 +270,7 @@
 
 "queenofpain_pain_attack_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -288,7 +283,7 @@
 
 "queenofpain_pain_attack_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -301,7 +296,7 @@
 
 "queenofpain_pain_attack_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -314,7 +309,7 @@
 
 "queenofpain_pain_attack_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -327,7 +322,7 @@
 
 "queenofpain_pain_attack_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -340,7 +335,7 @@
 
 "queenofpain_pain_attack_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -353,7 +348,7 @@
 
 "queenofpain_pain_attack_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -366,7 +361,7 @@
 
 "queenofpain_pain_attack_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -379,7 +374,7 @@
 
 "queenofpain_pain_attack_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -392,7 +387,7 @@
 
 "queenofpain_pain_attack_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -405,7 +400,7 @@
 
 "queenofpain_pain_attack_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -418,7 +413,7 @@
 
 "queenofpain_pain_cast_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -431,7 +426,7 @@
 
 "queenofpain_pain_cast_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -444,7 +439,7 @@
 
 "queenofpain_pain_cast_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -457,7 +452,7 @@
 
 "queenofpain_pain_ability_shadowstrike_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -470,7 +465,7 @@
 
 "queenofpain_pain_ability_shadowstrike_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -483,7 +478,7 @@
 
 "queenofpain_pain_ability_shadowstrike_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -496,7 +491,7 @@
 
 "queenofpain_pain_ability_shadowstrike_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -509,7 +504,7 @@
 
 "queenofpain_pain_ability_screamofpain_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -522,7 +517,7 @@
 
 "queenofpain_pain_ability_screamofpain_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -535,7 +530,7 @@
 
 "queenofpain_pain_ability_screamofpain_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -548,7 +543,7 @@
 
 "queenofpain_pain_ability_screamofpain_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -561,7 +556,7 @@
 
 "queenofpain_pain_ability_sonicwave_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -574,7 +569,7 @@
 
 "queenofpain_pain_ability_sonicwave_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -587,7 +582,7 @@
 
 "queenofpain_pain_ability_sonicwave_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -600,7 +595,7 @@
 
 "queenofpain_pain_ability_sonicwave_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -613,7 +608,7 @@
 
 "queenofpain_pain_levelup_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -626,7 +621,7 @@
 
 "queenofpain_pain_levelup_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -639,7 +634,7 @@
 
 "queenofpain_pain_levelup_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -652,7 +647,7 @@
 
 "queenofpain_pain_levelup_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -665,7 +660,7 @@
 
 "queenofpain_pain_levelup_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -678,7 +673,7 @@
 
 "queenofpain_pain_levelup_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -691,7 +686,7 @@
 
 "queenofpain_pain_levelup_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -704,7 +699,7 @@
 
 "queenofpain_pain_levelup_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -717,7 +712,7 @@
 
 "queenofpain_pain_levelup_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -730,7 +725,7 @@
 
 "queenofpain_pain_levelup_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -743,7 +738,7 @@
 
 "queenofpain_pain_levelup_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -756,7 +751,7 @@
 
 "queenofpain_pain_kill_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -769,7 +764,7 @@
 
 "queenofpain_pain_kill_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -782,7 +777,7 @@
 
 "queenofpain_pain_kill_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -795,7 +790,7 @@
 
 "queenofpain_pain_kill_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -808,7 +803,7 @@
 
 "queenofpain_pain_kill_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -821,7 +816,7 @@
 
 "queenofpain_pain_kill_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -834,7 +829,7 @@
 
 "queenofpain_pain_kill_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -847,7 +842,7 @@
 
 "queenofpain_pain_kill_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -860,7 +855,7 @@
 
 "queenofpain_pain_kill_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -873,7 +868,7 @@
 
 "queenofpain_pain_kill_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -886,7 +881,7 @@
 
 "queenofpain_pain_kill_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -899,7 +894,7 @@
 
 "queenofpain_pain_kill_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -912,7 +907,7 @@
 
 "queenofpain_pain_kill_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -925,7 +920,7 @@
 
 "queenofpain_pain_kill_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -938,7 +933,7 @@
 
 "queenofpain_pain_kill_15"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -951,7 +946,7 @@
 
 "queenofpain_pain_kill_16"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -964,7 +959,7 @@
 
 "queenofpain_pain_rival_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -977,7 +972,7 @@
 
 "queenofpain_pain_rival_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -990,7 +985,7 @@
 
 "queenofpain_pain_rival_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1003,7 +998,7 @@
 
 "queenofpain_pain_rival_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1016,7 +1011,7 @@
 
 "queenofpain_pain_rival_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1029,7 +1024,7 @@
 
 "queenofpain_pain_rival_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1042,7 +1037,7 @@
 
 "queenofpain_pain_rival_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1055,7 +1050,7 @@
 
 "queenofpain_pain_rival_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1068,7 +1063,7 @@
 
 "queenofpain_pain_rival_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1081,7 +1076,7 @@
 
 "queenofpain_pain_rival_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1094,7 +1089,7 @@
 
 "queenofpain_pain_rival_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1107,7 +1102,7 @@
 
 "queenofpain_pain_rival_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1120,7 +1115,7 @@
 
 "queenofpain_pain_rival_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1133,7 +1128,7 @@
 
 "queenofpain_pain_rival_15"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1146,7 +1141,7 @@
 
 "queenofpain_pain_specialcase_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1159,7 +1154,7 @@
 
 "queenofpain_pain_specialcase_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1172,7 +1167,7 @@
 
 "queenofpain_pain_specialcase_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1185,7 +1180,7 @@
 
 "queenofpain_pain_specialcase_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1198,7 +1193,7 @@
 
 "queenofpain_pain_specialcase_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1211,7 +1206,7 @@
 
 "queenofpain_pain_taunt_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1224,7 +1219,7 @@
 
 "queenofpain_pain_taunt_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1237,7 +1232,7 @@
 
 "queenofpain_pain_taunt_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1250,7 +1245,7 @@
 
 "queenofpain_pain_death_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1263,7 +1258,7 @@
 
 "queenofpain_pain_death_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1276,7 +1271,7 @@
 
 "queenofpain_pain_death_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1289,7 +1284,7 @@
 
 "queenofpain_pain_death_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1302,7 +1297,7 @@
 
 "queenofpain_pain_death_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1315,7 +1310,7 @@
 
 "queenofpain_pain_death_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1328,7 +1323,7 @@
 
 "queenofpain_pain_death_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1341,7 +1336,7 @@
 
 "queenofpain_pain_death_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1354,7 +1349,7 @@
 
 "queenofpain_pain_death_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1367,7 +1362,7 @@
 
 "queenofpain_pain_death_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1380,7 +1375,7 @@
 
 "queenofpain_pain_death_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1393,7 +1388,7 @@
 
 "queenofpain_pain_death_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1406,7 +1401,7 @@
 
 "queenofpain_pain_death_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1419,7 +1414,7 @@
 
 "queenofpain_pain_death_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1432,7 +1427,7 @@
 
 "queenofpain_pain_fastres_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1445,7 +1440,7 @@
 
 "queenofpain_pain_respawn_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1458,7 +1453,7 @@
 
 "queenofpain_pain_respawn_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1471,7 +1466,7 @@
 
 "queenofpain_pain_respawn_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1484,7 +1479,7 @@
 
 "queenofpain_pain_respawn_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1497,7 +1492,7 @@
 
 "queenofpain_pain_respawn_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1510,7 +1505,7 @@
 
 "queenofpain_pain_respawn_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1523,7 +1518,7 @@
 
 "queenofpain_pain_respawn_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1536,7 +1531,7 @@
 
 "queenofpain_pain_respawn_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1549,7 +1544,7 @@
 
 "queenofpain_pain_respawn_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1562,7 +1557,7 @@
 
 "queenofpain_pain_respawn_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1575,7 +1570,7 @@
 
 "queenofpain_pain_lasthit_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1588,7 +1583,7 @@
 
 "queenofpain_pain_lasthit_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1601,7 +1596,7 @@
 
 "queenofpain_pain_lasthit_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1614,7 +1609,7 @@
 
 "queenofpain_pain_lasthit_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1627,7 +1622,7 @@
 
 "queenofpain_pain_lasthit_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1640,7 +1635,7 @@
 
 "queenofpain_pain_lasthit_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1653,7 +1648,7 @@
 
 "queenofpain_pain_lasthit_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1666,7 +1661,7 @@
 
 "queenofpain_pain_lasthit_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1679,7 +1674,7 @@
 
 "queenofpain_pain_deny_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1692,7 +1687,7 @@
 
 "queenofpain_pain_deny_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1705,7 +1700,7 @@
 
 "queenofpain_pain_deny_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1718,7 +1713,7 @@
 
 "queenofpain_pain_deny_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1731,7 +1726,7 @@
 
 "queenofpain_pain_deny_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1744,7 +1739,7 @@
 
 "queenofpain_pain_deny_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1757,7 +1752,7 @@
 
 "queenofpain_pain_deny_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1770,7 +1765,7 @@
 
 "queenofpain_pain_deny_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1783,7 +1778,7 @@
 
 "queenofpain_pain_deny_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1796,7 +1791,7 @@
 
 "queenofpain_pain_deny_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1809,7 +1804,7 @@
 
 "queenofpain_pain_deny_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1822,7 +1817,7 @@
 
 "queenofpain_pain_deny_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1835,7 +1830,7 @@
 
 "queenofpain_pain_deny_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1848,7 +1843,7 @@
 
 "queenofpain_pain_deny_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1861,7 +1856,7 @@
 
 "queenofpain_pain_deny_15"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1874,7 +1869,7 @@
 
 "queenofpain_pain_rare_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1887,7 +1882,7 @@
 
 "queenofpain_pain_rare_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1900,7 +1895,7 @@
 
 "queenofpain_pain_rare_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1913,7 +1908,7 @@
 
 "queenofpain_pain_rare_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1926,7 +1921,7 @@
 
 "queenofpain_pain_rare_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1939,7 +1934,7 @@
 
 "queenofpain_pain_rare_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1952,7 +1947,7 @@
 
 "queenofpain_pain_purch_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1965,7 +1960,7 @@
 
 "queenofpain_pain_purch_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1978,7 +1973,7 @@
 
 "queenofpain_pain_purch_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1991,7 +1986,7 @@
 
 "queenofpain_pain_bottle_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2004,7 +1999,7 @@
 
 "queenofpain_pain_bottle_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2017,7 +2012,7 @@
 
 "queenofpain_pain_bottle_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2030,7 +2025,7 @@
 
 "queenofpain_pain_blink_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2043,7 +2038,7 @@
 
 "queenofpain_pain_blink_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2056,7 +2051,7 @@
 
 "queenofpain_pain_scepter_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2069,7 +2064,7 @@
 
 "queenofpain_pain_scepter_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2082,7 +2077,7 @@
 
 "queenofpain_pain_scepter_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2095,7 +2090,7 @@
 
 "queenofpain_pain_scepter_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2108,7 +2103,7 @@
 
 "queenofpain_pain_relic_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2121,7 +2116,7 @@
 
 "queenofpain_pain_relic_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2134,7 +2129,7 @@
 
 "queenofpain_pain_relic_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2147,7 +2142,7 @@
 
 "queenofpain_pain_missing_lane_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2160,7 +2155,7 @@
 
 "queenofpain_pain_missing_lane_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2173,7 +2168,7 @@
 
 "queenofpain_pain_missing_lane_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2186,7 +2181,7 @@
 
 "queenofpain_pain_immort_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2199,7 +2194,7 @@
 
 "queenofpain_pain_immort_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2212,7 +2207,7 @@
 
 "queenofpain_pain_haste_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2225,7 +2220,7 @@
 
 "queenofpain_pain_haste_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2238,7 +2233,7 @@
 
 "queenofpain_pain_doubdam_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2251,7 +2246,7 @@
 
 "queenofpain_pain_doubdam_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2264,7 +2259,7 @@
 
 "queenofpain_pain_regen_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2277,7 +2272,7 @@
 
 "queenofpain_pain_regen_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2290,7 +2285,7 @@
 
 "queenofpain_pain_illus_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2303,7 +2298,7 @@
 
 "queenofpain_pain_illus_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2316,7 +2311,7 @@
 
 "queenofpain_pain_invis_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2329,7 +2324,7 @@
 
 "queenofpain_pain_invis_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2342,7 +2337,7 @@
 
 "queenofpain_pain_notyet_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2355,7 +2350,7 @@
 
 "queenofpain_pain_notyet_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2368,7 +2363,7 @@
 
 "queenofpain_pain_notyet_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2381,7 +2376,7 @@
 
 "queenofpain_pain_notyet_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2394,7 +2389,7 @@
 
 "queenofpain_pain_notyet_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2407,7 +2402,7 @@
 
 "queenofpain_pain_notyet_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2420,7 +2415,7 @@
 
 "queenofpain_pain_notyet_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2433,7 +2428,7 @@
 
 "queenofpain_pain_notyet_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2446,7 +2441,7 @@
 
 "queenofpain_pain_notyet_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2459,7 +2454,7 @@
 
 "queenofpain_pain_nomana_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2472,7 +2467,7 @@
 
 "queenofpain_pain_nomana_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2485,7 +2480,7 @@
 
 "queenofpain_pain_nomana_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2498,7 +2493,7 @@
 
 "queenofpain_pain_nomana_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2511,7 +2506,7 @@
 
 "queenofpain_pain_nomana_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2524,7 +2519,7 @@
 
 "queenofpain_pain_nomana_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2537,7 +2532,7 @@
 
 "queenofpain_pain_nomana_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2550,7 +2545,7 @@
 
 "queenofpain_pain_nomana_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2563,7 +2558,7 @@
 
 "queenofpain_pain_nomana_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2576,7 +2571,7 @@
 
 "queenofpain_pain_thanks_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2589,7 +2584,7 @@
 
 "queenofpain_pain_thanks_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2602,7 +2597,7 @@
 
 "queenofpain_pain_underattack_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2615,7 +2610,7 @@
 
 "queenofpain_pain_inthebag_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2628,7 +2623,7 @@
 
 "queenofpain_pain_shiwiz_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2641,7 +2636,7 @@
 
 "queenofpain_pain_crumwiz_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2654,7 +2649,7 @@
 
 "queenofpain_pain_lose_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2667,7 +2662,7 @@
 
 "queenofpain_pain_lose_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2680,7 +2675,7 @@
 
 "queenofpain_pain_lose_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2693,7 +2688,7 @@
 
 "queenofpain_pain_lose_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2706,7 +2701,7 @@
 
 "queenofpain_pain_win_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2719,7 +2714,7 @@
 
 "queenofpain_pain_win_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2732,7 +2727,7 @@
 
 "queenofpain_pain_win_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2745,7 +2740,7 @@
 
 "queenofpain_pain_pain_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2758,7 +2753,7 @@
 
 "queenofpain_pain_pain_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2771,7 +2766,7 @@
 
 "queenofpain_pain_pain_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2784,7 +2779,7 @@
 
 "queenofpain_pain_pain_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2797,7 +2792,7 @@
 
 "queenofpain_pain_pain_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2810,7 +2805,7 @@
 
 "queenofpain_pain_pain_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2823,7 +2818,7 @@
 
 "queenofpain_pain_pain_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2836,7 +2831,7 @@
 
 "queenofpain_pain_pain_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2849,7 +2844,7 @@
 
 "queenofpain_pain_pain_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2862,7 +2857,7 @@
 
 "queenofpain_pain_pain_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2875,7 +2870,7 @@
 
 "queenofpain_pain_pain_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2888,7 +2883,7 @@
 
 "queenofpain_pain_pain_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2901,7 +2896,7 @@
 
 "queenofpain_pain_pain_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2914,7 +2909,7 @@
 
 "queenofpain_pain_pain_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2927,7 +2922,7 @@
 
 "queenofpain_pain_pain_15"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2940,7 +2935,7 @@
 
 "queenofpain_pain_pain_16"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2953,7 +2948,7 @@
 
 "queenofpain_pain_pain_17"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2966,7 +2961,7 @@
 
 "queenofpain_pain_anger_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2979,7 +2974,7 @@
 
 "queenofpain_pain_anger_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2992,7 +2987,7 @@
 
 "queenofpain_pain_anger_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3005,7 +3000,7 @@
 
 "queenofpain_pain_anger_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3018,7 +3013,7 @@
 
 "queenofpain_pain_happy_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3031,7 +3026,7 @@
 
 "queenofpain_pain_happy_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3044,7 +3039,7 @@
 
 "queenofpain_pain_happy_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3057,7 +3052,7 @@
 
 "queenofpain_pain_laugh_01"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3070,7 +3065,7 @@
 
 "queenofpain_pain_laugh_02"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3083,7 +3078,7 @@
 
 "queenofpain_pain_laugh_03"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3096,7 +3091,7 @@
 
 "queenofpain_pain_laugh_04"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3109,7 +3104,7 @@
 
 "queenofpain_pain_laugh_05"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3122,7 +3117,7 @@
 
 "queenofpain_pain_laugh_06"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3135,7 +3130,7 @@
 
 "queenofpain_pain_laugh_07"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3148,7 +3143,7 @@
 
 "queenofpain_pain_laugh_08"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3161,7 +3156,7 @@
 
 "queenofpain_pain_laugh_09"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3174,7 +3169,7 @@
 
 "queenofpain_pain_laugh_10"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3187,7 +3182,7 @@
 
 "queenofpain_pain_laugh_11"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3200,7 +3195,7 @@
 
 "queenofpain_pain_laugh_12"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3213,7 +3208,7 @@
 
 "queenofpain_pain_laugh_13"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3226,7 +3221,7 @@
 
 "queenofpain_pain_laugh_14"
 {
-	<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+	 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3236,4 +3231,3 @@
 		volume = "1.000000"
 		pitch = "1.000000"
 	}}
-

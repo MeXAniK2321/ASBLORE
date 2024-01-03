@@ -1,7 +1,7 @@
 LinkLuaModifier("modifier_item_anime_boombox_ticket", "items/item_concert_ticket", LUA_MODIFIER_MOTION_NONE)
 
 -- Sounds for all tickets
-local TicketSounds = {
+--[[local TicketSounds = {
     -- Sounds for item_concert_ticket_1
 	item_concert_ticket_1 = {
         {SoundName = "new.year_theme_1", duration = 100.000000},
@@ -25,7 +25,7 @@ local TicketSounds = {
         {SoundName = "new.year_theme_7", duration = 100.000000},
         {SoundName = "new.year_theme_8", duration = 100.000000},
     },
-}
+}]]--
 -- Create all 4 tickets without repeating the same code 4 times
 for i = 1, 4 do
  local item_name = "item_concert_ticket_" .. i
@@ -42,10 +42,11 @@ for i = 1, 4 do
    PlayerResource:ModifyGold(caster:GetPlayerOwnerID(), self.bonus_gold, false, DOTA_ModifyGold_Unspecified)
 
    -- Play music based on ticket
-   local ticketSounds = TicketSounds[item_name]
-   if ticketSounds then
-     caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", ticketSounds[RandomInt(1, #ticketSounds)])
-   end
+   --local ticketSounds = TicketSounds[item_name]
+   --if ticketSounds then
+     --caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", ticketSounds[RandomInt(1, #ticketSounds)])
+   caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", {SoundName = "new.year_theme_1", duration = 100.000000})
+   --end
  end
 end
 
@@ -125,11 +126,12 @@ function modifier_item_anime_boombox_ticket:OnDestroy()
 end
 function modifier_item_anime_boombox_ticket:StopAllMusic()
     if IsServer() then
-        for _, ticketSounds in pairs(TicketSounds) do
+        --[[for _, ticketSounds in pairs(TicketSounds) do
             for _, soundData in ipairs(ticketSounds) do
                 StopSoundOn(soundData.SoundName, self.parent)
             end
-        end
+        end]]--
+        StopSoundOn(self.music, self.parent)
     end
 end
 function modifier_item_anime_boombox_ticket:RemoveAllElse()

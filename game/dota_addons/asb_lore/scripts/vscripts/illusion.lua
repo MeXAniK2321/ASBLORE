@@ -150,13 +150,10 @@ IsNotNull = function(hScript)
     return false
 end
 IsASBPatreon = function(player)
-    if true then
-        --return true
-    end
-local PID = player:GetPlayerOwnerID()
+    local PID = player:GetPlayerOwnerID()
     local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
-	local hero = PlayerResource:GetSelectedHeroEntity(PID) 
-local patreon = 
+    local hero = PlayerResource:GetSelectedHeroEntity(PID) 
+    local patreon = 
 	{
 		418417801, -- Chumba
 		167912041, -- Miku
@@ -178,13 +175,14 @@ local patreon =
         82664205,
         215924558,
         226322257,
-	}
-	for _,patr in pairs(patreon) do
+    }
+    for _,patr in pairs(patreon) do
        if id32 == patr then
-        return true
-  end
+           return true
+       end
 	end
-	end
+    return false
+end
 
 IsASBAdmin = function(player)
 local PID = player:GetPlayerOwnerID()

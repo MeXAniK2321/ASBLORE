@@ -158,7 +158,7 @@ function modifier_item_red_spear_buff:OnTakeDamage(params)
         if params.attacker == self:GetParent() 
             and params.damage_category == DOTA_DAMAGE_CATEGORY_SPELL and randFloat 
             and params.unit and params.unit:IsAlive()
-            and params.inflictor ~= self.ability then
+            and params.inflictor and params.inflictor ~= self.ability then
             local hDamageTable = {
                                    victim = params.unit,
                                    attacker = self:GetParent(),

@@ -56,14 +56,14 @@ function modifier_chibi_monster:DeclareFunctions()
     return func
 end
 function modifier_chibi_monster:GetModifierModelChange()
-    return not IsASBPatreon(self.parent)
-	       and "models/hatsune_miku/chibi2.vmdl"
-		   or "models/kizuna_ai/kizuna_ai.vmdl"
+    return IsASBPatreon(self.parent)
+	       and "models/kizuna_ai/kizuna_ai.vmdl"
+		   or "models/hatsune_miku/chibi2.vmdl"
 end
 function modifier_chibi_monster:GetModifierModelScale()
-	return not IsASBPatreon(self.parent)
-	       and 120
-		   or -35
+	return IsASBPatreon(self.parent)
+	       and -35
+		   or 120
 end
 function modifier_chibi_monster:GetModifierHealthBonus()
     return 1500
@@ -107,9 +107,11 @@ function modifier_chibi_monster:OnCreated(table)
         end
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
        if not self.particle_time then
-            self.particle_time = not IsASBPatreon(self.parent)  
-			                     and ParticleManager:CreateParticle("particles/chibi_monster.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
-								 or ParticleManager:CreateParticle("particles/chibi_monster_kizuna_ai.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            if IsASBPatreon(self.parent) then
+                self.particle_time = ParticleManager:CreateParticle("particles/chibi_monster_kizuna_ai.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+			else
+                self.particle_time = ParticleManager:CreateParticle("particles/chibi_monster.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            end
                                     
         end
 		

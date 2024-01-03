@@ -71,19 +71,26 @@ function item_chibi_marci:OnSpellStart()
     if hCaster:HasModifier("modifier_chibi_marci_instant_trash") then
        local vTargetLocation = hTarget:GetAbsOrigin()
 	   
-	   -- Spawn the model dummy
+       -- Spawn the model dummy
        local vSpawnLocation = vTargetLocation
-       local TrashMdl = CreateUnitByName(
+       --[[local TrashMdl = CreateUnitByName(
 		"npc_dummy_unit",
 		hCaster:GetAbsOrigin(),
 		true,
 		hCaster,
 		hCaster:GetOwner(),
 		hCaster:GetTeamNumber()
-       )
+       )]]--
+       local TrashMdl = CreateModifierThinker( hCaster, 
+                                               self, 
+                                               "modifier_chibi_marci_instant_trash_think", 
+                                               { duration = 4.0, enemy_target = hTarget:GetEntityIndex() },
+                                               hCaster:GetAbsOrigin(), 
+                                               hCaster:GetTeamNumber(), 
+                                               false)
 
        -- Apply a modifier to the model
-       TrashMdl:AddNewModifier(hCaster, self, "modifier_chibi_marci_instant_trash_think", { duration = 4.0, enemy_target = hTarget:GetEntityIndex() } )
+       --TrashMdl:AddNewModifier(hCaster, self, "modifier_chibi_marci_instant_trash_think", { duration = 4.0, enemy_target = hTarget:GetEntityIndex() } )
        
 	   -- Remove modifier
        hCaster:RemoveModifierByName("modifier_chibi_marci_instant_trash")
@@ -834,25 +841,26 @@ function modifier_chibi_marci_instant_trash_think:OnCreated( kv )
 	    self.parent = self:GetParent()
 		self.ability = self:GetAbility()
 
-		self.Target = EntIndexToHScript(kv.enemy_target) or nil
+		self.Target = (self.Target or EntIndexToHScript(kv.enemy_target)) or nil
 		self.vEnemyPos = self.Target:GetOrigin()
 		self.iSpeed = 100
 		self.iBreakDist = 100
-		self.bFinished = false
+		self.bFinished = self.bFinished or false
+        self.iIntervals = self.iIntervals or 3
 		
 		
 		if self.Target == nil then self:Destroy() print("Something went wrong.") return end
 		
 		-- Add the particle here because if distance is too close it doesn't appear
-		if not self.TrashBin then
+		--[[if not self.TrashBin then
 		   self.TrashBin =  ParticleManager:CreateParticle("particles/spamton_trash_can.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)            
            self:AddParticle(self.TrashBin, false, false, -1, false, false)
-		end
+		end]]--
 		
         self.hDamageTable = {
              victim = nil,
              attacker = self.caster,
-             damage = 1700,
+             damage = 1000,
              damage_type = DAMAGE_TYPE_PURE,
              ability = self.ability
             }
@@ -870,45 +878,68 @@ function modifier_chibi_marci_instant_trash_think:OnIntervalThink()
             self.parent:SetOrigin(vEnemyPosition)
 
             -- Check if the trash bin has hit somebody
-	        local enemies = FindUnitsInRadius( self.caster:GetTeamNumber(),	-- int, your team number
-			                                 self.parent:GetOrigin(),	-- point, center point
-			                                 nil,	-- handle, cacheUnit. (not known)
-			                                 150,	-- float, radius. or use FIND_UNITS_EVERYWHERE
-			                                 DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
-			                                 DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
-			                                 0,	-- int, flag filter
-			                                 FIND_CLOSEST,	-- int, order filter
-			                                 false	-- bool, can grow cache
-		                                    )
-		    for _,enemy in pairs(enemies) do
-			    self.hDamageTable.victim = enemy
-				ApplyDamage(self.hDamageTable)
-				self.bFinished = true
-	        end
+	        local enemies = self:FindUnitsAndDoDamage()
 			
-			if self.bFinished or GetDistance(self.parent, self.vEnemyPos) <= self.iBreakDist then
+			if enemies or GetDistance(self.parent, self.vEnemyPos) <= self.iBreakDist then
 		        if not self.StompEffect then
 		            self.StompEffect =  ParticleManager:CreateParticle("particles/decompiled_particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)            
                     self:AddParticle(self.StompEffect, false, false, -1, false, false)
+                    self.parent:SetOrigin(self.parent:GetOrigin())
+                    self.bFinished = true
+                    self:SetDuration(4.0, true)
+                    self:StartIntervalThink(1.0)
+                    EmitSoundOn("chibi.trash", self.parent)
 				end
-				EmitSoundOn("chibi.trash", self.parent)
-		        self:Destroy()
-				return
 			end
+        else
+            if self.iIntervals > 0 then
+                self:FindUnitsAndDoDamage(200, 450)
+                local iStompEffect = ParticleManager:CreateParticle("particles/decompiled_particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)            
+                self:AddParticle(iStompEffect, false, false, -1, false, false)
+                self.iIntervals = self.iIntervals - 1
+                print(self:GetParent())
+                EmitSoundOn("chibi.trash", self.parent)
+            end
 	    end
     end
+end
+function modifier_chibi_marci_instant_trash_think:FindUnitsAndDoDamage(fDamage, iRadius)
+    local bReturn = nil
+    fDamage = fDamage or self.hDamageTable.damage
+    iRadius = iRadius or 100
+    local enemies = FindUnitsInRadius( self.caster:GetTeamNumber(),	-- int, your team number
+                                       self.parent:GetOrigin(),	-- point, center point
+                                       nil,	-- handle, cacheUnit. (not known)
+                                       iRadius,	-- float, radius. or use FIND_UNITS_EVERYWHERE
+                                       DOTA_UNIT_TARGET_TEAM_ENEMY,	-- int, team filter
+                                       DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	-- int, type filter
+                                       0,	-- int, flag filter
+                                       FIND_CLOSEST,	-- int, order filter
+                                       false	-- bool, can grow cache
+		                            )
+    for _,enemy in pairs(enemies) do
+        if IsNotNull(enemy) then
+            if bReturn == nil then bReturn = true end
+            self.hDamageTable.victim = enemy
+            self.hDamageTable.damage = fDamage
+            ApplyDamage(self.hDamageTable)
+        end
+    end
+    
+    return bReturn and enemies
 end
 function modifier_chibi_marci_instant_trash_think:OnRefresh( kv )
 	self:OnCreated( kv )
 end
---[[function modifier_chibi_marci_instant_trash_think:GetEffectName()
+function modifier_chibi_marci_instant_trash_think:GetEffectName()
 	return "particles/spamton_trash_can.vpcf"
 end
 function modifier_chibi_marci_instant_trash_think:GetEffectAttachType()
 	return PATTACH_ABSORIGIN_FOLLOW
-end]]--
+end
 function modifier_chibi_marci_instant_trash_think:OnDestroy()
     if IsServer() then
+        self:StartIntervalThink(-1)
         if self.parent and not self.parent:IsRealHero() then
 		    UTIL_Remove(self.parent)
 		end

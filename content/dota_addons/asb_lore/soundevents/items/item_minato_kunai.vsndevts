@@ -692,195 +692,8 @@
 			"sounds/BoomBox/berserk_brother.vsnd",
 			"sounds/BoomBox/berserk_sign.vsnd",
 			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_2 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_3 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_4 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_5 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_6 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_7 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
-		]
-		volume = "1.500000"
-		pitch_rand_min = "-0.050000"
-		pitch_rand_max = "0.050000"
-		pitch = "1.000000"
-		soundlevel = "100.000000"
-		event_type = "1.000000"
-		vsnd_duration = 100.000000
-	}
-	new.year_theme_8 = 
-	{
-		type = "dota_update_default"
-		vsnd_files = 
-		[
-			"sounds/BoomBox/ayaya_jojo.vsnd",
-			"sounds/BoomBox/butterfly.vsnd",
-			"sounds/BoomBox/chainsaw_man.vsnd",
-			"sounds/BoomBox/gigachad_theme.vsnd",
-			"sounds/BoomBox/gojo_hollow_purple.vsnd",
-			"sounds/BoomBox/localoca.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/poppy.vsnd",
-			"sounds/BoomBox/psy_gentleman.vsnd",
-			"sounds/BoomBox/berserk_brother.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
+			"sounds/BoomBox/archer_theme.vsnd",
+			"sounds/BoomBox/devil_trigger.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -1610,5 +1423,20 @@
 		chan_type = "0"
 		memory_type = "0"
 		vsnd_duration = 1.160998
+	}
+    "nanaya.heykids" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.4
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/nanaya/nanaya_heykids.vsnd",
+		]
 	}
 }

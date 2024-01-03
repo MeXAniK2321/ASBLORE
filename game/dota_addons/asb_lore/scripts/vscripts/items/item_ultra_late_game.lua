@@ -21,7 +21,7 @@ end
 
 modifier_berserker_armor = modifier_berserker_armor or class({})
 
-function modifier_berserker_armor:IsHidden() return true end
+function modifier_berserker_armor:IsHidden() return false end
 function modifier_berserker_armor:RemoveOnDeath() return false end
 function modifier_berserker_armor:IsPurgable() return false end
 function modifier_berserker_armor:DeclareFunctions()
@@ -30,7 +30,8 @@ function modifier_berserker_armor:DeclareFunctions()
                         MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
                         MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
                         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
-                        MODIFIER_PROPERTY_MIN_HEALTH
+                        MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+                        MODIFIER_PROPERTY_MIN_HEALTH,
                     }
     return tFunc
 end
@@ -45,6 +46,10 @@ function modifier_berserker_armor:GetModifierBonusStats_Agility(keys)
 end
 function modifier_berserker_armor:GetModifierBonusStats_Intellect(keys)
     return self.nBonusAllStats
+end
+function modifier_berserker_armor:GetModifierAttackSpeedBonus_Constant()
+    self.iAttkSpeedBonus = RemapValClamped(self.hParent:GetHealthPercent(), 100, 0, 0, self.iAttkSpeedV) -- Remap Percent HP from 100% to 0% return values from 0 and Max Attack Speed.
+    return self.iAttkSpeedBonus 
 end
 function modifier_berserker_armor:GetMinHealth(keys)
     if self.hParent
@@ -68,6 +73,7 @@ function modifier_berserker_armor:OnCreated(hTable)
     self.fDurationP   = self.hAbility:GetSpecialValueFor("passive_duration")
     self.fTriggerHP   = self.hAbility:GetSpecialValueFor("trigger_hp")
     self.fCooldownDur = self.hAbility:GetSpecialValueFor("passive_cooldown")
+    self.iAttkSpeedV  = self.hAbility:GetSpecialValueFor("passive_attackspeed")
     
     self.bOnCooldown = false
     self.fCDCounter  = self.fCDCounter or 0
@@ -81,8 +87,8 @@ function modifier_berserker_armor:OnIntervalThink()
         if self.fCDCounter >= self.fDurationP then
             self:StartCD()
             self.fCDCounter = 0 -- Reset Counter
-            
-            -- Remove the particle if it's there
+           
+           -- Remove the particle if it's there
             if self.iBloodParticle then
                 ParticleManager:DestroyParticle( self.iBloodParticle, true )
                 ParticleManager:ReleaseParticleIndex( self.iBloodParticle )
@@ -99,13 +105,15 @@ function modifier_berserker_armor:OnRefresh(hTable)
 end
 function modifier_berserker_armor:OnDestroy()
     if IsServer() then
-        if self.bOnCooldown and not self.hParent:HasModifier("modifier_berserker_armor_cd") then
+        if self.bOnCooldown then
             self:StartCD()
         end
     end
 end
 function modifier_berserker_armor:StartCD()
-    self.hParent:AddNewModifier(self.hParent, self.hAbility, "modifier_berserker_armor_cd", {duration = self.fCooldownDur})
+    if not self.hParent:HasModifier("modifier_berserker_armor_cd") then
+        self.hParent:AddNewModifier(self.hParent, self.hAbility, "modifier_berserker_armor_cd", {duration = self.fCooldownDur})
+    end
 end
 function modifier_berserker_armor:PassiveEffect(hParent)
     if not self.iBloodParticle then
@@ -248,7 +256,9 @@ function item_moonlight_goddess_bow:OnSpellStart()
                                                         fMaxDMG  = f__MaxDMG,
                                                         fScaleF  = f__ScaleF,
                                                         iRadius  = i__Radius,
-                                                        fStunDur = f__StunDur
+                                                        fStunDur = f__StunDur,
+                                                        
+                                                        hAbility = self:GetAbilityIndex()
                                                       }
                      	    }
 
@@ -274,6 +284,7 @@ function item_moonlight_goddess_bow_cringe:OnProjectileHit_ExtraData(hTarget, vL
                           and GetDistance(hTarget, vSpawnLoc)
                           or 0
         --=======================================================--
+        local hAbility      = hCaster:GetAbilityByIndex(hTable.hAbility) or self
         local fMaxDamage    = hTable.fMaxDMG or 5000
         local fScaleFactor  = hTable.fScaleF or 1.0
         local fStunDuration = hTable.fStunDur or 2.5
@@ -291,24 +302,26 @@ function item_moonlight_goddess_bow_cringe:OnProjectileHit_ExtraData(hTarget, vL
                                             hTarget:GetOrigin(),
                                             nil,
                                             iRadius,
-                                            DOTA_UNIT_TARGET_TEAM_ENEMY,
-                                            DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
-                                            0,
+                                            hAbility:GetAbilityTargetTeam(),
+                                            hAbility:GetAbilityTargetType(),
+                                            hAbility:GetAbilityTargetFlags(),
                                             FIND_ANY_ORDER,
                                             false )
                                             
         for _, hEnemy in pairs(hEnemies) do
-            local hDamageTable =  {  
-                                    victim 		 = hEnemy,
-                                    attacker 	 = hCaster,
-                                    damage 		 = fDamage,
-                                    damage_type  = DAMAGE_TYPE_PURE,
-                                    ability 	 = self,
-                             		damage_flags = 0
-                                  }
+            if IsNotNull(hEnemy) then
+                local hDamageTable =  {  
+                                        victim 		 = hEnemy,
+                                        attacker 	 = hCaster,
+                                        damage 		 = fDamage,
+                                        damage_type  = hAbility:GetAbilityDamageType(),
+                                        ability 	 = hAbility,
+                                        damage_flags = 0
+                                      }
         
-            hEnemy:AddNewModifier(hCaster, self, "modifier_stunned", {duration = fStunDuration})
-            ApplyDamage(hDamageTable)
+                hEnemy:AddNewModifier(hCaster, hAbility, "modifier_stunned", {duration = fStunDuration})
+                ApplyDamage(hDamageTable)
+            end
         end
         
         EmitSoundOn("MGB.hit", hTarget)

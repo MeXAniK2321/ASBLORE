@@ -40,9 +40,11 @@ function modifier_miku_dance:OnCreated( kv )
 		self:OnIntervalThink()
 
 		-- start effects
-		local Play = not IsASBPatreon(self.caster)
-		             and self:PlayEffects( self.radius )
-					 or  self:PlayEffects2( self.radius )
+        if IsASBPatreon(self.caster) then
+		    self:PlayEffects2( self.radius )
+		else
+            self:PlayEffects( self.radius )
+        end
 	end
 end
 
@@ -129,6 +131,7 @@ function modifier_miku_dance:PlayEffects( radius )
 	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
 	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
 	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+    self:AddParticle(self.effect_cast, false, false, -1, false, false)
 
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )
@@ -142,6 +145,7 @@ function modifier_miku_dance:PlayEffects2( radius )
 	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
 	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
 	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+    self:AddParticle(self.effect_cast, false, false, -1, false, false)
 
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )

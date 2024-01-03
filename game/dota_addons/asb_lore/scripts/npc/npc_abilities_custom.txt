@@ -37763,7 +37763,7 @@
 
 		"AbilityCastPoint"						"0.7"
 		//"AbilityChannelTime"					"5.0"
-		"AbilityCooldown"						"550"
+		"AbilityCooldown"						"250"
 		"AbilityManaCost"						"1000"
 		//"AbilityCastRange"						"1200"
 

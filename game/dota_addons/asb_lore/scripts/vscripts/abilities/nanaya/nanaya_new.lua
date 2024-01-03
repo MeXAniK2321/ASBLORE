@@ -925,7 +925,7 @@ function modifier_nanaya_animation_knife:OnDestroy()
 					                     ParticleManager:SetParticleControl(nanaya_clone, 0, GetGroundPosition(self.parent:GetAbsOrigin(), nil)) --0.35
 					                     ParticleManager:SetParticleControl(nanaya_clone, 2, Vector(3, 9, 0))
 					                     ParticleManager:SetParticleControl(nanaya_clone, 4, self.target:GetAbsOrigin())
-					nanaya_clones:Clones(self.parent, self.target)
+					nanaya_clones:Clones(self.parent, self.target, nil, self.ability)
 					else
 				end
 			end)
@@ -942,7 +942,7 @@ end
 
 nanaya_clones = nanaya_clones or class({})
 
-function nanaya_clones:Clones(caster, units, secondtime)
+function nanaya_clones:Clones(caster, units, secondtime, hAbility)
     local table = {12, 13, 21, 23, 24}	
     local knockback_push = 0
     local knockback_push1 = caster:GetForwardVector()
@@ -1000,7 +1000,7 @@ function nanaya_clones:Clones(caster, units, secondtime)
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
                     damage_flags = 1024,
-                    ability = self
+                    ability = hAbility
                 })
 
 		    ScreenShake(units:GetOrigin(), 10, 1.0, 0.1, 2000, 0, true)	
@@ -1009,13 +1009,13 @@ function nanaya_clones:Clones(caster, units, secondtime)
         return 0.4
         else
             if secondtime == nil then 
-                nanaya_clones:Final_clones(caster, units, knockback_push1)
+                nanaya_clones:Final_clones(caster, units, knockback_push1, hAbility)
             end
         end
     end)
 end
 
-function nanaya_clones:Final_clones(caster, units, knockback_push1)
+function nanaya_clones:Final_clones(caster, units, knockback_push1, hAbility)
     local check1 = GetGroundPosition(units:GetAbsOrigin() + knockback_push1 * 450, nil) + Vector(0, 0, 300) --ПОНИЖЕНИЕ СТАРТОВОЙ
     local check2 = GetGroundPosition(units:GetAbsOrigin() + knockback_push1 * 1500, nil) - Vector(0, 0, 250) --ПОВЫШЕНИЕ КОНЕЧНОЙ
 
@@ -1040,7 +1040,7 @@ function nanaya_clones:Final_clones(caster, units, knockback_push1)
                     damage = 700,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
                     damage_flags = 1024,
-                    ability = self
+                    ability = hAbility
                 })
 
             local knockback = { should_stun = true,
@@ -1086,7 +1086,7 @@ function nanaya_clones:Final_clones(caster, units, knockback_push1)
                                           damage = 1200,
                                           damage_type = DAMAGE_TYPE_PHYSICAL,
                                           damage_flags = 1024,
-                                          ability = self
+                                          ability = hAbility
                                         })
                             ParticleManager:CreateParticle("particles/nanaya_work_2.vpcf", PATTACH_ABSORIGIN, v)
                             v:EmitSound("nanaya.finalhit")
@@ -1141,7 +1141,7 @@ function nanaya_blood_modifier:GetMaxStackCount()
 end
 function nanaya_blood_modifier:OnTakeDamage(keys)
     if IsServer() then
-        if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() and not keys.inflictor:IsItem() then
+        if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() and keys.inflictor and not keys.inflictor:IsItem() then
             local iStacks = self:GetStackCount()
             if self.iNanayaParticle ~= nil then 
                 ParticleManager:DestroyParticle(self.iNanayaParticle, true)
@@ -1265,7 +1265,7 @@ function nanaya_slashes:OnSpellStart()
         Nanaya_New_Slashes(caster, target, self)    
     else
         local dmg = self:GetSpecialValueFor("clone_dmg")
-        nanaya_clones1:ComboD(caster, target, dmg)
+        nanaya_clones1:ComboD(caster, target, dmg, self)
     end
 end
 
@@ -1361,7 +1361,7 @@ end
 
 nanaya_clones1 = nanaya_clones1 or class({})
 
-function nanaya_clones1:ComboD(caster, target, dmg)
+function nanaya_clones1:ComboD(caster, target, dmg, hAbility)
 	caster:AddNewModifier(caster, self, "nanaya_jump_revoke", {duration = 1.2})
 	local table = {12, 13, 21}
 	
@@ -1429,7 +1429,7 @@ function nanaya_clones1:ComboD(caster, target, dmg)
                                   damage = dmg,
                                   damage_type = DAMAGE_TYPE_PHYSICAL,
                                   damage_flags = 1024,
-                                  ability = self
+                                  ability = hAbility
                                 })
                     
                     ScreenShake(target:GetOrigin(), 10, 1.0, 0.1, 2000, 0, true)
@@ -1443,12 +1443,12 @@ function nanaya_clones1:ComboD(caster, target, dmg)
                 caster:SetRenderAlpha(255)
                 
                 FindClearSpaceForUnit(caster, caster:GetOrigin(), true)
-                nanaya_clones1:clones_2D(caster, target, knockback_push1, dmg)
+                nanaya_clones1:clones_2D(caster, target, knockback_push1, dmg, hAbility)
 	        end
 	    end)
 	end)
 end
-function nanaya_clones1:clones_2D(caster, target, knockback_push1, dmg)
+function nanaya_clones1:clones_2D(caster, target, knockback_push1, dmg, hAbility)
 	local table = {12, 13, 12}
 	local numberhit = 0
 	local clone_dmg = dmg
@@ -1492,7 +1492,7 @@ function nanaya_clones1:clones_2D(caster, target, knockback_push1, dmg)
                               damage = dmg,
                               damage_type = DAMAGE_TYPE_PHYSICAL,
                               damage_flags = 1024,
-                              ability = self
+                              ability = hAbility
                             })
 			    
                 ScreenShake(target:GetOrigin(), 10, 1.0, 0.1, 2000, 0, true)
@@ -1913,6 +1913,7 @@ function nanaya_combo:Alternate(caster, target, ability)
     PlayerResource:SetCameraTarget(target:GetPlayerID(), caster)
     PlayerResource:SetCameraTarget(caster:GetPlayerID(), caster)
     local combo_part = ParticleManager:CreateParticle(nil, PATTACH_ABSORIGIN_FOLLOW, target)
+    StopGlobalSound("nanaya.heykids")
     EmitGlobalSound("nanaya.combo_execute")
     print ("that", caster:GetOrigin())
 

@@ -96,9 +96,11 @@ function modifier_star_tier2:OnCreated(table)
 	elseif caster:GetUnitName()== "npc_dota_hero_antimage" then
 		EmitGlobalSound("star.theme2_10")
 	elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
-	    local Emit = not IsASBPatreon(self.parent)
-		             and EmitGlobalSound("star.theme2_18")
-					 or EmitGlobalSound("miku.kizuna_ai.7")
+	    if IsASBPatreon(self:GetCaster()) then
+		    EmitGlobalSound("miku.kizuna_ai.7")
+		else
+            EmitGlobalSound("star.theme2_18")
+        end
 	elseif caster:GetUnitName()== "npc_dota_hero_ancient_apparition" then
 		EmitGlobalSound("star.theme2_11")
 	elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
@@ -245,6 +247,7 @@ end
 function modifier_star_tier2:StopAllMusic()
 	if IsServer() then
 		StopGlobalSound("spamton.theme")
+		StopGlobalSound("nanaya.heykids")
 
 			for i = 1, 100 do
 			StopGlobalSound("star.theme2_"..i)

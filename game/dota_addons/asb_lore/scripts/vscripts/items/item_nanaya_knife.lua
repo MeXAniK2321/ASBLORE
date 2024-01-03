@@ -33,7 +33,9 @@ function item_nanaya_knife:OnSpellStart()
 	local hCaster 	= self:GetCaster()
 	local fDuration = self:GetSpecialValueFor("ghoul_duration") or 35
 
-	hCaster:AddNewModifier(hCaster, self, "modifier_nanaya_instinct", {duration = fDuration})
+	StopGlobalSound("nanaya.combo_execute")
+    EmitGlobalSound("nanaya.heykids")
+    hCaster:AddNewModifier(hCaster, self, "modifier_nanaya_instinct", {duration = fDuration})
 end
 
 

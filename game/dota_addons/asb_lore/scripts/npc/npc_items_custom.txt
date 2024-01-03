@@ -8206,8 +8206,13 @@
 			}
 			"09"
 			{
+				"var_type"				"FIELD_INTEGER"
+				"passive_attackspeed"   "500"
+			}
+			"10"
+			{
 				"var_type"				"FIELD_FLOAT"
-				"passive_cooldown"		"40.0"
+				"passive_cooldown"		"45.0"
 			}
 		}
 	}
@@ -8258,7 +8263,7 @@
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
 		"AbilityCooldown"						"50"
 		"AbilityManaCost"						"700"
-		"AbilityCastPoint"				        "2.0"
+		"AbilityCastPoint"				        "1.4"
 		//"AbilitySharedCooldown"					""
 
 		"AbilitySpecial"

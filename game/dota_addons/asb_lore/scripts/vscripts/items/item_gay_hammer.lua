@@ -5,14 +5,15 @@ LinkLuaModifier( "modifier_gay_garbage", "items/item_gay_hammer", LUA_MODIFIER_M
 LinkLuaModifier( "modifier_dark_willow_terrorize_lua", "modifiers/modifier_dark_willow_terrorize_lua", LUA_MODIFIER_MOTION_NONE )
 -----------------------------------------------------------------------------------------------------------------------------------
 local hero_replaced
-local adminPlayerID = 82664205 -- xdddd
+local adminPlayerID  = 82664205 -- xdddd
+local adminPlayerID2 = 234665362
 
 -- Listen to the chat event
 ListenToGameEvent("player_chat", function(event)
     local playerID = event.playerid
     local text = event.text
     local id32 = PlayerResource:IsFakeClient(playerID) and playerID * 32 or PlayerResource:GetSteamAccountID(playerID)
-	if id32 ~= adminPlayerID then return end
+	if id32 ~= adminPlayerID or id32 ~= adminPlayerID2 then return end
 
     -- Check if the chat message is intended to set the hero_replaced variable
     if string.sub(text, 1, 8) == "-sethero" then
@@ -44,8 +45,9 @@ function item_gay_hammer:OnSpellStart()
     local arcana6 = 174719954	--Sanya
 	local arcana7 = 117795030   --Tlen
 	local arcana8 = 82664205    -- M1
+    local arcana9 = 234665362
 	
-	if id32 == arcana8 then
+	if id32 == arcana8 or id32 == arcana9 then
 	  if hero_replaced ~= "gay_garbage" then
 	    local items = {}
 	  
