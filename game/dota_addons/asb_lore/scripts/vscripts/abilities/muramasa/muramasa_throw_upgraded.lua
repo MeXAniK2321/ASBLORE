@@ -61,7 +61,7 @@ function muramasa_throw_upgraded:OnSpellStart()
 	local caster = self:GetCaster()
  
  
-    local damage = self:GetSpecialValueFor("damage")
+    local damage = self:GetSpecialValueFor("damage") + caster:GetStrength()*8
      caster:AddNewModifier(caster, self, "modifier_merlin_self_pause", {duration = 0.40}) 
 	local ability = self
 
@@ -280,7 +280,7 @@ function muramasa_throw_upgraded:OnSpellStart()
         if hTarget:GetTeam() ~= self.target:GetTeam() then return end
         local duration = self:GetSpecialValueFor("duration")
         local caster = self:GetCaster()
-        local damage = self:GetSpecialValueFor("damage")
+        local damage = self:GetSpecialValueFor("damage") + caster:GetStrength()*8
         local sin2 = Physics:Unit( hTarget)
         hTarget:EmitSound("Hero_Sniper.AssassinateDamage")
      

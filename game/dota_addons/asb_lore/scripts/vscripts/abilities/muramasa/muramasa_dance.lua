@@ -227,7 +227,7 @@ end})
      ParticleManager:SetParticleControl(     particle5 , 3,  caster:GetAbsOrigin()+ 50 * caster:GetForwardVector()  )  
      --self.sound = "muramasa_dance_attack_"..math.random(1,4)
      --caster:EmitSound(self.sound)
-     local damage_base = self:GetSpecialValueFor("base_dmg")
+     local damage_base = self:GetSpecialValueFor("base_dmg") + caster:GetStrength()*8
      local enemies = FindUnitsInRadius(  caster:GetTeamNumber(),
                  caster:GetAbsOrigin() + 50 * caster:GetForwardVector(),
                  nil,

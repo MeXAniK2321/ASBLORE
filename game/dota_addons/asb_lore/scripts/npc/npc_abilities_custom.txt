@@ -43963,6 +43963,11 @@
       "02"
       {
         "var_type"            "FIELD_INTEGER"
+        "uses"                "10"
+      }
+      "03"
+      {
+        "var_type"            "FIELD_INTEGER"
         "cooldown"            "50"
       }
 

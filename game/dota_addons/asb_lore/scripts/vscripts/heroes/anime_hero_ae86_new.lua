@@ -1,24 +1,17 @@
 --PATENTED BY EIEOFLIE (C) SPECIAL FOR ANIME CUSTOM GAME IN DOTA 2--
  
  ae86_clown_horn = ae86_clown_horn or class({})
------------------------------------------------
-local xd = {}
------------------------------------------------
+
 function ae86_clown_horn:OnSpellStart()
      local hCaster = self:GetCaster()
-	 local iPlayerID = hCaster:GetPlayerOwnerID()
 	 
 	 -- Top KEK
-	 xd[iPlayerID] = xd[iPlayerID] or 1
+     self.xd = self:GetSpecialValueFor("uses")
+     self.dx = self.dx and (self.dx + 1) % self.xd or 0
      
 	 -- Seriously wtf
-	 if xd[iPlayerID] then
-	   if xd[iPlayerID] < 10 then
-	     xd[iPlayerID] = xd[iPlayerID] + 1
-	   elseif xd[iPlayerID] >= 10 then
+	 if self.xd - 1 <= self.dx then
 	     self:StartCooldown(self:GetSpecialValueFor("cooldown"))
-		 xd[iPlayerID] = 1
-	   end
 	 end
 	 
 	 -- Emit Sounds

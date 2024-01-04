@@ -258,7 +258,8 @@ function item_moonlight_goddess_bow:OnSpellStart()
                                                         iRadius  = i__Radius,
                                                         fStunDur = f__StunDur,
                                                         
-                                                        hAbility = self:GetAbilityIndex()
+                                                        --hAbility = self:GetAbilityIndex()
+                                                        hAbility = self:GetAbilityName()
                                                       }
                      	    }
 
@@ -284,7 +285,7 @@ function item_moonlight_goddess_bow_cringe:OnProjectileHit_ExtraData(hTarget, vL
                           and GetDistance(hTarget, vSpawnLoc)
                           or 0
         --=======================================================--
-        local hAbility      = hCaster:GetAbilityByIndex(hTable.hAbility) or self
+        local hAbility      = hCaster:FindAbilityByName(hTable.hAbility) or self
         local fMaxDamage    = hTable.fMaxDMG or 5000
         local fScaleFactor  = hTable.fScaleF or 1.0
         local fStunDuration = hTable.fStunDur or 2.5

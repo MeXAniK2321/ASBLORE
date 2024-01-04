@@ -131,7 +131,7 @@ function muramasa_rush_upgraded:OnProjectileHit_ExtraData(hTarget, vLocation, ta
     end
     
     
-    local damage = self:GetSpecialValueFor("damage")
+    local damage = self:GetSpecialValueFor("damage") + caster:GetStrength()*8
     local duration = self:GetSpecialValueFor("duration")
  
 

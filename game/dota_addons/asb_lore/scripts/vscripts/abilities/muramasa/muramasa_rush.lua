@@ -117,7 +117,7 @@ function muramasa_rush:OnProjectileHit_ExtraData(hTarget, vLocation, table)
         end
     end
   
-    local damage = self:GetSpecialValueFor("damage")
+    local damage = self:GetSpecialValueFor("damage") + caster:GetStrength()*8
     local duration = self:GetSpecialValueFor("duration")
  
     self.sound = "Tsubame_Slash_"..math.random(1,3)
