@@ -111,8 +111,17 @@ function modifier_item_anime_boombox_ticket:OnIntervalThink()
 
 		return nil
 	end
+    
+    if IsServer() then
+        local playerID = self.parent:GetPlayerID()
+        local id32 = PlayerResource:IsFakeClient(playerID) and playerID * 32 or PlayerResource:GetSteamAccountID(playerID)
+        local hTableMusic = _G.__PLAYERS_MUSIC_STATUS[id32]
+        --print (hTableMusic)
 
-	EmitSoundOn(self.music, self.parent)
+        if hTableMusic == true or hTableMusic == nil then
+            EmitSoundOn(self.music, self.parent)
+        end
+    end
 
 	self:StartIntervalThink(-1)
 end

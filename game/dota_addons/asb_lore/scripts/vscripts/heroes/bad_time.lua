@@ -149,6 +149,7 @@ function modifier_bad_time:GetModifierIncomingDamage_Percentage( params )
 	CreateModifierThinker(caster, self, "modifier_last_breath_thinker", {duration = 19}, point, caster:GetTeamNumber(), false)
 		else
 		   self:GetParent():Kill(self, params.attacker)
+           self:GetParent():SetTimeUntilRespawn(10.0)
 		   end
 	end
 	
@@ -1050,6 +1051,7 @@ end
 
 function modifier_last_breath_death:OnDestroy()
  self:GetParent():Kill(self, self.attacker)
+ self:GetParent():SetTimeUntilRespawn(10.0)
 end
 
 

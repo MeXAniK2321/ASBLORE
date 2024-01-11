@@ -11,6 +11,7 @@ _G.ToumaCombo = 0
 _G.ToumaGenderCombo = 0
 _G.LoreStartWithUlts = true
 _G.LoreStartUltsCD = 400
+_G.__PLAYERS_MUSIC_STATUS = _G.__PLAYERS_MUSIC_STATUS or {}
 ---------------------------------------------------------------------------
 -- COverthrowGameMode class
 ---------------------------------------------------------------------------
@@ -180,6 +181,7 @@ function Precache( context )
         PrecacheResource( "soundfile", "soundevents/anime_special.vsndevts", context )
 		-- Temporarily Here
 		PrecacheResource( "soundfile", "soundevents/heroes/gogeta.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/heroes/gojo.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
@@ -428,6 +430,9 @@ function COverthrowGameMode:SetUpFountains()
       if GameRules:State_Get() ~= DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
         return 1
       end
+      
+        -- Concert Tickets Music Message
+        GameRules:SendCustomMessage("Server: You can type -music on / -music off to enable or disable your concert ticket songs !", 0, 0)
         
 		local hFountainEnts = Entities:FindAllByClassname("ent_dota_fountain")
         for _, hFountainEnt in pairs(hFountainEnts) do

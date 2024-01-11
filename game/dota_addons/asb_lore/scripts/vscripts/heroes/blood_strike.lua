@@ -42,7 +42,7 @@ function mars_gods_rebuke_lua:OnSpellStart()
 	
 	-- Damage yourself
 	damageTable.victim = caster
-    damageTable.damage = caster:GetMaxHealth() * 0.20
+    damageTable.damage = caster:GetMaxHealth() * 0.10
     damageTable.damage_type = DAMAGE_TYPE_PURE
 	damageTable.damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION
 	ApplyDamage(damageTable)

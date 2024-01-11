@@ -2587,7 +2587,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"5 4 3 2"
 		//"AbilityManaCost"				"100 110 120 130"
-        "AbilityHealthCost"				"20"
+        "AbilityHealthCost"				"10"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -27512,7 +27512,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"duration1"			"10"
+				"duration1"			"60"
 			}
 			"02"
 			{
@@ -33095,7 +33095,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50 40 30"
+		"AbilityCooldown"				"30 25 20"
 		"AbilityManaCost"				"100 125 150"
 
 		// Damage
@@ -38929,7 +38929,7 @@
       "01"
       {
         "var_type"        "FIELD_INTEGER"
-        "heal"          "200 300 400 550"
+        "heal"          "250 350 450 600"
       }
       "02"
       {
@@ -38939,7 +38939,7 @@
       "03"
       {
         "var_type"        "FIELD_INTEGER"
-        "heal_per_stack"        "10"
+        "heal_per_stack"        "5"
       
       }
       "04"
@@ -39067,7 +39067,7 @@
       "04"
       {
         "var_type"        "FIELD_INTEGER"
-        "damage"      "350 475 650"
+        "damage"      "400 500 700"
   
       }
       "04"
@@ -39280,7 +39280,7 @@
 
     // Damage
     //-------------------------------------------------------------------------------------------------------------
-    "AbilityDamage"         "500"
+    "AbilityDamage"         "700"
 
     // Special
     //-------------------------------------------------------------------------------------------------------------
@@ -39360,7 +39360,7 @@
       "01"
       {
         "var_type"          "FIELD_INTEGER"
-        "radius"          "450"
+        "radius"          "470"
       }
       "02"
       {
@@ -39372,13 +39372,13 @@
       "03"
       {
         "var_type"          "FIELD_INTEGER"
-        "int_damage"          "1.7"
+        "int_damage"          "2.3"
         
       }
       "03"
       {
         "var_type"          "FIELD_INTEGER"
-        "burn_damage"         "200"
+        "burn_damage"         "225"
         
       }
     }
@@ -39617,7 +39617,7 @@
       "04"
       {
         "var_type"        "FIELD_INTEGER"
-        "damage"      "750"
+        "damage"      "900"
         
       }
     }
@@ -39814,7 +39814,7 @@
       "06"
       {
         "var_type"        "FIELD_INTEGER"
-        "damage"      "1200"
+        "damage"      "1400"
       }
     }
   }
@@ -39886,7 +39886,7 @@
       "04"
       {
         "var_type"        "FIELD_INTEGER"
-        "damage"      "1000"
+        "damage"      "1200"
       }
     }
   } 
@@ -43573,12 +43573,12 @@
       "02"
       {
         "var_type"            "FIELD_FLOAT"
-        "heal_hp"           "15 20 30"
+        "heal_hp"           "100 200 300"
       }
       "03"
       {
         "var_type"            "FIELD_FLOAT"
-        "heal_hp_pct"         "2 3 5"
+        "heal_hp_pct"         "5 10 15"
       }
       "04"
       {
@@ -43785,7 +43785,7 @@
       "09"
       {
         "var_type"            "FIELD_FLOAT"
-        "damage_increase"       "0.04"
+        "damage_increase"       "0.06"
       }
     }
   }
@@ -45885,6 +45885,60 @@
 
 		}
 	}
+    
+  //=================================================================================================================
+  // Gojo: Domain Kick Maybe (Q)
+  //=================================================================================================================
+    
+	"goju_kick1"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gojo/gojo.lua"
+		"AbilityTextureName"			"gojo_red_orb"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gojo.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityManaCost"				"50 100 150 200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+
+		}
+	}
   
   //=================================================================================================================
   // Gojo: Blue Orb (W)
@@ -45991,6 +46045,60 @@
 	}
     
   //=================================================================================================================
+  // Gojo: Domain Kick Maybe (W)
+  //=================================================================================================================
+    
+	"goju_kick2"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gojo/gojo.lua"
+		"AbilityTextureName"			"gojo_red_orb"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gojo.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_7"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityManaCost"				"50 100 150 200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+
+		}
+	}
+    
+  //=================================================================================================================
   // Gojo: Infinite Void (E)
   //=================================================================================================================
     
@@ -46002,7 +46110,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gojo/gojo.lua"
-		"AbilityTextureName"			"gogeta_kamehameha"
+		"AbilityTextureName"			"gojo_infinity"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"4"
 		"precache"
@@ -46129,6 +46237,144 @@
 	}
     
   //=================================================================================================================
+  // Gojo: Domain Kick Maybe (D)
+  //=================================================================================================================
+    
+	"goju_kick3"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gojo/gojo.lua"
+		"AbilityTextureName"			"gojo_red_orb"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gojo.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_ROT"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityManaCost"				"50 100 150 200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+
+		}
+	}
+    
+  //=================================================================================================================
+  // Gojo: Domain Expansion (F)
+  //=================================================================================================================
+  
+	"goju_domain_expansion"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gojo/gojo.lua"
+		"AbilityTextureName"			"gojo_red_explosion"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gojo.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.4"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"180"
+		"AbilityManaCost"				"321"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		        "500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"		        "12.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"str_mult"		        "99999.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"distance"		        "2500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"		        "500"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speeed"		        "2500"
+			}
+
+		}
+	}
+    
+  //=================================================================================================================
   // Gojo: Hollow Purple (R)
   //=================================================================================================================
     
@@ -46140,7 +46386,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/gojo/gojo.lua"
-		"AbilityTextureName"			"gogeta_kamehameha"
+		"AbilityTextureName"			"gojo_hollow_purple_combine"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"1"
 		"precache"
@@ -46170,6 +46416,60 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"230"
 		"AbilityManaCost"				"350"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+
+		}
+	}
+    
+  //=================================================================================================================
+  // Gojo: Domain Kick Maybe (R)
+  //=================================================================================================================
+    
+	"goju_kick4"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/gojo/gojo.lua"
+		"AbilityTextureName"			"gojo_red_orb"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"precache"
+		{
+			"soundfile"	"soundevents/heroes/gojo.vsndevts"
+			"particle"  "particles/ss_blue_kamehameha.vpcf"
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ALACRITY"
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 12 10 8"
+		"AbilityManaCost"				"50 100 150 200"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------

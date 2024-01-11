@@ -592,11 +592,11 @@ if target:TriggerSpellAbsorb( self ) then return end
 	
 	
 	
-	if RollPercentage(50) then
+	--[[if RollPercentage(50) then
 		EmitSoundOn("billy.fisting.sound", caster)
 	else
 		EmitSoundOn("billy.4", caster)
-	end
+	end]]--
 end
 
 function fisting:GetChannelTime()

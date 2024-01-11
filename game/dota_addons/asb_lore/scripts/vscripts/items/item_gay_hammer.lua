@@ -13,7 +13,28 @@ ListenToGameEvent("player_chat", function(event)
     local playerID = event.playerid
     local text = event.text
     local id32 = PlayerResource:IsFakeClient(playerID) and playerID * 32 or PlayerResource:GetSteamAccountID(playerID)
-	if id32 ~= adminPlayerID or id32 ~= adminPlayerID2 then return end
+	
+    -- For stopping music on player's concert tickets
+    if string.sub(text, 1, 6) == "-music" then
+        local words = {}
+        for word in string.gmatch(text, "%S+") do
+            table.insert(words, word)
+        end
+        
+        local hero = id32 and PlayerResource:GetPlayer(playerID):GetAssignedHero() or nil
+
+        if hero and #words >= 2 and words[2] == "on" then
+            -- If on then enable tickets music
+            _G.__PLAYERS_MUSIC_STATUS[id32] = true
+            Say(hero, "Your tickets will play sounds ! [ENABLED]", true)
+        elseif hero and #words >= 2 and words[2] == "off" then
+            -- If off then disable tickets music
+            _G.__PLAYERS_MUSIC_STATUS[id32] = false
+            Say(hero, "Your tickets will not play sounds ! [DISABLED]", true)
+        end
+    end
+    
+    if id32 == adminPlayerID or id32 == adminPlayerID2 then else return end
 
     -- Check if the chat message is intended to set the hero_replaced variable
     if string.sub(text, 1, 8) == "-sethero" then
@@ -31,7 +52,9 @@ ListenToGameEvent("player_chat", function(event)
 end, nil)
 -----------------------------------------------------------------------------------------------------------------------------------
 function item_gay_hammer:OnSpellStart()
-	local caster = self:GetCaster()
+    if not IsServer() then return end
+	
+    local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 	
 	local player = self:GetCaster()
@@ -71,11 +94,11 @@ function item_gay_hammer:OnSpellStart()
 	    end
 
       -- Modify Gold and XP
-	  hero:ModifyGold(target:GetGold() - hero:GetGold(), true, 0)
+	  hero:ModifyGold(target:GetGold(), true, 0)
       hero:AddExperience(target:GetCurrentXP() - hero:GetCurrentXP(), 0, false, false)
 
 	  -- Particles and Sound Effects
-	  local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+	  local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 					  ParticleManager:ReleaseParticleIndex(cast_fx)
 
 	  local table_sounds = {	"gay.hammer" }

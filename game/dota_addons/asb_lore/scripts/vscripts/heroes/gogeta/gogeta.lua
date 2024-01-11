@@ -2115,6 +2115,7 @@ function modifier_gogeta_meteor_explosion:OnIntervalThink()
                 if self.hMainTarget:HasModifier("modifier_knockback") then
                     self.hMainTarget:RemoveModifierByName("modifier_knockback")
                 end
+                self.hMainTarget:AddNewModifier(self.hMainTarget, self.ability, "modifier_gogeta_meteor_explosion_target", {duration = 7.0})
                 self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_gogeta_meteor_explosion_target", {duration = 7.0})
                 EmitGlobalSound("Gogeta.meteorhit")
 

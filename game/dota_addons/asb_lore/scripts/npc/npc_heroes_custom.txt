@@ -3487,15 +3487,15 @@
 		
 		"Ability4"					"goju_red_explosion"
 
-		"Ability5"					"goju_hollow_purple"
-		"Ability6"					""
+		"Ability5"					"goju_domain_expansion"
+		"Ability6"					"goju_hollow_purple"
 
-		"Ability7"					"generic_hidden"
-		"Ability8"					"generic_hidden"
-		"Ability9"					"generic_hidden"
-
-		//"Ability10"					"special_bonus_armor_4"
-		"Ability11"					"special_bonus_armor_4"
+		"Ability7"					"goju_kick1"
+		"Ability8"					"goju_kick2"
+		"Ability9"					"goju_kick3"
+		"Ability10"					"goju_kick4"
+		
+        "Ability11"					"special_bonus_armor_4"
 
 		"Ability12"					"special_bonus_anime_aqua_15r"
 		"Ability13"					"special_bonus_anime_aqua_15l"
