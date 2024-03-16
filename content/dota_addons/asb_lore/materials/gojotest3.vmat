@@ -1,0 +1,22 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "ui.vfx"
+
+	//---- Color ----
+	Texture "materials/gojotest333.png"
+
+	Attributes
+	{
+		PreviewModel "maps/backgrounds/models/fairy_showcase_hero_seat/fairy_showcase_seat.vmdl"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+	}
+}

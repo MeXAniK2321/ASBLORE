@@ -1,15 +1,75 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf58:version{9bada39c-a931-42d0-abdd-e5c1b13d37a6} -->
 {
 	_class = "CParticleSystemDefinition"
-	m_ConstantColor = 
-	[
-		228,
-		213,
-		146,
-		255,
-	]
-	m_flConstantRadius = 350.000000
+	m_ConstantColor = [ 228, 213, 146, 255 ]
+	m_flConstantRadius = 350.0
 	m_nMaxParticles = 1
+	m_bShouldSort = false
+	m_nBehaviorVersion = 5
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 1.0, 0.0, 0.0 ]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_nCP1 = 0
+			m_nCP2 = 0
+			m_nCP3 = 0
+			m_nCP4 = 0
+			m_vecCP1Pos = [ 0.0, 0.0, 55.0 ]
+			m_vecCP2Pos = [ 0.0, 0.0, 55.0 ]
+			m_vecCP3Pos = [ 0.0, 0.0, 55.0 ]
+			m_vecCP4Pos = [ 0.0, 0.0, 55.0 ]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphereTransform"
+		},
+		{
+			_class = "C_INIT_InitFloat"
+			m_nOutputField = 1
+		},
+	]
 	m_Operators = 
 	[
 		{
@@ -17,55 +77,41 @@
 		},
 		{
 			_class = "C_OP_MaxVelocity"
-			m_flMaxVelocity = 600.000000
+			m_flMaxVelocity = 600.0
 			m_nOverrideCP = 2
 		},
 		{
 			_class = "C_OP_Decay"
-			m_nOpEndCapState = 1
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
 		{
 			_class = "C_OP_SetChildControlPoints"
 			m_nFirstControlPoint = 3
 		},
 	]
-	m_Renderers = 
-	[
-		{
-			_class = "C_OP_RenderDeferredLight"
-			m_flAlphaScale = 6.000000
-			m_ColorScale = 
-			[
-				255,
-				255,
-				255,
-			]
-			m_hTexture = resource:"materials/particle/particle_flares/aircraft_yellow.vtex"
-		},
-	]
-	m_Initializers = 
-	[
-		{
-			_class = "C_INIT_CreateWithinSphere"
-		},
-		{
-			_class = "C_INIT_RandomLifeTime"
-		},
-	]
-	m_Emitters = 
-	[
-		{
-			_class = "C_OP_InstantaneousEmitter"
-			m_nParticlesToEmit = 1
-		},
-	]
 	m_ForceGenerators = 
 	[
 		{
 			_class = "C_OP_AttractToControlPoint"
-			m_fForceAmount = 1000000.000000
-			m_fFalloffPower = 0.000000
-			m_nControlPointNumber = 1
+			m_fForceAmount = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1000000.0
+			}
+			m_fFalloffPower = 0.0
+			m_TransformInput = 
+			{
+				m_nControlPoint = 1
+				m_bUseOrientation = false
+			}
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderDeferredLight"
+			m_flAlphaScale = 6.0
+			m_hTexture = resource:"materials/particle/particle_flares/aircraft_yellow.vtex"
 		},
 	]
 	m_Children = 
@@ -102,5 +148,4 @@
 			m_ChildRef = resource:"particles/units/heroes/hero_sven/sven_storm_bolt_projectile_trail_c.vpcf"
 		},
 	]
-	m_bShouldSort = false
 }

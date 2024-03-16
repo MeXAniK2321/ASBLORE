@@ -12,6 +12,7 @@ _G.ToumaGenderCombo = 0
 _G.LoreStartWithUlts = true
 _G.LoreStartUltsCD = 400
 _G.__PLAYERS_MUSIC_STATUS = _G.__PLAYERS_MUSIC_STATUS or {}
+_G.__GOJO_SETTINGS = _G.__GOJO_SETTINGS or {}
 ---------------------------------------------------------------------------
 -- COverthrowGameMode class
 ---------------------------------------------------------------------------

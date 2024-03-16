@@ -122,8 +122,8 @@ function HeroSelection() {
 	let removeFooter = $.GetContextPanel().GetParent().GetParent().GetParent().FindChildTraverse("Footer")
 	removeFooter.style.visibility = "collapse"
 	let MItems = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("AvailableItemsContainer")
-	MItems.style.visibility = "collapse"
-	MItems.enabled = false
+	//MItems.style.visibility = "collapse"
+	//MItems.enabled = false
 	let Mmap = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("StrategyMap")
 	Mmap.style.visibility = "collapse"
 	Mmap.enabled = false

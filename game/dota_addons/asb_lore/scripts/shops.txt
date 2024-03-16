@@ -30,7 +30,8 @@
      "item"      "item_chomusuke"
      "item"      "item_sad_vodoo_doll"
      "item"      "item_meteor_hammer"
-     "item"      "item_hell_staff" 
+     "item"      "item_hell_staff"
+     "item"      "item_refresher"     
   }
   
   "weapons_armor"
@@ -66,6 +67,8 @@
      "item"      "item_plot_armor"
      "item"      "item_sword_breaker"
      "item"      "item_thors_armor"
+     "item"      "item_berserker_armor"
+     "item"      "item_moonlight_goddess_bow"
   }
 "secretshop"
 {

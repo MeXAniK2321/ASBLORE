@@ -141,7 +141,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"23"
 		"AttributeStrengthGain"		"0"
 		"AttributeBaseIntelligence"	"28"
@@ -1054,7 +1054,7 @@
     "AttackDamageMax"     "200"                   // Damage range max.
     "AttackRange"				"100"
 
-    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributePrimary"      "DOTA_ATTRIBUTE_ALL"
     "AttributeBaseStrength"   "30"                   // Base strength
     "AttributeStrengthGain"   "2"                   // Strength bonus per level.
     "AttributeBaseIntelligence" "30"                   // Base intelligence
@@ -3457,7 +3457,7 @@
 	{
 		"override_hero"				"npc_dota_hero_dazzle"
 		"Model"						"models/heroes/anime/jujutsu_kaisen/gojo/gojo.vmdl"
-		"ModelScale"				"1.00000"
+		"ModelScale"				"1.20000"
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
@@ -3494,17 +3494,18 @@
 		"Ability8"					"goju_kick2"
 		"Ability9"					"goju_kick3"
 		"Ability10"					"goju_kick4"
-		
-        "Ability11"					"special_bonus_armor_4"
 
-		"Ability12"					"special_bonus_anime_aqua_15r"
-		"Ability13"					"special_bonus_anime_aqua_15l"
+        "Ability11"					"special_bonus_hp_300"
+        "Ability12"					"special_bonus_armor_4"
 
-		"Ability14"					"special_bonus_anime_aqua_20r"
-		"Ability15"					"special_bonus_anime_aqua_20l"
+		"Ability13"					"special_bonus_gojo_15"
+		"Ability14"					"special_bonus_all_stats_15"
 
-		"Ability16"					"special_bonus_anime_aqua_25r"
-		"Ability17"					"special_bonus_anime_aqua_25l"
+		"Ability15"					"special_bonus_gojo_20"
+		"Ability16"					"special_bonus_gojo_20_alt"
+
+		"Ability17"					"special_bonus_gojo_25_alt"
+		"Ability18"					"special_bonus_gojo_25"
 
 		"AbilityTalentStart"		"10"
 		//-------------------------------------------------------------------------------------------------------------
@@ -3557,7 +3558,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
-		"HealthBarOffset"			"200" 
+		"HealthBarOffset"			"250" 
 		"StatusHealth"				"400"
 		"StatusHealthRegen"			"2"
 		"StatusMana"				"150"
@@ -3582,7 +3583,7 @@
 		// Voice
 		//-------------------------------------------------------------------------------------------------------------
 		//"GameSoundsFile"			"soundevents/heroes/anime_hero_aqua.vsndevts"
-		//"VoiceFile"					"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
+		"VoiceFile"					"Empty"
 		//"VoiceBackgroundSound"		""
 		//"IdleSoundLoop"				""
 		//"HeroSelectSoundEffect"		"Okabe.Sonofabitch.Play"

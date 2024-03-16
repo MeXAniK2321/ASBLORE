@@ -3,12 +3,12 @@
 	"Gojo.red" = 
 	{
 		type = "dota_src1_3d"
-		volume = 22.0
+		volume = 11.0
 		pitch = 1.0
 		soundlevel = 84.0
 		mixgroup = "Weapons"
 		delay = 0.0
-		distance_max = 2500.0
+		distance_max = 3500.0
 		vsnd_files = 
 		[
 			"sounds/gojo/gojo_red.vsnd",
@@ -22,7 +22,7 @@
 		soundlevel = 84.0
 		mixgroup = "Weapons"
 		delay = 0.0
-		distance_max = 2500.0
+		distance_max = 3500.0
 		vsnd_files = 
 		[
 			"sounds/gojo/hollow_purple_activate.vsnd",
@@ -36,7 +36,7 @@
 		soundlevel = 84.0
 		mixgroup = "Weapons"
 		delay = 0.0
-		distance_max = 2500.0
+		distance_max = 3500.0
 		vsnd_files = 
 		[
 			"sounds/gojo/hollow_purple_theme.vsnd",
@@ -51,7 +51,7 @@
 		soundlevel = 84.0
 		mixgroup = "Weapons"
 		delay = 0.0
-		distance_max = 2500.0
+		distance_max = 3500.0
 		vsnd_files = 
 		[
 			"sounds/gojo/gojo_purple_snap.vsnd",
@@ -66,10 +66,296 @@
 		soundlevel = 84.0
 		mixgroup = "Weapons"
 		delay = 0.0
-		distance_max = 2500.0
+		distance_max = 3500.0
 		vsnd_files = 
 		[
 			"sounds/gojo/gojo_purple_full.vsnd",
+		]
+	}
+    
+	"Gojo.domain_partial" = 
+	{
+		type = "dota_src1_3d"
+		volume = 11.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_domain_partial.vsnd",
+		]
+	}
+    
+	"Gojo.redball1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_red_ball1.vsnd",
+		]
+	}
+    
+	"Gojo.redball2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_red_ball2.vsnd",
+		]
+	}
+    
+	"Gojo.hit1" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_hit_impact1.vsnd",
+		]
+	}
+    
+	"Gojo.bluenormal" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_blue_normal.vsnd",
+		]
+	}
+    
+	"Gojo.hollow_purple_launch" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_hollow_purple_launch.vsnd",
+		]
+	}
+	
+    "Gojo.hollow_purple_launch2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_hollow_purple_launch2.vsnd",
+		]
+	}
+    
+	"Gojo.Loop.blue_fly" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_blue_fly.vsnd",
+		]
+	}
+    
+	"Gojo.blue_expire" = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_blue_expire.vsnd",
+		]
+	}
+    
+	"Gojo.hit2" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_hit.vsnd",
+		]
+	}
+    
+	"Gojo.hit3" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_hit2.vsnd",
+		]
+	}
+    
+	"Gojo.red_launched" = 
+	{
+		type = "dota_src1_3d"
+		volume = 7.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_red_launched.vsnd",
+		]
+	}
+    
+	"Gojo.hollow_purple_launched" = 
+	{
+		type = "dota_src1_3d"
+		volume = 4.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/hollow_purple_launched.vsnd",
+		]
+	}
+    
+	"Gojo.red_channeled" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 7000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_red_channeled.vsnd",
+		]
+	}
+    
+	"Gojo.six_eyes" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_six_eyes.vsnd",
+		]
+	}
+    
+	"Gojo.blink" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 2500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_blink.vsnd",
+		]
+	}
+    
+	"Gojo.land_punch" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_land_punch.vsnd",
+		]
+	}
+    
+	"Gojo.land_punch_impact" = 
+	{
+		type = "dota_src1_3d"
+		volume = 5.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_land_punch_impact.vsnd",
+		]
+	}
+    
+    "Gojo.delirious" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.5
+		pitch_rand_min = -0.05
+		pitch_rand_max = 0.05
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/delirious.vsnd",
 		]
 	}
 	

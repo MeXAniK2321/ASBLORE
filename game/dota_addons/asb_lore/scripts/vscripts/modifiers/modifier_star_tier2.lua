@@ -11,6 +11,8 @@ function modifier_star_tier2:OnCreated(table)
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
 	local caster = self:GetCaster()
+    
+    self.bSecondTheme = table.bSecondTheme
 	
 	
 	if IsServer() then
@@ -131,6 +133,12 @@ function modifier_star_tier2:OnCreated(table)
 		EmitGlobalSound("star.theme2_50")
 	elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
 		EmitGlobalSound("Gogeta.ulti_mp3")
+	elseif caster:GetUnitName()== "npc_dota_hero_dazzle" then
+		if self.bSecondTheme then
+            EmitGlobalSound("Gojo.delirious")
+        else
+            EmitGlobalSound("Gojo.purple_theme")
+        end
 	else
 	end
 
@@ -241,6 +249,9 @@ function modifier_star_tier2:OnDestroy()
 		StopGlobalSound("star.theme2_50")
 	elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
 		StopGlobalSound("Gogeta.ulti_mp3")
+	elseif caster:GetUnitName()== "npc_dota_hero_dazzle" then
+		StopGlobalSound("Gojo.purple_theme")
+        StopGlobalSound("Gojo.delirious")
 	else
 	end
 end

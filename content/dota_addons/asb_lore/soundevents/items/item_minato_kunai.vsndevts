@@ -694,6 +694,9 @@
 			"sounds/BoomBox/anime_hero_giorno_giovanna.vsnd",
 			"sounds/BoomBox/archer_theme.vsnd",
 			"sounds/BoomBox/devil_trigger.vsnd",
+			"sounds/BoomBox/zenitsu_saves_nezuko.vsnd",
+			"sounds/BoomBox/zenitsu_vs_spider.vsnd",
+			"sounds/BoomBox/gasgasgas.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"

@@ -49,6 +49,32 @@ ListenToGameEvent("player_chat", function(event)
             print("The current hero is: " .. hero_replaced)
         end
     end
+    
+    -- Gojo Test Settings Stuff
+    if string.sub(text, 1, 5) == "-Gojo" then
+        local words = {}
+        for word in string.gmatch(text, "%S+") do
+            table.insert(words, word)
+        end
+        
+        local hero = id32 and PlayerResource:GetPlayer(playerID):GetAssignedHero() or nil
+        
+        local nOne = tonumber(words[2])
+        local nTwo = tonumber(words[3])
+
+        if #words >= 3 then
+            -- TEST TEST
+            if nOne and nTwo then
+                _G.__GOJO_SETTINGS[1] = math.ceil(nOne)
+                _G.__GOJO_SETTINGS[2] = (nTwo)
+                Say(hero, "Gojo Attacks: " .. _G.__GOJO_SETTINGS[1] .. "Gojo Attacks Delay: " .. _G.__GOJO_SETTINGS[2], true)
+                print("Gojo Attacks: " .. _G.__GOJO_SETTINGS[1] .. "Gojo Attacks Delay: " .. _G.__GOJO_SETTINGS[2])
+            else
+                Say(hero, "Gojo Settings: USE NUMBERS !!!", true)
+                print("Gojo Settings: USE NUMBERS !!!")
+            end
+        end
+    end
 end, nil)
 -----------------------------------------------------------------------------------------------------------------------------------
 function item_gay_hammer:OnSpellStart()

@@ -8444,5 +8444,53 @@
 
 		}
 	}
+    
+	"item_gojo_six_eyes"
+	{
+	"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_gojo_six_eyes.lua"
+	"AbilityTextureName"			"gojo_six_eyes"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+	"AbilityCastPoint"						"0.0"
+	"AbilityCooldown"						"240"
+	"AbilityManaCost"						"0"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"0"
+	"ItemIsNeutralDrop"						"1"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attk_damage"	    "80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"	        "1000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_allstats"	    "20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_spell_amp"	    "50"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required"	            "8"
+			}
+        }
+	}
 
 }
