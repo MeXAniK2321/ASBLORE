@@ -49,7 +49,10 @@
 			"item"          "item_avalon"	   
                         "item"      	"item_serp_molot"
                         "item" 		"item_seal_of_chaos"
-						"item"      "item_meteor_hammer"		
+						"item"      "item_meteor_hammer"
+						 "item"      "item_berserker_armor"
+						 "item"      "item_moonlight_goddess_bow"
+						 "item"      "item_refresher"             
                         
 
 

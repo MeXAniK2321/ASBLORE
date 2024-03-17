@@ -41,6 +41,9 @@
                          "item"      "item_pandora_box"                        
                          "item"	     "item_van_dark"
                          "item"	     "item_beast_boots"
+						 "item"      "item_berserker_armor"
+						 "item"      "item_moonlight_goddess_bow"
+						 "item"      "item_refresher" 
 
 		}
 		

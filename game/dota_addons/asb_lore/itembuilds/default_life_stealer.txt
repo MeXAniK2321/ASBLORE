@@ -47,6 +47,9 @@
                         "item"          "item_samehada"
                         "item"          "item_abyss_horn"
                         "item"	        "item_beast_boots"
+						 "item"      "item_berserker_armor"
+						 "item"      "item_moonlight_goddess_bow"
+						 "item"      "item_refresher" 
                           
                                             
 

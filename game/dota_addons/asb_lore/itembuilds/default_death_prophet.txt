@@ -52,6 +52,9 @@
                        "item"          "item_serp_molot" 
                        "item"          "item_magic_girl_wand"
 					   "item"      "item_meteor_hammer"
+						 "item"      "item_berserker_armor"
+						 "item"      "item_moonlight_goddess_bow"
+						 "item"      "item_refresher" 
                        
                                             
 
