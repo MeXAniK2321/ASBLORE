@@ -44,7 +44,7 @@
                         "item"		"item_spamton"
                         "item"          "item_avalon"
                         "item"          "item_escalibur"
-                        "item"        "item_abyss_horn
+                        "item"        "item_abyss_horn"
 		}
 		
 		"DOTA_Item_Build_Other_Items"
