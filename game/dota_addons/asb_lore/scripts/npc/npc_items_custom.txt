@@ -1044,7 +1044,7 @@
 		"AbilityTextureName" 					"black_march"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"2000"
+		"ItemCost"								"0"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_black_march"
@@ -1327,7 +1327,7 @@
 		"AbilityTextureName" 					"escalibur"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"2000"
+		"ItemCost"								"1"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_escalibur"
@@ -1419,7 +1419,7 @@
 		"AbilityTextureName" 					"power_of_youth"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"2000"
+		"ItemCost"								"1"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_power_of_youth"
@@ -7709,7 +7709,7 @@
 		"AbilityTextureName" 					"axis_sheet"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"25450"
+		"ItemCost"								"18450"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_jetstream_sam_muramasa"
@@ -7763,7 +7763,7 @@
 		 "04"
 		    {
 		    	"var_type"			"FIELD_FLOAT"
-		    	"bloodshed_duration"		"2.3"
+		    	"bloodshed_duration"		"3.2"
 		    }
 		 "05"
 		    {
@@ -8130,7 +8130,7 @@
 		"AbilityTextureName" 					"recipe"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"60000"
+		"ItemCost"								"40000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_berserker_armor"
@@ -8228,7 +8228,7 @@
 		"AbilityTextureName" 					"recipe"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"58000"
+		"ItemCost"								"38000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_moonlight_goddess_bow"
@@ -8453,7 +8453,7 @@
 	"ItemPurchasable"						"0"
 	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
 	"AbilityCastPoint"						"0.0"
-	"AbilityCooldown"						"240"
+	"AbilityCooldown"						"180"
 	"AbilityManaCost"						"0"
 	"ItemCost"					"20000"
 	"ItemDroppable" 						"0"

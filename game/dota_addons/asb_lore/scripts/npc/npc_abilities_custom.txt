@@ -1613,7 +1613,7 @@
 		"ScriptFile"							"heroes/susano"
 		"AbilityTextureName" 					"susano_strike"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
@@ -6151,7 +6151,7 @@
 		"ScriptFile"							"heroes/music_wave"
 		"AbilityTextureName" 					"rin_ability1"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_"
@@ -9625,7 +9625,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -17304,7 +17304,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -20177,7 +20177,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -20415,7 +20415,7 @@
 		"ScriptFile"							"heroes/plant_c4"
 		"AbilityTextureName" 					"homura_1"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET "
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
 
 		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
@@ -20908,7 +20908,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_2"
 
 		// Ability Casting
@@ -22838,7 +22838,7 @@
 		"ScriptFile"							"heroes/chain_hit"
 		"AbilityTextureName" 					"kurapika1"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
@@ -33483,7 +33483,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -34450,7 +34450,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -34907,7 +34907,7 @@
 		"ScriptFile"							"heroes/rumia"
 		"AbilityTextureName" 					"rumia_ex/rumia_ex5"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
@@ -35466,7 +35466,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
 
@@ -36750,7 +36750,7 @@
 		"ScriptFile"							"heroes/arcueid"
 		"AbilityTextureName" 					"arcueid/neko_arcueid_3"
 		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
@@ -37426,7 +37426,7 @@
 		"ScriptFile"							"heroes/edward"
 		"AbilityTextureName" 					"edward/edward_4_2"
 		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
@@ -37960,7 +37960,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -38042,7 +38042,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
@@ -38207,7 +38207,7 @@
 		"ScriptFile"							"heroes/naofumi"
 		"AbilityTextureName" 					"naofumi/3_1"
 		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
@@ -41311,7 +41311,7 @@
     // Ability General
     //-------------------------------------------------------------------------------------------------------------
     "AbilityType"         "DOTA_ABILITY_TYPE_ULTIMATE"
-    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
     "AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"       "SPELL_IMMUNITY_ENEMIES_NO"
 
@@ -45857,7 +45857,7 @@
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_FREE_DRAW_TARGETING"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
@@ -45868,7 +45868,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_2"
 		"AbilityCastRange"				"0"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -45895,7 +45895,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"distance"		        "2000"
+				"distance"		        "1700"
 				"LinkedSpecialBonus"	"special_bonus_gojo_20_alt"
 			}
 			"04"
@@ -45906,7 +45906,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"projectile_damage"		"150 250 350 450"
+				"projectile_damage"		"150 250 350 550"
 			}
 		}
 	}
@@ -45951,7 +45951,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14 12 10 8"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46040,7 +46040,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_3"
 		"AbilityCastRange"				"0"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.4"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -46067,7 +46067,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"distance"		        "2000"
+				"distance"		        "1700"
 			}
 			"04"
 			{
@@ -46092,7 +46092,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"explosion_damage"		"150 300 400 500"
+				"explosion_damage"		"200 300 400 500"
 			}
 			"09"
 			{
@@ -46198,7 +46198,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14 12 10 8"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46309,7 +46309,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"radius"		        "100"
+				"radius"		        "150"
 			}
 			"03"
 			{
@@ -46320,7 +46320,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_treshold"		"200 400 500 600"
+				"damage_treshold"		"200 300 400 500"
 			}
 		}
 	}
@@ -46366,7 +46366,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40"
+		"AbilityCooldown"				"50"
 		"AbilityManaCost"				"321"
 
 		// Damage
@@ -46457,7 +46457,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14 12 10 8"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46550,7 +46550,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"320"
+		"AbilityCooldown"				"270"
 		"AbilityManaCost"				"321"
         
 		"HasScepterUpgrade"           "1"
@@ -46592,6 +46592,16 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"movespeed_bonus_perc"	"100"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"base_damage_bonus"	    "80"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"magic_damage_bonus"	"80"
 			}
 		}
 	}
@@ -46725,7 +46735,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14 12 10 8"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46743,7 +46753,7 @@
   // Gojo: Talents
   //=================================================================================================================
   
-	"special_bonus_gojo_25" // Red Explosion(D) Increased level multiplier by 30
+	"special_bonus_gojo_25" // Red Explosion(D) Increased level multiplier by 20
 		{
 			"BaseClass"						"special_bonus_undefined"														
 			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
@@ -46759,7 +46769,7 @@
 				"01"
 				{
 				"var_type"				"FIELD_FLOAT"
-				"value"					"30"
+				"value"					"20"
 				}			
 			}
 		}
@@ -46805,7 +46815,7 @@
 			}
 		}
 
-	"special_bonus_gojo_20_alt" // Red (Q) + 400 Distance
+	"special_bonus_gojo_20_alt" // Red (Q) + 300 Distance
 		{
 			"BaseClass"						"special_bonus_undefined"														
 			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
@@ -46821,7 +46831,7 @@
 				"01"
 				{
 				"var_type"				"FIELD_FLOAT"
-				"value"				    "400"
+				"value"				    "300"
 				}			
 			}
 		}

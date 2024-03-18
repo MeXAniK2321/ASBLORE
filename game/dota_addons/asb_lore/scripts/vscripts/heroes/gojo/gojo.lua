@@ -197,6 +197,7 @@ function modifier_gojo_projectile_thinker:OnCreated(hTable)
         
         if self.bIsBlueOrb and self.bIsRedOrb then self:Destroy() print("Dev is noob") return end
         
+        self.parent:SetHullRadius(self.fRadius)
         --self.parent:SetDayTimeVisionRange(700)
         --self.parent:SetNightTimeVisionRange(700)
         
@@ -445,8 +446,8 @@ function modifier_gojo_projectile_thinker:ApplyMotionModifier(hTarget, tMoveValu
 end
 function modifier_gojo_projectile_thinker:MoveAndCalculateStats()
     -- There should always be a Target Vector
-    if not self.Target then 
-        self.Target = self.caster:GetAbsOrigin() + self.caster:GetForwardVector() * self.fDistance 
+    if not self.Target then
+        self.Target = self.caster:GetOrigin() + self.caster:GetForwardVector() * self.fDistance 
     end
             
     -- EYE movement logic pog
@@ -899,7 +900,7 @@ function goju_blue_orb_redirect:OnSpellStart()
         
         hParent:SetForwardVector(vDirection)
         self.hModifier.iBlueCurrentState = STATE_IS_MOVING
-        self.hModifier.Target            = hParent:GetOrigin() + hParent:GetForwardVector() * 1400
+        self.hModifier.Target            = hParent:GetOrigin() + hParent:GetForwardVector() * 1300
         self.hModifier.bIsRedirected     = true
 	end
     
@@ -935,8 +936,8 @@ function goju_infinite_void:OnSpellStart()
     local hTarget = self:GetCursorTarget()
     
     if not hCaster:HasModifier("modifier_goju_infinite_void") then
-        local hDuration = self:GetSpecialValueFor("duration")
-        hCaster:AddNewModifier(hCaster, self, "modifier_goju_infinite_void", { duration = hDuration })
+        local fDuration = self:GetSpecialValueFor("duration")
+        hCaster:AddNewModifier(hCaster, self, "modifier_goju_infinite_void", { duration = fDuration })
     else
         self:Blink(hCaster, hPoint, hTarget)
     end
@@ -998,7 +999,8 @@ end
 modifier_goju_infinite_void = modifier_goju_infinite_void or class ({})
 
 function modifier_goju_infinite_void:IsHidden() return false end
-function modifier_goju_infinite_void:IsPurgeable() return true end
+--function modifier_goju_infinite_void:IsPurgeable() return true end
+--function modifier_goju_infinite_void:IsPurgeException() return true end
 function modifier_goju_infinite_void:RemoveOnDeath() return true end
 function modifier_goju_infinite_void:CheckState()
     local func = {
@@ -1042,15 +1044,17 @@ function modifier_goju_infinite_void:OnIntervalThink()
     if IsServer() then
         if not IsNotNull(self.parent) then return end
         
+        self.fDistance  = GetDistance(self.caster, self.parent)
+        self.vDirection = GetDirection(self.caster, self.parent)
+        
         if self:CanMove() then return end
     
-        self.parent:SetOrigin(self.vOriginP)
+        self:BlockOrPushEnemy()
+        --self.parent:SetOrigin(self.vOriginP)
         --print("TEST HMMMM")
     end
 end
 function modifier_goju_infinite_void:CanMove()
-    local fDistance  = GetDistance(self.caster, self.parent)
-    local vDirection = GetDirection(self.caster, self.parent)
     local vFacingDirection = self.parent:GetForwardVector():Normalized()
     
     if self.parent:HasModifier("modifier_goju_domain_motion") then
@@ -1066,8 +1070,8 @@ function modifier_goju_infinite_void:CanMove()
     
     self.parent:InterruptMotionControllers(true)
     
-    if fDistance <= self.fRadius + 100
-        and vDirection:Dot(vFacingDirection) <= 0 
+    if self.fDistance <= self.fRadius + 100
+        and self.vDirection:Dot(vFacingDirection) <= 0 
         and self.parent:IsMoving() 
         and not self.parent:IsCurrentlyHorizontalMotionControlled() then
         --and not self.parent:IsCurrentlyVerticalMotionControlled() then 
@@ -1076,6 +1080,20 @@ function modifier_goju_infinite_void:CanMove()
     end     
     
     return false
+end
+function modifier_goju_infinite_void:BlockOrPushEnemy()
+    local vCurPos    = self.parent:GetOrigin()
+    local vGroundPos = GetGroundPosition(vCurPos, self.parent)
+    local fSpeed     = 500 * 0.01
+    local vNextPos   = vCurPos - self.vDirection * fSpeed
+    
+    if self.fDistance <= 100 then
+        vCurPos.z = vGroundPos.z
+        self.parent:SetOrigin(vNextPos)
+        self.vOriginP = vNextPos
+    else
+        self.parent:SetOrigin(self.vOriginP)
+    end     
 end
 function modifier_goju_infinite_void:GetModifierAvoidDamageAfterReductions(keys)
 	if IsServer() then
@@ -1110,8 +1128,12 @@ end
 end]]--
 function modifier_goju_infinite_void:OnDestroy()
     if IsServer() then
+        local hModifier = self.parent:FindModifierByName("modifier_knockback")
         if self.caster ~= self.parent then
-            --FindClearSpaceForUnit( self.parent, self.parent:GetAbsOrigin(), true )
+            if not self.parent:HasModifier("modifier_goju_domain_motion")
+                and not IsNotNull(hModifier) then
+                FindClearSpaceForUnit( self.parent, self.parent:GetAbsOrigin(), true )
+            end
             return
         end
         
@@ -1411,6 +1433,7 @@ modifier_goju_domain_expansion = modifier_goju_domain_expansion or class({})
 
 function modifier_goju_domain_expansion:IsHidden() return false end
 function modifier_goju_domain_expansion:IsPurgeable() return false end
+function modifier_goju_domain_expansion:IsPurgeException() return false end
 function modifier_goju_domain_expansion:RemoveOnDeath() return true end
 function modifier_goju_domain_expansion:CheckState()
     local state =   { 
@@ -1426,7 +1449,9 @@ function modifier_goju_domain_expansion:DeclareFunctions()
                         MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
                         MODIFIER_PROPERTY_MOVESPEED_LIMIT,
                         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
-                        MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,                        
+                        MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
+                        MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE,
+                        MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL,
                     }
     return func
 end
@@ -1441,6 +1466,12 @@ function modifier_goju_domain_expansion:GetModifierMoveSpeedBonus_Percentage(key
 end
 function modifier_goju_domain_expansion:GetModifierAttackRangeBonus()
     return self.iMeleeRange
+end
+function modifier_goju_domain_expansion:GetModifierBaseAttack_BonusDamage()
+    return self.fBaseDmgBonus
+end
+function modifier_goju_domain_expansion:GetModifierProcAttack_BonusDamage_Magical()
+    return self.fMagicDmgBonus
 end
 function modifier_goju_domain_expansion:GetActivityTranslationModifiers()
     return "gojo_domain"
@@ -1458,6 +1489,8 @@ function modifier_goju_domain_expansion:OnCreated(hTable)
     self.iMeleeRange       = 150 - self.parent:Script_GetAttackRange()
     self.iMoveSpeedLimit   = self.ability:GetSpecialValueFor("movespeed_limit")
     self.iMoveSpeedPercent = self.ability:GetSpecialValueFor("movespeed_bonus_perc")
+    self.fBaseDmgBonus     = self.ability:GetSpecialValueFor("base_damage_bonus")
+    self.fMagicDmgBonus    = self.ability:GetSpecialValueFor("magic_damage_bonus")
     
     for i = 1, 2 do
         local iEyeEffect = ParticleManager:CreateParticle("particles/nanaya_eyes.vpcf", PATTACH_CUSTOMORIGIN, self.parent)
@@ -1692,6 +1725,7 @@ modifier_goju_hollow_purple_active = modifier_goju_hollow_purple_active or class
 
 function modifier_goju_hollow_purple_active:IsHidden() return false end
 function modifier_goju_hollow_purple_active:IsPurgeable() return false end
+function modifier_goju_hollow_purple_active:IsPurgeException() return false end
 function modifier_goju_hollow_purple_active:RemoveOnDeath() return true end
 function modifier_goju_hollow_purple_active:CheckState()
     local state =   { 
@@ -2144,7 +2178,7 @@ function GojoStartMotion(self)
                         end
                         -- Check for delay on the final attack, this is added to sync the animation with the hit
                         if self.fLastAttDelayCopy >= self.fLastAttDelay then
-                            for i = 1, self.iAutoAttacksDone do
+                            for i = 1, self.iAutoAttacksDone + 2 do
                                 hParent:PerformAttack(self.hTarget, true, true, true, true, false, false, true)
                             end
                             self.hModifierEnemy.fDistance = 1000
