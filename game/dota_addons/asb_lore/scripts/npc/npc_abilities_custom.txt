@@ -45906,7 +45906,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"projectile_damage"		"150 350 550 750"
+				"projectile_damage"		"150 250 350 450"
 			}
 		}
 	}
@@ -46082,7 +46082,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_per_second"		"20 40 60 80"
+				"damage_per_second"		"20 30 40 50"
 			}
 			"07"
 			{
@@ -46092,7 +46092,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"explosion_damage"		"200 400 600 800"
+				"explosion_damage"		"150 300 400 500"
 			}
 			"09"
 			{
@@ -46309,18 +46309,18 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"radius"		        "150"
+				"radius"		        "100"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"blink_distance"		"400 600 800 1100"
+				"blink_distance"		"400 600 800 1000"
 				"LinkedSpecialBonus"	"special_bonus_gojo_20"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_treshold"		"200 400 600 800"
+				"damage_treshold"		"200 400 500 600"
 			}
 		}
 	}
