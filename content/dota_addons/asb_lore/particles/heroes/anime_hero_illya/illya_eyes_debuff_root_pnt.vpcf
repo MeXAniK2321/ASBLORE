@@ -1,0 +1,28 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf31:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_Operators = [  ]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_illya/illya_eyes_debuff_root_ring.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_illya/illya_eyes_debuff_root_ring_rev.vpcf"
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetSingleControlPointPosition"
+			m_vecCP1Pos = [ 0.0, 0.0, 50.0 ]
+		},
+		{
+			_class = "C_OP_SetParentControlPointsToChildCP"
+			m_nNumControlPoints = 2
+		},
+	]
+	m_nBehaviorVersion = 10
+}

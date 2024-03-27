@@ -256,7 +256,7 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
             self.iBlueOrbTargets = 0
             
             -- Check for out of bounds
-            if GridNavPathIsTraversable(self, tMoveValues.vCurPos, 90) == false and not self:BlueIsExploding() then
+            if GridNavPathIsTraversable(self, tMoveValues.vCurPos, 100) == false and not self:BlueIsExploding() then
                 self:Destroy()
                 return
             end
@@ -999,8 +999,8 @@ end
 modifier_goju_infinite_void = modifier_goju_infinite_void or class ({})
 
 function modifier_goju_infinite_void:IsHidden() return false end
---function modifier_goju_infinite_void:IsPurgeable() return true end
---function modifier_goju_infinite_void:IsPurgeException() return true end
+function modifier_goju_infinite_void:IsPurgeable() return true end
+function modifier_goju_infinite_void:IsPurgeException() return true end
 function modifier_goju_infinite_void:RemoveOnDeath() return true end
 function modifier_goju_infinite_void:CheckState()
     local func = {
@@ -1197,7 +1197,7 @@ function goju_red_explosion:GetBehavior()
 end
 function goju_red_explosion:GetCastRange()
      return self.bUpgraded == true
-            and self.BaseClass.GetCastRange(self)
+            and 400 -- Hardcoded ranges for optimal behavior
             or 4000
 end
 function goju_red_explosion:OnSpellStart()
@@ -1433,7 +1433,7 @@ modifier_goju_domain_expansion = modifier_goju_domain_expansion or class({})
 
 function modifier_goju_domain_expansion:IsHidden() return false end
 function modifier_goju_domain_expansion:IsPurgeable() return false end
-function modifier_goju_domain_expansion:IsPurgeException() return false end
+function modifier_goju_domain_expansion:IsPurgeException() return true end
 function modifier_goju_domain_expansion:RemoveOnDeath() return true end
 function modifier_goju_domain_expansion:CheckState()
     local state =   { 
@@ -1725,7 +1725,7 @@ modifier_goju_hollow_purple_active = modifier_goju_hollow_purple_active or class
 
 function modifier_goju_hollow_purple_active:IsHidden() return false end
 function modifier_goju_hollow_purple_active:IsPurgeable() return false end
-function modifier_goju_hollow_purple_active:IsPurgeException() return false end
+function modifier_goju_hollow_purple_active:IsPurgeException() return true end
 function modifier_goju_hollow_purple_active:RemoveOnDeath() return true end
 function modifier_goju_hollow_purple_active:CheckState()
     local state =   { 
@@ -2166,7 +2166,8 @@ function GojoStartMotion(self)
                             hParent:PerformAttack(self.hTarget, true, true, true, true, false, false, true)
                         end
                         self.hModifierEnemy.fDistance = 100
-                        local iImpactEffect =  ParticleManager:CreateParticle("particles/gojo_shockwave.vpcf", PATTACH_ABSORIGIN_FOLLOW, hParent) 
+                        local iImpactEffect =  ParticleManager:CreateParticle("particles/gojo_shockwave.vpcf", PATTACH_WORLDORIGIN, nil)
+                                               ParticleManager:SetParticleControl(iImpactEffect, 0, self.parent:GetAbsOrigin()) 
                         EmitSoundOn("Gojo.hit2", hParent)                        
 
                     -- Apply final attack
@@ -2182,7 +2183,8 @@ function GojoStartMotion(self)
                                 hParent:PerformAttack(self.hTarget, true, true, true, true, false, false, true)
                             end
                             self.hModifierEnemy.fDistance = 1000
-                            local iImpactEffect =  ParticleManager:CreateParticle("particles/gojo_shockwave.vpcf", PATTACH_ABSORIGIN_FOLLOW, hParent)
+                            local iImpactEffect =  ParticleManager:CreateParticle("particles/gojo_shockwave2.vpcf", PATTACH_WORLDORIGIN, nil)
+                                                   ParticleManager:SetParticleControl(iImpactEffect, 0, self.parent:GetAbsOrigin())
                             self.hModifierEnemy.bAscendorDescend = false
                             self.bFinalAttack = true
                         end
@@ -2533,8 +2535,9 @@ function modifier_goju_domain_vertical:DealAOEDmg()
                                    false  -- bool, can grow cache
                                 )
                                 
-    self.StompEffect =  ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/kick/gojo_land_punch_stomp.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)            
-    self:AddParticle(self.StompEffect, false, false, -1, false, false)
+    self.iStompEffect =  ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/kick/gojo_land_punch_stomp.vpcf", PATTACH_WORLDORIGIN, nil)
+                        ParticleManager:SetParticleControl(self.iStompEffect, 0, self.parent:GetAbsOrigin())     
+    self:AddParticle(self.iStompEffect, false, false, -1, false, false)
                                 
     self.hKnockBackTable.center_x = self.bDealDmg.x
     self.hKnockBackTable.center_y = self.bDealDmg.y

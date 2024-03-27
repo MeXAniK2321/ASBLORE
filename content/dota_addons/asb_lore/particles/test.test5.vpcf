@@ -168,7 +168,7 @@
 				m_flInput0 = 0.0
 				m_flInput1 = 0.1
 				m_flOutput0 = 200.0
-				m_flOutput1 = 300.0
+				m_flOutput1 = 200.0
 				m_flNotchedRangeMin = 0.0
 				m_flNotchedRangeMax = 1.0
 				m_flNotchedOutputOutside = 0.0

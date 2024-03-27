@@ -712,5 +712,38 @@
 			}
 			m_bDisableZBuffering = true
 		},
+		{
+			_class = "C_OP_RenderSprites"
+			m_vecTexturesInput = 
+			[
+				{
+					m_hTexture = resource:"materials/particle/particle_ring_wave_2.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+		{
+			_class = "C_OP_RenderSprites"
+			m_vecTexturesInput = 
+			[
+				{
+					m_hTexture = resource:"materials/particle/particle_ring_wave_10.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+		},
+		{
+			_class = "C_OP_RenderScreenShake"
+			m_flRadiusScale = 1000.0
+			m_flFrequencyScale = 2.0
+			m_flAmplitudeScale = 2.0
+			m_nFilterCP = -1
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/kick/gojo_shockwave_distortion.vpcf"
+		},
 	]
 }

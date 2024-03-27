@@ -62,9 +62,9 @@
 		{
 			_class = "C_OP_SetControlPointPositions"
 			m_vecCP1Pos = [ -100.0, 0.0, 200.0 ]
-			m_vecCP2Pos = [ 0.0, -1104.5, 200.0 ]
-			m_vecCP3Pos = [ 164.748, 1300.55, 200.0 ]
-			m_vecCP4Pos = [ 1192.92, -1184.79, 200.0 ]
+			m_vecCP2Pos = [ 0.0, -904.5, 200.0 ]
+			m_vecCP3Pos = [ 164.748, 1100.55, 200.0 ]
+			m_vecCP4Pos = [ 1192.92, -984.79, 200.0 ]
 		},
 		{
 			_class = "C_OP_SetControlPointPositions"
@@ -72,7 +72,7 @@
 			m_nCP2 = 7
 			m_nCP3 = 99
 			m_nCP4 = 99
-			m_vecCP1Pos = [ 1598.49, 305.907, 200.0 ]
+			m_vecCP1Pos = [ 1398.49, 725.907, 200.0 ]
 			m_vecCP2Pos = [ -123.456, 100.125, 200.0 ]
 			m_bRunOnce = true
 		},
@@ -288,6 +288,10 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/dimension/dimension_dark_test2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/dimension/dimension_dark_test3.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/test.test2.vpcf"
