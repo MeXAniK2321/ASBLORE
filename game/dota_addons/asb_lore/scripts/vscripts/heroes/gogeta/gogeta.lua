@@ -342,6 +342,7 @@ function gogeta_kamehameha:OnSpellStart()
          endcapPos.z = endcapPos.z + 92
          ParticleManager:SetParticleControl( pfx, 1, endcapPos )
          ParticleManager:SetParticleControl( pfx_end, 3, endcapPos ) --IN ir EndCap your effect
+         ParticleManager:SetParticleShouldCheckFoW(pfx, false)
          
          -- Sound Effects
         EmitSoundOn("Gogeta.kamehameha", hCaster)
@@ -1084,12 +1085,12 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateVerticalMotion(me, dt)
     if IsServer() then
         -- Get ground position
         local vGroundPos = GetGroundPosition(me:GetOrigin(), me)
-        me:SetOrigin(Vector(me:GetOrigin().x, me:GetOrigin().y, vGroundPos.z + 750))
+        me:SetOrigin(Vector(me:GetOrigin().x, me:GetOrigin().y, vGroundPos.z + 590))
         if not self.stage3 then
             if not self.stage then
-                self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + 750))
+                self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + 590))
             else
-                self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + RandomInt(550, 750)))
+                self.hMainTarget:SetOrigin(Vector(self.hMainTarget:GetOrigin().x, self.hMainTarget:GetOrigin().y, vGroundPos.z + RandomInt(390, 590)))
             end
         end
     end
@@ -1164,6 +1165,11 @@ function modifier_gogeta_kick_combo_air_finisher:OnDestroy()
         self.parent:InterruptMotionControllers(true)
         self.parent:RemoveNoDraw()
         FindClearSpaceForUnit(self.hMainTarget, self.hMainTarget:GetAbsOrigin(), true)
+        
+        EmitSoundOn("Gogeta.d1", self.parent)
+        Teleport_Effect(self.parent)
+        FindClearSpaceForUnit(self.parent, self.parent:GetOrigin(), true)
+        Teleport_Effect(self.parent)
         
         StopSoundOn("Gogeta.e3", self.parent)
         StopSoundOn("Gogeta.e4", self.parent)
@@ -1600,14 +1606,14 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
             pos.z = pos.z - self.vertical_speed * dt * 2
         end
     else
-        pos.z = vGroundPos.z + 780
+        pos.z = vGroundPos.z + 580
     end
 
     -- Apply horizontal motion
     pos = pos + self.direction * self.horizontal_speed * dt
     
     -- Check if the target has reached the desired height
-    local maxHeight = vGroundPos.z + 790
+    local maxHeight = vGroundPos.z + 590
     if pos.z >= maxHeight then
         -- Stop updating the position
         pos.z = maxHeight
@@ -1650,6 +1656,13 @@ function modifier_gogeta_upper_kick_state:OnIntervalThink()
 end
 function modifier_gogeta_upper_kick_state:OnDestroy()
     if not IsServer() then return end
+    
+    if self.identifier > 0 then
+        EmitSoundOn("Gogeta.d1", self.parent)
+        Teleport_Effect(self.parent)
+        FindClearSpaceForUnit(self.parent, self.parent:GetOrigin() + RandomVector(200), true)
+        Teleport_Effect(self.parent)
+    end
     
     -- Not in the air
     Gogeta_Air_Time_Ready = 0

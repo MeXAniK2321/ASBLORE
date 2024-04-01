@@ -39,9 +39,11 @@ function modifier_get_down:OnCreated( kv )
 		self:OnIntervalThink()
 
 		-- start effects
-		local Play = not IsASBPatreon(self.parent)
-		             and self:PlayEffects( self.radius )
-					 or self:PlayEffects2( self.radius )
+        if IsASBPatreon(self.parent) then
+		    self:PlayEffects2( self.radius )
+		else
+            self:PlayEffects( self.radius )
+        end
 	end
 end
 
@@ -125,6 +127,7 @@ function modifier_get_down:PlayEffects( radius )
 	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
 	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
 	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+    self:AddParticle(self.effect_cast, false, false, -1, false, false)
 
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )
@@ -138,6 +141,7 @@ function modifier_get_down:PlayEffects2( radius )
 	self.effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, nil )
 	ParticleManager:SetParticleControl( self.effect_cast, 0, self:GetParent():GetOrigin() )
 	ParticleManager:SetParticleControl( self.effect_cast, 1, Vector( radius, radius, radius ) )
+    self:AddParticle(self.effect_cast, false, false, -1, false, false)
 
 	-- Create Sound
 	EmitSoundOn( sound_cast, self:GetParent() )

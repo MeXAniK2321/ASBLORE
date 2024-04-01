@@ -44937,7 +44937,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pandora_cast_range"	"2000"
+				"pandora_cast_range"	"2500"
 			}
 
 		}
@@ -45289,7 +45289,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"vertical_speed"		"800"
+				"vertical_speed"		"900"
 			}
 			"05"
 			{
@@ -46660,7 +46660,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"		        "250"
+				"radius"		        "325"
 			}
 			"02"
 			{

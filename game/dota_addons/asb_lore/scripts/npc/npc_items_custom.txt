@@ -8492,5 +8492,37 @@
 			}
         }
 	}
+    
+	//=================================================================================================================
+	// Ember
+	//=================================================================================================================
+	"item_ember"
+	{
+		"BaseClass"						        "item_lua"
+		"ScriptFile"					        "items/item_ember.lua"
+		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"Model"							        "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			        "ember"
+		"ItemStackable"							"1"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"1"
+		"ItemCost"								"4000"
+		"AbilityType"					        "DOTA_ABILITY_TYPE_BASIC"
+		"AbilitySharedCooldown"                 ""
+		"AbilityCooldown"						"80"
+		"AbilityCastPoint"						"0.5"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilitySpecial"
+		{
+		}
+	}
 
 }

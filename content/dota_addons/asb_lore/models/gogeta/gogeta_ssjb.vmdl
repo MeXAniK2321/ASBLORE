@@ -1,0 +1,947 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc33:version{bed0390a-a564-41a6-9dc3-c9a293c8eea3} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "imported material 01.vmat"
+								to = "models/gogeta/gogeta_ssjb.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/gogeta/gogetassjb.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "asset_sequences"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_attack"
+								activity_name = "ACT_DOTA_ATTACK"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 90
+								end_frame = 134
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_attack2"
+								activity_name = "ACT_DOTA_ATTACK2"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 379
+								end_frame = 412
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_run"
+								activity_name = "ACT_DOTA_RUN"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 747
+								end_frame = 771
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_die"
+								activity_name = "ACT_DOTA_DIE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 680
+								end_frame = 727
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_idle"
+								activity_name = "ACT_DOTA_IDLE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 10
+								end_frame = 70
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_1"
+								activity_name = "ACT_DOTA_CAST_ABILITY_1"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 137
+								end_frame = 220
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_2"
+								activity_name = "ACT_DOTA_CAST_ABILITY_2"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 220
+								end_frame = 380
+								framerate = 50.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_1_loop"
+								activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 196
+								end_frame = 200
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_3"
+								activity_name = "ACT_DOTA_CAST_ABILITY_3"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 630
+								end_frame = 663
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_4"
+								activity_name = "ACT_DOTA_CAST_ABILITY_4"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 1089
+								end_frame = 1143
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_5"
+								activity_name = "ACT_DOTA_CAST_ABILITY_5"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 905
+								end_frame = 960
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_6"
+								activity_name = "ACT_DOTA_CAST_ABILITY_6"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 425
+								end_frame = 469
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_7"
+								activity_name = "ACT_DOTA_CAST_ABILITY_7"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 469
+								end_frame = 503
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_8"
+								activity_name = "ACT_DOTA_CHILLING_TOUCH"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 504
+								end_frame = 534
+								framerate = 25.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_fly"
+								activity_name = "ACT_DOTA_COLD_FEET"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 565
+								end_frame = 612
+								framerate = 20.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_fly_loop"
+								activity_name = "ACT_DOTA_CUSTOM_TOWER_TAUNT"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 600
+								end_frame = 612
+								framerate = 20.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_upperkick"
+								activity_name = "ACT_DOTA_EARTHSHAKER_TOTEM_ATTACK"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 959
+								end_frame = 1020
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_finisher"
+								activity_name = "ACT_DOTA_ECHO_SLAM"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 1024
+								end_frame = 1084
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_double_punch"
+								activity_name = "ACT_DOTA_ENFEEBLE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 1143
+								end_frame = 1168
+								framerate = 90.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_powerup"
+								activity_name = "ACT_DOTA_ES_STONE_CALLER"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 788
+								end_frame = 797
+								framerate = 10.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_ki_blasts"
+								activity_name = "ACT_DOTA_FATAL_BONDS"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 788
+								end_frame = 875
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_rainbow_blast"
+								activity_name = "ACT_DOTA_CAST_GHOST_SHIP"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 469
+								end_frame = 504
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_cast_4_copy"
+								activity_name = "ACT_DOTA_MK_FUR_ARMY"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 1119
+								end_frame = 1119
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_rainbow_blast_copy"
+								activity_name = "ACT_DOTA_MK_SPRING_CAST"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 481
+								end_frame = 481
+								framerate = 40.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "GogetaSSJB_finisher_copy"
+								activity_name = "ACT_DOTA_KINETIC_FIELD"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/gogeta/gogetassjb.fbx"
+								import_bone_scales = false
+								start_frame = 1064
+								end_frame = 1073
+								framerate = 15.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "AnimBindPose"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+			{
+				_class = "LODGroupList"
+				children = 
+				[
+					{
+						_class = "LODGroupAll"
+						meshes = 
+						[
+							"unnamed_1",
+						]
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "Bip001_L_Finger1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Bip001_Pelvis"
+								parent_bone = "Bip001_Pelvis"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.223392, -13.595188, -16.754593 ]
+								hitbox_maxs = [ 15.237593, 13.300663, 12.367172 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Spine"
+								parent_bone = "Bip001_Spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.566389, -10.60559, -12.367767 ]
+								hitbox_maxs = [ 17.58058, 14.394258, 17.494423 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Spine1"
+								parent_bone = "Bip001_Spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.868153, -12.29167, -7.80294 ]
+								hitbox_maxs = [ 20.882359, 23.088953, 20.357986 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Neck"
+								parent_bone = "Bip001_Neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.780558, -9.140053, -2.998886 ]
+								hitbox_maxs = [ 7.794886, 5.573765, 7.12207 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Clavicle"
+								parent_bone = "Bip001_L_Clavicle"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.074196, -10.88262, -10.087891 ]
+								hitbox_maxs = [ 16.678173, 16.164764, 15.587997 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_UpperArm"
+								parent_bone = "Bip001_L_UpperArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -7.538548, -9.24987 ]
+								hitbox_maxs = [ 25.469456, 9.102667, 7.51799 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Forearm"
+								parent_bone = "Bip001_L_Forearm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.929272, -6.37764, -6.999847 ]
+								hitbox_maxs = [ 21.455467, 6.487087, 5.682968 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Hand"
+								parent_bone = "Bip001_L_Hand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.885231, -5.399658, -4.386841 ]
+								hitbox_maxs = [ 11.597023, 5.815033, 5.421906 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger0"
+								parent_bone = "Bip001_L_Finger0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.350731, -2.464989, -2.323929 ]
+								hitbox_maxs = [ 4.005661, 1.787454, 1.872849 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger1"
+								parent_bone = "Bip001_L_Finger1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -1.106914, -2.23761 ]
+								hitbox_maxs = [ 5.000229, 1.324726, 1.468201 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger2"
+								parent_bone = "Bip001_L_Finger2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -1.319131, -2.497635 ]
+								hitbox_maxs = [ 5.094742, 1.424306, 1.640152 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger3"
+								parent_bone = "Bip001_L_Finger3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -1.021902, -1.94664 ]
+								hitbox_maxs = [ 4.730927, 1.633578, 1.486176 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger4"
+								parent_bone = "Bip001_L_Finger4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -1.228185, -2.809601 ]
+								hitbox_maxs = [ 4.522011, 1.12926, 1.096176 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Clavicle"
+								parent_bone = "Bip001_R_Clavicle"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -16.663876, -10.882469, -10.087891 ]
+								hitbox_maxs = [ 4.040463, 13.795855, 15.587997 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_UpperArm"
+								parent_bone = "Bip001_R_UpperArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -25.469349, -7.538446, -9.24987 ]
+								hitbox_maxs = [ 0.5, 9.102829, 7.561981 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Forearm"
+								parent_bone = "Bip001_R_Forearm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -21.455475, -6.377549, -6.99984 ]
+								hitbox_maxs = [ 4.689556, 6.487269, 5.682968 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Hand"
+								parent_bone = "Bip001_R_Hand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.601326, -5.399397, -4.386841 ]
+								hitbox_maxs = [ 0.880936, 5.81506, 5.421906 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger0"
+								parent_bone = "Bip001_R_Finger0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.009865, -2.464767, -2.323929 ]
+								hitbox_maxs = [ 2.346428, 1.787776, 1.872849 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger1"
+								parent_bone = "Bip001_R_Finger1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.004524, -1.106627, -2.23761 ]
+								hitbox_maxs = [ 0.5, 1.324824, 1.469208 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger2"
+								parent_bone = "Bip001_R_Finger2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.098824, -1.318983, -2.497635 ]
+								hitbox_maxs = [ 0.5, 1.424463, 1.640152 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger3"
+								parent_bone = "Bip001_R_Finger3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.735313, -1.021756, -1.94664 ]
+								hitbox_maxs = [ 0.5, 1.633804, 1.486176 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger4"
+								parent_bone = "Bip001_R_Finger4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.526215, -1.228115, -2.810608 ]
+								hitbox_maxs = [ 0.5, 1.129421, 1.096176 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Thigh"
+								parent_bone = "Bip001_L_Thigh"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.120441, -13.594265, -44.259319 ]
+								hitbox_maxs = [ 19.164476, 17.715292, 8.601364 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Calf"
+								parent_bone = "Bip001_L_Calf"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.626627, -11.10844, -46.641666 ]
+								hitbox_maxs = [ 19.872461, 20.249977, 4.075413 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Thigh"
+								parent_bone = "Bip001_R_Thigh"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.847082, -13.595161, -44.006924 ]
+								hitbox_maxs = [ 11.698782, 17.701273, 8.602371 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Calf"
+								parent_bone = "Bip001_R_Calf"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.671774, -11.453735, -47.165161 ]
+								hitbox_maxs = [ 15.999731, 20.285896, 3.709217 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bone004"
+								parent_bone = "Bone004"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.934397, -0.5, -15.645454 ]
+								hitbox_maxs = [ 0.5, 15.512354, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bone001"
+								parent_bone = "Bone001"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.524597, -5.704679, -19.902946 ]
+								hitbox_maxs = [ 0.5, 5.371298, 0.5 ]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

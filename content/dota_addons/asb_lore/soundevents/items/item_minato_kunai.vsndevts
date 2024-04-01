@@ -1437,4 +1437,18 @@
 			"sounds/nanaya/nanaya_heykids.vsnd",
 		]
 	}
+	ember.activate = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ember/ember_restored.vsnd",
+		]
+		volume = "8.000000"
+		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
 }
