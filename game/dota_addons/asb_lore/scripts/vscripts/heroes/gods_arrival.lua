@@ -123,9 +123,11 @@ function modifier_gods_arrival_invul:DeclareFunctions()
                      }
     return func
 end
-
 function modifier_gods_arrival_invul:GetOverrideAnimation()
 	return ACT_DOTA_CAST_ABILITY_5
+end
+function modifier_gods_arrival_invul:OnDestroy()
+	self:GetParent():RemoveGesture(ACT_DOTA_CAST_ABILITY_5)
 end
 
 

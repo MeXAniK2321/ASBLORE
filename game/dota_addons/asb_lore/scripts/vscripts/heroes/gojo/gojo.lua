@@ -394,12 +394,13 @@ function modifier_gojo_projectile_thinker:OnBlueOrbLogic(vCurPos, vNextPos)
         if self.iBlueCurrentState == STATE_IS_ROTATING then
             -- Handle Circular Motion
             local vCenter = self.parent:GetOrigin()  -- Center of rotation
-            local iRadius = 300  -- Radius of rotation
-            local iSpeed = 45  -- Speed of angular incrementation
+            local iRadius = 400 -- Radius of rotation
+            local fCircum = (2 * math.pi * iRadius) -- Circumference of the Circle
+            local fSpeed = 360 * self.iMoveSpeed / fCircum --45  -- Speed of angular incrementation
             local iDeltaAngle = 1  -- Delta Angle for smoother rotation
          
             -- Calculate new position in polar coordinates
-            self.angle = self.angle + iDeltaAngle * iSpeed * FrameTime()
+            self.angle = self.angle + iDeltaAngle * fSpeed * 0.01
                     
             -- Check if a full revolution has occurred
             if self.angle >= 360 then
@@ -514,8 +515,9 @@ function modifier_gojo_projectile_thinker:ExplosionEffects(iNum)
             EmitSoundOn("Gojo.purple_full", self.parent) 
         end
     else
-        local iExplosion = ParticleManager:CreateParticle("particles/darkness_parade_explosion.vpcf", PATTACH_WORLDORIGIN, self.caster)
-        ParticleManager:SetParticleControl(iExplosion, 0, self.parent:GetOrigin()) 
+        local iExplosion = ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/blue/blue_purple_combined_exp.vpcf", PATTACH_WORLDORIGIN, self.caster)
+        ParticleManager:SetParticleControl(iExplosion, 0, self.parent:GetOrigin())
+        ParticleManager:SetParticleControl(iExplosion, 3, self.parent:GetOrigin())        
         self:AddParticle(iExplosion, false, false, -1, false, false)
                 
         if self.fExplosionTimer < 1.5 then
@@ -998,7 +1000,8 @@ function goju_infinite_void:HitEffect(hCaster, hTarget)
     local sParticle = "particles/units/heroes/hero_marci/marci_unleash_attack.vpcf"
 
     local iParticle = ParticleManager:CreateParticle( sParticle, PATTACH_ABSORIGIN_FOLLOW, hCaster )
-                      ParticleManager:SetParticleControlEnt(iParticle, 1, hTarget, PATTACH_POINT_FOLLOW, "attach_hitloc", Vector(0,0,0), true)
+                      ParticleManager:SetParticleControlEnt(iParticle, 0, hCaster, PATTACH_POINT_FOLLOW, "attach_hitloc", hCaster:GetOrigin(), true)
+                      ParticleManager:SetParticleControlEnt(iParticle, 1, hTarget, PATTACH_POINT_FOLLOW, "attach_hitloc", hTarget:GetOrigin(), true)
                       ParticleManager:ReleaseParticleIndex(iParticle)
     
     hCaster:EmitSound("nanaya.slash")
@@ -1932,6 +1935,7 @@ function GojoStartMotion(self)
         if hParent ~= hCaster then
             self.iAttackCount      = 1
             self.fAttackDelay      = 0
+            self.fSpeed            = 900
             self.fHitBoxDur        = 99.999
             self.iAutoAttacksDone  = 1
             self.bDelayFirstAtt    = false
@@ -1956,8 +1960,8 @@ function GojoStartMotion(self)
             if self.fDistance >= 0 then
                 -- Get all necessary values for Linear Motion
                 local vOrigin = hParent:GetAbsOrigin()
-                local fExtra  = self.bAscendorDescend == false and 1.5 or 0
-                local fSpeed  = (self.fSpeed + self.fSpeed * fExtra) * dt
+                local fExtra  = self.bAscendorDescend == false and 2.5 or 1
+                local fSpeed  = (self.fSpeed * fExtra) * dt
                 local vPos    = vOrigin + vDirection * fSpeed
                 
                 -- Check distance and move the player
@@ -2010,7 +2014,7 @@ function GojoStartMotion(self)
                         local ParticleExp = "particles/heroes/anime_hero_gojo/kick/kick1_arc.vpcf"
                         local GinFx = ParticleManager:CreateParticle(ParticleExp, PATTACH_ABSORIGIN_FOLLOW, hParent)
                         ParticleManager:ReleaseParticleIndex(GinFx)
-                    end                   
+                    end                
                 
                     -- For each enemy found do somethhing
                     for _, hEnemy in pairs(hEnemies) do
@@ -2191,11 +2195,23 @@ function GojoStartMotion(self)
                             for i = 1, self.iAutoAttacksDone + 2 do
                                 hParent:PerformAttack(self.hTarget, true, true, true, true, false, false, true)
                             end
-                            self.hModifierEnemy.fDistance = 1000
+
                             local iImpactEffect =  ParticleManager:CreateParticle("particles/gojo_shockwave2.vpcf", PATTACH_WORLDORIGIN, nil)
                                                    ParticleManager:SetParticleControl(iImpactEffect, 0, self.parent:GetAbsOrigin())
+                            local vEnemyPos  = self.hModifierEnemy.parent:GetOrigin()
+                            local fEnemyH    = vEnemyPos.z
+                            local vFinalLoc  = vEnemyPos - self.hModifierEnemy.vDirection2 * 1000
+                            local fFinalG    = GetGroundHeight(vFinalLoc, self.hModifierEnemy.parent)
+                            local fHeightDif = fEnemyH - fFinalG -- Get the Height Difference
+                             -- Divide the Distance by the Speed to get the Horizontal Time (fDistance = 1000 / fSpeed = 2250 ~ 0.44)
+                             -- Then Divide the (Height Difference by the Horizontal Time) and by our Initial Vertical Speed = 400
+                             -- This gives us a multipler for Vertical Speed proportional to our Horizontal Speed
+                             -- TODO: Adjust if you want for dynamic values, but i think current are perfect so hard coding
+                            self.hModifierEnemy.fVerticalTime = math.max( (fHeightDif / 0.44) / 400, 1.5 )
+                            self.hModifierEnemy.fDistance = 1000
                             self.hModifierEnemy.bAscendorDescend = false
                             self.bFinalAttack = true
+                            print(fHeightDif)
                         end
                        
                         --print(self.fLastAttDelay)
@@ -2262,13 +2278,18 @@ function GojoStartMotion(self)
                 
                 local vCurPos    = hParent:GetOrigin()
                 local vGroundPos = GetGroundPosition(vCurPos, hParent)
-                local fExtra     = 1.5
+                local fExtra     = self.fVerticalTime 
                 local vCurHeight = bAscend
                                    and vCurPos.z + self.fHeightOffset
                                    or vCurPos.z - self.fHeightOffset * fExtra
                 
                 if vCurPos.z <= vGroundPos.z and not bAscend then
                     vCurHeight = vGroundPos.z
+                    if not self.iStompEffect then
+                        self.iStompEffect =  ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/kick/gojo_land_punch_stomp2.vpcf", PATTACH_WORLDORIGIN, nil)
+                                             ParticleManager:SetParticleControl(self.iStompEffect, 0, self.parent:GetAbsOrigin())     
+                        self:AddParticle(self.iStompEffect, false, false, -1, false, false)
+                    end
                 end
                 
                 if bAscend then
@@ -2359,6 +2380,7 @@ function modifier_goju_domain_motion:OnCreated(hTable)
         self.SecondStage    = self.SecondStage or false
         self.hModifierEnemy = self.hModifierEnemy or nil
         self.fHeightOffset  = 400 * 0.03
+        self.fVerticalTime  = 2.27
         self.bFinalAttack   = self.bFinalAttack or nil
         
         self.hKnockBackTable = {
@@ -2477,7 +2499,7 @@ function modifier_goju_domain_vertical:OnCreated(hTable)
         self.vPosition.z = 2000
         
         self.parent:SetOrigin(self.vPosition)
-        self.vPosCheck   = self.parent:GetOrigin()
+        self.vPosCheck   = self.parent:GetOrigin().z - GetGroundHeight(self.parent:GetOrigin(), self.parent)
         
         self.hDamageTable =  {  
                                  victim       = nil,
@@ -2508,7 +2530,7 @@ function modifier_goju_domain_vertical:OnCreated(hTable)
 end
 function modifier_goju_domain_vertical:UpdateVerticalMotion(me, dt)
     if IsServer() then
-        if IsNotNull(self.parent) and self.vPosCheck.z > 0 then
+        if IsNotNull(self.parent) and self.vPosCheck > 0 then
             self:Descend(me, dt)
         else
             self:Destroy()

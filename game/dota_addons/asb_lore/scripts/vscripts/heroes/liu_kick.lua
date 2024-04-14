@@ -210,5 +210,6 @@ end
 function modifier_liu_kick:OnHorizontalMotionInterrupted()
     if IsServer() then
         self:Destroy()
+        self.parent:RemoveGesture(ACT_DOTA_OVERRIDE_ABILITY_1)
     end
 end

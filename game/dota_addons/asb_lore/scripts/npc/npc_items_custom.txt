@@ -689,12 +689,12 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage"					"60"
+				"damage"					"250"
 			}
 			"06"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"					"0.1"
+				"duration"					"0.8"
 			}
 		
 		}
@@ -2113,7 +2113,7 @@
 			"05"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"bonus_armor"					"2"
+				"bonus_armor"					"7"
 			}
 			"06"
 			{	
@@ -2123,7 +2123,7 @@
 			"07"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"buff_as"				        "30"
+				"buff_as"				        "40"
 			}
 			
 			"08"
@@ -2149,12 +2149,12 @@
 			"15"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"lifesteal"					    "50"
+				"lifesteal"					    "125"
 			}
 			"15"
 			{	
 				"var_type"						"FIELD_FLOAT"
-				"str_mult"					    "0.8"
+				"str_mult"					    "1.0"
 			}
 		}
 	}
@@ -8501,6 +8501,10 @@
 		"BaseClass"						        "item_lua"
 		"ScriptFile"					        "items/item_ember.lua"
 		"AbilityBehavior"				        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityUnitTargetTeam"			        "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			        "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		//"AbilityUnitDamageType"			        "DAMAGE_TYPE_MAGICAL"	
 		"Model"							        "models/props_gameplay/red_box.vmdl"
 		"AbilityTextureName"			        "ember"
 		"ItemStackable"							"1"
@@ -8511,10 +8515,10 @@
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"1"
-		"ItemCost"								"4000"
+		"ItemCost"								"5000"
 		"AbilityType"					        "DOTA_ABILITY_TYPE_BASIC"
 		"AbilitySharedCooldown"                 ""
-		"AbilityCooldown"						"80"
+		"AbilityCooldown"						"60"
 		"AbilityCastPoint"						"0.5"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
@@ -8522,7 +8526,32 @@
 
 		"AbilitySpecial"
 		{
-		}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_percent"	    "10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_ms_constant"	    "25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"circle_damage"	        "300"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"circle_chance"	        "51.4"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_damage_interval"	"0.44"
+			}
+        }
 	}
 
 }

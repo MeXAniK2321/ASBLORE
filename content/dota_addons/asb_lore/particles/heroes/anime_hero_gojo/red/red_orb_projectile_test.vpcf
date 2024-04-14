@@ -2,11 +2,8 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 16
-	m_flConstantRadius = 200.0
-	m_bShouldSort = false
-	m_nBehaviorVersion = 4
-	m_nFirstMultipleOverride_BackwardCompat = 3
+	m_nMaxParticles = 4
+	m_nBehaviorVersion = 12
 	m_controlPointConfigurations = 
 	[
 		{
@@ -14,11 +11,6 @@
 			m_drivers = 
 			[
 				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
-					m_iControlPoint = 3
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -277,146 +269,34 @@
 			}
 		},
 	]
-	m_Emitters = 
-	[
-		{
-			_class = "C_OP_InstantaneousEmitter"
-			m_nParticlesToEmit = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 1.0
-			}
-		},
-	]
-	m_Initializers = 
-	[
-		{
-			_class = "C_INIT_CreateWithinSphereTransform"
-		},
-		{
-			_class = "C_INIT_InitFloat"
-			m_InputValue = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 0.2
-			}
-			m_nOutputField = 1
-		},
-		{
-			_class = "C_INIT_NormalAlignToCP"
-			m_bDisableOperator = true
-		},
-		{
-			_class = "C_INIT_VelocityFromCP"
-			m_velocityInput = 
-			{
-				m_nType = "PVEC_TYPE_CP_VALUE"
-				m_nControlPoint = 1
-			}
-			m_transformInput = 
-			{
-				m_nType = "PT_TYPE_INVALID"
-			}
-			m_bDisableOperator = true
-		},
-	]
-	m_Operators = 
-	[
-		{
-			_class = "C_OP_BasicMovement"
-		},
-		{
-			_class = "C_OP_Decay"
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
-		},
-		{
-			_class = "C_OP_SetControlPointsToParticle"
-			m_bSetOrientation = true
-			m_nFirstControlPoint = 3
-			m_bDisableOperator = true
-		},
-		{
-			_class = "C_OP_MovementPlaceOnGround"
-			m_nRefCP1 = 3
-			m_CollisionGroupName = "DEBRIS"
-			m_flTraceOffset = 256.0
-			m_flMaxTraceLength = 1024.0
-			m_bIncludeWater = true
-			m_flOffset = 120.0
-			m_flTolerance = 96.0
-			m_nLerpCP = 3
-			m_bDisableOperator = true
-		},
-		{
-			_class = "C_OP_LagCompensation"
-			m_nDesiredVelocityCP = 1
-			m_nLatencyCP = 10
-			m_bDisableOperator = true
-		},
-		{
-			_class = "C_OP_PositionLock"
-		},
-	]
-	m_Renderers = 
-	[
-		{
-			_class = "C_OP_RenderDeferredLight"
-			m_flStartFalloff = 0.65
-			m_flAlphaScale = 3.0
-			m_flRadiusScale = 2.25
-			m_hTexture = resource:"materials/models/heroes/mirana/javelin_color.vtex"
-			m_vecColorScale = 
-			{
-				m_nType = "PVEC_TYPE_LITERAL_COLOR"
-				m_LiteralColor = [ 219, 17, 10 ]
-			}
-		},
-	]
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/units/heroes/reimu/red_illusory_orb_main.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/hero_shadow_demon/shadow_demon_disruption_refract.vpcf"
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_projectile_glow_test.vpcf"
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_orb_projectile_ring.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_sphere_sparks.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/hero_shadow_demon/shadow_demon_disruption_flash.vpcf"
+			m_bDisableChild = true
 		},
 		{
-			m_bEndCap = true
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_orb_projectile_glow.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_orb_projectile_core.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_projectile_trail_test.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_orb_projectile_trail_smoke.vpcf"
+		},
+		{
 			m_ChildRef = resource:"particles/red_illusory_orb_explode.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_launch.vpcf"
-			m_bDisableChild = true
-		},
-		{
-			m_ChildRef = resource:"particles/items_fx/desolator_projectile_trail.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_mist.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_swirl.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_magic.vpcf"
-			m_bDisableChild = true
-		},
-		{
-			m_flDelay = 2.35
-			m_ChildRef = resource:"particles/units/heroes/hero_puck/puck_illusory_orb_expire.vpcf"
-			m_bDisableChild = true
-		},
-		{
-			m_ChildRef = resource:"particles/muramasa/muramasa_throw_projectile_sparks.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/red/red_orb_projectile_launch_flek.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/econ/items/dazzle/dazzle_darkclaw/dazzle_darkclaw_poison_touch_launch_flash_streak.vpcf"
+			m_bEndCap = true
 		},
 	]
 }

@@ -1038,10 +1038,7 @@ function modifier_royal_guard:GetModifierIncomingDamage_Percentage( params )
 		return -100
 	end
 function modifier_royal_guard:GetModifierModelChange()
- if self:GetParent():HasModifier("modifier_dante_range") then
- return end
 	return "models/dante/donte_no_sword.vmdl"
-	
 	end
 function modifier_royal_guard:GetModifierModelScale()
 	return 1

@@ -1989,6 +1989,7 @@ function modifier_gogeta_meteor_explosion:CheckState()
                         --[MODIFIER_STATE_MAGIC_IMMUNE] = true,
                         [MODIFIER_STATE_DISARMED]      = true,
                         [MODIFIER_STATE_COMMAND_RESTRICTED] = true,
+                        [MODIFIER_STATE_PROVIDES_VISION] = true,
                     }
     return state
 end
@@ -2205,6 +2206,7 @@ function modifier_gogeta_meteor_explosion_target:CheckState()
                       [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
                       [MODIFIER_STATE_STUNNED] = true,
                       [MODIFIER_STATE_INVULNERABLE] = true,
+                      [MODIFIER_STATE_PROVIDES_VISION] = true,
                   }
 
     return state

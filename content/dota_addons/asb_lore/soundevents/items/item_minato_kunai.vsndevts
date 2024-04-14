@@ -692,6 +692,13 @@
 			"sounds/BoomBox/neco_stuff.vsnd",
 			"sounds/BoomBox/berserk_sign.vsnd",
 			"sounds/BoomBox/zenitsu_vs_spider.vsnd",
+			"sounds/BoomBox/da_capo_honkai3.vsnd",
+			"sounds/BoomBox/dio_theme.vsnd",
+			"sounds/BoomBox/goofy_sounds.vsnd",
+			"sounds/BoomBox/moon_halo_honkai3.vsnd",
+			"sounds/BoomBox/omaewamu.vsnd",
+			"sounds/BoomBox/ultra_instinct_battle.vsnd",
+			"sounds/BoomBox/joseph_theme.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -1446,6 +1453,20 @@
 		]
 		volume = "8.000000"
 		pitch_min = "1.000000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	ember.circle = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ember/ember_circle.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
 		pitch_max = "1.000000"
 		chan_type = "0"
 		memory_type = "0"
