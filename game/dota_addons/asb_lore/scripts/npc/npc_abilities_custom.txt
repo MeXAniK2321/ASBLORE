@@ -43634,7 +43634,7 @@
             "01"
             {
                 "var_type"                      "FIELD_FLOAT"
-                "distance"                    "700"
+                "distance"                    "900"
             }
             "02"
             {
@@ -43691,7 +43691,7 @@
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "bonus_ms"            "33 75"
+        "bonus_ms"            "33 90"
         "LinkedSpecialBonus"      "special_bonus_anime_ae86_25R"
         "LinkedSpecialBonusOperation" "SPECIAL_BONUS_MULTIPLY"
       }
@@ -43785,7 +43785,7 @@
       "09"
       {
         "var_type"            "FIELD_FLOAT"
-        "damage_increase"       "0.06"
+        "damage_increase"       "0.7"
       }
     }
   }
@@ -43866,13 +43866,13 @@
     "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
 
     "AbilityCastPoint"            "0.1" 
-    "AbilityChannelTime"          "3"
+    "AbilityChannelTime"          "2"
     "AbilityCooldown"           "90"
     "AbilityManaCost"           "0"
     "AbilityCastRange"              "2500"
 
    "HasScepterUpgrade"           "1"
-	"AOERadius"						"500"
+	"AOERadius"						"800"
     "MaxLevel"                "1"
     "RequiredLevel"             "30"
     //"LevelsBetweenUpgrades"         "1"
@@ -43887,7 +43887,7 @@
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "base_damage"            "1000"
+        "base_damage"            "3000"
       }
       "01"
       {
@@ -43907,12 +43907,12 @@
       "05"
       {
         "var_type"            "FIELD_FLOAT"
-        "explosion_radius"            "500"
+        "explosion_radius"            "800"
       }
       "06"
       {
         "var_type"            "FIELD_FLOAT"
-        "not_casted_cd"            "30"
+        "not_casted_cd"            "22"
       }
     }
   }
