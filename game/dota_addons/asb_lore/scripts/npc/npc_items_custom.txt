@@ -7989,7 +7989,7 @@
 		 "03"
 		    {
 		    	"var_type"			"FIELD_FLOAT"
-		    	"stando_powa_stun_duration"		"0.32"
+		    	"stando_powa_stun_duration"		"0.22"
 		    }
 		 "04"
 		    {
