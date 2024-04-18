@@ -216,8 +216,8 @@ function modifier_makima_contract_self:OnCreated( kv )
 
 	if IsServer() then
 		self:SetStackCount(1)
+	    self:StartIntervalThink(FrameTime())
 	end
-	self:StartIntervalThink(FrameTime())
 end
 
 function modifier_makima_contract_self:OnRefresh( kv )
@@ -229,7 +229,7 @@ local caster = self:GetCaster()
 self.base = 0
 	local enemies = FindUnitsInRadius(
 		caster:GetTeamNumber(),	-- int, your team number
-		caster:GetOrigin(),	-- point, center point
+		caster:GetAbsOrigin(),	-- point, center point
 		nil,	-- handle, cacheUnit. (not known)
 		FIND_UNITS_EVERYWHERE,	-- float, radius. or use FIND_UNITS_EVERYWHERE
 		DOTA_UNIT_TARGET_TEAM_BOTH,	-- int, team filter
@@ -2065,10 +2065,12 @@ function modifier_temple_sacrifice_begin:OnCreated(table)
             end
         end
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
-        if IsServer() then
     
-
-        
+        self.parent:Purge(false, true, false, true, true)
+        self:StartIntervalThink(0.1)
+    end
+end
+function modifier_temple_sacrifice_begin:OnIntervalThink()
 	  local enemies = FindUnitsInRadius(
 		self:GetParent():GetTeamNumber(),	-- int, your team number
 		self:GetParent():GetOrigin(),	-- point, center point
@@ -2082,12 +2084,9 @@ function modifier_temple_sacrifice_begin:OnCreated(table)
 	)
 
 	for _,enemy in pairs(enemies) do
-       if not enemy:HasModifier("modifier_makima_disabled_vision") then
+       if not enemy:HasModifier("modifier_makima_temple_vision") then
 		  enemy:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_makima_temple_vision", {duration = 6})
-        end
-		end
-        self.parent:Purge(false, true, false, true, true)
-    end
+       end
 	end
 end
 
@@ -2138,8 +2137,10 @@ function modifier_makima_temple_vision:OnCreated( kv )
 
 
 	-- start interval
-	self:StartIntervalThink( 0.1 )
-	self:OnIntervalThink()
+    if IsServer() then
+	    self:StartIntervalThink( 0.1 )
+	    self:OnIntervalThink()
+    end
 
 	-- play effects
 	
@@ -2166,7 +2167,16 @@ end
 -- Interval Effects
 function modifier_makima_temple_vision:OnIntervalThink()
 	-- Using aura's sticky duration doesn't allow it to be purged, so here we are
-   AddFOWViewer(self:GetCaster():GetTeamNumber(), self:GetParent():GetAbsOrigin(), 300, 0.2, false)
+   if IsNotNull(self:GetCaster()) then
+       if not self:GetCaster():HasModifier("modifier_temple_sacrifice_begin") then
+           self:Destroy()
+           return
+       end
+       AddFOWViewer(self:GetCaster():GetTeamNumber(), self:GetParent():GetAbsOrigin(), 300, 0.2, false)
+    else
+       self:Destroy()
+       return
+   end
 	-- find enemies
 	
 	end
@@ -2295,7 +2305,7 @@ function temple_sacrifice_execute:OnSpellStart()
 		self.hVictim = nil
 		self:GetCaster():Interrupt()
 	else
-	self.hVictim:AddNewModifier( self:GetCaster(), self, "modifier_makima_disabled_vision", { duration = 400} )
+	--self.hVictim:AddNewModifier( self:GetCaster(), self, "modifier_makima_disabled_vision", { duration = 400} ) -- What is the point of this ??? WTF ???
 		self.hVictim:AddNewModifier( self:GetCaster(), self, "modifier_temple_sacrifice_execute", { duration = self:GetChannelTime() } )
 		self.hVictim:Interrupt()
 	end
@@ -2324,6 +2334,7 @@ function temple_sacrifice_execute:OnChannelFinish( bInterrupted )
 	enemy:Kill(self,self:GetCaster())
 	end
 	end
+    self:GetCaster():RemoveModifierByName("modifier_temple_sacrifice_begin")  
 end
 modifier_temple_sacrifice_execute = class({})
 
@@ -2462,6 +2473,7 @@ function makima_big_bang:OnSpellStart()
 	local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
 	local point = target:GetOrigin()
+    point.z     = point.z + 50.0
 	local duration  = 2.0
 
 	-- load data

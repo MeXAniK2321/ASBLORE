@@ -43578,7 +43578,7 @@
       "03"
       {
         "var_type"            "FIELD_FLOAT"
-        "heal_hp_pct"         "5 10 20"
+        "heal_hp_pct"         "5 10 15"
       }
       "04"
       {
@@ -43614,7 +43614,7 @@
 
     //"AbilityCastPoint"            "0.45"
     //"AbilityChannelTime"            "0.0"
-    "AbilityCooldown"           "10 9 8 5"
+    "AbilityCooldown"           "10 9 8 7"
     "AbilityManaCost"           "0"
     //"AbilityCastRange"              "650"
 
@@ -43634,7 +43634,7 @@
             "01"
             {
                 "var_type"                      "FIELD_FLOAT"
-                "distance"                    "900"
+                "distance"                    "700"
             }
             "02"
             {
@@ -43691,7 +43691,7 @@
       "01"
       {
         "var_type"            "FIELD_FLOAT"
-        "bonus_ms"            "33 90"
+        "bonus_ms"            "33 75"
         "LinkedSpecialBonus"      "special_bonus_anime_ae86_25R"
         "LinkedSpecialBonusOperation" "SPECIAL_BONUS_MULTIPLY"
       }
@@ -43775,17 +43775,17 @@
       "08"
       {
         "var_type"            "FIELD_FLOAT"
-        "limit_ms"            "2550"
+        "limit_ms"            "2250"
       }
       "08"
       {
         "var_type"            "FIELD_FLOAT"
-        "turn_drift"          "190"
+        "turn_drift"          "175"
       }
       "09"
       {
         "var_type"            "FIELD_FLOAT"
-        "damage_increase"       "0.1"
+        "damage_increase"       "0.06"
       }
     }
   }
@@ -43958,7 +43958,7 @@
       "01"
       {
         "var_type"            "FIELD_INTEGER"
-        "gold"                "200"
+        "gold"                "100"
       }
       "02"
       {
@@ -44430,7 +44430,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"			"150 300 450 600"
+				"damage"			"120 240 360 480"
 			}
 			"06"
 			{
@@ -44901,7 +44901,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"		        "300 400 500 600"
+				"damage"		        "300 400 550 700"
 			}
 			"02"
 			{
@@ -44911,7 +44911,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"		        "1.7"
+				"duration"		        "1.8"
 			}
 			"04"
 			{
@@ -45351,7 +45351,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_ground"		    "400"
+				"damage_ground"		    "600"
 			}
 			"03"
 			{
@@ -45873,7 +45873,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"30 27 24 20"
-		"AbilityManaCost"				"50 100 150 200"
+		"AbilityManaCost"				"75 125 175 225"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -45946,12 +45946,13 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_6"
+	    "AnimationPlaybackRate"			"1.5"
 		"AbilityCastRange"				"0"
 		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"22"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -45986,7 +45987,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"motion_params"		    "850 900 2 0.3 0.09 2" // fLinearDist, fLinearSpeed, iAttackCount, fAttackDelay, fHitBoxDur, iAutoAttacksDone
+				"motion_params"		    "850 1350 2 0.20 0.09 2" // fLinearDist, fLinearSpeed, iAttackCount, fAttackDelay, fHitBoxDur, iAutoAttacksDone
 			}
             
 			"06"
@@ -46045,7 +46046,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"40 38 36 32"
-		"AbilityManaCost"				"75 125 175 225"
+		"AbilityManaCost"				"105 155 205 255"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -46082,7 +46083,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_per_second"		"20 30 40 40"
+				"damage_per_second"		"20 30 40 50"
 			}
 			"07"
 			{
@@ -46092,7 +46093,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"explosion_damage"		"200 300 400 450"
+				"explosion_damage"		"200 300 400 500"
 			}
 			"09"
 			{
@@ -46193,12 +46194,12 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_TORRENT"
-		"AbilityCastRange"				"1500"
+		"AbilityCastRange"				"2000"
 		"AbilityCastPoint"				"0.3"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"22"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46291,7 +46292,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30 25 20 20"
+		"AbilityCooldown"				"30 27 24 21"
 		"AbilityManaCost"				"25 50 75 100"
 
 		// Damage
@@ -46314,13 +46315,13 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"blink_distance"		"400 600 800 900"
+				"blink_distance"		"400 600 800 1000"
 				"LinkedSpecialBonus"	"special_bonus_gojo_20"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_treshold"		"200 300 350 400"
+				"damage_treshold"		"200 300 400 500"
 			}
 		}
 	}
@@ -46367,7 +46368,7 @@
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"50"
-		"AbilityManaCost"				"321"
+		"AbilityManaCost"				"541"
 
 		// Damage
 		//-------------------------------------------------------------------------------------------------------------
@@ -46452,12 +46453,12 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_ROT"
-		"AbilityCastRange"				"1500"
+		"AbilityCastRange"				"2000"
 		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"22"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage
@@ -46571,7 +46572,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration_buff"		    "40.0"
+				"duration_buff"		    "50.0"
 			}
 			"03"
 			{
@@ -46581,12 +46582,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage"		        "500"
+				"damage"		        "1000"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"movespeed_limit"		"550"
+				"movespeed_limit"		"800"
 			}
 			"06"
 			{
@@ -46596,12 +46597,12 @@
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"base_damage_bonus"	    "40"
+				"base_damage_bonus"	    "80"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"magic_damage_bonus"	"40"
+				"magic_damage_bonus"	"80"
 			}
 		}
 	}
@@ -46730,12 +46731,12 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 	    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_ROT"
-		"AbilityCastRange"				"1500"
+		"AbilityCastRange"				"2000"
 		"AbilityCastPoint"				"0.2"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
+		"AbilityCooldown"				"10"
 		"AbilityManaCost"				"0"
 
 		// Damage

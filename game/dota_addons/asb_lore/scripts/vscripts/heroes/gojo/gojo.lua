@@ -282,7 +282,7 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
                         hModifier.iBlueCurrentState = STATE_IS_EXPLODING
                         hModifier.bIsExploding = true
                         self:Destroy()
-                        return
+                        --return
                         --table.insert(enemies, hTarget)
                     end
                 end
@@ -977,12 +977,13 @@ function goju_infinite_void:Hit(hCaster, hTarget)
     if IsNotNull(hCaster) and IsNotNull(hTarget) and hCaster:IsAlive() and hTarget:IsAlive() then
         local vDirection = GetDirection(hTarget, hCaster)
         local vTargetLoc = hTarget:GetOrigin()
-        vTargetLoc       = vTargetLoc - vDirection * 50
+        local fBoundingR = ( hCaster:BoundingRadius2D() + hTarget:BoundingRadius2D() ) --* 2 -- Need this Diameter or FindClearSpaceForUnit will not position properly
+        vTargetLoc       = vTargetLoc - vDirection * fBoundingR
         
-        hCaster:SetOrigin(vTargetLoc)
+        --hCaster:SetOrigin(vTargetLoc)
         FindClearSpaceForUnit( hCaster, vTargetLoc, true )
         
-        if GetDistance(hTarget, hCaster) <= 100 then
+        if GetDistance(hTarget, hCaster) <= fBoundingR * 1.1 then -- Add extra distance in cases where FindClearSpaceForUnit does not position close enough
             hCaster:FaceTowards(hTarget:GetOrigin())
             hCaster:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ALACRITY, 1.5)
             hTarget:RemoveModifierByName("modifier_goju_domain_motion")
@@ -1059,7 +1060,7 @@ function modifier_goju_infinite_void:OnIntervalThink()
         self.fDistance  = GetDistance(self.caster, self.parent)
         self.vDirection = GetDirection(self.caster, self.parent)
         
-        if self:CanMove() then return end
+        if self:CanMove() then self.vOriginP = self.parent:GetOrigin() return end
     
         self:BlockOrPushEnemy()
         --self.parent:SetOrigin(self.vOriginP)
@@ -1434,7 +1435,7 @@ function goju_domain_expansion:GetCustomCastError()
 end
 function goju_domain_expansion:OnSpellStart()
     local hCaster = self:GetCaster()
-    local fDuration = self:GetSpecialValueFor("duration")
+    local fDuration = 8.0 -- Hardcoded, changing will break ability
     
     hCaster:AddNewModifier(hCaster, self, "modifier_goju_domain_expansion", { duration = fDuration })
     hCaster:AddNewModifier(hCaster, self, "modifier_goju_vision", { duration = fDuration })

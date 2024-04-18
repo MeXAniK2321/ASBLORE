@@ -60,8 +60,8 @@ function modifier_ember_buff:GetTexture()
 end
 function modifier_ember_buff:DeclareFunctions()
 	local funcs = {
-		              MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE,
-		              MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
+                      MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE,
+                      MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
                       MODIFIER_EVENT_ON_ATTACK_FINISHED,
                       MODIFIER_EVENT_ON_TAKEDAMAGE,
                       MODIFIER_PROPERTY_PROJECTILE_NAME,
