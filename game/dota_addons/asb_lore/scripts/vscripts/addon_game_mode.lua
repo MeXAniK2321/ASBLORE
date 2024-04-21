@@ -51,6 +51,7 @@ require("anime_modifiers_server_client")
 
 --require('libraries/ai_behaviours')
 --require('ai/core/ai_core')
+require("internal/particle_precache_test_fix")
 
 ---------------------------------------------------------------------------
 -- Precache
