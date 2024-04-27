@@ -7307,6 +7307,7 @@
 	"ScriptFile"					"items/item_national_contract.lua"
 	"AbilityTextureName"			"makima_chains"	
 	"ItemPurchasable"						"0"
+	"AbilityCooldown"						"60"
 	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
 	"ItemCost"					"20000"
 	"ItemDroppable" 						"0"
@@ -7999,7 +8000,7 @@
 		 "05"
 		    {
 		    	"var_type"			"FIELD_FLOAT"
-		    	"stando_powa_cooldown"		"0.5"
+		    	"stando_powa_cooldown"		"0.8"
 		    }
 			
 		}

@@ -1967,7 +1967,43 @@
 	}
 
 	
-	
+"npc_dota_particle_test_lore"
+	{										
+		"Model"						"models/bogdan/hurk.vmdl"
+		"BaseClass"					"npc_dota_hero"
+		"IdleExpression"			""
+		"Level"						"30"
+		"ModelScale"				"1.4"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ArmorPhysical"				"25"
+        "MagicalResistance"			"75"		
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"150"		
+		"AttackDamageMax"			"250"			
+		"AttackRate"				"0.6"
+		"Ability1"					"bondage"
+		"Ability2"					"muscule_flex"
+"BountyGoldMin"				"1000"		// Gold earned min.
+		"BountyGoldMax"				"400"		// Gold earned max.				
+		"AttackAnimationPoint"		"0.3"		
+		"AttackAcquisitionRange"	"600"		
+		"AttackRange"				"128"		
+		"HealthBarOffset"			"160"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"380"		
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			
+		"StatusHealth"				"2500"		
+		"StatusHealthRegen"			"50"			
+		"StatusMana"				"1000"		
+		"StatusManaRegen"			"25"			
+		"VisionDaytimeRange"		"700"		
+		"VisionNighttimeRange"		"700"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}	
 	
 	
 }

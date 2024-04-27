@@ -1756,6 +1756,7 @@ function touma_imagine_breaker_counter:OnChannelFinish( bInterrupted )
    if IsServer() then
 	 self:GetCaster():Purge(false, true, false, true, true)
 	 self:GetCaster():RemoveModifierByName("modifier_touma_imagine_breaker_counter")
+     self:GetCaster():RemoveGesture(ACT_DOTA_CHANNEL_ABILITY_4)
    end
 end
 

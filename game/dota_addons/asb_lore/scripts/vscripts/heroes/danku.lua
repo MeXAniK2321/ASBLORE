@@ -29,11 +29,13 @@ function danku:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
 	local targets = self:GetVectorTargetPosition()
+	local iWalls  = caster:HasShard() and 2 or 1
 
 	-- load data
 	local duration = self:GetSpecialValueFor( "duration" )
 
-	-- create thinker
+	for i = 1, iWalls do
+    -- create thinker
 	CreateModifierThinker(
 		caster, -- player source
 		self, -- ability source
@@ -47,4 +49,6 @@ function danku:OnSpellStart()
 		caster:GetTeamNumber(),
 		false
 	)
+	targets.direction = RotateVector2D(targets.direction, 90, true)
+    end
 end

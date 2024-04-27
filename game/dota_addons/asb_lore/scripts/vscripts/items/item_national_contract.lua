@@ -130,7 +130,7 @@ function modifier_national_gachi_man:OnCreated(hTable)
         
         for iAbility = 0, self.parent:GetAbilityCount() - 1 do
             local hAbility = self.parent:GetAbilityByIndex(iAbility)
-            if IsNotNull(hAbility) and hAbility:CanAbilityBeUpgraded() and hAbility:GetLevel() <= hAbility:GetMaxLevel() then
+            if IsNotNull(hAbility) and hAbility:CanAbilityBeUpgraded() and hAbility:GetLevel() < hAbility:GetMaxLevel() then
                 hAbility:SetLevel(hAbility:GetMaxLevel())
             end
         end

@@ -15574,12 +15574,16 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+		"HasShardUpgrade" "1"        
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"0"
+		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.4"
 		"AbilityDuration"				"4"
 
@@ -19850,6 +19854,8 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+        
+		"HasShardUpgrade" "1"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -20754,6 +20760,8 @@
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+		
+        "HasShardUpgrade" "1"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -26402,6 +26410,7 @@
 		//"AbilityCastRange"						"1200"
 
 		"HasScepterUpgrade"						"0"
+		"HasShardUpgrade" "1"
 
 		"MaxLevel"								"1"
 		"RequiredLevel"							"18"
@@ -43101,8 +43110,10 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+        
+		"HasShardUpgrade"				"1"
 
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"MaxLevel"						"1"
 		"RequiredLevel"					"18"
 		"LevelsBetweenUpgrades"		"3"

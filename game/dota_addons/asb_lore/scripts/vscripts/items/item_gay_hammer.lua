@@ -109,19 +109,26 @@ function item_gay_hammer:OnSpellStart()
 		  end
 	    end
 
+	  local iPlayerID = target:GetPlayerOwnerID()
+      local iGold     = target:GetGold() or 10000
+      local iXP       = target:GetCurrentXP() or 5000
+      
+      if not hero_replaced or not PlayerResource:IsValidPlayerID(iPlayerID) then return end
 
       -- Change the hero
-	  local hero = PlayerResource:ReplaceHeroWith(target:GetPlayerOwnerID(), hero_replaced, 0, 0)
+	  local hero = PlayerResource:ReplaceHeroWith(iPlayerID, hero_replaced, iGold, iXP)
 	    for k, v in pairs(items) do
 		  if k and v then
-		    local item = hero:AddItem(v)
-		    hero:SwapItems(item:GetItemSlot(), k)
+		    if IsNotNull(hero) then
+		      local item = hero:AddItem(v)
+		      hero:SwapItems(item:GetItemSlot(), k)
+            end
 		  end
 	    end
 
       -- Modify Gold and XP
-	  hero:ModifyGold(target:GetGold(), true, 0)
-      hero:AddExperience(target:GetCurrentXP() - hero:GetCurrentXP(), 0, false, false)
+	  --hero:ModifyGold(target:GetGold(), true, 0)
+      --hero:AddExperience(target:GetCurrentXP() - hero:GetCurrentXP(), 0, false, false)
 
 	  -- Particles and Sound Effects
 	  local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)

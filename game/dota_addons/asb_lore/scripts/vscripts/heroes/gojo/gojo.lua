@@ -282,7 +282,7 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
                         hModifier.iBlueCurrentState = STATE_IS_EXPLODING
                         hModifier.bIsExploding = true
                         self:Destroy()
-                        --return
+                        return
                         --table.insert(enemies, hTarget)
                     end
                 end

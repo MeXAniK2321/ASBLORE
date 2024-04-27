@@ -10,7 +10,8 @@
 	  "item"      "item_monster_energy"
 	  "item"      "item_chibi_marci"
       "item"      "item_super_idol_water"
-      "item"      "item_ember" 
+      "item"      "item_ember"
+      "item"      "item_aghanims_shard"
   }
 
   "attributes"

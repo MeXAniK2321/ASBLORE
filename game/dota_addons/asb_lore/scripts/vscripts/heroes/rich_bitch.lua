@@ -76,6 +76,10 @@ function modifier_rich_bitch:DeclareFunctions()
     return func
 end
 
+function modifier_rich_bitch:GetModifierSpellAmplify_Percentage()
+    return self:GetStackCount()
+end
+
 
 
 
@@ -128,8 +132,16 @@ function modifier_rich_bitch:OnCreated(table)
        
 
         self.parent:Purge(false, true, false, true, true)
+        
+        self:StartIntervalThink(0.1)
     end
 end
+end
+function modifier_rich_bitch:OnIntervalThink()
+    local fBonusSpellAmpPerc = self:GetParent():HasShard() 
+                               and math.min(math.floor(self:GetParent():GetGold() * 0.01), 300)
+                               or 0
+    self:SetStackCount(fBonusSpellAmpPerc)
 end
 function modifier_rich_bitch:OnRefresh(table)
     self:OnCreated(table)

@@ -1,6 +1,12 @@
 ichigoW = class({})
 LinkLuaModifier("modifier_ichigoW_target_knockback", "heroes/ichigo/modifier_ichigoW_target_knockback",
     LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_ichigoW_intrinsic", "heroes/ichigo/ichigow.lua",
+    LUA_MODIFIER_MOTION_BOTH)
+
+function ichigoW:GetIntrinsicModifierName()
+    return "modifier_ichigoW_intrinsic"
+end
 
 function ichigoW:OnAbilityPhaseStart()
     EmitSoundOn("Ichigo.R2", self:GetCaster())
@@ -82,4 +88,40 @@ function ichigoW:OnSpellStart()
         damageType = damageType,
         damageFlags = damageFlags
     })
+end
+
+
+
+
+
+
+
+
+
+
+
+modifier_ichigoW_intrinsic = modifier_ichigoW_intrinsic or class ({})
+
+function modifier_ichigoW_intrinsic:IsHidden() return false end
+function modifier_ichigoW_intrinsic:IsPurgable() return false end
+function modifier_ichigoW_intrinsic:RemoveOnDeath() return false end
+function modifier_ichigoW_intrinsic:DeclareFunctions()
+    return {
+               MODIFIER_EVENT_ON_TAKEDAMAGE,
+           }
+end
+function modifier_ichigoW_intrinsic:OnTakeDamage(params)
+    if not IsServer() then return end 
+    
+    -- Check enemy HP
+    local FinalHP = params.unit:GetHealth()
+    if FinalHP <= 0 and IsNotNull(params.attacker) and params.attacker == self:GetParent() and params.attacker:HasShard() then
+        -- Check Abilities
+        for i = 0, params.attacker:GetAbilityCount() - 1 do
+            local ability = params.attacker:GetAbilityByIndex(i)
+            if IsNotNull(ability) and not ability:IsUltimate() and not ability:IsItem() and ability:GetCooldownTimeRemaining() > 0 then
+                ability:EndCooldown()
+            end
+        end
+    end
 end
