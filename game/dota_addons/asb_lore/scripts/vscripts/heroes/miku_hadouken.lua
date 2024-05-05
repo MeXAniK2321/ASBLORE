@@ -81,6 +81,8 @@ function miku_hadouken:OnProjectileHitHandle( target, location, projectile )
 		ability = self, --Optional.
 	}
 	ApplyDamage( damageTable )
+    
+    if self:GetCaster():HasShard() then target:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration = 1.0}) end
 
 	-- get direction
 	local direction = ProjectileManager:GetLinearProjectileVelocity( projectile )

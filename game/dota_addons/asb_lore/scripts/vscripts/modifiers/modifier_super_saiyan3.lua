@@ -3,7 +3,7 @@ function modifier_super_saiyan3:IsHidden() return true end
 function modifier_super_saiyan3:IsDebuff() return true end
 function modifier_super_saiyan3:IsPurgable() return false end
 function modifier_super_saiyan3:IsPurgeException() return false end
-function modifier_super_saiyan3:RemoveOnDeath() return true end
+function modifier_super_saiyan3:RemoveOnDeath() return not self:GetParent():HasShard() end
 function modifier_super_saiyan3:AllowIllusionDuplicate() return true end
 
 function modifier_super_saiyan3:GetEffectName()

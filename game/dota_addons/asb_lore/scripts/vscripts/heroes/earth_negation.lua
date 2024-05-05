@@ -92,7 +92,7 @@ function modifier_earth_negation_astral:OnDestroy()
 
 	
 	caster:StartGesture(ACT_DOTA_CAST_ABILITY_3)
-	local damage = self:GetAbility():GetSpecialValueFor( "damage" ) 
+	local damage = self:GetAbility():GetSpecialValueFor( "damage" ) * (self:GetParent():HasShard() and 2 or 1)
 	local duration = self:GetAbility():GetSpecialValueFor( "stun_duration" )
 
 	-- damage

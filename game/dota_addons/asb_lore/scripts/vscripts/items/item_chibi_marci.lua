@@ -362,10 +362,10 @@ function modifier_chibi_marci_golden_legendary:GetModifierModelScale()
 	return 25
 end
 function modifier_chibi_marci_golden_legendary:GetModifierHealthBonus()
-	return 500
+	return 200
 end
 function modifier_chibi_marci_golden_legendary:GetModifierHealthRegenPercentage()
-    return 5
+    return 2
 end
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -860,7 +860,7 @@ function modifier_chibi_marci_instant_trash_think:OnCreated( kv )
         self.hDamageTable = {
              victim = nil,
              attacker = self.caster,
-             damage = 1000,
+             damage = 500,
              damage_type = DAMAGE_TYPE_PURE,
              ability = self.ability
             }
@@ -1045,7 +1045,7 @@ function modifier_chibi_marci_amaterasu_target:OnIntervalThink()
 	-- Ensure the parent is valid and is an enemy
     if self.parent and self.parent:IsAlive() and not self.parent:IsMagicImmune() and not self.parent:IsInvulnerable() then
         local maxHealth = self.parent:GetMaxHealth()
-        local damage = maxHealth * 0.10  -- 10% of maximum health
+        local damage = maxHealth * 0.02  -- 2% of maximum health
 
         -- Apply damage to the enemy
         local hDamageTable = {

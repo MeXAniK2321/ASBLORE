@@ -5069,7 +5069,7 @@
 	"ItemCost"					"20000"
 	"ItemDroppable" 						"0"
 	"ItemIsNeutralDrop"						"1"
-	"AbilityCooldown"                   "100"
+	"AbilityCooldown"                   "60"
 	"ItemSellable"							"0"
 		"ItemShopTags"				"damage"
 		"ItemQuality"				"magicks"
@@ -7889,7 +7889,7 @@
 		 "08"
 		    {
 		    	"var_type"			"FIELD_INTEGER"
-		    	"base_percent"		"5"
+		    	"base_percent"		"7"
 		    }
 		 "9"
 		    {
@@ -8168,12 +8168,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_allstats"		"85"
+				"bonus_allstats"		"65"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"		    "75"
+				"bonus_armor"		    "45"
 			}
 			"03"
 			{
@@ -8213,7 +8213,7 @@
 			"10"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"passive_cooldown"		"45.0"
+				"passive_cooldown"		"60.0"
 			}
 		}
 	}
@@ -8322,12 +8322,12 @@
 			"11"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"base_damage"		    "1500"
+				"base_damage"		    "1000"
 			}
 			"12"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_damage"		    "5000"
+				"max_damage"		    "3500"
 			}
 			"13"
 			{

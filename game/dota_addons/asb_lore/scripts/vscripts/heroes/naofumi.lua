@@ -1580,72 +1580,110 @@ function shield_prison:OnSpellStart()
     local caster = self:GetCaster()
 	local target = self:GetCursorTarget()
     local duration = self:GetSpecialValueFor("duration")
+    
+    self.idiot_prison = self.idiot_prison or {}
 	
 	if caster:HasModifier("modifier_shield_prison_change") then
 	
-	local knockback = { should_stun = 0,
-                        knockback_duration = 24,
-                        duration = 24,
-                        knockback_distance = 0,
-                        knockback_height = 550,
-                        center_x = caster:GetAbsOrigin().x,
-                        center_y = caster:GetAbsOrigin().y,
-                        center_z = caster:GetAbsOrigin().z }
+        local knockback = { should_stun = 0,
+                            knockback_duration = 24,
+                            duration = 24,
+                            knockback_distance = 0,
+                            knockback_height = 550,
+                            center_x = caster:GetAbsOrigin().x,
+                            center_y = caster:GetAbsOrigin().y,
+                            center_z = caster:GetAbsOrigin().z }
 
-    self.idiot_prison:AddNewModifier(caster, self, "modifier_knockback", knockback)
-	self.idiot_prison:AddNewModifier(caster, self, "modifier_kill", {duration = 11})
-	 self.idiot_prison:AddNewModifier(caster, self, "modifier_prison_invul", {duration = 10.9})
-	self.idiot:AddNewModifier(caster, self, "modifier_iron_maiden", {duration = 12})
-		caster:AddNewModifier(caster, self, "modifier_shield_prison_change", {duration = 12})
-		caster:RemoveModifierByNameAndCaster("modifier_star_tier3", caster)
-		caster:AddNewModifier(caster, self, "modifier_star_tier3", {duration = 24})
-		caster:AddNewModifier(caster, self, "modifier_iron_maiden_cd", {duration = 160 * self:GetCaster():GetCooldownReduction()})
-	else
-		self.sound_cast = "Naofumi.4"
-	EmitSoundOn( self.sound_cast, caster )
-	if caster:GetTeamNumber() == target:GetTeamNumber() then
-	 local point = target:GetOrigin()
-	local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
-	caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
+        local bCheck = false
 
-    prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
-	prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
-	target:AddNewModifier(caster, self, "modifier_shield_prison", {duration = duration})
+        local tPrisonCopy = TableCopy(self.idiot_prison)
+        for iEntIndex, hPrison in pairs(tPrisonCopy) do
+            if not caster:HasShard() then break end
+            
+            local hTarget = iEntIndex and EntIndexToHScript(iEntIndex)
+            if IsNotNull(hTarget) and IsNotNull(hPrison) and hTarget:HasModifier("modifier_shield_prison_enemy") then
+                hPrison:AddNewModifier(caster, self, "modifier_knockback", knockback)
+                hPrison:AddNewModifier(caster, self, "modifier_kill", {duration = 11})
+                hPrison:AddNewModifier(caster, self, "modifier_prison_invul", {duration = 10.9})
+                hPrison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
+                hTarget:AddNewModifier(caster, self, "modifier_iron_maiden", {duration = 12})
+                hTarget:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
+                self.idiot_prison[iEntIndex] = nil
+                bCheck = true
+                print(self.idiot_prison[iEntIndex])
+            end
+        end
+        
+        if not caster:HasShard() then
+            if IsNotNull(self.idiot) and IsNotNull(self.idiot_prison2) then
+                self.idiot_prison2:AddNewModifier(caster, self, "modifier_knockback", knockback)
+                self.idiot_prison2:AddNewModifier(caster, self, "modifier_kill", {duration = 11})
+                self.idiot_prison2:AddNewModifier(caster, self, "modifier_prison_invul", {duration = 10.9})
+                self.idiot_prison2:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
+                self.idiot:AddNewModifier(caster, self, "modifier_iron_maiden", {duration = 12})
+                self.idiot:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
+                bCheck = true
+            end
+        end
+         
+        if bCheck then
+            caster:AddNewModifier(caster, self, "modifier_shield_prison_change", {duration = 12})
+            caster:RemoveModifierByNameAndCaster("modifier_star_tier3", caster)
+            caster:AddNewModifier(caster, self, "modifier_star_tier3", {duration = 24})
+            caster:AddNewModifier(caster, self, "modifier_iron_maiden_cd", {duration = 160 * self:GetCaster():GetCooldownReduction()})
+        end
 	
-		elseif caster:HasModifier("modifier_rage_shield") or caster:HasModifier("modifier_wraith_shield") then
-		if not caster:HasModifier("modifier_iron_maiden_cd") then
-		 local point = target:GetOrigin()
-		self.idiot = target
-		self:EndCooldown()
-		self.prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
-	caster:AddNewModifier(caster, self, "modifier_shield_prison_change", {duration = 4})
-	caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = 16})
-    self.prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
-	self.prison:AddNewModifier(caster, self, "modifier_kill", {duration = 4})
-	self.idiot_prison = self.prison
-	target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
+    else
+        self.sound_cast = "Naofumi.4"
+        EmitSoundOn( self.sound_cast, caster )
+	
+        if caster:GetTeamNumber() == target:GetTeamNumber() then
+            local point = target:GetOrigin()
+            local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
+            caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
+
+            prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
+            prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
+            target:AddNewModifier(caster, self, "modifier_shield_prison", {duration = duration})
+	
+        elseif caster:HasModifier("modifier_rage_shield") or caster:HasModifier("modifier_wraith_shield") then
+            if not caster:HasModifier("modifier_iron_maiden_cd") then
+                local point = target:GetOrigin()
+                self.idiot = target
+                self:EndCooldown()
+                self.prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
+                
+                caster:AddNewModifier(caster, self, "modifier_shield_prison_change", {duration = 4})
+                caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = 16})
+                self.prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
+                self.prison:AddNewModifier(caster, self, "modifier_kill", {duration = 4})
+                self.idiot_prison[target:entindex()] = self.prison
+                self.idiot_prison2 = self.prison
+                target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
 	
 	
-	else
-	 local point = target:GetOrigin()
-	local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
-	caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
+            else
+                local point = target:GetOrigin()
+                local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
+                caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
 
-    prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
-	prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
-	target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = duration})
-	end
-	else
-	 local point = target:GetOrigin()
-	local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
-	caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
+                prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
+                prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
+                self.idiot_prison[target:entindex()] = prison
+                target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = duration})
+            end
+        else
+            local point = target:GetOrigin()
+            local prison = CreateUnitByName("npc_dota_shield_prison", point, true, caster, caster, caster:GetTeamNumber())
+            caster:AddNewModifier(caster, self, "modifier_shield_prison_check", {duration = duration})
 
-    prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
-	prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
-	target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = duration})
-	end
-	end
-	end
+            prison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = duration})
+            prison:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
+            self.idiot_prison[target:entindex()] = prison
+            target:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = duration})
+        end
+    end
+end
 
 
 modifier_prison_invul = class({})
@@ -1744,7 +1782,7 @@ if not self:GetCaster():IsAlive() then
 function modifier_shield_prison1:OnDestroy( kv )
 if not IsServer() then return end
   local caster = self:GetCaster()
-caster:RemoveModifierByName("modifier_shield_prison_check")
+--caster:RemoveModifierByName("modifier_shield_prison_check")
       
 end
 function modifier_shield_prison1:GetEffectName()
@@ -1870,7 +1908,7 @@ function modifier_iron_maiden:PlayEffects( radius,origin )
 	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetCaster() )
 	ParticleManager:SetParticleControl( effect_cast, 0, origin )
 	ParticleManager:ReleaseParticleIndex( effect_cast )
-EmitSoundOnLocationWithCaster( self:GetCaster():GetOrigin(), sound_cast, self:GetCaster() )
+EmitSoundOnLocationWithCaster( self:GetCaster():GetAbsOrigin(), sound_cast, self:GetCaster() )
 end
 function modifier_iron_maiden:OnIntervalThink()
     if not IsServer() then return end
@@ -1943,8 +1981,10 @@ end
 
 function modifier_shield_prison_enemy:OnCreated( kv )
   local caster = self:GetCaster()
-    self:StartIntervalThink(0.1)
+  
+    if not IsServer() then return end
     self:GetParent():AddNoDraw()
+    self:StartIntervalThink(0.1)
  --Optional.
 	
   
@@ -1954,6 +1994,8 @@ function modifier_shield_prison_enemy:OnIntervalThink()
     if not IsServer() then return end
 	local caster = self:GetCaster()
     local target = self:GetParent()
+    
+    target:AddNoDraw()
 if not self:GetCaster():HasModifier("modifier_shield_prison_check") then
        self:Destroy()
 	   else
@@ -2075,6 +2117,12 @@ self.sound_cast = "Naofumi.5"
 end
 	EmitSoundOn( self.sound_cast, caster )
     caster:AddNewModifier(caster, self, "modifier_rage_shield", {})
+    if caster:HasShard() then
+        local hPrison = caster:FindAbilityByName("shield_prison")
+        if IsNotNull(hPrison) then
+            hPrison:EndCooldown()
+        end
+    end
 self:PlayEffects(300)
 end
 end
@@ -2259,7 +2307,6 @@ function modifier_rage_shield:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
- self:StartIntervalThink( 1 )
     self.ability_level = self.ability:GetLevel()
 
 	
@@ -2287,7 +2334,7 @@ function modifier_rage_shield:OnCreated(table)
 		
            
         
-		
+ self:StartIntervalThink( 1 )
       
 
   

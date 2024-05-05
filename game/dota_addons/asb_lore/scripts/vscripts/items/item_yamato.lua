@@ -16,7 +16,7 @@ end
 
 modifier_motivated = modifier_motivated or class({})
 
-function modifier_motivated:IsHidden() return true end
+function modifier_motivated:IsHidden() return false end
 function modifier_motivated:RemoveOnDeath() return false end
 function modifier_motivated:IsPurgable() return false end
 

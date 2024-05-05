@@ -3,7 +3,7 @@ function modifier_super_saiyan2:IsHidden() return false end
 function modifier_super_saiyan2:IsDebuff() return true end
 function modifier_super_saiyan2:IsPurgable() return false end
 function modifier_super_saiyan2:IsPurgeException() return false end
-function modifier_super_saiyan2:RemoveOnDeath() return true end
+function modifier_super_saiyan2:RemoveOnDeath() return not self:GetParent():HasShard() end
 function modifier_super_saiyan2:AllowIllusionDuplicate() return true end
 function modifier_super_saiyan2:DeclareFunctions()
     local func = {  MODIFIER_PROPERTY_MODEL_CHANGE,
@@ -58,7 +58,7 @@ function modifier_super_saiyan2:OnCreated(table)
 
     self.ability_level = self.ability:GetLevel()
 
-
+    if not IsServer() then return end
 
 
 

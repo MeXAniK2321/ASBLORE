@@ -313,6 +313,64 @@ function judgment_cut_end:OnUpgrade()
         ability:SetLevel(self:GetLevel())
     end
 end
+function judgment_cut_end:CastJudgmentCuts(hCaster, vOrigin, iRadius, hEnemies)
+    if not IsNotNull(hCaster) then return end
+    
+    vOrigin  = vOrigin or hCaster:GetOrigin()
+    iRadius  = iRadius or 1000
+    
+    local fJudgmentRadius = 175
+    local fInterval       = nil
+    
+    local iJudgementHits  = 2
+
+    -- Basically taking points in the Radius with space between each other and inserting them into a table
+    local tRadiusPoints = {}
+    for iRing = 1, math.ceil((iRadius / (fJudgmentRadius * 2)) - 1) do
+        local fCurRadius = iRing * (fJudgmentRadius * 2)
+        local iArrays = fCurRadius > 0 and math.floor(math.pi / math.asin(fJudgmentRadius / fCurRadius)) or 1
+        local fAngles = 360 / iArrays
+
+        for iArray = 1, iArrays do
+            local fCurAngle = (iArray - 1) * fAngles
+            local fX = vOrigin.x + fCurRadius * math.cos(math.rad(fCurAngle))
+            local fY = vOrigin.y + fCurRadius * math.sin(math.rad(fCurAngle))
+            table.insert(tRadiusPoints, Vector(fX, fY, vOrigin.z))
+        end
+    end
+    
+    fInterval = ( 1 / math.max(TableLength(tRadiusPoints), 1) ) * 0.5
+    
+    Timers:CreateTimer(0.5, function()
+        if not IsNotNull(hCaster) or #tRadiusPoints == 0 then return nil end
+        
+        local iRandomIndex = RandomInt(1, #tRadiusPoints)
+        local vPoint = tRadiusPoints[iRandomIndex]
+        
+        local hAbility = hCaster:FindAbilityByName("judgment_cut")
+        if IsNotNull(hAbility) and hAbility:IsTrained() then
+            hCaster:SetCursorPosition(vPoint)
+            hAbility:OnSpellStart()
+            
+            if type(hEnemies) == "table" then
+                local tEnemiesCopy = TableCopy(hEnemies)
+                for _, hEnemy in pairs(tEnemiesCopy) do
+                    if IsNotNull(hEnemy) then
+                        for i = 1, iJudgementHits do
+                            hCaster:SetCursorPosition(hEnemy:GetOrigin() + RandomVector(fJudgmentRadius))
+                            hAbility:OnSpellStart()
+                        end
+                        table.remove(hEnemies, _)
+                    end
+                end
+            end
+        end
+        
+        table.remove(tRadiusPoints, iRandomIndex)
+        return fInterval
+    end)
+
+end
 function judgment_cut_end:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
@@ -363,7 +421,11 @@ function judgment_cut_end:OnSpellStart()
 		)
 	end
 	
-caster:AddNewModifier(caster, self, "modifier_judgment_cut_end_invul", {duration = 0.3})	
+caster:AddNewModifier(caster, self, "modifier_judgment_cut_end_invul", {duration = 0.3})
+
+	if caster:HasShard() and caster:HasModifier("modifier_motivated") then
+        self:CastJudgmentCuts(caster, nil, nil, enemies)
+	end	
 
 	self.sound_cast = "vergil.judgment_cut_end_start"
 	EmitSoundOn( self.sound_cast, self:GetCaster() )

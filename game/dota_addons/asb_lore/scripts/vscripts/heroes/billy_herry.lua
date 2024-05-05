@@ -409,6 +409,10 @@ LinkLuaModifier( "modifier_billy_disarmed", "modifiers/modifier_billy_disarmed",
 function muscule_flex:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
+    
+    if caster:HasShard() and caster:HasModifier("modifier_imba_spirit_breaker_charge_of_darkness") then
+        self:EndCooldown()
+    end
 
 	-- load data
 	local radius = self:GetSpecialValueFor("radius")

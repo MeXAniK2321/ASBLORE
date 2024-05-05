@@ -169,6 +169,11 @@ function dante_stinger:OnSpellStart()
 	local caster = self:GetCaster()
     EmitSoundOn("dante.2_1", caster)
 	caster:AddNewModifier(caster, self, "modifier_dante_stinger_dash", {})
+    
+	if not caster:HasShard() then return end
+    
+	self:EndCooldown()
+	self:StartCooldown(2)
 end
 ---------------------------------------------------------------------------------------------------------------------
 modifier_dante_stinger_dash = class({})

@@ -19,6 +19,18 @@ function super_saiyan:GetAbilityTextureName()
 	end
 end
 end
+function super_saiyan:OnOwnerSpawned()
+    local hCaster = self:GetCaster()
+    if IsNotNull(self)
+        and IsNotNull(hCaster)
+        and hCaster:HasShard()
+        and self:IsTrained() 
+        and not hCaster:HasModifier("modifier_ultra_instinct") 
+        and not hCaster:HasModifier("modifier_super_saiyan4") then
+        self:EndCooldown()
+        self:CastAbility()
+    end
+end
 function super_saiyan:OnSpellStart()
 	-- unit identifier
 	local caster = self:GetCaster()
@@ -26,7 +38,7 @@ function super_saiyan:OnSpellStart()
 	local rit = self:GetSpecialValueFor("rit")
 
 	-- load data
-	local duration = self:GetSpecialValueFor("duration")
+	local duration = caster:HasShard() and -1 or self:GetSpecialValueFor("duration")
 	caster:AddNewModifier(
 		caster, -- player source
 		self, -- ability source

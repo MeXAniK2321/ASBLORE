@@ -87,7 +87,7 @@ function modifier_blackrock_form:GetModifierProjectileSpeedBonus()
 	return 800
 end
 function modifier_blackrock_form:GetModifierAttackRangeBonus()
-	return 530
+	return self:GetParent():HasShard() and 1000 or 530
 end
 
 

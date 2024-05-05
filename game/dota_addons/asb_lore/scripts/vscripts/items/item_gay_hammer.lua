@@ -98,29 +98,30 @@ function item_gay_hammer:OnSpellStart()
 	
 	if id32 == arcana8 or id32 == arcana9 then
 	  if hero_replaced ~= "gay_garbage" then
-	    local items = {}
-	  
-	    -- Change items 
-	    for i = DOTA_ITEM_SLOT_1, DOTA_STASH_SLOT_6 + 2 do
-	      local item = target:GetItemInSlot(i)
-		  if item and item ~= self then
-	        table.insert(items, i, item)
-		    target:TakeItem(item)
-		  end
-	    end
 
 	  local iPlayerID = target:GetPlayerOwnerID()
-      local iGold     = target:GetGold() or 10000
-      local iXP       = target:GetCurrentXP() or 5000
+      local iGold     = target:GetGold() or caster:GetGold()
+      local iXP       = target:GetCurrentXP() or caster:GetCurrentXP()
       
       if not hero_replaced or not PlayerResource:IsValidPlayerID(iPlayerID) then return end
+        
+      local items = {}
+
+      -- Change items 
+      for i = DOTA_ITEM_SLOT_1, DOTA_STASH_SLOT_6 + 2 do
+        local item = target:GetItemInSlot(i)
+        if IsNotNull(item) then
+          table.insert(items, i, item)
+          target:TakeItem(item)
+        end
+      end
 
       -- Change the hero
 	  local hero = PlayerResource:ReplaceHeroWith(iPlayerID, hero_replaced, iGold, iXP)
 	    for k, v in pairs(items) do
 		  if k and v then
-		    if IsNotNull(hero) then
-		      local item = hero:AddItem(v)
+		    local item = hero:AddItem(v)
+            if IsNotNull(item) then
 		      hero:SwapItems(item:GetItemSlot(), k)
             end
 		  end

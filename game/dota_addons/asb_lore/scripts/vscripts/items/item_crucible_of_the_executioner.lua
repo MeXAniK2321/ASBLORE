@@ -133,20 +133,24 @@ function modifier_item_crucible_of_the_executioner:KillLogic( params )
 	   if death - kills > 10 then
 	   else
 		if target:IsRealHero() then
+			if self.parent:GetUnitName()== "npc_dota_hero_pangolier" and self.parent:HasShard() then
+			self:AddStack(3, true)
+			else
 			self:AddStack(1)
+			end
 		end
 		end
     end
 end
-function modifier_item_crucible_of_the_executioner:AddStack( value )
+function modifier_item_crucible_of_the_executioner:AddStack( value, kek )
 	local current = self:GetStackCount()
 	local after = current + value
 	if not self:GetParent():HasScepter() then
-		if after > self.kill then
+		if after > self.kill and not kek then
 			after = self.kill
 		end
 	else
-		if after > self.kill then
+		if after > self.kill and not kek then
 			after = self.kill
 		end
 	end

@@ -386,17 +386,25 @@ function ulquiorra_cero:GetAbilityTextureName()
 	return "ulquiorra/ulquiorra_3"
 end
 function ulquiorra_cero:OnAbilityPhaseStart()
-           
+    local caster = self:GetCaster()
+    local sCero1 = "particles/cero_osciras_finger.vpcf"
+    local sCero2 = "particles/ulquiorra_cero_finger.vpcf"
+    if ( caster:HasShard() and caster:HasItemInInventory("item_crucible_of_the_executioner") ) then
+        sCero1 = "particles/cero_osciras_finger_crucible.vpcf"
+        sCero2 = "particles/ulquiorra_cero_finger_crucible.vpcf"
+    end    
 	
     if self:GetCaster():HasModifier("modifier_ulquiorra_ressurection") or self:GetCaster():HasModifier("modifier_ulquiorra_ressurection_segunda_etapa") or  self:GetCaster():HasModifier("modifier_passive_ressurection")then
-	self.launcher_charge_fx = 	ParticleManager:CreateParticle("particles/cero_osciras_finger.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
+	self.launcher_charge_fx = 	ParticleManager:CreateParticle(sCero1, PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
 								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 0, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
 								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 1, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
+								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 3, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
 								
 								else
-								self.launcher_charge_fx = 	ParticleManager:CreateParticle("particles/ulquiorra_cero_finger.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
+								self.launcher_charge_fx = 	ParticleManager:CreateParticle(sCero2, PATTACH_CUSTOMORIGIN_FOLLOW, self:GetCaster())
 								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 0, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
 								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 1, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
+								ParticleManager:SetParticleControlEnt(self.launcher_charge_fx, 3, self:GetCaster(), 5, "cero", Vector(0,0,0), true)
 								end
 
     return true
@@ -448,8 +456,8 @@ EmitSoundOn("ulquiorra.3_sfx", caster)
 	--print(width)
 	local distance = self:GetCastRange(caster:GetAbsOrigin(),caster) + caster:GetCastRangeBonus()
 if self:GetCaster():HasModifier("modifier_ulquiorra_ressurection") or self:GetCaster():HasModifier("modifier_ulquiorra_ressurection_segunda_etapa") or  self:GetCaster():HasModifier("modifier_passive_ressurection")then
-local cero_particle = "particles/ulquiorra_cero_osciras.vpcf"
-	local cero_particle_end = "particles/ulquiorra_cero_end.vpcf"
+local cero_particle = ( caster:HasShard() and caster:HasItemInInventory("item_crucible_of_the_executioner") ) and "particles/ulquiorra_cero_osciras_crucible.vpcf" or "particles/ulquiorra_cero_osciras.vpcf"
+	local cero_particle_end = ( caster:HasShard() and caster:HasItemInInventory("item_crucible_of_the_executioner") ) and "particles/ulquiorra_cero_end_crucible.vpcf" or "particles/ulquiorra_cero_end.vpcf"
 	local pfx = ParticleManager:CreateParticle(cero_particle, PATTACH_WORLDORIGIN, nil )
 	local pfx_end = ParticleManager:CreateParticle(cero_particle_end, PATTACH_WORLDORIGIN, nil )
 	local attach_point = caster:ScriptLookupAttachment("cero")
@@ -513,8 +521,8 @@ local cero_particle = "particles/ulquiorra_cero_osciras.vpcf"
 		ParticleManager:ReleaseParticleIndex( pfx_end )
 	end)
 else
-	local cero_particle = "particles/ulquiorra_cero1.vpcf"
-	local cero_particle_end = "particles/ulquiorra_cero_end.vpcf"
+	local cero_particle = ( caster:HasShard() and caster:HasItemInInventory("item_crucible_of_the_executioner") ) and "particles/ulquiorra_cero1_crucible.vpcf" or "particles/ulquiorra_cero1.vpcf"
+	local cero_particle_end = ( caster:HasShard() and caster:HasItemInInventory("item_crucible_of_the_executioner") ) and "particles/ulquiorra_cero_end_crucible.vpcf" or "particles/ulquiorra_cero_end.vpcf"
 	local pfx = ParticleManager:CreateParticle(cero_particle, PATTACH_WORLDORIGIN, nil )
 	local pfx_end = ParticleManager:CreateParticle(cero_particle_end, PATTACH_WORLDORIGIN, nil )
 	local attach_point = caster:ScriptLookupAttachment("cero")

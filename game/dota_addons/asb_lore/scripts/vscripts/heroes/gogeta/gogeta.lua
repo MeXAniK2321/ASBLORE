@@ -284,7 +284,8 @@ function gogeta_kamehameha:OnSpellStart()
     local fBigBangReduce = (fBigBangMult - fBigBangTrue) / fIterations
     
     -- Particles
-    local start_loc = hCaster:GetAbsOrigin() + hCaster:GetForwardVector() * 32
+    local vOrigin   = hCaster:GetAbsOrigin()
+    local start_loc = vOrigin + hCaster:GetForwardVector() * 32
     --===========================================================================--
     local cero_particle = bAnimation
                           and "particles/gogeta_kamehameha_test.vpcf"
@@ -407,7 +408,7 @@ function gogeta_kamehameha:OnSpellStart()
                                     damage_type = self:GetAbilityDamageType(),
                                     ability = self }
                                     
-            local vDirection = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()
+            local vDirection = (enemy:GetAbsOrigin() - vOrigin):Normalized()
             local vPushTarget = enemy:GetAbsOrigin() + vDirection * self_distance
             local fPushDuration = self_distance / self_speed                        
 
@@ -547,6 +548,12 @@ function gogeta_kick_combo:GetChannelTime()
            and self.BaseClass.GetChannelTime(self) * self:GetSpecialValueFor("ultimate_speed_mult")
            or self.BaseClass.GetChannelTime(self)
 end
+function gogeta_kick_combo:CastFilterResultTarget(hTarget)
+    local hCaster = self:GetCaster()
+    return ( hTarget:IsMagicImmune() and hCaster:GetTeamNumber() ~= hTarget:GetTeamNumber() and not hCaster:HasModifier("modifier_akame_headbump") )
+           and UF_FAIL_MAGIC_IMMUNE_ENEMY
+           or UF_SUCCESS
+end
 function gogeta_kick_combo:OnSpellStart()
     local hCaster   = self:GetCaster()
     local hTarget   = self:GetCursorTarget()
@@ -672,7 +679,8 @@ function modifier_akame_headbump:UpdateHorizontalMotion(me, dt)
     local vDirection  = GetDirection(self.hMainTarget, vCurPos)
     local fDistance   = GetDistance(self.hMainTarget, vCurPos)
     local fUnitsPerDt = self.hMainTarget:GetIdealSpeed() * dt * self.fPlayBackRateSet
-    local vNextPos    = vCurPos + vDirection * fUnitsPerDt * 3
+    local fMultiplier = fDistance <= 360 and 3 or 8
+    local vNextPos    = vCurPos + vDirection * fUnitsPerDt * fMultiplier
           vNextPos    = fDistance <= self.fFollowDistance
                         and vCurPos
                         or vNextPos
@@ -712,9 +720,7 @@ function modifier_akame_headbump:OnIntervalThink()
             self.hKnockBackTable.center_y = vParentLoc.y
             self.hKnockBackTable.center_z = vParentLoc.z
 
-            if self.hMainTarget:HasModifier("modifier_knockback") then
-                self.hMainTarget:RemoveModifierByName("modifier_knockback")
-            end 
+            self.hMainTarget:RemoveModifierByName("modifier_knockback")
             self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_knockback", self.hKnockBackTable, self.hMainTarget:IsOpposingTeam(self.iCASTER_TEAM))
 
             hDamageTable.damage = self.fAttacksDamage -- + ( self.parent:GetAgility() * self.fAttacksAgiDamage )
@@ -738,7 +744,7 @@ function modifier_akame_headbump:OnIntervalThink()
                                   or ParticleManager:CreateParticle("particles/gogeta_hit_effect1.vpcf", PATTACH_WORLDORIGIN, nil)    
                 ParticleManager:SetParticleControl(self.AuraEffect, 0, vEnemyPos)
                 ParticleManager:SetParticleControl(self.AuraEffect, 1, vCurPos)
-                self.AuraEffect = nil
+                self:AddParticle(self.AuraEffect, false, false, -1, false, false)
             end
             
             if self.iAttacksCount < 3 then
@@ -748,9 +754,7 @@ function modifier_akame_headbump:OnIntervalThink()
             EmitSoundOn("Gogeta.hit".. self.iSounds - 1, self.hMainTarget)
             
            if self.iAttacksCount == 3 then
-               if self.hMainTarget:HasModifier("modifier_knockback") then
-                   self.hMainTarget:RemoveModifierByName("modifier_knockback")
-               end 
+               self.hMainTarget:RemoveModifierByName("modifier_knockback")
                -- Trigger AddNewModifier and ApplyDamage twice on self.Test reaching 3
                self.hMainTarget:AddNewModifier(self.parent, self.ability, "modifier_knockback", self.hKnockBackTable, self.hMainTarget:IsOpposingTeam(self.iCASTER_TEAM))
                EmitSoundOn("Gogeta.hit".. self.iSounds + 1, self.hMainTarget)
@@ -919,7 +923,6 @@ function modifier_gogeta_kick_combo_air_finisher:OnCreated(hTable)
         self.stage   = hTable.stage > 0
         self.stage3  = nil
         self.finish  = nil
-        self.set     = nil
         self.rainbow = nil
         self.hiddenA = nil
         self.counter = 0
@@ -969,7 +972,7 @@ function modifier_gogeta_kick_combo_air_finisher:OnCreated(hTable)
         -- Check Abilities
         for i = 0, self.parent:GetAbilityCount() - 1 do
             local ability = self.parent:GetAbilityByIndex(i)
-            if ability then
+            if IsNotNull(ability) then
                 -- Disable certain abilities
                 local ability_name = ability:GetName()
                 -- Make a table for the abilities maybe ?
@@ -1004,7 +1007,7 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateHorizontalMotion(me, dt)
                         or vNextPos
     --=================================================================================================--                
     local vPushDirection = (self.hMainTarget:GetAbsOrigin() - self.parent:GetAbsOrigin()):Normalized()
-    local vPushTarget = self.hMainTarget:GetAbsOrigin() + vPushDirection * 14
+    local vPushTarget = self.hMainTarget:GetAbsOrigin() + vPushDirection * 17
     --=================================================================================================--
     local vNewPos = self.hMainTarget:GetAbsOrigin()
     local vRandDir = RandomVector(1):Normalized()
@@ -1017,8 +1020,8 @@ function modifier_gogeta_kick_combo_air_finisher:UpdateHorizontalMotion(me, dt)
     if not self.stage then
         -- First Stage
 
-        self.parent:SetOrigin(vNextPos)
         self.hMainTarget:SetOrigin(vPushTarget)
+        self.parent:SetOrigin(vNextPos)
         self.parent:SetForwardVector(vDirection, true)
         --self.parent:FaceTowards(self.hMainTarget:GetOrigin())
         --FindClearSpaceForUnit(self.parent, self.hMainTarget:GetAbsOrigin(), true) -- Interrupts motion controller
@@ -1224,7 +1227,7 @@ function gogeta_backhand:OnSpellStart()
     if not hCaster:HasTalent("special_bonus_gogeta_15") then
         hCaster:AddNewModifier(hCaster, self, "modifier_disable_actions",{duration = 0.5})
     end
-       EmitSoundOn("Gogeta.d1", hCaster)   
+    EmitSoundOn("Gogeta.d1", hCaster)   
 end
 
 ----------------------------------------------------------------------------------------------------------
@@ -1270,7 +1273,7 @@ function modifier_gogeta_backhand_state:OnDestroy()
     -- Knock the enemy backwards
     local knockback = { should_stun = 1,
                         knockback_duration = fDuration - 0.5,
-                        duration = fDuration,
+                        duration = fDuration + 0.1,
                         knockback_distance = self:GetAbility():GetSpecialValueFor( "knockback_dist" ),
                         knockback_height = 0,
                         center_x = hCaster:GetAbsOrigin().x,
@@ -1388,12 +1391,7 @@ function gogeta_upper_kick:OnSpellStart()
     local enemies = FUnitsRadShort(hCaster, 225, FIND_CLOSEST)
 -------------------------------------------------------------------------------------------------------------
     for _,enemy in pairs(enemies) do
-        local vDirection = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()
-                      
-        -- Remove Knockback modifier before applying it
-        if enemy:HasModifier("modifier_knockback") then
-            enemy:RemoveModifierByName("modifier_knockback")
-        end
+        local vDirection = (enemy:GetAbsOrigin() - hCaster:GetAbsOrigin()):Normalized()        
                       
         -- Add knockback air modifier and do Damage
         enemy:AddNewModifier(hCaster, self, "modifier_gogeta_upper_kick_state", { duration = fDuration, 
@@ -1406,6 +1404,11 @@ function gogeta_upper_kick:OnSpellStart()
         enemy:AddNewModifier(hCaster, self, "modifier_marked", { duration = fDuration })
         damageTable.victim = enemy    
         ApplyDamage(damageTable)
+        
+        -- Remove Knockback modifier
+        if enemy:HasModifier("modifier_knockback") then
+            enemy:RemoveModifierByName("modifier_knockback")
+        end
         
         -- Tell the Combo Tracker that an enemy is in the air
         Gogeta_Air_Time_Ready = 1

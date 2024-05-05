@@ -128,6 +128,10 @@ function modifier_ultra_instinct:OnCreated(table)
         end
     end
         
+        for i = 1, 4 do
+            i = i <= 1 and nil or i
+            self.parent:RemoveModifierByName("modifier_super_saiyan" .. i)
+        end
 
         self.parent:Purge(false, true, false, true, true)
     end
@@ -157,6 +161,11 @@ function modifier_ultra_instinct:OnDestroy()
         end
     end
 			
+            local hSuperSaiyan = self.parent:FindAbilityByName("super_saiyan")
+            if self.parent:HasShard() and IsNotNull(hSuperSaiyan) and hSuperSaiyan:IsTrained() then
+                hSuperSaiyan:EndCooldown()
+                hSuperSaiyan:CastAbility()                
+            end
 
             if self.parent:IsRealHero() then
                 self.ability:StartCooldown(self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction())

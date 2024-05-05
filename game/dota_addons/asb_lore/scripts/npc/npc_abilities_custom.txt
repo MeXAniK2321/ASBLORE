@@ -1150,6 +1150,8 @@
 		"MaxLevel"                      "1"
 	"RequiredLevel"                 "30"
 	"LevelsBetweenUpgrades"         "1"
+    
+		"HasShardUpgrade" "1"
 
 		//"MaxLevel"								"7"
 
@@ -1172,7 +1174,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"launcher_width"				"400"
+				"launcher_width"				"300"
 			}
 		}
 	}
@@ -16990,7 +16992,7 @@
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"25 20 20 18"
+		"AbilityCooldown"				"20 17 14 11"
 		"AbilityManaCost"				"90 100 110 120"
 
 		// Damage
@@ -17108,6 +17110,8 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+        
+		"HasShardUpgrade" "1"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -17309,7 +17313,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		//"AbilityCastAnimation"          "ACT_DOTA_IDLE"
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -17854,6 +17858,8 @@
 		"ScriptFile"					"heroes/miku_hadouken"
 		"AbilityTextureName"			"hatsune_1"
 		"FightRecapLevel"				"1"
+        
+		"HasShardUpgrade" "1"
 		
 		"precache"
 		{
@@ -18376,6 +18382,7 @@
 		"AbilityManaCost"						"200"
 		//"AbilityCastRange"						"1200"
 
+		"HasShardUpgrade" "1"
 		"HasScepterUpgrade"						"0"
 
 		"MaxLevel"								"1"
@@ -20854,7 +20861,7 @@
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.7"
+		"AbilityCastPoint"				"0.5"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -25653,6 +25660,8 @@
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
 		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+        
+		"HasShardUpgrade" "1"
 	
 		
 		// Ability General
@@ -29392,7 +29401,7 @@
       "03"
       {
         "var_type"          "FIELD_INTEGER"
-        "damage"          "300 475 500 625"
+        "damage"          "500 700 900 1100"
 
       }
       "03"
@@ -29512,7 +29521,7 @@
       "01"
       {
         "var_type"        "FIELD_FLOAT"
-        "stun_duration"     "2.0"
+        "stun_duration"     "2.5"
       }
       "02"
       {
@@ -29559,7 +29568,7 @@
         "03"
         {
             "var_type"          "FIELD_INTEGER"
-            "damage"             "700"
+            "damage"             "1000"
         
         }
         "03"
@@ -29809,7 +29818,7 @@
       "05"
       {
         "var_type"          "FIELD_INTEGER"
-        "bleed_damage"      "200"
+        "bleed_damage"      "700"
       
       }
     }
@@ -31235,6 +31244,7 @@
 		"AbilityTextureName"			"billy/billy3"
 		"FightRecapLevel"				"1"
 		"MaxLevel"						"3"
+		"HasShardUpgrade" "1"
 		"HasScepterUpgrade"           "0"
 		
 		
@@ -32016,6 +32026,8 @@
 
 		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+        
+		"HasShardUpgrade" "1"
 		
 		"precache"
 		{
@@ -33180,6 +33192,7 @@
 		"MaxLevel"						"1"
 		"RequiredLevel" "18"
 		
+		"HasShardUpgrade" "1"
 		
 		// Ability General
 		//-------------------------------------------------------------------------------------------------------------
@@ -35264,7 +35277,7 @@
 		"AbilityCastPoint"						"0.2"
 		"AbilityCooldown"						"40 30 25"
 		
-
+		"HasShardUpgrade" "1"
 
 		"AbilitySpecial"
 		{
@@ -38544,6 +38557,8 @@
 		"AbilityCooldown"						"70"
 		"MaxLevel"                              "1"
 		"RequiredLevel" "18"
+        
+		"HasShardUpgrade" "1"
 		"HasScepterUpgrade" "1"
 
 		"AbilitySpecial"
@@ -45042,7 +45057,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
