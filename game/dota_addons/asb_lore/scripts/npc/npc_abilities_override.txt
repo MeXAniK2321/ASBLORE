@@ -612,6 +612,7 @@
 	{
 		
 				"ItemPurchasable"				"1"
+				"ItemInitialStockTime"			"720.0"
 	}
 	"item_recipe_wind_waker"
 	{

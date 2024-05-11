@@ -121,17 +121,15 @@ function modifier_air_banner:IsPurgable() return false end
 function modifier_air_banner:IsPurgeException() return false end
 function modifier_air_banner:RemoveOnDeath() return false end
 
-function modifier_air_banner:OnCreated()
+function modifier_air_banner:OnCreated(hTable)
     if IsServer() then
     
 
-        self:StartIntervalThink(FrameTime())
+        self:StartIntervalThink(0.1)
     end
 end
 function modifier_air_banner:OnRefresh()
-    if IsServer() then
-       
-    end
+    self:OnCreated(hTable)
 end
 function modifier_air_banner:DeclareFunctions()
     local funcs = {

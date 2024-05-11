@@ -1446,8 +1446,9 @@ modifier_goju_domain_expansion = modifier_goju_domain_expansion or class({})
 
 function modifier_goju_domain_expansion:IsHidden() return false end
 function modifier_goju_domain_expansion:IsPurgeable() return false end
-function modifier_goju_domain_expansion:IsPurgeException() return true end
+function modifier_goju_domain_expansion:IsPurgeException() return false end
 function modifier_goju_domain_expansion:RemoveOnDeath() return true end
+function modifier_goju_domain_expansion:IsAura() return true end
 function modifier_goju_domain_expansion:CheckState()
     local state =   { 
                         [MODIFIER_STATE_STUNNED] = true,
@@ -1738,8 +1739,9 @@ modifier_goju_hollow_purple_active = modifier_goju_hollow_purple_active or class
 
 function modifier_goju_hollow_purple_active:IsHidden() return false end
 function modifier_goju_hollow_purple_active:IsPurgeable() return false end
-function modifier_goju_hollow_purple_active:IsPurgeException() return true end
+function modifier_goju_hollow_purple_active:IsPurgeException() return false end
 function modifier_goju_hollow_purple_active:RemoveOnDeath() return true end
+function modifier_goju_hollow_purple_active:IsAura() return true end
 function modifier_goju_hollow_purple_active:CheckState()
     local state =   { 
                         [MODIFIER_STATE_STUNNED] = true,

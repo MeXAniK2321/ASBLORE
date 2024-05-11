@@ -120,16 +120,16 @@ function item_gay_hammer:OnSpellStart()
 	  local hero = PlayerResource:ReplaceHeroWith(iPlayerID, hero_replaced, iGold, iXP)
 	    for k, v in pairs(items) do
 		  if k and v then
-		    local item = hero:AddItem(v)
+		    local item = v:IsNeutralDrop() and hero:AddItemByName("item_pandora_box") or hero:AddItem(v)
             if IsNotNull(item) then
-		      hero:SwapItems(item:GetItemSlot(), k)
+		        hero:SwapItems(item:GetItemSlot(), k)
             end
 		  end
 	    end
 
       -- Modify Gold and XP
-	  --hero:ModifyGold(target:GetGold(), true, 0)
-      --hero:AddExperience(target:GetCurrentXP() - hero:GetCurrentXP(), 0, false, false)
+	  hero:ModifyGold(iGold, true, 0)
+      hero:AddExperience(iXP, 0, false, false)
 
 	  -- Particles and Sound Effects
 	  local cast_fx = ParticleManager:CreateParticle("particles/baal_shattered_screen_ultimate.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)

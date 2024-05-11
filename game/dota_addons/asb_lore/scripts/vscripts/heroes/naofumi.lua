@@ -1595,12 +1595,11 @@ function shield_prison:OnSpellStart()
                             center_z = caster:GetAbsOrigin().z }
 
         local bCheck = false
+        
+        local fCallBackPrison = function(iEntIndex, hPrison)
+            local hTarget = type(iEntIndex) == "number" and EntIndexToHScript(iEntIndex) or self.idiot
+            hPrison       = type(iEntIndex) == "number" and hPrison or self.idiot_prison2
 
-        local tPrisonCopy = TableCopy(self.idiot_prison)
-        for iEntIndex, hPrison in pairs(tPrisonCopy) do
-            if not caster:HasShard() then break end
-            
-            local hTarget = iEntIndex and EntIndexToHScript(iEntIndex)
             if IsNotNull(hTarget) and IsNotNull(hPrison) and hTarget:HasModifier("modifier_shield_prison_enemy") then
                 hPrison:AddNewModifier(caster, self, "modifier_knockback", knockback)
                 hPrison:AddNewModifier(caster, self, "modifier_kill", {duration = 11})
@@ -1608,21 +1607,19 @@ function shield_prison:OnSpellStart()
                 hPrison:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
                 hTarget:AddNewModifier(caster, self, "modifier_iron_maiden", {duration = 12})
                 hTarget:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
-                self.idiot_prison[iEntIndex] = nil
                 bCheck = true
-                print(self.idiot_prison[iEntIndex])
             end
+            
+            self.idiot_prison = self.idiot_prison and nil
+            
+            return iEntIndex
         end
-        
-        if not caster:HasShard() then
-            if IsNotNull(self.idiot) and IsNotNull(self.idiot_prison2) then
-                self.idiot_prison2:AddNewModifier(caster, self, "modifier_knockback", knockback)
-                self.idiot_prison2:AddNewModifier(caster, self, "modifier_kill", {duration = 11})
-                self.idiot_prison2:AddNewModifier(caster, self, "modifier_prison_invul", {duration = 10.9})
-                self.idiot_prison2:AddNewModifier(caster, self, "modifier_shield_prison1", {duration = 16})
-                self.idiot:AddNewModifier(caster, self, "modifier_iron_maiden", {duration = 12})
-                self.idiot:AddNewModifier(caster, self, "modifier_shield_prison_enemy", {duration = 16})
-                bCheck = true
+
+        local tPrisonCopy = TableCopy(self.idiot_prison)
+        for iEntIndex, hPrison in pairs(tPrisonCopy) do
+            iEntIndex = caster:HasShard() and iEntIndex
+            if fCallBackPrison(iEntIndex, hPrison) == false then 
+                break 
             end
         end
          

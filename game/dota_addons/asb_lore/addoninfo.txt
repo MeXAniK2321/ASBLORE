@@ -14,7 +14,7 @@
 	[
 		"ruin_solo",
 		"balance_duo",
-		"birzhamemov_5v5"
+		"desert_quintet"
 	]
 	IsPlayable = 1
 	Default_Keys = 
@@ -28,8 +28,8 @@
 	map_options = 
 	[
 	    {
-			MaxPlayers = 10
-			map = "birzhamemov_5v5"
+			MaxPlayers = 15
+			map = "desert_quintet"
 		},
 		{
 			MaxPlayers = 10

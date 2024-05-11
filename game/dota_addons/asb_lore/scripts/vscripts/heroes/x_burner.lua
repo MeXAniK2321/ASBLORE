@@ -135,6 +135,7 @@ function modifier_x_burner_charges:IsHidden() return not self:GetCaster():HasSha
 function modifier_x_burner_charges:IsDebuff() return false end
 function modifier_x_burner_charges:IsPurgable() return false end
 function modifier_x_burner_charges:DestroyOnExpire() return false end
+function modifier_x_burner_charges:RemoveOnDeath() return false end
 function modifier_x_burner_charges:GetAttributes() return MODIFIER_ATTRIBUTE_MULTIPLE end
 function modifier_x_burner_charges:DeclareFunctions()
     local funcs = {
