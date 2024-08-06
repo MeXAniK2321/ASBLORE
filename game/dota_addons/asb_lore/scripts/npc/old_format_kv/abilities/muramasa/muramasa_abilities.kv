@@ -1,0 +1,1076 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Muramasa - Sword dance (Q)
+	//=================================================================================================================
+	//MADE BY ZLODEMON FOR CUSTOM GAME FATE/BALANCE COPYING WITHOUT ASKING IS PERMITTED  
+
+	"muramasa_dance"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_dance"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_dance"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_1"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"250"
+ 		"AbilityCooldown"				"20 19 18 17"
+		"AbilityManaCost"				"100"
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"				"1.5"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_mod"				"30 35 38 40"
+			} 
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_amp"				"5"
+			}  
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_amp_duration"				"2"
+			}   
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_dmg"				"30 40 50 70"
+			}   
+		}
+	}
+
+	//=================================================================================================================
+	// Muramasa - Sword dance upgraded (D-Q)
+	//=================================================================================================================
+	"muramasa_dance_upgraded"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_dance_upgraded"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_dance_upgraded"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_1"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"250"
+ 		"AbilityCooldown"				"20 19 18 17"
+		"AbilityManaCost"				"100"
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"				"3"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_mod"				"60 65 70 75"
+			} 
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_amp"				"5"
+			}  
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_amp_duration"				"2"
+			}  
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_dmg"				"70 80 90 100"
+			}   
+		}
+	}
+	//=================================================================================================================
+	// Muramasa - Sword dance STOP (Q)
+	//=================================================================================================================
+	"muramasa_dance_stop"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_dance_stop"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"25"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_HIDDEN|DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_dance"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.0"
+ 		"AbilityCooldown"				"0"
+		"AbilityManaCost"				"0"
+		"AbilitySpecial"
+		{
+			 
+			 
+			
+		}
+	}
+
+
+
+	 
+	//=================================================================================================================
+	// Muramasa - throw(W)
+	//=================================================================================================================
+	"muramasa_throw"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_throw"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_grab"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_2"
+		"AnimationPlaybackRate" 		"1.2"
+		"AOERadius"						"%throw_range"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"1200"
+		//"AbilityCastRangeBuffer"		"100"
+ 		"AbilityCooldown"				"12 11.5 11 10.5"
+		"AbilityManaCost"				"200"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage"				"600 800 1000 1400"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"				"0.8 1 1.2 1.4"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"250"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_range"				"1000"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_speed"				"2000"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_duration"				"0.4"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_range_up"				"1200"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_speed_up"				"2000"
+			}
+			  
+			 
+		}
+	}
+	
+
+	//=================================================================================================================
+	// Muramasa - throw upgraded(D-W)
+	//=================================================================================================================
+	"muramasa_throw_upgraded"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_throw_upgraded"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_grab_upgraded"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_GHOST_SHIP"
+		"AnimationPlaybackRate" 		"1.2"
+		"AOERadius"						"%range"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"1200"
+		//"AbilityCastRangeBuffer"		"100"
+ 		"AbilityCooldown"				"12 11.5 11 10.5"
+		"AbilityManaCost"				"200"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage"				"1000 1325 1650 2000"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"					"0.8 1 1.2 1.4"
+			} 
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"250"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_range"				"1200"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_speed"				"2400"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"throw_duration"				"0.5"
+			}
+			  
+			 
+		}
+	}
+	 
+ 
+
+
+	//=================================================================================================================
+	// Muramasa - Rush(E)
+	//=================================================================================================================
+	"muramasa_rush"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_rush"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_rush"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_4"
+		"AnimationPlaybackRate" 		"1.0"
+		"AOERadius"						"%range"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"1100"
+ 		"AbilityCooldown"				"28 27 26 25"
+		"AbilityManaCost"				"400"
+
+		//"AbilityChannelTime"			"0.5"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage"				"400 500 600 700"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"				"2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"1100"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"channel_duration"				"1"// not workin
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burn_dmg_per_tick"				"50 65 80 95" //it ticks every 0.5 seconds atm
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_mr"				"0"
+			}
+			 "07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"speed"				"3000"
+			} 
+			  "08"
+			{
+				"var_type"			"FIELD_FLOAT"//per half a second lol
+				"range_per_second"				"1100"
+			} 
+		}
+	}
+
+	//=================================================================================================================
+	// Muramasa - Rush upgraded(E)
+	//=================================================================================================================
+	"muramasa_rush_upgraded"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_rush_upgraded"
+		"MaxLevel"						"4"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_HIDDEN|DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_rush_upgraded"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_4"
+		"AnimationPlaybackRate" 		"1.0"
+		"AOERadius"						"%range"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"1100"
+ 		"AbilityCooldown"				"28 27 26 25"
+		"AbilityManaCost"				"400"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+					"damage"				"700 800 1000 1200"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"				"2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"1100"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"channel_duration"				"1"// not workin
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burn_dmg_per_tick"				"50 75 100 125" //it ticks every 0.5 seconds atm
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_mr"				"0"
+			}
+			 "07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"speed"				"3000"
+			} 
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range_per_second"				"1100"
+			} 
+		}
+	}
+	 
+
+	
+	//=================================================================================================================
+	// Muramasa - upgrade (D)
+	//=================================================================================================================
+	"muramasa_upgrade"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_upgrade"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"8"
+		"LevelsBetweenUpgrades"			"25"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET| DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_upgrade"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_9"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.2"
+		//"AbilityCastRange"				"300"
+ 		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"200"
+		"AbilitySpecial"
+		{
+			 
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"cost"				"3"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"radius"				"250"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_dmg"				"100"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_per_agi"				"3"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT" //eye of karma attribute
+				"att_damage_reduction"				"10"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT" //eye of karma attribute
+				"vision_bonus"				"400"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Muramasa - Sword Creation (F)
+	//=================================================================================================================
+	"muramasa_sword_creation"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_sword_creation"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"25"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE|DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"custom/muramasa/muramasa_sword_creation"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_7"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"max_stacks"				"5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"attack_aoe_radius"				"120"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"base_dmg"					"100"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"dmg_per_agi"				"4"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"dmg_berserker"				"80"
+			}
+			 
+		}
+	}		
+
+
+	//=================================================================================================================
+	// Muramasa - Eye of karma (attribute D)
+	//=================================================================================================================
+	"muramasa_eye_of_karma"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_eye_of_karma"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"16"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"custom/muramasa/muramasa_eye_of_karma"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityCooldown"				"45"
+		"AbilityManaCost"				"200"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_9"
+		"AnimationPlaybackRate" 		"0.0"
+		"AbilityCastPoint"				"0.0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"search_radius"				"2500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"				"5"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration_per_attack"				"0.5"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"mr_reduction_per_attack"				"2"
+			}
+		}
+	}		
+	 
+	 
+	//=================================================================================================================
+	// Muramasa - tsumukari muramasa (R)
+	//=================================================================================================================
+	"muramasa_tsumukari"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_tsumukari"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				" DOTA_ABILITY_BEHAVIOR_NO_TARGET| DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_tsumukari"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_9"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastRange"				"800"
+ 		"AbilityCooldown"				"4"
+		"AbilityManaCost"				"100"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"buff_duration"				"30"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"atk_dmg_amplify"				"2.0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"cd_after_release"				"3"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"attribute_armor"				"1"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"attribute_mr"				"1"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"radius"				"250"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_dmg"				"100"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_per_agi"				"5"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"att_duration"				"1.5"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"attribute_ms"				"1.5"
+			}
+		}
+		
+	}
+	//=================================================================================================================
+	// Muramasa - tsumukari muramasa release (R)
+	//=================================================================================================================
+	"muramasa_tsumukari_release"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_tsumukari_release"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_tsumukari_end"
+		"AbilityCastAnimation" 			"ACT_DOTA_CAST_ABILITY_6"
+		"AnimationPlaybackRate" 		"1.0"
+		"AOERadius"						"%range"
+		"AbilityCastPoint"				"0.9"
+		"AbilityCastRange"				"1200"
+ 		"AbilityCooldown"				"4"
+		"AbilityManaCost"				"400"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"buff_duration"				"20"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"slow_power"				"60"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_radius"				"120"
+			} 
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_first"				"450"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_impact"				"1800"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"1250"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"str_scale"				"8"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Muramasa combo - Tsumukari muramasa full release(D-D-R)
+	//=================================================================================================================
+	"muramasa_tsumukari_combo"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_tsumukari_combo"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"25"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT|
+		DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_tsumukari_combo"
+		"AbilityCastAnimation" 			"ACT_DOTA_ECHO_SLAM"
+		"AnimationPlaybackRate" 		"1.0"
+		"AbilityCastPoint"				"0.6"
+ 		"AbilityCooldown"				"45"
+ 		"AOERadius"						"%range"
+		"AbilityManaCost"				"600"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"range"				"2500"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"cast_time"				"5"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"explosion_delay"				"3"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_first"				"1500"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_explosion"				"6000"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burn_dmg_per_tick"				"700"
+			} 
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"hit_radius"				"300"
+			}  
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_impact"				"1500"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"debuffs_duration"				"4"
+			}
+		}
+	}
+
+	"special_bonus_fate_muramasa_15r" //AOE DMG ON D AND R CAST
+		{
+			"BaseClass"						"special_bonus_undefined"														
+			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+			"LinkedAbility"
+			{
+				"01"        				"muramasa_upgrade"
+			}
+
+			"AbilitySpecial"
+			{
+				"01"
+				{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"5"
+				}			
+			}
+		}
+
+	 
+	"special_bonus_fate_muramasa_20r" //STR SCALE ON TSUMUKARI
+		{
+			"BaseClass"						"special_bonus_undefined"														
+			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+			"LinkedAbility"
+			{
+				"01"        				"muramasa_tsumukari"
+			}
+
+			"AbilitySpecial"
+			{
+				"01"
+				{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"6"
+				}			
+			}
+		}
+	"special_bonus_fate_muramasa_20l" //RESIST AND ARMOR IN TSUMUKARI
+		{
+			"BaseClass"						"special_bonus_undefined"														
+			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+			"LinkedAbility"
+			{
+				"01"        				"muramasa_tsumukari"
+			}
+
+			"AbilitySpecial"
+			{
+				"01"
+				{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"1"
+				}			
+			}
+		}
+	"special_bonus_fate_muramasa_25r" //COMBINATION
+		{
+			"BaseClass"						"special_bonus_undefined"														
+			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+			"LinkedAbility"
+			{
+				"01"        				"muramasa_rush"
+			}
+
+			"AbilitySpecial"
+			{
+				"01"
+				{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"5"
+				}			
+			}
+		}
+	"special_bonus_fate_muramasa_25l" //FLAME
+		{
+			"BaseClass"						"special_bonus_undefined"														
+			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+			"LinkedAbility"
+			{
+				"01"        				"muramasa_tsumukari"
+			}
+
+			"AbilitySpecial"
+			{
+				"01"
+				{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"5"
+				}			
+			}
+		}			
+
+	 //////////////////////SA ARE UNUSED DUE TO ASB != FATE. USING TALENTS INSTEAD
+
+
+	"muramasa_appreciation_of_swords_attribute"
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_appreciation_of_swords_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"17"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"mr_bonus"				"1" 		
+			} 
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"armor_bonus"				"2" 		
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"ms_bonus"				"1.5" 		
+			}
+			 
+		}		
+	}
+	"muramasa_sword_trial_attribute"
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_sword_trial_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"14"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"buff_duration"			"1.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"str_scale"			"6"
+			}
+			 
+		}		
+	}
+	"muramasa_eye_of_karma_attribute" //modifier is tied to upgrade ability as i wanted to fix in-attribute modifiers which broke sometimes
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_eye_of_karma_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"12"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"vision"				"400"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"reduction"				"10"
+			} 
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"search_radius"				"2500"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"				"5"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration_per_attack"				"0.5"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"mr_reduction_per_attack"				"2"
+			}
+			
+			
+			 
+		}		
+	}
+	"muramasa_flame_attribute"
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_flame_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"9"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"radius"				"250"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_dmg"				"100"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"dmg_per_agi"				"3"
+			}
+			 
+		}			
+	}
+	"muramasa_territory_creation_attribute"
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_territory_creation_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"13"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cooldown"				"1.5"
+			}
+			 
+		}		
+	}
+
+	"muramasa_wicked_sword_attribute"
+	{
+		 
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/muramasa/muramasa_attributes"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"			"custom/muramasa/muramasa_wicked_sword_attribute"
+		"AbilityCooldown"				"9999"
+
+		"AbilityManaCost"				"11"
+
+		 
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cast_window"				"1"
+			}
+			 
+		}		
+	}
+
+
+ }

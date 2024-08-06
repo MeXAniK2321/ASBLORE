@@ -380,6 +380,7 @@ function COverthrowGameMode:InitGameMode()
 	ListenToGameEvent( "dota_item_picked_up", Dynamic_Wrap( COverthrowGameMode, "OnItemPickUp"), self )
 	ListenToGameEvent( "dota_npc_goal_reached", Dynamic_Wrap( COverthrowGameMode, "OnNpcGoalReached" ), self )
 	ListenToGameEvent( "player_disconnect", Dynamic_Wrap( COverthrowGameMode, "OnDisconnect"), self)
+	ListenToGameEvent( "dota_player_pick_hero", Dynamic_Wrap( COverthrowGameMode, "OnHeroPick" ), self )
 	
 
 	Convars:RegisterCommand( "overthrow_force_item_drop", function(...) self:ForceSpawnItem() end, "Force an item drop.", FCVAR_CHEAT )

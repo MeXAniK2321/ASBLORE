@@ -10,7 +10,7 @@ function item_pikachu_replacer:OnSpellStart()
 	local arcana2 = 167912041	--Miku
     local arcana6 = 222299685	--Kepchila
 	local arcana7 = 117795030   --Tlen
-	self:SpendCharge()
+	self:SpendCharge(0)
 	if id32 == arcana1 then
 	self.hero = "npc_dota_hero_bane"
 	elseif id32 == arcana2 then
@@ -40,7 +40,7 @@ caster:AddNewModifier(caster, self, "modifier_replaced", {})
 	local table_sounds = {	"gay.hammer" }
 
 	EmitSoundOn(table_sounds[RandomInt(1, #table_sounds)], hero)
-	--self:SpendCharge()
+	--self:SpendCharge(0)
 
 
 

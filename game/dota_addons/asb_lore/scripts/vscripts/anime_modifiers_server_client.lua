@@ -3678,7 +3678,7 @@ function modifier_for_asb_mehanic_intellect_zero:DeclareFunctions()
     return tFunc
 end
 function modifier_for_asb_mehanic_intellect_zero:GetModifierMagicalResistanceDirectModification(keys)
-    return self.hParent:GetIntellect() * self:GetStackCount() * 0.001
+    return self.hParent:GetIntellect(false) * self:GetStackCount() * 0.001
 end
 function modifier_for_asb_mehanic_intellect_zero:OnCreated(hTable)
     self.hCaster  = self:GetCaster()

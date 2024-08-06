@@ -1,0 +1,676 @@
+"DOTAAbilities"
+{
+	//======================================================================================================
+	//Bogdan Abilities
+	//======================================================================================================
+	"unlimited_gay_works"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/bogdan/bogdan.lua"
+		"AbilityTextureName" 					"bogdan/bogdan2"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.3"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"10"
+		"AbilityManaCost"						"50"
+		//"AbilityCastRange"						"1200"
+
+		"IsGrantedByScepter"					"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"30"
+		"LevelsBetweenUpgrades"					"1"
+
+
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage"              "125"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"str"	                        "75"
+				
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor"	"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"radius"	"800"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"as"	"200"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"proc"				"400"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stat2"		"150"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"turn_rate"						"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"awake_mana"					"0"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"fixed_duration"				"30"
+			}
+		}
+	}
+	
+	"gay_bar"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/bogdan/bogdan.lua"
+		"AbilityTextureName"			"bogdan/bogdan1"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "1"
+		"LevelsBetweenUpgrades" "5"
+		"RequiredLevel" "8"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"500"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hunt_duration"			"12"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun"			"1.3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"			"1600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"arm"			"-6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"1400"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"			"12"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"			"1.6"
+			}
+		}
+	}
+"axe_berserkers_call_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/bogdan/axe_berserkers_call_lua"
+		"AbilityTextureName"			"gachi5"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+		"precache"
+		{
+			"soundfile"	"soundevents/bogdan.vsndevts"
+			"particle"	"particles/status_effect_beserkers_call1.vpcf"
+			"particle"	"particles/axe_beserkers_call1.vpcf"
+			"particle"	"particles/axe_beserkers_call_owner1.vpcf"
+			"particle"	"particles/hurk_storm.vpcf"
+			"particle"	"particles/hurk_gaynado.vpcf"
+			"particle"	"particles/hurk_bolt.vpcf"
+			"particle"	"particles/hurk_cum.vpcf"
+			"particle"	"particles/hurk_spank.vpcf"
+			"particle"	"particles/hurk_landing1.vpcf"
+			
+			
+		
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"28 20 16 10"
+		"AbilityManaCost"				"100 110 120 140"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"325 350 375 400"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"30 40 50 60"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2.0 2.0 2.0 2.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"300 400 450 600"
+				
+			}
+				"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow"				"-10 -13 -16 -20"
+				
+			}
+				"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"				"0.5 0.6 0.7 0.8"
+				
+			}
+		}
+	}
+	"special_bonus_bogdan_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+		"special_bonus_bogdan_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+		"special_bonus_bogdan_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+		"special_bonus_bogdan_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"0"
+			}			
+		}
+	}
+
+//================================================================
+//=================================================================
+"pangolier_shield_crash_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/bogdan/pangolier_shield_crash_lua"
+		"AbilityTextureName"			"gachi2"
+		"FightRecapLevel"				"1"
+		"RequiredLevel" "1"
+		"LevelsBetweenUpgrades" "4"
+		
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY3"
+		
+		"HasScepterUpgrade"			"0"
+		
+		"precache"
+		{
+			"particle"	"particles/pangolier_tailthump_cast1.vpcf"
+            "particle"	"particles/pangolier_ti8_immortal_shield_crash1.vpcf"
+			"particle"	"particles/hurk_storm.vpcf"
+			"particle"	"particles/hurk_gaynado.vpcf"
+			"particle"	"particles/hurk_bolt.vpcf"
+			"particle"	"particles/hurk_cum.vpcf"
+			"particle"	"particles/hurk_spank.vpcf"
+			"particle"	"particles/hurk_landing1.vpcf"
+			
+			
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"33 31 29"
+		"AbilityManaCost"				"80 100 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"400 600 800"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"hero_stacks"			"20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.1"
+				
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_duration"			"0.4"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"jump_duration_gyroshell"	"1"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_height"			"350"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_height_gyroshell"	"400"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_horizontal_distance"	"350 375 400"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"	"0.8 0.9 1.0 1.1"
+			}
+		}
+	}
+
+	
+
+//================================================================
+"gachi_storm"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/bogdan/gachi_storm"
+		"AbilityTextureName"			"gachi1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"AbilityCastAnimation"          "ACT_DOTA_CHANNEL_ABILITY_1"
+		"RequiredLevel"                 "1"
+		"precache"
+		{
+			"particle"	"particles/gachi_storm.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"525"
+		"AbilityCastPoint"				"0.2"
+		"AbilityChannelTime"			"12"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"55"
+		"AbilityManaCost"				"450"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"sand_storm_invis_delay"	"0.9 1.1 1.3 1.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_radius"		"1000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"AbilityDuration"		"12"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_damage"		"1000"
+				
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"		"0.1"
+			}
+		}
+	}
+
+	//=================================================================
+	"gaynado"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/bogdan/gaynado"
+		"AbilityTextureName" 					"gachi4"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.3"
+		//"AbilityChannelTime"					"2.6"
+		"AbilityCooldown"						"200"
+		"AbilityManaCost"						"350"
+		//"AbilityCastRange"						"350"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"                         "30"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_3"
+
+		"precache"
+		{
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_radius"					"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_per_sec"				"3500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_interval"				"0.1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pull_radius"					"600"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pull_speed"					"1300"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pull_leash"					"0"
+				
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"10"
+			}
+		}
+	}
+
+
+
+
+
+	"bogdan_key9"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/bogdan/bogdan_key9"
+		"AbilityTextureName"			"gachi3"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"HasShardUpgrade" "0"
+		"HasScepterUpgrade"					  	"1"
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"525 550 600 700"
+		"AbilityCastPoint"				"0.2"
+		"AbilityDuration"				"0.5 0.6 0.7 0.8"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20 15 10 10"
+		"AbilityManaCost"				"90 100 110 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_slow"					"-50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"			"1000 1050 1100 1150"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.5 0.6 0.7 0.8"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"			"200 300 450 600"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_factor"			"-75 -60 -45 -30"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"width"	"150"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range"			"1000 1100 1200 1300"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"int_scale"			"0.5 0.6 0.7 0.8"
+			}
+		}
+	}
+
+}

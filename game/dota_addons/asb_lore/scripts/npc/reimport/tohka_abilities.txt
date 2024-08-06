@@ -1,3 +1,4 @@
+
 "DOTAAbilities"
 {
 	//===================================================
@@ -44,25 +45,12 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"340"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"0.6 0.8 1.0 1.2"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"100 200 300 400"
-				
-			}
-		}
+		"AbilityValues"
+        {
+            "radius" "340"
+            "duration" "0.6 0.8 1.0 1.2"
+            "damage" "100 200 300 400"
+        }
 	}
 
 	"adonai_melek"
@@ -77,28 +65,12 @@
 		"AbilityCooldown"           "40 35 30 25"
 		"AbilityManaCost"				"90"
 		
-		"AbilitySpecial"
-		{
-		    "01"
-		    {
-		        "var_type"          				"FIELD_FLOAT"
-		        "armor_to_attack"             "1.0 1.1 1.2 2.3"
-				
-		    }
-		    "02"
-		    {
-		        "var_type"         			    "FIELD_FLOAT"
-		        "duration"          			"9 10 10 12"
-				
-		    }
-		    "03"
-		    {
-		        "var_type"          "FIELD_INTEGER"
-		        "bonus_armor"             "3 5 10 20"
-					
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "armor_to_attack" "1.0 1.1 1.2 2.3"
+            "duration" "9 10 10 12"
+            "bonus_armor" "3 5 10 20"
+        }
 	}
 
 	"tohka_combo_strike"
@@ -139,36 +111,14 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_damage"				"12 30 60"
-				
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"angle"						"140"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"350"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"3.0"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"bat"						"0.6 0.5 0.34"
-			}			
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "12 30 60"
+            "angle" "140"
+            "radius" "350"
+            "duration" "3.0"
+            "bat" "0.6 0.5 0.34"
+        }
 	}
 
 	"halvanhelen"
@@ -193,34 +143,14 @@
 		"RequiredLevel"                 		"8"
 		"LevelsBetweenUpgrades"         		"8"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"speed"							"1700"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"width"							"200"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"						"700 900 1200"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"move_slow"						"60"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"slow_duration"					"2"
-			}
-		}
+		"AbilityValues"
+        {
+            "speed" "1700"
+            "width" "200"
+            "damage" "700 900 1200"
+            "move_slow" "60"
+            "slow_duration" "2"
+        }
 	}
 
 	"tohka_inversion"
@@ -254,60 +184,19 @@
 		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"damage"              			"125"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"	                        "70"
-				
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"armor"	"40"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"	"800"
-			}
-			"05"
-			{
-				"var_type"								"FIELD_FLOAT"
-				"as"	"200"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"proc"				"400"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"stat2"		"150"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"turn_rate"						"1"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"awake_mana"					"0"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"fixed_duration"				"32"
-			}
-		}
+		"AbilityValues"
+        {
+            "damage" "125"
+            "str" "70"
+            "armor" "40"
+            "radius" "800"
+            "as" "200"
+            "proc" "400"
+            "stat2" "150"
+            "turn_rate" "1"
+            "awake_mana" "0"
+            "fixed_duration" "32"
+        }
 	}
 
 	"inversion_sword"
@@ -333,39 +222,15 @@
 		"LevelsBetweenUpgrades"         "1"
 
 	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"speed"							"2200"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"width"							"200"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor_damage"						"100"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"						"10000"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"move_slow"						"100"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"slow_duration"					"3"
-			}
-		}
+		"AbilityValues"
+        {
+            "speed" "2200"
+            "width" "200"
+            "armor_damage" "100"
+            "damage" "10000"
+            "move_slow" "100"
+            "slow_duration" "3"
+        }
 	}
 
 	"tohka_finishing_blow"
@@ -406,21 +271,11 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"250"
-				
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"stun"						"0.7"
-			}	
-			
-		}
+		"AbilityValues"
+        {
+            "damage" "250"
+            "stun" "0.7"
+        }
 	}
 
 	"special_bonus_tohka_20"
@@ -429,14 +284,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"1"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "1"
+        }
 	}
 	"special_bonus_tohka_25"
 	{
@@ -444,14 +295,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"0.05"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "0.05"
+        }
 	}
 	"special_bonus_tohka_20_alt"
 	{
@@ -459,14 +306,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"1"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "1"
+        }
 	}
 	"special_bonus_tohka_25_alt"
 	{
@@ -474,13 +317,9 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"0"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "0"
+        }
 	}
 }

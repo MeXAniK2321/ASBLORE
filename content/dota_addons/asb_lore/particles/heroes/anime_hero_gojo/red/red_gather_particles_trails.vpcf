@@ -1,9 +1,9 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf58:version{9bada39c-a931-42d0-abdd-e5c1b13d37a6} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf61:version{39d3ce1d-9442-4407-9b78-8317145b1732} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_ConstantColor = [ 143, 223, 109, 175 ]
-	m_nBehaviorVersion = 5
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 5
 	m_nMaxParticles = 64
 	m_controlPointConfigurations = 
@@ -506,6 +506,7 @@
 		{
 			_class = "C_OP_PlaneCull"
 			m_nPlaneControlPoint = 21
+			m_flPlaneOffset = 555.0
 		},
 	]
 	m_Renderers = 

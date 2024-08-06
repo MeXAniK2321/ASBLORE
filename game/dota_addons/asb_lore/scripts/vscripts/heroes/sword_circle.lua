@@ -1,6 +1,6 @@
 sword_circle = class({})
 LinkLuaModifier( "modifier_generic_silenced_lua", "modifiers/modifier_generic_silenced_lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_sword_circle", "modifiers/modifier_sword_circle", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_sword_circle2", "modifiers/modifier_sword_circle", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_sword_circle_blood", "modifiers/modifier_sword_circle", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_chair_that_is_approaching", "heroes/sword_circle.lua", LUA_MODIFIER_MOTION_NONE )
 
@@ -21,14 +21,14 @@ function sword_circle:OnSpellStart()
 	local target = self:GetCursorTarget()
 
 	-- load data
-	local duration = self:GetSpecialValueFor( "debuff_duration" )
+	local duration = 5.0--self:GetSpecialValueFor( "debuff_duration" )
 	if target:TriggerSpellAbsorb( self ) then return end
 
 	-- add debuff
 	target:AddNewModifier(
 		caster, -- player source
 		self, -- ability source
-		"modifier_sword_circle", -- modifier name
+		"modifier_sword_circle2", -- modifier name
 		{ duration = duration } -- kv
 	)
 

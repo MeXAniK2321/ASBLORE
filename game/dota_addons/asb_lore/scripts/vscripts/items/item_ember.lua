@@ -42,7 +42,7 @@ function item_ember:OnSpellStart()
 	
     hCaster:AddNewModifier(hCaster, self, "modifier_ember_buff", tGetValues)
     
-    self:SpendCharge()
+    self:SpendCharge(0)
 end
 
 

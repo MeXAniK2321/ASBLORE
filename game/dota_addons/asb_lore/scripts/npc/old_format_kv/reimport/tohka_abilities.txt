@@ -1,0 +1,486 @@
+"DOTAAbilities"
+{
+	//===================================================
+	//Tohka
+	//===================================================
+	"sandalfon"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tohka/tohka"
+		"AbilityTextureName"			"tohka/1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"4"
+		"LevelsBetweenUpgrades" "4"
+		"precache"
+		{
+			"soundfile"	"soundevents/Tohka.vsndevts"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_ATTACK"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17"
+		"AbilityManaCost"				"125"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"340"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"0.6 0.8 1.0 1.2"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"100 200 300 400"
+				
+			}
+		}
+	}
+
+	"adonai_melek"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"heroes/tohka/tohka.lua"
+		"AbilityTextureName"        "tohka/2"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_YES"
+		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel" "4"
+		"LevelsBetweenUpgrades" "3"
+		"AbilityCooldown"           "40 35 30 25"
+		"AbilityManaCost"				"90"
+		
+		"AbilitySpecial"
+		{
+		    "01"
+		    {
+		        "var_type"          				"FIELD_FLOAT"
+		        "armor_to_attack"             "1.0 1.1 1.2 2.3"
+				
+		    }
+		    "02"
+		    {
+		        "var_type"         			    "FIELD_FLOAT"
+		        "duration"          			"9 10 10 12"
+				
+		    }
+		    "03"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "bonus_armor"             "3 5 10 20"
+					
+		    }
+			
+		}
+	}
+
+	"tohka_combo_strike"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tohka/tohka"
+		"AbilityTextureName"			"tohka/3"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades" "4"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"					"ACT_DOTA_ATTACK"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 28 24"
+		"AbilityManaCost"				"20 40 80"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"12 30 60"
+				
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"angle"						"140"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"350"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"3.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bat"						"0.6 0.5 0.34"
+			}			
+			
+		}
+	}
+
+	"halvanhelen"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/tohka/tohka"
+		"AbilityTextureName" 					"tohka/4"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULITMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityManaCost"						"150 175 200"
+		"AbilityCastRange"						"1200"
+		"AbilityCastPoint"						"0.35"
+		"AbilityCooldown"						"60 55 50"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"MaxLevel"                     			"3"
+		"RequiredLevel"                 		"8"
+		"LevelsBetweenUpgrades"         		"8"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"1700"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"700 900 1200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"move_slow"						"60"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"slow_duration"					"2"
+			}
+		}
+	}
+
+	"tohka_inversion"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/tohka/tohka.lua"
+		"AbilityTextureName" 					"tohka/5"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.3"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"170"
+		"AbilityManaCost"						"250"
+		//"AbilityCastRange"						"1200"
+
+		//"IsGrantedByScepter"						"1"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"30"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"         		 	"ACT_DOTA_CAST_ABILITY_2"
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage"              			"125"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"str"	                        "70"
+				
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor"	"40"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"radius"	"800"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"as"	"200"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"proc"				"400"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stat2"		"150"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"turn_rate"						"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"awake_mana"					"0"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"fixed_duration"				"32"
+			}
+		}
+	}
+
+	"inversion_sword"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/tohka/tohka"
+		"AbilityTextureName" 					"tohka/5_1"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULITMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityManaCost"						"400"
+		"AbilityCastRange"						"3000"
+		"AbilityCastPoint"						"0.8"
+		"AbilityCooldown"						"120"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"MaxLevel"                      "1"
+		"RequiredLevel"                 "30"
+		"LevelsBetweenUpgrades"         "1"
+
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"2200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_damage"						"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"10000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"move_slow"						"100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"slow_duration"					"3"
+			}
+		}
+	}
+
+	"tohka_finishing_blow"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/tohka/tohka"
+		"AbilityTextureName"			"tohka/6"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"IsGrantedByScepter"			"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_7"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"250"
+				
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun"						"0.7"
+			}	
+			
+		}
+	}
+
+	"special_bonus_tohka_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1"
+			}			
+		}
+	}
+	"special_bonus_tohka_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0.05"
+			}			
+		}
+	}
+	"special_bonus_tohka_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"1"
+			}			
+		}
+	}
+	"special_bonus_tohka_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0"
+			}			
+		}
+	}
+}

@@ -766,6 +766,115 @@ end
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Red Orb (Q)
 ---------------------------------------------------------------------------------------------------------------
+LinkLuaModifier("modifier_gojo_hollow_nuke", "heroes/gojo/gojo.lua", LUA_MODIFIER_MOTION_VERTICAL)
+modifier_gojo_hollow_nuke = modifier_gojo_hollow_nuke or class({})
+
+function modifier_gojo_hollow_nuke:IsHidden() return false end
+function modifier_gojo_hollow_nuke:IsPurgeable() return false end
+function modifier_gojo_hollow_nuke:IsPurgeException() return false end
+function modifier_gojo_hollow_nuke:RemoveOnDeath() return true end
+function modifier_gojo_hollow_nuke:CheckState()
+    local func = {
+                    [MODIFIER_STATE_COMMAND_RESTRICTED] = true,
+                    [MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true,
+                    [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
+                    [MODIFIER_STATE_ROOTED] = true,
+                    [MODIFIER_STATE_DISARMED] = true,
+                    [MODIFIER_STATE_SILENCED] = true,
+                    [MODIFIER_STATE_MUTED] = true,
+                    [MODIFIER_STATE_INVULNERABLE] = true,
+                    [MODIFIER_STATE_NO_HEALTH_BAR] = true,
+                 }
+    return func
+end
+function modifier_gojo_hollow_nuke:OnCreated(hTable)
+    if IsServer() then
+        self.caster  = self:GetCaster()
+        self.parent  = self:GetParent()
+        self.ability = self:GetAbility()
+        
+        self.iFPS         = 30 -- Frames per second
+        self.fDuration    = 228 / self.iFPS -- Divide total frames by FPS
+        self.iDistance    = 445 -- Travel height
+        self.fTravelTime  = 70 / self.iFPS -- Travel time is 70 frames (Frame ~ 95 - 165)
+        self.fUnitsPerSec = self.iDistance / self.fTravelTime
+        
+       self.fRedBallTime  = 75 / self.iFPS
+       self.fTravelDelay  = 95 / self.iFPS -- Start when frames reach 95
+        
+        if IsNotNull(self.parent)
+            and not self.iHollowNukeEffect then
+
+            self.iHollowNukeEffect =  ParticleManager:CreateParticle("particles/test/custom/hollow_purple_nuke_v2.vpcf", PATTACH_WORLDORIGIN, nil)
+                                      --ParticleManager:SetParticleControl(self.iHollowNukeEffect, 0, self.parent:GetOrigin()) -- Set Main Point Initial Origin
+                                      ParticleManager:SetParticleControlTransform(self.iHollowNukeEffect, 0, self.parent:GetOrigin(), self.parent:GetAngles()) -- Use This Instead (Origin + Angles)
+                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 60, self.parent:GetOrigin()) -- Set Initial Blue Ball Origin
+                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 22, Vector(0, self.fRedBallTime - 0.2, 0)) -- Red Ball Spawn Timer
+                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 23, Vector(0, self.fRedBallTime - 0.3, 0)) -- Red Ball Spawn Timer Glow
+        end
+        
+        if self:ApplyVerticalMotionController() == false then 
+            self:Destroy()
+        end
+        
+        self.__fElapsedTime = self.__fElapsedTime or 0
+        
+        self:StartIntervalThink(FrameTime())
+    end
+end
+function modifier_gojo_hollow_nuke:OnIntervalThink()
+    local me = self.parent
+    local dt = FrameTime()
+
+    if not IsNotNull(me) or not me:IsAlive() or not self.iHollowNukeEffect then
+        self:Destroy()
+        return
+    end
+    
+    self.__fElapsedTime = self.__fElapsedTime + dt
+    
+    --========================--
+    self:BallsThinking(me, dt)
+    --========================--
+    
+    if self.fTravelDelay > 0 then
+        --self.parent:InterruptMotionControllers(true)
+        self.fTravelDelay = self.fTravelDelay - dt
+        return
+    end
+    
+    local vCurPos = me:GetOrigin()
+    local vGround = GetGroundPosition(vCurPos, me)
+    local vNewPos = self.fUnitsPerSec * dt
+    local vSetPos = vCurPos.z >= vGround.z + self.iDistance
+                    and vCurPos
+                    or vCurPos + Vector(0, 0, vNewPos)
+                    
+    me:SetOrigin(vSetPos)
+    print("HUH")
+end
+function modifier_gojo_hollow_nuke:BallsThinking(me, dt)
+    local vCurPos = me:GetOrigin()
+    local vGround = GetGroundPosition(vCurPos, me)
+    
+    -- Move Main Origin
+    ParticleManager:SetParticleControlTransform(self.iHollowNukeEffect, 0, vGround, self.parent:GetAngles())
+    -- Move Blue Ball Origin
+    ParticleManager:SetParticleControl(self.iHollowNukeEffect, 60, vCurPos)
+    
+    print("HUHHHHHH????")
+end
+function modifier_gojo_hollow_nuke:OnVerticalMotionInterrupted()
+    if IsServer() then
+        --self:Destroy()
+    end
+end
+function modifier_gojo_hollow_nuke:OnDestroy()
+    if IsServer() then
+        ParticleManager:DestroyParticle(self.iHollowNukeEffect, true)
+        ParticleManager:ReleaseParticleIndex(self.iHollowNukeEffect) 
+    end
+end
 
 goju_red_orb = goju_red_orb or class({})
 
@@ -774,6 +883,8 @@ function goju_red_orb:GetAOERadius()
 end
 function goju_red_orb:OnSpellStart()
     local hCaster = self:GetCaster()
+                           
+    --hCaster:AddNewModifier(hCaster, self, "modifier_gojo_hollow_nuke", { duration = 15.0 })
     
     self:CreateRedOrb()
 end

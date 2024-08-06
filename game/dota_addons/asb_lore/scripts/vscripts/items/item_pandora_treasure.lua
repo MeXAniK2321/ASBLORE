@@ -6,7 +6,7 @@ function item_pandora_treasure:OnSpellStart()
 	local caster = self:GetCaster()
 	if self:GetCaster():HasModifier("modifier_treasure_taken") then
 	else
-	self:SpendCharge()
+	self:SpendCharge(0)
 	caster:AddNewModifier(caster, self, "modifier_treasure_taken", {})
 	local item = CreateItem("item_last_star", caster, self)
 	    caster:AddItem(item)

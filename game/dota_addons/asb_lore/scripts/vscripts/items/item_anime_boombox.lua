@@ -15,7 +15,7 @@ function item_anime_boombox:OnSpellStart()
 	caster:AddNewModifier(caster, self, "modifier_item_anime_boombox", {})
 
 
-self:SpendCharge()
+self:SpendCharge(0)
 end
 
 

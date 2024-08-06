@@ -10,7 +10,7 @@ function item_monster_energy:OnSpellStart()
 	caster:AddNewModifier(caster, self, "modifier_monster_energy", {} )
 	EmitSoundOn("beer.monster_energy", caster)
     caster:CalculateStatBonus(true)
-	self:SpendCharge()
+	self:SpendCharge(0)
 end
 
 

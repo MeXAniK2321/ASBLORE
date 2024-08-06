@@ -1,3 +1,4 @@
+
 "DOTAAbilities"
 {
 	//======================================================================================================
@@ -48,37 +49,14 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"			"1.5"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"dragon_cast_range"			"400"
-				
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cooldown_increase"			"5 7 9 11"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"			"200 300 500 600"
-				
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow"			"-25 -40 -60 -80"
-				
-			}
-		}
+		"AbilityValues"
+        {
+            "duration" "1.5"
+            "dragon_cast_range" "400"
+            "cooldown_increase" "5 7 9 11"
+            "damage" "200 300 500 600"
+            "slow" "-25 -40 -60 -80"
+        }
 	}
 	"elemental_sight"
 	{
@@ -119,15 +97,10 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"1000 1300 2000"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "radius" "1000 1300 2000"
+        }
 	}
 		"ssid_breaker"
 	{
@@ -169,26 +142,12 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"400"
-			}
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"350 550 700"
-
-			}
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"0.5 0.7 1.1"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "radius" "400"
+            "damage" "350 550 700"
+            "duration" "0.5 0.7 1.1"
+        }
 	}
 	"mist_disparsion"
 	{
@@ -229,21 +188,11 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"int_damage"		"1.1"
-			}
-		
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"		"200"
-			}
-		}
+		"AbilityValues"
+        {
+            "int_damage" "1.1"
+            "radius" "200"
+        }
 	}
 	"tatsuya_seal_off"
 	{
@@ -277,60 +226,19 @@
 
 		
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"zenitsu_flash_upgrade_distance""0"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"int"	"100"
-				
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"agi"	"50"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"all_stats"	"75"
-			}
-			"05"
-			{
-				"var_type"								"FIELD_FLOAT"
-				"zenitsu_hear_upgrade_flash_charges"	"0 0 2"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_movespeed"				"40 60 80"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_amplify"		               "60"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"turn_rate"						"1"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"awake_mana"					"0"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"fixed_duration"				"34"
-			}
-		}
+		"AbilityValues"
+        {
+            "zenitsu_flash_upgrade_distance" "0"
+            "int" "100"
+            "agi" "50"
+            "all_stats" "75"
+            "zenitsu_hear_upgrade_flash_charges" "0 0 2"
+            "bonus_movespeed" "40 60 80"
+            "bonus_amplify" "60"
+            "turn_rate" "1"
+            "awake_mana" "0"
+            "fixed_duration" "34"
+        }
 	}
 	"material_burst"
 	{
@@ -373,25 +281,12 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"delay"				"2.5"
-				
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"			"1200"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"duration"			"3"
-			}
-		}
+		"AbilityValues"
+        {
+            "delay" "2.5"
+            "radius" "1200"
+            "duration" "3"
+        }
 	}
 	"regrowth"
 	{
@@ -432,15 +327,10 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"stun"					"1"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "stun" "1"
+        }
 	}
 	"flash_cast"
 	{
@@ -483,54 +373,18 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"170"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"2"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"charge_restore_time"	"25 20 15"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"speed"	"1500"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"range"	"900"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"pop_damage_delay"		"0.1"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"			"500"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"movement_slow_pct"		"1000"
-			}
-				"09"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"		"1.2"
-			}
-		}
+		"AbilityValues"
+        {
+            "radius" "170"
+            "max_charges" "2"
+            "charge_restore_time" "25 20 15"
+            "speed" "1500"
+            "range" "900"
+            "pop_damage_delay" "0.1"
+            "damage" "500"
+            "movement_slow_pct" "1000"
+            "duration" "1.2"
+        }
 	}
 		"special_bonus_tatsuya_20"
 	{
@@ -538,14 +392,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"0.5"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "0.5"
+        }
 	}
 	"special_bonus_tatsuya_25"
 	{
@@ -553,14 +403,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"0"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "0"
+        }
 	}
 	"special_bonus_tatsuya_20_alt"
 	{
@@ -568,14 +414,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"1000"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "1000"
+        }
 	}
 	"special_bonus_tatsuya_25_alt"
 	{
@@ -583,14 +425,10 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"0"
-			}			
-		}
+		"AbilityValues"
+        {
+            "value" "0"
+        }
 	}
 	"deep_mist_disparsion"
 	{
@@ -637,36 +475,13 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"			"1"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"dragon_cast_range"			"400"
-				
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cooldown_increase"			"7 9 11 13"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"			"1300"
-				
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow"			"-25 -40 -60 -80"
-				
-			}
-		}
+		"AbilityValues"
+        {
+            "duration" "1"
+            "dragon_cast_range" "400"
+            "cooldown_increase" "7 9 11 13"
+            "damage" "1300"
+            "slow" "-25 -40 -60 -80"
+        }
 	}
 }

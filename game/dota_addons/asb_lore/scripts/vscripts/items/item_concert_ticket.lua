@@ -37,7 +37,7 @@ for i = 1, 4 do
    -- Set Gold
    self.bonus_gold = 1250 * i
    -- Spend item charge
-   self:SpendCharge()
+   self:SpendCharge(0)
    -- Give Gold to player
    PlayerResource:ModifyGold(caster:GetPlayerOwnerID(), self.bonus_gold, false, DOTA_ModifyGold_Unspecified)
 

@@ -14,7 +14,7 @@ function item_van_dark:OnSpellStart()
     self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_item_van_dark_perm", {} )
     local sound_cast = "van.dark"
 	EmitSoundOn( sound_cast, self:GetCaster() )
-    self:SpendCharge()
+    self:SpendCharge(0)
 	end
 end
 

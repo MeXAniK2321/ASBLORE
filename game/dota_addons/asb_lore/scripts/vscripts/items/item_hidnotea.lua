@@ -20,7 +20,7 @@ end
 if not caster:HasModifier("modifier_item_super_idol_water") then
 	caster:AddNewModifier(caster, self, "modifier_hidnotea", { duration = 14.0 } )
 	EmitSoundOn("hidnotea.tea", caster)
-	self:SpendCharge()
+	self:SpendCharge(0)
 	end
 end
 modifier_hidnotea = class({})

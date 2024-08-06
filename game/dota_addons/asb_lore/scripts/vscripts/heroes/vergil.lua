@@ -18,7 +18,7 @@ function judgment_cut:OnSpellStart()
 	local point = self:GetCursorPosition()
 
 	-- load data
-	local duration = self:GetSpecialValueFor( "duration" )
+	local duration = 1--self:GetSpecialValueFor( "duration" )
 	local multiple_cast_times_enabled = self:GetSpecialValueFor( "multiple_cast_times_enabled" )
 	local multiple_cast_times = self:GetSpecialValueFor( "multiple_cast_times" )
 	local multiple_cast_times_mod_duration = self:GetSpecialValueFor( "multiple_cast_times_mod_duration" )
@@ -110,12 +110,13 @@ end
 -- Initializations
 function modifier_judgment_cut:OnCreated( kv )
 	-- references
-	local interval = self:GetAbility():GetSpecialValueFor( "tick_rate" )
+	local interval = 0.3--self:GetAbility():GetSpecialValueFor( "tick_rate" )
 	local damage = self:GetAbility():GetSpecialValueFor( "damage" )
 	self.armor = self:GetAbility():GetSpecialValueFor( "root" )
 	self.radius = self:GetAbility():GetSpecialValueFor( "radius" )
 
-	self.thinker = kv.isProvidedByAura~=1
+	self.hits    = 3
+    self.thinker = kv.isProvidedByAura~=1
 
 	if not IsServer() then return end
 	if not self.thinker then return end
@@ -207,6 +208,10 @@ end
 --------------------------------------------------------------------------------
 -- Interval Effects
 function modifier_judgment_cut:OnIntervalThink()
+    self.hits = self.hits - 1
+    
+    if self.hits <= 0 then return end
+
 	-- find enemies 
 	local enemies = FindUnitsInRadius(
 		self:GetCaster():GetTeamNumber(),	-- int, your team number
@@ -278,7 +283,7 @@ end
 
 function modifier_judgment_cut:PlayEffects()
 	-- Get Resources
-	local particle_cast = "particles/test_cut1.vpcf"
+	local particle_cast = "particles/test/custom/judgement_cut_cut.vpcf"--"particles/test_cut1.vpcf"
 	
 
 	-- Create Particle

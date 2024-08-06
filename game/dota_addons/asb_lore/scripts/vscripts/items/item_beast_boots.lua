@@ -24,7 +24,7 @@ function item_beast_boots:OnSpellStart()
     local target = self:GetCursorTarget()
     target:AddNewModifier( self:GetCaster(), self, "modifier_item_beast_boots_perm", {} )
     
-    self:SpendCharge()
+    self:SpendCharge(0)
 end
 
 

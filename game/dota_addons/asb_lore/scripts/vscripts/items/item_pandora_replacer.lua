@@ -5,7 +5,7 @@ function item_pandora_replacer:OnSpellStart()
 	local caster = self:GetCaster()
 	
 	
-	self:SpendCharge()
+	self:SpendCharge(0)
 
 	local gold = caster:GetGold()
 	local xp = caster:GetCurrentXP()
@@ -25,7 +25,7 @@ caster:AddNewModifier(caster, self, "modifier_replaced", {})
 	local table_sounds = {	"Pandora.0" }
 
 	EmitSoundOn(table_sounds[RandomInt(1, #table_sounds)], hero)
-	--self:SpendCharge()
+	--self:SpendCharge(0)
 
 
 
@@ -49,7 +49,7 @@ caster:AddNewModifier(caster, self, "modifier_replaced", {})
 
 	for _,ally in pairs(enemies) do
 	local item = ally:FindItemInInventory("item_pandora_replacer")
-  item:SpendCharge()
+  item:SpendCharge(0)
   end
 end
 modifier_replaced = class ({})

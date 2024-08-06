@@ -434,6 +434,32 @@ function COverthrowGameMode:OnNpcGoalReached( event )
 	end
 end
 
+--------------------------------------------------------------------------------
+-- Event: OnHeroPick
+--------------------------------------------------------------------------------
+function COverthrowGameMode:OnHeroPick(event)
+    local hHero = EntIndexToHScript(event.heroindex)
+    if IsNotNull(hHero) then
+    --=============================ALTERNATE TO EYE'S METHOD, BECAUSE COPY PASTA IS CRINGE=============================--
+        local iAbilities = hHero:GetAbilityCount()
+        local sHeroName  = string.gsub(hHero:GetUnitName(), "npc_dota_hero_", "")
+        
+        for i = 0, iAbilities - 1 do
+            local hAbility = hHero:GetAbilityByIndex(i)
+            if IsNotNull(hAbility) then
+                local sAbility = hAbility:GetAbilityName()
+                if string.find(sAbility, sHeroName) and sAbility ~= "abyssal_underlord_portal_warp" then
+                    hHero:RemoveAbility(sAbility)
+                    --print("Removed Ability: " .. sAbility)
+                end
+            end
+        end
+    --=================================================================================================================--
+    end
+    
+    --print("Testing Hero Picked")
+end
+
 
 
 

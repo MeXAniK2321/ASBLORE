@@ -1,3 +1,4 @@
+
 "DOTAAbilities"
 {
   "item_containers_lua_pack"
@@ -145,49 +146,17 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_intellect"				"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_strength"				"15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_agility"					"15"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.2"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"range"							"650"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"speed"							"1000"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_hp"							"400"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"							"400"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_intellect" "20"
+            "bonus_strength" "15"
+            "bonus_agility" "15"
+            "duration" "2.2"
+            "range" "650"
+            "speed" "1000"
+            "bonus_hp" "400"
+            "mana" "400"
+        }
 	}
 //=================================================================================================================
 // Hell Staff
@@ -236,34 +205,14 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_intellect"				"40"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"4.0"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"range"							"450"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_hp"							"300"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"							"800"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_intellect" "40"
+            "duration" "4.0"
+            "range" "450"
+            "bonus_hp" "300"
+            "mana" "800"
+        }
 	}
 //======================================
 "item_gay_hammer"
@@ -293,10 +242,9 @@
 		"ItemPurchasable" "0"
 		"ItemPermanent" "1"
 
-		"AbilitySpecial"
-		{
-			
-		}
+		"AbilityValues"
+        {
+        }
 	}
 //===========================================================================
 // SAKUYA'S WATCH
@@ -312,49 +260,17 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    "01"
-		    {
-		        "var_type"          "FIELD_INTEGER"
-		        "cd"       			"25"
-		    }
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"dmg"				"30"
-		    }
-		    "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"hp"				"625"
-		    }
-		    "04"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"mp"				"625"
-		    }
-		    "05"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-		    "06"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"lifesteal"				"25"
-		    }
-		    "07"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"reduce_mana"				"20"
-		    }
-			"08"
-			{
-				"var_type" "FIELD_INTEGER"
-				"castrange"   "300"
-			}
-		}
+		"AbilityValues"
+        {
+            "cd" "25"
+            "dmg" "30"
+            "hp" "625"
+            "mp" "625"
+            "int" "20"
+            "lifesteal" "25"
+            "reduce_mana" "20"
+            "castrange" "300"
+        }
   	}
 	
   	"item_recipe_watch"
@@ -384,20 +300,11 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    "01"
-		    {
-		        "var_type"          "FIELD_INTEGER"
-		        "all_stats"       			"25"
-		    }
-			 "01"
-		    {
-		        "var_type"          "FIELD_INTEGER"
-		        "damage"       			"100"
-		    }
-		   
-		}
+		"AbilityValues"
+        {
+            "all_stats" "25"
+            "damage" "100"
+        }
 		    
   	}
 	
@@ -465,52 +372,17 @@
 
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"					"15"
-			}
-		
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"proc_damage"			"175"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"proc_chance"					"25"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"					"20"
-			}
-			
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"					"5"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"50"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"duration"					"2.5"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"slow"					"-25"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "str" "15"
+            "proc_damage" "175"
+            "proc_chance" "25"
+            "bonus_attack_speed" "20"
+            "armor" "5"
+            "damage" "50"
+            "duration" "2.5"
+            "slow" "-25"
+        }
 	}
 	//=================================================================================================================
 	// Samehada
@@ -562,57 +434,18 @@
 
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"					"35"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"agi"					"40"
-			}
-				"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"					"25"
-			}
-		
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"manaburn"			"1"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"					"40"
-			}
-			
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"					"5"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"80"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"duration"					"5"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"slow"					"-40"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "str" "35"
+            "agi" "40"
+            "int" "25"
+            "manaburn" "1"
+            "bonus_attack_speed" "40"
+            "armor" "5"
+            "damage" "80"
+            "duration" "5"
+            "slow" "-40"
+        }
 	}
 	//=================================================================================================================
 	// Yoru
@@ -664,40 +497,15 @@
 
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"					"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"					"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"					"20"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"					"5"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"250"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"					"0.8"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "str" "20"
+            "int" "20"
+            "bonus_attack_speed" "20"
+            "armor" "5"
+            "damage" "250"
+            "duration" "0.8"
+        }
 	}
 //=================================================================================================================
 	// Beast Spear
@@ -751,54 +559,18 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"55"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"60"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance"					"50"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance_damage"			"210"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"poison_damage_melee"			"0"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"poison_damage_range"			"0"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"poison_movement_speed_melee"	"0"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"poison_movement_speed_range"	"0"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"poison_duration"				"0"
-			}		
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "55"
+            "bonus_attack_speed" "60"
+            "bonus_chance" "50"
+            "bonus_chance_damage" "210"
+            "poison_damage_melee" "0"
+            "poison_damage_range" "0"
+            "poison_movement_speed_melee" "0"
+            "poison_movement_speed_range" "0"
+            "poison_duration" "0"
+        }
 	}
 //=================================================================================================================
 // Debate_club
@@ -848,45 +620,16 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"20"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"slow"					"-25"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance"					"25"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance_damage"			"150"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"str"			"15"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"armor"			"5"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "20"
+            "slow" "-25"
+            "bonus_attack_speed" "20"
+            "bonus_chance" "25"
+            "bonus_chance_damage" "150"
+            "str" "15"
+            "armor" "5"
+        }
 	}
 
 	"item_recipe_block_bow"
@@ -937,101 +680,27 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 		
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_intellect"				"23"
-			}
-			
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"armor"				"5"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_health_regen"			"2.0"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_agility"					"35"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_strength"				"20"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"base_attack_range"				"140"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"push_length"					"600"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"enemy_length"					"450"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"range_duration"				"5"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cast_range_enemy"				"400"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"max_attacks"					"6"
-			}
-			"11"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_attack_speed"			"400"
-			}
-			"12"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tooltip_range"					"800"
-			}
-			"13"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_damage"					"70"
-			}
-			"14"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_as"						"40"
-			}
-			"15"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"pinch_chance"					"25"
-			}
-			"16"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"pinch_start_damage"			"200"
-			}
-			"17"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"pinch_bounce_radius"			"600"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_intellect" "23"
+            "armor" "5"
+            "bonus_health_regen" "2.0"
+            "bonus_agility" "35"
+            "bonus_strength" "20"
+            "base_attack_range" "140"
+            "push_length" "600"
+            "enemy_length" "450"
+            "range_duration" "5"
+            "cast_range_enemy" "400"
+            "max_attacks" "6"
+            "bonus_attack_speed" "400"
+            "tooltip_range" "800"
+            "bonus_damage" "70"
+            "bonus_as" "40"
+            "pinch_chance" "25"
+            "pinch_start_damage" "200"
+            "pinch_bounce_radius" "600"
+        }
 	}
 
 //======================================================================================
@@ -1086,45 +755,16 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"110"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"			"30"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance"					"100"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance_damage"			"230"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"pure"			"130"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"stat"			"25"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"agility"			"50"
-			}
-				
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "110"
+            "evasion" "30"
+            "bonus_chance" "100"
+            "bonus_chance_damage" "230"
+            "pure" "130"
+            "stat" "25"
+            "agility" "50"
+        }
 	}
 	//=================================================================================================================
 	// Soul
@@ -1173,80 +813,22 @@
 		"AbilitySharedCooldown"					"beast_spear"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"80"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"corruption_armor"				"-15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"corruption_duration"			"8"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_evasion"					"0"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"0"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"						"0"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"as"							"100"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"6"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"0"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_ms"						"40"
-			}
-	
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance"					"55"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_chance_damage"			"1"
-			}
-			"11"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"160"
-			}
-			"12"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"as"					"80"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "80"
+            "corruption_armor" "-15"
+            "corruption_duration" "8"
+            "bonus_evasion" "0"
+            "bonus_attack_speed" "0"
+            "evasion" "0"
+            "as" "80"
+            "duration" "6"
+            "radius" "0"
+            "bonus_ms" "40"
+            "bonus_chance" "55"
+            "bonus_chance_damage" "1"
+            "damage" "160"
+        }
 	}
 //=================================================================================================================
 	// Kubikiribōchō
@@ -1293,29 +875,13 @@
 		
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"80"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"as"							"60"
-			}
-			"11"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"phys_damage"					"15"
-			}
-			"12"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"					"20"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "80"
+            "as" "60"
+            "phys_damage" "15"
+            "armor" "20"
+        }
 	}
 //=================================================================================================================
 // Escalibur
@@ -1364,50 +930,17 @@
 		"AbilitySharedCooldown"					"beast_spear"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"200"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"120"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"						"0"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"as"							"150"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"6"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_ms"						"10"
-			}
-			"13"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"armor"						"10"
-			}
-			"13"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"phys_damage"						"18"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "200"
+            "bonus_attack_speed" "120"
+            "evasion" "0"
+            "as" "150"
+            "duration" "6"
+            "bonus_ms" "10"
+            "armor" "10"
+            "phys_damage" "18"
+        }
 	}
 	//==========================================================================
 	//Power of youth
@@ -1455,35 +988,14 @@
 		"AbilitySharedCooldown"					"beast_spear"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"40"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"				"45"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"all_stats"			"35"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"agility"					"60"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"duration"					"3"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "damage" "40"
+            "evasion" "45"
+            "all_stats" "35"
+            "agility" "60"
+            "duration" "3"
+        }
 	}
 	//=================================================================================================================
 	// Serp i molot
@@ -1531,74 +1043,22 @@
 		"AbilityManaCost"						"250"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all stats"					"15"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"resist"					"10"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_reflection_pct"				"10"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"max_radius"			"2"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"min_radius"					"1"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"80"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"						"8"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"as"							"100"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration_buff"						"2"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"0"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"46"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"hp_regen"						"40"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"mp_regen"						"20"
-			}
-		}
+		"AbilityValues"
+        {
+            "all stats" "15"
+            "resist" "10"
+            "damage_reflection_pct" "10"
+            "max_radius" "2"
+            "min_radius" "1"
+            "bonus_attack_speed" "80"
+            "evasion" "8"
+            "as" "100"
+            "duration_buff" "2"
+            "radius" "0"
+            "cooldown" "46"
+            "hp_regen" "40"
+            "mp_regen" "20"
+        }
 	}
 //===================================================================================
 "item_recipe_betelgeuse"
@@ -1642,69 +1102,21 @@
 		"AbilityManaCost"						"250"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all_stats"					"5"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"				"750"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"debuff_duration"			"7"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"ms"					"-15"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"resist"			"-20"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"						"40"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"							"10"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.5"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"600"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"40"
-			}
-			"11"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage2"				"1500"
-			}
-			"12"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"ms2"					"15"
-			}
-		}
+		"AbilityValues"
+        {
+            "all_stats" "5"
+            "damage" "750"
+            "debuff_duration" "7"
+            "ms" "-15"
+            "resist" "-20"
+            "int" "40"
+            "armor" "10"
+            "duration" "2.5"
+            "radius" "600"
+            "cooldown" "40"
+            "damage2" "1500"
+            "ms2" "15"
+        }
 	}
 	//===================================================================================
 "item_recipe_trans_am"
@@ -1749,60 +1161,19 @@
 		"AbilityCastPoint" "0.2"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all_stats"					"25"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"				"850"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"debuff_duration"			"7"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"ms"					"-15"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"resist"			"-20"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"						"40"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"							"10"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.5"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"600"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"40"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "all_stats" "25"
+            "damage" "850"
+            "debuff_duration" "7"
+            "ms" "-15"
+            "resist" "-20"
+            "int" "40"
+            "armor" "10"
+            "duration" "2.5"
+            "radius" "600"
+            "cooldown" "40"
+        }
 	}
 //===================================================================================
 //Avalon
@@ -1849,46 +1220,16 @@
 		"AbilityCastPoint" "0.1"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all_stats"					"30"
-			}
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"					"400"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"				"1000"
-			}
-			
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"							"5"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"1"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"600"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"60"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "all_stats" "30"
+            "mana" "400"
+            "damage" "1000"
+            "armor" "5"
+            "duration" "1"
+            "radius" "600"
+            "cooldown" "60"
+        }
 	}
 //===================================================================================
 //Paimon
@@ -1932,41 +1273,15 @@
 
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"					"35"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"stat"				"35"
-			}
-				"08"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"				"50"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"cd"			"20"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"60"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"reduce_mana"						"25"
-			}
-			
-			
-		}
+		"AbilityValues"
+        {
+            "str" "35"
+            "stat" "35"
+            "bonus_attack_speed" "50"
+            "cd" "20"
+            "damage" "60"
+            "reduce_mana" "25"
+        }
 	}
 //===================================================================================
 //Marionette
@@ -2011,31 +1326,13 @@
 
 
 
-		"AbilitySpecial"
-		{
-		
-				"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"spd"				"55"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"			"60"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_hp"					"500"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"ms"						"55"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "spd" "55"
+            "int" "60"
+            "bonus_hp" "500"
+            "ms" "55"
+        }
 	}
 //=================================================================================================================
 // Grail
@@ -2088,75 +1385,22 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_damage"					"15"
-			}
-			"02"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_as"						"25"
-			}
-			"03"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_health"					"300"
-			}
-			"04"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_hp_regen_percent"		"1.6"
-			}
-			"05"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_armor"					"7"
-			}
-			"06"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_hp_regen"				"10"
-			}
-			"07"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"buff_as"				        "40"
-			}
-			
-			"08"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_str"						"40"
-			}
-			"09"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"bonus_spell_amp"				"10"
-			}
-			"10"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"					    "5"
-			}
-			"14"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"buff_hp_loss"					"10"
-			}
-			"15"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"lifesteal"					    "75"
-			}
-			"15"
-			{	
-				"var_type"						"FIELD_FLOAT"
-				"str_mult"					    "0.9"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_damage" "15"
+            "bonus_as" "25"
+            "bonus_health" "300"
+            "bonus_hp_regen_percent" "1.6"
+            "bonus_armor" "7"
+            "bonus_hp_regen" "10"
+            "buff_as" "40"
+            "bonus_str" "40"
+            "bonus_spell_amp" "10"
+            "cooldown" "5"
+            "buff_hp_loss" "10"
+            "lifesteal" "75"
+            "str_mult" "0.9"
+        }
 	}
 //==================================================================================
 "item_asha_tear"
@@ -2170,22 +1414,11 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"dmg"				"20"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"30"
-		    }
-		   
-		}
+		"AbilityValues"
+        {
+            "dmg" "20"
+            "int" "30"
+        }
   	}
 //===================================================================================
 "item_recipe_vongolla_primo_ring"
@@ -2229,45 +1462,16 @@
 		"ItemAliases"							"vongolla_primo_ring"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration_buff" 				"15"
-			}	
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration" 				"15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_all_stats" 				      "60"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"health" 				     "800"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"intellect" 				    "75"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"60"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"mag_ampf" 				      "40"
-			}
-		}
+		"AbilityValues"
+        {
+            "duration_buff" "15"
+            "duration" "15"
+            "bonus_all_stats" "60"
+            "health" "800"
+            "intellect" "75"
+            "cooldown" "60"
+            "mag_ampf" "40"
+        }
 	}
 //=================================================================================================================
 	// Asta's Sword
@@ -2338,80 +1542,23 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all_stats"						"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"attack"					"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"55"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"					"300"
-			}
-			
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"spd_chance"					"35"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"attack_chance"						"35"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"buff_chance"						"35"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"diff_chance"						"40"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tier1_chance"						"35"
-			}
-			"11"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tier2_chance"						"30"
-			}
-			"12"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tier3_chance"						"25"
-			}
-			"13"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tier4_chance"						"20"
-			}
-			"14"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"tier5_chance"						"15"
-			}
-			"15"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_ms"						"20"
-			}
-		}
+		"AbilityValues"
+        {
+            "all_stats" "20"
+            "attack" "20"
+            "duration" "55"
+            "mana" "300"
+            "spd_chance" "35"
+            "attack_chance" "35"
+            "buff_chance" "35"
+            "diff_chance" "40"
+            "tier1_chance" "35"
+            "tier2_chance" "30"
+            "tier3_chance" "25"
+            "tier4_chance" "20"
+            "tier5_chance" "15"
+            "bonus_ms" "20"
+        }
 	}
 	
 	
@@ -2457,22 +1604,11 @@
 		"AbilitySharedCooldown"					"spamton"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"spd"					"30"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"stat"				"600"
-			}
-			
-			
-			
-		}
+		"AbilityValues"
+        {
+            "spd" "30"
+            "stat" "600"
+        }
 	}
 	//=================================================================================================================
 	"item_asta_sword"
@@ -2498,45 +1634,16 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_str"						"35"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"80"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"5.8"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"max_level"						"10"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"model_scale"					"30"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"resistance"					"75"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"38"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_str" "35"
+            "bonus_damage" "80"
+            "duration" "5.8"
+            "max_level" "10"
+            "model_scale" "30"
+            "resistance" "75"
+            "cooldown" "38"
+        }
 	}
 
 //====================================
@@ -2563,49 +1670,17 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_str"						"10"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_damage"					"15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"3"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"max_level"						"10"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"model_scale"					"30"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"resistance"					"0"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"35"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_resist"						"0"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_str" "10"
+            "bonus_damage" "15"
+            "duration" "3"
+            "max_level" "10"
+            "model_scale" "30"
+            "resistance" "0"
+            "cooldown" "35"
+            "bonus_resist" "0"
+        }
 	}
 "item_recipe_minato_kunai"
 	{
@@ -2641,44 +1716,16 @@
 		"SideShop"						"1"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"max_blink_range"				"1200"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"ms"			"80"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"						"5"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_regen"					"20"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"					"5"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"agi"					"5"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"arm"					"4"
-			}
-		}
+		"AbilityValues"
+        {
+            "max_blink_range" "1200"
+            "ms" "80"
+            "int" "5"
+            "bonus_regen" "20"
+            "str" "5"
+            "agi" "5"
+            "arm" "4"
+        }
 	}
 	"item_recipe_crucible_of_the_executioner"
 	{
@@ -2729,65 +1776,19 @@
 		"ItemSellable"							"0"
 		
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_hp"					"800"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"mana"					"1000"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"all_stats"				"20"
-			}
-						
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"amp"						"50"
-			}	
-			
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"kill_charges"					"100"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"agi"					"10"
-			}
-			
-			
-			"07"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"copy_damage" 					"10"
-			}
-"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"int"				"100"
-			}			
-		
-		"09"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"				"10"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"				"80"
-			}
-	
-		}
+		"AbilityValues"
+        {
+            "bonus_hp" "800"
+            "mana" "1000"
+            "all_stats" "20"
+            "amp" "50"
+            "kill_charges" "100"
+            "agi" "10"
+            "copy_damage" "10"
+            "int" "100"
+            "duration" "10"
+            "cooldown" "80"
+        }
 	}
 	"item_recipe_pandora_box"
 	{
@@ -2823,10 +1824,9 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			
-		}
+		"AbilityValues"
+        {
+        }
 	}
 //==========================================
 //Seal_of_Chaos
@@ -2869,41 +1869,15 @@
 		"AbilitySharedCooldown"					"seal_of_chaos"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"					"1800"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"hp"				"500"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"duration"				"3"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"mana_convert"			"50"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"converted_spell_damage_addition"					"0.1"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"mag_ampf" 				      "10"
-			}
-			
-			
-		}
+		"AbilityValues"
+        {
+            "mana" "1800"
+            "hp" "500"
+            "duration" "3"
+            "mana_convert" "50"
+            "converted_spell_damage_addition" "0.1"
+            "mag_ampf" "10"
+        }
 	}
 "item_pikachu_replacer"
 	{
@@ -2926,10 +1900,9 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			
-		}
+		"AbilityValues"
+        {
+        }
 	}
 //==========================================
 "item_pandora_treasure"
@@ -2952,10 +1925,9 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			
-		}
+		"AbilityValues"
+        {
+        }
 	}
 //==========================================
 	"item_hidnotea"
@@ -2980,20 +1952,11 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"hp"				"50"
-		    }
-			"01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"mp"				"20"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "hp" "50"
+            "mp" "20"
+        }
 	}
 	"item_rocket"
 	{
@@ -3017,14 +1980,10 @@
 		"AbilityCooldown"						"60"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"radius"				"900"
-		    }
-		}
+		"AbilityValues"
+        {
+            "radius" "900"
+        }
 	}
 	"item_x_gloves"
 	{
@@ -3041,44 +2000,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3099,44 +2029,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3159,54 +2060,17 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"damage"				"1500"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-				"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"cooldown"				"70"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "damage" "1500"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+            "cooldown" "70"
+        }
 	
 	
 	
@@ -3227,44 +2091,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3285,44 +2120,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	}
 	"item_eternal_geass_2"
 	{
@@ -3339,44 +2145,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	}
 	"item_uchiha_naish"
 	{
@@ -3393,44 +2170,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3451,44 +2199,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3509,44 +2228,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3567,44 +2257,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	}
 		
 		"item_key_for_9"
@@ -3622,44 +2283,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"100"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"35"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"500"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "25"
+            "int" "20"
+            "arm" "100"
+            "all_stats" "35"
+            "bonus_hp" "500"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3680,44 +2312,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"100"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "100"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3739,44 +2342,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3797,44 +2371,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3855,44 +2400,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3913,44 +2429,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -3971,44 +2458,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4029,45 +2487,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"10"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-		
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"40"
-			}
-			 "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"arm"				"4"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "10"
+            "int" "20"
+            "all_stats" "40"
+            "arm" "4"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4088,44 +2516,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4146,44 +2545,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4204,44 +2574,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"40"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "40"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 		}
 	
 	"item_shinigami"
@@ -4259,30 +2600,12 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"dmg"				"40"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"str"				"40"
-		    }
-		
-			
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-	
-		}
+		"AbilityValues"
+        {
+            "dmg" "40"
+            "str" "40"
+            "mana" "1000"
+        }
 		}
 
 		"item_nanaya_knife"
@@ -4303,52 +2626,16 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"dmg"				"100"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"agi"				"40"
-		    }
-		
-
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"hp"				"1000"
-			}
-			
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"ghoul_duration"		"35"
-			}
-            
-            "05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"ghoul_kills"			"10"
-			}
-            
-			"06"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"ghoul_cd"			    "20"
-			}
-            
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"ghoul_movespeed"		"600"
-			}
-		}
+		"AbilityValues"
+        {
+            "dmg" "100"
+            "agi" "40"
+            "hp" "1000"
+            "ghoul_duration" "35"
+            "ghoul_kills" "10"
+            "ghoul_cd" "20"
+            "ghoul_movespeed" "600"
+        }
 	}
 	
 	
@@ -4372,44 +2659,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4430,44 +2688,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "30"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "1000"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4488,44 +2717,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4546,44 +2746,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4605,44 +2776,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4663,44 +2805,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4721,44 +2834,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"15"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "15"
+            "attack" "100"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4779,49 +2863,16 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"700"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"amp"				"25"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "700"
+            "amp" "25"
+        }
 	
 	
 	
@@ -4842,45 +2893,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"amp"				"30"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "mana" "1000"
+            "amp" "30"
+        }
 	
 	
 	
@@ -4901,39 +2922,14 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		  
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"0"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "int" "20"
+            "res" "0"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -4957,44 +2953,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5016,44 +2983,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"700"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"10"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"150"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "700"
+            "int" "20"
+            "res" "10"
+            "all_stats" "25"
+            "attack" "150"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5075,44 +3013,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5137,49 +3046,16 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"amp"				"25"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+            "amp" "25"
+        }
 	
 	
 	
@@ -5204,44 +3080,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"25"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "25"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5262,44 +3109,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5321,44 +3139,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5379,44 +3168,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"0"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "0"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5437,40 +3197,14 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"30"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "amp" "30"
+            "all_stats" "25"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5491,44 +3225,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"70"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"25"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "ms" "70"
+            "res" "25"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -5549,44 +3254,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"50"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"25"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"15"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "ms" "50"
+            "res" "25"
+            "all_stats" "15"
+            "attack" "100"
+            "mana" "1000"
+        }
 	}
 		"item_trident_silver_horn"
 	{
@@ -5605,44 +3281,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"70"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"25"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"50"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "ms" "70"
+            "res" "25"
+            "all_stats" "50"
+            "attack" "100"
+            "mana" "1000"
+        }
 	
 	
 	}
@@ -5662,44 +3309,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"15"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"250"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "15"
+            "all_stats" "25"
+            "attack" "100"
+            "mana" "250"
+        }
 	
 	
 	
@@ -5721,44 +3339,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"70"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"25"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "ms" "70"
+            "res" "25"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -5779,44 +3368,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"ms"				"70"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"25"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "ms" "70"
+            "res" "25"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -5835,14 +3395,10 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"20"
-			}
-		}
+		"AbilityValues"
+        {
+            "all_stats" "20"
+        }
 		    
 		    
 	
@@ -5865,40 +3421,14 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		   
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -5919,44 +3449,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"health"				"1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "health" "1000"
+            "mana" "500"
+        }
 	
 	
 	
@@ -5977,44 +3478,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"700"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "700"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "100"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -6035,44 +3507,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "25"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -6111,15 +3554,10 @@
 		"ItemPermanent"					"0"
 		"ItemDisplayCharges" 			"1"
 		"ItemInitialCharges"			"1"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"ms"				"50"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "ms" "50"
+        }
 	}
 //====================================================
 //Super_Idol_Water
@@ -6155,20 +3593,11 @@
 		"AbilitySharedCooldown" "hidnotea"
 		"ItemShareability"				"ITEM_NOT_SHAREABLE"
 		"ItemPermanent"					"1"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"heal"				"125"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"60"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "heal" "125"
+            "mana" "60"
+        }
 	}
 //====================================================
 //Van Darkholm
@@ -6205,15 +3634,10 @@
 		"ItemPermanent"					"0"
 		"ItemDisplayCharges" 			"1"
 		"ItemInitialCharges"			"1"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"ms"				"80"
-			}
-			
-		}
+		"AbilityValues"
+        {
+            "ms" "80"
+        }
 	}
 	//=================================================================================================================
 	// Plot Armor
@@ -6260,58 +3684,18 @@
 		"AbilityManaCost"						"250"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"all_stats"					"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"agility"					"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"communism"				"15"
-			}
-			
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"			"350"
-			}
-			
-			
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"						"0"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"armor"							"20"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration_buff"						"5"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"resist"						"20"
-			}
-			
-			"10"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cooldown"						"40"
-			}
-		}
+		"AbilityValues"
+        {
+            "all_stats" "20"
+            "agility" "20"
+            "communism" "15"
+            "radius" "350"
+            "evasion" "0"
+            "armor" "20"
+            "duration_buff" "5"
+            "resist" "20"
+            "cooldown" "40"
+        }
 	//}
 	//=================================================================================================================
 	// Chomusuke
@@ -6361,74 +3745,22 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_intellect"				"15"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_strength"				"15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_agility"					"15"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"attack"					"80"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"burn"					"120"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"					"0"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.1"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"range"							"450"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"							"350"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"speed"							"1600"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"hp"							"700"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mp"							"700"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"amp"							"25"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_intellect" "15"
+            "bonus_strength" "15"
+            "bonus_agility" "15"
+            "attack" "80"
+            "burn" "120"
+            "damage" "0"
+            "duration" "2.1"
+            "range" "450"
+            "radius" "350"
+            "speed" "1600"
+            "hp" "700"
+            "mp" "700"
+            "amp" "25"
+        }
 	}
 //=================================================================================================================
 // Magic Girl Wand
@@ -6474,45 +3806,16 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-		"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"hero_lifesteal"		"15"
-			}			
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"creep_lifesteal"		"5"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"				"15"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"6.0"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"							"600"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"hp"							"600"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mp"							"1000"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "hero_lifesteal" "15"
+            "creep_lifesteal" "5"
+            "int" "15"
+            "duration" "6.0"
+            "radius" "600"
+            "hp" "600"
+            "mp" "1000"
+        }
 	}
 //=================================================================================================================
 // Sad Voodoo Doll
@@ -6563,49 +3866,17 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_intellect"				"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_strength"				"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_agility"					"20"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"3.5"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"range"							"750"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"speed"							"1400"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_hp"							"400"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"mana"							"400"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_intellect" "20"
+            "bonus_strength" "20"
+            "bonus_agility" "20"
+            "duration" "3.5"
+            "range" "750"
+            "speed" "1400"
+            "bonus_hp" "400"
+            "mana" "400"
+        }
 	}
 	"item_recipe_dress"
 	{
@@ -6637,37 +3908,14 @@
 		"AbilityCooldown"           "20"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"mag_res"				"10"
-		    }
-			"02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"hp_regen"				"20"
-		    }
-			"03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"mp_regen"				"15"
-		    }
-			"04"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"barrier_block"			"250"
-		    }
-			"05"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"barrier_duration"		"20"
-		    }
-		    
-		   
-		}
+		"AbilityValues"
+        {
+            "mag_res" "10"
+            "hp_regen" "20"
+            "mp_regen" "15"
+            "barrier_block" "250"
+            "barrier_duration" "20"
+        }
   	}
 	//=================================================================================================================
 	// Sword_Breaker
@@ -6718,40 +3966,15 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ShouldBeSuggested"						"1"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"evasion"				"50"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"str"				"40"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"agility"					"10"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"					"10"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.0"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"range"							"800"
-			}
-		
-		}
+		"AbilityValues"
+        {
+            "evasion" "50"
+            "str" "40"
+            "agility" "10"
+            "int" "10"
+            "duration" "2.0"
+            "range" "800"
+        }
 	}
 //================
 "item_concert_ticket_1"
@@ -6774,15 +3997,10 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"gold"				"1000"
-		    }  
-		}
+		"AbilityValues"
+        {
+            "gold" "1000"
+        }
 	}
 	"item_concert_ticket_2"
 	{
@@ -6804,15 +4022,10 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"gold"				"1750"
-		    }  
-		}
+		"AbilityValues"
+        {
+            "gold" "1750"
+        }
 	}
 	"item_concert_ticket_3"
 	{
@@ -6834,15 +4047,10 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"gold"				"2500"
-		    }  
-		}
+		"AbilityValues"
+        {
+            "gold" "2500"
+        }
 	}
 	"item_concert_ticket_4"
 	{
@@ -6864,15 +4072,10 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"gold"				"3500"
-		    }  
-		}
+		"AbilityValues"
+        {
+            "gold" "3500"
+        }
 	}
 
 		"item_index_chan"
@@ -6891,44 +4094,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"250"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "20"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "250"
+            "mana" "500"
+        }
 
 		}
 	
@@ -6949,49 +4123,16 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health"				"1000"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"50"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"res"				"20"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"500"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"amp"				"55"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "health" "1000"
+            "int" "50"
+            "res" "20"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "500"
+            "amp" "55"
+        }
 	
 	
 	
@@ -7013,44 +4154,15 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"10"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"35"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"500"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "10"
+            "int" "35"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "500"
+            "mana" "1000"
+        }
 	
 	
 	
@@ -7072,28 +4184,12 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"agi"				"50"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"500"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "agi" "50"
+            "int" "20"
+            "bonus_hp" "500"
+        }
 	
 	
 	
@@ -7147,59 +4243,19 @@
 		//"AbilitySharedCooldown"					"angel_halo"
 
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int"					        "100"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"hp"				            "625"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage_increase"				"15"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"base_duration"					"10"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"advance_duration"				"50"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"ultimate_duration"				"80"
-			}
-			"07"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"kill_cap"					    "15"
-			}
-			"08"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"int_increase"					"50"
-			}
-			"09"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"cast_range"					"150"
-			}
-			"10"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"dmg_proc_amount"				"350"
-			}
-		}
+		"AbilityValues"
+        {
+            "int" "100"
+            "hp" "625"
+            "damage_increase" "15"
+            "base_duration" "10"
+            "advance_duration" "50"
+            "ultimate_duration" "80"
+            "kill_cap" "15"
+            "int_increase" "50"
+            "cast_range" "150"
+            "dmg_proc_amount" "350"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7228,44 +4284,16 @@
 		"AbilityManaCost"						"400"
 		//"AbilitySharedCooldown"					"angel_halo"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_hp"						"250"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_as"						"65"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_magic_resist"			"15"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"active_spell_amp"				"10"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"active_damage"					"40"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"active_duration"				"15"
-			}
-			"07"
-			{
-			    "var_type"						"FIELD_INTEGER"
-		        "bonus_strength"				     "30"
-		    }
-		}
+		"AbilityValues"
+        {
+            "bonus_hp" "250"
+            "bonus_as" "65"
+            "bonus_magic_resist" "15"
+            "active_spell_amp" "10"
+            "active_damage" "40"
+            "active_duration" "15"
+            "bonus_strength" "30"
+        }
 	}
 
 	"item_drift_mania"
@@ -7317,44 +4345,15 @@
 	"ItemQuality"				"magicks"
 	"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"40"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"65"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"35"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"800"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "40"
+            "int" "65"
+            "arm" "5"
+            "all_stats" "35"
+            "bonus_hp" "800"
+            "mana" "1000"
+        }
 	}
 	"item_myoujingiri"
 	{
@@ -7371,44 +4370,15 @@
 	"ItemQuality"				"magicks"
 	"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"amp"				"20"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"35"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp"				"500"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"1000"
-			}
-			
-		   
-		}
+		"AbilityValues"
+        {
+            "amp" "20"
+            "int" "35"
+            "arm" "5"
+            "all_stats" "25"
+            "bonus_hp" "500"
+            "mana" "1000"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7454,39 +4424,15 @@
 		"AbilityManaCost"						"400"
 		//"AbilitySharedCooldown"					""
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_allstats"				"20"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"bonus_armor"						"20"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"active_duration"						"2.3"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"500"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"damage"						"300"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"stun_duration"					      "0.1"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_allstats" "20"
+            "bonus_armor" "20"
+            "active_duration" "2.3"
+            "radius" "500"
+            "damage" "300"
+            "stun_duration" "0.1"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7514,31 +4460,13 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"heal_amount"		"1000"
-		    }
-		 "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"damage_bonus"		"5"
-		    }
-		"03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"stats_bonus"		"2"
-		    }
-		"04"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"spell_amp"         "1"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "heal_amount" "1000"
+            "damage_bonus" "5"
+            "stats_bonus" "2"
+            "spell_amp" "1"
+        }
 	}
 	
 	"item_fusion_dance"
@@ -7558,48 +4486,16 @@
 		"ItemQuality"				    "magicks"
 		"ItemDeclarations"			    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		    
-		    "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"vision"				"25"
-		    }
-		    
-		    "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"int"				"20"
-		    }
-			 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"arm"				"5"
-		    }
-		    
-		   "04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack"				"200"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"				"700"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"amp"				"25"
-			}
-		   
-		}
+		"AbilityValues"
+        {
+            "vision" "25"
+            "int" "20"
+            "arm" "5"
+            "all_stats" "25"
+            "attack" "200"
+            "mana" "700"
+            "amp" "25"
+        }
 	
 	}
 	
@@ -7646,16 +4542,10 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"gold"		"1200"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "gold" "1200"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7688,16 +4578,10 @@
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"health_bonus"		"1250"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "health_bonus" "1250"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7743,61 +4627,19 @@
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_attack_speed"		"175"
-		    }
-		 "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bloodshed_crit_chance"		"30"
-		    }
-		 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bloodshed_lightning_chance"		"60"
-		    }
-		 "04"
-		    {
-		    	"var_type"			"FIELD_FLOAT"
-		    	"bloodshed_duration"		"3.2"
-		    }
-		 "05"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"high_freq_chance"		"15"
-		    }
-		 "06"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"high_freq_crit"		"130"
-		    }
-		 "07"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"lightning_chance"		"20"
-		    }
-		 "08"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"lightning_base_damage"		"125"
-		    }
-		 "09"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"lightning_percent_damage"		"11"
-		    }
-		 "10"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"neco_chance"		"20"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_attack_speed" "175"
+            "bloodshed_crit_chance" "30"
+            "bloodshed_lightning_chance" "60"
+            "bloodshed_duration" "3.2"
+            "high_freq_chance" "15"
+            "high_freq_crit" "130"
+            "lightning_chance" "20"
+            "lightning_base_damage" "125"
+            "lightning_percent_damage" "11"
+            "neco_chance" "20"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7848,66 +4690,20 @@
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_health"		"1500"
-		    }
-		 "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_spell_amp"   "15"
-		    }
-		 "03"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_armor"		"15"
-		    }
-		 "04"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_str"		    "15"
-		    }
-		 "05"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_agi"		    "15"
-		    }
-		 "06"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"bonus_int"		    "15"
-		    }
-		 "07"
-		    {
-		    	"var_type"			"FIELD_FLOAT"
-		    	"mana_drain"		"3.5"
-		    }
-		 "08"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"base_percent"		"7"
-		    }
-		 "9"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"damage"		    "404"
-		    }
-		 "10"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"percent_bonus"		"1"
-		    }
-		 "11"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"percent_limit"		"99"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "bonus_health" "1500"
+            "bonus_spell_amp" "15"
+            "bonus_armor" "15"
+            "bonus_str" "15"
+            "bonus_agi" "15"
+            "bonus_int" "15"
+            "mana_drain" "3.5"
+            "base_percent" "7"
+            "damage" "404"
+            "percent_bonus" "1"
+            "percent_limit" "99"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7936,16 +4732,10 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"heal_amount"		"1000"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "heal_amount" "1000"
+        }
 	}
 	
 	//=================================================================================================================
@@ -7974,36 +4764,14 @@
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"stando_powa_spell_amp"		"35"
-		    }
-		 "02"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"stando_powa_chance"		"14"
-		    }
-		 "03"
-		    {
-		    	"var_type"			"FIELD_FLOAT"
-		    	"stando_powa_stun_duration"		"0.22"
-		    }
-		 "04"
-		    {
-		    	"var_type"			"FIELD_FLOAT"
-		    	"stando_powa_spell_amp_mult"		"1"
-		    }
-		 "05"
-		    {
-		    	"var_type"			"FIELD_FLOAT"
-		    	"stando_powa_cooldown"		"0.8"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "stando_powa_spell_amp" "35"
+            "stando_powa_chance" "14"
+            "stando_powa_stun_duration" "0.22"
+            "stando_powa_spell_amp_mult" "1"
+            "stando_powa_cooldown" "0.8"
+        }
 	}
 	
 	//=================================================================================================================
@@ -8032,16 +4800,10 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"heal_amount"		"1000"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "heal_amount" "1000"
+        }
 	}
 	
 	//=================================================================================================================
@@ -8070,16 +4832,10 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"heal_amount"		"1000"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "heal_amount" "1000"
+        }
 	}
 	
 	//=================================================================================================================
@@ -8108,16 +4864,10 @@
 		"ItemQuality"							"artifact"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-		 
-		 "01"
-		    {
-		    	"var_type"			"FIELD_INTEGER"
-		    	"heal_amount"		"1000"
-		    }
-			
-		}
+		"AbilityValues"
+        {
+            "heal_amount" "1000"
+        }
 	}
     
 	//=================================================================================================================
@@ -8163,59 +4913,19 @@
 		"AbilityManaCost"						"0"
 		//"AbilitySharedCooldown"					""
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_allstats"		"65"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"		    "45"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"active_duration"		"5.0"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"passive_duration"		"3.2"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"trigger_hp"		    "100"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_movespeed"		"900"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_cast_percent"	"25"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_attackspeed"    "3000"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"passive_attackspeed"   "500"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"passive_cooldown"		"60.0"
-			}
-		}
+		"AbilityValues"
+        {
+            "bonus_allstats" "65"
+            "bonus_armor" "45"
+            "active_duration" "5.0"
+            "passive_duration" "3.2"
+            "trigger_hp" "100"
+            "active_movespeed" "900"
+            "active_cast_percent" "25"
+            "active_attackspeed" "3000"
+            "passive_attackspeed" "500"
+            "passive_cooldown" "60.0"
+        }
 	}
     
 	//=================================================================================================================
@@ -8267,84 +4977,24 @@
 		"AbilityCastPoint"				        "1.4"
 		//"AbilitySharedCooldown"					""
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"	    "50"
-			}
-            "02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"attack_range_bonus"	"400"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"project_speed_extra"	"1000"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"spell_amp_bonus_perc"	"50"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"movespeed_bonus_const"	"75"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"nightvision_bonus"	    "800"
-			}
-            "07"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"distance_traveled"		"8500"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"hitbox_radius"		    "150"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"1750"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"spawn_distance"		"250"
-			}
-			"11"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"base_damage"		    "1000"
-			}
-			"12"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"max_damage"		    "3500"
-			}
-			"13"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"distance_mult"		    "1.0"
-			}
-			"14"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"impact_radius"		    "250"
-			}
-			"15"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"stun_duration"		    "2.5"
-			}             
-		}
+		"AbilityValues"
+        {
+            "bonus_all_stats" "50"
+            "attack_range_bonus" "400"
+            "project_speed_extra" "1000"
+            "spell_amp_bonus_perc" "50"
+            "movespeed_bonus_const" "75"
+            "nightvision_bonus" "800"
+            "distance_traveled" "8500"
+            "hitbox_radius" "150"
+            "projectile_speed" "1750"
+            "spawn_distance" "250"
+            "base_damage" "1000"
+            "max_damage" "3500"
+            "distance_mult" "1.0"
+            "impact_radius" "250"
+            "stun_duration" "2.5"
+        }
 	}
 	//=================================================================================================================
 	"item_moonlight_goddess_bow_cringe"
@@ -8391,10 +5041,9 @@
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-
-		}
+		"AbilityValues"
+        {
+        }
 	}
     
 	//=================================================================================================================
@@ -8440,10 +5089,9 @@
 		"AbilityManaCost"						"0"
 		//"AbilitySharedCooldown"					""
 
-		"AbilitySpecial"
-		{
-
-		}
+		"AbilityValues"
+        {
+        }
 	}
     
 	"item_gojo_six_eyes"
@@ -8464,33 +5112,13 @@
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_attk_damage"	    "80"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_health"	        "1000"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_allstats"	    "20"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_spell_amp"	    "50"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"required"	            "8"
-			}
+		"AbilityValues"
+        {
+            "bonus_attk_damage" "80"
+            "bonus_health" "1000"
+            "bonus_allstats" "20"
+            "bonus_spell_amp" "50"
+            "required" "8"
         }
 	}
     
@@ -8525,33 +5153,13 @@
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_hp_percent"	    "10"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_ms_constant"	    "25"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"circle_damage"	        "300"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"circle_chance"	        "51.4"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"burn_damage_interval"	"0.44"
-			}
+		"AbilityValues"
+        {
+            "bonus_hp_percent" "10"
+            "bonus_ms_constant" "25"
+            "circle_damage" "300"
+            "circle_chance" "51.4"
+            "burn_damage_interval" "0.44"
         }
 	}
 

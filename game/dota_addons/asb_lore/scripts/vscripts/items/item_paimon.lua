@@ -14,7 +14,7 @@ function item_paimon:OnSpellStart()
       self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_paimon_buff", {} )
       local sound_cast = "paimon.scream"
 	  EmitSoundOn( sound_cast, self:GetCaster() )
-      self:SpendCharge()
+      self:SpendCharge(0)
 	end
 end
 ---------------------------------------------------------------------------------------------------------------------
