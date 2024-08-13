@@ -1067,9 +1067,11 @@ function lansa_de_relampago:GetAOERadius()
     return self:GetSpecialValueFor("radius")
 end
 
+--[[
 function lansa_de_relampago:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK + DOTA_ABILITY_BEHAVIOR_AOE
 end
+]]--
 
 function lansa_de_relampago:OnSpellStart()
     local caster = self:GetCaster()

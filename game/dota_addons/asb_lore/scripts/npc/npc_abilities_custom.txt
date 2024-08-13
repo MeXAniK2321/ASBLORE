@@ -31285,7 +31285,7 @@
             "max_degrees" "400"
             "auto_length" "480"
             "auto_width" "125"
-            "limit_ms" "2250"
+            "limit_ms" "1750"
             "turn_drift" "175"
             "damage_increase" "0.06"
         }
@@ -33345,7 +33345,7 @@
             "damage" "1000"
             "movespeed_limit" "800"
             "movespeed_bonus_perc" "100"
-            "base_damage_bonus" "80"
+            "base_damage_bonus" "40"
             "magic_damage_bonus" "80"
         }
 	}

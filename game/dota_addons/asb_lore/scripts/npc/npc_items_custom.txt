@@ -394,7 +394,7 @@
 		"AbilityTextureName" 					"samehada"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"2000"
+		"ItemCost"								"1000"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_samehada"
@@ -4281,7 +4281,7 @@
 		"ShouldBeSuggested"						"1"
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
 		"AbilityCooldown"						"55"
-		"AbilityManaCost"						"400"
+		"AbilityManaCost"						"250"
 		//"AbilitySharedCooldown"					"angel_halo"
 
 		"AbilityValues"
@@ -4290,7 +4290,7 @@
             "bonus_as" "65"
             "bonus_magic_resist" "15"
             "active_spell_amp" "10"
-            "active_damage" "40"
+            "active_damage" "50"
             "active_duration" "15"
             "bonus_strength" "30"
         }
@@ -4594,7 +4594,7 @@
 		"AbilityTextureName" 					"axis_sheet"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"18450"
+		"ItemCost"								"17450"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_jetstream_sam_muramasa"
@@ -5144,7 +5144,7 @@
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"1"
-		"ItemCost"								"5000"
+		"ItemCost"								"4000"
 		"AbilityType"					        "DOTA_ABILITY_TYPE_BASIC"
 		"AbilitySharedCooldown"                 ""
 		"AbilityCooldown"						"60"

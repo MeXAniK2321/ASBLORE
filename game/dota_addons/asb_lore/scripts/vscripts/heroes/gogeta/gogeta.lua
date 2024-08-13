@@ -735,7 +735,7 @@ function modifier_akame_headbump:OnIntervalThink()
             end
 
             --self:SetStackCount(self:GetStackCount() + 1)
-            if not self.AuraEffect then
+            --if not self.AuraEffect then
                 local vCurPos = self.parent:GetAbsOrigin()
                 local vForwardVector = self.parent:GetForwardVector()
                 local vEnemyPos = self.hMainTarget:GetAbsOrigin() + vForwardVector * 230
@@ -745,7 +745,7 @@ function modifier_akame_headbump:OnIntervalThink()
                 ParticleManager:SetParticleControl(self.AuraEffect, 0, vEnemyPos)
                 ParticleManager:SetParticleControl(self.AuraEffect, 1, vCurPos)
                 self:AddParticle(self.AuraEffect, false, false, -1, false, false)
-            end
+            --end
             
             if self.iAttacksCount < 3 then
                 self.iSounds = RandomInt(3, 5)

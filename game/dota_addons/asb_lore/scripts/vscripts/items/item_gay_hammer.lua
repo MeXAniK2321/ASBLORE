@@ -143,6 +143,8 @@ function item_gay_hammer:OnSpellStart()
       end
 	else
       caster:AddNewModifier(caster, self, "modifier_gay_garbage", {})
+      self:EndCooldown()
+      self:StartCooldown(35 * caster:GetCooldownReduction())
     end
 end
 

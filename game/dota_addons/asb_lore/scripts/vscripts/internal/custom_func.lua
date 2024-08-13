@@ -19,3 +19,13 @@ LoreIsAbilityRequiredLevel = function(hAbility, iLevel)
     end
     return false
 end
+
+--// Overwrite GetIntellect(*bool*) function in cases where first parameter is not set.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+local VALVE_GetIntellect = CDOTA_BaseNPC_Hero.GetIntellect
+CDOTA_BaseNPC_Hero.GetIntellect = function(self, bskipNoConsume)
+    bskipNoConsume = bskipNoConsume or false
+    
+    return VALVE_GetIntellect(self, bskipNoConsume)
+end
