@@ -1236,9 +1236,9 @@
             "bonus_all_stats" "25"
             "bonus_health_regen" "25.0"
             "bonus_mana_regen" "25.0"
-            "burn_dps_units" "250"
+            "burn_dps_units" "350"
             "burn_duration" "6"
-            "impact_damage_units" "1400"
+            "impact_damage_units" "1850"
         }
 		
 	}

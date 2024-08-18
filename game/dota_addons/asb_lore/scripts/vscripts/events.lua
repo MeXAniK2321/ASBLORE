@@ -374,33 +374,42 @@ function COverthrowGameMode:OnDisconnect(event)
     	if PlayerResource:IsValidPlayerID(player_id) and hPlayer and not PlayerResource:HasSelectedHero(player_id) then
           	hPlayer:MakeRandomHeroSelection()
         end
-    end
-
-    
+    end  
 end
 
 
 function COverthrowGameMode:SetRespawnTime( killedTeam, killedUnit, extraTime )
-    	
- local ability = killedUnit:FindAbilityByName("all_fiction_self")
- 
-
-  if killedUnit:GetUnitName()== "npc_dota_hero_faceless_void" and killedUnit:HasModifier("modifier_all_fiction_self") then
-	killedUnit:SetTimeUntilRespawn(0)
-	elseif killedUnit:HasModifier("modifier_debuff_10") or  killedUnit:HasModifier("modifier_emit_video") then
-	killedUnit:SetTimeUntilRespawn(15)
-elseif
- killedTeam == self.leadingTeam  then
-		killedUnit:SetTimeUntilRespawn( 4 )
-		elseif
- killedTeam == self.runnerupTeam  then
-		killedUnit:SetTimeUntilRespawn( 4 )
-		elseif
- killedTeam == self.thirdTeam  then
-		killedUnit:SetTimeUntilRespawn( 4 )
-	else 
-killedUnit:SetTimeUntilRespawn( 4 )
-end
+    if killedUnit:GetUnitName()== "npc_dota_hero_faceless_void" and killedUnit:HasModifier("modifier_all_fiction_self") then
+        killedUnit:SetTimeUntilRespawn(0)
+        return
+    elseif killedUnit:HasModifier("modifier_debuff_10") or  killedUnit:HasModifier("modifier_emit_video") then
+        killedUnit:SetTimeUntilRespawn(15)
+        return
+    end
+    
+    local nHeroLevel         = killedUnit:GetLevel()
+    local nRespawnMultiplier = (self.n_RespawnMultiplier or 1.0)
+    local nUpdateStarting    = 30 / 4 -- Scaling level minimum
+    if nRespawnMultiplier > 1.0 then
+        -- Begin scaling the multiplier after level nUpdateStarting, reaching maximum value at lvl 30
+        local nLevelFactor = math.max((nHeroLevel - nUpdateStarting) / (30 - nUpdateStarting), 0)
+        nRespawnMultiplier = 1.0 + nLevelFactor * (nRespawnMultiplier - 1.0)
+    end
+    
+    local nBaseRespawnTime = 5.0 * nRespawnMultiplier
+    
+    
+    if killedTeam == self.leadingTeam then
+		killedUnit:SetTimeUntilRespawn(nBaseRespawnTime + 3)
+    elseif killedTeam == self.runnerupTeam then
+        killedUnit:SetTimeUntilRespawn(nBaseRespawnTime + 2)
+    elseif killedTeam == self.thirdTeam then
+        killedUnit:SetTimeUntilRespawn(nBaseRespawnTime + 2)
+    else 
+        killedUnit:SetTimeUntilRespawn(nBaseRespawnTime)
+    end
+    
+    --print("Respawn Multiplier: " .. nRespawnMultiplier)
 end
 --------------------------------------------------------------------------------
 -- Event: OnItemPickUp
@@ -441,14 +450,13 @@ function COverthrowGameMode:OnHeroPick(event)
     local hHero = EntIndexToHScript(event.heroindex)
     if IsNotNull(hHero) then
     --=============================ALTERNATE TO EYE'S METHOD, BECAUSE COPY PASTA IS CRINGE=============================--
-        local iAbilities  = hHero:GetAbilityCount()
         local sHeroName   = string.gsub(hHero:GetUnitName(), "npc_dota_hero_", "")
         local tExceptions = {
                                 abyssal_underlord_portal_warp = true,
                                 axe_berserkers_call_lua = true,
                             }
         
-        for i = 0, iAbilities - 1 do
+        for i = 0, hHero:GetAbilityCount() - 1 do
             local hAbility = hHero:GetAbilityByIndex(i)
             if IsNotNull(hAbility) then
                 local sAbility = hAbility:GetAbilityName()

@@ -550,6 +550,9 @@ function gogeta_kick_combo:GetChannelTime()
 end
 function gogeta_kick_combo:CastFilterResultTarget(hTarget)
     local hCaster = self:GetCaster()
+    if hCaster == hTarget then
+        return UF_FAIL_FRIENDLY
+    end
     return ( hTarget:IsMagicImmune() and hCaster:GetTeamNumber() ~= hTarget:GetTeamNumber() and not hCaster:HasModifier("modifier_akame_headbump") )
            and UF_FAIL_MAGIC_IMMUNE_ENEMY
            or UF_SUCCESS

@@ -4452,10 +4452,10 @@
 		"ItemInitiallySellable"					"1"
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
-		"ItemInitialCharges"					"2"
+		"ItemInitialCharges"					"3"
 		"ItemCost"								"4000"
 		"AbilitySharedCooldown"                 ""
-		"AbilityCooldown"						"40"
+		"AbilityCooldown"						"35"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -4544,7 +4544,7 @@
 
 		"AbilityValues"
         {
-            "gold" "1200"
+            "gold" "1001"
         }
 	}
 	
@@ -4986,14 +4986,14 @@
             "movespeed_bonus_const" "75"
             "nightvision_bonus" "800"
             "distance_traveled" "8500"
-            "hitbox_radius" "150"
+            "hitbox_radius" "100"
             "projectile_speed" "1750"
             "spawn_distance" "250"
-            "base_damage" "1000"
-            "max_damage" "3500"
-            "distance_mult" "1.0"
+            "base_damage" "500"
+            "max_damage" "3250"
+            "distance_mult" "0.5"
             "impact_radius" "250"
-            "stun_duration" "2.5"
+            "stun_duration" "2.0"
         }
 	}
 	//=================================================================================================================
@@ -5114,7 +5114,7 @@
 
 		"AbilityValues"
         {
-            "bonus_attk_damage" "80"
+            "bonus_attk_damage" "50"
             "bonus_health" "1000"
             "bonus_allstats" "20"
             "bonus_spell_amp" "50"
@@ -5143,11 +5143,11 @@
 		"ItemInitiallySellable"					"1"
 		"ItemSellable"							"0"
 		"ShouldBeInitiallySuggested"			"1"
-		"ItemInitialCharges"					"1"
+		"ItemInitialCharges"					"2"
 		"ItemCost"								"4000"
 		"AbilityType"					        "DOTA_ABILITY_TYPE_BASIC"
 		"AbilitySharedCooldown"                 ""
-		"AbilityCooldown"						"60"
+		"AbilityCooldown"						"40"
 		"AbilityCastPoint"						"0.5"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"

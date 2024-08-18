@@ -49,6 +49,7 @@ function modifier_berserker_armor:GetModifierBonusStats_Intellect(keys)
 end
 function modifier_berserker_armor:GetModifierAttackSpeedBonus_Constant()
     self.iAttkSpeedBonus = RemapValClamped(self.hParent:GetHealthPercent(), 100, 0, 0, self.iAttkSpeedV) -- Remap Percent HP from 100% to 0% return values from 0 and Max Attack Speed.
+    self:SetStackCount(self.iAttkSpeedBonus)
     return self.iAttkSpeedBonus 
 end
 function modifier_berserker_armor:GetMinHealth(keys)
@@ -234,7 +235,7 @@ function item_moonlight_goddess_bow:OnSpellStart()
 	    			           vSpawnOrigin        = vSpawnLoc,
 	    			           fDistance           = f__Distance,
 	    			           fStartRadius        = f__Radius,
-	    			           fEndRadius          = f__Radius + 45,
+	    			           fEndRadius          = f__Radius + 35,
 	    			           Source              = hCaster,
 	    			           bHasFrontalCone     = false,
 	    			           bReplaceExisting    = false,

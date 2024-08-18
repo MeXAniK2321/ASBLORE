@@ -18,6 +18,8 @@ function item_samehada:OnSpellStart()
 	local damage = mana
 	
 	if target:TriggerSpellAbsorb(self) then return end
+    
+    target:RemoveModifierByName("modifier_goju_infinite_void")
 	
 	target:AddNewModifier(self:GetCaster(), self, "modifier_item_samehada_debuff", {duration = 2.5})
     local damageTable = {

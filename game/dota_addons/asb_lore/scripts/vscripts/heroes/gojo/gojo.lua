@@ -1529,6 +1529,12 @@ function goju_domain_expansion:Spawn()
         end
     end
 end
+function goju_domain_expansion:OnOwnerSpawned()
+    if IsServer() then
+        self:GetCaster():RemoveModifierByName("modifier_goju_domain_expansion")
+        self:GetCaster():RemoveModifierByName("modifier_goju_hollow_purple_active")
+    end
+end
 function goju_domain_expansion:GetOnUpgradeAbilities()
     return hTABLE_ABILITIES2
 end

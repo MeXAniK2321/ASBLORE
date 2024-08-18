@@ -8,9 +8,10 @@ function appolon_bow:IsStealable() return false end
 function appolon_bow:GetAOERadius()
     return self:GetSpecialValueFor("radius")
 end
+--[[
 function appolon_bow:GetBehavior()
     return DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK + DOTA_ABILITY_BEHAVIOR_AOE
-end
+end]]--
 function appolon_bow:OnSpellStart()
     local caster = self:GetCaster()
 	local point = self:GetCursorPosition() + (caster:GetForwardVector() * 1)

@@ -382,7 +382,7 @@
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/sand_dust.vtex"
+					m_hTexture = resource:"materials/particle/particle_flares/aircraft_white_v2.vtex"
 					m_nTextureBlendMode = "SPRITECARD_TEXTURE_BLEND_LUMINANCE"
 				},
 			]

@@ -3520,11 +3520,163 @@
 		//"AttackDamageMin"			"50"
 		//"AttackDamageMax"			"55"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		//"AttackRate"				"1.700000"
+		"AttackRate"				"2.700000"
 		"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"0.500000"
 		"AttackAcquisitionRange"	"800"
 		"AttackRange"				"550"
+		"ProjectileModel"			"particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
+		"ProjectileSpeed"			"1800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
+		//"AttributeBaseStrength"		"5"
+		//"AttributeStrengthGain"		"4.0"
+		//"AttributeBaseIntelligence"	"40"
+		//"AttributeIntelligenceGain"	"0.5"
+		//"AttributeBaseAgility"		"5"
+		//"AttributeAgilityGain"		"0.5"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"					"62"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		//-------------------------------------------------------------------------------------------------------------
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"275"
+		"MovementTurnRate"			"0.500000"
+		"HasAggressiveStance"		"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"HealthBarOffset"			"250" 
+		"StatusHealth"				"400"
+		"StatusHealthRegen"			"2"
+		"StatusMana"				"150"
+		"StatusManaRegen"			"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		//-------------------------------------------------------------------------------------------------------------
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Inventory
+		//-------------------------------------------------------------------------------------------------------------
+		"HasInventory"				"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Voice
+		//-------------------------------------------------------------------------------------------------------------
+		//"GameSoundsFile"			"soundevents/heroes/anime_hero_aqua.vsndevts"
+		"VoiceFile"					"Empty"
+		//"VoiceBackgroundSound"		""
+		//"IdleSoundLoop"				""
+		//"HeroSelectSoundEffect"		"Okabe.Sonofabitch.Play"
+		//-------------------------------------------------------------------------------------------------------------
+		// Particle
+		//-------------------------------------------------------------------------------------------------------------
+		"particle_folder"			"particles/heroes/anime_hero_aqua"
+		//-------------------------------------------------------------------------------------------------------------
+		// Role
+		"Role"						"Carry,Support,Nuker,Disabler,Jungler,Durable,Escape,Pusher,Initiator"
+		"Rolelevels"				"3,3,3,3,0,3,3,0,3"
+		//-------------------------------------------------------------------------------------------------------------	
+	}
+    
+	//-----------KENSHIRO---------------------------------------------------------------------------------------------------------------------------------
+	"npc_dota_hero_troll_warlord"
+	{
+		"override_hero"				"npc_dota_hero_troll_warlord"
+		"Model"						"models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.vmdl" //"models/mahito/gojo.vmdl"
+		"ModelScale"				"2.00000" //"0.8"
+		"LoadoutScale"				"1.00000"
+		"SpectatorLoadoutScale" 	"1.00000"
+		"VersusScale"				"1.00000"
+		"DisableWearables" 			"1"
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_loadout_v2.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+  		{ }
+  		
+		//"MovementSpeedActivityModifiers" //CRASHING IF USES SAME MODIFIER PROPERTIES AT SAME TIME
+		//{
+			//"haste"					"450"
+		//} 
+
+		"Ability1"					"kenshiro_hiei_ganzan"
+		"Ability2"					"kenshiro_shichishi_juu"
+		"Ability3"					"kenshiro_zankai"
+		
+		"Ability4"					"kenshiro_tenha"
+
+		"Ability5"					"kenshiro_shichishi_seiten"
+		"Ability6"					"kenshiro_muso_tensei"
+
+		"Ability7"					"kenshiro_zankai_sekiho"
+		"Ability8"					"kenshiro_muso_tensei_styles"
+		"Ability9"					"kenshiro_muso_tensei_ultimate"
+		"Ability10"					"kenshiro_shichisei_tenshin"
+		"Ability11"					"kenshiro_hyakuretsu_ken"
+        
+		"Ability12"					"kenshiro_shin"
+		"Ability13"					"kenshiro_toki"
+		"Ability14"					"kenshiro_rei"
+		"Ability15"					"kenshiro_raoh"
+
+        "Ability16"					"special_bonus_hp_300"
+        "Ability17"					"special_bonus_armor_4"
+
+		"Ability18"					"special_bonus_gojo_15"
+		"Ability19"					"special_bonus_all_stats_15"
+
+		"Ability20"					"special_bonus_gojo_20"
+		"Ability21"					"special_bonus_gojo_20_alt"
+
+		"Ability22"					"special_bonus_gojo_25_alt"
+		"Ability23"					"special_bonus_gojo_25"
+
+		"AbilityTalentStart"		"10"
+		//-------------------------------------------------------------------------------------------------------------
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		//"AttackDamageMin"			"50"
+		//"AttackDamageMax"			"55"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		//"AttackRate"				"1.700000"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.500000"
+		"AttackAcquisitionRange"	"800"
+		"AttackRange"				"200"
 		"ProjectileModel"			"particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
 		"ProjectileSpeed"			"1800"
 		//-------------------------------------------------------------------------------------------------------------

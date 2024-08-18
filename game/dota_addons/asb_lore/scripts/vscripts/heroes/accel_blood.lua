@@ -41,7 +41,6 @@ function maki_strangulate:OnChannelThink(flInterval)
     if not self.target or self.target:IsNull() then
         return nil
     end
-	local target = self:GetCursorTarget()
 	local caster = self:GetCaster()
     
     local modifier = self.target:FindModifierByNameAndCaster("modifier_accel_stunned", self:GetCaster())
@@ -52,7 +51,7 @@ function maki_strangulate:OnChannelThink(flInterval)
 		
 
 	-- effects
-	self:PlayEffects( target, success )
+	self:PlayEffects( self.target, success )
 
 	
 

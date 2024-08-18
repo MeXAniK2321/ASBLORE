@@ -287,6 +287,7 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
 		self.m_GoldDropPercent = 15
+        self.n_RespawnMultiplier = 1.0
 		elseif GetMapName() == "balance_duo" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -299,6 +300,7 @@ function COverthrowGameMode:InitGameMode()
 			self.m_GoldRadiusMin = 400
 		self.m_GoldRadiusMax = 700
 		self.m_GoldDropPercent = 15
+        self.n_RespawnMultiplier = 2.0
         elseif GetMapName() == "birzhamemov_5v5" then
 		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -309,6 +311,7 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMax = 1400
 		self.m_GoldDropPercent = 20
 		self.effectradius = 1400
+        self.n_RespawnMultiplier = 2.5
 	elseif GetMapName() == "desert_quintet" then
 	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
 		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
@@ -319,6 +322,7 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
 		self.m_GoldDropPercent = 35
+        self.n_RespawnMultiplier = 3.0
 	elseif GetMapName() == "temple_quartet" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 3 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 3 )
@@ -327,6 +331,7 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMin = 300
 		self.m_GoldRadiusMax = 1400
 		self.m_GoldDropPercent = 35
+        self.n_RespawnMultiplier = 2.5
 	elseif GetMapName() == "asb_fate_nasral" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 7 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
@@ -335,11 +340,13 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMin = 600
 		self.m_GoldRadiusMax = 3000
 		self.m_GoldDropPercent = 0
+        self.n_RespawnMultiplier = 2.5
 		CreateUnitByName("npc_dota_xp_global", Vector(944, 2120, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
 	else
 		self.m_GoldRadiusMin = 250
 		self.m_GoldRadiusMax = 550
 		self.m_GoldDropPercent = 15
+        self.n_RespawnMultiplier = 1.0
 	end
 	
 
@@ -512,7 +519,7 @@ function COverthrowGameMode:UpdateScoreboard()
 	end
 
 	-- reverse-sort by score
-	-- table.sort( sortedTeams, function(a,b) return ( a.teamScore > b.teamScore ) end )
+	table.sort( sortedTeams, function(a,b) return ( a.teamScore > b.teamScore ) end )
 
 	-- for _, t in pairs( sortedTeams ) do
 	-- 	local clr = self:ColorForTeam( t.teamID )
@@ -530,7 +537,7 @@ function COverthrowGameMode:UpdateScoreboard()
 	--print("Leader = " .. leader)
 	self.leadingTeam = leader
 	self.runnerupTeam = sortedTeams[2].teamID
-	--self.thirdTeam = sortedTeams[3].teamID
+	self.thirdTeam = sortedTeams[3].teamID
 	self.leadingTeamScore = sortedTeams[1].teamScore
 	self.runnerupTeamScore = sortedTeams[2].teamScore
 	if sortedTeams[1].teamScore == sortedTeams[2].teamScore then
@@ -564,6 +571,8 @@ function COverthrowGameMode:UpdateScoreboard()
 			end
 		end
 	end
+    
+    --print("Team1: " .. self.leadingTeam .. " Team2: " .. self.runnerupTeam .. " Team3: " .. self.thirdTeam)
 end
 
 ---------------------------------------------------------------------------
