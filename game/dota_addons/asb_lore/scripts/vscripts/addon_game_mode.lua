@@ -173,6 +173,8 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_minato_kunai.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/hero_themes.vsndevts", context )
+        PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_axe.vsndevts", context )
+        PrecacheResource( "soundfile", "soundevents/bogdan.vsndevts", context )
 
 		PrecacheResource( "soundfile", "soundevents/seva_nasral.vsndevts", context )
 

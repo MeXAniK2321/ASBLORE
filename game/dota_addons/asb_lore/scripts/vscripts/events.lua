@@ -150,6 +150,19 @@ function COverthrowGameMode:OnNPCSpawned( event )
 					player:SetModelScale(1.4)
 				end
 			end
+            
+			if player:GetUnitName() == "npc_dota_hero_dazzle" then
+				if IsASBPatreon(player) then
+					player:SetOriginalModel("models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana.vmdl")
+					player:SetModelScale(1.2)
+				end
+			end
+            
+			if player:GetUnitName() == "npc_dota_hero_ringmaster" then
+                if not player:HasModifier("modifier_lore_ringmaster") then
+                    player:AddNewModifier(player, self, "modifier_lore_ringmaster", {})
+                end
+			end
 	
 
 		if self.allSpawned == false then
@@ -456,14 +469,26 @@ function COverthrowGameMode:OnHeroPick(event)
                                 axe_berserkers_call_lua = true,
                             }
         
+        local nMatchedAbilities = 0
+        local tSpellsRemove     = {}
+        
         for i = 0, hHero:GetAbilityCount() - 1 do
             local hAbility = hHero:GetAbilityByIndex(i)
             if IsNotNull(hAbility) then
                 local sAbility = hAbility:GetAbilityName()
                 if string.find(sAbility, sHeroName) and not tExceptions[sAbility] then
-                    hHero:RemoveAbility(sAbility)
+                    table.insert(tSpellsRemove, sAbility)
+                    nMatchedAbilities = nMatchedAbilities + 1
+                    --hHero:RemoveAbility(sAbility)
                     --print("Removed Ability: " .. sAbility)
                 end
+            end
+        end
+        
+        -- If matched abilities more than 1, then probably a true Dota hero, so ignore.
+        if nMatchedAbilities == 1 then
+            for _, sAbility in pairs(tSpellsRemove) do
+                hHero:RemoveAbility(sAbility)
             end
         end
     --=================================================================================================================--

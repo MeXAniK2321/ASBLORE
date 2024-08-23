@@ -3713,4 +3713,161 @@ end
 
 
 
+
+
+--!!----------------------------------------------------------------------------------------------------------------------------------------------------------
+LinkLuaModifier("modifier_lore_ringmaster", "anime_modifiers_server_client", LUA_MODIFIER_MOTION_NONE)
+
+modifier_lore_ringmaster = modifier_lore_ringmaster or class({})
+
+function modifier_lore_ringmaster:IsHidden()                                             return true end
+function modifier_lore_ringmaster:IsDebuff()                                             return false end
+function modifier_lore_ringmaster:IsPurgable()                                           return false end
+function modifier_lore_ringmaster:IsPurgeException()                                     return false end
+function modifier_lore_ringmaster:RemoveOnDeath()                                        return false end
+function modifier_lore_ringmaster:GetAttributes()                                        return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_lore_ringmaster:GetPriority()                                          return MODIFIER_PRIORITY_ULTRA end
+function modifier_lore_ringmaster:IsMarbleException()                                    return true end
+function modifier_lore_ringmaster:DeclareFunctions()
+    local tFunc =   {
+                        MODIFIER_EVENT_ON_TAKEDAMAGE,
+                        MODIFIER_EVENT_ON_ABILITY_FULLY_CAST,
+                        MODIFIER_PROPERTY_MODEL_SCALE,
+                    }
+    return tFunc
+end
+function modifier_lore_ringmaster:OnTakeDamage(keys)	
+    if IsServer() then 
+        --[[if self:CheckConditions(keys) then
+            print("Ringmaster OnTakeDamage Test")
+        end]]--
+        if self:CheckConditions(keys) and keys.damage_type == DAMAGE_TYPE_MAGICAL and keys.damage_category == DOTA_DAMAGE_CATEGORY_SPELL and not keys.inflictor:IsItem() then
+            if keys.inflictor:GetName() == "ringmaster_tame_the_beasts" then
+                local iGachiParticle = ParticleManager:CreateParticle("particles/gachi_paradise2.vpcf", PATTACH_ABSORIGIN_FOLLOW, keys.unit)
+                EmitSoundOn( "bogdan.key_hit", keys.unit )
+                
+                Timers:CreateTimer(1.4,function()
+                    ParticleManager:DestroyParticle(iGachiParticle, false)
+                    ParticleManager:ReleaseParticleIndex(iGachiParticle)
+                end)
+            end
+            if keys.inflictor:GetName() == "ringmaster_impalement" then
+                EmitSoundOn( "axe_axe_move_01", keys.unit )
+            end
+            self.hDamageTable.victim = keys.target
+            self.hDamageTable.damage = keys.original_damage * 0.65
+            ApplyDamage(self.hDamageTable)
+            --print("Ringmaster original damage: " .. keys.original_damage)
+            --print("Ringmaster damage: " .. keys.damage)
+            --print("Ringmaster did an extra: " .. keys.original_damage * 0.65 .. " damage ! ")
+        end
+    end
+end
+function modifier_lore_ringmaster:CheckConditions(keys)
+    if not keys or not keys.inflictor then
+        return false
+    end
+    
+    keys.target = keys.target or keys.unit
+    
+    return self.hParent and keys.attacker and keys.target 
+           and self.hParent == keys.attacker and self.hParent ~= keys.target 
+           and keys.target:IsAlive() and keys.target:IsOpposingTeam(self.hParent:GetTeamNumber())
+end
+function modifier_lore_ringmaster:OnAbilityFullyCast(keys)
+    if not IsServer() and not keys then
+        return
+    end
+    
+    if self.hParent ~= keys.unit then
+        return
+    end
+    
+    local hAbility = keys.ability  
+    local sAbility = hAbility:GetName()
+    
+    if sAbility == "ringmaster_the_box" then
+        local sSound = nil
+        if RollPercentage(50) then
+            sSound = "bogdan.dungeon_master"
+        else
+            sSound = "bogdan.dungeon_house"
+        end
+        EmitSoundOn( sSound, self.hParent )
+    end
+    
+    if sAbility == "ringmaster_impalement" then
+        local sSound = nil
+        if RollPercentage(50) then
+            sSound = "hurk.cum_1"
+        else
+            sSound = "bogdan.boy"
+        end
+        EmitSoundOn( sSound, self.hParent )
+    end
+    
+    if sAbility == "ringmaster_wheel" then
+        EmitSoundOn( "axe_axe_move_04", self.hParent )
+    end
+    
+end
+function modifier_lore_ringmaster:GetModifierModelScale()
+    return 30
+end
+function modifier_lore_ringmaster:OnCreated(hTable)
+    self.hCaster  = self:GetCaster()
+    self.hParent  = self:GetParent()
+    self.hAbility = self:GetAbility()
+    
+    self.hDamageTable = {
+                         victim = nil,
+                         attacker = self.hParent,
+                         damage = nil,
+                         damage_type = DAMAGE_TYPE_MAGICAL,
+                         damage_flags = 0,
+                         ability = nil
+                        }
+
+    if IsServer() then
+        self.bCooldownAdded = self.bCooldownAdded or false
+        
+        if IsNotNull(self.hParent) and not self.bCooldownAdded then
+            for i = 0, self.hParent:GetAbilityCount() - 1 do
+                local hAbility = self.hParent:GetAbilityByIndex(i)
+                if IsNotNull(hAbility) then
+                    local sAbility = hAbility:GetAbilityName()
+                    if hAbility:GetLevel() < hAbility:GetMaxLevel() and hAbility:IsUltimate() then
+                        hAbility:SetLevel(hAbility:GetMaxLevel())
+                        hAbility:EndCooldown()
+                        hAbility:StartCooldown(200)
+                        --print("Ringmaster Ability: " .. sAbility .. " has been leveled to: " .. hAbility:GetMaxLevel())
+                    end
+                    print(sAbility)
+                end
+            end
+            self.bCooldownAdded = true
+        end
+    end
+end
+function modifier_lore_ringmaster:GetEffectName()
+    return "particles/ringmaster_hearts.vpcf"
+end
+function modifier_lore_ringmaster:GetEffectAttachType()
+    return PATTACH_ABSORIGIN_FOLLOW
+end
+function modifier_lore_ringmaster:OnRefresh(hTable)
+    self:OnCreated(hTable)
+end
+function modifier_lore_ringmaster:OnDestroy()
+end
+
+
+
+
+
+
+
+
+
+
 return true

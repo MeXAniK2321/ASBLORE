@@ -572,7 +572,7 @@ function modifier_ae86_gas:UpdateHorizontalMotion(me, dt)
 
                                 hEnemy:AddNewModifier(self.parent, self.ability, "modifier_knockback", self.hKnockBackTable, hEnemy:IsOpposingTeam(self.parent:GetTeamNumber()))
 
-                                for i = 1, fAttacksPerSecond do
+                                for i = 1, math.min(fAttacksPerSecond, 2) do
                                     self.parent:AnimePerformAttack( hEnemy,                     --hTarget
                                                                     true,                       --bProcessProcs
                                                                     true,                       --bSkipCooldown

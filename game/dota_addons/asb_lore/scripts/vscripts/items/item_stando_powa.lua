@@ -39,7 +39,7 @@ function modifier_item_stando_powa:OnCreated( kv )
                          attacker = self.parent,
                          damage = self.damage,
                          damage_type = DAMAGE_TYPE_MAGICAL,
-                         damage_flags = DOTA_DAMAGE_FLAG_NONE,
+                         damage_flags = DOTA_DAMAGE_FLAG_PROPERTY_FIRE,
                         }
 end
 function modifier_item_stando_powa:OnTakeDamage(params)

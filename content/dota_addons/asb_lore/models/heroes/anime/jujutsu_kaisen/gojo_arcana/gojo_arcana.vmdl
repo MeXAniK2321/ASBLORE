@@ -1,0 +1,1204 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc36:version{972dada4-b828-45a4-bb93-7795cf0585da} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "imported material 01.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana3.vmat"
+							},
+							{
+								from = "imported material 02.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana5.vmat"
+							},
+							{
+								from = "imported material 03.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana1.vmat"
+							},
+							{
+								from = "imported material 04.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana2.vmat"
+							},
+							{
+								from = "imported material 05.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana6.vmat"
+							},
+							{
+								from = "imported material 06.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana6.vmat"
+							},
+							{
+								from = "imported material 07.vmat"
+								to = "materials/models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana4.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "ATTACH_ORIGIN"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HEAD"
+						parent_bone = "b_C_Head"
+						relative_origin = [ 0.0, 0.0, 10.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FOLLOW_OVERHEAD"
+						parent_bone = "b_C_Head"
+						relative_origin = [ 0.0, 0.0, 40.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HITLOC"
+						parent_bone = "b_C_Spine1"
+						relative_origin = [ 0.0, 0.0, 20.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK1"
+						parent_bone = "h_R_Index1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK2"
+						parent_bone = "h_L_Index1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_LEG1"
+						parent_bone = "b_R_Toe"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_LEG2"
+						parent_bone = "b_L_Toe"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_EYEOFLIE1"
+						parent_bone = "b_C_Head"
+						relative_origin = [ 3.0, -7.4, 7.4 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_EYEOFLIE2"
+						parent_bone = "b_C_Head"
+						relative_origin = [ -3.3, -7.4, 7.4 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "b_C_Spine1"
+								parent_bone = "b_C_Spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -18.351089, -12.245826, -14.941071 ]
+								hitbox_maxs = [ 17.270599, 13.315372, 13.158737 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_C_Spine2"
+								parent_bone = "b_C_Spine2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.792578, -11.646498, -3.876808 ]
+								hitbox_maxs = [ 15.343885, 10.689207, 9.118484 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_C_Chest"
+								parent_bone = "b_C_Chest"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.883806, -12.381195, -7.50399 ]
+								hitbox_maxs = [ 20.075918, 13.281754, 34.331146 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_C_Neck1"
+								parent_bone = "b_C_Neck1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.668484, -5.296843, -4.756699 ]
+								hitbox_maxs = [ 5.368455, 5.512344, 7.366058 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_C_Head"
+								parent_bone = "b_C_Head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.076538, -12.66703, -4.707291 ]
+								hitbox_maxs = [ 12.472939, 11.381062, 22.692184 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Shoulder"
+								parent_bone = "b_L_Shoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.888597, -9.754589, -3.585297 ]
+								hitbox_maxs = [ 0.5, 7.66175, 4.773956 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Arm1"
+								parent_bone = "b_L_Arm1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -21.520489, -5.456657, -22.752075 ]
+								hitbox_maxs = [ 0.5, 6.59379, 1.40712 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Arm2"
+								parent_bone = "b_L_Arm2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.359863, -9.297674, -21.715904 ]
+								hitbox_maxs = [ 5.00934, 4.109657, 5.623154 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Hand"
+								parent_bone = "b_L_Hand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.861347, -5.931998, -6.516792 ]
+								hitbox_maxs = [ 5.311253, 3.66646, 5.464912 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_L_Thumb1"
+								parent_bone = "h_L_Thumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.281178, -3.519402, -3.232346 ]
+								hitbox_maxs = [ 2.215576, 4.025301, 5.281456 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_L_Index1"
+								parent_bone = "h_L_Index1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.524368, -2.474956, -3.730675 ]
+								hitbox_maxs = [ 1.258446, 2.300633, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_L_Ring1"
+								parent_bone = "h_L_Ring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.341553, -2.416025, -2.468285 ]
+								hitbox_maxs = [ 1.232033, 1.51658, 1.001587 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Shoulder"
+								parent_bone = "b_R_Shoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -10.636452, -3.585236 ]
+								hitbox_maxs = [ 15.080673, 7.521845, 5.605728 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Arm1"
+								parent_bone = "b_R_Arm1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -5.456652, -22.751907 ]
+								hitbox_maxs = [ 21.220318, 6.593796, 2.680252 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Arm2"
+								parent_bone = "b_R_Arm2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.118055, -9.283585, -21.712502 ]
+								hitbox_maxs = [ 20.062843, 4.108906, 5.626572 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Hand"
+								parent_bone = "b_R_Hand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.9342, -5.241231, -6.511749 ]
+								hitbox_maxs = [ 7.459538, 3.666064, 3.852074 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_R_Ring1"
+								parent_bone = "h_R_Ring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.706089, -5.004344, -5.653801 ]
+								hitbox_maxs = [ 2.73737, 4.020547, 3.740479 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_R_Index1"
+								parent_bone = "h_R_Index1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.543163, -2.762965, -4.603279 ]
+								hitbox_maxs = [ 2.908794, 5.708867, 3.610588 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "h_R_Thumb1"
+								parent_bone = "h_R_Thumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.511444, -3.659178, -5.053329 ]
+								hitbox_maxs = [ 5.748577, 5.626962, 5.287231 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Leg1"
+								parent_bone = "b_R_Leg1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.156624, -12.167252, -44.796814 ]
+								hitbox_maxs = [ 11.473747, 11.342747, 1.515289 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Leg2"
+								parent_bone = "b_R_Leg2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.730641, -3.919579, -45.2411 ]
+								hitbox_maxs = [ 11.476161, 13.207619, 2.291939 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_R_Foot"
+								parent_bone = "b_R_Foot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.44342, -10.73724, -10.932447 ]
+								hitbox_maxs = [ 8.064301, 7.012899, 5.17087 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Leg1"
+								parent_bone = "b_L_Leg1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.77358, -13.399295, -44.796814 ]
+								hitbox_maxs = [ 8.710477, 11.342778, 1.809807 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Leg2"
+								parent_bone = "b_L_Leg2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.518057, -3.93509, -44.775246 ]
+								hitbox_maxs = [ 5.688947, 13.192105, 4.429558 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b_L_Foot"
+								parent_bone = "b_L_Foot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.365046, -10.737829, -10.930936 ]
+								hitbox_maxs = [ 5.251948, 7.094906, 5.172383 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "gojo_new"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_idle"
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 647
+						end_frame = 710
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_attack"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 38
+						end_frame = 95
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_attack2"
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 103
+						end_frame = 170
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_run_haste"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "haste"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 731
+						end_frame = 756
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_run"
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 1546
+						end_frame = 1570
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_idle_rare"
+						activity_name = "ACT_DOTA_IDLE_RARE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 1685
+						end_frame = 1780
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_die"
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 281
+						end_frame = 363
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_gojoing"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2973
+						end_frame = 3004
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_idk"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 1635
+						end_frame = 1635
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_hollow_purple"
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 1220
+						end_frame = 1320
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_cast_red_orb"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 1155
+						end_frame = 1200
+						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_cast_blue_orb"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 945
+						end_frame = 1030
+						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_5"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3500
+						end_frame = 3530
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3537
+						end_frame = 3580
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick3"
+						activity_name = "ACT_DOTA_CAST_ABILITY_7"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3591
+						end_frame = 3640
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick4"
+						activity_name = "ACT_DOTA_CAST_ABILITY_ROT"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3640
+						end_frame = 3700
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick5"
+						activity_name = "ACT_DOTA_CAST_ALACRITY"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3700
+						end_frame = 3750
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick6"
+						activity_name = "ACT_DOTA_CAST_ALACRITY_ORB"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3750
+						end_frame = 3770
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_kick7"
+						activity_name = "ACT_DOTA_CAST_CHAOS_METEOR"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3796
+						end_frame = 3830
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_idle_DOMAIN_EXPANSION"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "gojo_domain"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3290
+						end_frame = 3360
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_attack_DOMAIN_EXPANSION"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "gojo_domain"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3380
+						end_frame = 3425
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_attack2_DOMAIN_EXPANSION"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "gojo_domain"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3435
+						end_frame = 3480
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_run_DOMAIN_EXPANSION"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "gojo_domain"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 731
+						end_frame = 756
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_charge_punch_full"
+						activity_name = "ACT_DOTA_THIRST"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2747
+						end_frame = 2813
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_land_punch"
+						activity_name = "ACT_DOTA_THUNDER_STRIKE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3012
+						end_frame = 3079
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_i_am_not_sure"
+						activity_name = "ACT_DOTA_TINKER_REARM1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3180
+						end_frame = 3280
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_domain_full_maybe"
+						activity_name = "ACT_DOTA_TINKER_REARM2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2714
+						end_frame = 2740
+						framerate = 26.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_might_be_useful"
+						activity_name = "ACT_DOTA_TINKER_REARM3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2015
+						end_frame = 2071
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_charge_punch_start"
+						activity_name = "ACT_DOTA_TORRENT"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2747
+						end_frame = 2768
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_charge_punch_fly"
+						activity_name = "ACT_DOTA_POOF_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2768
+						end_frame = 2768
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_charge_punch_punch"
+						activity_name = "ACT_DOTA_TRICKS_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2768
+						end_frame = 2813
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_land_punch_copy"
+						activity_name = "ACT_DOTA_CAST_ICE_WALL"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 3030
+						end_frame = 3079
+						framerate = -1.0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

@@ -11952,7 +11952,7 @@
 		"ScriptFile"							"heroes/triple_kick"
 		"AbilityTextureName" 					"jin_mori_3"
 		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
@@ -31287,7 +31287,7 @@
             "auto_width" "125"
             "limit_ms" "1750"
             "turn_drift" "175"
-            "damage_increase" "0.06"
+            "damage_increase" "0.05"
         }
   }
     //------------------------------------------------------------------------------------------------------------------------------------------------

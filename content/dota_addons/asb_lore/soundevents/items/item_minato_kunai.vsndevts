@@ -1472,4 +1472,32 @@
 		memory_type = "0"
 		vsnd_duration = 1.160998
 	}
+	bogdan.dungeon_master = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ringmaster/dungeon_master.vsnd",
+		]
+		volume = "8.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	bogdan.dungeon_house = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/ringmaster/dungeon_house.vsnd",
+		]
+		volume = "8.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
 }

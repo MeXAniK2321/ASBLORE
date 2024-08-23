@@ -195,7 +195,7 @@ function modifier_will_of_the_fallen:OnTakeDamage(keys)
 				victim			= keys.unit,
 				damage			= self.int_cur,
 				damage_type		= DAMAGE_TYPE_MAGICAL,
-				damage_flags 	= DOTA_DAMAGE_FLAG_NO_SPELL_LIFESTEAL + DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
+				damage_flags 	= DOTA_DAMAGE_FLAG_NO_SPELL_LIFESTEAL + DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION + DOTA_DAMAGE_FLAG_PROPERTY_FIRE,
 				attacker		= self:GetParent(),
 				ability			= self:GetAbility()
 			}
