@@ -1500,4 +1500,158 @@
 		memory_type = "0"
 		vsnd_duration = 1.160998
 	}
+	loli_hex.launch = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/launch_oooo.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.land1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/land_dang.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.land2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/land_nom.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.land3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/land_oooo.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.land4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/naninaninani.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.hit1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/hit_cuck.vsnd",
+		]
+		volume = "4.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.hit2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/hit_hen.vsnd",
+		]
+		volume = "4.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.hit3 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/hit_nom.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.hit4 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/hit_s.vsnd",
+		]
+		volume = "4.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.fyou1 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/fuckyou.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
+	loli_hex.fyou2 = 
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/fuck_you.vsnd",
+		]
+		volume = "8.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		chan_type = "0"
+		memory_type = "0"
+		vsnd_duration = 1.160998
+	}
 }

@@ -120,7 +120,7 @@ function item_gay_hammer:OnSpellStart()
 	  local hero = PlayerResource:ReplaceHeroWith(iPlayerID, hero_replaced, iGold, iXP)
 	    for k, v in pairs(items) do
 		  if k and v then
-		    local item = v:IsNeutralDrop() and hero:AddItemByName("item_pandora_box") or hero:AddItem(v)
+		    local item = (v:IsNeutralDrop() and v:GetName() ~= "item_placeholder_padoru") and hero:AddItemByName("item_pandora_box") or hero:AddItem(v)
             if IsNotNull(item) then
 		        hero:SwapItems(item:GetItemSlot(), k)
             end

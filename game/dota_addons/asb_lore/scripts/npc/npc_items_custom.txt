@@ -1795,7 +1795,7 @@
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"                     "item_datadriven"
 		"ItemCost"						"0"
-		"AbilityTextureName" 					"pandora_box"
+		"AbilityTextureName" 					"ultimate_scepter"
 		"ItemRecipe"					"1"
 		"ItemResult"					"item_pandora_box"
 		"ItemRequirements"
@@ -5160,6 +5160,92 @@
             "circle_damage" "300"
             "circle_chance" "51.4"
             "burn_damage_interval" "0.44"
+        }
+	}
+    
+	//=================================================================================================================
+	// Pandora Placeholder
+	//=================================================================================================================
+	"item_placeholder_padoru"
+	{
+		"BaseClass"						"item_datadriven"
+		//"ScriptFile"					"items/item_placeholder_pandora.lua"
+		"AbilityTextureName"			"pandora_box"	
+		"ItemPurchasable"						"0"
+		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemCost"					"0"
+		"ItemDroppable" 						"0"
+		"ItemIsNeutralDrop"						"1"
+		"AbilityCooldown"                   "0"
+		"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        
+		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+
+		"AbilityValues"
+		{
+		}
+	}
+    
+	//=================================================================================================================
+	// Loli Hex
+	//=================================================================================================================
+	"item_recipe_loli_hex"
+	{
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"loli_hex"
+		"Model"									"models/props_gameplay/recipe.mdl"
+
+		"ItemCost"								"10000"
+		"ItemShopTags"							""
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_loli_hex"
+
+		"ItemRequirements"
+		{
+			"01"								"item_nonono_yesyesyes;item_magic_girl_wand;item_walter_white;item_chibi_marci"
+		}	
+	}
+	//=================================================================================================================
+	"item_loli_hex"
+	{
+
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_loli_hex"
+		"AbilityTextureName" 					"loli_hex"
+		//"Model"									"models/props_gameplay/sentry_ward_bundle.vmdl"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityCastRange"						"1000"
+		"AbilityCastPoint"						"0"
+		"AbilityCooldown"						"25"
+		"AbilityManaCost"						"125"
+
+		"AbilitySharedCooldown"					"axis_sheet"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+		"ItemShareability"						"ITEM_NOT_SHAREABLE"
+
+		//"ItemCost"								"2750"
+		"ItemShopTags"							"int;regen_health"
+		"ItemQuality"							"artifact"
+		"ItemAliases"							"sheepstick"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"						"1"
+
+		"AbilityValues"
+        {
+            "health_bonus" "1400"
+            "mana_bonus" "1400"
+            "attack_speed_bonus" "75"
+            "magic_resist_bonus" "17"
+            "spell_amp_bonus" "25"
+            "attack_damage_bonus" "70"
+            "damage_amplify" "25"
         }
 	}
 

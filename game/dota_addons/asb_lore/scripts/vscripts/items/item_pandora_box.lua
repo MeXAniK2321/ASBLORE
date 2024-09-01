@@ -1,203 +1,101 @@
+local tPandoraItems = {
+                          npc_dota_hero_naga_siren = "item_brs_canon",            -- Black Rock Shooter
+                          npc_dota_hero_night_stalker = "item_witch_gift",        -- Natsuki Subaru
+                          npc_dota_hero_phantom_lancer = "item_mistsplitter",     -- Raiden Shogun
+                          npc_dota_hero_beastmaster = "item_billy_bike",          -- Billy Herrington
+                          npc_dota_hero_marci = "item_naofumi_shield",            -- Naofumi
+                          npc_dota_hero_pangolier = "item_murchielago",           -- Ulquiorra
+                          npc_dota_hero_dark_willow = "item_library_of_elchea",   -- Jibril
+                          npc_dota_hero_bounty_hunter = "item_fullmetal_arm",     -- Edward Elric
+                          npc_dota_hero_faceless_void = "item_all_fiction_screw", -- Kumagawa
+                          npc_dota_hero_slark = "item_earth",                     -- Arcueid
+                          npc_dota_hero_life_stealer = "item_old_plush_toy",      -- Kagaya Shuichi
+                          npc_dota_hero_pudge = "item_pukachu",                   -- Pikachu
+                          npc_dota_hero_mars = "item_dante_sword",                -- Dante
+                          npc_dota_hero_drow_ranger = "item_uranus",              -- Ikaros
+                          npc_dota_hero_magnataur = "item_credit_card",           -- Kambe Daisuke  
+                          npc_dota_hero_abaddon = "item_yamato",                  -- Vergil
+                          npc_dota_hero_abyssal_underlord = "item_rhitta",        -- Escanor
+                          npc_dota_hero_death_prophet = "item_box_of_pandora",    -- Pandora
+                          npc_dota_hero_chaos_knight = "item_laevatain",          -- Flandre Scarlet
+                          npc_dota_hero_nyx_assassin = "item_nen_contract",       -- Kurapika
+                          npc_dota_hero_lycan = "item_eye_seal",                  -- Jellal Fernandes
+                          npc_dota_hero_bloodseeker = "item_hogyoku",             -- Aizen
+                          npc_dota_hero_kunkka = "item_uchiha_naish",             -- Madara
+                          npc_dota_hero_queenofpain = "item_homuras_shield",      -- Madoka
+                          npc_dota_hero_spectre = "item_toy_knife",               -- Frisk
+                          npc_dota_hero_terrorblade = "item_negi",                -- Hatsune Miku
+                          npc_dota_hero_alchemist = "item_dragon_ball",           -- Son Goku
+                          npc_dota_hero_monkey_king = "item_ruyi_jingu_bang",     -- Jin Mori
+                          npc_dota_hero_techies = "item_deidara_c4",              -- Deidara
+                          npc_dota_hero_oracle = "item_great_sage",               -- Rimuru Tempest
+                          npc_dota_hero_lich = "item_papyrus",                    -- Sans
+                          npc_dota_hero_winter_wyvern = "item_eternal_geass",     -- LeLouch
+                          npc_dota_hero_dragon_knight = "item_boosted_gear",      -- Hyodou Issei
+                          npc_dota_hero_dark_seer = "item_x_gloves",              -- Tsuna
+                          npc_dota_hero_ember_spirit = "item_alastor",            -- Shana
+                          npc_dota_hero_tusk = "item_panaino",                    -- Shinobu Oshino
+                          npc_dota_hero_nevermore = "item_rumia_sword",           -- Rumia
+                          npc_dota_hero_legion_commander = "item_esdeath_rapier", -- Esdeath
+                          npc_dota_hero_ancient_apparition = "item_yoshinon",     -- Yoshino
+                          npc_dota_hero_juggernaut = "item_intetsu",              -- Kurogane Ikki
+                          npc_dota_hero_skeleton_king = "item_void_sword",        -- Oma Shu
+                          npc_dota_hero_void_spirit = "item_music_sword",         -- Kagamine Rin
+                          npc_dota_hero_bristleback = "item_accel_pribor",        -- Accelerator
+                          npc_dota_hero_axe = "item_key_for_9",                   -- Bogdan
+                          npc_dota_hero_ursa = "item_kanade_piano",               -- Tachibana Kanade
+                          npc_dota_hero_bane = "item_yukari_umbrella",            -- Yukari Yakumo
+                          npc_dota_hero_antimage = "item_tanjiro_katana",         -- Tanjiro
+                          npc_dota_hero_undying = "item_index_chan",              -- Kamijou Touma
+                          npc_dota_hero_omniknight = "item_georgius",             -- Keyaru
+                          npc_dota_hero_elder_titan = "item_book_of_darkness",    -- Reinforce
+                          npc_dota_hero_chen = "item_eternal_geass_2",            -- LeLouch
+                          npc_dota_hero_riki = "item_death_perception",           -- Ryougi Shiki
+                          npc_dota_hero_arc_warden = "item_trident_silver_horn",  -- Shiba Tatsuya
+                          npc_dota_hero_sven = "item_sandalphon",                 -- Yatogami Tohka
+                          npc_dota_hero_razor = "item_shinigami",                 -- Ichigo Kurosaki
+                          npc_dota_hero_brewmaster = "item_nanaya_knife",         -- Nanaya Shiki
+                          npc_dota_hero_skywrath_mage = "item_drift_mania",       -- AE86
+                          npc_dota_hero_dawnbreaker = "item_national_contract",   -- Makima
+                          npc_dota_hero_tiny = "item_myoujingiri",                -- Muramasa
+                          npc_dota_hero_earthshaker = "item_fusion_dance",        -- Gogeta(SSJB)
+                          npc_dota_hero_dazzle = "item_gojo_six_eyes",            -- Gojo Satoru
+                      }
+
 item_pandora_box = item_pandora_box or class({})
 function item_pandora_box:IsStealable() return true end
 function item_pandora_box:IsHiddenWhenStolen() return false end
 function item_pandora_box:OnSpellStart()
 	local caster = self:GetCaster()
-    if caster:HasScepter() and caster:GetUnitName()== "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
-        self:SpendCharge(0)
-	    local item = CreateItem("item_yamato", caster, self)
-	    caster:AddItem(item)
+    local hPlaceholder = caster:FindItemInInventory("item_placeholder_padoru")
+    local bCheck = false
+    if caster:HasScepter() and caster:GetUnitName() == "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
+        bCheck = true
     end
-	if caster:HasScepter() then
-	else
-	self:SpendCharge(0)
+	
+    if caster:HasScepter() and not bCheck then
+    else
+        local item = nil
 
-		if caster:GetUnitName()== "npc_dota_hero_naga_siren" then
-		local item = CreateItem("item_brs_canon", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_night_stalker" then
-		local item = CreateItem("item_witch_gift", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_phantom_lancer" then
-		local item = CreateItem("item_mistsplitter", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_beastmaster" then
-		local item = CreateItem("item_billy_bike", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_marci" then
-		local item = CreateItem("item_naofumi_shield", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_pangolier" then
-		local item = CreateItem("item_murchielago", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_dark_willow" then
-		local item = CreateItem("item_library_of_elchea", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_bounty_hunter" then
-		local item = CreateItem("item_fullmetal_arm", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_faceless_void" then
-		local item = CreateItem("item_all_fiction_screw", caster, self)
-	    caster:AddItem(item)
-			elseif caster:GetUnitName()== "npc_dota_hero_slark" then
-		local item = CreateItem("item_earth", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_life_stealer" then
-		local item = CreateItem("item_old_plush_toy", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_pudge" then
-		local item = CreateItem("item_pukachu", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_mars" then
-		local item = CreateItem("item_dante_sword", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_drow_ranger" then
-		local item = CreateItem("item_uranus", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_magnataur" then
-		local item = CreateItem("item_credit_card", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_abaddon" then
-		local item = CreateItem("item_yamato", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_abyssal_underlord" then
-		local item = CreateItem("item_rhitta", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_death_prophet" then
-		local item = CreateItem("item_box_of_pandora", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_chaos_knight" then
-		local item = CreateItem("item_laevatain", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_nyx_assassin" then
-		local item = CreateItem("item_nen_contract", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_lycan" then
-		local item = CreateItem("item_eye_seal", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_bloodseeker" then
-		local item = CreateItem("item_hogyoku", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_kunkka" then
-		local item = CreateItem("item_uchiha_naish", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_queenofpain" then
-		local item = CreateItem("item_homuras_shield", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_spectre" then
-		local item = CreateItem("item_toy_knife", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_terrorblade" then
-		local item = CreateItem("item_negi", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_alchemist" then
-		local item = CreateItem("item_dragon_ball", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_monkey_king" then
-		local item = CreateItem("item_ruyi_jingu_bang", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_techies" then
-		local item = CreateItem("item_deidara_c4", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_oracle" then
-		local item = CreateItem("item_great_sage", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_lich" then
-		local item = CreateItem("item_papyrus", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_winter_wyvern" then
-		local item = CreateItem("item_eternal_geass", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_dragon_knight" then
-		local item = CreateItem("item_boosted_gear", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_dark_seer" then
-		local item = CreateItem("item_x_gloves", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_ember_spirit" then
-		local item = CreateItem("item_alastor", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_tusk" then
-		local item = CreateItem("item_panaino", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_nevermore" then
-		local item = CreateItem("item_rumia_sword", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_legion_commander" then
-		local item = CreateItem("item_esdeath_rapier", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_ancient_apparition" then
-		local item = CreateItem("item_yoshinon", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_juggernaut" then
-		local item = CreateItem("item_intetsu", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_skeleton_king" then
-		local item = CreateItem("item_void_sword", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_void_spirit" then
-		local item = CreateItem("item_music_sword", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_bristleback" then
-		local item = CreateItem("item_accel_pribor", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_axe" then
-		local item = CreateItem("item_key_for_9", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_ursa" then
-		local item = CreateItem("item_kanade_piano", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_bane" then
-		local item = CreateItem("item_yukari_umbrella", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_antimage" then
-		local item = CreateItem("item_tanjiro_katana", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_undying" then
-		local item = CreateItem("item_index_chan", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_omniknight" then
-		local item = CreateItem("item_georgius", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_elder_titan" then
-		local item = CreateItem("item_book_of_darkness", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_chen" then
-		local item = CreateItem("item_eternal_geass_2", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_riki" then
-		local item = CreateItem("item_death_perception", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_arc_warden" then
-		local item = CreateItem("item_trident_silver_horn", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_sven" then
-		local item = CreateItem("item_sandalphon", caster, self)
-	    caster:AddItem(item)
-	    elseif caster:GetUnitName()== "npc_dota_hero_razor" then
-		local item = CreateItem("item_shinigami", caster, self)
-	    caster:AddItem(item)
-	     elseif caster:GetUnitName()== "npc_dota_hero_brewmaster" then
-		local item = CreateItem("item_nanaya_knife", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_skywrath_mage" then
-		local item = CreateItem("item_drift_mania", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_dawnbreaker" then
-		local item = CreateItem("item_national_contract", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_tiny" then
-		local item = CreateItem("item_myoujingiri", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_earthshaker" then
-		local item = CreateItem("item_fusion_dance", caster, self)
-	    caster:AddItem(item)
-		elseif caster:GetUnitName()== "npc_dota_hero_dazzle" then
-		local item = CreateItem("item_gojo_six_eyes", caster, self)
-	    caster:AddItem(item)
-		else
-		local item = CreateItem("item_vongolla_primo_ring", caster, self)
-	    caster:AddItem(item)
-		end
-		end
+		if tPandoraItems[caster:GetUnitName()] then
+            item = CreateItem(tPandoraItems[caster:GetUnitName()], caster, self)
+        else
+            item = CreateItem("item_vongolla_primo_ring", caster, self)
+        end
+        
+        if IsNotNull(item) then
+            if IsNotNull(hPlaceholder) then
+                caster:RemoveItem(hPlaceholder)
+            end
+            --================--
+            Timers:CreateTimer(0.1, function()
+                caster:AddItem(item)
+            end)
+            --================--
+            self:SpendCharge(0)
+            --================--
+        else
+            print("No item was found for this hero !")
+        end
+    end
 end

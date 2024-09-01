@@ -119,9 +119,19 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				if player:HasModifier( "modifier_replaced" ) then
 				else
 	    			player:AddItem(item)
-					player:AddNewModifier(caster, self, "modifier_replaced", {})
 				end
 			end
+            
+            if not player:HasModifier( "modifier_replaced" ) then
+				player:AddNewModifier(caster, self, "modifier_replaced", {})
+                
+                local item = CreateItem("item_placeholder_padoru", player, self)
+                Timers:CreateTimer(0.1, function()
+                    if IsNotNull(item) and not player:HasItemInInventory("item_placeholder_padoru") and not player:HasItemInInventory("item_pandora_box") then
+                        player:AddItem(item)
+                    end
+                end)
+            end
 	   
 			if player:GetUnitName() == "npc_dota_hero_axe" then
 				if IsASBPatreon(player) then

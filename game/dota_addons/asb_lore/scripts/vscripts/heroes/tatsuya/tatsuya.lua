@@ -1003,6 +1003,7 @@ end
 function modifier_material_burst_invul:OnDestroy()
 if IsServer() then
 	self:PlayEffects2()
+    self:GetParent():RemoveGesture(ACT_DOTA_CHANNEL_ABILITY_5)
 end
 end
 function modifier_material_burst_invul:GetOverrideAnimation()

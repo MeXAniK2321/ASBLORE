@@ -60,6 +60,8 @@ function thunder_tornado:OnSpellStart()
 	AddFOWViewer( self:GetCaster():GetTeamNumber(), point, vision_radius, vision_duration, true )
 
 	self:PlayEffects( point, radius, debuffDuration, caster )
+    
+    print("TEST TEST TEST TEST TEST")
 end
 
 --------------------------------------------------------------------------------
@@ -98,11 +100,4 @@ function thunder_tornado:PlayEffects( point, radius, duration, caster )
 
 	-- Create Sound
 	EmitSoundOnLocationWithCaster( point, sound_cast, self:GetCaster() )
-    
-    -- Animation Bug Fix
-    Timers:CreateTimer(0.5, function()
-        if caster then
-            caster:RemoveGesture(ACT_DOTA_CAST_ABILITY_7)
-        end
-    end)
 end

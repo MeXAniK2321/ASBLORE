@@ -81,6 +81,7 @@
      "item"      "item_nonono_yesyesyes"
      "item"      "item_abyss_horn"
      "item"      "item_hand_of_gaben"
+     "item"      "item_loli_hex"
 }  
   
   // Level 1 - Green Recipes

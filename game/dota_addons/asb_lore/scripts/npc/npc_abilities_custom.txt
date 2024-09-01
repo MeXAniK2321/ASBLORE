@@ -12154,6 +12154,13 @@
 			"Function"					"torrent_vision"
 			"Target"					"POINT"
 		}
+        
+		"RunScript"
+		{
+			"ScriptFile"				"heroes/thunder_tornado1.lua"
+			"Function"					"torrent_animation_fix"
+			"Target"					"POINT"
+		}
 		
 		"DelayedAction"
 		{
@@ -12324,7 +12331,7 @@
 		"ScriptFile"							"heroes/young_tiger"
 		"AbilityTextureName" 					"jin_mori_3_1"
 		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"

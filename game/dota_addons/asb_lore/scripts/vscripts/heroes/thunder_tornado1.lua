@@ -48,3 +48,16 @@ function torrent_vision( keys )
 	
 	AddFOWViewer(caster:GetTeamNumber(),target,radius,duration,true)
 end
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+function torrent_animation_fix( keys )
+	local caster = keys.caster
+
+    -- Animation Bug Fix
+    Timers:CreateTimer(0.8, function()
+        if caster then
+            caster:RemoveGesture(ACT_DOTA_CAST_ABILITY_5)
+            caster:RemoveGesture(ACT_DOTA_CAST_ABILITY_7)
+        end
+    end)
+end
