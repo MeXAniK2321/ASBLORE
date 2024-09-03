@@ -320,6 +320,10 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/gojo.png" );
 		}
+		else if (sHeroName == "npc_dota_hero_ringmaster")
+		{
+			pPanel.SetImage( "file://{images}/heroes/ringmaster.png" );
+		}
 		else
 		{
 			pPanel.SetImage( "file://{images}/custom_game/unassigned.png" );

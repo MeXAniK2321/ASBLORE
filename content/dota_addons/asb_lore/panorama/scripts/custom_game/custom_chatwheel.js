@@ -298,7 +298,7 @@ function StopWheel() {
                                             onmouseover     : "OnMouseOver(" + i + ")",
                                             onmouseout      : "OnMouseOut(" + i + ")"
                                         };
-            $.CreatePanelWithProperties("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
+            $.CreatePanel("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
 
             //$("#PhrasesContainer").BCreateChildren("<Button id='Phrase"+i+"' class='MyPhrases' onmouseactivate='OnSelect("+i+")' onmouseover='OnMouseOver("+i+")' onmouseout='OnMouseOut("+i+")' />");//class='Phrase HasSound RequiresHeroBadgeTier BronzeTier'
             //$("#Phrase"+i).hittest = false;
@@ -351,7 +351,7 @@ function OnSelect(num) {
             }
 
 
-            $.CreatePanelWithProperties("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
+            $.CreatePanel("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
 
             //$("#PhrasesContainer").BCreateChildren("<Button id='Phrase"+i+"' class='MyPhrases'"+onmouseactivate+" onmouseover='OnMouseOver("+i+")' onmouseout='OnMouseOut("+i+")'"+dopstr+" />");//class='Phrase HasSound RequiresHeroBadgeTier BronzeTier'
             //$("#Phrase"+i).hittest = anime_patron;//--AddClass('Phrase HasSound RequiresHeroBadgeTier BronzeTier');
@@ -466,7 +466,7 @@ function OnMouseOut(num) {
                                         onmouseover     : "OnMouseOver(" + i + ")",
                                         onmouseout      : "OnMouseOut(" + i + ")"
                                     };
-        $.CreatePanelWithProperties("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
+        $.CreatePanel("Button", $("#PhrasesContainer"), "Phrase"+i, hPanelProperties);
 
         //$("#PhrasesContainer").BCreateChildren("<Button id='Phrase"+i+"' class='MyPhrases' onmouseactivate='OnSelect("+i+")' onmouseover='OnMouseOver("+i+")' onmouseout='OnMouseOut("+i+")' />");//class='Phrase HasSound RequiresHeroBadgeTier BronzeTier'
         //$("#Phrase"+i).hittest = false;
@@ -488,7 +488,6 @@ function OnMouseOut(num) {
     GameEvents.Subscribe( "anime_chatwheel_sound_play", OnAnimeSoundPlay );
 
 })();
-
 
 
 function OnAnimeSoundPlay(event)

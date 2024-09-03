@@ -20,12 +20,13 @@
 				{
 					m_iControlPoint = 1
 					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 606.624939, 0.0, 0.0 ]
 					m_entityName = "self"
 				},
 				{
 					m_iControlPoint = 2
 					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_vecOffset = [ 1.0, 0.0, 0.0 ]
+					m_vecOffset = [ 255.0, 0.0, 0.0 ]
 					m_entityName = "self"
 				},
 				{
@@ -51,6 +52,21 @@
 				},
 				{
 					m_iControlPoint = 61
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 5
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 6
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 7
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -106,6 +122,8 @@
 			m_nOffsetCP = 1
 			m_flInputMax = 0.0
 			m_flInputMin = 1.0
+			m_bScaleOffset = true
+			m_vecOffset = [ 0.0, 0.0, 0.25 ]
 		},
 		{
 			_class = "C_OP_SetControlPointsToParticle"
@@ -123,6 +141,12 @@
 			m_flMinRadius = 0.1
 			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_nFirstControlPoint = 3
+			m_bSetOrientation = true
+			m_bDisableOperator = true
+		},
 	]
 	m_ForceGenerators = 
 	[
@@ -136,8 +160,8 @@
 			}
 			m_TransformInput = 
 			{
-				m_nControlPoint = 4
 				m_bUseOrientation = false
+				m_nControlPoint = 4
 			}
 		},
 	]

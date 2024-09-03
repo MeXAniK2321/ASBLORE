@@ -3751,11 +3751,13 @@ function modifier_lore_ringmaster:OnTakeDamage(keys)
                     ParticleManager:ReleaseParticleIndex(iGachiParticle)
                 end)
             end
+            local fDmgMult = 0.65
             if keys.inflictor:GetName() == "ringmaster_impalement" then
                 EmitSoundOn( "axe_axe_move_01", keys.unit )
+                fDmgMult = 0.25
             end
             self.hDamageTable.victim = keys.target
-            self.hDamageTable.damage = keys.original_damage * 0.65
+            self.hDamageTable.damage = keys.original_damage * fDmgMult
             ApplyDamage(self.hDamageTable)
             --print("Ringmaster original damage: " .. keys.original_damage)
             --print("Ringmaster damage: " .. keys.damage)

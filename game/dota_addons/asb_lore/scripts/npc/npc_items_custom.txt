@@ -5246,6 +5246,7 @@
             "spell_amp_bonus" "25"
             "attack_damage_bonus" "70"
             "damage_amplify" "25"
+            "loli_duration" "3.5"
         }
 	}
 

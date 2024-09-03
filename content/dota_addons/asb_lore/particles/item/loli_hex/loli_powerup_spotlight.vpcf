@@ -240,7 +240,6 @@
 			m_nField = 7
 			m_Rate = -1.0
 			m_flEndTime = 999999.0
-			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
@@ -251,7 +250,7 @@
 			_class = "C_OP_InterpolateRadius"
 			m_flStartTime = 0.6
 			m_flStartScale = 2.0
-			m_bDisableOperator = true
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
 		{
 			_class = "C_OP_PositionLock"
@@ -302,7 +301,7 @@
 	[
 		{
 			m_ChildRef = resource:"particles/item/loli_hex/loli_powerup_dust_motes.vpcf"
-			m_flDelay = 0.5
+			m_flDelay = 0.4
 		},
 	]
 }

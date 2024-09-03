@@ -1516,7 +1516,7 @@
 	}
 	loli_hex.land1 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/land_dang.vsnd",
@@ -1530,7 +1530,7 @@
 	}
 	loli_hex.land2 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/land_nom.vsnd",
@@ -1544,7 +1544,7 @@
 	}
 	loli_hex.land3 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/land_oooo.vsnd",
@@ -1558,7 +1558,7 @@
 	}
 	loli_hex.land4 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/naninaninani.vsnd",
@@ -1572,7 +1572,7 @@
 	}
 	loli_hex.hit1 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/hit_cuck.vsnd",
@@ -1586,7 +1586,7 @@
 	}
 	loli_hex.hit2 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/hit_hen.vsnd",
@@ -1600,7 +1600,7 @@
 	}
 	loli_hex.hit3 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/hit_nom.vsnd",
@@ -1614,7 +1614,7 @@
 	}
 	loli_hex.hit4 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/hit_s.vsnd",
@@ -1628,7 +1628,7 @@
 	}
 	loli_hex.fyou1 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/fuckyou.vsnd",
@@ -1642,7 +1642,7 @@
 	}
 	loli_hex.fyou2 = 
 	{
-		type = "src1_2d"
+		type = "dota_update_default"
 		vsnd_files = 
 		[
 			"sounds/loli_hex/fuck_you.vsnd",
@@ -1653,5 +1653,19 @@
 		chan_type = "0"
 		memory_type = "0"
 		vsnd_duration = 1.160998
+	}
+	loli_hex.powerup = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/loli_hex/powerup.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
 	}
 }

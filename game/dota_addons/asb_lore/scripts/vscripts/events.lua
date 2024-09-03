@@ -495,8 +495,8 @@ function COverthrowGameMode:OnHeroPick(event)
             end
         end
         
-        -- If matched abilities more than 1, then probably a true Dota hero, so ignore.
-        if nMatchedAbilities == 1 then
+        -- If matched abilities more than 1-2, then probably a true Dota hero, so ignore.
+        if nMatchedAbilities > 0 and nMatchedAbilities < 3 then
             for _, sAbility in pairs(tSpellsRemove) do
                 hHero:RemoveAbility(sAbility)
             end

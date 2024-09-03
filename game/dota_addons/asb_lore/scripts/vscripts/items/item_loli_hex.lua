@@ -60,7 +60,7 @@ function item_loli_hex:OnProjectileHit(hTarget, vLocation)
     Timers:CreateTimer(0.01,function()
         if IsNotNull(self) then
             local iProjectileThatHit = GetProjectileThatHit(self.__iLatestProjectile)
-            local iImpactEffect = nil
+            local nDynamicValue      = self:GetSpecialValueFor("loli_duration")
             
             -- If no projectile id has been provided then just return TRUE (destroys this projectile)
             -- It will cause the projectile to do nothing, but if it's not in the table then makes sense ?
@@ -97,16 +97,16 @@ function item_loli_hex:OnProjectileHit(hTarget, vLocation)
             
             -- Lolis get stronger from this item
             if IsLoli(hTarget) then
-                hTarget:AddNewModifier(hTarget, self, "modifier_item_loli_hex_debuff", { duration = 3.5, bModelChange = false })
+                hTarget:AddNewModifier(hTarget, self, "modifier_item_loli_hex_debuff", { duration = nDynamicValue, bModelChange = false })
                 goto clear_projectile
             end
             
             -- If it didn't hit a GachiMan or a Loli then just do standard Loli Hex
-            hTarget:AddNewModifier(hTarget, self, "modifier_item_loli_hex_debuff", { duration = 3.5 })
+            hTarget:AddNewModifier(hTarget, self, "modifier_item_loli_hex_debuff", { duration = nDynamicValue })
             
-            iImpactEffect =  ParticleManager:CreateParticle("particles/item/loli_hex/kanna_transform.vpcf", PATTACH_WORLDORIGIN, nil)
-                             ParticleManager:SetParticleControl(iImpactEffect, 0, hTarget:GetAbsOrigin()) 
-                             ParticleManager:ReleaseParticleIndex(iImpactEffect)
+            nDynamicValue =  ParticleManager:CreateParticle("particles/item/loli_hex/kanna_transform.vpcf", PATTACH_WORLDORIGIN, nil)
+                             ParticleManager:SetParticleControl(nDynamicValue, 0, hTarget:GetAbsOrigin()) 
+                             ParticleManager:ReleaseParticleIndex(nDynamicValue)
             
             StopSoundOn("loli_hex.launch", self:GetCaster())
             hTarget:EmitSound("loli_hex.land" .. RandomInt(1, 4))
@@ -301,10 +301,15 @@ end
 
 function IsGachiMan(hCaster)
     local tGachiModels = {
+                             -- Base Gachi Models
                              ["models/pikapika/billy.vmdl"] = true,
                              ["models/bogdan/bodgan1.vmdl"] = true,
                              ["models/pikapika/pika1.vmdl"] = true,
+                             ["models/pikapika/gachichu.vmdl"] = true,
                              ["models/heroes/ringmaster/ringmaster_base.vmdl"] = true,
+                             
+                             -- Arcanas
+                             ["models/bogdan/hurk.vmdl"] = true,
                          }
     return tGachiModels[hCaster:GetModelName()]
 end
@@ -329,6 +334,7 @@ function IsLoli(hCaster)
                              ["models/thd2/yukari/yukari_mmd.vmdl"] = true,
                              ["models/jibril/jibril.vmdl"] = true,
                              ["models/vocaloid_rin/rin/rin1.vmdl"] = true,
+                             ["models/heroes/queenofpain/queenofpain.vmdl"] = true,
                              
                              -- Upgrade Models (from abilities)
                              ["models/rumia_ex/rumia_ex.vmdl"] = true,
@@ -343,6 +349,32 @@ function IsLoli(hCaster)
                         }
     return tLoliModels[hCaster:GetModelName()]
 end
+
+
+function numtobool(n)
+    return n ~= 0
+end
+
+--[[
+function numtobool(n)
+    local b = false
+    if n ~= 0 then
+        b = true
+    end
+    return b
+end]]--
+
+--[[
+function numtoboolspecial(v)
+    if type(v) ~= "number" then
+        return v
+    end
+    local b = false
+    if v ~= 0 then
+        b = true
+    end
+    return b
+end]]--
 
 
 modifier_item_loli_hex = modifier_item_loli_hex or class({})
@@ -364,7 +396,7 @@ function modifier_item_loli_hex:DeclareFunctions()
     return func
 end
 function modifier_item_loli_hex:OnCreated(hTable)
-	self.caster   = self:GetCaster()
+    self.caster   = self:GetCaster()
     self.parent   = self:GetParent()
     self.ability  = self:GetAbility()
     
@@ -399,7 +431,7 @@ end
 modifier_item_loli_hex_debuff = modifier_item_loli_hex_debuff or class({})
 
 function modifier_item_loli_hex_debuff:IsHidden() return false end
-function modifier_item_loli_hex_debuff:IsDebuff() return true end
+function modifier_item_loli_hex_debuff:IsDebuff() return self.bIsHexed end
 function modifier_item_loli_hex_debuff:IsPurgable() return false end
 function modifier_item_loli_hex_debuff:IsPurgeException() return false end
 function modifier_item_loli_hex_debuff:GetPriority() return MODIFIER_PRIORITY_SUPER_ULTRA end
@@ -417,7 +449,6 @@ function modifier_item_loli_hex_debuff:DeclareFunctions()
     local hFunc =   {
                         MODIFIER_PROPERTY_MODEL_CHANGE, 
                         --MODIFIER_PROPERTY_MODEL_SCALE,
-                        --MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE,
                         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
                         MODIFIER_EVENT_ON_TAKEDAMAGE,
                         MODIFIER_PROPERTY_IGNORE_MOVESPEED_LIMIT,
@@ -440,33 +471,29 @@ end
 function modifier_item_loli_hex_debuff:GetModifierModelScale(keys)
     return 30
 end]]--
---[[
-function modifier_item_loli_hex_debuff:GetModifierMoveSpeed_Absolute(keys)
-    return 200
-end]]--
 function modifier_item_loli_hex_debuff:GetModifierMoveSpeedBonus_Percentage(keys)
     return self.bIsHexed and 10 or 500
 end
 function modifier_item_loli_hex_debuff:OnTakeDamage(keys)
-	if IsServer() then
-       if keys.unit == self.parent and keys.attacker ~= self.parent and keys.inflictor ~= self.ability then 
-	     local Emit = self:RollChance(35) 
-		       and EmitSoundOn("loli_hex.hit"..RandomInt(1, 4), self.parent)
-			   or nil
-	   end
+    if IsServer() then
+        if keys.unit == self.parent and keys.attacker ~= self.parent and keys.inflictor ~= self.ability then 
+            local Emit = self:RollChance(35) 
+                         and EmitSoundOn("loli_hex.hit"..RandomInt(1, 4), self.parent)
+                         or nil
+        end
     end
 end
 function modifier_item_loli_hex_debuff:GetModifierIgnoreMovespeedLimit(keys)
     return self.bIsPowerup and 1
 end
 function modifier_item_loli_hex_debuff:GetModifierMoveSpeed_Limit(keys)
-    return self.bIsPowerup and 1650
+    return self.bIsPowerup and 800
 end
 function modifier_item_loli_hex_debuff:GetModifierMoveSpeed_Absolute(keys)
     if IsClient()
         and self.bIsPowerup then
         --print("NOM")
-        return 1650
+        return 800
     end
 end
 function modifier_item_loli_hex_debuff:GetModifierIncomingDamage_Percentage(keys)
@@ -481,21 +508,31 @@ function modifier_item_loli_hex_debuff:AddCustomTransmitterData()
     }
 end
 function modifier_item_loli_hex_debuff:HandleCustomTransmitterData(hTable)
-    for sKey, hValue in pairs(hTable) do 
-        self[sKey] = hValue
+    for sKey, hValue in pairs(hTable) do
+        -- NOTE: IF USING TERNARY OPERATOR, if numtobool(hValue) == false,
+        -- then it will return hValue instead, so made numtoboolspecial function
+        -- self[sKey] = type(hValue) == "number"
+        --              and numtobool(hValue) or hValue
+        --self[sKey] = numtoboolspecial(hValue)
+        -- FIXED TERNARY BY REVERSING INSTEAD
+        self[sKey] = type(hValue) ~= "number"
+                     and hValue or numtobool(hValue)
+        --print(self[sKey])
     end
 end
 function modifier_item_loli_hex_debuff:RollChance(chance)
-	local rand = math.random()
-	if rand<chance/100 then
-		return true
-	end
-	return false
+    local rand = math.random()
+    if rand<chance/100 then
+        return true
+    end
+    return false
 end
 function modifier_item_loli_hex_debuff:OnCreated(hTable)
-	self.caster  = self:GetCaster()
+    self.caster  = self:GetCaster()
     self.parent  = self:GetParent()
     self.ability = self:GetAbility()
+    
+    self:SetHasCustomTransmitterData(true)
     
     self.nDMGAMP = self.ability:GetSpecialValueFor("damage_amplify")
     
@@ -512,6 +549,9 @@ function modifier_item_loli_hex_debuff:OnCreated(hTable)
         -- Recalculate stat bonuses for no reason ? PEPE
         self.parent:CalculateStatBonus(true)
         
+        -- Resend data to Client(Server Only) or it will not work correctly on refresh
+        self:SendBuffRefreshToClients()
+        
         self:Effects()
         
         print("HERE: " .. self.__bModelChange)
@@ -520,31 +560,32 @@ end
 function modifier_item_loli_hex_debuff:Effects()
     if self.bIsHexed then
         -- Create Loli Hex effect
-        if not self.iEffect2 then  
-            --self.iEffect2 = ParticleManager:CreateParticle("particles/item/loli_hex/kanna_overhead_question_mark.vpcf", PATTACH_OVERHEAD_FOLLOW, self.parent)
-            self.iEffect2 = ParticleManager:CreateParticle("particles/item/loli_hex/kanna_overhead_silly.vpcf", PATTACH_OVERHEAD_FOLLOW, self.parent)
+        if not self.nLoliHexEffect then  
+            --self.nLoliHexEffect = ParticleManager:CreateParticle("particles/item/loli_hex/kanna_overhead_question_mark.vpcf", PATTACH_OVERHEAD_FOLLOW, self.parent)
+            self.nLoliHexEffect = ParticleManager:CreateParticle("particles/item/loli_hex/kanna_overhead_silly.vpcf", PATTACH_OVERHEAD_FOLLOW, self.parent)
         end
     
         -- Destroy Loli Powerup effect if Hexed
-        if self.iEffect then
-            ParticleManager:DestroyParticle(self.iEffect, false)
-            ParticleManager:ReleaseParticleIndex(self.iEffect)
-            self.iEffect = nil
+        if self.nLoliPowerupEffect then
+            ParticleManager:DestroyParticle(self.nLoliPowerupEffect, false)
+            ParticleManager:ReleaseParticleIndex(self.nLoliPowerupEffect)
+            StopSoundOn("loli_hex.powerup", self.parent)
+            self.nLoliPowerupEffect = nil
         end
     end
     
     if self.bIsPowerup then
-        -- Create effect if the target is Loli Powerup
-        if not self.iEffect then
-            self.iEffect = ParticleManager:CreateParticle("particles/item/loli_hex/loli_powerup_sparks.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
-            self.parent:EmitSound("star.theme_12")
+        -- Create Loli Powerup effect
+        if not self.nLoliPowerupEffect then
+            self.nLoliPowerupEffect = ParticleManager:CreateParticle("particles/item/loli_hex/loli_powerup_sparks.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            self.parent:EmitSound("loli_hex.powerup")
         end
         
         -- Destroy Hex effect if Loli Powerup
-        if self.iEffect2 then
-            ParticleManager:DestroyParticle(self.iEffect2, false)
-            ParticleManager:ReleaseParticleIndex(self.iEffect2)
-            self.iEffect2 = nil
+        if self.nLoliHexEffect then
+            ParticleManager:DestroyParticle(self.nLoliHexEffect, false)
+            ParticleManager:ReleaseParticleIndex(self.nLoliHexEffect)
+            self.nLoliHexEffect = nil
         end
     end
 end
@@ -552,13 +593,13 @@ function modifier_item_loli_hex_debuff:OnRefresh(hTable)
     self:OnCreated(hTable)
 end
 function modifier_item_loli_hex_debuff:OnDestroy()
-    if self.iEffect then
-        ParticleManager:DestroyParticle(self.iEffect, false)
-        ParticleManager:ReleaseParticleIndex(self.iEffect)
-        StopSoundOn("star.theme_12", self.parent)        
+    if self.nLoliPowerupEffect then
+        ParticleManager:DestroyParticle(self.nLoliPowerupEffect, false)
+        ParticleManager:ReleaseParticleIndex(self.nLoliPowerupEffect)
+        StopSoundOn("loli_hex.powerup", self.parent)        
     end
-    if self.iEffect2 then
-        ParticleManager:DestroyParticle(self.iEffect2, false)
-        ParticleManager:ReleaseParticleIndex(self.iEffect2)
+    if self.nLoliHexEffect then
+        ParticleManager:DestroyParticle(self.nLoliHexEffect, false)
+        ParticleManager:ReleaseParticleIndex(self.nLoliHexEffect)
     end
 end
