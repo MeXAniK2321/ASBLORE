@@ -1,0 +1,153 @@
+"DOTAHeroes"
+{
+	//-----------ROLAND----------------------------------------------------------------------------------------------------------------------
+	"npc_dota_hero_earth_spirit"
+	{
+		"override_hero"				"npc_dota_hero_earth_spirit"
+
+		"Model"						"models/heroes/asb_roland/roland_mdoc.vmdl"
+		"ModelScale"				"1.00000"
+		"LoadoutScale"				"1.00000"
+		"SpectatorLoadoutScale" 	"1.00000"
+		"VersusScale"				"1.00000"
+
+		"DisableWearables" 			"1"
+
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_loadout_v2.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+  		{ }
+  		
+		//"MovementSpeedActivityModifiers" //CRASHING IF USES SAME MODIFIER PROPERTIES AT SAME TIME
+		//{
+			//"haste"					"450"
+		//} 
+
+		"Ability1"					"roland_axe_bonk"
+		"Ability2"					"roland_hammer_stun"
+		"Ability3"					"roland_sword_doubleswing"
+		"Ability4"					"roland_katana_swing"
+		"Ability5"					"roland_pandora_box"
+		"Ability6"					"roland_cross_strike"
+
+		"Ability7"					"roland_jc"
+		"Ability8"					"roland_gun_doubleshot"
+		"Ability9"					"roland_spear_knock"
+		"Ability10"					"roland_big_sword_stun"
+
+		"Ability11"					"roland_ultimate"
+		"Ability12"					"roland_light_controller"
+
+		"Ability13"					"special_bonus_attack_speed_40"
+		"Ability14"					"special_bonus_magic_resistance_20"
+
+		"Ability15"					"special_bonus_hp_400"
+		"Ability16"					"special_bonus_mp_400"
+
+		"Ability17"					"special_bonus_asb_roland_20r"
+		"Ability18"					"special_bonus_asb_roland_20l"
+
+		"Ability19"					"special_bonus_asb_roland_25r"
+		"Ability20"					"special_bonus_asb_roland_25l"
+
+//17	special_bonus_attributes
+//18	ability_capture
+//19    abyssal_underlord_portal_warp
+
+		"AbilityTalentStart"		"13"
+		//-------------------------------------------------------------------------------------------------------------
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"60"
+		"AttackDamageMax"			"100"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.700000"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.500000"
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"150"
+		"ProjectileModel"			"particles/base_attacks/ranged_hero.vpcf"
+		"ProjectileSpeed"			"1800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"21"
+		"AttributeStrengthGain"		"3.6"
+		"AttributeBaseIntelligence"	"15"
+		"AttributeIntelligenceGain"	"2.0"
+		"AttributeBaseAgility"		"17"
+		"AttributeAgilityGain"		"2.4"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"					"62"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		//-------------------------------------------------------------------------------------------------------------
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"305"
+		"MovementTurnRate"			"0.500000"
+		"HasAggressiveStance"		"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"HealthBarOffset"			"200" 
+		"StatusHealth"				"400"
+		"StatusHealthRegen"			"2"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		//-------------------------------------------------------------------------------------------------------------
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Inventory
+		//-------------------------------------------------------------------------------------------------------------
+		"HasInventory"				"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Voice
+		//-------------------------------------------------------------------------------------------------------------
+		"GameSoundsFile"			"soundevents/heroes/asb_roland.vsndevts"
+		//"VoiceFile"					"soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		//"VoiceBackgroundSound"		""
+		//"IdleSoundLoop"				""
+		//"HeroSelectSoundEffect"		""
+		//-------------------------------------------------------------------------------------------------------------
+		// Particle
+		//-------------------------------------------------------------------------------------------------------------
+		"particle_folder"			"particles/heroes/asb_roland"
+		//-------------------------------------------------------------------------------------------------------------
+		// Role
+		"Role"						"Carry,Support,Nuker,Disabler,Jungler,Durable,Escape,Pusher,Initiator"
+		"Rolelevels"				"3,3,3,3,3,3,3,3,3"
+		//-------------------------------------------------------------------------------------------------------------
+	}
+}

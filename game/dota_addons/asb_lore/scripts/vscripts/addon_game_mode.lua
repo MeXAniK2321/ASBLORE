@@ -48,6 +48,7 @@ require('libraries/projectiles')
 require("modifiers/player")
 require("util/tempTable")
 require("anime_modifiers_server_client")
+require("libraries/anime_vector_targeting")
 
 --require('libraries/ai_behaviours')
 --require('ai/core/ai_core')
@@ -686,7 +687,30 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 		print("EO: " .. k .. " " .. tostring(v) )
 	end
 	]]
+	local tFilterData = filterTable
+	
+	local hAbility 	   = EntIndexToHScript(tFilterData.entindex_ability)
+	local iSequenceNum = tFilterData.sequence_number_const
+	local IsQueue 	   = tFilterData.queue >= 1
+	local hUnits 	   = tFilterData.units
+	local hTarget 	   = EntIndexToHScript(tFilterData.entindex_target)
+	local vPosition    = Vector(tFilterData.position_x, tFilterData.position_y, tFilterData.position_z)
+	local iOrder 	   = tFilterData.order_type
+	local iPlayerID    = tFilterData.issuer_player_id_const
 
+	local hUnit = hUnits["0"]
+		  hUnit = type(hUnit) == "number" 
+				  and EntIndexToHScript(hUnit) 
+				  or nil
+
+	if IsNotNull(hUnit) then
+		--====================================================================================================--
+		if IsNotNull(AnimeVectorTargeting) then
+			AnimeVectorTargeting:UpdateAnimeVectorTargetingAbility(hAbility, hUnit, hTarget, vPosition, iOrder)
+		end
+	end
+	--====================================================================================================--
+	--//OLD CODE LOWER
 	local orderType = filterTable["order_type"]
 	if ( orderType ~= DOTA_UNIT_ORDER_PICKUP_ITEM or filterTable["issuer_player_id_const"] == -1 ) then
 		return true

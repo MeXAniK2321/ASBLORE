@@ -1,0 +1,566 @@
+"DOTAAbilities"
+{
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	//-------ROLAND-----------------------------------------------------------------------------------------------------------------------------------
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_axe_bonk"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/1"////"heroes/asb_roland/roland_axe_bonk"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"5"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_hammer_stun"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/2"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"5"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_sword_doubleswing"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/3"//"heroes/asb_roland/roland_axe_bonk"
+		
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"5"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_katana_swing"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/4"//"heroes/asb_roland/roland_katana_swing"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"10"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_cross_strike"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/5"//"heroes/asb_roland/roland_cross_strike"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"10"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_jc"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/6"//"heroes/asb_roland/roland_jc"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"8"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_gun_doubleshot"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/7"//"heroes/asb_roland/roland_gun_doubleshot"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"8"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_spear_knock"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/8"//"heroes/asb_roland/roland_spear_knock"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"8"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_big_sword_stun"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/9"//"heroes/asb_roland/roland_big_sword_stun"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"13"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		//"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+			"cast_range"						"800"
+			"aoe_optional"						"0"
+			"r_recast_time"						"1"
+			"r_stamina_cost"					"3"
+			"r_dash_duration"					"0.5"
+			"r_dash_offset"						"96"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_pandora_box"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/0"//"heroes/asb_roland/roland_pandora_box"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"10"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		"HasScepterUpgrade"					  	"1"
+		"IsGrantedByScepter"					"1"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_5"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+		}
+	}
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_ultimate"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/0"//"heroes/asb_roland/roland_ultimate"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"						"0.2"
+		//"AbilityChannelTime"					  "0.0"
+		"AbilityCooldown"						"100"
+		"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"30"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_6"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+		}
+	}
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------
+	"roland_light_controller"
+	{
+		"BaseClass"								"ability_lua"
+	
+		"ScriptFile"							"heroes/asb_roland/asb_roland"
+		"AbilityTextureName" 					"heroes/asb_roland/10"//"heroes/asb_roland/roland_axe_bonk"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		//"AbilityCastPoint"					"0"
+		//"AbilityChannelTime"					"0.0"
+		//"AbilityCooldown"						"10"
+		//"AbilityManaCost"						"2"
+		//"AbilityCastRange"					  	"650"
+
+		//"HasScepterUpgrade"					  "1"
+
+		"MaxLevel"								"1"
+		//"RequiredLevel"							"1"
+		//"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		//"AbilityChannelAnimation"				  "ACT_DOTA_CHANNEL_ABILITY_1"
+		
+		//"AbilitySharedCooldown"				  "tome"
+
+		"SpecialValues"
+		{
+		}
+	}
+}
