@@ -97,6 +97,10 @@ function modifier_item_jetstream_sam_muramasa:OnCreated( kv )
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
+    
+    self.fLightningBaseDmg = self.ability:GetSpecialValueFor("lightning_base_damage")
+    self.fLightningPercDmg = (self.ability:GetSpecialValueFor("lightning_percent_damage") / 100) or 0.17
+    self.fLightningFullDmg = self.fLightningBaseDmg + self.parent:GetAttackDamage() * self.fLightningPercDmg
 end
 function modifier_item_jetstream_sam_muramasa:GetModifierPreAttack_CriticalStrike()
     -- For Server and Client
@@ -141,9 +145,12 @@ function modifier_item_jetstream_sam_muramasa:OnAttackLanded(params)
 		
         self:GetParent():EmitSound("Item.Maelstrom.Chain_Lightning")
 	
-        self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_item_imba_chain_lightning", {
-            starting_unit_entindex	= params.target:entindex(), chainDmg = self.ability:GetSpecialValueFor("lightning_base_damage")
-        })
+        --self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_item_imba_chain_lightning", {
+            --starting_unit_entindex	= params.target:entindex(), chainDmg = self.ability:GetSpecialValueFor("lightning_base_damage")
+        --})
+        
+        -- My New Bounce Function, avoid modifier and just use timer
+        BounceLightning(self.parent, self.ability, nil, 10, 1000, self.fLightningFullDmg, nil, params.target)
        end
     end
 end
@@ -174,6 +181,84 @@ function modifier_item_jetstream_sam_muramasa_armor:GetModifierPhysicalArmorBonu
     return self.reduction
 end
 
+---------------------------------------------------------------------------------------------------------------------
+-- MY BOUNCE FUNCTION TEST
+---------------------------------------------------------------------------------------------------------------------
+
+function BounceLightning(hCaster, hAbility, hPrevTarget, nBounces, iRadius, fDamage, tEnemiesHit, hFirstBounceTarget)
+    if not IsNotNull(hCaster) or not IsNotNull(hAbility) or nBounces <= 0 then
+        return nil
+    end
+    
+    local hCurrentUnit = hPrevTarget or hCaster
+    fDamage     = fDamage or 500
+    tEnemiesHit = tEnemiesHit or {}
+
+    for _, hEnemy in pairs(FindClosest(hCaster, hCurrentUnit, iRadius, hFirstBounceTarget)) do
+        if IsNotNull(hEnemy) and not tEnemiesHit[tostring(hEnemy:entindex())] then
+            hEnemy:EmitSound("Item.Maelstrom.Chain_Lightning.Jump")
+            
+            local nLightningFX = ParticleManager:CreateParticle("particles/jetstream_sam_lightning.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCurrentUnit)
+                                 ParticleManager:SetParticleControlEnt(nLightningFX, 1, hEnemy, PATTACH_POINT_FOLLOW, "attach_hitloc", hEnemy:GetAbsOrigin(), true)
+                                 ParticleManager:SetParticleControl(nLightningFX, 2, Vector(1, 1, 1))
+                                 ParticleManager:ReleaseParticleIndex(nLightningFX)
+                                 
+            ApplyDamage({
+                victim          = hEnemy,
+                damage          = fDamage,
+                damage_type     = DAMAGE_TYPE_MAGICAL,
+                damage_flags    = DOTA_DAMAGE_FLAG_NONE,
+                attacker        = hCaster,
+                ability         = hAbility
+            })
+                                 
+            tEnemiesHit[tostring(hEnemy:entindex())] = true
+            
+            --=====================--
+            nBounces = nBounces - 1
+            --=====================--
+            
+            Timers:CreateTimer(0.2, function()
+                BounceLightning(hCaster, hAbility, hEnemy, nBounces, iRadius, fDamage, tEnemiesHit, nil)
+            end)
+            
+            break
+        end
+    end
+end
+
+function FindClosest(hCaster, hCurrentTarget, iRadius, hFirstBounceTarget)
+    -- First attack should bounce to initial target
+    if hFirstBounceTarget then
+        return {hFirstBounceTarget}
+    end
+    
+    -- If the target is the caster again but not first bounce, no other units found (stop bouncing)
+    -- Because hCurrentUnit = hPrevTarget or hCaster will always have a unit
+    -- if hCurrentTarget == hCaster and not hFirstBounceTarget then -- I leave this here for readability
+    if hCurrentTarget == hCaster then
+        return {}
+    end
+    
+    -- If the current target is NULL then return empty table (stop bouncing)
+    --if not IsNotNull(hCurrentTarget) then
+        --return {}
+    --end
+
+    iRadius = iRadius or 1000
+    local hEnemies = FindUnitsInRadius( hCaster:GetTeamNumber(),  -- int, your team number
+                                        hCurrentTarget:GetOrigin(),  -- point, center point
+                                        nil,  -- handle, cacheUnit. (not known)
+                                        iRadius,  -- float, radius. or use FIND_UNITS_EVERYWHERE
+                                        DOTA_UNIT_TARGET_TEAM_ENEMY,  -- int, team filter
+                                        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,  -- int, type filter
+                                        0,  -- int, flag filter
+                                        FIND_CLOSEST,  -- int, order filter
+                                        false  -- bool, can grow cache
+                                    )
+    return hEnemies
+end
+
 
 ---------------------------------------------------------------------------------------------------------------------
 -- DOTA IMBA MAELSTROM MODIFIER
@@ -182,7 +267,7 @@ end
 -- MODIFIER_ITEM_IMBA_CHAIN_LIGHTNING --
 ----------------------------------------
 
-modifier_item_imba_chain_lightning = modifier_item_imba_chain_lightning or class({})
+--[[modifier_item_imba_chain_lightning = modifier_item_imba_chain_lightning or class({})
 
 function modifier_item_imba_chain_lightning:IsHidden()		return true end
 function modifier_item_imba_chain_lightning:IsPurgable()	return false end
@@ -270,3 +355,4 @@ function modifier_item_imba_chain_lightning:OnIntervalThink()
 		self:Destroy()
 	end
 end
+]]--

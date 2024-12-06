@@ -17,7 +17,7 @@ local hTABLE_ABILITIES1 = {
                               "goju_infinite_void",
                               "goju_red_explosion",
                               "goju_domain_expansion",
-                              "goju_hollow_purple",  
+                              "goju_hollow_purple_test",  
                           }
 --=============================--
 local hTABLE_ABILITIES2 = {
@@ -73,11 +73,26 @@ local GridNavPathIsTraversable = function(self, vPos, iPointsNotTraversable)
         local vPosition       = vPos or hParent:GetOrigin()
         iPointsNotTraversable = iPointsNotTraversable or 10
         self.iPointsTraverse  = self.iPointsTraverse or 0
-    
-        -- Assuming that you are moving at a speed of 900 units every second at a 0.03s interval and iPointsNotTraversable = 33, you would check if a distance of 900 is traversable.
-        -- Ideally should check if a distance of 250-300 is traversable for optimal behavior i think ?
-        if not GridNav:IsTraversable(vPosition) or GridNav:IsBlocked(vPosition) then
-            -- Prevent checking the same position if standing in place
+        
+        local vLeft  = RotatePosition(vPosition, QAngle(0, 90, 0), Vector(1, 0, 0))
+        local vRight = RotatePosition(vPosition, QAngle(0, -90, 0), Vector(1, 0, 0))
+        
+        local fOffset = 50
+        local vLeftCheck  = vPosition + (vLeft * fOffset)
+        local vRightCheck = vPosition + (vRight * fOffset)
+
+        -- Function to check a position
+        local function IsPositionBlocked(vCheckPos)
+            return not GridNav:IsTraversable(vCheckPos) or GridNav:IsBlocked(vCheckPos)
+        end
+
+        -- Check all three positions
+        local bBlocked = IsPositionBlocked(vPosition) 
+                      and IsPositionBlocked(vLeftCheck) 
+                      and IsPositionBlocked(vRightCheck)
+        
+        if bBlocked then
+            -- Prevent checking the same position repeatedly
             if self.__vTraversePosition ~= nil and self.__vTraversePosition == vPosition then return true end
             self.__vTraversePosition = vPosition
             self.iPointsTraverse = self.iPointsTraverse + 1
@@ -89,9 +104,7 @@ local GridNavPathIsTraversable = function(self, vPos, iPointsNotTraversable)
             self.iPointsTraverse = 0
             return false
         end
-        
-        --print("Grid Nav Path Test: " .. self.iPointsTraverse)
-        
+
         return true
     end
 end
@@ -101,10 +114,8 @@ function modifier_gojo_projectile_thinker:CheckState()
     local func = {
                    [MODIFIER_STATE_INVULNERABLE] = true,
                    [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
+                   [MODIFIER_STATE_PROVIDES_VISION] = self.bProvidesVis
                  }
-    if self.bIsBlueOrb == false and self.bIsRedOrb == false then
-        func[MODIFIER_STATE_PROVIDES_VISION] = true
-    end
     return func
 end
 function modifier_gojo_projectile_thinker:OnCreated(hTable)
@@ -266,27 +277,8 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
             end
             
             AddFOWViewer(self.caster:GetTeamNumber(), tMoveValues.vCurPos, 700, 0.01, true)
+            GridNav:DestroyTreesAroundPoint(tMoveValues.vCurPos, tMoveValues.fRadiusCopy, false)
         
-            -- Handle Red Orb Logic
-            -- TEST HMMMMMM.....
-            if self.bIsRedOrb then
-                for iKey, hTarget in pairs(__hGojoProjectiles) do
-                    if IsNotNull(hTarget)
-                        and IsNotNull(self.parent)
-                        and hTarget ~= self.parent
-                        and not hTarget:IsRealHero()
-                        and hTarget:HasModifier("modifier_gojo_projectile_thinker") 
-                        and GetDistance(hTarget, self.parent) <= tMoveValues.fRadiusCopy then
-                        local hModifier = hTarget:FindModifierByName("modifier_gojo_projectile_thinker")
-                        
-                        hModifier.iBlueCurrentState = STATE_IS_EXPLODING
-                        hModifier.bIsExploding = true
-                        self:Destroy()
-                        return
-                        --table.insert(enemies, hTarget)
-                    end
-                end
-            end
             
             -- Handle Projectile Damage
             local enemies = FindUnitsInRadius( self.caster:GetTeamNumber(),  -- int, your team number
@@ -319,7 +311,7 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
                     end 
                      
                     --=============================================--
-                    self:ApplyMotionModifier(hTarget, tMoveValues)
+                    --self:ApplyMotionModifier(hTarget, tMoveValues)
                     --=============================================--
                     if damage.damage > 0 then
                         ApplyDamage(damage)
@@ -342,8 +334,7 @@ function modifier_gojo_projectile_thinker:OnIntervalThink()
             -- Handle Explosion Logic Final
             if self:BlueIsExploding() then
                 self:ExplosionEffects(2)       
-                self:Destroy()
-                return
+                return self:Destroy()
             end
             
             -- Handle Blue Orb Logic
@@ -409,7 +400,7 @@ function modifier_gojo_projectile_thinker:OnBlueOrbLogic(vCurPos, vNextPos)
                 print("Blue Orb Full Revolution")
             end
                     
-            local vRadians = math.rad(self.angle % 360)
+            local vRadians = math.rad(self.angle)
             local VecX = vCenter.x + iRadius * math.cos(vRadians)
             local VecY = vCenter.y + iRadius * math.sin(vRadians)
       
@@ -421,33 +412,6 @@ function modifier_gojo_projectile_thinker:OnBlueOrbLogic(vCurPos, vNextPos)
         self.Target = vCurPos
         self.bIsExploding = true
     end        
-end
-function modifier_gojo_projectile_thinker:ApplyMotionModifier(hTarget, tMoveValues)
-    if not self.bIsExploding and (self.bIsBlueOrb or self.bIsRedOrb) then
-        if hTarget:HasModifier("modifier_gojo_projectile_thinker_aura") then
-            return
-        end
-            
-        local hModifier = hTarget:AddNewModifier(self.caster, self.Ability, "modifier_gojo_projectile_thinker_aura", { duration = 20.0 })
-        
-        if not IsNotNull(hModifier) then
-            return
-        end
-        
-        hTarget:SetOrigin(tMoveValues.vCurPos) -- Initiate first pull
-        hModifier.caster = self.parent
-        hModifier.parent = hTarget
-        hModifier.fRadius = tMoveValues.fRadiusCopy
-        hModifier.UpdateHorizontalMotion = function(hModifier, me, dt)
-            if hModifier.caster and not hModifier.caster:IsNull() and GetDistance(hModifier.parent, hModifier.caster) <= hModifier.fRadius then
-                local vCurPos = GetGroundPosition(hModifier.caster:GetOrigin(), hModifier.caster)
-                hModifier.parent:SetOrigin(vCurPos) 
-                --print("TEST HMMMMM")
-            else
-                hModifier:Destroy()
-            end                                   
-        end
-    end
 end
 function modifier_gojo_projectile_thinker:MoveAndCalculateStats()
     -- There should always be a Target Vector
@@ -525,14 +489,44 @@ function modifier_gojo_projectile_thinker:ExplosionEffects(iNum)
         end  
     end
 end
+function modifier_gojo_projectile_thinker:DoATickOfDamage(fDamage)
+    -- Do a tick of damage from Red Orb to all enemies in Blue Orb
+    fDamage = fDamage or 0
+    
+    local enemies = FindUnitsInRadius( self.caster:GetTeamNumber(),  -- int, your team number
+                                       self.parent:GetOrigin(),  -- point, center point
+                                       nil,  -- handle, cacheUnit. (not known)
+                                       self.fRadius,  -- float, radius. or use FIND_UNITS_EVERYWHERE
+                                       self.Ability:GetAbilityTargetTeam(),  -- int, team filter
+                                       self.Ability:GetAbilityTargetType(),  -- int, type filter
+                                       self.Ability:GetAbilityTargetFlags(),  -- int, flag filter
+                                       FIND_ANY_ORDER,  -- int, order filter
+                                       false  -- bool, can grow cache
+                                    )
+    
+    for _, hTarget in pairs(enemies) do
+        if IsNotNull(hTarget) then
+            local damage = {
+                             victim = hTarget,
+                             attacker = self.Source,
+                             damage = fDamage,
+                             damage_type = self.Ability:GetAbilityDamageType(),
+                             ability = self.Ability
+                           }
+            
+            if damage.damage > 0 then
+                ApplyDamage(damage)
+            end
+        end
+    end
+end
 function modifier_gojo_projectile_thinker:OnDestroy()
     if IsServer() then
         if self.bIsBlueOrb
             and not self:BlueIsExploding() then
             EmitSoundOn("Gojo.blue_expire", self.parent)
         end
-        if self.parent 
-            and IsNotNull(self.parent) 
+        if IsNotNull(self.parent) 
             and not self.parent:IsRealHero() then
             self:StartIntervalThink(-1)
             __hGojoProjectiles[tostring(self.parent:entindex())] = nil
@@ -545,8 +539,8 @@ function modifier_gojo_projectile_thinker:OnDestroy()
         end
     end
 end
---[[function modifier_gojo_projectile_thinker:IsAura()
-	return self.bIsBlueOrb or self.bIsRedOrb
+function modifier_gojo_projectile_thinker:IsAura()
+	return true
 end
 
 function modifier_gojo_projectile_thinker:GetModifierAura()
@@ -554,11 +548,11 @@ function modifier_gojo_projectile_thinker:GetModifierAura()
 end
 
 function modifier_gojo_projectile_thinker:GetAuraRadius()
-	return self.fRadius
+	return self.fRadius + 10
 end
 
 function modifier_gojo_projectile_thinker:GetAuraDuration()
-	return 0.1
+	return 0.03
 end
 
 function modifier_gojo_projectile_thinker:GetAuraSearchTeam()
@@ -571,7 +565,7 @@ end
 
 function modifier_gojo_projectile_thinker:GetAuraSearchFlags()
 	return DOTA_UNIT_TARGET_FLAG_NONE
-end]]--
+end
 ---------------------------------------------------------------------------------------------------------------
 
 -- NOTE: This modifier is registered with a motion controller, so it should correct unit positioning after being removed.
@@ -585,8 +579,8 @@ function modifier_gojo_projectile_thinker_aura:CheckState()
     return func
 end
 function modifier_gojo_projectile_thinker_aura:OnCreated()
-    self.caster  = self:GetCaster()
     self.parent  = self:GetParent()
+    self.caster  = self:GetAuraOwner()
     self.ability = self:GetAbility()
     if IsServer() then
         if self:ApplyHorizontalMotionController() == false then 
@@ -607,6 +601,39 @@ function modifier_gojo_projectile_thinker_aura:OnCreated()
             
             self:StartIntervalThink(self.fInterval)
         end
+    end
+end
+function modifier_gojo_projectile_thinker_aura:UpdateHorizontalMotion(me, dt)
+    if IsNotNull(self.parent) and IsNotNull(self.caster) then
+        self:PullRotate(me, dt) 
+        --print("TEST HMMMMM")
+    else
+        self:Destroy()
+    end                                   
+end
+function modifier_gojo_projectile_thinker_aura:PullRotate(me, dt)
+    if IsServer() then
+        -- EYE FUNCTION, MODIFIED
+        local vCenterLoc = self.caster:GetAbsOrigin()
+        local vDirection = GetDirection(self.parent, vCenterLoc)
+        local fDistance  = GetDistance(self.parent, vCenterLoc)
+        
+        if fDistance > 255 or fDistance < 100 then
+            fDistance = 150
+        end
+
+        local fPullSpeed   = (fDistance / 10) * RandomInt(15, 25) * dt
+        local fRotateSpeed = RandomInt(10, 20) * dt
+
+        local fDistanceReduce = fDistance - fPullSpeed
+
+        local fDegree     = math.atan2( vDirection.y, vDirection.x )
+        
+            vDirection    = Vector( math.cos(fDegree + fRotateSpeed), math.sin(fDegree + fRotateSpeed), 0 )
+
+        local vNextLoc    = GetGroundPosition( (vCenterLoc + vDirection * fDistanceReduce ), self.parent )
+
+        self.parent:SetOrigin( vNextLoc )
     end
 end
 function modifier_gojo_projectile_thinker_aura:OnIntervalThink()
@@ -766,162 +793,129 @@ end
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Red Orb (Q)
 ---------------------------------------------------------------------------------------------------------------
-LinkLuaModifier("modifier_gojo_hollow_nuke", "heroes/gojo/gojo.lua", LUA_MODIFIER_MOTION_VERTICAL)
-modifier_gojo_hollow_nuke = modifier_gojo_hollow_nuke or class({})
-
-function modifier_gojo_hollow_nuke:IsHidden() return false end
-function modifier_gojo_hollow_nuke:IsPurgeable() return false end
-function modifier_gojo_hollow_nuke:IsPurgeException() return false end
-function modifier_gojo_hollow_nuke:RemoveOnDeath() return true end
-function modifier_gojo_hollow_nuke:CheckState()
-    local func = {
-                    [MODIFIER_STATE_COMMAND_RESTRICTED] = true,
-                    [MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true,
-                    [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
-                    [MODIFIER_STATE_ROOTED] = true,
-                    [MODIFIER_STATE_DISARMED] = true,
-                    [MODIFIER_STATE_SILENCED] = true,
-                    [MODIFIER_STATE_MUTED] = true,
-                    [MODIFIER_STATE_INVULNERABLE] = true,
-                    [MODIFIER_STATE_NO_HEALTH_BAR] = true,
-                 }
-    return func
-end
-function modifier_gojo_hollow_nuke:OnCreated(hTable)
-    if IsServer() then
-        self.caster  = self:GetCaster()
-        self.parent  = self:GetParent()
-        self.ability = self:GetAbility()
-        
-        self.iFPS         = 30 -- Frames per second
-        self.fDuration    = 228 / self.iFPS -- Divide total frames by FPS
-        self.iDistance    = 445 -- Travel height
-        self.fTravelTime  = 70 / self.iFPS -- Travel time is 70 frames (Frame ~ 95 - 165)
-        self.fUnitsPerSec = self.iDistance / self.fTravelTime
-        
-       self.fRedBallTime  = 75 / self.iFPS
-       self.fTravelDelay  = 95 / self.iFPS -- Start when frames reach 95
-        
-        if IsNotNull(self.parent)
-            and not self.iHollowNukeEffect then
-
-            self.iHollowNukeEffect =  ParticleManager:CreateParticle("particles/test/custom/hollow_purple_nuke_v2.vpcf", PATTACH_WORLDORIGIN, nil)
-                                      --ParticleManager:SetParticleControl(self.iHollowNukeEffect, 0, self.parent:GetOrigin()) -- Set Main Point Initial Origin
-                                      ParticleManager:SetParticleControlTransform(self.iHollowNukeEffect, 0, self.parent:GetOrigin(), self.parent:GetAngles()) -- Use This Instead (Origin + Angles)
-                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 60, self.parent:GetOrigin()) -- Set Initial Blue Ball Origin
-                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 22, Vector(0, self.fRedBallTime - 0.2, 0)) -- Red Ball Spawn Timer
-                                      ParticleManager:SetParticleControl(self.iHollowNukeEffect, 23, Vector(0, self.fRedBallTime - 0.3, 0)) -- Red Ball Spawn Timer Glow
-        end
-        
-        if self:ApplyVerticalMotionController() == false then 
-            self:Destroy()
-        end
-        
-        self.__fElapsedTime = self.__fElapsedTime or 0
-        
-        self:StartIntervalThink(FrameTime())
-    end
-end
-function modifier_gojo_hollow_nuke:OnIntervalThink()
-    local me = self.parent
-    local dt = FrameTime()
-
-    if not IsNotNull(me) or not me:IsAlive() or not self.iHollowNukeEffect then
-        self:Destroy()
-        return
-    end
-    
-    self.__fElapsedTime = self.__fElapsedTime + dt
-    
-    --========================--
-    self:BallsThinking(me, dt)
-    --========================--
-    
-    if self.fTravelDelay > 0 then
-        --self.parent:InterruptMotionControllers(true)
-        self.fTravelDelay = self.fTravelDelay - dt
-        return
-    end
-    
-    local vCurPos = me:GetOrigin()
-    local vGround = GetGroundPosition(vCurPos, me)
-    local vNewPos = self.fUnitsPerSec * dt
-    local vSetPos = vCurPos.z >= vGround.z + self.iDistance
-                    and vCurPos
-                    or vCurPos + Vector(0, 0, vNewPos)
-                    
-    me:SetOrigin(vSetPos)
-    print("HUH")
-end
-function modifier_gojo_hollow_nuke:BallsThinking(me, dt)
-    local vCurPos = me:GetOrigin()
-    local vGround = GetGroundPosition(vCurPos, me)
-    
-    -- Move Main Origin
-    ParticleManager:SetParticleControlTransform(self.iHollowNukeEffect, 0, vGround, self.parent:GetAngles())
-    -- Move Blue Ball Origin
-    ParticleManager:SetParticleControl(self.iHollowNukeEffect, 60, vCurPos)
-    
-    print("HUHHHHHH????")
-end
-function modifier_gojo_hollow_nuke:OnVerticalMotionInterrupted()
-    if IsServer() then
-        --self:Destroy()
-    end
-end
-function modifier_gojo_hollow_nuke:OnDestroy()
-    if IsServer() then
-        ParticleManager:DestroyParticle(self.iHollowNukeEffect, true)
-        ParticleManager:ReleaseParticleIndex(self.iHollowNukeEffect) 
-    end
-end
 
 goju_red_orb = goju_red_orb or class({})
 
+function goju_red_orb:CastFilterResultLocation(vLocation)
+    NPAN_INDICATOR:RegisterAbility(self, NPAN_INDICATOR_TYPE_AIM_SKILLSHOT, "particles/test/custom/range_finder_cone_no_panorama/range_finder_cone.vpcf")
+    NPAN_INDICATOR:CreateUIIndicator(self:GetCaster(), self, vLocation)
+end
 function goju_red_orb:GetAOERadius()
     return self:GetSpecialValueFor("distance")
 end
 function goju_red_orb:OnSpellStart()
     local hCaster = self:GetCaster()
                            
-    --hCaster:AddNewModifier(hCaster, self, "modifier_gojo_hollow_nuke", { duration = 15.0 })
+    --hCaster:AddNewModifier(hCaster, self, "modifier_gojo_hollow_nuke", { duration = 24.0 })
     
     self:CreateRedOrb()
 end
 function goju_red_orb:CreateRedOrb()
     local hCaster      = self:GetCaster()
+    local vCursorLoc   = self:GetCursorPosition()
     local f__Radius    = self:GetSpecialValueFor("radius")
     local i__Speed     = self:GetSpecialValueFor("movespeed")
     local f__Distance  = self:GetSpecialValueFor("distance") + hCaster:FindTalentValue("special_bonus_gojo_20_alt")
-    local f__ProjDmg   = self:GetSpecialValueFor("projectile_damage")
     
-    self.vForward = hCaster:GetForwardVector()
+    self.iTARGET_TEAM  = self:GetAbilityTargetTeam()
+    self.iTARGET_TYPE  = self:GetAbilityTargetType()
+    self.iTARGET_FLAGS = self:GetAbilityTargetFlags()
+    
+    self.f__ProjDmg     = self:GetSpecialValueFor("projectile_damage")
+    self.f__ProjTickDmg = self.f__ProjDmg / ( (f__Distance / i__Speed) / FrameTime() )
+    self.vForward       = GetDirection(vCursorLoc, hCaster) or hCaster:GetForwardVector()
+    
+    self.iTicksTest     = 0
+    --print("Ticks Test: " .. (f__Distance / i__Speed) / FrameTime())
     
     local hExplosion =  {   
-                          duration     = self:GetSpecialValueFor("duration"),
-                          --Target       = nil,
-                          iMoveSpeed   = i__Speed,
-                          --flExpireTime = 0,
-                          fDistance    = f__Distance,
-                          EffectName   = "particles/heroes/anime_hero_gojo/red/red_orb_projectile_test.vpcf",
-                          Ability      = self:GetAbilityIndex(),
-                          Source       = hCaster:entindex(),
-                          bProvidesVis = nil,
-                          iVisionRad   = 0,
-                          iVisionTeam  = 0,
-                          fLaunchDelay = 0,
-                          bHitMultiple = false,
-                          fProjDamage  = f__ProjDmg,
-                          bDestroy     = true,
-                          bIsBlueOrb   = false,
-                          fRadius      = f__Radius,
-                          bIsRedOrb    = true
-                     	}
-                        
-    local hProjectile = Goju_Create_Projectile(self, hCaster, hExplosion)
+                            Ability             = self,
+                            EffectName          = "particles/heroes/anime_hero_gojo/red/red_orb_projectile_test_linear.vpcf",
+                            vSpawnOrigin        = hCaster:GetOrigin() + self.vForward * 25,
+                            fDistance           = f__Distance,
+                            fStartRadius        = f__Radius,
+                            fEndRadius          = f__Radius,
+                            Source              = hCaster,
+                            bHasFrontalCone     = false,
+                            bReplaceExisting    = false,
+                            iUnitTargetTeam     = self.iTARGET_TEAM,
+                            iUnitTargetFlags    = self.iTARGET_FLAGS,
+                            iUnitTargetType     = self.iTARGET_TYPE,
+                            --fExpireTime         = GameRules:GetGameTime() + 30,
+                            --bDeleteOnHit        = false,
+                            vVelocity           = self.vForward * i__Speed,
+                            bProvidesVision     = true,
+                            iVisionRadius     	= f__Radius,
+                            iVisionTeamNumber 	= hCaster:GetTeamNumber(),
+                            --ExtraData 			= { fProjDmg = f__ProjDmg }
+                        }
+
     EmitSoundOn("Gojo.redball" .. RandomInt(1, 2), hCaster)
     
-    return hProjectile
+    return ProjectileManager:CreateLinearProjectile(hExplosion)
+end
+function goju_red_orb:OnProjectileThinkHandle(iProjectile)
+    if IsNotNull(self)
+        and ProjectileManager:IsValidProjectile(iProjectile) then
+        local hCaster   = self:GetCaster()
+        local vLocation = ProjectileManager:GetLinearProjectileLocation(iProjectile)
+        local vGround   = GetGroundPosition(vLocation, hCaster)
+        local fRadius   = ProjectileManager:GetLinearProjectileRadius(iProjectile)
+        
+        GridNav:DestroyTreesAroundPoint(vLocation, fRadius, false)
+    
+        -- Handle Red Orb Logic
+        -- TEST HMMMMMM.....
+        for iKey, hTarget in pairs(__hGojoProjectiles) do
+            if IsNotNull(hTarget)
+                and not hTarget:IsRealHero()
+                and hTarget:HasModifier("modifier_gojo_projectile_thinker") 
+                and GetDistance(hTarget, vLocation) <= 255 then
+                local hModifier = hTarget:FindModifierByName("modifier_gojo_projectile_thinker")
+                
+                hModifier.iBlueCurrentState = STATE_IS_EXPLODING
+                hModifier.bIsExploding = true
+                hModifier:DoATickOfDamage(self.f__ProjDmg)
+                
+                return ProjectileManager:DestroyLinearProjectile(iProjectile)
+            end
+        end
+        
+        -- Handle Projectile Pull
+        local hEnemies = FindUnitsInRadius( hCaster:GetTeamNumber(),  -- int, your team number
+                                           vLocation,  -- point, center point
+                                           nil,  -- handle, cacheUnit. (not known)
+                                           fRadius,  -- float, radius. or use FIND_UNITS_EVERYWHERE
+                                           self.iTARGET_TEAM,  -- int, team filter
+                                           self.iTARGET_TYPE,  -- int, type filter
+                                           self.iTARGET_FLAGS,  -- int, flag filter
+                                           FIND_ANY_ORDER,  -- int, order filter
+                                           false  -- bool, can grow cache
+                                        )
+
+        local hDamageTable = {
+                               victim = nil,
+                               attacker = hCaster,
+                               damage = self.f__ProjTickDmg,
+                               damage_type = self:GetAbilityDamageType(),
+                               ability = self
+                             }
+        
+        for _, hTarget in pairs(hEnemies) do
+            if IsNotNull(hTarget) and not hTarget:HasModifier("modifier_gojo_projectile_thinker_aura") then
+                hTarget:AddNewModifier(hTarget, self, "modifier_stunned", { duration = 0.03 })
+                if GridNav:IsTraversable(vGround) then
+                    hTarget:SetOrigin(vGround)
+                else
+                    FindClearSpaceForUnit(hTarget, vGround, true)
+                end
+                hDamageTable.victim = hTarget
+                self.iTicksTest = self.iTicksTest + 1
+                --print("Ticks Amount: " .. self.iTicksTest )
+                ApplyDamage(hDamageTable)
+            end
+        end
+    end
 end
 
 ---------------------------------------------------------------------------------------------------------------
@@ -944,8 +938,7 @@ function goju_blue_orb:OnSpellStart()
         and IsNotNull(hModifier) then
         -- Add redirect ability and swap
 	    local hSubAbility = hCaster:AddAbility( "goju_blue_orb_redirect" )
-	    if hSubAbility
-            and IsNotNull(hSubAbility) then
+	    if IsNotNull(hSubAbility) then
             hSubAbility:SetLevel( 1 )
 	        hCaster:SwapAbilities(
 		                           self:GetAbilityName(),
@@ -1015,15 +1008,21 @@ end
 goju_blue_orb_redirect = goju_blue_orb_redirect or class({})
 
 function goju_blue_orb_redirect:OnSpellStart()
-	if self.hModifier and not self.hModifier:IsNull() then
+	if IsNotNull(self.hModifier) then
 		local hTarget  = self:GetCursorPosition()
         local hParent  = self.hModifier.parent
-        local vDirection = (hTarget - hParent:GetOrigin()):Normalized()
+        local vDirection  = GetDirection(hTarget, hParent)
+        local nTeamNumber = hParent:GetTeamNumber()
         
         hParent:SetForwardVector(vDirection)
+        local vLocation   = hParent:GetOrigin() + hParent:GetForwardVector() * 1300
         self.hModifier.iBlueCurrentState = STATE_IS_MOVING
-        self.hModifier.Target            = hParent:GetOrigin() + hParent:GetForwardVector() * 1300
+        self.hModifier.Target            = vLocation
         self.hModifier.bIsRedirected     = true
+        
+        local nArrowIndicatorFX = ParticleManager:CreateParticleForTeam("particles/test/custom/gojo_blue_orb_arrow_indicator/indicator_main.vpcf", PATTACH_WORLDORIGIN, nil, nTeamNumber)
+                                  ParticleManager:SetParticleControl(nArrowIndicatorFX, 0, hParent:GetOrigin() + hParent:GetForwardVector() * 1200)
+                                  ParticleManager:ReleaseParticleIndex(nArrowIndicatorFX)
 	end
     
 	    
@@ -1085,7 +1084,7 @@ function goju_infinite_void:Blink(hCaster, hPoint, hTarget)
     --self:Hit(hCaster, self:GetCursorTarget())
 end
 function goju_infinite_void:Hit(hCaster, hTarget)
-    if IsNotNull(hCaster) and IsNotNull(hTarget) and hCaster:IsAlive() and hTarget:IsAlive() then
+    if IsNotNull(hCaster) and hCaster:IsAlive() and hTarget:IsAlive() then
         local vDirection = GetDirection(hTarget, hCaster)
         local vTargetLoc = hTarget:GetOrigin()
         local fBoundingR = ( hCaster:BoundingRadius2D() + hTarget:BoundingRadius2D() ) --* 2 -- Need this Diameter or FindClearSpaceForUnit will not position properly
@@ -1130,7 +1129,7 @@ function modifier_goju_infinite_void:CheckState()
     local func = {
                    [MODIFIER_STATE_DEBUFF_IMMUNE] = true,
                  }
-    return self.caster == self.parent and func
+    return self.bIsOwner and func
 end
 function modifier_goju_infinite_void:DeclareFunctions()
     local tFunc =   {
@@ -1138,26 +1137,32 @@ function modifier_goju_infinite_void:DeclareFunctions()
                         --MODIFIER_EVENT_ON_ORDER,
                         MODIFIER_PROPERTY_AVOID_DAMAGE_AFTER_REDUCTIONS,
                     }
-    return self.caster == self.parent and tFunc
+    return self.bIsOwner and tFunc
 end
 function modifier_goju_infinite_void:GetModifierDodgeProjectile()
-    return self.caster == self.parent and 1
+    return self.bIsOwner and 1
 end
 function modifier_goju_infinite_void:OnCreated(hTable)
-    self.caster  = self:GetCaster()
-    self.parent  = self:GetParent()
-    self.ability = self:GetAbility()
+    self.caster   = self:GetCaster()
+    self.parent   = self:GetParent()
+    self.ability  = self:GetAbility()
+    
+    self.bIsOwner = self.caster == self.parent
     
     self.fRadius = self.ability:GetSpecialValueFor("radius")
     
     if IsServer() then
         self.vOriginP = self.parent:GetOrigin()
     
-        if self.caster ~= self.parent then
+        if not self.bIsOwner then
             self:StartIntervalThink(0.01)
         else
             self.iDmgTreshold = self.ability:GetSpecialValueFor("damage_treshold")
             self.ability:EndCooldown()
+            --local nDomainFX = ParticleManager:CreateParticle("particles/test/custom/domain_expansion_test/domain_expansion_main.vpcf", PATTACH_WORLDORIGIN, nil)
+                              --ParticleManager:SetParticleControl(nDomainFX, 0, self.parent:GetAbsOrigin())
+                              --ParticleManager:SetParticleShouldCheckFoW(nDomainFX, false)
+            --self:AddParticle(nDomainFX, false, false, -1, false, false)
         end
     end
 end
@@ -1221,7 +1226,7 @@ function modifier_goju_infinite_void:BlockOrPushEnemy()
 end
 function modifier_goju_infinite_void:GetModifierAvoidDamageAfterReductions(keys)
 	if IsServer() then
-        if IsNotNull(keys.attacker) and IsNotNull(keys.target) and keys.target == self.parent and self.caster == self.parent then
+        if IsNotNull(keys.attacker) and IsNotNull(keys.target) and keys.target == self.parent and self.bIsOwner then
             if keys.damage < self.iDmgTreshold then
 		        return 1
             end
@@ -1229,7 +1234,7 @@ function modifier_goju_infinite_void:GetModifierAvoidDamageAfterReductions(keys)
 	end
 end
 --[[function modifier_goju_infinite_void:OnOrder(keys)
-    if self.caster == self.parent then return end
+    if self.bIsOwner then return end
 
     if keys.unit and keys.unit == self.parent and keys.unit:IsRealHero() and not keys.unit:IsBuilding() then
         local fDistance  = GetDistance(keys.unit, self.caster)
@@ -1253,7 +1258,7 @@ end]]--
 function modifier_goju_infinite_void:OnDestroy()
     if IsServer() then
         local hModifier = self.parent:FindModifierByName("modifier_knockback")
-        if self.caster ~= self.parent then
+        if not self.bIsOwner then
             if not self.parent:HasModifier("modifier_goju_domain_motion")
                 and not IsNotNull(hModifier) then
                 FindClearSpaceForUnit( self.parent, self.parent:GetAbsOrigin(), true )
@@ -1267,14 +1272,14 @@ function modifier_goju_infinite_void:OnDestroy()
     end
 end
 function modifier_goju_infinite_void:GetEffectName()
-    return self.caster == self.parent and "particles/heroes/anime_hero_gojo/infinite_void/gojo_infinite_void_refract.vpcf"
+    return self.bIsOwner and "particles/heroes/anime_hero_gojo/infinite_void/gojo_infinite_void_refract.vpcf"
 end
 function modifier_goju_infinite_void:GetEffectAttachType()
     return PATTACH_ABSORIGIN_FOLLOW
 end
 
 function modifier_goju_infinite_void:IsAura()
-	return self.caster == self.parent
+	return self.bIsOwner
 end
 
 function modifier_goju_infinite_void:GetModifierAura()
@@ -1309,39 +1314,28 @@ LinkLuaModifier("modifier_goju_red_explosion_active","heroes/gojo/gojo.lua", LUA
 goju_red_explosion = goju_red_explosion or class({})
 
 function goju_red_explosion:Spawn()
-    self.bUpgraded = self.bUpgraded or true
     if IsServer() then
         self:SetLevel(1)
     end
 end
 function goju_red_explosion:GetBehavior()
-     return self.bUpgraded == true 
-            and self.BaseClass.GetBehavior(self)
-            or DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_CHANNELLED
+    return DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_CHANNELLED
 end
 function goju_red_explosion:GetCastRange()
-     return self.bUpgraded == true
-            and 400 -- Hardcoded ranges for optimal behavior
-            or 4000
+    return 4000
 end
 function goju_red_explosion:OnSpellStart()
     local hCaster = self:GetCaster()
     local hTarget = self:GetCursorTarget()
     local fDuration = self:GetSpecialValueFor("duration")
     
-    if type(self.bUpgraded) == "boolean" then
-        hCaster:AddNewModifier(hCaster, self, "modifier_goju_red_explosion_active", { duration = fDuration })
-        hTarget:AddNewModifier(hCaster, self, "modifier_goju_red_explosion_stun", { duration = fDuration + 0.2 })
-    else
-        self.Effect = Goju_Create_Explosion_Channeled(self, hCaster, true)
-        EmitSoundOn("Gojo.red_channeled", hCaster)
-        hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
-        hCaster:AddNewModifier(hCaster, self, "modifier_goju_vision", { duration = (self:GetChannelTime() or 3.0) + 0.4 })
-    end
+    self.Effect = Goju_Create_Explosion_Channeled(self, hCaster, true)
+    EmitSoundOn("Gojo.red_channeled", hCaster)
+    hCaster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
+    hCaster:AddNewModifier(hCaster, self, "modifier_goju_vision", { duration = (self:GetChannelTime() or 3.0) + 0.4 })
+
 end
 function goju_red_explosion:OnChannelFinish(bInterrupted)
-    if self.bUpgraded == true then return end
-    
     ParticleManager:DestroyParticle( self.Effect, true )
     ParticleManager:ReleaseParticleIndex( self.Effect )
     StopSoundOn("Gojo.red_channeled", self:GetCaster())
@@ -1353,6 +1347,7 @@ function goju_red_explosion:OnChannelFinish(bInterrupted)
     --print(fChannelStartTime)
 end
 function goju_red_explosion:OnProjectileThink(vLocation)
+    GridNav:DestroyTreesAroundPoint(vLocation, 500, false)
 end
 function goju_red_explosion:OnProjectileHit_ExtraData(hTarget, vLocation, hTable)
 	if IsNotNull(self)
@@ -1361,16 +1356,6 @@ function goju_red_explosion:OnProjectileHit_ExtraData(hTarget, vLocation, hTable
 		local fDamage   = self:GetSpecialValueFor("damage") or 500
         local fRealDmg  = self:GetSpecialValueFor("damage") + hCaster:FindTalentValue("special_bonus_gojo_15")
         local iLevelMul = self:GetSpecialValueFor("level_mult") + hCaster:FindTalentValue("special_bonus_gojo_25")
-        local fStrMult  = self:GetSpecialValueFor("str_mult") or 50.0
-        local fStrength = hCaster:GetStrength()
-        
-        fStrMult = fStrength * fStrMult
-        fDamage  = fDamage + fStrMult
-        --print("Gojo Explosion Damage: " .. fDamage)
-        
-        local bUpgraded = type(hTable.bUpgraded) == "number"
-                          and true
-                          or false
                           
         --print(hTable.bUpgraded)
         --print(bUpgraded)
@@ -1380,7 +1365,7 @@ function goju_red_explosion:OnProjectileHit_ExtraData(hTarget, vLocation, hTable
         local hDamageTable =    {  
                                     victim 		 = hTarget,
                                     attacker 	 = hCaster,
-                                    damage 		 = bUpgraded and fDamage or GetLerped(fRealDmg, fRealDmg + (hCaster:GetLevel() * iLevelMul), hTable.fChannelStartTime),
+                                    damage 		 = GetLerped(fRealDmg, fRealDmg + (hCaster:GetLevel() * iLevelMul), hTable.fChannelStartTime),
                                     damage_type  = self:GetAbilityDamageType(),
                                     ability 	 = self,
                              		damage_flags = 0
@@ -1403,18 +1388,21 @@ function goju_red_explosion:OnProjectileHit_ExtraData(hTarget, vLocation, hTable
         ApplyDamage(hDamageTable)
     end
 end
-function goju_red_explosion:CreateRed(fChannelStartTime)
+function goju_red_explosion:CreateRed(fChannelStartTime, bUpgraded)
     local hCaster      = self:GetCaster()
     
     local f__Distance  = self:GetSpecialValueFor("distance") + hCaster:FindTalentValue("special_bonus_gojo_15") or 2500
     local f__Radius    = self:GetSpecialValueFor("radius") or 500
     local i__Speed     = self:GetSpecialValueFor("speeed") or 2500
     
+    local vForward     = hCaster:GetForwardVector()
+    vForward.z         = 0
+    
     fChannelStartTime = fChannelStartTime or 1.0
         
     local hExplosion =  {   
                             Ability             = self,
-                            EffectName          = "particles/heroes/anime_hero_gojo/red/red_projectile_main.vpcf",
+                            EffectName          = "particles/heroes/anime_hero_gojo/red/red_projectile_main2.vpcf", --"particles/heroes/anime_hero_gojo/red/red_projectile_main.vpcf",
                             vSpawnOrigin        = hCaster:GetAbsOrigin(),
                             fDistance           = GetLerped(400, f__Distance, fChannelStartTime),
                             fStartRadius        = f__Radius,
@@ -1427,11 +1415,11 @@ function goju_red_explosion:CreateRed(fChannelStartTime)
                             iUnitTargetType     = self:GetAbilityTargetType(),
                             --fExpireTime         = GameRules:GetGameTime() + 30,
                             --bDeleteOnHit        = false,
-                            vVelocity           = hCaster:GetForwardVector() * i__Speed,
+                            vVelocity           = vForward * i__Speed,
                             bProvidesVision     = true,
                             iVisionRadius     	= f__Radius,
                             iVisionTeamNumber 	= hCaster:GetTeamNumber(),
-                            ExtraData 			= {bUpgraded = self.bUpgraded, fChannelStartTime = fChannelStartTime}
+                            ExtraData 			= {fChannelStartTime = fChannelStartTime}
                         }
 
     local iProjectile = ProjectileManager:CreateLinearProjectile(hExplosion)
@@ -1445,14 +1433,15 @@ modifier_goju_red_explosion_active = modifier_goju_red_explosion_active or class
 
 function modifier_goju_red_explosion_active:IsHidden() return false end
 function modifier_goju_red_explosion_active:IsPurgeable() return false end
-function modifier_goju_red_explosion_active:RemoveOnDeath() return true end
+function modifier_goju_red_explosion_active:IsPurgeException() return false end
+function modifier_goju_red_explosion_active:RemoveOnDeath() return false end
 function modifier_goju_red_explosion_active:CheckState()
     local state =   { 
                         [MODIFIER_STATE_STUNNED] = true,
                         [MODIFIER_STATE_INVULNERABLE] = true,
                         [MODIFIER_STATE_PROVIDES_VISION] = true,
                     }
-    return state
+    return not self.bReady and state
 end
 function modifier_goju_red_explosion_active:DeclareFunctions()
     local func =    {
@@ -1460,38 +1449,50 @@ function modifier_goju_red_explosion_active:DeclareFunctions()
                     }
     return func
 end
-function modifier_goju_red_explosion_active:GetOverrideAnimation(keys)
-    return ACT_DOTA_CAST_ABILITY_1
-end
+--function modifier_goju_red_explosion_active:GetOverrideAnimation(keys)
+    --return ACT_DOTA_CAST_ABILITY_1
+--end
 function modifier_goju_red_explosion_active:OnCreated(hTable)
     self.caster  = self:GetCaster()
     self.parent  = self:GetParent()
     self.ability = self:GetAbility()
     
     if IsClient() then
-        Destroy__Particle(self.GojoRedEffect)
-        self.GojoRedEffect = Goju_Create_Explosion(self, self.parent)
     else
+        self.parent:StartGesture(ACT_DOTA_CAST_ABILITY_1)
+        
+        Destroy__Particle(self.GojoRedEffect)
+        self.GojoRedEffect = nil
+        self.GojoRedEffect = Goju_Create_Explosion(self, self.parent)
+        
         self.ability:EndCooldown()
         EmitGlobalSound("Gojo.red")
+        
+        self.bReady = false
+        self.fTimer = hTable.fTimer or 8.0
+        self:StartIntervalThink(self.fTimer)
     end
+end
+function modifier_goju_red_explosion_active:OnIntervalThink()
+    self.bReady = true
+    
+    if not self.parent:IsAlive() then
+        Destroy__Particle(self.GojoRedEffect)
+        StopGlobalSound("Gojo.red")
+    else
+        Destroy__Particle(self.GojoRedEffect)
+        StopGlobalSound("Gojo.red")
+        self.ability:CreateRed(nil, true)
+    end
+    self.parent:RemoveGesture(ACT_DOTA_CAST_ABILITY_1)
+    self:StartIntervalThink(-1)
 end
 function modifier_goju_red_explosion_active:OnRefresh(hTable)
     self:OnCreated(hTable)
 end
 function modifier_goju_red_explosion_active:OnDestroy()
     if IsServer() then
-        if not self.parent:IsAlive() then
-            Destroy__Particle(self.GojoRedEffect)
-            StopGlobalSound("Gojo.red")
-        else
-            StopGlobalSound("Gojo.red")
-            self.ability:CreateRed()
-        end
-        self.ability.bUpgraded = "Not"
-        self.parent:RemoveGesture(ACT_DOTA_CAST_ABILITY_1)
-    else
-        self.ability.bUpgraded = "Not"
+
     end
 end
 
@@ -1506,23 +1507,9 @@ goju_domain_expansion = goju_domain_expansion or class({})
 function goju_domain_expansion:Spawn()
     if IsServer() then
         if self:GetLevel() <= 0 then
-            self:SetLevel(1)
-            local hCaster = self:GetCaster()
-            Timers:CreateTimer(1.0, function()
-                for _, sAbility in pairs(hTABLE_ABILITIES2) do
-                    local hAbility = hCaster:FindAbilityByName(sAbility)
-                    if IsNotNull(hAbility) then
-                        hAbility:SetLevel(1)
-                        --print("WADAPUCK")                    
-                    end
-                    --print("WATAFAK")
-                end
+            Timers:CreateTimer(0.04, function()
+                self:SetLevel(1)
             end)
-            -- GABEN Stop Trolliiiiiiiiiing......
-            --local iAbilityPoints = hCaster:GetAbilityPoints()
-            --hCaster:SetAbilityPoints(iAbilityPoints + 1)
-            --hCaster:UpgradeAbility(self)
-            --self:UpgradeAbility(true)
         end
         if not self:GetCaster():HasModifier("modifier_item_six_eyes_active") then
             self:SetActivated(false)
@@ -1622,6 +1609,9 @@ function modifier_goju_domain_expansion:OnCreated(hTable)
     self.iMoveSpeedPercent = self.ability:GetSpecialValueFor("movespeed_bonus_perc")
     self.fBaseDmgBonus     = self.ability:GetSpecialValueFor("base_damage_bonus")
     self.fMagicDmgBonus    = self.ability:GetSpecialValueFor("magic_damage_bonus")
+    self.fDurationBuff     = self.ability:GetSpecialValueFor("duration_buff")
+    
+    if not IsServer() then return end
     
     for i = 1, 2 do
         local iEyeEffect = ParticleManager:CreateParticle("particles/nanaya_eyes.vpcf", PATTACH_CUSTOMORIGIN, self.parent)
@@ -1629,12 +1619,7 @@ function modifier_goju_domain_expansion:OnCreated(hTable)
         self:AddParticle(iEyeEffect, false, true, -1, false, false)
     end
     
-    if self.bSwapped then
-        self.iEffect = ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/dimension/six_eyes_buff_hands.vpcf", PATTACH_POINT_FOLLOW, self.parent)
-        self:AddParticle(self.iEffect, false, true, -1, false, false)
-    end
-    
-    if IsServer() and not self.bSwapped then
+    if not self.bSwapped then
         self.parent:SetAngles(self.parent:GetAngles().x, 270, self.parent:GetAngles().z)
         self.parent:SetAbsAngles(self.parent:GetAngles().x, 270, self.parent:GetAngles().z)
         self.parent:SetLocalAngles(self.parent:GetAngles().x, 270, self.parent:GetAngles().z)
@@ -1677,7 +1662,10 @@ function modifier_goju_domain_expansion:OnCreated(hTable)
         
         self:StartIntervalThink(6.0)
         self.bSwapped = true
-    elseif IsServer() and self.bSwapped then
+    else
+        self.iEffect = ParticleManager:CreateParticle("particles/heroes/anime_hero_gojo/dimension/six_eyes_buff_hands.vpcf", PATTACH_POINT_FOLLOW, self.parent)
+        self:AddParticle(self.iEffect, false, true, -1, false, false)
+        
         self.parent:SetAttackCapability(DOTA_UNIT_CAP_MELEE_ATTACK)
     end
 end
@@ -1717,8 +1705,8 @@ function modifier_goju_domain_expansion:OnDestroy()
         and not self.bIsActive
         and self.bSwapped then
         -- Maybe should use OnIntervalThink but do this instead because PEPEGA?????
-        local hModifier = self.parent:AddNewModifier(self.parent, self.ability, "modifier_goju_domain_expansion", { duration = 50.0, bIsActive = 1, bSwapped = 1 })
-        self.parent:AddNewModifier(self.parent, self.ability, "modifier_star_tier2", {duration = 50.0, bSecondTheme = 1})
+        local hModifier = self.parent:AddNewModifier(self.parent, self.ability, "modifier_goju_domain_expansion", { duration = self.fDurationBuff, bIsActive = 1, bSwapped = 1 })
+        self.parent:AddNewModifier(self.parent, self.ability, "modifier_star_tier2", {duration = self.fDurationBuff, bSecondTheme = 1})
         self.parent:RemoveGesture(ACT_DOTA_CAST_ABILITY_1)
         Destroy__Particle(self.iEffect)
         return
@@ -1765,169 +1753,110 @@ end
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Hollow Purple (R)
 ---------------------------------------------------------------------------------------------------------------
-LinkLuaModifier("modifier_goju_hollow_purple_active","heroes/gojo/gojo.lua", LUA_MODIFIER_MOTION_NONE)
 
-goju_hollow_purple = goju_hollow_purple or class({})
+goju_hollow_purple_test = goju_hollow_purple_test or class({})
 
-function goju_hollow_purple:GetAOERadius()
-    return self:GetSpecialValueFor("distance")
+function goju_hollow_purple_test:CastFilterResultLocation(vLocation)
+    NPAN_INDICATOR:RegisterAbility(self, NPAN_INDICATOR_TYPE_AIM_SKILLSHOT, "particles/test/custom/range_finder_cone_no_panorama/range_finder_cone_hollow_purple.vpcf")
+    NPAN_INDICATOR:CreateUIIndicator(self:GetCaster(), self, vLocation)
 end
-function goju_hollow_purple:GetBehavior()
-     return self:GetCaster():HasModifier("modifier_goju_hollow_purple_active") 
-            and DOTA_ABILITY_BEHAVIOR_POINT
-            or DOTA_ABILITY_BEHAVIOR_NO_TARGET
+function goju_hollow_purple_test:GetAOERadius()
+    return 10000
 end
-function goju_hollow_purple:GetCastPoint()
-    return self:GetCaster():HasModifier("modifier_goju_hollow_purple_active")
-           and 1.45
-           or self.BaseClass.GetCastPoint(self)
+function goju_hollow_purple_test:GetAbilityTextureName()
+     return self.BaseClass.GetAbilityTextureName(self)
 end
-function goju_hollow_purple:OnAbilityPhaseStart()
-    if self:GetCaster():HasModifier("modifier_goju_hollow_purple_active") then
-        self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_4)
-        self.hHollowPurple = self:CreateHollowPurple()                   
-    end
+function goju_hollow_purple_test:OnAbilityPhaseStart()
+    self.fSpeed = self.fSpeed or self:GetSpecialValueFor("movespeed")
+    
+    self.vSpawnLocation  = self:GetCaster():GetAbsOrigin() + GetDirection(self:GetCaster():GetCursorPosition(), self:GetCaster():GetAbsOrigin()) * 300
+    
+    self.nHollowPurpleFX = ParticleManager:CreateParticle("particles/test/custom/hollow_purple_combined/hollow_purple_nuke_combine_main.vpcf", PATTACH_WORLDORIGIN, nil)
+                           ParticleManager:SetParticleControlTransform(self.nHollowPurpleFX, 0, self.vSpawnLocation, self:GetCaster():GetAngles())
+                           ParticleManager:SetParticleControl(self.nHollowPurpleFX, 6, Vector(self.fSpeed, 0, 0))
+                           
+    EmitSoundOn("Gojo.redball" .. RandomInt(1, 2), self:GetCaster())
+    
     return true
 end
-function goju_hollow_purple:GetAbilityTextureName()
-     return self:GetCaster():HasModifier("modifier_goju_hollow_purple_active") 
-            and "gojo_hollow_purple_active"
-            or self.BaseClass.GetAbilityTextureName(self)
-end
-function goju_hollow_purple:OnSpellStart()
-    local hCaster   = self:GetCaster()
-    local fDuration = 15.0
-    
-    if not hCaster:HasModifier("modifier_goju_hollow_purple_active") then
-        if self.hHollowPurple 
-            and IsNotNull(self.hHollowPurple) then
-            self.hHollowPurple:RemoveModifierByName("modifier_gojo_projectile_thinker")
-        end
-        hCaster:AddNewModifier(hCaster, self, "modifier_goju_hollow_purple_active", { duration = fDuration })
-    else
-        StopGlobalSound("Gojo.hollow_purple_launch2")
-        EmitGlobalSound("Gojo.hollow_purple_launched")
-    end
-end
-function goju_hollow_purple:CreateHollowPurple()
-    local hCaster      = self:GetCaster()
-    local f__Radius    = self:GetSpecialValueFor("radius") or 325
-    local i__Speed     = self:GetSpecialValueFor("movespeed") or 2500
-    local f__Distance  = self:GetSpecialValueFor("distance") or 8000
-    local f__ProjDmg   = self:GetSpecialValueFor("projectile_damage") or 4000
+function goju_hollow_purple_test:OnSpellStart()
+    local hCaster    = self:GetCaster()
+    local vDirection = hCaster:GetForwardVector()
+    local vVelocity  = vDirection * self.fSpeed
+    local fRadius    = self:GetSpecialValueFor("radius")
+    local fDistance  = self:GetSpecialValueFor("distance")
     
     local hExplosion =  {   
-                          duration     = self:GetSpecialValueFor("duration"),
-                          --Target       = nil,
-                          iMoveSpeed   = i__Speed,
-                          --flExpireTime = 0,
-                          fDistance    = f__Distance,
-                          EffectName   = "particles/heroes/anime_hero_gojo/hollow_purple/hollow_purple_projectile_main.vpcf",
-                          Ability      = self:GetAbilityIndex(),
-                          Source       = hCaster:entindex(),
-                          bProvidesVis = nil,
-                          iVisionRad   = 0,
-                          iVisionTeam  = 0,
-                          fLaunchDelay = self:GetCastPoint(),
-                          bHitMultiple = false,
-                          fProjDamage  = 4000,
-                          bDestroy     = true,
-                          bIsBlueOrb   = false,
-                          fRadius      = f__Radius,
-                          bIsRedOrb    = false
-                     	}
-                        
-    local hProjectile = Goju_Create_Projectile(self, hCaster, hExplosion)
-    EmitGlobalSound("Gojo.hollow_purple_launch2")
-    
-    return hProjectile
+                            Ability             = self,
+                            EffectName          = "",
+                            vSpawnOrigin        = self.vSpawnLocation,
+                            fDistance           = fDistance,
+                            fStartRadius        = fRadius,
+                            fEndRadius          = fRadius,
+                            Source              = hCaster,
+                            bHasFrontalCone     = false,
+                            bReplaceExisting    = false,
+                            iUnitTargetTeam     = self:GetAbilityTargetTeam(),
+                            iUnitTargetFlags    = self:GetAbilityTargetFlags(),
+                            iUnitTargetType     = self:GetAbilityTargetType(),
+                            --fExpireTime         = GameRules:GetGameTime() + 30,
+                            --bDeleteOnHit        = false,
+                            vVelocity           = vVelocity,
+                            bProvidesVision     = true,
+                            iVisionRadius     	= fRadius,
+                            iVisionTeamNumber 	= hCaster:GetTeamNumber(),
+                            ExtraData 			= { nHollowPurpleVFX = self.nHollowPurpleFX }
+                        }
+
+    ProjectileManager:CreateLinearProjectile(hExplosion)
+    ParticleManager:SetParticleControl(self.nHollowPurpleFX, 1, vVelocity * 4)
 end
-function goju_hollow_purple:OnAbilityPhaseInterrupted()
-    self:GetCaster():RemoveGesture(ACT_DOTA_CAST_ABILITY_4)
-    StopSoundOn("Gojo.hollow_purple_launch", self:GetCaster())
-    if self.hHollowPurple 
-        and IsNotNull(self.hHollowPurple) then
-        self.hHollowPurple:RemoveModifierByName("modifier_gojo_projectile_thinker")
+function goju_hollow_purple_test:OnAbilityPhaseInterrupted()
+    if self.nHollowPurpleFX then
+        ParticleManager:DestroyParticle(self.nHollowPurpleFX, false)
+        ParticleManager:ReleaseParticleIndex(self.nHollowPurpleFX)
     end
 end
-
----------------------------------------------------------------------------------------------------------------
-modifier_goju_hollow_purple_active = modifier_goju_hollow_purple_active or class({})
-
-function modifier_goju_hollow_purple_active:IsHidden() return false end
-function modifier_goju_hollow_purple_active:IsPurgeable() return false end
-function modifier_goju_hollow_purple_active:IsPurgeException() return false end
-function modifier_goju_hollow_purple_active:RemoveOnDeath() return true end
-function modifier_goju_hollow_purple_active:IsAura() return true end
-function modifier_goju_hollow_purple_active:CheckState()
-    local state =   { 
-                        [MODIFIER_STATE_STUNNED] = true,
-                        [MODIFIER_STATE_INVULNERABLE] = true,
-                        [MODIFIER_STATE_NO_HEALTH_BAR] = true,
-                    }
-    return not self.bIsActive and state
+function goju_hollow_purple_test:OnProjectileThink(vLocation)
+    GridNav:DestroyTreesAroundPoint(vLocation, 300, false)
 end
-function modifier_goju_hollow_purple_active:DeclareFunctions()
-    local funcs = {
-                      MODIFIER_PROPERTY_HEALTH_BONUS,
-                      MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-                  }
-
-    return funcs
-end
-function modifier_goju_hollow_purple_active:GetModifierHealthBonus()
-    return self.iBonusHealth
-end
-function modifier_goju_hollow_purple_active:GetModifierSpellAmplify_Percentage()
-    return self.iBonusSpellAmp
-end
-function modifier_goju_hollow_purple_active:OnCreated(hTable)
-    self.caster  = self:GetCaster()
-    self.parent  = self:GetParent()
-    self.ability = self:GetAbility()
-    
-    self.iBonusHealth   = self.ability:GetSpecialValueFor("bonus_health")
-    self.iBonusSpellAmp = self.ability:GetSpecialValueFor("bonus_spell_amp")
-    
-    if IsServer() and not self.bIsActive then
-        Destroy__Particle(self.HollowPurpleEffect)
-        self.HollowPurpleEffect = Goju_Hollow_Purple_Activate(self, self.parent)
-        self.parent:StartGesture(ACT_DOTA_CAST_ABILITY_1_END)
-        EmitGlobalSound("Gojo.purple_activate")
-        Timers:CreateTimer(9, function()
-            if IsNotNull(self.HollowPurpleEffect) then
-                ParticleManager:SetParticleControl(self.HollowPurpleEffect, 2, Vector(25, 0, 0))
+function goju_hollow_purple_test:OnProjectileHit_ExtraData(hTarget, vLocation, hTable)
+	if IsNotNull(self) then
+		if not IsNotNull(hTarget) then
+            if hTable.nHollowPurpleVFX then
+                ParticleManager:DestroyParticle(hTable.nHollowPurpleVFX, false)
+                ParticleManager:ReleaseParticleIndex(hTable.nHollowPurpleVFX)
             end
-        end)
-        self.ability:EndCooldown()
-        self:StartIntervalThink(14.0)
-    else
-    end
-end
-function modifier_goju_hollow_purple_active:OnIntervalThink()
-    if not IsServer() then return end
-    
-    self.bIsActive = true
-    self.parent:AddNewModifier(self.parent, self.ability, "modifier_goju_hollow_purple_active", { duration = 50.0 })
-    self.parent:RemoveGesture(ACT_DOTA_CAST_ABILITY_1_END)
-    self.parent:AddNewModifier(self.parent, self.ability, "modifier_star_tier2", {duration = 50.0})
-    --EmitGlobalSound("Gojo.purple_theme")
-    self:StartIntervalThink(-1)
-end
-function modifier_goju_hollow_purple_active:StatusEffectPriority()
-    return 999999
-end
-function modifier_goju_hollow_purple_active:GetStatusEffectName()
-    return "particles/heroes/anime_hero_gojo/hollow_purple/hollow_purple_status_effect.vpcf"
-end
-function modifier_goju_hollow_purple_active:OnRefresh(hTable)
-    self:OnCreated(hTable)
-end
-function modifier_goju_hollow_purple_active:OnDestroy()
-    if IsServer() then
-        if IsNotNull(self.ability) and self.ability:IsFullyCastable() then
-            self.ability:StartCooldown(self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction())
+            return
         end
+		
+        local hCaster   = self:GetCaster()
+        local fDamage   = self:GetSpecialValueFor("damage")
+
+        local hDamageTable =    {  
+                                    victim 		 = hTarget,
+                                    attacker 	 = hCaster,
+                                    damage 		 = fDamage,
+                                    damage_type  = self:GetAbilityDamageType(),
+                                    ability 	 = self,
+                             		damage_flags = 0
+                                }
+                                
+        local hKnockBackTable = {
+                                    should_stun        = 1,
+                                    knockback_duration = 1,
+                                    duration           = 1,
+                                    knockback_distance = 200,
+                                    knockback_height   = 200,
+                                    center_x           = vLocation.x,
+                                    center_y           = vLocation.y,
+                                    center_z           = vLocation.z
+                                }
+                                
+        hTarget:RemoveModifierByName("modifier_knockback")
+        hTarget:AddNewModifier(hCaster, self, "modifier_knockback", hKnockBackTable, hTarget:IsOpposingTeam(hCaster:GetTeamNumber()))
+        
+        ApplyDamage(hDamageTable)
     end
 end
 
@@ -2010,29 +1939,11 @@ function GojoStartMotion(self)
             --print(hAbility:GetAbilityName())
         end
         --===============================================================================--
-        self.bIsLinear        = hAbility:GetSpecialValueFor("islinear") > 0
-        self.bIsTracking      = hAbility:GetSpecialValueFor("istracking") > 0
-        self.fEnemyDuration   = hAbility:GetLevelSpecialValueFor("all_duration", 1)
-        --===============================================================================--
-        self.bDelayFirstAtt   = hAbility:GetLevelSpecialValueFor("hit_settings", 0) > 0
-        self.fFirstAttDelay   = hAbility:GetLevelSpecialValueFor("hit_settings", 1)
-        self.bDelayLastAtt    = hAbility:GetLevelSpecialValueFor("hit_settings", 2) > 0
-        self.fLastAttDelay    = hAbility:GetLevelSpecialValueFor("hit_settings", 3)
-        self.bHitOncePerAtt   = hAbility:GetLevelSpecialValueFor("hit_settings", 4) > 0
-        self.bAscendorDescend = hAbility:GetLevelSpecialValueFor("hit_settings", 5) > 0
-        --===============================================================================--
-        self.fDistance        = hAbility:GetLevelSpecialValueFor("motion_params", 0)
-        self.fSpeed           = hAbility:GetLevelSpecialValueFor("motion_params", 1)
-        self.iAttackCount     = hAbility:GetLevelSpecialValueFor("motion_params", 2)
-        self.fAttackDelay     = hAbility:GetLevelSpecialValueFor("motion_params", 3)
-        self.fHitBoxDur       = hAbility:GetLevelSpecialValueFor("motion_params", 4)
-        self.iAutoAttacksDone = hAbility:GetLevelSpecialValueFor("motion_params", 5)
-        --===============================================================================--
-        self.iStagesCount     = hAbility:GetLevelSpecialValueFor("stage_params", 0)
-        self.fStageDelay      = hAbility:GetLevelSpecialValueFor("stage_params", 1)
-        --===============================================================================--
-        self.bHasTrackingAnim = hAbility:GetLevelSpecialValueFor("animations", 0) > 0
-        self.bHasHitAnim      = hAbility:GetLevelSpecialValueFor("animations", 1) > 0
+        if hAbility.Settings then
+            hAbility:Settings(self)
+        else
+            return self:Destroy()
+        end
         --===============================================================================--
         self.fAttackDelayCopy = self.fAttackDelay
         self.fHitBoxDurCopy   = 0
@@ -2064,7 +1975,7 @@ function GojoStartMotion(self)
             hInflictor             = hCaster
             vDirection             = -self.vDirection2
             
-            local bValue = self.ability:GetLevelSpecialValueFor("hit_settings", 5) > 0
+            local bValue = self.ability:GetSpecialValueFor("is_vertical") > 0
             if type(bValue) == "boolean" then
                 self.bAscendorDescend = bValue or "Normal"
             end
@@ -2077,123 +1988,124 @@ function GojoStartMotion(self)
         
         -- Create Callback Function for Linear Motion, this is motion that does not track enemies and travels a certain distance.
         local fCallBackLinear = function(me, dt)
-            if self.fDistance >= 0 then
-                -- Get all necessary values for Linear Motion
-                local vOrigin = hParent:GetAbsOrigin()
-                local fExtra  = self.bAscendorDescend == false and 2.5 or 1
-                local fSpeed  = (self.fSpeed * fExtra) * dt
-                local vPos    = vOrigin + vDirection * fSpeed
-                
-                -- Check distance and move the player
-                self.fDistance = self.fDistance - fSpeed
-                hParent:SetOrigin(vPos)
-                
-                -- Make sure the path is traversable or move towards the center
-                if GridNavPathIsTraversable(self, vPos, 15) == false then
-                    vDirection = DirectionChangeToCenter(vPos)
-                    hParent:SetForwardVector(vDirection, true)
-                    hParent:FaceTowards(vDirection)
-                end
-                
-                -- Get the delay between each attack and reduce it
-                self.fAttackDelayCopy = self.fAttackDelayCopy - dt
-                
-                -- If First Attack should be delayed and Current Attack is first attack then add delay.
-                -- Else if First Attack should not be delayed and Current Attack is first attack then remove delay.
-                if type(self.bDelayFirstAtt) == "boolean" and self.iAttackCount >= self.iAttackCountCopy then 
-                    self.fAttackDelayCopy = self.fFirstAttDelay > 0
-                                            and self.fFirstAttDelay
-                                            or self.fAttackDelay
-                    if not self.bDelayFirstAtt then self.fAttackDelayCopy = 0 end
-                    self.bDelayFirstAtt = "done"
-                end
-                
-                -- Do the same thing for last attack delay
-                if type(self.bDelayLastAtt) == "boolean" and self.iAttackCount == 1 then 
-                    self.fAttackDelayCopy = self.fLastAttDelay > 0
-                                            and self.fLastAttDelay
-                                            or self.fAttackDelay
-                    if not self.bDelayLastAtt then self.fAttackDelayCopy = 0 end
-                    self.bDelayLastAtt = "done"
-                end
-                
-                -- If the delay is 0 and there are more than 0 attacks left then do stuff
-                if self.fAttackDelayCopy <= 0 and self.iAttackCount > 0 then
-                    -- Using FindUnitsInLine to detect enemies in front of us
-                    local hEnemies = FindUnitsInLine( iGetTeam, --team 
-                                                      vPos, --startPos, 
-                                                      vPos + hParent:GetForwardVector() * 50, --endPos
-                                                      nil, --cacheUnit 
-                                                      150, --width 
-                                                      DOTA_UNIT_TARGET_TEAM_ENEMY, --teamFilter: DOTA_UNIT_TARGET_TEAM 
-                                                      DOTA_UNIT_TARGET_ALL, --typeFilter: DOTA_UNIT_TARGET_TYPE
-                                                      0 ) --flagFilter: DOTA_UNIT_TARGET_FLAGS  
-
-                    -- Particle Effects for Gojo
-                    if hParent == hCaster then
-                        local ParticleExp = "particles/heroes/anime_hero_gojo/kick/kick1_arc.vpcf"
-                        local GinFx = ParticleManager:CreateParticle(ParticleExp, PATTACH_ABSORIGIN_FOLLOW, hParent)
-                        ParticleManager:ReleaseParticleIndex(GinFx)
-                    end                
-                
-                    -- For each enemy found do somethhing
-                    for _, hEnemy in pairs(hEnemies) do
-                        -- Enemy should be a valid target
-                        if IsNotNull(hEnemy) and hEnemy ~= hParent then
-                            -- Check if Enemy is already hit by this attack
-                            if not self["hEnemiesHitTable" .. self.iAttackCount][tostring(hEnemy:entindex())] then
-                                local fDistance     = GetDistance(hEnemy, hParent)
-                                --local fPushDistance = hEnemy:GetAbsOrigin() + vDirection * RemapValClamped(fDistance, 200, 0, 300, 500 ) -- Clamped Value
-                                self.hKnockBackTable.center_x           = hEnemy:GetAbsOrigin().x - vDirection.x * 100
-                                self.hKnockBackTable.center_y           = hEnemy:GetAbsOrigin().y - vDirection.y * 100
-                                self.hKnockBackTable.center_z           = 0
-                                self.hKnockBackTable.knockback_distance = RemapValClamped(fDistance, 200, 0, 300, 500 ) -- Clamped Value
-                                hEnemy:RemoveModifierByName("modifier_knockback")
-                            
-                                -- Push the enemy hero back
-                                --hEnemy:SetOrigin(fPushDistance)
-                                hEnemy:AddNewModifier(hInflictor, hAbility, "modifier_knockback", self.hKnockBackTable, hEnemy:IsOpposingTeam(self.parent:GetTeamNumber()))
-                                
-                                -- Perform a specified amount of basic attacks on the enemy hero (Can trigger items)
-                                for i = 1, self.iAutoAttacksDone do
-                                    hInflictor:PerformAttack(hEnemy, true, true, true, true, false, false, true)
-                                end
-                                
-                                -- Stun the Enemy Hero
-                                hEnemy:AddNewModifier(hInflictor, self.ability, "modifier_stunned", {duration = 1.0})
-                                
-                                -- If enabled Hit Once Per Attack then store the enemy in the table
-                                if self.bHitOncePerAtt then
-                                    self["hEnemiesHitTable" .. self.iAttackCount][tostring(hEnemy:entindex())] = true
-                                end
-                                
-                                -- Effects
-                                local hit_particle = ParticleManager:CreateParticle("particles/nanaya_work_22.vpcf", PATTACH_ABSORIGIN, hEnemy)
-                                ParticleManager:ReleaseParticleIndex(hit_particle)
-                                
-                                hParent:EmitSound("nanaya.slash")
-                                --FindClearSpaceForUnit( hEnemy, hEnemy:GetAbsOrigin(), true )
-                            end
-                        end                        
-                    end
-                    
-                    -- Increase the Hit Box Duration
-                    self.fHitBoxDurCopy = self.fHitBoxDurCopy + 0.03
-                    -- If the Hit Box Duration is equal to the set duration then do stuff
-                    if self.fHitBoxDurCopy >= self.fHitBoxDur then
-                        -- Reset the Attack Delay to its original value
-                        self.fAttackDelayCopy = self.fAttackDelay 
-                        -- Lower the attack counter after the attack has happened                        
-                        self.iAttackCount = self.iAttackCount - 1
-                        -- Reset the Hitbox Duration
-                        self.fHitBoxDurCopy = 0
-                    end                    
-                end                
-            else
+            if self.fDistance < 0 then
                 if hParent == hCaster then
                     self:Destroy()
                 end
-            end   
+                return
+            end
+            
+            -- Get all necessary values for Linear Motion
+            local vOrigin = hParent:GetAbsOrigin()
+            local fExtra  = self.bAscendorDescend == false and 2.5 or 1
+            local fSpeed  = (self.fSpeed * fExtra) * dt
+            local vPos    = vOrigin + vDirection * fSpeed
+            
+            -- Check distance and move the player
+            self.fDistance = self.fDistance - fSpeed
+            hParent:SetOrigin(vPos)
+            
+            -- Make sure the path is traversable or move towards the center
+            if GridNavPathIsTraversable(self, vPos, 15) == false then
+                vDirection = DirectionChangeToCenter(vPos)
+                hParent:SetForwardVector(vDirection, true)
+                hParent:FaceTowards(vDirection)
+            end
+            
+            -- Get the delay between each attack and reduce it
+            self.fAttackDelayCopy = self.fAttackDelayCopy - dt
+            
+            -- If First Attack should be delayed and Current Attack is first attack then add delay.
+            -- Else if First Attack should not be delayed and Current Attack is first attack then remove delay.
+            if type(self.bDelayFirstAtt) == "boolean" and self.iAttackCount >= self.iAttackCountCopy then 
+                self.fAttackDelayCopy = self.fFirstAttDelay > 0
+                                        and self.fFirstAttDelay
+                                        or self.fAttackDelay
+                if not self.bDelayFirstAtt then self.fAttackDelayCopy = 0 end
+                self.bDelayFirstAtt = "done"
+            end
+            
+            -- Do the same thing for last attack delay
+            if type(self.bDelayLastAtt) == "boolean" and self.iAttackCount == 1 then 
+                self.fAttackDelayCopy = self.fLastAttDelay > 0
+                                        and self.fLastAttDelay
+                                        or self.fAttackDelay
+                if not self.bDelayLastAtt then self.fAttackDelayCopy = 0 end
+                self.bDelayLastAtt = "done"
+            end
+            
+            -- If the delay is 0 and there are more than 0 attacks left then do stuff
+            if self.fAttackDelayCopy <= 0 and self.iAttackCount > 0 then
+                -- Using FindUnitsInLine to detect enemies in front of us
+                local hEnemies = FindUnitsInLine( iGetTeam, --team 
+                                                  vPos, --startPos, 
+                                                  vPos + hParent:GetForwardVector() * 50, --endPos
+                                                  nil, --cacheUnit 
+                                                  150, --width 
+                                                  DOTA_UNIT_TARGET_TEAM_ENEMY, --teamFilter: DOTA_UNIT_TARGET_TEAM 
+                                                  DOTA_UNIT_TARGET_ALL, --typeFilter: DOTA_UNIT_TARGET_TYPE
+                                                  0 ) --flagFilter: DOTA_UNIT_TARGET_FLAGS  
+
+                -- Particle Effects for Gojo
+                if hParent == hCaster then
+                    local ParticleExp = "particles/heroes/anime_hero_gojo/kick/kick1_arc.vpcf"
+                    local GinFx = ParticleManager:CreateParticle(ParticleExp, PATTACH_ABSORIGIN_FOLLOW, hParent)
+                    ParticleManager:ReleaseParticleIndex(GinFx)
+                end                
+            
+                -- For each enemy found do somethhing
+                for _, hEnemy in pairs(hEnemies) do
+                    -- Enemy should be a valid target
+                    if IsNotNull(hEnemy) and hEnemy ~= hParent then
+                        -- Check if Enemy is already hit by this attack
+                        if not self["hEnemiesHitTable" .. self.iAttackCount][tostring(hEnemy:entindex())] then
+                            local fDistance     = GetDistance(hEnemy, hParent)
+                            --local fPushDistance = hEnemy:GetAbsOrigin() + vDirection * RemapValClamped(fDistance, 200, 0, 300, 500 ) -- Clamped Value
+                            self.hKnockBackTable.center_x           = hEnemy:GetAbsOrigin().x - vDirection.x * 100
+                            self.hKnockBackTable.center_y           = hEnemy:GetAbsOrigin().y - vDirection.y * 100
+                            self.hKnockBackTable.center_z           = 0
+                            self.hKnockBackTable.knockback_distance = RemapValClamped(fDistance, 200, 0, 300, 500 ) -- Clamped Value
+                            hEnemy:RemoveModifierByName("modifier_knockback")
+                        
+                            -- Push the enemy hero back
+                            --hEnemy:SetOrigin(fPushDistance)
+                            hEnemy:AddNewModifier(hInflictor, hAbility, "modifier_knockback", self.hKnockBackTable, hEnemy:IsOpposingTeam(self.parent:GetTeamNumber()))
+                            
+                            -- Perform a specified amount of basic attacks on the enemy hero (Can trigger items)
+                            for i = 1, self.iAutoAttacksDone do
+                                hInflictor:PerformAttack(hEnemy, true, true, true, true, false, false, true)
+                            end
+                            
+                            -- Stun the Enemy Hero
+                            hEnemy:AddNewModifier(hInflictor, self.ability, "modifier_stunned", {duration = 1.0})
+                            
+                            -- If enabled Hit Once Per Attack then store the enemy in the table
+                            if self.bHitOncePerAtt then
+                                self["hEnemiesHitTable" .. self.iAttackCount][tostring(hEnemy:entindex())] = true
+                            end
+                            
+                            -- Effects
+                            local hit_particle = ParticleManager:CreateParticle("particles/nanaya_work_22.vpcf", PATTACH_ABSORIGIN, hEnemy)
+                            ParticleManager:ReleaseParticleIndex(hit_particle)
+                            
+                            hParent:EmitSound("nanaya.slash")
+                            --FindClearSpaceForUnit( hEnemy, hEnemy:GetAbsOrigin(), true )
+                        end
+                    end                        
+                end
+                
+                -- Increase the Hit Box Duration
+                self.fHitBoxDurCopy = self.fHitBoxDurCopy + 0.03
+                -- If the Hit Box Duration is equal to the set duration then do stuff
+                if self.fHitBoxDurCopy >= self.fHitBoxDur then
+                    -- Reset the Attack Delay to its original value
+                    self.fAttackDelayCopy = self.fAttackDelay 
+                    -- Lower the attack counter after the attack has happened                        
+                    self.iAttackCount = self.iAttackCount - 1
+                    -- Reset the Hitbox Duration
+                    self.fHitBoxDurCopy = 0
+                end                    
+            end                 
         end
         
         
@@ -2555,22 +2467,103 @@ goju_kick1 = goju_kick1 or class ({})
 
 function goju_kick1:OnSpellStart()
     local hCaster = self:GetCaster()
-    local fDuration = self:GetLevelSpecialValueFor("all_duration", 0)
+    local fDuration = self:GetSpecialValueFor("duration")
     
     local hModifier = hCaster:AddNewModifier(hCaster, self, "modifier_goju_domain_motion", { duration = fDuration }) 
     
     --GojoStartMotion(hModifier)
+end
+function goju_kick1:Settings(self)
+    --===============================================================================--
+    self.bIsLinear        = true
+    self.bIsTracking      = false
+    self.fEnemyDuration   = 0
+    --===============================================================================--
+    self.bDelayFirstAtt   = true
+    self.fFirstAttDelay   = 0.09
+    self.bDelayLastAtt    = true
+    self.fLastAttDelay    = 0
+    self.bHitOncePerAtt   = true
+    self.bAscendorDescend = false
+    --===============================================================================--
+    self.fDistance        = 850
+    self.fSpeed           = 1350
+    self.iAttackCount     = 2
+    self.fAttackDelay     = 0.20
+    self.fHitBoxDur       = 0.09
+    self.iAutoAttacksDone = 2
+    --===============================================================================--
+    self.iStagesCount     = 1
+    self.fStageDelay      = 0
+    --===============================================================================--
+    self.bHasTrackingAnim = false
+    self.bHasHitAnim      = false
+    --===============================================================================--
 end
 
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Domain Kick (W)
 ---------------------------------------------------------------------------------------------------------------
 goju_kick2 = goju_kick2 or class (goju_kick1)
+function goju_kick2:Settings(self)
+    --===============================================================================--
+    self.bIsLinear        = false
+    self.bIsTracking      = true
+    self.fEnemyDuration   = 2.0
+    --===============================================================================--
+    self.bDelayFirstAtt   = 0
+    self.fFirstAttDelay   = 0
+    self.bDelayLastAtt    = 0
+    self.fLastAttDelay    = 0
+    self.bHitOncePerAtt   = 0
+    self.bAscendorDescend = 0
+    --===============================================================================--
+    self.fDistance        = 0
+    self.fSpeed           = 2000
+    self.iAttackCount     = 1
+    self.fAttackDelay     = 0
+    self.fHitBoxDur       = 0
+    self.iAutoAttacksDone = 3
+    --===============================================================================--
+    self.iStagesCount     = 1
+    self.fStageDelay      = 0
+    --===============================================================================--
+    self.bHasTrackingAnim = true
+    self.bHasHitAnim      = true
+    --===============================================================================--
+end
 
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Domain Kick (D)
 ---------------------------------------------------------------------------------------------------------------
 goju_kick3 = goju_kick3 or class (goju_kick1)
+function goju_kick3:Settings(self)
+    --===============================================================================--
+    self.bIsLinear        = false
+    self.bIsTracking      = true
+    self.fEnemyDuration   = 3.5
+    --===============================================================================--
+    self.bDelayFirstAtt   = 0
+    self.fFirstAttDelay   = 0
+    self.bDelayLastAtt    = 1
+    self.fLastAttDelay    = 0.8
+    self.bHitOncePerAtt   = false
+    self.bAscendorDescend = true
+    --===============================================================================--
+    self.fDistance        = 0
+    self.fSpeed           = 4000
+    self.iAttackCount     = 3
+    self.fAttackDelay     = 0.2
+    self.fHitBoxDur       = 0
+    self.iAutoAttacksDone = 3
+    --===============================================================================--
+    self.iStagesCount     = 2
+    self.fStageDelay      = 0.8
+    --===============================================================================--
+    self.bHasTrackingAnim = false
+    self.bHasHitAnim      = false
+    --===============================================================================--
+end
 
 ---------------------------------------------------------------------------------------------------------------
 -- Goju Domain Kick (R)

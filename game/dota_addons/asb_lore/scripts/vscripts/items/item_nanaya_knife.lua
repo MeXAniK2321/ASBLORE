@@ -11,10 +11,9 @@ function item_nanaya_knife:CastFilterResult()
 	    local hCaster         = self:GetCaster()
 	    local hBloodModifier  = hCaster:HasModifier("nanaya_blood_modifier")
 
-	    if hBloodModifier and
-            IsNotNull(hBloodModifier) then
+	    if IsNotNull(hBloodModifier) then
             local hModifier      = hCaster:FindModifierByNameAndCaster("nanaya_blood_modifier", hCaster)
-            local iModifierCount = hModifier.iKills
+            local iModifierCount = hCaster:GetKills() or hModifier.iKills
             local iKillsCounter  = self:GetSpecialValueFor("ghoul_kills") or 10
 		
             if iModifierCount then

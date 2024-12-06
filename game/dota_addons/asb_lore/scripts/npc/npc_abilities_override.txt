@@ -107,11 +107,11 @@
   //"item_sheepstick"     "REMOVE"
   //"item_recipe_orchid"      "REMOVE"
   //"item_orchid"     "REMOVE"
-  "item_recipe_cyclone"     "REMOVE"
-  "item_cyclone"      "REMOVE"
+  //"item_recipe_cyclone"     "REMOVE"
+  //"item_cyclone"      "REMOVE"
   //"item_recipe_force_staff"     "REMOVE"
   //"item_force_staff"      "REMOVE"
-  "item_recipe_dagon"     "REMOVE"
+  //"item_recipe_dagon"     "REMOVE"
   //"item_recipe_dagon_2"     "REMOVE"
   //"item_recipe_dagon_3"     "REMOVE"
   //"item_recipe_dagon_4"     "REMOVE"
@@ -312,7 +312,8 @@
    }
    "item_cloak"
    {
-  "ItemPurchasable"				"0"
+  "ItemPurchasable"				"1"
+  "ItemCost" "1000"
    
    }
    "item_recipe_heavens_halberd"
@@ -362,7 +363,12 @@
 	"item_cyclone"
 	{
 	"ItemCost"                      "2450"
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
+    
+        "AbilityValues"
+        {
+            "bonus_movement_speed" "100"
+        }
 	}
 	"item_ghost"
 	{
@@ -395,11 +401,16 @@
 	}
 	"item_shivas_guard"
 	{
-		"ItemPurchasable" "0"
+		"ItemPurchasable" "1"
+        "AbilityValues"
+        {
+            "bonus_armor"	"8"
+            "blast_damage"  "800"
+        }
 	}
 	"item_recipe_shivas_guard"
 	{
-		"ItemPurchasable" "0"
+		"ItemPurchasable" "1"
 	}
 	"item_vanguard"
 	{
@@ -412,12 +423,13 @@
 	}
 	"item_ancient_janggo"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		
 	}
 	"item_recipe_ancient_janggo"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
+		"ItemCost" "0"
 		
 	}
 	"item_vladmir"
@@ -426,7 +438,7 @@
 	}
 	"item_wraith_pact"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_yasha"
 	{
@@ -469,11 +481,11 @@
 	}
 	"item_veil_of_discord"
 	{
-		"ItemPurchasable" "0"
+		"ItemPurchasable" "1"
 	}
 	"item_recipe_veil_of_discord"
 	{
-		"ItemPurchasable" "0"
+		"ItemPurchasable" "1"
 	}
 	"item_basher"
 	{
@@ -497,16 +509,16 @@
 	}
 	"item_greater_crit"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_recipe_greater_crit"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_sheepstick"
 	{
 		
-				"ItemPurchasable"				"0"
+				"ItemPurchasable"				"1"
 	}
 	"item_arcane_blink"
 	{
@@ -526,12 +538,12 @@
 	"item_recipe_bloodthorn" 
 	{
 		
-				"ItemPurchasable"				"0"
+				"ItemPurchasable"				"1"
 	}
 	"item_bloodthorn" 
 	{
 		
-				"ItemPurchasable"				"0"
+				"ItemPurchasable"				"1"
 	}
 	"item_recipe_swift_blink"
 	{
@@ -546,19 +558,21 @@
 	}
 	"item_travel_boots"
 	{
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
 	}
 	"item_recipe_travel_boots"
 	{
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
+    "ItemCost"				"5000"
 	}
 	"item_travel_boots_2"
 	{
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
 	}
 	"item_recipe_travel_boots_2"
 	{
-	"ItemPurchasable"				"0"
+	"ItemPurchasable"				"1"
+	"ItemCost"				"5000"
 	}
 	
 	"item_recipe_arcane_blink"
@@ -569,12 +583,12 @@
 	"item_mage_slayer"
 	{
 		
-				"ItemPurchasable"				"0"
+				"ItemPurchasable"				"1"
 	}
 	"item_recipe_mage_slayer"
 	{
 		
-				"ItemPurchasable"				"0"
+				"ItemPurchasable"				"1"
 	}
 	"item_helm_of_the_dominator"
 	{
@@ -594,14 +608,19 @@
 	}
 	"item_recipe_wind_waker"
 	{
-	   "ItemPurchasable"				"0"
+	   "ItemPurchasable"				"1"
+	  "ItemCost"          "15000"
 		
 				
 	}
 	"item_wind_waker"
 	{
-	   "ItemPurchasable"				"0"
+	   "ItemPurchasable"				"1"
 		
+        "AbilityValues"
+        {
+            "bonus_movement_speed" "200"
+        }
 				
 	}
 	
@@ -618,13 +637,13 @@
 	"item_moon_shard"
 	{
 	   
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		
 	}
 	"item_recipe_moon_shard"
 	{
-	 "ItemCost"          "9999"
-		"ItemPurchasable"				"0"
+	    "ItemCost"          "4000"
+		"ItemPurchasable"				"1"
 		
 	}
 	"item_recipe_nullifier"
@@ -641,12 +660,12 @@
 	}
 	"item_recipe_skadi"
 	{
-	   "ItemCost"          "4500"
-	   "ItemPurchasable"				"0"
+	   "ItemCost"          "1500"
+	   "ItemPurchasable"				"1"
 	}
 		"item_skadi"
 	{
-	   "ItemPurchasable"				"0"
+	   "ItemPurchasable"				"1"
 	}
 	"item_recipe_manta"
 	{
@@ -664,34 +683,34 @@
 	}
 	"item_bfury"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_recipe_bfury"
 	{
-	"ItemPurchasable"				"0"
-	"ItemCost" "90000"
+	"ItemPurchasable"				"1"
+	"ItemCost" "1350"
 	}
 		"item_gungir"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_recipe_gungir"
 	{
-	"ItemPurchasable"				"0"
-	"ItemCost" "90000"
+	"ItemPurchasable"				"1"
+	"ItemCost" "5000"
 	}
 		"item_yasha_and_kaya"
 		{
 		"AbilityValues"
         {
-            "movement_speed_percent_bonus" "0"
+            "movement_speed_percent_bonus" "5"
         }
 		}
 		"item_wind_lace"
 		{
 		"AbilityValues"
         {
-            "movement_speed" "0"
+            "movement_speed" "10"
         }
 		
 		
@@ -850,31 +869,31 @@
 	//=================================================================================================================
 	"item_dagon"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_dagon_1"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_dagon_2"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_dagon_3"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_dagon_4"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_dagon_5"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_recipe_dagon"
 	{
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 	}
 	"item_shadow_amulet"
 	{
@@ -982,19 +1001,20 @@
 	}
 	"item_recipe_lesser_crit" 
 {
-"ItemPurchasable" "0"
+        "ItemPurchasable" "1"
+		"ItemCost" "3200"
 }	
   "item_lesser_crit"
   {
-  "ItemPurchasable" "0"
+  "ItemPurchasable" "1"
   }
   "item_witch_blade"
   {
-	"ItemPurchasable" "0"
+	"ItemPurchasable" "1"
 	}
 	"item_recipe_witch_blade"
   {
-	"ItemPurchasable" "0"
+	"ItemPurchasable" "1"
 	}
 	
 	//=================================================================================================================
@@ -1146,8 +1166,8 @@
 	}
 	"item_recipe_cyclone"
     {
-	"ItemCost"           "30000"
-	"ItemPurchasable"				"0"
+	"ItemCost"           "20000"
+	"ItemPurchasable"				"1"
 	}
 	
 	
@@ -1155,6 +1175,10 @@
 "item_sheepstick"
 {
 		"AbilitySharedCooldown"			"axis_sheet"
+		"AbilityValues"
+        {
+            "sheep_duration"		"0.95"
+        }
 		
 	}
 	"item_crucible_of_the_executioner"
@@ -1165,7 +1189,7 @@
 	"item_recipe_sheepstick"
 {
 		"ItemCost"						"5000"
-		"ItemPurchasable"				"0"
+		"ItemPurchasable"				"1"
 		
 		
 	}

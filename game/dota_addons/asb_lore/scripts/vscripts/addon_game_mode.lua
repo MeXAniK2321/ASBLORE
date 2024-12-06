@@ -52,6 +52,8 @@ require("anime_modifiers_server_client")
 --require('libraries/ai_behaviours')
 --require('ai/core/ai_core')
 require("internal/particle_precache_test_fix")
+require("internal/indicator_menu_no_panorama")
+require("internal/observer")
 
 ---------------------------------------------------------------------------
 -- Precache
@@ -185,7 +187,7 @@ function Precache( context )
         PrecacheResource( "soundfile", "soundevents/anime_special.vsndevts", context )
 		-- Temporarily Here
 		PrecacheResource( "soundfile", "soundevents/heroes/gogeta.vsndevts", context )
-		PrecacheResource( "soundfile", "soundevents/heroes/gojo.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/heroes/anime_hero_gojo.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		

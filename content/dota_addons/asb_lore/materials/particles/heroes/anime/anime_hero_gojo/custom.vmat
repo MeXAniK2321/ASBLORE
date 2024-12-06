@@ -1,0 +1,17 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "ui.vfx"
+
+	//---- Color ----
+	Texture "panorama/videos/for_heroes/custom.jpg"
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+	}
+}

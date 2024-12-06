@@ -71,6 +71,7 @@
      "item"      "item_thors_armor"
      "item"      "item_berserker_armor"
      "item"      "item_moonlight_goddess_bow"
+     "item"      "item_sheepstick"
   }
 "secretshop"
 {
@@ -82,6 +83,7 @@
      "item"      "item_abyss_horn"
      "item"      "item_hand_of_gaben"
      "item"      "item_loli_hex"
+     "item"      "item_travel_boots"
 }  
   
   // Level 1 - Green Recipes
@@ -142,6 +144,9 @@
 	"item"    "item_meteor_hammer"
 	"item"    "item_kaya"
 	"item"    "item_phylactery"
+    "item"    "item_sheepstick"
+    "item"    "item_witch_blade"
+    "item"    "item_wind_waker"
   }
     
   // Level 3 - Purple Recipes 
@@ -177,7 +182,8 @@
     "item"    "item_greater_crit"
     "item"    "item_butterfly"
     "item"    "item_rapier"
-    "item"    "item_abyssal_blade"  
+    "item"    "item_abyssal_blade"
+    "item"    "item_mage_slayer"  
           
           
   }
@@ -197,7 +203,8 @@
     "item"    "item_sange_and_yasha"
     "item"    "item_mjollnir"
     "item"    "item_skadi" 
-    "item"    "item_satanic"    
+    "item"    "item_satanic"
+    "item"    "item_travel_boots"    
   }
 
   "sideshop1"

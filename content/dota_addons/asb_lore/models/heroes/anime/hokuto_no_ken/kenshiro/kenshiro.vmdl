@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc33:version{bed0390a-a564-41a6-9dc3-c9a293c8eea3} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc36:version{972dada4-b828-45a4-bb93-7795cf0585da} -->
 {
 	rootNode = 
 	{
@@ -60,16 +60,15 @@
 								"Object021",
 								"Object022",
 								"Object020",
-								"Mesh_025",
-								"Mesh_021",
-								"Mesh_023",
-								"Mesh_004",
-								"Mesh_022",
-								"Mesh_009",
-								"Mesh_019",
-								"Mesh_020",
-								"Mesh_024",
 								"Mesh_003",
+								"Mesh_025",
+								"Mesh_004",
+								"Mesh_020",
+								"Mesh_021",
+								"Mesh_019",
+								"Mesh_024",
+								"Mesh_023",
+								"Mesh_022",
 							]
 						}
 					},
@@ -186,6 +185,138 @@
 						start_frame = 111
 						end_frame = 146
 						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_run"
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 518
+						end_frame = 538
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_kick"
+						activity_name = "ACT_DOTA_RAZE_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 401
+						end_frame = 473
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_kick_land"
+						activity_name = "ACT_DOTA_RAZE_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 474
+						end_frame = 490
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_chop"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 2430
+						end_frame = 2443
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_chop_static"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1_STATUE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 2443
+						end_frame = 2443
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kenshiro_chop_hit"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/hokuto_no_ken/kenshiro/kenshiro.fbx"
+						import_bone_scales = false
+						start_frame = 2443
+						end_frame = 2473
+						framerate = 30.0
 						reverse = false
 					},
 				]
@@ -662,5 +793,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

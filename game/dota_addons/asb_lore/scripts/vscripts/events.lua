@@ -109,6 +109,11 @@ function COverthrowGameMode:OnNPCSpawned( event )
 		        end
 	        end
 		end
+        
+        -- NO PANORAMA CUSTOM LUA ONLY INDICATOR FOR SPELLS
+        if not spawnedUnit:HasModifier("modifier_nopan_internal") then
+            spawnedUnit:AddNewModifier(spawnedUnit, self, "modifier_nopan_internal", {})
+        end
 		
 		local PID = player:GetPlayerOwnerID()
 	    local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)

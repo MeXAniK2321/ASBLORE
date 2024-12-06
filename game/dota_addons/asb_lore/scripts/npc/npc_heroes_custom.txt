@@ -12,6 +12,8 @@
 		"VersusScale"				"1.30000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"              "makima_contract"
 		"Ability2"              "control_devil"
 		"Ability3"              "makima_slavebook"
@@ -223,6 +225,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		"VoiceFile"		"empty"
 		"Ability6"                 "x_burner"
 		"Ability3"                 "split_earth_datadriven"
 		"Ability2"                 "borrowed_time_datadriven"
@@ -274,6 +278,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		//"VoiceFile"		"empty"
 		"Ability1"                   "music_wave"
 		"Ability2"                   "omniknight_degen_aura_lua"
 		"Ability3"                   "juggernaut_blade_fury_lua"
@@ -377,6 +383,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		"VoiceFile"		"empty"
 		"Ability1"                  "rumia_energy_blast"
 		"Ability3"                  "night_sign_night_bird"
 		"Ability2"                  "shadow_fiend_necromastery_lua"
@@ -433,6 +441,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"                "throw_melon"
 		"Ability2"                "angel_initialize"
 		"Ability3"                "angeloid_speed"
@@ -551,7 +561,8 @@
 
 		"DisableWearables" 			"1"
 		
-		"Ability1" "gram_dispersion"
+		"VoiceFile"		"empty"
+        "Ability1" "gram_dispersion"
 		"Ability2" "elemental_sight"
 		"Ability3" "ssid_breaker"
 		"Ability4" "mist_disparsion"
@@ -618,7 +629,8 @@
   		{ }
     
 	 
-	   "Ability1"                    "sandalfon"
+		"VoiceFile"		"empty"
+       "Ability1"                    "sandalfon"
 	   "Ability2"                    "adonai_melek"
 	   "Ability3"                    "tohka_combo_strike"
 	   "Ability4"                    "halvanhelen"
@@ -722,7 +734,8 @@
 		"SpectatorLoadoutScale" 	"0.60000"
 		"VersusScale"				"1.00000"
 		
-		"Ability1" "bondage"
+		"VoiceFile"		"empty"
+        "Ability1" "bondage"
 		"Ability2" "billy_bike"
 		"Ability3" "muscule_flex"
 		"Ability4" "fisting"
@@ -834,7 +847,8 @@
 		"ItemSlots"
   		{ }
 		
-		"Ability1"                  "presence_of_evil"
+		"VoiceFile"		"empty"
+        "Ability1"                  "presence_of_evil"
 		"Ability2"                  "aura_of_exe"
 		"Ability3"                  "pika_fear"
 		"Ability4"                  "scary_scary_tale"
@@ -944,6 +958,8 @@
 		"VersusScale"				"0.46000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1" "chain_hit"
 		"Ability2" "holy_chain"
 		"Ability3" "chain_jail"
@@ -1165,7 +1181,8 @@
 
 		"DisableWearables" 			"1"
 
-		"ItemSlots"
+		"VoiceFile"		"empty"
+        "ItemSlots"
   		{ }
 		"Ability1"              "issei_blast"
 		"Ability2"              "issei_boost"
@@ -1216,7 +1233,8 @@
 		"VersusScale"				"1.00000"
 		"DisableWearables" 			"1"
 		
-		"Ability1" "dante_drive"
+		"VoiceFile"		"empty"
+        "Ability1" "dante_drive"
 		"Ability28" "dante_stinger"
 		"Ability2" "dante_style"
 		"Ability3" "style_open"
@@ -1280,7 +1298,8 @@
 		"DisableWearables" 			"1"
 		
 		
-		"Ability1"      "throw_screw"
+		"VoiceFile"		"empty"
+        "Ability1"      "throw_screw"
         "Ability2"      "good_loser"
 		"Ability3"      "leg_eating_forest"
 		"Ability4"      "all_fiction_self"
@@ -1393,7 +1412,8 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 		
-		"Ability1" "throw_money"
+		"VoiceFile"		"empty"
+        "Ability1" "throw_money"
 		"Ability2" "daisuke_investition"
 		"Ability3" "buy_sniper"
 		"Ability4" "rich_bitch"
@@ -1506,6 +1526,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		"VoiceFile"		"empty"
         "Ability4"                  "tengai_shinsei"
 		"Ability1"					"goka_mekkaku"
 		"Ability3"                  "underlord_pit_of_malice_lua"
@@ -1558,6 +1580,8 @@
 
 		"ItemSlots"
   		{ }
+        
+	"VoiceFile"		"empty"
 	"Ability1" "air_shield"
 	"Ability2" "shield_hero"
 	"Ability3" "shield_book"
@@ -1615,6 +1639,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"                  "shamak"
 		"Ability2"                  "rental_goa"
 		"Ability3"                  "spirit_contract"
@@ -1729,6 +1755,8 @@
 		"VersusScale"				"1.20000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1" "reality_warp"
 		"Ability2" "vainglory"
 		"Ability3" "earth_negation"
@@ -1783,6 +1811,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"                "mikagura"
 		"Ability2"                "mirror_water"
 		"Ability3"                "meteor"
@@ -1891,6 +1921,8 @@
 		"VersusScale"				"0.40000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"               "c1_spider"
 		"Ability5"               "deidara_boom"
 		"Ability2"               "c1_centipide"
@@ -1949,6 +1981,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		"VoiceFile"		"empty"
 		"Ability1"                    "gluttony"
 		"Ability2"                    "rimuru_shield"
 		"Ability3"                    "rimuru_slime"
@@ -2012,6 +2046,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		//"VoiceFile"		"empty"
 		"Ability3"  "yukari_moon_portal"
 		"Ability2"              "yukari_tentacles"
 		"Ability4"               "yukari_car"
@@ -2128,6 +2164,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"                 "lelouch_nightmare"
 		"Ability2"                 "lelouch_strategy"
 		"Ability3"                 "freya"
@@ -2184,7 +2222,9 @@
 		"Model"                               "models/heroes/winterwyvern/winterwyvern.vmdl"
 		"Level"	"1"
 		"AbilityLayout"	"5"
-		"Ability1"	"killselfgeass"
+		
+		"VoiceFile"		"empty"
+        "Ability1"	"killselfgeass"
 		"Ability2"	"emperor_commend"
 		"Ability3"	"fallground"//"geass_2"
 		"Ability4"	"lelouch_mecha"
@@ -2273,6 +2313,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"                  "mizuguruma"
 		"Ability5"                  "tanjiro_9"
 		"Ability3"                  "tanjiro_waterfall"
@@ -2326,7 +2368,8 @@
 
 		"DisableWearables" 			"1"
 
-		"ItemSlots"
+		"VoiceFile"		"empty"
+        "ItemSlots"
   		{ }
 		"Ability1"                    "earth_spirit_boulder_smash_lua"
 		"Ability2"                    "maki_strangulate"
@@ -2375,7 +2418,9 @@
 
 		"ItemSlots"
   		{ }
-	"Ability1"                   "ikki_shinkiro"
+	
+	"VoiceFile"		"empty"
+    "Ability1"                   "ikki_shinkiro"
 	"Ability2"                   "ikki_blade_steal"
 	"Ability3"                   "ten_i_muho"
 	"Ability4"                   "ittou_shura"
@@ -2478,7 +2523,8 @@
 
 		"DisableWearables" 			"1"
 		
-		"Ability1" "energy_wave"
+		"VoiceFile"		"empty"
+        "Ability1" "energy_wave"
 		"Ability2" "melty_blood"
 		"Ability3" "chain_phantasm"
 		"Ability4" "moon_fall"
@@ -2540,7 +2586,8 @@
 
 		"DisableWearables" 			"1"
 		
-		"Ability1" "edward_create_wall"
+		"VoiceFile"		"empty"
+        "Ability1" "edward_create_wall"
 		"Ability2" "edward_alchemy_circle"
 		"Ability3" "edward_create_canon"
 		"Ability4" "edward_steel_blade"
@@ -2595,6 +2642,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1" "narukami_lightning"
 		"Ability2" "englightened_one"
 		"Ability3" "transcendence_baleful_light"
@@ -2648,6 +2697,8 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
+        
+		"VoiceFile"		"empty"
 		"Ability1" "compliment"
 		"Ability2" "determination"
 		"Ability3" "frisk_analys"
@@ -2713,6 +2764,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"         "muken"
 		"Ability2"         "mori_hit_buttons"
 		"Ability3"         "triple_kick"
@@ -2768,6 +2821,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		//"VoiceFile"		"empty"
 		"Ability1" "ulquiorra_bala"
 		"Ability2" "hierro"
 		"Ability3" "ulquiorra_cero"
@@ -2825,6 +2880,8 @@
 
 		"ItemSlots"
   		{ }
+        
+	  "VoiceFile"		"empty"
 	  "Ability1"                   "blackrock_pistol"
 	  "Ability2"                   "blackrock_dash"
 	  "Ability3"                   "snapfire_mortimer_kisses_lua"
@@ -2922,6 +2979,7 @@
 		"VersusScale"				"1.00000"
 
 
+"VoiceFile"		"empty"
 "Ability1"              "plant_c4"
 "Ability2"              "homura_aka"
 "Ability3"              "homura_rpg"
@@ -2979,7 +3037,9 @@
 
 		"ItemSlots"
   		{ }
-	  "Ability1"                    "void_strike"
+	  
+	  "VoiceFile"		"empty"
+      "Ability1"                    "void_strike"
 	  "Ability2"                    "void_style"
 	  "Ability4"                    "dragon_knight_dragon_tail_lua"
 	  "Ability3"                    "void_bomb"
@@ -3029,6 +3089,8 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1" "super_slash"
         "Ability2" "mael_sun"		
 		"Ability3"  "escanor_sunshine"
@@ -3147,6 +3209,8 @@
 
 		"ItemSlots"
   		{ }
+        
+		"VoiceFile"		"empty"
 		"Ability1" "keyaru_heal"
 		"Ability2" "hero_of_recovery"
 		"Ability3" "defiled_healing"
@@ -3211,7 +3275,9 @@
 		"VersusScale"				"0.9000"
 
 		"DisableWearables" 			"1"
-		"Ability1"         "touma_base_combo"
+		
+		//"VoiceFile"		"empty"
+        "Ability1"         "touma_base_combo"
 		"Ability2"         "touma_imagine_breaker"
 		"Ability3"         "touma_second_combo"
 		"Ability4"         "touma_imagine_breaker_counter"
@@ -3266,6 +3332,8 @@
 		"VersusScale"				"1.3000"
 
 		"DisableWearables" 			"1"
+        
+		"VoiceFile"		"empty"
 		"Ability1"         "reinforce_knockdown"
 		"Ability2"         "book_of_darkness"
 		"Ability3"         "book_of_darkness_spellbook"
@@ -3489,12 +3557,12 @@
 
 		"Ability5"					"goju_domain_expansion"
 		"Ability6"					"goju_hollow_purple"
-
+        
 		"Ability7"					"goju_kick1"
 		"Ability8"					"goju_kick2"
 		"Ability9"					"goju_kick3"
 		"Ability10"					"goju_kick4"
-
+        
         "Ability11"					"special_bonus_hp_300"
         "Ability12"					"special_bonus_armor_4"
 
@@ -3658,6 +3726,158 @@
 
 		"Ability22"					"special_bonus_gojo_25_alt"
 		"Ability23"					"special_bonus_gojo_25"
+
+		"AbilityTalentStart"		"10"
+		//-------------------------------------------------------------------------------------------------------------
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"25"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		//"AttackDamageMin"			"50"
+		//"AttackDamageMax"			"55"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		//"AttackRate"				"1.700000"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.500000"
+		"AttackAcquisitionRange"	"800"
+		"AttackRange"				"200"
+		"ProjectileModel"			"particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
+		"ProjectileSpeed"			"1800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
+		//"AttributeBaseStrength"		"5"
+		//"AttributeStrengthGain"		"4.0"
+		//"AttributeBaseIntelligence"	"40"
+		//"AttributeIntelligenceGain"	"0.5"
+		//"AttributeBaseAgility"		"5"
+		//"AttributeAgilityGain"		"0.5"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"					"62"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		//-------------------------------------------------------------------------------------------------------------
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"275"
+		"MovementTurnRate"			"0.500000"
+		"HasAggressiveStance"		"0"
+		//-------------------------------------------------------------------------------------------------------------
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"HealthBarOffset"			"250" 
+		"StatusHealth"				"400"
+		"StatusHealthRegen"			"2"
+		"StatusMana"				"150"
+		"StatusManaRegen"			"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		//-------------------------------------------------------------------------------------------------------------
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+		//-------------------------------------------------------------------------------------------------------------
+		// Inventory
+		//-------------------------------------------------------------------------------------------------------------
+		"HasInventory"				"1"
+		//-------------------------------------------------------------------------------------------------------------
+		// Voice
+		//-------------------------------------------------------------------------------------------------------------
+		//"GameSoundsFile"			"soundevents/heroes/anime_hero_aqua.vsndevts"
+		"VoiceFile"					"Empty"
+		//"VoiceBackgroundSound"		""
+		//"IdleSoundLoop"				""
+		//"HeroSelectSoundEffect"		"Okabe.Sonofabitch.Play"
+		//-------------------------------------------------------------------------------------------------------------
+		// Particle
+		//-------------------------------------------------------------------------------------------------------------
+		"particle_folder"			"particles/heroes/anime_hero_aqua"
+		//-------------------------------------------------------------------------------------------------------------
+		// Role
+		"Role"						"Carry,Support,Nuker,Disabler,Jungler,Durable,Escape,Pusher,Initiator"
+		"Rolelevels"				"3,3,3,3,0,3,3,0,3"
+		//-------------------------------------------------------------------------------------------------------------	
+	}
+    
+	//-----------BEAST_GOHAN---------------------------------------------------------------------------------------------------------------------------------
+	"npc_dota_hero_treant"
+	{
+		"override_hero"				"npc_dota_hero_treant"
+		"Model"						"models/heroes/anime/dragon_ball/adult_gohan.vmdl"
+		"ModelScale"				"1.25000" //"0.8"
+		"LoadoutScale"				"1.00000"
+		"SpectatorLoadoutScale" 	"1.00000"
+		"VersusScale"				"1.00000"
+		"DisableWearables" 			"1"
+
+		// Items
+		//-------------------------------------------------------------------------------------------------------------		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_loadout_v2.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+  		{ }
+  		
+		//"MovementSpeedActivityModifiers" //CRASHING IF USES SAME MODIFIER PROPERTIES AT SAME TIME
+		//{
+			//"haste"					"450"
+		//} 
+
+		"Ability1"					"beast_gohan_kamehameha"
+		"Ability2"					"beast_gohan_transform"
+		"Ability3"					"db_powerup_test"
+		
+		"Ability4"					"generic_hidden"
+
+		"Ability5"					"generic_hidden"
+		"Ability6"					"generic_hidden"
+
+		"Ability7"					"generic_hidden"
+		"Ability8"					"generic_hidden"
+		"Ability9"					"generic_hidden"
+		"Ability10"					"generic_hidden"
+		"Ability11"					"generic_hidden"
+        
+		"Ability12"					"generic_hidden"
+		"Ability13"					"generic_hidden"
+		"Ability14"					"generic_hidden"
+		"Ability15"					"generic_hidden"
+
+        "Ability16"					"special_bonus_hp_300"
+        "Ability17"					"special_bonus_armor_4"
+
+		"Ability18"					"special_bonus_hp_300"
+		"Ability19"					"special_bonus_all_stats_15"
+
+		"Ability20"					"special_bonus_all_stats_15"
+		"Ability21"					"special_bonus_all_stats_15"
+
+		"Ability22"					"special_bonus_all_stats_15"
+		"Ability23"					"special_bonus_all_stats_15"
 
 		"AbilityTalentStart"		"10"
 		//-------------------------------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc33:version{bed0390a-a564-41a6-9dc3-c9a293c8eea3} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc37:version{9e04b9aa-f073-4e59-8923-ff57489eb2c7} -->
 {
 	rootNode = 
 	{
@@ -397,6 +397,8 @@
 							exception_list = 
 							[
 								"Object006",
+								"Object004",
+								"Object003",
 							]
 						}
 					},
@@ -411,10 +413,46 @@
 							exception_list = 
 							[
 								"Object005",
-								"Object004",
-								"Object003",
 								"Object002",
 								"Object001",
+								"Object004",
+								"Object003",
+							]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "hair_area"
+						filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"Object005",
+								"Object002",
+								"Object001",
+								"Object006",
+								"Object004",
+							]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "hair_area2"
+						filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"Object005",
+								"Object002",
+								"Object001",
+								"Object006",
+								"Object003",
 							]
 						}
 					},
@@ -1190,6 +1228,28 @@
 						framerate = -1.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "gojo_new_domain_full_maybe_copy"
+						activity_name = "ACT_DOTA_MEDUSA_STONE_GAZE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
+						import_bone_scales = false
+						start_frame = 2740
+						end_frame = 2740
+						framerate = 30.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -1207,11 +1267,15 @@
 								meshes = 
 								[
 									"eye_area",
+									"hair_area",
 								]
 							},
 							{
 								_class = "BodyGroupChoice"
-								meshes = [  ]
+								meshes = 
+								[
+									"hair_area2",
+								]
 							},
 						]
 						hidden_in_tools = false
@@ -1223,5 +1287,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

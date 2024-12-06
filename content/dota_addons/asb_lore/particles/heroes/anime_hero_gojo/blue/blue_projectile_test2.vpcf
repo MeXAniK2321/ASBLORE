@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf59:version{6cf97bfa-52a0-441a-87f0-856fb7aaa129} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf61:version{39d3ce1d-9442-4407-9b78-8317145b1732} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -287,7 +287,11 @@
 			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_test2_rocks.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/shockwave3.vpcf"
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_test2_rocks2.vpcf"
+			m_flDelay = 0.2
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/shockwave3.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/econ/items/puck/puck_merry_wanderer/puck_illusory_orb_sphere_b_merry_wanderer.vpcf"
@@ -301,7 +305,7 @@
 			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/gyro_calldown_explosion_sparks1.vpcf"
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/gyro_calldown_explosion_sparks1.vpcf"
 			m_bEndCap = true
 		},
 		{
@@ -318,13 +322,26 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_test2_glow.vpcf"
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/decompiled_particles/units/heroes/hero_brewmaster/brewmaster_windwalk.vpcf"
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/brewmaster_windwalk.vpcf"
 			m_bEndCap = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_test_myst2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/earthshaker/earthshaker_ti9/earthshaker_fissure_ti9_start_streak.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_vortex.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_flare.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/blue/blue_projectile_flek.vpcf"
 		},
 	]
 }

@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf58:version{9bada39c-a931-42d0-abdd-e5c1b13d37a6} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf61:version{39d3ce1d-9442-4407-9b78-8317145b1732} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -591,6 +591,7 @@
 					m_flNotchedRangeMax = 1.0
 					m_flNotchedOutputOutside = 0.0
 					m_flNotchedOutputInside = 1.0
+					m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 					m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 					m_flBiasParameter = 0.0
 					m_Curve = 
@@ -646,6 +647,7 @@
 					m_flNotchedRangeMax = 1.0
 					m_flNotchedOutputOutside = 0.0
 					m_flNotchedOutputInside = 1.0
+					m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 					m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 					m_flBiasParameter = 0.0
 					m_Curve = 
@@ -701,6 +703,7 @@
 					m_flNotchedRangeMax = 1.0
 					m_flNotchedOutputOutside = 0.0
 					m_flNotchedOutputInside = 1.0
+					m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 					m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 					m_flBiasParameter = 0.0
 					m_Curve = 
@@ -756,6 +759,7 @@
 					m_flNotchedRangeMax = 1.0
 					m_flNotchedOutputOutside = 0.0
 					m_flNotchedOutputInside = 1.0
+					m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 					m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 					m_flBiasParameter = 0.0
 					m_Curve = 
@@ -778,7 +782,8 @@
 				m_vRandomMax = [ 0.0, 0.0, 0.0 ]
 			}
 			m_nColorBlendType = "PARTICLE_COLOR_BLEND_MULTIPLY2X"
-			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_MOD2X"
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_bSaturateColorPreAlphaBlend = false
 		},
 	]
 	m_Children = 

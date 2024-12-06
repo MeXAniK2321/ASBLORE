@@ -264,193 +264,9 @@
 			_class = "C_OP_AttractToControlPoint"
 			m_fForceAmount = 
 			{
-				m_nType = "PF_TYPE_COLLECTION_AGE"
-				m_nMapType = "PF_MAP_TYPE_CURVE"
-				m_flLiteralValue = 20000.0
-				m_NamedValue = ""
-				m_nControlPoint = 0
-				m_nScalarAttribute = 3
-				m_nVectorAttribute = 6
-				m_nVectorComponent = 0
-				m_flRandomMin = 0.0
-				m_flRandomMax = 1.0
-				m_bHasRandomSignFlip = false
-				m_nRandomSeed = -1
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-				m_flLOD0 = 0.0
-				m_flLOD1 = 0.0
-				m_flLOD2 = 0.0
-				m_flLOD3 = 0.0
-				m_nNoiseInputVectorAttribute = 0
-				m_flNoiseOutputMin = 0.0
-				m_flNoiseOutputMax = 1.0
-				m_flNoiseScale = 0.1
-				m_vecNoiseOffsetRate = [ 0.0, 0.0, 0.0 ]
-				m_flNoiseOffset = 0.0
-				m_nNoiseOctaves = 1
-				m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
-				m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
-				m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-				m_flNoiseTurbulenceScale = 1.0
-				m_flNoiseTurbulenceMix = 0.5
-				m_flNoiseImgPreviewScale = 1.0
-				m_bNoiseImgPreviewLive = true
-				m_flNoCameraFallback = 0.0
-				m_bUseBoundsCenter = false
-				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
-				m_flMultFactor = 1.0
-				m_flInput0 = 0.0
-				m_flInput1 = 1.0
-				m_flOutput0 = 20000.0
-				m_flOutput1 = 0.0
-				m_flNotchedRangeMin = 0.0
-				m_flNotchedRangeMax = 1.0
-				m_flNotchedOutputOutside = 0.0
-				m_flNotchedOutputInside = 1.0
-				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
-				m_flBiasParameter = 0.0
-				m_Curve = 
-				{
-					m_spline = 
-					[
-						{
-							x = 0.0
-							y = 0.0
-							m_flSlopeIncoming = 0.0
-							m_flSlopeOutgoing = 0.0
-						},
-						{
-							x = 10.003809
-							y = 0.0
-							m_flSlopeIncoming = 166.666672
-							m_flSlopeOutgoing = 166.666672
-						},
-						{
-							x = 12.0
-							y = 2000.0
-							m_flSlopeIncoming = 1001.908142
-							m_flSlopeOutgoing = 1001.908142
-						},
-					]
-					m_tangents = 
-					[
-						{
-							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
-							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
-						},
-						{
-							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
-							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
-						},
-						{
-							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
-							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
-						},
-					]
-					m_vDomainMins = [ 0.0, 0.0 ]
-					m_vDomainMaxs = [ 12.0, 2000.0 ]
-				}
-			}
-			m_TransformInput = 
-			{
-				m_bUseOrientation = false
-				m_nControlPoint = 54
-			}
-			m_fFalloffPower = 0.1
-			m_bDisableOperator = true
-		},
-		{
-			_class = "C_OP_AttractToControlPoint"
-			m_fForceAmount = 
-			{
-				m_nType = "PF_TYPE_COLLECTION_AGE"
-				m_nMapType = "PF_MAP_TYPE_CURVE"
-				m_flLiteralValue = 100.0
-				m_NamedValue = ""
-				m_nControlPoint = 0
-				m_nScalarAttribute = 3
-				m_nVectorAttribute = 6
-				m_nVectorComponent = 0
-				m_flRandomMin = 0.0
-				m_flRandomMax = 1.0
-				m_bHasRandomSignFlip = false
-				m_nRandomSeed = -1
-				m_nRandomMode = "PF_RANDOM_MODE_CONSTANT"
-				m_flLOD0 = 0.0
-				m_flLOD1 = 0.0
-				m_flLOD2 = 0.0
-				m_flLOD3 = 0.0
-				m_nNoiseInputVectorAttribute = 0
-				m_flNoiseOutputMin = 0.0
-				m_flNoiseOutputMax = 1.0
-				m_flNoiseScale = 0.1
-				m_vecNoiseOffsetRate = [ 0.0, 0.0, 0.0 ]
-				m_flNoiseOffset = 0.0
-				m_nNoiseOctaves = 1
-				m_nNoiseTurbulence = "PF_NOISE_TURB_NONE"
-				m_nNoiseType = "PF_NOISE_TYPE_PERLIN"
-				m_nNoiseModifier = "PF_NOISE_MODIFIER_NONE"
-				m_flNoiseTurbulenceScale = 1.0
-				m_flNoiseTurbulenceMix = 0.5
-				m_flNoiseImgPreviewScale = 1.0
-				m_bNoiseImgPreviewLive = true
-				m_flNoCameraFallback = 0.0
-				m_bUseBoundsCenter = false
-				m_nInputMode = "PF_INPUT_MODE_CLAMPED"
-				m_flMultFactor = 1.0
-				m_flInput0 = 0.0
-				m_flInput1 = 1.0
-				m_flOutput0 = 0.0
-				m_flOutput1 = 1.0
-				m_flNotchedRangeMin = 0.0
-				m_flNotchedRangeMax = 1.0
-				m_flNotchedOutputOutside = 0.0
-				m_flNotchedOutputInside = 1.0
-				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
-				m_flBiasParameter = 0.0
-				m_Curve = 
-				{
-					m_spline = 
-					[
-						{
-							x = 8.0
-							y = 0.0
-							m_flSlopeIncoming = 714.285706
-							m_flSlopeOutgoing = 714.285706
-						},
-						{
-							x = 15.0
-							y = 5000.0
-							m_flSlopeIncoming = 714.285706
-							m_flSlopeOutgoing = 714.285706
-						},
-					]
-					m_tangents = 
-					[
-						{
-							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
-							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
-						},
-						{
-							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
-							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
-						},
-					]
-					m_vDomainMins = [ 8.0, 0.0 ]
-					m_vDomainMaxs = [ 15.0, 5000.0 ]
-				}
-			}
-			m_fFalloffPower = 0.3
-			m_TransformInput = 
-			{
-				m_bUseOrientation = false
-				m_nControlPoint = 56
-			}
-			m_flOpStrength = 
-			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 2.0
+				m_flLiteralValue = 25555.0
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -491,6 +307,7 @@
 				m_flNotchedRangeMax = 1.0
 				m_flNotchedOutputOutside = 0.0
 				m_flNotchedOutputInside = 1.0
+				m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 				m_flBiasParameter = 0.0
 				m_Curve = 
@@ -500,6 +317,12 @@
 					m_vDomainMins = [ 0.0, 0.0 ]
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
+			}
+			m_fFalloffPower = 0.0
+			m_TransformInput = 
+			{
+				m_bUseOrientation = false
+				m_nControlPoint = 56
 			}
 		},
 	]
@@ -558,6 +381,7 @@
 				m_flNotchedRangeMax = 1.0
 				m_flNotchedOutputOutside = 0.0
 				m_flNotchedOutputInside = 1.0
+				m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 				m_flBiasParameter = 0.0
 				m_Curve = 
@@ -602,7 +426,7 @@
 					m_vDomainMaxs = [ 3.0, 1.0 ]
 				}
 			}
-			m_flMaxDistance0 = 1000.0
+			m_flMaxDistance0 = 8000.0
 		},
 		{
 			_class = "C_OP_ConstrainDistanceToPath"
@@ -656,6 +480,7 @@
 				m_flNotchedRangeMax = 1.0
 				m_flNotchedOutputOutside = 0.0
 				m_flNotchedOutputInside = 1.0
+				m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 				m_flBiasParameter = 0.0
 				m_Curve = 
@@ -669,22 +494,22 @@
 							m_flSlopeOutgoing = 0.0
 						},
 						{
-							x = 6.772254
+							x = 14.048182
 							y = 0.0
-							m_flSlopeIncoming = 0.0126
-							m_flSlopeOutgoing = 0.0126
+							m_flSlopeIncoming = 0.006954
+							m_flSlopeOutgoing = 0.006954
 						},
 						{
-							x = 7.951746
-							y = 0.100192
-							m_flSlopeIncoming = 0.0
-							m_flSlopeOutgoing = 0.0
+							x = 14.670449
+							y = 0.102024
+							m_flSlopeIncoming = 0.010187
+							m_flSlopeOutgoing = 0.010187
 						},
 						{
-							x = 8.0
-							y = 0.0
-							m_flSlopeIncoming = -2.076366
-							m_flSlopeOutgoing = -2.076366
+							x = 15.0
+							y = 0.009696
+							m_flSlopeIncoming = -0.280163
+							m_flSlopeOutgoing = -0.280163
 						},
 					]
 					m_tangents = 
@@ -707,11 +532,11 @@
 						},
 					]
 					m_vDomainMins = [ 0.0, 0.0 ]
-					m_vDomainMaxs = [ 8.0, 0.1 ]
+					m_vDomainMaxs = [ 15.0, 0.1 ]
 				}
 			}
 			m_flMaxDistance0 = 8000.0
-			m_flTravelTime = 8.0
+			m_flTravelTime = 14.5
 		},
 		{
 			_class = "C_OP_ConstrainDistanceToPath"
@@ -766,6 +591,7 @@
 				m_flNotchedRangeMax = 1.0
 				m_flNotchedOutputOutside = 0.0
 				m_flNotchedOutputInside = 1.0
+				m_nRoundType = "PF_ROUND_TYPE_NEAREST"
 				m_nBiasType = "PF_BIAS_TYPE_STANDARD"
 				m_flBiasParameter = 0.0
 				m_Curve = 
@@ -779,16 +605,16 @@
 							m_flSlopeOutgoing = 0.0
 						},
 						{
-							x = 9.177052
+							x = 15.140207
 							y = 0.0
-							m_flSlopeIncoming = 0.090909
-							m_flSlopeOutgoing = 0.090909
+							m_flSlopeIncoming = 0.060241
+							m_flSlopeOutgoing = 0.060241
 						},
 						{
-							x = 11.0
+							x = 16.6
 							y = 1.0
-							m_flSlopeIncoming = 0.548562
-							m_flSlopeOutgoing = 0.548562
+							m_flSlopeIncoming = 0.685029
+							m_flSlopeOutgoing = 0.685029
 						},
 					]
 					m_tangents = 
@@ -807,9 +633,10 @@
 						},
 					]
 					m_vDomainMins = [ 0.0, 0.0 ]
-					m_vDomainMaxs = [ 11.0, 1.0 ]
+					m_vDomainMaxs = [ 16.6, 1.0 ]
 				}
 			}
+			m_flTravelTime = 15.0
 		},
 	]
 	m_Renderers = 
@@ -822,6 +649,7 @@
 					m_hTexture = resource:"materials/particle/moon.vtex"
 				},
 			]
+			m_bDisableZBuffering = true
 		},
 	]
 	m_Children = 
@@ -839,6 +667,14 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/anime_hero_gojo/hollow_purple/red_form_wind_effect3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/test/custom/hollow_purple_nuke_red_trail.vpcf"
+			m_flDelay = 2.4
+		},
+		{
+			m_ChildRef = resource:"particles/test/custom/hollow_purple_nuke_red_spawn_main.vpcf"
+			m_flDelay = 2.4
 		},
 	]
 }

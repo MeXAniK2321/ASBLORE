@@ -3913,7 +3913,7 @@
             "mag_res" "10"
             "hp_regen" "20"
             "mp_regen" "15"
-            "barrier_block" "250"
+            "barrier_block" "800"
             "barrier_duration" "20"
         }
   	}
@@ -4594,14 +4594,14 @@
 		"AbilityTextureName" 					"axis_sheet"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"17450"
+		"ItemCost"								"7450"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_jetstream_sam_muramasa"
 
 		"ItemRequirements"
 		{
-			"01"								"item_yasha;item_mjollnir;"
+			"01"								"item_yasha;item_mjollnir;item_greater_crit;"
 		}	
 	}
 	
@@ -5198,14 +5198,14 @@
 		"AbilityTextureName" 					"loli_hex"
 		"Model"									"models/props_gameplay/recipe.mdl"
 
-		"ItemCost"								"10000"
+		"ItemCost"								"1"
 		"ItemShopTags"							""
 		"ItemRecipe"							"1"
 		"ItemResult"							"item_loli_hex"
 
 		"ItemRequirements"
 		{
-			"01"								"item_nonono_yesyesyes;item_magic_girl_wand;item_walter_white;item_chibi_marci"
+			"01"								"item_nonono_yesyesyes;item_magic_girl_wand;item_walter_white;item_chibi_marci;item_sheepstick"
 		}	
 	}
 	//=================================================================================================================

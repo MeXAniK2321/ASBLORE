@@ -43,5 +43,18 @@ if IsServer() then
 
         return VALVE_CScriptParticleManager_CreateParticle(self, sParticleName, iParticleAttachment, hOwner)
     end
+    --==============================================================================================================--
+    local VALVE_CScriptParticleManager_CreateParticleForTeam = CScriptParticleManager.CreateParticleForTeam
+    CScriptParticleManager.CreateParticleForTeam = function(self, sParticleName, iParticleAttachment, hOwner, nTeam)
+        local iProjectile = CreateEffectFixProjectile(sParticleName)
+        if iProjectile and ProjectileManager:IsValidProjectile(iProjectile) then
+            ProjectileManager:DestroyLinearProjectile(iProjectile)
+            --print("HMMMMM")
+        end
+        
+        --print("Server: Overriding Gaben Particle Function...")
+
+        return VALVE_CScriptParticleManager_CreateParticleForTeam(self, sParticleName, iParticleAttachment, hOwner, nTeam)
+    end
 end
 

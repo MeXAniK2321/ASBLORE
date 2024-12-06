@@ -1,0 +1,17 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "ui.vfx"
+
+	//---- Color ----
+	Texture "materials/particles/heroes/anime/anime_hero_gojo/gojotest2.png"
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+	}
+}

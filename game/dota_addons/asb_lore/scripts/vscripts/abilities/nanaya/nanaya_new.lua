@@ -1107,6 +1107,14 @@ LinkLuaModifier("nanaya_blood_modifier", "abilities/nanaya/nanaya_new", LUA_MODI
 
 nanaya_blood = nanaya_blood or class({})
 
+function nanaya_blood:OnOwnerSpawned()
+    local hCaster   = self:GetCaster()
+    local hModifier = hCaster:FindModifierByName("nanaya_blood_modifier")
+    
+    if IsNotNull(hModifier) then
+        hModifier:OnCreated() -- Reapply Effect
+    end
+end
 function nanaya_blood:Spawn()
     if IsServer() then
         self:SetLevel(1)
@@ -1120,6 +1128,7 @@ nanaya_blood_modifier = nanaya_blood_modifier or class({})
 
 function nanaya_blood_modifier:IsHidden() return false end
 function nanaya_blood_modifier:IsDebuff() return false end
+function nanaya_blood_modifier:RemoveOnDeath() return true end
 function nanaya_blood_modifier:DeclareFunctions()
     local func = {
                    MODIFIER_EVENT_ON_TAKEDAMAGE,
@@ -1132,9 +1141,17 @@ function nanaya_blood_modifier:GetModifierBonusStats_Agility()
 	return self:GetStackCount() * self:GetAbility():GetSpecialValueFor("bonus_agility")
 end
 function nanaya_blood_modifier:OnCreated()
-	self.parent = self:GetParent()
-    self.iKills = self.iKills or 0
-	self:SetStackCount(0)
+    if IsServer() then
+        self.parent = self:GetParent()
+        self.iKills = self.iKills or self.parent:GetKills() or 0
+        self:SetStackCount(0)
+        
+        Timers:CreateTimer(0.05, function()
+            if not IsNotNull(self) or self.iNanayaParticle then return nil end
+            self.iNanayaParticle = ParticleManager:CreateParticle("particles/nanaya_blood22.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+                                   ParticleManager:SetParticleControl(self.iNanayaParticle, 1, Vector(self:GetStackCount(), 0, 0))
+        end)
+    end
 end
 function nanaya_blood_modifier:GetMaxStackCount()
 	return self:GetAbility():GetSpecialValueFor("stack_max")
@@ -1143,18 +1160,23 @@ function nanaya_blood_modifier:OnTakeDamage(keys)
     if IsServer() then
         if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() and keys.inflictor and not keys.inflictor:IsItem() then
             local iStacks = self:GetStackCount()
-            if self.iNanayaParticle ~= nil then 
-                ParticleManager:DestroyParticle(self.iNanayaParticle, true)
-            end
+
             Timers:RemoveTimer("nanaya")
             if(iStacks < self:GetMaxStackCount()) then
                 self:SetStackCount(iStacks+1)
             end
-            self.iNanayaParticle = ParticleManager:CreateParticle("particles/nanaya_blood2.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            
+            if self.iNanayaParticle ~= nil then 
+                ParticleManager:SetParticleControl(self.iNanayaParticle, 1, Vector(self:GetStackCount(), 0, 0))
+            end
             Timers:CreateTimer("nanaya", {
                 endTime = 6, 
                 callback = function()
+                    if not IsNotNull(self) then return nil end
                     self:SetStackCount(0)
+                    if self.iNanayaParticle ~= nil then 
+                        ParticleManager:SetParticleControl(self.iNanayaParticle, 1, Vector(self:GetStackCount(), 0, 0))
+                    end
                     if self.parent:HasModifier("nanaya_blood_modifier_animemode") then self.parent:RemoveModifierByName("nanaya_blood_modifier_animemode") end
                 end}
             )
@@ -1163,6 +1185,9 @@ function nanaya_blood_modifier:OnTakeDamage(keys)
 end
 function nanaya_blood_modifier:OnDeath(keys)
     if IsServer() then
+        if keys.unit and keys.unit == self.parent then
+            self:OnDestroy()
+        end
         if keys.attacker == self.parent and keys.unit and keys.unit:GetTeamNumber() ~= self.parent:GetTeamNumber() and not keys.unit:IsBuilding() then
             self.iKills = self.iKills + 1
             if self.parent:HasTalent("special_bonus_nanaya_20r") then
@@ -1184,6 +1209,15 @@ function nanaya_blood_modifier:OnDeath(keys)
                     end
                 end
             end
+        end
+    end		
+end
+function nanaya_blood_modifier:OnDestroy()
+    if IsServer() then
+        if self.iNanayaParticle then
+            ParticleManager:DestroyParticle( self.iNanayaParticle, true )
+            ParticleManager:ReleaseParticleIndex( self.iNanayaParticle )
+            self.iNanayaParticle = nil
         end
     end		
 end	

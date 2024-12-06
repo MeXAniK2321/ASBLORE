@@ -351,11 +351,25 @@
 		pitch_rand_max = 0.05
 		pitch = 1.0
 		soundlevel = 100.0
-		delay = 0
+		delay = 0.0
 		distance_max = 5000.0
 		vsnd_files = 
 		[
 			"sounds/gojo/delirious.vsnd",
+		]
+	}
+    
+    "Gojo.hollow_nuke" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.5
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/hollow_nuke.vsnd",
 		]
 	}
 	
