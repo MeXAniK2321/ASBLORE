@@ -49,15 +49,15 @@ function modifier_blood_queen:DeclareFunctions()
 
 		MODIFIER_EVENT_ON_DEATH,
 		MODIFIER_EVENT_ON_TAKEDAMAGE,
-				MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+				--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
 
 	return funcs
 end
 
-function modifier_blood_queen:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_blood_queen:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_blood_queen:OnTakeDamage(params)
 	if IsServer() then
 	local caster = self:GetParent()

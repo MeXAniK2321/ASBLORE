@@ -134,15 +134,15 @@ end
 function modifier_air_banner:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_air_banner:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_air_banner:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_air_banner:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("banner_air")

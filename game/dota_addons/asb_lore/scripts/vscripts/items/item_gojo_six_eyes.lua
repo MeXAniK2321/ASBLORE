@@ -55,7 +55,7 @@ function modifier_item_six_eyes:OnCreated(hTable)
     self.iBonusAllStats = self.ability:GetSpecialValueFor("bonus_allstats")
     self.iBonusSpellAmp = self.ability:GetSpecialValueFor("bonus_spell_amp")
     
-    if IsServer() then
+    if IsServer() and IsNotNull(self.parent) and not self.parent:HasScepter() then
         self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
     end
 end

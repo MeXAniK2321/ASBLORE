@@ -543,7 +543,7 @@ function modifier_gojo_projectile_thinker:OnDestroy()
     end
 end
 function modifier_gojo_projectile_thinker:IsAura()
-	return true
+	return self.bIsBlueOrb
 end
 
 function modifier_gojo_projectile_thinker:GetModifierAura()
@@ -3196,7 +3196,7 @@ function modifier_goju_domain_vertical:OnCreated(hTable)
         self.hDamageTable =  {  
                                  victim       = nil,
                                  attacker     = self.parent,
-                                 damage       = 200,
+                                 damage       = 500,
                                  damage_type  = self.ability:GetAbilityDamageType(),
                                  ability      = self.ability,
                                 --damage_flags = 0
@@ -3250,7 +3250,7 @@ function modifier_goju_domain_vertical:DealAOEDmg()
     local enemies = FindUnitsInRadius( self.parent:GetTeamNumber(),  -- int, your team number
                                    self.parent:GetOrigin(),  -- point, center point
                                    nil,  -- handle, cacheUnit. (not known)
-                                   800,  -- float, radius. or use FIND_UNITS_EVERYWHERE
+                                   400,  -- float, radius. or use FIND_UNITS_EVERYWHERE
                                    self.ability:GetAbilityTargetTeam(),  -- int, team filter
                                    self.ability:GetAbilityTargetType(),  -- int, type filter
                                    self.ability:GetAbilityTargetFlags(),  -- int, flag filter

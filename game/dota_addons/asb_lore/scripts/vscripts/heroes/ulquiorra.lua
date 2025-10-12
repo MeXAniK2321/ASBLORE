@@ -343,15 +343,15 @@ function modifier_hierro:DeclareFunctions()
 		MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
 		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
 		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
 
 	return funcs
 end
 
-function modifier_hierro:GetModifierBaseAttackTimeConstant()
-	return 2.0
-end
+--function modifier_hierro:GetModifierBaseAttackTimeConstant()
+	--return 2.0
+--end
 function modifier_hierro:GetModifierIncomingDamage_Percentage( params )
 	
 

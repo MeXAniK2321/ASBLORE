@@ -679,26 +679,29 @@
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/BoomBox/devil_trigger.vsnd",
-            "sounds/BoomBox/sukuna_malevolent_shrine.vsnd",
-            "sounds/BoomBox/rockin_hardcore_fastway.vsnd",
-            "sounds/BoomBox/crazy_on_emotion.vsnd",
-            "sounds/BoomBox/hokuto_no_ken_lightseekers.vsnd",
-            "sounds/BoomBox/naruto_sasuke_meme.vsnd",
-            "sounds/BoomBox/do_you_know_da_wae.vsnd",
+			"sounds/BoomBox/berserk_brother.vsnd",
+            "sounds/BoomBox/berserk_sign.vsnd",
+            "sounds/BoomBox/berserk_war.vsnd",
+            "sounds/BoomBox/bleach_bestrong.vsnd",
+            "sounds/BoomBox/gachi2.vsnd",
+            "sounds/BoomBox/gachi3.vsnd",
             "sounds/BoomBox/giorno_meme.vsnd",
-            "sounds/BoomBox/butterfly.vsnd",
+            "sounds/BoomBox/ichigo1.vsnd",
+            "sounds/BoomBox/ichigo2.vsnd",
+			"sounds/BoomBox/localoca.vsnd",
+			"sounds/BoomBox/loli_dance.vsnd",
 			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/neco_stuff.vsnd",
-			"sounds/BoomBox/berserk_sign.vsnd",
-			"sounds/BoomBox/zenitsu_vs_spider.vsnd",
-			"sounds/BoomBox/da_capo_honkai3.vsnd",
-			"sounds/BoomBox/dio_theme.vsnd",
-			"sounds/BoomBox/goofy_sounds.vsnd",
-			"sounds/BoomBox/moon_halo_honkai3.vsnd",
 			"sounds/BoomBox/omaewamu.vsnd",
+			"sounds/BoomBox/raidenarmstrong_gachi.vsnd",
+			"sounds/BoomBox/rockin_hardcore_fastway.vsnd",
+			"sounds/BoomBox/saxodeep.vsnd",
 			"sounds/BoomBox/ultra_instinct_battle.vsnd",
-			"sounds/BoomBox/joseph_theme.vsnd",
+			"sounds/BoomBox/yhwach_nottheme.vsnd",
+			"sounds/BoomBox/zenitsu_vs_spider.vsnd",
+			"sounds/BoomBox/passom_bem_solto.vsnd",
+			"sounds/BoomBox/devil_trigger.vsnd",
+			"sounds/BoomBox/ncts_next.vsnd",
+			"sounds/BoomBox/yougotthat.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -1668,4 +1671,200 @@
 		event_type = "1.000000"
 		vsnd_duration = 100.000000
 	}
+	
+	estusflask.drink1 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/estus_flask/ds1.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	estusflask.drink3 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/estus_flask/ds3.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	mayuribag.cast = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/items/mayuri_bag/cast.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	mayuribag.hit = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/items/mayuri_bag/hit.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.ooo1 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/ooo1.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.ooo2 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/ooo2.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.ohyeah = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/ohyeah.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.mmm1 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/mmm1.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.mmm2 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/mmm2.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.wrench1 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/wrench1.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.wrench2 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/wrench2.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.wrench3 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/wrench3.vsnd",
+		]
+		volume = "1.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+	gachi.takeitboy = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/bogdan/takeitboy.vsnd",
+		]
+		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
 }

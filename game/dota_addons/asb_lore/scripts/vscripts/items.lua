@@ -258,6 +258,12 @@ function COverthrowGameMode:WarnItem()
 	local trueSight = ParticleManager:CreateParticle( "particles/econ/wards/f2p/f2p_ward/f2p_ward_true_sight_ambient.vpcf", PATTACH_ABSORIGIN, visionRevealer )
 	ParticleManager:SetParticleControlEnt( trueSight, PATTACH_ABSORIGIN, visionRevealer, PATTACH_ABSORIGIN, "attach_origin", visionRevealer:GetAbsOrigin(), true )
 	visionRevealer:SetContextThink( "KillVisionParticle", function() return trueSight:RemoveSelf() end, 35 )
+	
+	-- Particle Trail for Courier
+	local nGoldenTrail = ParticleManager:CreateParticle("particles/test/custom_golden_courier_trail.vpcf", PATTACH_WORLDORIGIN, nil)
+	                     ParticleManager:SetParticleControl( nGoldenTrail, 1, Vector(0, 0, 500) )
+						 ParticleManager:SetParticleControl( nGoldenTrail, 2, spawnLocation )
+	self.nGoldenTrail = nGoldenTrail
 end
 
 function COverthrowGameMode:SpawnItem()
@@ -273,9 +279,22 @@ function COverthrowGameMode:SpawnItem()
     --print ("Spawning Treasure")
     targetSpawnLocation = self.itemSpawnLocation
     treasureCourier:SetInitialGoalEntity(targetSpawnLocation)
-    local particleTreasure = ParticleManager:CreateParticle( "particles/items_fx/black_king_bar_avatar.vpcf", PATTACH_ABSORIGIN, treasureCourier )
-	ParticleManager:SetParticleControlEnt( particleTreasure, PATTACH_ABSORIGIN, treasureCourier, PATTACH_ABSORIGIN, "attach_origin", treasureCourier:GetAbsOrigin(), true )
+    local particleTreasure = ParticleManager:CreateParticle( "particles/items_fx/black_king_bar_avatar.vpcf", PATTACH_ABSORIGIN_FOLLOW, treasureCourier )
+	--ParticleManager:SetParticleControlEnt( particleTreasure, PATTACH_ABSORIGIN, treasureCourier, PATTACH_ABSORIGIN, "attach_origin", treasureCourier:GetAbsOrigin(), true )
 	treasureCourier:Attribute_SetIntValue( "particleID", particleTreasure )
+	
+	-- Attach Screen Particles to Players
+	local nCourierMoveSpeed = 350
+	local fCourierDistance  = GetDistance(targetSpawnLocation, Vector(0, 0, 0))
+	local fEffectDuration = fCourierDistance > 0 and fCourierDistance / nCourierMoveSpeed or 0
+	for _, hHero in pairs(HeroList:GetAllHeroes()) do
+	    local hPlayer = hHero:GetPlayerOwner()
+		if hPlayer then
+			local particleScreen = ParticleManager:CreateParticleForPlayer("particles/item/chest_cour/screen_arcane_drop.vpcf", PATTACH_ABSORIGIN, hHero, hPlayer)
+								   ParticleManager:SetParticleControl(particleScreen, 9, Vector(fEffectDuration, 0, 0))
+								   ParticleManager:ReleaseParticleIndex(particleScreen)
+		end
+	end
 end
 
 function COverthrowGameMode:ForceSpawnItem()
@@ -328,7 +347,14 @@ function COverthrowGameMode:TreasureDrop( treasureCourier )
 
 	--Knock people back from the treasure
 	self:KnockBackFromTreasure( spawnPoint, 375, 0.25, 400, 100 )
-		
+	
+	-- Remove Trail Particle
+	if self.nGoldenTrail then
+		ParticleManager:DestroyParticle(  self.nGoldenTrail, true)
+		ParticleManager:ReleaseParticleIndex( self.nGoldenTrail )
+		self.nGoldenTrail = nil
+	end
+	
 	--Destroy the courier
 	UTIL_Remove( treasureCourier )
 end

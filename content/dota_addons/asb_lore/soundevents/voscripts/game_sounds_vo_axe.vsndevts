@@ -1085,7 +1085,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1097,7 +1097,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1121,7 +1121,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1145,7 +1145,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1157,7 +1157,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1181,7 +1181,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"
@@ -1193,7 +1193,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/bogdan/voicelines/respawn.vsnd",
+			"sounds/bogdan/voicelines/respawn_2.vsnd",
 		]
 		volume = "4.000000"
 		pitch_rand_min = "-0.050000"

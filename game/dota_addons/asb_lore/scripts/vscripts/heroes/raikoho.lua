@@ -103,15 +103,15 @@ end
 function modifier_gonryu_tenmeits:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_gonryu_tenmeits:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_gonryu_tenmeits:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_gonryu_tenmeits:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("hado_99")

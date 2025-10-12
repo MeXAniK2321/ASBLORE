@@ -1,7 +1,7 @@
  <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
-
-"queenofpain_pain_spawn_01"
 {
+
+queenofpain_pain_spawn_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -10,10 +10,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_spawn_02"
-{
+queenofpain_pain_spawn_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -22,10 +21,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_spawn_03"
-{
+queenofpain_pain_spawn_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -34,10 +32,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_spawn_04"
-{
+queenofpain_pain_spawn_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -46,10 +43,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_begin_01"
-{
+queenofpain_pain_begin_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -58,11 +54,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_first_01"
-{
-	 
+queenofpain_pain_first_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -71,11 +65,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_first_02"
-{
-	 
+queenofpain_pain_first_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -84,11 +76,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_01"
-{
-	 
+queenofpain_pain_move_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -97,11 +87,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_02"
-{
-	 
+queenofpain_pain_move_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -110,11 +98,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_03"
-{
-	 
+queenofpain_pain_move_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -123,11 +109,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_04"
-{
-	 
+queenofpain_pain_move_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -136,11 +120,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_05"
-{
-	 
+queenofpain_pain_move_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -149,11 +131,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_06"
-{
-	 
+queenofpain_pain_move_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -162,11 +142,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_07"
-{
-	 
+queenofpain_pain_move_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -175,11 +153,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_08"
-{
-	 
+queenofpain_pain_move_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -188,11 +164,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_09"
-{
-	 
+queenofpain_pain_move_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -201,11 +175,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_10"
-{
-	 
+queenofpain_pain_move_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -214,11 +186,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_11"
-{
-	 
+queenofpain_pain_move_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -227,11 +197,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_12"
-{
-	 
+queenofpain_pain_move_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -240,11 +208,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_move_13"
-{
-	 
+queenofpain_pain_move_13 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -253,11 +219,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_01"
-{
-	 
+queenofpain_pain_attack_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -266,11 +230,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_02"
-{
-	 
+queenofpain_pain_attack_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -279,11 +241,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_03"
-{
-	 
+queenofpain_pain_attack_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -292,11 +252,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_04"
-{
-	 
+queenofpain_pain_attack_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -305,11 +263,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_05"
-{
-	 
+queenofpain_pain_attack_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -318,11 +274,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_06"
-{
-	 
+queenofpain_pain_attack_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -331,11 +285,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_07"
-{
-	 
+queenofpain_pain_attack_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -344,11 +296,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_08"
-{
-	 
+queenofpain_pain_attack_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -357,11 +307,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_09"
-{
-	 
+queenofpain_pain_attack_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -370,11 +318,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_10"
-{
-	 
+queenofpain_pain_attack_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -383,11 +329,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_11"
-{
-	 
+queenofpain_pain_attack_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -396,11 +340,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_attack_12"
-{
-	 
+queenofpain_pain_attack_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -409,50 +351,10 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_cast_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
 
-"queenofpain_pain_cast_02"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_cast_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_ability_shadowstrike_01"
-{
-	 
+queenofpain_pain_ability_shadowstrike_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -461,11 +363,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_shadowstrike_02"
-{
-	 
+queenofpain_pain_ability_shadowstrike_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -474,11 +374,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_shadowstrike_03"
-{
-	 
+queenofpain_pain_ability_shadowstrike_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -487,11 +385,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_shadowstrike_04"
-{
-	 
+queenofpain_pain_ability_shadowstrike_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -500,11 +396,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_screamofpain_01"
-{
-	 
+queenofpain_pain_ability_screamofpain_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -513,11 +407,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_screamofpain_02"
-{
-	 
+queenofpain_pain_ability_screamofpain_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -526,11 +418,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_screamofpain_03"
-{
-	 
+queenofpain_pain_ability_screamofpain_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -539,24 +429,10 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_screamofpain_04"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
 
-"queenofpain_pain_ability_sonicwave_01"
-{
-	 
+queenofpain_pain_ability_sonicwave_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -565,11 +441,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_sonicwave_02"
-{
-	 
+queenofpain_pain_ability_sonicwave_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -578,11 +452,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_sonicwave_03"
-{
-	 
+queenofpain_pain_ability_sonicwave_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -591,11 +463,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_ability_sonicwave_04"
-{
-	 
+queenofpain_pain_ability_sonicwave_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -604,11 +474,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_01"
-{
-	 
+queenofpain_pain_levelup_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -617,11 +485,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_02"
-{
-	 
+queenofpain_pain_levelup_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -630,11 +496,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_03"
-{
-	 
+queenofpain_pain_levelup_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -643,11 +507,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_04"
-{
-	 
+queenofpain_pain_levelup_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -656,11 +518,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_05"
-{
-	 
+queenofpain_pain_levelup_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -669,11 +529,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_06"
-{
-	 
+queenofpain_pain_levelup_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -682,11 +540,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_07"
-{
-	 
+queenofpain_pain_levelup_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -695,11 +551,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_08"
-{
-	 
+queenofpain_pain_levelup_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -708,11 +562,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_09"
-{
-	 
+queenofpain_pain_levelup_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -721,11 +573,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_10"
-{
-	 
+queenofpain_pain_levelup_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -734,11 +584,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_levelup_11"
-{
-	 
+queenofpain_pain_levelup_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -747,11 +595,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_01"
-{
-	 
+queenofpain_pain_kill_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -760,11 +606,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_02"
-{
-	 
+queenofpain_pain_kill_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -773,11 +617,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_03"
-{
-	 
+queenofpain_pain_kill_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -786,11 +628,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_04"
-{
-	 
+queenofpain_pain_kill_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -799,11 +639,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_05"
-{
-	 
+queenofpain_pain_kill_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -812,11 +650,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_06"
-{
-	 
+queenofpain_pain_kill_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -825,11 +661,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_07"
-{
-	 
+queenofpain_pain_kill_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -838,11 +672,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_08"
-{
-	 
+queenofpain_pain_kill_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -851,11 +683,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_09"
-{
-	 
+queenofpain_pain_kill_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -864,11 +694,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_10"
-{
-	 
+queenofpain_pain_kill_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -877,11 +705,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_11"
-{
-	 
+queenofpain_pain_kill_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -890,11 +716,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_12"
-{
-	 
+queenofpain_pain_kill_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -903,11 +727,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_13"
-{
-	 
+queenofpain_pain_kill_13 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -916,11 +738,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_14"
-{
-	 
+queenofpain_pain_kill_14 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -929,11 +749,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_15"
-{
-	 
+queenofpain_pain_kill_15 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -942,11 +760,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_kill_16"
-{
-	 
+queenofpain_pain_kill_16 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -955,258 +771,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rival_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_02"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_04"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_05"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_06"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_07"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_08"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_09"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_10"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_11"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_13"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_14"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_rival_15"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_specialcase_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_specialcase_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_specialcase_04"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_specialcase_05"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_specialcase_06"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_taunt_01"
-{
-	 
+queenofpain_pain_taunt_01 = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1215,11 +782,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_taunt_02"
-{
-	 
+queenofpain_pain_taunt_02 = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1228,11 +793,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_taunt_04"
-{
-	 
+queenofpain_pain_taunt_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1241,11 +804,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_01"
-{
-	 
+queenofpain_pain_death_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1254,11 +815,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_02"
-{
-	 
+queenofpain_pain_death_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1267,11 +826,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_03"
-{
-	 
+queenofpain_pain_death_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1280,11 +837,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_04"
-{
-	 
+queenofpain_pain_death_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1293,11 +848,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_05"
-{
-	 
+queenofpain_pain_death_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1306,11 +859,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_06"
-{
-	 
+queenofpain_pain_death_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1319,11 +870,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_07"
-{
-	 
+queenofpain_pain_death_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1332,11 +881,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_08"
-{
-	 
+queenofpain_pain_death_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1345,11 +892,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_09"
-{
-	 
+queenofpain_pain_death_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1358,11 +903,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_10"
-{
-	 
+queenofpain_pain_death_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1371,11 +914,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_11"
-{
-	 
+queenofpain_pain_death_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1384,11 +925,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_12"
-{
-	 
+queenofpain_pain_death_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1397,11 +936,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_13"
-{
-	 
+queenofpain_pain_death_13 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1410,11 +947,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_death_14"
-{
-	 
+queenofpain_pain_death_14 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1423,24 +958,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_fastres_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_respawn_01"
-{
-	 
+queenofpain_pain_respawn_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1449,11 +969,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_02"
-{
-	 
+queenofpain_pain_respawn_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1462,11 +980,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_03"
-{
-	 
+queenofpain_pain_respawn_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1475,11 +991,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_04"
-{
-	 
+queenofpain_pain_respawn_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1488,11 +1002,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_05"
-{
-	 
+queenofpain_pain_respawn_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1501,11 +1013,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_06"
-{
-	 
+queenofpain_pain_respawn_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1514,11 +1024,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_07"
-{
-	 
+queenofpain_pain_respawn_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1527,11 +1035,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_08"
-{
-	 
+queenofpain_pain_respawn_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1540,11 +1046,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_09"
-{
-	 
+queenofpain_pain_respawn_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1553,11 +1057,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_respawn_10"
-{
-	 
+queenofpain_pain_respawn_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1566,11 +1068,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_01"
-{
-	 
+queenofpain_pain_lasthit_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1579,11 +1079,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_02"
-{
-	 
+queenofpain_pain_lasthit_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1592,11 +1090,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_03"
-{
-	 
+queenofpain_pain_lasthit_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1605,11 +1101,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_04"
-{
-	 
+queenofpain_pain_lasthit_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1618,11 +1112,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_05"
-{
-	 
+queenofpain_pain_lasthit_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1631,11 +1123,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_06"
-{
-	 
+queenofpain_pain_lasthit_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1644,11 +1134,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_07"
-{
-	 
+queenofpain_pain_lasthit_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1657,11 +1145,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lasthit_08"
-{
-	 
+queenofpain_pain_lasthit_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1670,11 +1156,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_01"
-{
-	 
+queenofpain_pain_deny_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1683,11 +1167,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_02"
-{
-	 
+queenofpain_pain_deny_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1696,11 +1178,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_03"
-{
-	 
+queenofpain_pain_deny_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1709,11 +1189,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_04"
-{
-	 
+queenofpain_pain_deny_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1722,11 +1200,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_05"
-{
-	 
+queenofpain_pain_deny_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1735,11 +1211,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_06"
-{
-	 
+queenofpain_pain_deny_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1748,11 +1222,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_07"
-{
-	 
+queenofpain_pain_deny_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1761,11 +1233,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_08"
-{
-	 
+queenofpain_pain_deny_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1774,11 +1244,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_09"
-{
-	 
+queenofpain_pain_deny_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1787,11 +1255,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_10"
-{
-	 
+queenofpain_pain_deny_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1800,11 +1266,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_11"
-{
-	 
+queenofpain_pain_deny_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1813,11 +1277,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_12"
-{
-	 
+queenofpain_pain_deny_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1826,11 +1288,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_13"
-{
-	 
+queenofpain_pain_deny_13 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1839,11 +1299,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_14"
-{
-	 
+queenofpain_pain_deny_14 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1852,11 +1310,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_deny_15"
-{
-	 
+queenofpain_pain_deny_15 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1865,11 +1321,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_01"
-{
-	 
+queenofpain_pain_rare_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1878,11 +1332,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_02"
-{
-	 
+queenofpain_pain_rare_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1891,11 +1343,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_03"
-{
-	 
+queenofpain_pain_rare_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1904,11 +1354,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_04"
-{
-	 
+queenofpain_pain_rare_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1917,11 +1365,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_05"
-{
-	 
+queenofpain_pain_rare_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1930,11 +1376,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_rare_06"
-{
-	 
+queenofpain_pain_rare_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1943,11 +1387,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_purch_01"
-{
-	 
+queenofpain_pain_purch_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1956,11 +1398,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_purch_02"
-{
-	 
+queenofpain_pain_purch_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1969,11 +1409,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_purch_03"
-{
-	 
+queenofpain_pain_purch_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1982,11 +1420,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_bottle_01"
-{
-	 
+queenofpain_pain_bottle_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -1995,11 +1431,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_bottle_02"
-{
-	 
+queenofpain_pain_bottle_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2008,11 +1442,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_bottle_03"
-{
-	 
+queenofpain_pain_bottle_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2021,11 +1453,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_blink_01"
-{
-	 
+queenofpain_pain_blink_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2034,11 +1464,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_blink_02"
-{
-	 
+queenofpain_pain_blink_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2047,11 +1475,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_scepter_01"
-{
-	 
+queenofpain_pain_scepter_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2060,11 +1486,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_scepter_02"
-{
-	 
+queenofpain_pain_scepter_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2073,11 +1497,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_scepter_03"
-{
-	 
+queenofpain_pain_scepter_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2086,11 +1508,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_scepter_04"
-{
-	 
+queenofpain_pain_scepter_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2099,11 +1519,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_relic_01"
-{
-	 
+queenofpain_pain_relic_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2112,11 +1530,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_relic_02"
-{
-	 
+queenofpain_pain_relic_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2125,11 +1541,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_relic_03"
-{
-	 
+queenofpain_pain_relic_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2138,50 +1552,10 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_missing_lane_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
 
-"queenofpain_pain_missing_lane_02"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_missing_lane_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_immort_01"
-{
-	 
+queenofpain_pain_immort_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2190,11 +1564,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_immort_02"
-{
-	 
+queenofpain_pain_immort_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2203,11 +1575,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_haste_01"
-{
-	 
+queenofpain_pain_haste_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2216,11 +1586,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_haste_02"
-{
-	 
+queenofpain_pain_haste_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2229,11 +1597,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_doubdam_01"
-{
-	 
+queenofpain_pain_doubdam_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2242,11 +1608,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_doubdam_02"
-{
-	 
+queenofpain_pain_doubdam_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2255,11 +1619,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_regen_01"
-{
-	 
+queenofpain_pain_regen_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2268,11 +1630,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_regen_02"
-{
-	 
+queenofpain_pain_regen_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2281,11 +1641,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_illus_01"
-{
-	 
+queenofpain_pain_illus_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2294,11 +1652,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_illus_02"
-{
-	 
+queenofpain_pain_illus_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2307,11 +1663,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_invis_01"
-{
-	 
+queenofpain_pain_invis_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2320,11 +1674,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_invis_02"
-{
-	 
+queenofpain_pain_invis_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2333,11 +1685,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_01"
-{
-	 
+queenofpain_pain_notyet_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2346,11 +1696,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_02"
-{
-	 
+queenofpain_pain_notyet_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2359,11 +1707,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_03"
-{
-	 
+queenofpain_pain_notyet_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2372,11 +1718,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_04"
-{
-	 
+queenofpain_pain_notyet_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2385,11 +1729,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_05"
-{
-	 
+queenofpain_pain_notyet_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2398,11 +1740,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_06"
-{
-	 
+queenofpain_pain_notyet_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2411,11 +1751,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_07"
-{
-	 
+queenofpain_pain_notyet_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2424,11 +1762,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_08"
-{
-	 
+queenofpain_pain_notyet_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2437,11 +1773,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_notyet_09"
-{
-	 
+queenofpain_pain_notyet_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2450,11 +1784,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_01"
-{
-	 
+queenofpain_pain_nomana_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2463,11 +1795,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_02"
-{
-	 
+queenofpain_pain_nomana_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2476,11 +1806,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_03"
-{
-	 
+queenofpain_pain_nomana_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2489,11 +1817,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_04"
-{
-	 
+queenofpain_pain_nomana_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2502,11 +1828,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_05"
-{
-	 
+queenofpain_pain_nomana_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2515,11 +1839,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_06"
-{
-	 
+queenofpain_pain_nomana_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2528,11 +1850,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_07"
-{
-	 
+queenofpain_pain_nomana_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2541,11 +1861,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_08"
-{
-	 
+queenofpain_pain_nomana_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2554,11 +1872,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_nomana_09"
-{
-	 
+queenofpain_pain_nomana_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2567,11 +1883,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_thanks_01"
-{
-	 
+queenofpain_pain_thanks_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2580,11 +1894,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_thanks_02"
-{
-	 
+queenofpain_pain_thanks_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2593,11 +1905,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_underattack_01"
-{
-	 
+queenofpain_pain_underattack_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2606,11 +1916,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_inthebag_01"
-{
-	 
+queenofpain_pain_inthebag_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2619,37 +1927,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_shiwiz_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_crumwiz_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_lose_01"
-{
-	 
+queenofpain_pain_lose_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2658,11 +1938,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lose_02"
-{
-	 
+queenofpain_pain_lose_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2671,11 +1949,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lose_03"
-{
-	 
+queenofpain_pain_lose_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2684,11 +1960,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_lose_04"
-{
-	 
+queenofpain_pain_lose_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2697,11 +1971,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_win_01"
-{
-	 
+queenofpain_pain_win_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2710,11 +1982,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_win_02"
-{
-	 
+queenofpain_pain_win_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2723,11 +1993,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_win_03"
-{
-	 
+queenofpain_pain_win_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2736,11 +2004,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_01"
-{
-	 
+queenofpain_pain_pain_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2749,11 +2015,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_02"
-{
-	 
+queenofpain_pain_pain_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2762,11 +2026,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_03"
-{
-	 
+queenofpain_pain_pain_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2775,11 +2037,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_04"
-{
-	 
+queenofpain_pain_pain_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2788,11 +2048,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_05"
-{
-	 
+queenofpain_pain_pain_05 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2801,11 +2059,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_06"
-{
-	 
+queenofpain_pain_pain_06 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2814,11 +2070,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_07"
-{
-	 
+queenofpain_pain_pain_07 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2827,11 +2081,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_08"
-{
-	 
+queenofpain_pain_pain_08 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2840,11 +2092,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_09"
-{
-	 
+queenofpain_pain_pain_09 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2853,11 +2103,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_10"
-{
-	 
+queenofpain_pain_pain_10 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2866,11 +2114,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_11"
-{
-	 
+queenofpain_pain_pain_11 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2879,11 +2125,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_12"
-{
-	 
+queenofpain_pain_pain_12 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2892,11 +2136,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_13"
-{
-	 
+queenofpain_pain_pain_13 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2905,11 +2147,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_14"
-{
-	 
+queenofpain_pain_pain_14 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2918,11 +2158,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_15"
-{
-	 
+queenofpain_pain_pain_15 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2931,11 +2169,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_16"
-{
-	 
+queenofpain_pain_pain_16 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2944,11 +2180,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_pain_17"
-{
-	 
+queenofpain_pain_pain_17 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2957,11 +2191,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_anger_01"
-{
-	 
+queenofpain_pain_anger_01 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2970,11 +2202,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_anger_02"
-{
-	 
+queenofpain_pain_anger_02 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2983,11 +2213,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_anger_03"
-{
-	 
+queenofpain_pain_anger_03 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -2996,11 +2224,9 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
+	}
 
-"queenofpain_pain_anger_04"
-{
-	 
+queenofpain_pain_anger_04 =
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -3009,225 +2235,6 @@
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_happy_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_happy_02"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_happy_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_01"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_02"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_03"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_04"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_05"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_06"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_07"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_08"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_09"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_10"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_11"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_12"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_13"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
-
-"queenofpain_pain_laugh_14"
-{
-	 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/homura/null.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}}
+	}
+	
+}

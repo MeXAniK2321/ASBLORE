@@ -91,15 +91,15 @@ end
 function modifier_kakaton:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_kakaton:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_kakaton:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_kakaton:OnIntervalThink()
     if IsServer() then
         local uchiha_leader = self:GetParent():FindAbilityByName("ryen_hoka")

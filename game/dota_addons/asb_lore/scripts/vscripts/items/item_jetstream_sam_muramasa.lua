@@ -33,10 +33,19 @@ function modifier_item_jetstream_sam_muramasa_buff:IsDebuff() return false end
 function modifier_item_jetstream_sam_muramasa_buff:IsPurgable() return false end
 function modifier_item_jetstream_sam_muramasa_buff:IsPurgeException() return false end
 function modifier_item_jetstream_sam_muramasa_buff:RemoveOnDeath() return true end
+function modifier_item_jetstream_sam_muramasa_buff:DeclareFunctions()
+    local func = {  
+					 MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+                 }
+    return func
+end
 function modifier_item_jetstream_sam_muramasa_buff:OnCreated( kv )
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
+end
+function modifier_item_jetstream_sam_muramasa_buff:GetModifierMoveSpeedBonus_Percentage(keys)
+    return 80
 end
 function modifier_item_jetstream_sam_muramasa_buff:GetEffectName()
     return "particles/jetstream_sam_buff.vpcf"
@@ -56,6 +65,7 @@ function modifier_item_jetstream_sam_muramasa_neco:DeclareFunctions()
     local func = {  
                      MODIFIER_PROPERTY_MODEL_SCALE,
                      MODIFIER_PROPERTY_MODEL_CHANGE,
+					 MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
                  }
     return func
 end
@@ -69,6 +79,9 @@ function modifier_item_jetstream_sam_muramasa_neco:GetModifierModelChange()
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetModifierModelScale()
     return -20
+end
+function modifier_item_jetstream_sam_muramasa_neco:GetModifierMoveSpeedBonus_Percentage(keys)
+    return 100
 end
 function modifier_item_jetstream_sam_muramasa_neco:GetEffectName()
     return "particles/jetstream_sam_buff.vpcf"

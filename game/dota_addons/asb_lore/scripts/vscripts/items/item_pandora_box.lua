@@ -74,7 +74,7 @@ function item_pandora_box:OnSpellStart()
     end
 	
     if caster:HasScepter() and not bCheck then
-    else
+	else
         local item = nil
 
 		if tPandoraItems[caster:GetUnitName()] then
@@ -88,9 +88,11 @@ function item_pandora_box:OnSpellStart()
                 caster:RemoveItem(hPlaceholder)
             end
             --================--
-            Timers:CreateTimer(0.1, function()
+            --[[Timers:CreateTimer(0.1, function()
                 caster:AddItem(item)
-            end)
+            end)]]--
+			caster:AddItem(item)
+			item:SetItemState(1)
             --================--
             self:SpendCharge(0)
             --================--

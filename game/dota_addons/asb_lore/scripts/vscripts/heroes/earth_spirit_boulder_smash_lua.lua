@@ -252,15 +252,15 @@ function modifier_nonnon:RemoveOnDeath() return false end
 function modifier_nonnon:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_nonnon:GetModifierBaseAttackTimeConstant()
-	return 2.4
-end
+--function modifier_nonnon:GetModifierBaseAttackTimeConstant()
+	--return 2.4
+--end
 function modifier_nonnon:OnCreated()
     if IsServer() then
     

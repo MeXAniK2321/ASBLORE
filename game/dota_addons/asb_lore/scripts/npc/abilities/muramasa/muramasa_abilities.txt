@@ -431,7 +431,7 @@
 	"special_bonus_fate_muramasa_15r" //AOE DMG ON D AND R CAST
 		{
 			"BaseClass"						"special_bonus_undefined"														
-			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 			"LinkedAbility"
@@ -449,7 +449,7 @@
 	"special_bonus_fate_muramasa_20r" //STR SCALE ON TSUMUKARI
 		{
 			"BaseClass"						"special_bonus_undefined"														
-			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 			"LinkedAbility"
@@ -465,7 +465,7 @@
 	"special_bonus_fate_muramasa_20l" //RESIST AND ARMOR IN TSUMUKARI
 		{
 			"BaseClass"						"special_bonus_undefined"														
-			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 			"LinkedAbility"
@@ -481,7 +481,7 @@
 	"special_bonus_fate_muramasa_25r" //COMBINATION
 		{
 			"BaseClass"						"special_bonus_undefined"														
-			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 			"LinkedAbility"
@@ -497,7 +497,7 @@
 	"special_bonus_fate_muramasa_25l" //FLAME
 		{
 			"BaseClass"						"special_bonus_undefined"														
-			"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+			"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 			"LinkedAbility"

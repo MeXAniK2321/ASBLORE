@@ -92,15 +92,15 @@ function modifier_billy_billy:RemoveOnDeath() return false end
 function modifier_billy_billy:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_billy_billy:GetModifierBaseAttackTimeConstant()
-	return 2.4
-end
+--function modifier_billy_billy:GetModifierBaseAttackTimeConstant()
+	--return 2.4
+--end
 function modifier_billy_billy:OnCreated()
     if IsServer() then
     

@@ -756,7 +756,7 @@ function modifier_switch_freya:DeclareFunctions()
 			    MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
         MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
         MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 							 
 	                 }
     return func
@@ -775,9 +775,9 @@ end
 function modifier_switch_freya:GetModifierBonusStats_Intellect()
     return 15
 end
-function modifier_switch_freya:GetModifierBaseAttackTimeConstant()
-	return 3.0
-end
+--function modifier_switch_freya:GetModifierBaseAttackTimeConstant()
+	--return 3.0
+--end
 function modifier_switch_freya:GetModifierModelChange()
 
     return "models/keyaru/flare/flare.vmdl"
@@ -926,7 +926,7 @@ function modifier_switch_setsuna:DeclareFunctions()
     local func = {  
     				MODIFIER_PROPERTY_MODEL_SCALE,
 					MODIFIER_PROPERTY_MODEL_CHANGE,
-					MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+					--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 						MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
 						 MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
         MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
@@ -952,9 +952,9 @@ end
 function modifier_switch_setsuna:GetModifierBonusStats_Intellect()
     return -10
 end
-function modifier_switch_setsuna:GetModifierBaseAttackTimeConstant()
-	return 1.6
-end
+--function modifier_switch_setsuna:GetModifierBaseAttackTimeConstant()
+	--return 1.6
+--end
 
 function modifier_switch_setsuna:GetModifierModelChange()
 

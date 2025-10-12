@@ -301,15 +301,15 @@ end
 function modifier_yoshirite:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_yoshirite:GetModifierBaseAttackTimeConstant()
-	return 5.0
-end
+--function modifier_yoshirite:GetModifierBaseAttackTimeConstant()
+	--return 5.0
+--end
 function modifier_yoshirite:OnIntervalThink()
     if IsServer() then
         local snow_loli = self:GetParent():FindAbilityByName("bloodseeker_blood_rite_lua")

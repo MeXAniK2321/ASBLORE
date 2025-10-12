@@ -1,5 +1,7 @@
 item_yoru = item_yoru or class({})
+item_yoru_true = item_yoru_true or class({})
 LinkLuaModifier("modifier_item_yoru", "items/item_yoru", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_item_yoru_true", "items/item_yoru", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_yoru_debuff", "items/item_yoru", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_yoru_active_cd", "items/item_yoru", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_yoru_attacking", "items/item_yoru", LUA_MODIFIER_MOTION_NONE)
@@ -55,6 +57,8 @@ function item_yoru:OnSpellStart()
 	local sound_cast = "bash.active"
 	EmitSoundOn( sound_cast, target )
 	self:PlayEffects( target)
+	
+	print("WTF")
 end
 function item_yoru:PlayEffects(target)
 	-- Get Resources
@@ -209,3 +213,85 @@ function modifier_item_yoru_bashed:IsPurgable() return false end
 function modifier_item_yoru_bashed:IsPurgeException() return false end
 function modifier_item_yoru_bashed:RemoveOnDeath() return true end
 
+
+
+---------------------------------------------------------------------------------
+-- YORU TRUE --------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+function item_yoru_true:GetIntrinsicModifierName()
+	return "modifier_item_yoru_true"
+end
+function item_yoru_true:OnSpellStart()
+  -- HMMMMMMMM....
+end
+
+---------------------------------------------------------------------------------------------------------------------
+modifier_item_yoru_true = modifier_item_yoru_true or class({})
+
+function modifier_item_yoru_true:IsHidden() return true end
+function modifier_item_yoru_true:IsDebuff() return false end
+function modifier_item_yoru_true:IsPurgable() return false end
+function modifier_item_yoru_true:IsPurgeException() return false end
+function modifier_item_yoru_true:RemoveOnDeath() return false end
+function modifier_item_yoru_true:OnCreated( kv )
+    self.caster  = self:GetCaster()
+    self.parent  = self:GetParent()
+	self.ability = self:GetAbility()
+	
+	self.fCleaveDamagePercent = self.ability:GetSpecialValueFor("cleave_damage_percent") * 0.01
+	self.fCleaveStartingWidth = self.ability:GetSpecialValueFor("cleave_starting_width")
+	self.fCleaveEndingWidth   = self.ability:GetSpecialValueFor("cleave_ending_width")
+	self.fCleaveDistance 	  = self.ability:GetSpecialValueFor("cleave_distance")
+	
+	if IsServer() then
+        self.iCASTER_TEAM          = self.caster:GetTeamNumber()
+        self.iABILITY_TARGET_TEAM  = DOTA_UNIT_TARGET_TEAM_ENEMY
+        self.iABILITY_TARGET_TYPE  = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC
+        self.iABILITY_TARGET_FLAGS = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE
+	end
+end
+---------------------------------------------------------------------------------------------------------------------
+function modifier_item_yoru_true:DeclareFunctions()
+	local func = { 	
+	                 MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+					 MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
+		         }
+	
+	return func
+end
+function modifier_item_yoru_true:GetModifierPreAttack_BonusDamage()
+    return self:GetAbility():GetSpecialValueFor('damage')
+end 
+function modifier_item_yoru_true:GetModifierProcAttack_Feedback(keys)
+	if IsServer() then
+	        local hAttacker = keys.attacker
+            local hTarget   = keys.target
+			if hAttacker == self.parent
+				and IsNotNull(hAttacker)
+				and not hAttacker:IsIllusion()
+				and not keys.ranged_attack
+				and keys.process_procs
+				and UnitFilter(	hTarget,
+								self.iABILITY_TARGET_TEAM, 
+								self.iABILITY_TARGET_TYPE,
+								self.iABILITY_TARGET_FLAGS, 
+								self.iCASTER_TEAM) == UF_SUCCESS then
+
+				--local bCloseRangeNow = GetDistance(hTarget, hAttacker) <= ( hAttacker:Script_GetAttackRange() + hAttacker:GetAttackRangeBuffer() )
+	        	DoCleaveAttack(	hAttacker,
+        							hTarget,
+        							self.ability,
+        							( keys.original_damage * self.fCleaveDamagePercent ), 
+        							self.fCleaveStartingWidth,
+        							self.fCleaveEndingWidth,
+        							self.fCleaveDistance,
+        							"particles/item/yoru_true/yoru_true.vpcf"
+        						)
+	        end
+		return 1
+	end
+end
+function modifier_item_yoru_true:OnProcessCleave(keys)
+--
+end

@@ -1037,6 +1037,51 @@
 	"ItemCost" "3000"
 	}
 	
+	//=================================================================================================================
+	// Harpoon
+	//=================================================================================================================
+	"item_harpoon"
+	{
+		"ItemCost"						        "0"
+		"ItemPurchasable"                       "0"
+		"ItemSellable"							"0"
+		"ItemIsNeutralActiveDrop"               "1"
+		"ItemIsNeutralDrop"						"1"
+	}
+	
+	"item_recipe_greater_crit"
+	{
+	"ItemCost" "3000"
+	}
+	
+	//=================================================================================================================
+	// Jidi Pollen Bag
+	//=================================================================================================================
+	"item_jidi_pollen_bag"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_jidi_pollen_bag"
+		"AbilityTextureName" 					"jidi_pollen_bag"
+		"ItemCost"						        "0"
+		"ItemPurchasable"                       "0"
+		"ItemSellable"							"0"
+		"ItemIsNeutralActiveDrop"               "1"
+		"ItemIsNeutralDrop"						"1"
+		
+		"AbilityValues"
+        {
+            "duration" "10"
+			"radius"   "700"
+            "interval" "0.5"
+            "percent_damage" "35"
+        }
+	}
+	
+	"item_recipe_greater_crit"
+	{
+	"ItemCost" "3000"
+	}
+	
 
 	//=================================================================================================================
 	// Dust
@@ -1246,14 +1291,17 @@
 	"item_recipe_meteor_hammer"
 	{
 	
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemCost"						"3150"
 		
 	}
 	
 	"item_meteor_hammer"
 {
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
+		"ItemIsNeutralActiveDrop"               "1"
+		"ItemIsNeutralDrop"						"1"
+		"ItemSellable"							"0"
 		
 		"AbilityValues"
         {

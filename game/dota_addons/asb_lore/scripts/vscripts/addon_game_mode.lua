@@ -53,7 +53,7 @@ require("anime_modifiers_server_client")
 --require('ai/core/ai_core')
 require("internal/particle_precache_test_fix")
 require("internal/indicator_menu_no_panorama")
-require("internal/observer")
+--require("internal/observer")
 
 ---------------------------------------------------------------------------
 -- Precache
@@ -95,6 +95,12 @@ function Precache( context )
 		PrecacheResource( "particle", "particles/crucible.vpcf", context )
 		PrecacheResource( "particle", "particles/chomusuke.vpcf", context )
 		PrecacheResource( "particle", "particles/plot_armor.vpcf", context )
+		PrecacheResource( "particle", "particles/ember/ranged_attack_projectile.vpcf", context )
+		PrecacheResource( "particle", "particles/item/yoru_true/yoru_true.vpcf", context )
+		PrecacheResource( "particle", "particles/item/mayuri_nova.vpcf", context )
+		PrecacheResource( "particle", "particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_wex.vpcf", context )
+		PrecacheResource( "particle", "particles/blackrock_projectile.vpcf", context )
+		PrecacheResource( "particle", "particles/item/chest_cour/screen_arcane_drop.vpcf", context )
 		
        	
 	--Cache particles for traps
@@ -162,8 +168,12 @@ function Precache( context )
 		PrecacheResource( "model", "models/zayac/zayac.vmdl", context )
 		PrecacheResource( "model", "models/bogdan/hurk.vmdl", context )
 		PrecacheResource( "model", "models/tohka/arcana/tohka_arcana.vmdl", context )
+		PrecacheResource( "model", "models/tohka/inversion/inversion.vmdl", context )
 		PrecacheResource( "model", "models/tohka/inversion/inversion_arcana.vmdl", context )
 		PrecacheResource( "model", "models/hatsune_miku/arcana/arcana_form/arcana_monster.vmdl", context )
+		PrecacheResource( "model", "models/arcueid/neko_arc.vmdl", context )
+		PrecacheResource( "model", "models/vocaloid_rin/len/blabla2.vmdl", context )
+		PrecacheResource( "model", "models/bogdan/slave_model/gachi_brother.vmdl", context )
 		
 		PrecacheResource( "soundfile", "soundevents/yoshino.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_axis_sheet.vsndevts", context )
@@ -362,7 +372,8 @@ function COverthrowGameMode:InitGameMode()
 	GameRules:SetPreGameTime( 10 )
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )
-	GameRules:GetGameModeEntity():SetFreeCourierModeEnabled(true)
+	hGameModeEntity:SetFreeCourierModeEnabled( true )
+	--hGameModeEntity:SetUseTurboCouriers( true )
 	--GameRules:SetHideKillMessageHeaders( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
@@ -619,6 +630,40 @@ function COverthrowGameMode:OnThink()
 		--Spawn Gold Bags
 		COverthrowGameMode:ThinkGoldDrop()
 		COverthrowGameMode:ThinkSpecialItemDrop()
+		
+		-- Madstone Bundle drops every 300 seconds (5minutes)
+		local nCurrentGameTime = GameRules:GetGameTime()
+		self.nMadStoneInterval = self.nMadStoneInterval or 300
+		self.nNextMadstoneTime = self.nNextMadstoneTime or 301 -- 1 extra second just in case
+		self.nOffsetTimeOnce   = self.nOffsetTimeOnce or nCurrentGameTime
+		
+		-- Switch to 60 second intervals when we reach 20 minutes
+		if nCurrentGameTime - self.nOffsetTimeOnce >= 1200 then
+		    self.nMadStoneInterval = 60
+		end
+		
+		if nCurrentGameTime - self.nOffsetTimeOnce >= self.nNextMadstoneTime then
+			-- Give each hero a MadStone Bundle
+			for _, hHero in pairs(HeroList:GetAllHeroes()) do
+				local item = CreateItem("item_madstone_bundle", hHero, self)
+				hHero:AddItem(item)
+			end
+			
+			-- The server's timers are not always precise and will move forward by a couple of seconds over time so fix it and tick again 
+			local nCurrentDifference = nCurrentGameTime - self.nOffsetTimeOnce - self.nNextMadstoneTime
+			if nCurrentDifference >= 1.0 then
+			    self.nOffsetTimeOnce = self.nOffsetTimeOnce + nCurrentDifference
+				return 1
+			end
+			
+			self.nNextMadstoneTime = self.nNextMadstoneTime + self.nMadStoneInterval
+
+			--print("Madstone Bundles given at " .. nCurrentGameTime)
+		end
+        --print("Madstone Interval: " .. self.nMadStoneInterval)
+		--print(nCurrentGameTime)
+		--print(nCurrentGameTime - self.nOffsetTimeOnce)
+		--print(self.nNextMadstoneTime)
 	end
 	
 

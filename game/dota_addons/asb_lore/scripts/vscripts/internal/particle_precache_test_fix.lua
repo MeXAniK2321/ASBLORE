@@ -56,5 +56,14 @@ if IsServer() then
 
         return VALVE_CScriptParticleManager_CreateParticleForTeam(self, sParticleName, iParticleAttachment, hOwner, nTeam)
     end
+	
+    --==============================================================================================================--
+    local VALVE_ProjectileManager_CreateTrackingProjectile = ProjectileManager.CreateTrackingProjectile
+    ProjectileManager.CreateTrackingProjectile = function(self, hProjectile)
+        CreateEffectFixProjectile(hProjectile.EffectName)
+	    print("Testing Tracking Projectile ...")
+		
+		return VALVE_ProjectileManager_CreateTrackingProjectile(self, hProjectile)
+	end
 end
 

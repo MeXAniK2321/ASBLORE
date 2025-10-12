@@ -185,15 +185,15 @@ end
 function modifier_glory:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_glory:GetModifierBaseAttackTimeConstant()
-	return 5.0
-end
+--function modifier_glory:GetModifierBaseAttackTimeConstant()
+	--return 5.0
+--end
 function modifier_glory:OnIntervalThink()
     if IsServer() then
         local vain = self:GetParent():FindAbilityByName("memory_erase")

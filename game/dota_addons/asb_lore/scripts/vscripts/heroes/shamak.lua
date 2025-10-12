@@ -116,14 +116,14 @@ function modifier_leonidas:DeclareFunctions()
 		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
        MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
 		MODIFIER_EVENT_ON_DEATH,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
 
 	return funcs
 end
-function modifier_leonidas:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_leonidas:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_leonidas:OnDeath( params )
 	if IsServer() then
 		self:DeathLogic( params )

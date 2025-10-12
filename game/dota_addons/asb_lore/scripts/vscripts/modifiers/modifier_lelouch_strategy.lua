@@ -40,14 +40,14 @@ function modifier_lelouch_strategy:DeclareFunctions()
 	local funcs = {
 		MODIFIER_EVENT_ON_TAKEDAMAGE,
 		MODIFIER_PROPERTY_CAST_RANGE_BONUS,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
 
 	return funcs
 end
-function modifier_lelouch_strategy:GetModifierBaseAttackTimeConstant()
-	return 5.0
-end
+--function modifier_lelouch_strategy:GetModifierBaseAttackTimeConstant()
+	--return 5.0
+--end
 function modifier_lelouch_strategy:GetModifierCastRangeBonus()
     return self:GetAbility():GetSpecialValueFor('cast')
 end

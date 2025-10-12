@@ -1,4 +1,5 @@
 item_abyss_horn = item_abyss_horn or class({})
+item_abyss_horn_neutral = item_abyss_horn or class({})
 LinkLuaModifier("modifier_item_abyss_horn", "items/item_abyss_horn", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_hero_route", "items/item_abyss_horn", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_demon_route", "items/item_abyss_horn", LUA_MODIFIER_MOTION_NONE)
@@ -767,7 +768,7 @@ function modifier_hero_route_1:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
     
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.hero_1", self.player) 
+    --EmitSoundOnClient("horn.hero_1", self.player) 
 end
 function modifier_hero_route_1:OnDestroy()
     StopSoundOn("horn.hero_1", self.player)
@@ -825,7 +826,7 @@ function modifier_hero_route_2:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
     
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.hero_2", self.player) 
+    --EmitSoundOnClient("horn.hero_2", self.player) 
 end
 function modifier_hero_route_2:OnDestroy()
     StopSoundOn("horn.hero_2", self.player)
@@ -887,7 +888,7 @@ function modifier_hero_route_3:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
     Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.hero_3", self.player) 
+    --EmitSoundOnClient("horn.hero_3", self.player) 
 end
 function modifier_hero_route_3:OnDestroy()
     StopSoundOn("horn.hero_3", self.player)
@@ -948,7 +949,7 @@ function modifier_hero_route_4:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
     
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.hero_4", self.player) 
+	--EmitSoundOnClient("horn.hero_4", self.player) 
 end
 function modifier_hero_route_4:OnDestroy()
     StopSoundOn("horn.hero_4", self.player)
@@ -1043,7 +1044,7 @@ function modifier_hero_route_5:OnCreated(kv)
     if IsServer() then
       Horn_StopAllMusic(self.parent)
       
-	  EmitSoundOnClient("horn.hero_5", self.player) 
+	  --EmitSoundOnClient("horn.hero_5", self.player) 
 	end
 end
 function modifier_hero_route_5:OnRefresh()
@@ -1358,7 +1359,7 @@ function modifier_hero_route_6:OnCreated()
 	
 	Horn_StopAllMusic(self.parent)
 	self:PlayEffects()
-    EmitSoundOnClient("horn.hero_6", self.player) 
+    --EmitSoundOnClient("horn.hero_6", self.player) 
     self.heal = self.parent:GetMaxHealth()
 	self.heal1 = self.heal * 0.01
 	self.radius = 600
@@ -1456,7 +1457,7 @@ function modifier_demon_route_1:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.demon_1", self.player) 
+	--EmitSoundOnClient("horn.demon_1", self.player) 
 end
 function modifier_demon_route_1:OnDestroy()
     StopSoundOn("horn.demon_1", self.player)
@@ -1518,7 +1519,7 @@ function modifier_demon_route_2:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.demon_2", self.player) 
+	--EmitSoundOnClient("horn.demon_2", self.player) 
 end
 function modifier_demon_route_2:OnDestroy()
     StopSoundOn("horn.demon_2", self.player)
@@ -1580,7 +1581,7 @@ function modifier_demon_route_3:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.demon_3", self.player) 
+	--EmitSoundOnClient("horn.demon_3", self.player) 
 end
 function modifier_demon_route_3:OnDestroy()
     StopSoundOn("horn.demon_3", self.player)
@@ -1641,7 +1642,7 @@ function modifier_demon_route_4:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.demon_4", self.player) 
+	--EmitSoundOnClient("horn.demon_4", self.player) 
  end
 function modifier_demon_route_4:OnDestroy()
     StopSoundOn("horn.demon_4", self.player)
@@ -1702,7 +1703,7 @@ function modifier_demon_route_5:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.demon_5", self.player) 
+    --EmitSoundOnClient("horn.demon_5", self.player) 
 end
 function modifier_demon_route_5:OnDestroy()
     StopSoundOn("horn.demon_5", self.player) 
@@ -1776,7 +1777,7 @@ function modifier_demon_route_6:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.demon_6", self.player) 
+	--EmitSoundOnClient("horn.demon_6", self.player) 
 end
 function modifier_demon_route_6:OnDestroy()
     StopSoundOn("horn.demon_6", self.player) 
@@ -1849,7 +1850,7 @@ function modifier_samurai_route_1:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.samurai_1", self.player) 
+    --EmitSoundOnClient("horn.samurai_1", self.player) 
  end
 function modifier_samurai_route_1:OnDestroy()
     StopSoundOn("horn.samurai_1", self.player)
@@ -1913,7 +1914,7 @@ function modifier_samurai_route_2:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.samurai_2", self.player) 
+    --EmitSoundOnClient("horn.samurai_2", self.player) 
 end
 function modifier_samurai_route_2:OnDestroy()
     StopSoundOn("horn.samurai_2", self.player)
@@ -1977,7 +1978,7 @@ function modifier_samurai_route_3:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-    EmitSoundOnClient("horn.samurai_3", self.player) 
+    --EmitSoundOnClient("horn.samurai_3", self.player) 
 end
 function modifier_samurai_route_3:OnDestroy()
     StopSoundOn("horn.samurai_3", self.player)
@@ -2041,7 +2042,7 @@ function modifier_samurai_route_4:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.samurai_4", self.player) 
+	--EmitSoundOnClient("horn.samurai_4", self.player) 
 end
 function modifier_samurai_route_4:OnDestroy()
     StopSoundOn("horn.samurai_4", self.player)
@@ -2109,7 +2110,7 @@ function modifier_samurai_route_5:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.samurai_5", self.player) 
+	--EmitSoundOnClient("horn.samurai_5", self.player) 
     self:PlayEffects()
 end
 function modifier_samurai_route_5:PlayEffects()
@@ -2185,7 +2186,7 @@ function modifier_samurai_route_6:OnCreated()
     self.player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
 	
 	Horn_StopAllMusic(self.parent)
-	EmitSoundOnClient("horn.samurai_6", self.player) 
+	--EmitSoundOnClient("horn.samurai_6", self.player) 
     self:PlayEffects()
 end
 function modifier_samurai_route_6:PlayEffects()

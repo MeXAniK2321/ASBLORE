@@ -134,10 +134,10 @@ function HeroSelection() {
 	Mlist.style.visibility = "collapse"
 	Mlist.enabled = false
 	let Cmonitems = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("TeamSharedItemsStrategyControl")
-	Cmonitems.style.visibility = "collapse"
-	Cmonitems.enabled = false
-	let TeamItems = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("StartingItemsRightColumnRow")
-	TeamItems.style.visibility = "collapse"
+	//Cmonitems.style.visibility = "collapse"
+	//Cmonitems.enabled = false
+	//let TeamItems = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("StartingItemsRightColumnRow")
+	//TeamItems.style.visibility = "collapse"
 	let PregameBuyLeft = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("StartingItemsLeftColumn")
 	PregameBuyLeft.style.backgroundImage = "url('file://{images}/custom_game/prebuy_bg.png')";
 	let PregameBuyRight = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("StartingItemsRightColumn")

@@ -56,15 +56,15 @@ function modifier_jibril_flugel:DeclareFunctions()
 		MODIFIER_PROPERTY_PROJECTILE_NAME,
 
 		MODIFIER_EVENT_ON_ATTACK,
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
 
 	return funcs
 end
 
-function modifier_jibril_flugel:GetModifierBaseAttackTimeConstant()
-	return 1.7
-end
+--function modifier_jibril_flugel:GetModifierBaseAttackTimeConstant()
+	--return 1.7
+--end
 function modifier_jibril_flugel:GetModifierProjectileName()
 if self:GetParent():HasModifier("modifier_jibril_flugel_damage") then
 	return "particles/jibril_projectile.vpcf"

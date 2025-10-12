@@ -55,6 +55,7 @@
 		"MovementSpeed"				"325"
 		"AttackDamageMin"			"55"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 
@@ -257,6 +258,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.200000"
 			"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 
@@ -275,11 +277,13 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+		
+		"VoiceFile"		"empty"
+		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts"
 
 		"ItemSlots"
   		{ }
         
-		//"VoiceFile"		"empty"
 		"Ability1"                   "music_wave"
 		"Ability2"                   "omniknight_degen_aura_lua"
 		"Ability3"                   "juggernaut_blade_fury_lua"
@@ -303,7 +307,7 @@
 		"AttributeStrengthGain"		"2.0"
 		"AttributeBaseIntelligence"	"20"
 				"BaseAttackSpeed"			"100"
-		"AttackAnimationPoint"		"3.600000"
+		"AttackAnimationPoint"		"0.700000"
 		"AttributeIntelligenceGain"	"3.0"
 		"AttributeBaseAgility"		"20"
 			"ArmorPhysical"				"1"
@@ -311,6 +315,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"55"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 
@@ -363,6 +368,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"55"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 
@@ -540,6 +546,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"60"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -706,7 +713,7 @@
 				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"2.2"
 		"AttributeBaseIntelligence"	"15"
-		"BaseAttackSpeed"			"90"
+		"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"0.6000"
 		"AttributeIntelligenceGain"	"1.5"
 		"AttributeBaseAgility"		"15"
@@ -715,6 +722,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"60"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -772,6 +780,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"60"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.100000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -884,8 +893,8 @@
 				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"2.5"
 		"AttributeBaseIntelligence"	"10"
-		"BaseAttackSpeed"			"1"
-		"AttackAnimationPoint"		"1"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.700000"
 		"ArmorPhysical"				"5"
 		"AttributeIntelligenceGain"	"1.5"
 		"AttributeBaseAgility"		"15"
@@ -893,6 +902,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -942,6 +952,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"60"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
     }
@@ -991,12 +1002,13 @@
 		"AttributeIntelligenceGain"	"2"
 		"AttributeBaseAgility"		"25"
 		"ArmorPhysical"				"4"
-			"BaseAttackSpeed"			"80"
+			"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"0.60000"
 		"AttributeAgilityGain"		"2.0"
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"60"
 		"AttackDamageMax"			"65"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
     }
@@ -1068,6 +1080,7 @@
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
     "AttackDamageMin"     "140"                   // Damage range min.
     "AttackDamageMax"     "200"                   // Damage range max.
+	"AttackRate"				"1.100000"
     "AttackRange"				"100"
 
     "AttributePrimary"      "DOTA_ATTRIBUTE_ALL"
@@ -1280,6 +1293,7 @@
 		"AttackRange"               "150"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	   }
@@ -1454,6 +1468,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	   }
@@ -1509,6 +1524,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.100000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	   }
@@ -1553,7 +1569,7 @@
 		"AttributeStrengthGain"		"2.8"
 		"AttributeBaseIntelligence"	"20"
 		"AttributeIntelligenceGain"	"2"
-	"BaseAttackSpeed"			"80"
+	"BaseAttackSpeed"			"145"
 		"AttackAnimationPoint"		"1.00000"
 		"AttributeBaseAgility"		"10"
 		"ArmorPhysical"				"6"
@@ -1561,6 +1577,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"55"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.100000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -1674,7 +1691,7 @@
 		"AttributeIntelligenceGain"	"2"
 		"AttributeBaseAgility"		"20"
 		"ArmorPhysical"				"4"
-		"BaseAttackSpeed"			"80"
+		"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"0.750000"
 		"AttributeAgilityGain"		"2"
 		"MovementSpeed"				"300"
@@ -1682,6 +1699,7 @@
 		"VisionNighttimeRange"		"1000"
 		"AttackDamageMin"			"55"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -1697,6 +1715,9 @@
 		"VersusScale"				"1.00000"
 
 		"DisableWearables" 			"1"
+		
+		"VoiceFile"		"empty"
+		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_ancient_apparition.vsndevts"
 
 		"ItemSlots"
   		{ }
@@ -1736,6 +1757,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -1792,6 +1814,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -1850,6 +1873,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -1867,6 +1891,10 @@
 		"VersusScale"				"0.55000"
 
 		"DisableWearables" 			"1"
+		
+		"VoiceFile"		"empty"
+		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
+		
 		"Ability1"         "miku_hadouken"
 		"Ability2"         "pantsushot"
 		"Ability3"         "liu_kick"
@@ -1959,6 +1987,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -2027,6 +2056,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -2087,6 +2117,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -2148,6 +2179,7 @@
 		"MovementSpeed"				"290"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -2197,7 +2229,7 @@
 		"AttributeStrengthGain"		"2.0"
 		"AttributeBaseIntelligence"	"40"
 		"AttributeIntelligenceGain"	"4.0"
-		"BaseAttackSpeed"			"70"
+		"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"1.000000"
 		"AttributeBaseAgility"		"20"
 		"AttributeAgilityGain"		"1.0"
@@ -2205,6 +2237,7 @@
 		"MovementSpeed"				"305"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -2286,7 +2319,7 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"ProjectileSpeed"	"1200"
 		"AttackAnimationPoint"	"0.300000"
-		"AttackRate"	"1.800000"
+		"AttackRate"	"1.200000"
 		"AttackAcquisitionRange"	"600"
 		"HasAggressiveStance"	"1"
 		"CanBeDominated"	"1"
@@ -2402,6 +2435,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"55"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -2626,6 +2660,7 @@
 		"MovementSpeed"				"310"
 		"AttackDamageMin"			"40"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -2855,14 +2890,15 @@
 		"AttributeStrengthGain"		"1.5"
 		"AttributeBaseIntelligence"	"30"
 		"AttributeIntelligenceGain"	"3.0"
-					"BaseAttackSpeed"			"125"
+					"BaseAttackSpeed"			"145"
 		"AttackAnimationPoint"		"0.600000"
 		"AttributeBaseAgility"		"20"
 		"AttributeAgilityGain"		"2.0"
 		"ArmorPhysical"				"4"
 		"MovementSpeed"				"300"
-		"AttackDamageMin"			"40"
-		"AttackDamageMax"			"50"
+		"AttackDamageMin"			"55"
+		"AttackDamageMax"			"75"
+		"AttackRate"				"1.100000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -2966,6 +3002,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -2979,7 +3016,9 @@
 		"VersusScale"				"1.00000"
 
 
-"VoiceFile"		"empty"
+		"VoiceFile"		"empty"
+		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
+
 "Ability1"              "plant_c4"
 "Ability2"              "homura_aka"
 "Ability3"              "homura_rpg"
@@ -3014,13 +3053,14 @@
 		"AttributeBaseIntelligence"	"30"
 		"AttributeIntelligenceGain"	"3.0"
 		"AttributeBaseAgility"		"20"
-		"BaseAttackSpeed"			"80"
+		"BaseAttackSpeed"			"100"
 		"ArmorPhysical"				"2"
 		"AttackAnimationPoint"		"1.200000"
 		"AttributeAgilityGain"		"1.5"
 		"MovementSpeed"				"299"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -3064,7 +3104,7 @@
 				"MagicalResistance"			"45"
 		"AttributeStrengthGain"		"2.5"
 		"AttributeBaseIntelligence"	"15"			
-		"BaseAttackSpeed"			"80"
+		"BaseAttackSpeed"			"100"
 		"AttackAnimationPoint"		"1.000000"
 		"AttributeIntelligenceGain"	"1.5"
 		"AttributeBaseAgility"		"20"
@@ -3073,6 +3113,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -3135,6 +3176,7 @@
 		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_abyssal_underlord.vsndevts"
 		"AttackDamageMin"			"50"
 		"AttackDamageMax"			"60"
+		"AttackRate"				"1.100000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -3256,6 +3298,7 @@
 		"MovementSpeed"				"300"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 	}
@@ -3374,6 +3417,7 @@
 		"MovementSpeed"				"310"
 		"AttackDamageMin"			"45"
 		"AttackDamageMax"			"50"
+		"AttackRate"				"1.200000"
 				"VisionDaytimeRange"		"1600"
 		"VisionNighttimeRange"		"1000"
 		
@@ -3421,6 +3465,7 @@
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
     "AttackDamageMin"     "50"                   // Damage range min.
     "AttackDamageMax"     "60"                   // Damage range max.
+	"AttackRate"				"1.100000"
     "AttackRange"				"100"
 
     "AttributePrimary"      "DOTA_ATTRIBUTE_AGILITY"
@@ -3489,6 +3534,7 @@
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
     "AttackDamageMin"     "40"                   // Damage range min.
     "AttackDamageMax"     "50"                   // Damage range max.
+	"AttackRate"				"1.100000"
     "AttackRange"				"100"
 
     "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"

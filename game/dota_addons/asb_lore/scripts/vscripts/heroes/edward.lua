@@ -136,15 +136,15 @@ end
 function modifier_edward_spear_reveal:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_edward_spear_reveal:GetModifierBaseAttackTimeConstant()
-	return 1.7
-end
+--function modifier_edward_spear_reveal:GetModifierBaseAttackTimeConstant()
+	--return 1.7
+--end
 function modifier_edward_spear_reveal:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("edward_create_spear")

@@ -131,12 +131,12 @@ end
 function modifier_air_banner:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_air_banner:GetModifierBaseAttackTimeConstant()
-	return 5.0
-end
+--function modifier_air_banner:GetModifierBaseAttackTimeConstant()
+	--return 5.0
+--end

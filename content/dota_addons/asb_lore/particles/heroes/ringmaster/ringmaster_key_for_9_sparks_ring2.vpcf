@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf61:version{39d3ce1d-9442-4407-9b78-8317145b1732} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf63:version{a6e6a69e-52d3-4527-8b9c-ff3bb91aca3e} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -25,8 +25,8 @@
 			_class = "C_OP_ContinuousEmitter"
 			m_flEmitRate = 
 			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_nMapType = "PF_MAP_TYPE_DIRECT"
+				m_nType = "PF_TYPE_COLLECTION_AGE"
+				m_nMapType = "PF_MAP_TYPE_CURVE"
 				m_flLiteralValue = 400.0
 				m_NamedValue = ""
 				m_nControlPoint = 0
@@ -73,10 +73,34 @@
 				m_flBiasParameter = 0.0
 				m_Curve = 
 				{
-					m_spline = [  ]
-					m_tangents = [  ]
+					m_spline = 
+					[
+						{
+							x = 0.0
+							y = 0.0
+							m_flSlopeIncoming = 200.0
+							m_flSlopeOutgoing = 200.0
+						},
+						{
+							x = 2.0
+							y = 400.0
+							m_flSlopeIncoming = 200.0
+							m_flSlopeOutgoing = 200.0
+						},
+					]
+					m_tangents = 
+					[
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
+							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
+						},
+						{
+							m_nIncomingTangent = "CURVE_TANGENT_SPLINE"
+							m_nOutgoingTangent = "CURVE_TANGENT_SPLINE"
+						},
+					]
 					m_vDomainMins = [ 0.0, 0.0 ]
-					m_vDomainMaxs = [ 0.0, 0.0 ]
+					m_vDomainMaxs = [ 2.0, 400.0 ]
 				}
 			}
 		},

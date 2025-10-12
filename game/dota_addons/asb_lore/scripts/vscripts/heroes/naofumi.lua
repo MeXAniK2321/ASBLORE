@@ -2188,7 +2188,6 @@ function modifier_wraith_shield:OnCreated(table)
     self.caster = self:GetCaster()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
- self:StartIntervalThink( 1 )
     self.ability_level = self.ability:GetLevel()
 
 	
@@ -2201,6 +2200,7 @@ function modifier_wraith_shield:OnCreated(table)
                         }
 
     if IsServer() then
+	    self:StartIntervalThink( 1 )
         for k, v in pairs(self.skills_table) do
             if k and v then
                 self.parent:SwapAbilities(k, v, false, true)
@@ -2903,6 +2903,7 @@ function modifier_blood_sacrifice_enemy:CheckState()
 end
 
 function modifier_blood_sacrifice_enemy:OnDestroy()
+if not IsServer() then return end
 local caster = self:GetCaster()
 local knockback = { should_stun = 1,
                         knockback_duration = 4,
@@ -2945,6 +2946,7 @@ function modifier_prison_damage:IsStunDebuff()
 	return true
 end
 function modifier_prison_damage:OnDestroy()	
+if not IsServer() then return end
 self.damage = 10000	
 	local damageTable = {
 		victim = self:GetParent(),
@@ -3020,6 +3022,7 @@ function modifier_blood_sacrifice_self:CheckState()
 end
 
 function modifier_blood_sacrifice_self:OnDestroy()
+if not IsServer() then return end
 local caster = self:GetCaster()
 local damage = caster:GetHealth() * 0.6
 self.damageTable = {
@@ -3106,6 +3109,7 @@ end
 function modifier_blood_sacrifice_debuff:OnCreated(table)
 	self.parent = self:GetParent()
 	self.ability = self:GetAbility()
+	if not IsServer() then return end
  self.str = self.parent:GetBaseStrength() * 0.5
  self.int = self.parent:GetBaseIntellect() * 0.5
  self.agi = self.parent:GetBaseAgility() * 0.5

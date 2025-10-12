@@ -126,15 +126,15 @@ end
 function modifier_chains:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_chains:GetModifierBaseAttackTimeConstant()
-	return 1.8
-end
+--function modifier_chains:GetModifierBaseAttackTimeConstant()
+	--return 1.8
+--end
 function modifier_chains:OnIntervalThink()
     if IsServer() then
         local chain_bastard = self:GetParent():FindAbilityByName("steal_chain")

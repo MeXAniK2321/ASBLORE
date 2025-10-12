@@ -54,15 +54,15 @@ end
 function modifier_plant_c4:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_plant_c4:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_plant_c4:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_plant_c4:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("homura_regenerate")

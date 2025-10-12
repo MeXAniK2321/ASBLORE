@@ -1,0 +1,18 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nBehaviorVersion = 12
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/anime/generic/chest_drop_points_b.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/anime/generic/chest_drop_points_d.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/anime/generic/chest_drop_points_e.vpcf"
+		},
+	]
+}

@@ -583,6 +583,7 @@ function modifier_dante_range:DeclareFunctions()
 		MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS,
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
 		MODIFIER_PROPERTY_PROCATTACK_FEEDBACK,
+		MODIFIER_EVENT_ON_ATTACK_START,
 				}
     return func
 end
@@ -621,6 +622,12 @@ function modifier_dante_range:GetModifierProcAttack_Feedback( params )
 		end
 	end
 end
+function modifier_dante_range:OnAttackStart( params )
+	if IsServer() then	
+		self.parent:RemoveGesture(ACT_DOTA_ATTACK)
+		self.parent:RemoveGesture(ACT_DOTA_ATTACK2)
+	end
+end
 
 function modifier_dante_range:OnCreated(table)
     self.caster = self:GetCaster()
@@ -628,9 +635,12 @@ function modifier_dante_range:OnCreated(table)
     self.ability = self:GetAbility()
 
     self.ability_level = self.ability:GetLevel()
-	self.parent:SetAttackCapability( DOTA_UNIT_CAP_RANGED_ATTACK )
 
     self.shots = self.ability:GetSpecialValueFor("shots")
+	
+    if not IsServer() then return end
+	
+	self.parent:SetAttackCapability( DOTA_UNIT_CAP_RANGED_ATTACK )
 
   
 

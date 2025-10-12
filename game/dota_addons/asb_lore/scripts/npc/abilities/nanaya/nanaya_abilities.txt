@@ -320,7 +320,7 @@
     "special_bonus_nanaya_15r" // +10% HP to Knife Execution
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"LinkedAbility"
@@ -337,7 +337,7 @@
     "special_bonus_nanaya_20l" // An invisible shadow (Improves Nanaya Dash Q, more damage, *2 agi scale and goes invis for 1 second)
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"LinkedAbility"
@@ -356,7 +356,7 @@
     "special_bonus_nanaya_20r" // Third for blood (Kills Reduce CD by 2s)
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"LinkedAbility"
@@ -373,7 +373,7 @@
     "special_bonus_nanaya_25l" // Kyokyshi Nanaya (Knife (E) at 30 stacks deals 3k damage and *5 from agility)
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"AbilityValues"
@@ -386,7 +386,7 @@
     "special_bonus_nanaya_25r" // Perfect reflexes (Nanaya Jump Slash (F) Speed Accelerated)
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"LinkedAbility"

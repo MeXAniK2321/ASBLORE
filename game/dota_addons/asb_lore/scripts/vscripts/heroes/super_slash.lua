@@ -107,15 +107,15 @@ end
 function modifier_dignity:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_dignity:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_dignity:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_dignity:OnIntervalThink()
     if IsServer() then
         local vongolle = self:GetParent():FindAbilityByName("exploding_dignity")

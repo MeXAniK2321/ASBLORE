@@ -231,15 +231,15 @@ end
 function modifier_urusai:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_urusai:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_urusai:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_urusai:OnIntervalThink()
     if IsServer() then
         local angry_loli = self:GetParent():FindAbilityByName("angry_loli_urusai")

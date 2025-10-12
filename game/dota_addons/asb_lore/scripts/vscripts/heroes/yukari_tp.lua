@@ -67,15 +67,15 @@ end
 function modifier_yukari_umb:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_yukari_umb:GetModifierBaseAttackTimeConstant()
-	return 5.0
-end
+--function modifier_yukari_umb:GetModifierBaseAttackTimeConstant()
+	--return 5.0
+--end
 function modifier_yukari_umb:OnIntervalThink()
 
 	if self:GetParent():HasModifier("modifier_yukari_moon_portal_unlock") then

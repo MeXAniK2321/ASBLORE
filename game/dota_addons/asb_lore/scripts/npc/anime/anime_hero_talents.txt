@@ -7200,7 +7200,7 @@
 	"special_bonus_anime_ae86_10r" //+seconds for repair
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7217,7 +7217,7 @@
 	"special_bonus_anime_ae86_10l" //Non Using
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7234,7 +7234,7 @@
 	"special_bonus_anime_ae86_15r" //Can't be slowed in ulty
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7251,7 +7251,7 @@
 	"special_bonus_anime_ae86_15l" //-Deley beetween crashes for Crash
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7268,7 +7268,7 @@
 	"special_bonus_anime_ae86_20r" //Attacks During Charge Drift
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7285,7 +7285,7 @@
 	"special_bonus_anime_ae86_20l" //-Cooldown for Limit
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7302,7 +7302,7 @@
 	"special_bonus_anime_ae86_25r" //Double Bonuses from CAR Passive
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"
@@ -7319,7 +7319,7 @@
 	"special_bonus_anime_ae86_25l" //+Crash damage from movespeed
 	{
 		"BaseClass"						"special_bonus_undefined"														
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		"LinkedAbility"

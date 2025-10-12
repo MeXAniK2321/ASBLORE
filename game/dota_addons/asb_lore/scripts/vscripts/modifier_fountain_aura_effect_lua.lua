@@ -21,17 +21,17 @@ function modifier_fountain_aura_effect_lua:GetModifierIncomingDamage_Percentage(
 	  if self:GetParent():HasModifier("modifier_the_one_ultimate_d") or self:GetParent():HasModifier("modifier_muscule_flex") or self:GetParent():HasModifier("modifier_death_cd")  then
 	    return 0
 	  else
-        return -35
+        return -15
 	  end
 end
 function modifier_fountain_aura_effect_lua:GetTexture()
 	return "jin_mori_2"
 end
 function modifier_fountain_aura_effect_lua:GetModifierHealthRegenPercentage( params )
-	return 25
+	return 5
 end
 function modifier_fountain_aura_effect_lua:GetModifierTotalPercentageManaRegen( params )
-	return 20
+	return 5
 end
 function modifier_fountain_aura_effect_lua:GetModifierConstantManaRegen( params )
 	return 30

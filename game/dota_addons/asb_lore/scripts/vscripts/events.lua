@@ -130,46 +130,35 @@ function COverthrowGameMode:OnNPCSpawned( event )
             if not player:HasModifier( "modifier_replaced" ) then
 				player:AddNewModifier(caster, self, "modifier_replaced", {})
                 
-                local item = CreateItem("item_placeholder_padoru", player, self)
+                --local item = CreateItem("item_placeholder_padoru", player, self)
+                --Timers:CreateTimer(0.1, function()
+                    --if IsNotNull(item) and not player:HasItemInInventory("item_placeholder_padoru") and not player:HasItemInInventory("item_pandora_box") then
+                        --player:AddItem(item)
+                    --end
+                --end)
+				
+                local item = CreateItem("item_madstone_bundle", player, self)
                 Timers:CreateTimer(0.1, function()
-                    if IsNotNull(item) and not player:HasItemInInventory("item_placeholder_padoru") and not player:HasItemInInventory("item_pandora_box") then
+                    if IsNotNull(item) then
                         player:AddItem(item)
                     end
                 end)
             end
+			
+			local tArcanas = {
+			                     npc_dota_hero_axe = {"models/bogdan/hurk.vmdl", 1.4},
+								 npc_dota_hero_alchemist = {"models/goku/drip/drip_goku.vmdl", 1.0},
+								 npc_dota_hero_sven = {"models/tohka/arcana/tohka_arcana.vmdl", 1.4},
+								 npc_dota_hero_terrorblade = {"models/kizuna_ai/kizuna_ai.vmdl", 1.4},
+								 npc_dota_hero_dazzle = {"models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana.vmdl", 1.2},
+			                 }
 	   
-			if player:GetUnitName() == "npc_dota_hero_axe" then
+			-- Arcana Models
+			local sArcanaHero = player:GetUnitName()
+			if tArcanas[sArcanaHero] then
 				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/bogdan/hurk.vmdl")
-					player:SetModelScale(1.4)
-				end
-			end
-
-			if player:GetUnitName() == "npc_dota_hero_alchemist" then
-				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/goku/drip/drip_goku.vmdl")
-					player:SetModelScale(1.0)
-				end
-			end
-
-			if player:GetUnitName() == "npc_dota_hero_sven" then
-				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/tohka/arcana/tohka_arcana.vmdl")
-					player:SetModelScale(1.4)
-				end
-			end
-
-			if player:GetUnitName() == "npc_dota_hero_terrorblade" then
-				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/kizuna_ai/kizuna_ai.vmdl")
-					player:SetModelScale(1.4)
-				end
-			end
-            
-			if player:GetUnitName() == "npc_dota_hero_dazzle" then
-				if IsASBPatreon(player) then
-					player:SetOriginalModel("models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana.vmdl")
-					player:SetModelScale(1.2)
+					player:SetOriginalModel(tArcanas[sArcanaHero][1])
+					player:SetModelScale(tArcanas[sArcanaHero][2])
 				end
 			end
             

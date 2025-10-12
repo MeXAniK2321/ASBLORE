@@ -83,15 +83,15 @@ end
 function modifier_jelllllal:DeclareFunctions()
     local funcs = {
 
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
+		--MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	
     }
 
     return funcs
 end
-function modifier_jelllllal:GetModifierBaseAttackTimeConstant()
-	return 2.5
-end
+--function modifier_jelllllal:GetModifierBaseAttackTimeConstant()
+	--return 2.5
+--end
 function modifier_jelllllal:OnIntervalThink()
     if IsServer() then
         local xenos = self:GetParent():FindAbilityByName("cerma")
