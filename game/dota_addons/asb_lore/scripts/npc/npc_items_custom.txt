@@ -5329,6 +5329,34 @@
         }
 	}
     
+	"item_roland_mask"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"heroes/roland/item_roland_mask.lua"
+		"AbilityTextureName"					"heroes/roland/item_roland_mask"	
+		"ItemPurchasable"						"0"
+		"AbilityBehavior"          				 "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"AbilityCastPoint"						"0.0"
+		"AbilityCooldown"						"180"
+		"AbilityManaCost"						"0"
+		"ItemCost"								"20000"
+		"ItemDroppable" 						"1"
+		"ItemIsNeutralActiveDrop"        		"0"
+		"ItemIsNeutralDrop"						"0"
+		"ItemSellable"							"0"
+		"ItemShopTags"							"damage"
+		"ItemQuality"							"magicks"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilityValues"
+        {
+            "bonus_attk_damage"					"50"
+            "bonus_health"						"1000"
+            "bonus_allstats"					"20"
+            "bonus_spell_amp"					"50"
+            "gebura_duration"					"60"
+        }
+	}
 	//=================================================================================================================
 	// Ember
 	//=================================================================================================================

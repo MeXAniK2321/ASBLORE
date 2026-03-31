@@ -1,0 +1,983 @@
+"DOTAAbilities"
+{
+	//=======================================================================================================
+	"roland_card"
+	{
+		"BaseClass"									"ability_lua"
+
+		"ScriptFile"								"heroes/roland/roland_card"
+		"AbilityTextureName"						"heroes/roland/roland_card"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		// "AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.1"
+		"AbilityCooldown"							"15"
+
+		"MaxLevel"									"5"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"cd_ex"									"25"
+
+			"turn_cd_reduce"						"-1"
+
+			"cost_light"							"0"
+
+			"drawable"								"1"
+			"discardable"							"1"
+
+			"dash_cast_range"						"800"
+			"dash_cast_speed"						"1600"
+			"dash_cast_hit_radius"					"128"
+			"dash_cast_stunnable"					"1"
+
+			"rarity"								"1"
+			"type"									"1"
+		}
+	}
+	//=======================================================================================================
+	"roland_slot_1"
+	{
+		"_base"										"roland_card"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	//=======================================================================================================
+	"roland_slot_2"
+	{
+		"_base"										"roland_card"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	//=======================================================================================================
+	"roland_slot_3"
+	{
+		"_base"										"roland_card"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	//=======================================================================================================
+	"roland_slot_4"
+	{
+		"_base"										"roland_card"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	//=======================================================================================================
+	"roland_slot_5"
+	{
+		"_base"										"roland_card"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	//=======================================================================================================
+	"roland_turn_start"
+	{
+		"BaseClass"									"ability_lua"
+
+		"ScriptFile"								"heroes/roland/roland_card"
+		"AbilityTextureName"						"heroes/roland/roland_turn_start"
+
+		"AbilityType"								"ABILITY_TYPE_ULTIMATE"
+		// "AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityCastPoint"							"0.2"
+		"AbilityCooldown"							"5"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"600 800 1000 1200"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"turn_time"								"20"
+
+			"cards_start"							"3"
+			"cards_draw_per_turn"					"3"
+			"cards_discard_per_turn"				"1"
+			
+			"light_start_now"						"3"
+			"light_start_max"						"4"
+			"light_max_per_hero_lvl"				"0.4"
+			"light_per_turn"						"1"
+
+			"light_regen_delay"						"3"
+			"light_regen_count"						"1"
+
+			"turn_dash_time"						"0.5"
+
+			"ability_cast_cc_immune_cd"				"12"
+			"ability_cast_cc_immune_time"			"2"
+
+			"furioso_slot_to_draw"					"5"
+			"furioso_stack_duration"				"15"
+
+			"cast_hit_radius"						"128"
+		}
+	}
+	//=======================================================================================================
+	"roland_turn_end"
+	{
+		"_base"										"roland_turn_start"
+
+		"AbilityTextureName"						"heroes/roland/roland_turn_end"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityCooldown"							"0"
+
+		"MaxLevel"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+	}
+	//=======================================================================================================
+	"roland_bleed"
+	{
+		"BaseClass"									"ability_lua"
+
+		"ScriptFile"								"heroes/roland/roland_bleed"
+		"AbilityTextureName"						"heroes/roland/roland_bleed"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PURE"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"MaxLevel"									"1"
+		"IsLearned"									"1"
+
+		"AbilityValues"
+		{
+			"bleeds_ability_pct"					"30"
+			"bleeds_attack_pct"						"20"
+			"bleeds_second_pct"						"10"
+			"bleed_damage"							"30"
+		}
+	}
+	//=======================================================================================================
+	"roland_zelkova"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_zelkova"
+		"AbilityTextureName"						"heroes/roland/roland_zelkova"
+
+		"AbilityValues"
+		{
+			"cost_light"							"0"
+
+			"sa_stunnable"
+			{
+				"value"								"1"
+				"LinkedSpecialBonus"				"special_bonus_roland_20r"
+				"LinkedSpecialBonusOperation"		"SPECIAL_BONUS_REPLACE"
+			}
+
+			"sa_time_1"								"0.35"
+			"sa_time_2"								"0.35"
+
+			"root_duration"							"0.25 0.3 0.35 0.4 0.45"
+
+			"damage_1"								"100 125 150 200 225"
+			"damage_2"								"225 250 275 300 325"
+
+			"rarity"								"1"
+		}
+	}
+	//=======================================================================================================
+	"roland_zelkova_ex"
+	{
+		"_base"										"roland_zelkova"
+
+		"AbilityTextureName"						"heroes/roland/roland_zelkova_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_boys"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_boys"
+		"AbilityTextureName"						"heroes/roland/roland_boys"
+
+		"AbilityValues"
+		{
+			"cost_light"							"1"
+
+			"ca_stunnable"							"1"
+
+			"ca_time"								"0.6"
+
+			"knock_time"							"0.5"
+			"knock_range"							"400"
+			"knock_stun_time"						"2"
+
+			"gain_light"							"3"
+
+			"dr_duration"							"3"
+			"dr_value"								"-20"
+
+			"damage"								"200 300 400 500 600"
+
+			"rarity"								"1"
+		}
+	}
+	//=======================================================================================================
+	"roland_boys_ex"
+	{
+		"_base"										"roland_boys"
+
+		"AbilityTextureName"						"heroes/roland/roland_boys_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_ranga"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_ranga"
+		"AbilityTextureName"						"heroes/roland/roland_ranga"
+
+		"AbilityValues"
+		{
+			"cost_light"							"0"
+
+			"ca_stunnable_1"						"1"
+			"ca_time_1"								"0.2"
+
+			"da_stunnable_1"						"1"
+			"da_time_1"								"0.3"
+			"da_range_1"							"800"
+
+			"damage_1"								"100 200 300 400 500"
+			"bleeds_1"								
+			{
+				"value"								"5"
+				"LinkedSpecialBonus"				"special_bonus_roland_25l"
+				"LinkedSpecialBonusOperation"		"SPECIAL_BONUS_MULTIPLY"
+			}
+
+			"ca_stunnable_2"						"1"
+			"ca_time_2"								"0.2"
+
+			"da_stunnable_2"						"1"
+			"da_time_2"								"0.3"
+			"da_range_2"							"1200"
+
+			"damage_2"								"400 500 600 700 800"
+			"bleeds_2"								
+			{
+				"value"								"10"
+				"LinkedSpecialBonus"				"special_bonus_roland_25l"
+				"LinkedSpecialBonusOperation"		"SPECIAL_BONUS_MULTIPLY"
+			}
+
+			"ca_stunnable_3"						"0"
+			"ca_time_3"								"0.6"
+
+			"da_stunnable_3"						"0"
+			"da_time_3"								"0.3"
+			"da_range_3"							"1200"
+			"damage_3"								"600 700 800 900 1000"
+			"bleeds_3"								"20"
+
+			"radius"								"128"
+
+			"rarity"								"1"
+		}
+	}
+	//=======================================================================================================
+	"roland_ranga_ex"
+	{
+		"_base"										"roland_ranga"
+
+		"AbilityTextureName"						"heroes/roland/roland_ranga_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_durandal"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_durandal"
+		"AbilityTextureName"						"heroes/roland/roland_durandal"
+		
+		"AbilityValues"
+		{
+			"cost_light"							"2"
+
+			"ca_stunnable"							"1"
+
+			"ca_time"								"0.6"
+
+			"da_range"								"300"
+
+			"slow_duration"							"1 1.5 2 2.5 3"
+			"slow_ms_value"							"-60"
+
+			"damage_1"								"150 200 250 300 350"
+			"damage_2"								"150 200 250 300 350"
+
+			"rarity"								"3"
+		}
+	}
+	//=======================================================================================================
+	"roland_durandal_ex"
+	{
+		"_base"										"roland_durandal"
+
+		"AbilityTextureName"						"heroes/roland/roland_durandal_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_mook"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_mook"
+		"AbilityTextureName"						"heroes/roland/roland_mook"
+
+		"AbilityValues"
+		{
+			"cost_light"							"2"
+
+			"ca_stunnable"							"1"
+			"ca_time"								"0.2"
+			
+			"sa_stunnable"							"1"
+			"sa_time"								"0.6"
+			
+			"count"									"10"
+			
+			"radius"								"300"
+
+			"damage"								"100"
+			"damage_last"							"1000"
+
+			"rarity"								"2"
+		}
+	}
+	//=======================================================================================================
+	"roland_mook_ex"
+	{
+		"_base"										"roland_mook"
+
+		"AbilityTextureName"						"heroes/roland/roland_mook_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_crystal"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_crystal"
+		"AbilityTextureName"						"heroes/roland/roland_crystal"
+
+		"AbilityValues"
+		{
+			"cost_light"							"3"
+
+			"radius"								"128"
+
+			"ca_stunnable_1"						"0"
+			"ca_time_1"								"0.4"
+			"ca_invul_1"							"0.4"
+			"da_stunnable_1"						"0"
+			"da_time_1"								"0.3"
+			"da_range_1"							"800"
+			"da_damage_1"							"200 300 400 500 600"
+			"da_bleeds_1"
+			{
+				"value"								"20"
+				"LinkedSpecialBonus"				"special_bonus_roland_25l"
+				"LinkedSpecialBonusOperation"		"SPECIAL_BONUS_MULTIPLY"
+			}
+
+			"ca_stunnable_2"						"0"
+			"ca_time_2"								"0.2"
+			"ca_invul_2"							"0"
+			"da_stunnable_2"						"1"
+			"da_time_2"								"0.3"
+			"da_range_2"							"1200"
+			"da_damage_2"							"400 600 800 1000 1200"
+			"da_bleeds_2"
+			{
+				"value"								"40"
+				"LinkedSpecialBonus"				"special_bonus_roland_25l"
+				"LinkedSpecialBonusOperation"		"SPECIAL_BONUS_MULTIPLY"
+			}
+
+			"rarity"								"2"
+		}
+	}
+	//=======================================================================================================
+	"roland_crystal_ex"
+	{
+		"_base"										"roland_crystal"
+
+		"AbilityTextureName"						"heroes/roland/roland_crystal_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_logic"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_logic"
+		"AbilityTextureName"						"heroes/roland/roland_logic"
+
+		"AbilityValues"
+		{
+			"cost_light"							"2"
+
+			"ca_time"								"0.2"
+			"ca_stunnable"							"1"
+
+			"ca_stunnable_1"						"1"
+			"ca_time_1"								"0.5"
+
+			"ca_stunnable_2"						"1"
+			"ca_time_2"								"0.5"
+
+			"ca_stunnable_3"						"0"
+			"ca_time_3"								"0.8"
+
+			"proj_speed"							"6000"
+			"proj_distance"							"2000"
+			"proj_width"							"128"
+
+			"proj_knock_stun_time"					"0.8"
+			"proj_knock_time"						"0.2"
+			"proj_knock_range"						"250"
+			"proj_knock_damage"						"200 350 500 650 800"
+
+			"rarity"								"2"
+			"type"									"2"
+		}
+	}
+	//=======================================================================================================
+	"roland_logic_ex"
+	{
+		"_base"										"roland_logic"
+
+		"AbilityTextureName"						"heroes/roland/roland_logic_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_allas"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_allas"
+		"AbilityTextureName"						"heroes/roland/roland_allas"
+
+		"AbilityValues"
+		{
+			"cost_light"							"2"
+
+			"ca_stunnable_1"						"1"
+			"ca_time_1"								"0.6"
+
+			"damage_1"								"150 200 250 300 350"
+
+			"knock_time_1"							"0.5"
+			"knock_range_1"							"400"
+			"knock_stun_time_1"						"1"
+
+			"ca_stunnable_2"						"1"
+			"ca_time_2"								"0.2"
+
+			"da_stunnable_2"						"1"
+			"da_time_2"								"0.4"
+			"da_range_2"							"1200"
+
+			"radius_2"								"128"
+			"damage_2"								"300 350 400 450 500"
+
+			"dr_duration_2"							"3"
+			"dr_value_2"							"-20"
+
+			"rarity"								"2"
+		}
+	}
+	//=======================================================================================================
+	"roland_allas_ex"
+	{
+		"_base"										"roland_allas"
+
+		"AbilityTextureName"						"heroes/roland/roland_allas_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_wheel"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_wheel"
+		"AbilityTextureName"						"heroes/roland/roland_wheel"
+
+		"AbilityValues"
+		{
+			"cost_light"							"4"
+
+			"ca_stunnable"							"1"
+			"ca_time"								"0.3"
+
+			"ca_time_1"								"0.3"
+			"ca_stunnable_1"						"0"
+			"ca_damage_1"							"500 700 900 1100 1300"
+			"ca_stun_time_1"						"2"
+			"ca_radius_1"							"300"
+
+			"rarity"								"3"
+		}
+	}
+	//=======================================================================================================
+	"roland_wheel_ex"
+	{
+		"_base"										"roland_wheel"
+
+		"AbilityTextureName"						"heroes/roland/roland_wheel_ex"
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_mimicry"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_mimicry"
+		"AbilityTextureName"						"heroes/roland/roland_mimicry"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"							"30"
+
+		"MaxLevel"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityValues"
+		{
+			"cost_light"							"3"
+			
+			"drawable"								"0"
+			"discardable"							"0"
+
+			"sa_stunnable"							"0"
+
+			"sa_time"								"0.7"
+
+			"sa_radius"								"300"
+			"sa_vision_time"						"10"
+
+			"sa_damage"								"1200"
+
+			"rarity"								"4"
+		}
+	}
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_furioso"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_furioso"
+		"AbilityTextureName"						"heroes/roland/roland_furioso"
+
+		// "AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PURE"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_NO"
+
+		"AbilityCooldown"							"30"
+
+		"MaxLevel"									"1"
+
+		"AbilityValues"
+		{
+			"cost_light"							"3"
+			
+			"drawable"								"0"
+			"discardable"							"0"
+			
+			//=======================================================================================================
+			// STEP 0 - DASH: Beetween casts if need
+			//=======================================================================================================
+			"dash_to_da_stunnable"					"0"
+			"dash_to_da_range"						"3000"
+			"dash_to_da_speed"						"2000"
+			"dash_to_radius"						"128"
+
+			//=======================================================================================================
+			// STEP 1 - LOGIC: initial cast anim + small shots 1 & 2
+			//=======================================================================================================
+			"logic_ca_time"							"0.2"
+			"logic_ca_stunnable"					"0"
+
+			"logic_proj_speed"						"6000"
+			"logic_proj_distance"					"2000"
+			"logic_proj_width"						"128"
+
+			// Small shots 1 & 2 (knock forward)
+			"logic_small_ca_time"					"0.5"
+			"logic_small_ca_stunnable"				"0"
+			"logic_small_knock_stun_time"			"0.8"
+			"logic_small_knock_time"				"0.2"
+			"logic_small_knock_range"				"250"
+			"logic_small_damage"					"150"
+
+			//=======================================================================================================
+			// STEP 2 - ALLAS: long-range dash behind target (part 2 only)
+			//=======================================================================================================
+			"allas_ca_stunnable"					"0"
+			"allas_ca_time"							"0.2"
+			"allas_da_stunnable"					"0"
+			"allas_da_time"							"0.3"
+			"allas_da_range"						"1500"
+			"allas_radius"							"128"
+			"allas_damage"							"250"
+
+			//=======================================================================================================
+			// STEP 3 - BOYS: knock enemy backward
+			//=======================================================================================================
+			"boys_ca_stunnable"						"0"
+			"boys_ca_time"							"0.6"
+			"boys_damage"							"150"
+			"boys_knock_time"						"0.5"
+			"boys_knock_range"						"400"
+			"boys_knock_stun_time"					"2"
+
+			//=======================================================================================================
+			// STEP 4 - MOOK: reposition if needed, then multi-slash
+			//=======================================================================================================
+			"mook_ca_stunnable"						"0"
+			"mook_ca_time"							"0.2"
+			"mook_sa_stunnable"						"0"
+			"mook_sa_time"							"0.6"
+			"mook_count"							"10"
+			"mook_radius"							"300"
+			"mook_damage"							"80"
+			"mook_damage_last"						"800"
+
+			//=======================================================================================================
+			// STEP 5 - RANGA: all 3 forward/back slashes
+			//=======================================================================================================
+			"ranga_radius"							"128"
+
+			"ranga_ca_stunnable_1"					"0"
+			"ranga_ca_time_1"						"0.1"
+			"ranga_da_stunnable_1"					"0"
+			"ranga_da_time_1"						"0.3"
+			"ranga_da_range_1"						"800"
+			"ranga_damage_1"						"80"
+			"ranga_bleeds_1"						"5"
+
+			"ranga_ca_stunnable_2"					"0"
+			"ranga_ca_time_2"						"0.1"
+			"ranga_da_stunnable_2"					"0"
+			"ranga_da_time_2"						"0.3"
+			"ranga_da_range_2"						"1200"
+			"ranga_damage_2"						"300"
+			"ranga_bleeds_2"						"10"
+
+			"ranga_ca_stunnable_3"					"0"
+			"ranga_ca_time_3"						"0.1"
+			"ranga_da_stunnable_3"					"0"
+			"ranga_da_time_3"						"0.3"
+			"ranga_da_range_3"						"1200"
+			"ranga_damage_3"						"500"
+			"ranga_bleeds_3"						"20"
+
+			//=======================================================================================================
+			// STEP 6 - ZELKOVA: 2-hit combo
+			//=======================================================================================================
+			"zelkova_sa_stunnable"					"0"
+			"zelkova_sa_time_1"						"0.35"
+			"zelkova_sa_time_2"						"0.35"
+			"zelkova_root_duration"					"0.25"
+			"zelkova_damage_1"						"80"
+			"zelkova_damage_2"						"180"
+
+			//=======================================================================================================
+			// STEP 7 - WHEEL: AoE strike
+			//=======================================================================================================
+			"wheel_ca_time"							"0.3"
+			"wheel_ca_stunnable"					"0"
+			"wheel_ca_time_1"						"0.3"
+			"wheel_ca_stunnable_1"					"0"
+			"wheel_ca_damage_1"						"400"
+			"wheel_ca_stun_time_1"					"2"
+			"wheel_ca_radius_1"						"300"
+
+			//=======================================================================================================
+			// STEP 8 - CRYSTAL: 2nd slash only
+			//=======================================================================================================
+			"crystal_radius"						"128"
+			"crystal_ca_stunnable_2"				"0"
+			"crystal_ca_time_2"						"0.2"
+			"crystal_da_stunnable_2"				"0"
+			"crystal_da_time_2"						"0.3"
+			"crystal_da_range_2"					"1200"
+			"crystal_da_damage_2"					"350"
+			"crystal_da_bleeds_2"					"40"
+
+			//=======================================================================================================
+			// STEP 9 - LOGIC: big shot 3, large-range knock
+			//=======================================================================================================
+			"logic_big_ca_time"						"0.8"
+			"logic_big_ca_stunnable"				"0"
+			"logic_big_knock_stun_time"				"1.2"
+			"logic_big_knock_time"					"0.4"
+			"logic_big_knock_range"					"350"
+			"logic_big_damage"						"300"
+
+			//=======================================================================================================
+			// STEP 10 - DURANDAL: 2 hits + bonus 3rd hit, turn backward at end
+			//=======================================================================================================
+			"durandal_ca_stunnable"					"0"
+			"durandal_ca_time"						"0.9"
+			"durandal_da_range"						"300"
+			"durandal_slow_duration"				"1"
+			"durandal_damage_1"						"120"
+			"durandal_damage_2"						"120"
+			"durandal_damage_3"						"120"
+
+			// Required by modifier_roland_durandal_slow when furioso applies it
+			"slow_ms_value"							"-60"
+
+			"last_damage"							"9000"
+
+			"rarity"								"4"
+		}
+	}
+
+
+
+
+
+	//=======================================================================================================
+	//=======================================================================================================
+	"special_bonus_roland_10r"
+	{
+		"BaseClass"									"special_bonus_undefined"														
+		"AbilityType"								"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"									"0"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_10l"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"value"									"100"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_15r"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"value"									"1"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_15l"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"duration"								"10"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_20r"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"value"									"1"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_20l"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"duration"								"10"
+			"block"									"1000"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_25r"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"value"									"1"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_roland_25l"
+	{
+		"_base"										"special_bonus_roland_10r"
+
+		"AbilityValues"
+		{
+			"value"									"3"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_gebura_horizontal"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_gebura"
+		"AbilityTextureName"						"heroes/roland/roland_gebura_horizontal"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"							"10"
+
+		"MaxLevel"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"sa_stunnable"							"0"
+
+			"sa_time"								"0.8"
+
+			"radius"								"300"
+
+			"stun_time"								"2"
+			"vision_time"							"10"
+
+			"damage"								"1200"
+		}
+	}
+
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_gebura_vertical"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_gebura"
+		"AbilityTextureName"						"heroes/roland/roland_gebura_vertical"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"							"10"
+
+		"MaxLevel"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityValues"
+		{
+			"sa_stunnable"							"0"
+
+			"sa_time"								"0.8"
+
+			"radius"								"300"
+
+			"stun_time"								"2"
+			"vision_time"							"10"
+
+			"damage"								"1200"
+		}
+	}
+
+	//=======================================================================================================
+	//=======================================================================================================
+	"roland_gebura_dash"
+	{
+		"_base"										"roland_card"
+
+		"ScriptFile"								"heroes/roland/roland_gebura"
+		"AbilityTextureName"						"heroes/roland/roland_gebura_dash"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"							"5"
+
+		"MaxLevel"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilityValues"
+		{
+		}
+	}
+}
+

@@ -201,6 +201,11 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
+
+		-- PrecacheResource("soundfile", "soundevents/heroes/roland/game/roland_base.vsndevts", context)
+
+
+	-- PrecacheUnitByNameSync("npc_dota_hero_kez", context, nil)
 end
 
 function Activate()

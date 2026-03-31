@@ -1,0 +1,66 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf65:version{48e806a9-c210-4cd8-811a-38b5ef63b195} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 1.0, 1.0, 1.0 ]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_HSVShiftToCP"
+			m_DefaultHSVColor = [ 226, 158, 0 ]
+			m_bDisableOperator = true
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a4.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a6.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a11.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a8.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a10.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a0.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a7.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/roland/roland_wheel/roland_wheel_explosion_a9.vpcf"
+			m_bDisableChild = true
+		},
+	]
+}

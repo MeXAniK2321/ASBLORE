@@ -1,0 +1,99 @@
+"DOTAUnits"
+{
+	//=================================================================================	
+	// Gebura
+	//=================================================================================
+	"npc_roland_gebura"
+	{
+		"BaseClass"					"npc_dota_lone_druid_bear"
+
+		"Model"						"models/heroes/roland/units/base/gebura/gebura.vmdl"
+		"ModelScale"				"1.0"
+
+		"SoundSet"					"Hero_Jugger"
+		"IdleSoundLoop"				"Hero_WarlockGolem.Spawn_Loop"
+		"Level"						"1"
+
+		"SelectionGroup"			"roland_gebura"
+		"UnitLabel"					"roland_gebura"
+		"ConsideredHero"			"1"
+		"HasInventory"				"1"
+		"CanRespawn"				"1"
+		"SelectOnSpawn"				"1"
+		"AutoAttacksByDefault"		"1"
+		"IsAncient"					"0"
+		"IsSummoned"				"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"roland_gebura_horizontal"
+		"Ability2"					"roland_gebura_vertical"
+		"Ability3"					"roland_gebura_dash"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"15"		// Physical protection.
+		"MagicalResistance"			"40"		// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"			"200"		// Damage range min.
+		"AttackDamageMax"			"500"		// Damage range max.
+		"AttackRate"				"1.000000"  // Speed of attack.
+		"BaseAttackSpeed"			"150"
+		"AttackAnimationPoint"		"0.50000"   // Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+		"AttackRange"				"250"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			""		    // Speed of projectile.		     
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"			// Base strength
+		"AttributeStrengthGain"		"0"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"			// Base intelligence
+		"AttributeIntelligenceGain"	"0"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"			// Base agility
+		"AttributeAgilityGain"		"0"			// Agility bonus per level.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"1000"		// Experience earn.
+		"BountyGoldMin"				"2000"		// Gold earned min.
+		"BountyGoldMax"				"2000"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"350"			// Speed
+		"MovementTurnRate"			"0.500000"		// Turning rate.		
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"3000"		// Base health.
+		"StatusHealthRegen"			"30"			// Health regeneration rate.
+		"StatusMana"				"0"		// Base mana.
+		"StatusManaRegen"			"0"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+}

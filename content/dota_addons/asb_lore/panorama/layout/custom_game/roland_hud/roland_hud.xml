@@ -1,0 +1,26 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="s2r://panorama/styles/hudstyles.css" />
+		<include src="s2r://panorama/styles/hud/hud_reborn.css" />
+		<include src="file://{resources}/layout/custom_game/roland_hud/roland_hud.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_utils.js" />
+		<include src="file://{resources}/layout/custom_game/roland_hud/roland_hud.js" />
+	</scripts>
+	<snippets>
+		<snippet name="test">
+			<Panel>
+				<Panel id="test">
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="RolandHUDRoot" hittest="false">
+		<Panel id="RolandHUD" hittest="false">
+			<Panel id="RolandCardsContainer">
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

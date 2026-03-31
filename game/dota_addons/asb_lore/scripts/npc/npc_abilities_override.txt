@@ -499,10 +499,7 @@
 	{
 		
 	}
-	"item_ultimate_scepter"
-	{
-		
-	}
+
 	"item_dagon_5"
 	{
 		
@@ -939,15 +936,6 @@
 	"item_ward_observer"
 	{
 		"ItemPurchasable"				"0"
-	}
-	"item_ultimate_scepter"
-	{
-		"ItemPurchasable"				"0"
-	}
-	"item_recipe_ultimate_scepter"
-	{
-		"ItemPurchasable"				"0"
-		"ItemCost"           "4000"
 	}
 	"item_recipe_sphere"
 	{

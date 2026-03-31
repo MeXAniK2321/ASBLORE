@@ -60,6 +60,7 @@ local tPandoraItems = {
                           npc_dota_hero_tiny = "item_myoujingiri",                -- Muramasa
                           npc_dota_hero_earthshaker = "item_fusion_dance",        -- Gogeta(SSJB)
                           npc_dota_hero_dazzle = "item_gojo_six_eyes",            -- Gojo Satoru
+                          npc_dota_hero_kez = "item_roland_mask",                 -- Roland
                       }
 
 item_pandora_box = item_pandora_box or class({})
@@ -68,6 +69,7 @@ function item_pandora_box:IsHiddenWhenStolen() return false end
 function item_pandora_box:OnSpellStart()
 	local caster = self:GetCaster()
     local hPlaceholder = caster:FindItemInInventory("item_placeholder_padoru")
+    print(hPlaceholder, "syka")
     local bCheck = false
     if caster:HasScepter() and caster:GetUnitName() == "npc_dota_hero_abaddon" and not caster:HasItemInInventory("item_yamato") then
         bCheck = true

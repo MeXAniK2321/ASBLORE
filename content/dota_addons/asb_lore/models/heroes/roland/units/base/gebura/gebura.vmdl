@@ -1,0 +1,1032 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "mimicry.vmat"
+								to = "materials/models/heroes/roland/weapon/base/mimicry/mimicry.vmat"
+							},
+							{
+								from = "kk_body_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_body_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_bodytights_11410_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_bodytights_11410_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_bot_pants03_11355_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_bot_pants03_11355_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_glove_short_11635_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_glove_short_11635_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_b_02_6640_00_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_b_02_6640_00_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_b_11_5100_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_b_11_5100_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_b_12_6300_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_b_12_6300_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_f_116_00_5450_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_f_116_00_5450_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_f_118_5270_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_f_118_5270_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_f_21_00_6400_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_f_21_00_6400_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_s_06_00_5800_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_s_06_00_5800_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_hair_s_07_00_5550_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_hair_s_07_00_5550_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_shoes_roafer01_12401_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_shoes_roafer01_12401_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_socks_high02_12281_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_socks_high02_12281_gebura.vmat"
+							},
+							{
+								from = "kk_cf_m_top_inner01_11771_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_cf_m_top_inner01_11771_gebura.vmat"
+							},
+							{
+								from = "kk_eyel_(hitomi)_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_eyel_(hitomi)_gebura.vmat"
+							},
+							{
+								from = "kk_eyer_(hitomi)_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_eyer_(hitomi)_gebura.vmat"
+							},
+							{
+								from = "kk_eyewhites_(sirome)_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_eyewhites_(sirome)_gebura.vmat"
+							},
+							{
+								from = "kk_face_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_face_gebura.vmat"
+							},
+							{
+								from = "kk_teeth_(tooth)_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_teeth_(tooth)_gebura.vmat"
+							},
+							{
+								from = "kk_tongue_gebura.vmat"
+								to = "materials/models/heroes/roland/units/base/gebura/kk_tongue_gebura.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = "materials/models/heroes/roland/units/base/gebura/kk_body_gebura.vmat"
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "ATTACH_ORIGIN"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HITLOC"
+						parent_bone = "Spine2"
+						relative_origin = [ 0.0, 0.0, 7.199554 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HEAD"
+						parent_bone = "Head"
+						relative_origin = [ 0.0, 0.0, 5.166702 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FOLLOW_OVERHEAD"
+						parent_bone = "Head"
+						relative_origin = [ 0.0, 33.50756, 13.296904 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK1"
+						parent_bone = "Mimicry"
+						relative_origin = [ 8.863579, 0.835672, -0.606064 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK2"
+						parent_bone = "Mimicry"
+						relative_origin = [ -6.539574, 1.087337, -0.970749 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "idle"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+							{
+								_class = "AnimForceBoneScale"
+								bone = "Mimicry"
+								frame = 0
+								scale = 0.0
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = true
+						start_frame = 101
+						end_frame = 351
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "cringe"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 352
+						end_frame = 418
+						framerate = 30.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "horizontal"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 419
+						end_frame = 470
+						framerate = 50.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "attack2"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 471
+						end_frame = 543
+						framerate = 82.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "dash"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 0
+						end_frame = 100
+						framerate = 30.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "attack"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 544
+						end_frame = 589
+						framerate = 38.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "vertical"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 590
+						end_frame = 660
+						framerate = 74.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "die"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+							{
+								_class = "AnimForceBoneScale"
+								bone = "Mimicry"
+								frame = 0
+								scale = 0.0
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 679
+						end_frame = 774
+						framerate = 30.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "walk"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+							{
+								_class = "AnimForceBoneScale"
+								bone = "Mimicry"
+								frame = 0
+								scale = 0.0
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 775
+						end_frame = 813
+						framerate = 3.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "stunned"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
+							},
+							{
+								_class = "AnimForceBoneScale"
+								disabled = true
+								bone = "Mimicry"
+								frame = 0
+								scale = 0.0
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_DISABLED"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/roland/units/base/gebura/gebura.fbx"
+						import_bone_scales = false
+						start_frame = 661
+						end_frame = 679
+						framerate = 30.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+				]
+				default_root_bone_name = ""
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Spine"
+								parent_bone = "Spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -26.663383, -17.30857, -32.06864 ]
+								hitbox_maxs = [ 25.642532, 23.172646, 15.424992 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Spine1"
+								parent_bone = "Spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -25.725605, -17.864342, -32.59624 ]
+								hitbox_maxs = [ 23.556393, 23.951721, 16.635838 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Spine2"
+								parent_bone = "Spine2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -68.46586, -136.29007, -59.2669 ]
+								hitbox_maxs = [ 59.72779, 51.764603, 66.77197 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Neck"
+								parent_bone = "Neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.687672, -4.328743, -15.50193 ]
+								hitbox_maxs = [ 14.130625, 27.30613, 12.781509 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftShoulder"
+								parent_bone = "LeftShoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.81044, -9.761517, -10.225113 ]
+								hitbox_maxs = [ 22.032776, 35.271057, 19.229477 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftArm"
+								parent_bone = "LeftArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.933228, -9.60463, -5.94688 ]
+								hitbox_maxs = [ 9.826523, 45.85936, 13.757343 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftForeArm"
+								parent_bone = "LeftForeArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.658794, -13.063927, -5.048729 ]
+								hitbox_maxs = [ 4.398712, 34.037052, 3.123528 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHand"
+								parent_bone = "LeftHand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.571577, -9.918663, -5.09491 ]
+								hitbox_maxs = [ 3.73177, 11.225708, 2.521185 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandThumb1"
+								parent_bone = "LeftHandThumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.731915, -2.61866, -2.206244 ]
+								hitbox_maxs = [ 1.738895, 3.493645, 1.803409 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandThumb2"
+								parent_bone = "LeftHandThumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.388302, -1.227684, -1.586693 ]
+								hitbox_maxs = [ 0.765807, 4.529549, 1.299423 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandIndex1"
+								parent_bone = "LeftHandIndex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.877139, -1.264435, -1.104795 ]
+								hitbox_maxs = [ 1.652082, 4.498192, 1.036146 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandIndex2"
+								parent_bone = "LeftHandIndex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.802423, -2.793732, -0.66458 ]
+								hitbox_maxs = [ 0.759952, 2.903656, 1.300417 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandMiddle1"
+								parent_bone = "LeftHandMiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.443171, -4.318481, -0.948352 ]
+								hitbox_maxs = [ 2.380354, 4.971771, 2.136269 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandMiddle2"
+								parent_bone = "LeftHandMiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.896578, -1.598869, -0.777791 ]
+								hitbox_maxs = [ 1.044996, 3.790375, 0.985285 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandRing1"
+								parent_bone = "LeftHandRing1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.443729, -4.968399, -1.081259 ]
+								hitbox_maxs = [ 1.811382, 3.504608, 2.730637 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandRing2"
+								parent_bone = "LeftHandRing2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.184074, -4.06892, -0.766129 ]
+								hitbox_maxs = [ 1.831394, 2.980984, 5.767212 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandPinky1"
+								parent_bone = "LeftHandPinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.025452, -15.802948, -1.664721 ]
+								hitbox_maxs = [ 2.605129, 3.81308, 4.525722 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftHandPinky2"
+								parent_bone = "LeftHandPinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.36525, -4.480335, -1.88084 ]
+								hitbox_maxs = [ 2.87986, 3.539417, 6.090858 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightShoulder"
+								parent_bone = "RightShoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -26.838402, -7.161499, -6.688194 ]
+								hitbox_maxs = [ 14.126137, 35.772213, 28.380203 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightArm"
+								parent_bone = "RightArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.392241, -6.972019, -14.183311 ]
+								hitbox_maxs = [ 20.316925, 42.516624, 6.674454 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightForeArm"
+								parent_bone = "RightForeArm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.428146, -11.978152, -6.477859 ]
+								hitbox_maxs = [ 13.137127, 33.08169, 3.125999 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHand"
+								parent_bone = "RightHand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.999752, -12.51749, -7.378281 ]
+								hitbox_maxs = [ 5.397163, 8.233074, 1.988136 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandThumb1"
+								parent_bone = "RightHandThumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.835129, -1.154476, -2.917763 ]
+								hitbox_maxs = [ 1.677338, 3.145836, 1.731613 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandThumb2"
+								parent_bone = "RightHandThumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.492378, -2.030701, -1.39801 ]
+								hitbox_maxs = [ 1.185665, 4.15802, 0.956108 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandIndex1"
+								parent_bone = "RightHandIndex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.027924, -3.954544, -1.533978 ]
+								hitbox_maxs = [ 0.905367, 4.749405, 0.754147 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandIndex2"
+								parent_bone = "RightHandIndex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.24584, -3.277855, -0.648193 ]
+								hitbox_maxs = [ 0.884035, 3.238449, 0.92345 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandMiddle1"
+								parent_bone = "RightHandMiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.502489, -1.9935, -0.963303 ]
+								hitbox_maxs = [ 1.552853, 4.679779, 1.094353 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandMiddle2"
+								parent_bone = "RightHandMiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.796098, -8.61412, -0.788887 ]
+								hitbox_maxs = [ 2.510927, 3.863495, 2.814804 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandRing1"
+								parent_bone = "RightHandRing1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.232924, -4.712036, -1.090561 ]
+								hitbox_maxs = [ 3.416883, 3.977615, 2.777458 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandRing2"
+								parent_bone = "RightHandRing2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.401731, -3.785286, -0.665932 ]
+								hitbox_maxs = [ 1.414478, 3.197933, 2.618729 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandPinky1"
+								parent_bone = "RightHandPinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.17576, -4.93251, -2.005882 ]
+								hitbox_maxs = [ 3.78742, 3.356049, 4.24498 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightHandPinky2"
+								parent_bone = "RightHandPinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.829792, -1.95668, -0.802582 ]
+								hitbox_maxs = [ 0.66234, 2.399647, 1.362503 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftUpLeg"
+								parent_bone = "LeftUpLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -22.964535, -27.77106, -34.64163 ]
+								hitbox_maxs = [ 32.337452, 60.266666, 11.056282 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftLeg"
+								parent_bone = "LeftLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.316751, -9.686176, -17.18629 ]
+								hitbox_maxs = [ 4.572687, 55.23753, 15.299924 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "LeftFoot"
+								parent_bone = "LeftFoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.996147, -6.436454, -8.254044 ]
+								hitbox_maxs = [ 15.340782, 18.985016, 35.78923 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightUpLeg"
+								parent_bone = "RightUpLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -39.53325, -26.070501, -23.136059 ]
+								hitbox_maxs = [ 25.118332, 88.65299, 11.496014 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightLeg"
+								parent_bone = "RightLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.275494, -17.731585, -12.139038 ]
+								hitbox_maxs = [ 6.765736, 60.150818, 8.523502 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "RightFoot"
+								parent_bone = "RightFoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.811812, -30.127373, -8.482353 ]
+								hitbox_maxs = [ 4.881243, 18.768433, 17.236324 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "ModelModifier_ScaleAndMirror"
+						scale = 1.0
+						mirror_x = false
+						mirror_y = false
+						mirror_z = false
+						flip_bone_forward = false
+						swap_left_and_right_bones = false
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

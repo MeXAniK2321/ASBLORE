@@ -1,0 +1,34 @@
+// AUTO-GENERATED
+
+Layer0
+{
+    shader "hero.vfx"
+
+    F_RENDER_BACKFACES 1
+    F_USE_HERO_EFFECTS_PROXY 1
+    F_USE_STATUS_EFFECTS_PROXY 1
+    F_MASKS_1 1
+    F_ALPHA_TEST 1
+
+    g_flEnvMapBlendToFull "0.000"
+    g_flMetalnessBlendToFull "0.000"
+    g_flReflectionsTintByBaseBlendToNone "0.000"
+    g_flSelfIllumBlendToFull "0.000"
+    g_flSpecularBlendToFull "0.000"
+    g_flSpecularExponentBlendToFull "0.000"
+
+    g_flCloakBlurAmount "0.005"
+    g_flCloakIntensity "0.850"
+    g_flCloakRefractAmount "0.100"
+    g_flMaterialCloakFactor "0.000"
+    g_vCloakColorTint "[1.000 1.000 1.000]"
+
+    g_flDiffuseModulationAmount "1.000"
+
+    TextureColor "materials/models/heroes/roland/units/base/gebura/kk_cf_m_shoes_roafer01_12401_gebura.png"
+
+    TextureNormal ""
+
+    g_flSpecularExponent "32.000"
+    g_flSpecularScale "1.000"
+}

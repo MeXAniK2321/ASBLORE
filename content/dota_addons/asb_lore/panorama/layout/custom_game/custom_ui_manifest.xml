@@ -1,12 +1,15 @@
 <root>
-<scripts>
+	<scripts>
 		<include src="file://{resources}/scripts/custom_game/playertables_base.js" />
 		<include src="file://{resources}/scripts/custom_game/vector_target.js" />
 		<include src="file://{resources}/scripts/custom_game/custom_utils.js" />
-		<include src="file://{resources}/scripts/custom_game/custom_utils.js" />
 		<include src="file://{resources}/scripts/custom_game/custom_ui_manifest_include.js" />
 	</scripts>
-		
+	
+	<styles>
+		<include src="file://{resources}/styles/custom_game/precache.css" />
+	</styles>
+
 	<Panel>
 		<CustomUIElement type="HudTopBar"			layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
 		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/overthrow_item_notification.xml" />
@@ -18,5 +21,7 @@
 		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/custom_chatwheel.xml" />
 		<CustomUIElement type="HeroSelection" 		layoutfile="file://{resources}/layout/custom_game/asb_hud.xml" />
 		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/screamer1.xml" />
+
+		<CustomUIElement type="Hud"					layoutfile="file://{resources}/layout/custom_game/roland_hud/roland_hud.xml" />
 	</Panel>
 </root>

@@ -37,7 +37,7 @@
 		},
 		{
 			MaxPlayers = 10
-			map = "ruin_solo"
+			map = "asb_solo2"
 		},
 	]
 	HideInTools = false

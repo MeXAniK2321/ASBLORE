@@ -1,0 +1,100 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_roland"
+	{
+		"override_hero"				"npc_dota_hero_kez"
+		// "BaseClass"					"npc_dota_hero"
+		"DisableWearables"			"1"
+
+		// "HeroID"					"151"
+
+		"Model"						"models/heroes/roland/skins/base/roland.vmdl"
+		"ModelScale"				"1.0"
+		
+		//--===SOUNDS===--
+		"particle_folder"			"particles/heroes/roland"
+		"GameSoundsFile"			"soundevents/heroes/roland/game/roland_base.vsndevts"
+		"VoiceFile"					"soundevents/heroes/roland/voice/roland_base.vsndevts"
+		"SoundSet"					"roland_base"
+		//"VoiceBackgroundSound"		""
+		"IdleSoundLoop"				"roland_portrait"
+		"HeroSelectSoundEffect"		"roland_base.Pick"
+
+		"precache"
+		{
+			"model_folder"			"models/heroes/roland"
+			"particle_folder"		"particles/heroes/roland"
+			"soundfile"				"soundevents/heroes/roland/game/roland_base.vsndevts"
+			"soundfile"				"soundevents/heroes/roland/voice/roland_base.vsndevts"
+		}
+
+		"Ability1"					"roland_slot_1"
+		"Ability2"					"roland_slot_2"
+		"Ability3"					"roland_slot_3"
+		"Ability4"					"roland_slot_4"
+		"Ability5"					"roland_slot_5"
+
+		"Ability6"					"roland_turn_start"
+		"Ability7"					"roland_turn_end"
+
+		"Ability8"					"roland_bleed"
+
+		"Ability9"					"generic_hidden"
+
+		"Ability10"					"special_bonus_hp_400"//"special_bonus_roland_10r"
+		"Ability11"					"special_bonus_roland_10l"
+
+		"Ability12"					"special_bonus_movement_speed_25"//"special_bonus_roland_15r"
+		"Ability13"					"special_bonus_roland_15l"
+
+		"Ability14"					"special_bonus_agility_80"//"special_bonus_roland_20r"
+		"Ability15"					"special_bonus_roland_20l"
+
+		"Ability16"					"special_bonus_spell_lifesteal_70"//"special_bonus_roland_25r"
+		"Ability17"					"special_bonus_roland_25l"
+
+		"AbilityTalentStart"		"10"
+
+		//--===ARMOR===--
+		"ArmorPhysical"				"7"
+		"MagicalResistance"			"10"
+
+		//--===DAMAGE===--
+		"AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRate"				"1.5"
+
+		"AttackDamageMin"			"65"
+		"AttackDamageMax"			"65"
+		
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"100"
+
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"1000"
+
+		//--===ATTRIBUTES===--
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+
+		//"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"2.5"
+
+		//"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"4.0"
+
+		//"AttributeBaseIntelligence"	"0"
+		"AttributeIntelligenceGain"	"2.5"
+
+		//--===OTHER===--
+		"MovementSpeed"				"350"
+
+		"StatusHealth"				"600"
+		"StatusMana"				"0"
+		
+		"StatusHealthRegen"			"5"
+		"StatusManaRegen"			"5"
+
+		//--===VISION===--
+		"VisionDaytimeRange"		"900"
+		"VisionNighttimeRange"		"900"
+	}
+}

@@ -4,6 +4,8 @@
 #base anime/anime_hero_talents.txt
 #base "abilities/nanaya/nanaya_abilities.txt"
 #base "abilities/muramasa/muramasa_abilities.txt"
+#base "heroes/roland/a.txt"
+
 "DOTAAbilities"
 {
   "Version"   "1"

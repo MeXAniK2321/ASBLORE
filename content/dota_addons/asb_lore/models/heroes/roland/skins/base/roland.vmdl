@@ -1,0 +1,2718 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "axe.vmat"
+								to = "materials/models/heroes/roland/weapon/base/axe/axe.vmat"
+							},
+							{
+								from = "big_blade.vmat"
+								to = "materials/models/heroes/roland/weapon/base/big_blade/big_blade.vmat"
+							},
+							{
+								from = "clothmaterial.vmat"
+								to = "materials/models/heroes/roland/skins/base/cloth.vmat"
+							},
+							{
+								from = "eyematerial.vmat"
+								to = "materials/models/heroes/roland/skins/base/eyes.vmat"
+							},
+							{
+								from = "gun.vmat"
+								to = "materials/models/heroes/roland/weapon/base/gun/gun.vmat"
+							},
+							{
+								from = "hairmaterial.vmat"
+								to = "materials/models/heroes/roland/skins/base/hair.vmat"
+							},
+							{
+								from = "headmaterial.vmat"
+								to = "materials/models/heroes/roland/skins/base/head.vmat"
+							},
+							{
+								from = "katana.vmat"
+								to = "materials/models/heroes/roland/weapon/base/katana/katana.vmat"
+							},
+							{
+								from = "knife.vmat"
+								to = "materials/models/heroes/roland/weapon/base/small_katana/small_katana.vmat"
+							},
+							{
+								from = "mace.vmat"
+								to = "materials/models/heroes/roland/weapon/base/mace/mace.vmat"
+							},
+							{
+								from = "mask.vmat"
+								to = "materials/models/heroes/roland/skins/base/mask/mask.vmat"
+							},
+							{
+								from = "mimicry.vmat"
+								to = "materials/models/heroes/roland/weapon/base/mimicry/mimicry.vmat"
+							},
+							{
+								from = "sledgehammer.vmat"
+								to = "materials/models/heroes/roland/weapon/base/sledgehammer/sledgehammer.vmat"
+							},
+							{
+								from = "spear.vmat"
+								to = "materials/models/heroes/roland/weapon/base/spear/spear.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = "materials/models/fate/heroes/fate_hero_cu_chulainn/normal/cu_chulainn_lancer_all.vmat"
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "ATTACH_HITLOC"
+						parent_bone = "Shest"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ORIGIN"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HEAD"
+						parent_bone = "Head"
+						relative_origin = [ 0.000264, 3.756973, 0.00149 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FOLLOW_OVERHEAD"
+						parent_bone = "Head"
+						relative_origin = [ 0.003332, 43.636368, 0.016459 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK1"
+						parent_bone = "Hand_R"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK2"
+						parent_bone = "Hand_L"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_LOGIC"
+						parent_bone = "Hand_R"
+						relative_origin = [ 17.037567, 77.185371, 0.780458 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "roland"
+						filename = "models/heroes/roland/skins/base/roland.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "roland_anim"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "roland"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = false
+										extract_ty = false
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								is_default_idle_anim = false
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/heroes/roland/skins/base/roland.fbx"
+								import_bone_scales = false
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "buffed"
+								is_default_idle_anim = false
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/heroes/roland/skins/base/roland.fbx"
+								import_bone_scales = false
+								start_frame = 129
+								end_frame = 158
+								framerate = -1.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "debuffed"
+								is_default_idle_anim = false
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/heroes/roland/skins/base/roland.fbx"
+								import_bone_scales = false
+								start_frame = 159
+								end_frame = 176
+								framerate = -1.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "Folder"
+								name = "dashes"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "dash_f_cast"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 229
+										end_frame = 235
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "dash_f_loop"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 235
+										end_frame = 250
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 250
+												frame_count = 5
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "dash_b_cast"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 285
+										end_frame = 293
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "dash_b_loop"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_2_END"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 285
+										end_frame = 305
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "zelkova"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "zelkova_slash_12"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "zelkova_slash_12"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 251
+										end_frame = 284
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "zelkova_slash_12_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = false
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "zelkova_slash_12"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Katana"
+												frame = 0
+												scale = 0.0
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 709
+										end_frame = 749
+										framerate = 30.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 749
+												frame_count = 5
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "boys"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "boys_impact"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "boys_cast"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 306
+										end_frame = 340
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "durandal"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "durandal_slash_1"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "durandal_slash_1"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 418
+										end_frame = 428
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "durandal_slash_2"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "durandal_slash_2"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 428
+										end_frame = 449
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "durandal_slash_12"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "durandal_slash_12"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 418
+										end_frame = 449
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 443
+												frame_count = 5
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "durandal_slash_3"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "durandal_slash_3"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 0.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, -25.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_3"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 742
+										end_frame = 754
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "mook"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "mook_slash_123"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "mook_slash_123"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 452
+										end_frame = 466
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "mook_cast_123"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "mook_cast_123"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 449
+										end_frame = 452
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 452
+												frame_count = 5
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "mook_slashes_123_copy"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "mook_slashes_123"
+												activity_weight = 1
+											},
+										]
+										disabled = true
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 449
+										end_frame = 469
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "mook_cast_end_123"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "mook_end_123"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 465
+										end_frame = 469
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 465
+												frame_count = 5
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "crystal"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "crystal_slash_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "crystal_slash_1"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 0.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 478
+										end_frame = 507
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "crystal_slash_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "crystal_slash_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 40.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 510
+										end_frame = 532
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "crystal_cast_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "crystal_cast_1"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 0.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 469
+										end_frame = 478
+										framerate = 30.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 478
+												frame_count = 10
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "crystal_cast_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "crystal_cast_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 40.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 507
+										end_frame = 510
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 510
+												frame_count = 10
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "logic_n"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "logic_shot_123"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "logic_shot_123"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												disabled = true
+												translation = [ 40.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										disabled = true
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 533
+										end_frame = 591
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "logic_shot_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Katana"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 280.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "logic_shot_1"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 817
+										end_frame = 823
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "logic_shot_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Katana"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 280.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "logic_shot_2"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 823
+										end_frame = 839
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "logic_cast"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Katana"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 280.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "logic_cast"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 812
+										end_frame = 817
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 817
+												frame_count = 5
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "wheel"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "wheel_slash"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Big_blade"
+												frame = 0
+												scale = 1.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Big_blade"
+												frame = 33
+												scale = 0.0
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "wheel_slash"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -20.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 645
+										end_frame = 670
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "wheel_cast"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Big_blade"
+												frame = 0
+												scale = 1.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												bone = "Big_blade"
+												frame = 33
+												scale = 0.0
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "wheel_cast"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -20.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 637
+										end_frame = 645
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 645
+												frame_count = 5
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "allas"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "allas_cast_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "allas_cast_1"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -15.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 592
+										end_frame = 614
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "allas_slash_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "allas_slash_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -50.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										disabled = true
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 614
+										end_frame = 636
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 629
+												frame_count = 5
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "allas_slash_21"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "allas_slash_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -50.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										disabled = true
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 614
+										end_frame = 636
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "allas_slash_loop"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "allas_slash_loop"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 220.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 1010
+										end_frame = 1019
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 1010
+												frame_count = 10
+											},
+										]
+									},
+									{
+										_class = "AnimFile"
+										name = "allas_cast_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "allas_cast_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 475.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 999
+										end_frame = 1010
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 1010
+												frame_count = 5
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "furioso"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "furioso"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												disabled = true
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "CUSTOM"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 709
+										end_frame = 1028
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "mimicry"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "mimicry"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "mimicry_slash"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 0.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 671
+										end_frame = 708
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "ranga_slashes"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "ranga_slash_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "ranga_slash_1"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 341
+										end_frame = 365
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "ranga_slash_2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "ranga_slash_2"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 85.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 180.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 365
+										end_frame = 389
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "ranga_slash_3"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "ranga_slash_3"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -15.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_OVERRIDE_ABILITY_3"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 389
+										end_frame = 417
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "ranga_cast_1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = false
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "ActivityModifier"
+												activity_name = "ranga_cast_1"
+												activity_weight = 1
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ -15.0, 0.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_CAST_ABILITY_1"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 389
+										end_frame = 389
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+										anim_hold_list = 
+										[
+											{
+												frame = 389
+												frame_count = 10
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "basic"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "idle"
+										children = 
+										[
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Big_blade"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Spear"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Katana"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Axe"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Gun"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Mace"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Small_katana_1"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Small_katana_2"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Sledgehammer"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Mimicry"
+												frame = 0
+												scale = 0.0
+											},
+											{
+												_class = "AnimForceBoneScale"
+												disabled = true
+												bone = "Knife"
+												frame = 0
+												scale = 0.0
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_IDLE"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 1
+										end_frame = 45
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "run"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_RUN"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 46
+										end_frame = 70
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "run_haste"
+										children = 
+										[
+											{
+												_class = "ActivityModifier"
+												activity_name = "haste"
+												activity_weight = 1
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_RUN"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 71
+										end_frame = 91
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "stunned"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_DISABLED"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 92
+										end_frame = 128
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "die"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												extract_initial_offset = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimOffset"
+												translation = [ 0.0, -50.0, 0.0 ]
+												rotation_xyz = [ 0.0, 0.0, 0.0 ]
+											},
+										]
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_DIE"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 177
+										end_frame = 201
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "attack"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_ATTACK"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 202
+										end_frame = 228
+										framerate = -1.0
+										reverse = false
+										additional_anim_files = [  ]
+									},
+									{
+										_class = "AnimFile"
+										name = "attack2"
+										is_default_idle_anim = false
+										activity_name = "ACT_DOTA_ATTACK2"
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										animgraph_additive = false
+										delete_from_compiled_model = false
+										source_filename = "models/heroes/roland/skins/base/roland.fbx"
+										import_bone_scales = false
+										start_frame = 202
+										end_frame = 228
+										framerate = 16.0
+										reverse = true
+										additional_anim_files = [  ]
+									},
+								]
+							},
+							{
+								_class = "AnimFile"
+								name = "roland_copy"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										disabled = true
+										extract_tx = false
+										extract_ty = false
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								disabled = true
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_IDLE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/heroes/roland/skins/base/roland.fbx"
+								import_bone_scales = false
+								start_frame = 932
+								end_frame = 932
+								framerate = -1.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+						]
+					},
+				]
+				default_root_bone_name = ""
+			},
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "ModelModifier_ScaleAndMirror"
+						disabled = true
+						scale = 0.9
+						mirror_x = false
+						mirror_y = false
+						mirror_z = false
+						flip_bone_forward = false
+						swap_left_and_right_bones = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Finger_Middle_1_L"
+								parent_bone = "Finger_Middle_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.240883, -0.5, -1.452316 ]
+								hitbox_maxs = [ 1.105163, 6.833384, 1.457901 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Middle_2_L"
+								parent_bone = "Finger_Middle_2_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.012105, -0.851408, -1.212311 ]
+								hitbox_maxs = [ 0.949841, 6.160962, 1.208466 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Index_1_L"
+								parent_bone = "Finger_Index_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.842145, -5.720603, -1.981659 ]
+								hitbox_maxs = [ 3.214519, 6.510099, 2.508636 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Index_2_L"
+								parent_bone = "Finger_Index_2_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.064692, -0.661478, -1.229767 ]
+								hitbox_maxs = [ 0.939052, 5.672824, 1.219406 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Ring_1_L"
+								parent_bone = "Finger_Ring_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.0447, -0.5, -1.205719 ]
+								hitbox_maxs = [ 0.961252, 6.48225, 1.43573 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Ring_2_L"
+								parent_bone = "Finger_Ring_2_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.001412, -0.570667, -1.203583 ]
+								hitbox_maxs = [ 0.947414, 5.660513, 1.201141 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Pinky_1_L"
+								parent_bone = "Finger_Pinky_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.611196, -2.084435, -1.670624 ]
+								hitbox_maxs = [ 1.303957, 5.640062, 2.013763 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Pinky_2_L"
+								parent_bone = "Finger_Pinky_2_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.97864, -0.5, -1.129776 ]
+								hitbox_maxs = [ 0.848269, 5.111447, 1.129562 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Thumb_1_L"
+								parent_bone = "Finger_Thumb_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.515341, -4.686611, -3.309738 ]
+								hitbox_maxs = [ 4.524755, 6.153536, 3.241714 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Thumb_2_L"
+								parent_bone = "Finger_Thumb_2_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.239047, -2.334835, -1.324051 ]
+								hitbox_maxs = [ 2.708642, 4.258664, 2.23645 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Middle_1_R"
+								parent_bone = "Finger_Middle_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.105165, -0.5, -1.452316 ]
+								hitbox_maxs = [ 3.240882, 6.833359, 1.457886 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Middle_2_R"
+								parent_bone = "Finger_Middle_2_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.949842, -0.851393, -1.212341 ]
+								hitbox_maxs = [ 1.012103, 6.160931, 1.20845 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Index_1_R"
+								parent_bone = "Finger_Index_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.21452, -5.720567, -1.981659 ]
+								hitbox_maxs = [ 2.842143, 6.510077, 2.508621 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Index_2_R"
+								parent_bone = "Finger_Index_2_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.939055, -0.661499, -1.229797 ]
+								hitbox_maxs = [ 1.064691, 5.672756, 1.219376 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Ring_1_R"
+								parent_bone = "Finger_Ring_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.260493, -0.5, -1.205688 ]
+								hitbox_maxs = [ 1.044698, 6.482255, 1.440125 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Ring_2_R"
+								parent_bone = "Finger_Ring_2_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.947418, -0.570684, -1.203552 ]
+								hitbox_maxs = [ 1.001409, 5.66052, 1.201172 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Pinky_1_R"
+								parent_bone = "Finger_Pinky_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.30396, -2.084435, -1.670624 ]
+								hitbox_maxs = [ 3.611194, 5.640059, 2.013763 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Pinky_2_R"
+								parent_bone = "Finger_Pinky_2_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.848272, -0.5, -1.129807 ]
+								hitbox_maxs = [ 0.978636, 5.111421, 1.129532 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Thumb_1_R"
+								parent_bone = "Finger_Thumb_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.524766, -3.552467, -3.309723 ]
+								hitbox_maxs = [ 4.07363, 6.153517, 3.241852 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Finger_Thumb_2_R"
+								parent_bone = "Finger_Thumb_2_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.708641, -2.334848, -1.324112 ]
+								hitbox_maxs = [ 2.239053, 4.25866, 2.236923 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Waist"
+								parent_bone = "Waist"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.533115, -15.7967, -10.487896 ]
+								hitbox_maxs = [ 20.533127, 31.078819, 9.792198 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Shest"
+								parent_bone = "Shest"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -58.206768, -139.370819, -56.972847 ]
+								hitbox_maxs = [ 62.000965, 47.3358, 49.737106 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Neck"
+								parent_bone = "Neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.443796, -4.699509, -6.14576 ]
+								hitbox_maxs = [ 7.443811, 7.969803, 6.729716 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Head"
+								parent_bone = "Head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.039097, -8.270157, -8.696247 ]
+								hitbox_maxs = [ 9.886246, 16.324631, 11.39212 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Clavicle_L"
+								parent_bone = "Clavicle_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.72611, -11.250323, -19.154861 ]
+								hitbox_maxs = [ 6.687639, 22.260509, 10.859451 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Shoulder_L"
+								parent_bone = "Shoulder_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.883806, -14.01185, -4.879883 ]
+								hitbox_maxs = [ 7.342282, 21.975569, 8.471207 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Forearm_L"
+								parent_bone = "Forearm_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.414821, -6.605278, -4.200241 ]
+								hitbox_maxs = [ 6.032924, 34.795731, 5.254395 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Clavicle_R"
+								parent_bone = "Clavicle_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.687639, -11.250328, -19.154861 ]
+								hitbox_maxs = [ 12.726114, 22.260483, 10.859451 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Shoulder_R"
+								parent_bone = "Shoulder_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.342284, -14.011997, -4.879974 ]
+								hitbox_maxs = [ 6.883805, 21.97551, 8.470993 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Forearm_R"
+								parent_bone = "Forearm_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.032948, -6.605297, -4.20015 ]
+								hitbox_maxs = [ 6.414798, 34.795708, 5.254547 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Thigh_L"
+								parent_bone = "Thigh_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -16.714924, -18.715958, -11.833473 ]
+								hitbox_maxs = [ 8.090801, 50.045906, 9.692486 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Thigh_R"
+								parent_bone = "Thigh_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.12071, -18.715958, -11.609644 ]
+								hitbox_maxs = [ 16.734928, 50.043213, 9.849174 ]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = "Imported from VMDL\n==Warnings==\nChanged incompatible hitbox parent bone name 'Bip01 Pelvis' to 'Bip01_Pelvis'\nChanged incompatible hitbox parent bone name 'Bip01 Spine' to 'Bip01_Spine'\nChanged incompatible hitbox parent bone name 'Bip01 Spine1' to 'Bip01_Spine1'\nChanged incompatible hitbox parent bone name 'Bip01 Spine2' to 'Bip01_Spine2'\nChanged incompatible hitbox parent bone name 'Bip01 Neck' to 'Bip01_Neck'\nChanged incompatible hitbox parent bone name 'Bip01 Head' to 'Bip01_Head'\nChanged incompatible hitbox parent bone name 'Bip01 L Clavicle' to 'Bip01_L_Clavicle'\nChanged incompatible hitbox parent bone name 'Bip01 R Clavicle' to 'Bip01_R_Clavicle'\nChanged incompatible hitbox parent bone name 'Bip01 L UpperArm' to 'Bip01_L_UpperArm'\nChanged incompatible hitbox parent bone name 'Bip01 R UpperArm' to 'Bip01_R_UpperArm'\nChanged incompatible hitbox parent bone name 'Bip01 L Thigh' to 'Bip01_L_Thigh'\nChanged incompatible hitbox parent bone name 'Bip01 R Thigh' to 'Bip01_R_Thigh'\nChanged incompatible hitbox parent bone name 'Bip01 L Hand' to 'Bip01_L_Hand'\nChanged incompatible hitbox parent bone name 'Bip01 R Hand' to 'Bip01_R_Hand'\nChanged incompatible hitbox parent bone name 'Bip01 L Calf' to 'Bip01_L_Calf'\nChanged incompatible hitbox parent bone name 'Bip01 R Calf' to 'Bip01_R_Calf'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger0' to 'Bip01_L_Finger0'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger1' to 'Bip01_L_Finger1'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger2' to 'Bip01_L_Finger2'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger0' to 'Bip01_R_Finger0'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger1' to 'Bip01_R_Finger1'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger2' to 'Bip01_R_Finger2'\nChanged incompatible hitbox parent bone name 'Bip01 L Foot' to 'Bip01_L_Foot'\nChanged incompatible hitbox parent bone name 'Bip01 R Foot' to 'Bip01_R_Foot'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger01' to 'Bip01_L_Finger01'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger11' to 'Bip01_L_Finger11'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger21' to 'Bip01_L_Finger21'\nChanged incompatible hitbox parent bone name 'Bip01 L ForeTwist' to 'Bip01_L_ForeTwist'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger01' to 'Bip01_R_Finger01'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger11' to 'Bip01_R_Finger11'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger21' to 'Bip01_R_Finger21'\nChanged incompatible hitbox parent bone name 'Bip01 R ForeTwist' to 'Bip01_R_ForeTwist'\nChanged incompatible hitbox parent bone name 'Bip01 L Toe0' to 'Bip01_L_Toe0'\nChanged incompatible hitbox parent bone name 'Bip01 R Toe0' to 'Bip01_R_Toe0'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger02' to 'Bip01_L_Finger02'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger12' to 'Bip01_L_Finger12'\nChanged incompatible hitbox parent bone name 'Bip01 L Finger22' to 'Bip01_L_Finger22'\nChanged incompatible hitbox parent bone name 'Bip01 L ForeTwist1' to 'Bip01_L_ForeTwist1'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger02' to 'Bip01_R_Finger02'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger12' to 'Bip01_R_Finger12'\nChanged incompatible hitbox parent bone name 'Bip01 R Finger22' to 'Bip01_R_Finger22'\nChanged incompatible hitbox parent bone name 'Bip01 R ForeTwist1' to 'Bip01_R_ForeTwist1'\nChanged incompatible bone name 'Bip01 Spine2' to 'Bip01_Spine2'\nChanged incompatible bone name 'Bip01 Head' to 'Bip01_Head'\nChanged incompatible bone name 'Bip01 Head' to 'Bip01_Head'\n"
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

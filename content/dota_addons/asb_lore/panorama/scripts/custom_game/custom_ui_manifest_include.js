@@ -45,21 +45,9 @@ GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "file://{res
 GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "file://{resources}/images/custom_game/team_icons/team_icon_snake_01.png";
 GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "file://{resources}/images/custom_game/team_icons/team_icon_horse_01.png";
 
-function FindDotaHudElementTest(id)
-{  
-	var hudRoot;
-	for ( panel = $.GetContextPanel(); panel != null; panel = panel.GetParent() )
-	{
-		hudRoot = panel;
-	}
-	
-	var comp = hudRoot.FindChildTraverse(id);
-	return comp;
-}
-
 function OnGameRulesStateChangeTest(keys)
 {  
-	var PreGame = FindDotaHudElementTest("PreGame");
+	var PreGame = FindDotaHudElement("PreGame");
 
 	PreGame.style.opacity = Game.GameStateIsBefore(3) && "0" || "1";
 }
