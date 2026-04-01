@@ -315,9 +315,12 @@ end
 function ROLAND_CastFilterResult(hUnit, hCard, hTarget, vLocation)
 	if Convars:GetBool("dota_ability_debug") then return UF_SUCCESS end
 	local sFilterError
-	-- if not sFilterError and not ROLAND_IsTurnPhase(hUnit) then
-	-- 	sFilterError = "custom_error_roland_not_turn_phase"
-	-- end
+	if not sFilterError and not ROLAND_IsTurnPhase(hUnit) then
+		local hChangeAbility = hUnit:FindAbilityByName("roland_change")
+		if IsNotNull(hChangeAbility) and hChangeAbility:GetToggleState() then
+			sFilterError = "custom_error_roland_not_turn_phase"
+		end
+	end
 	if not sFilterError and not ROLAND_IsLightEnough(hUnit, hCard) then
 		sFilterError = "custom_error_roland_not_enough_light"
 	end
@@ -563,9 +566,18 @@ end
 function roland_turn_start:GetIntrinsicModifierName()
 	return "modifier_roland_turn_card_pool"
 end
+function roland_turn_start:GetBehavior()
+	local nBehavior = self.BaseClass.GetBehavior(self)
+	if IsServer() and self:GetAutoCastState() then
+		return bit.bxor(nBehavior, DOTA_ABILITY_BEHAVIOR_AUTOCAST)
+	end
+	return nBehavior
+end
 function roland_turn_start:OnSpellStart()
 	local hCaster = self:GetCaster()
 	local vPoint = self:GetCursorPosition()
+
+	local hChangeAbility = hCaster:FindAbilityByName("roland_change")
 
 	local vPosCaster = hCaster:GetAbsOrigin()
 
@@ -619,7 +631,12 @@ function roland_turn_start:OnSpellStart()
 	end
 
 	local function OnEnd(hTarget, bInterrupted)
-		if bInterrupted or IsNull(hTarget) then return end
+		if bInterrupted then return end
+		if IsNotNull(hChangeAbility) and hChangeAbility:GetToggleState() then
+			ROLAND_TurnStart(hCaster, self, self:GetSpecialValueFor("turn_time"), vPosCaster)
+			return
+		end
+		if IsNull(hTarget) then return end
 
 		local hCardNext = ROLAND_TurnCardGet(hCaster, 1)
 		if IsNull(hCardNext) then
@@ -627,9 +644,9 @@ function roland_turn_start:OnSpellStart()
 			return
 		end
 
-		ROLAND_TurnStart(hCaster, self, self:GetSpecialValueFor("turn_time"), vPosCaster)
-
 		hCardNext:TurnPlayNext(hCaster, hTarget, vDir)
+
+		ROLAND_TurnStart(hCaster, self, self:GetSpecialValueFor("turn_time"), vPosCaster)
 	end
 
 	tDash.on_hit = OnHit
@@ -1096,7 +1113,7 @@ function modifier_roland_streak_controller_sounds:IsDebuff()															retur
 function modifier_roland_streak_controller_sounds:IsPurgable()															return false end
 function modifier_roland_streak_controller_sounds:IsPurgeException()													return false end
 function modifier_roland_streak_controller_sounds:RemoveOnDeath()														return false end
-function modifier_roland_streak_controller_sounds:DestroyOnExpire()														return false end
+-- function modifier_roland_streak_controller_sounds:DestroyOnExpire()														return false end
 function modifier_roland_streak_controller_sounds:GetAttributes()														return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
 function modifier_roland_streak_controller_sounds:GetPriority()															return MODIFIER_PRIORITY_SUPER_ULTRA end
 function modifier_roland_streak_controller_sounds:DeclareFunctions()
@@ -1110,9 +1127,12 @@ function modifier_roland_streak_controller_sounds:OnHeroKilled(keys)
 	if not IsServer() then return end
 	if keys.attacker:GetOwner() == keys.target:GetOwner() then return end
 	if keys.target:GetOwner() == self._hParent:GetOwner() then
+		self._bKillStreak10 = false
+		self._bKillStreak5 = false
 		self._nKillStreak = 0
 		self._nDeathStreak = self._nDeathStreak + 1
-		if self._nDeathStreak >= 5 then
+		if self._nDeathStreak >= 5 and not self._bDeathStreak5 then
+			self._bDeathStreak5 = true
 			StopSoundOn("roland_streak.lose_5", self._hParent)
 			StopSoundOn("roland_streak.win_5", self._hParent)
 			StopSoundOn("roland_streak.win_10", self._hParent)
@@ -1121,19 +1141,24 @@ function modifier_roland_streak_controller_sounds:OnHeroKilled(keys)
 		end
 	end
 	if keys.attacker:GetOwner() == self._hParent:GetOwner() then
+		self._bDeathStreak5 = false
 		self._nDeathStreak = 0
 		self._nKillStreak = self._nKillStreak + 1
-		if self._nKillStreak >= 10 then
-	StopSoundOn("roland_streak.lose_5", self._hParent)
-	StopSoundOn("roland_streak.win_5", self._hParent)
-	StopSoundOn("roland_streak.win_10", self._hParent)
+		if self._nKillStreak >= 10 and not self._bKillStreak10 then
+			self._bKillStreak10 = true
+			StopSoundOn("roland_streak.lose_5", self._hParent)
+			StopSoundOn("roland_streak.win_5", self._hParent)
+			StopSoundOn("roland_streak.win_10", self._hParent)
 			EmitSoundOn("roland_streak.win_10", self._hParent)
+			self._hParent:AddNewModifier(self._hCaster, self._hAbility, "modifier_roland_invul_reading", {duration = self._hAbility:GetSpecialValueFor("streak_10_cast_duration")})
 			return
 		end
-		if self._nKillStreak >= 5 then
-	StopSoundOn("roland_streak.lose_5", self._hParent)
-	StopSoundOn("roland_streak.win_5", self._hParent)
-	StopSoundOn("roland_streak.win_10", self._hParent)
+		if self._nKillStreak >= 5 and not self._bKillStreak5 then
+			self._bKillStreak5 = true
+			StopSoundOn("roland_streak.lose_5", self._hParent)
+			StopSoundOn("roland_streak.win_5", self._hParent)
+			StopSoundOn("roland_streak.win_10", self._hParent)
+
 			EmitSoundOn("roland_streak.win_5", self._hParent)
 			return
 		end
@@ -1152,6 +1177,176 @@ end
 function modifier_roland_streak_controller_sounds:OnRefresh(tInfo)
 	self:OnCreated(tInfo)
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--====================================================================================================--
+LinkLuaModifier("modifier_roland_invul_reading", "heroes/roland/roland_card", LUA_MODIFIER_MOTION_NONE)
+
+modifier_roland_invul_reading = class({})
+
+function modifier_roland_invul_reading:IsHidden()															return false end
+function modifier_roland_invul_reading:IsDebuff()															return false end
+function modifier_roland_invul_reading:IsPurgable()															return false end
+function modifier_roland_invul_reading:IsPurgeException()													return false end
+function modifier_roland_invul_reading:RemoveOnDeath()														return false end
+-- function modifier_roland_invul_reading:DestroyOnExpire()													return false end
+function modifier_roland_invul_reading:GetAttributes()														return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_roland_invul_reading:GetPriority()														return MODIFIER_PRIORITY_SUPER_ULTRA end
+function modifier_roland_invul_reading:CheckState()
+	local t =
+	{
+		[MODIFIER_STATE_INVULNERABLE] = true,
+		[MODIFIER_STATE_NO_HEALTH_BAR] = true,
+		[MODIFIER_STATE_STUNNED] = true,
+	}
+	return t
+end
+function modifier_roland_invul_reading:OnCreated(tInfo)
+	self._hCaster = self:GetCaster()
+	self._hParent = self:GetParent()
+	self._hAbility = self:GetAbility()
+
+	if not IsServer() then return end
+
+	local tAnim =
+	{
+		duration = self:GetDuration(),
+		pause = 0,
+		pause_sync = 1,
+		activity = ACT_DOTA_CHANNEL_ABILITY_1,
+	}
+
+	local hAnim = self._hParent:AddNewModifier(self._hParent, self._hAbility, "modifier_roland_animation_generic", tAnim)
+	if IsNull(hAnim) then return end
+
+	local hPlayer = PlayerResource:GetPlayer(self._hParent:GetPlayerOwnerID())
+	local nScreenParticle = ParticleManager:CreateParticleForPlayer("particles/heroes/roland/roland_streak/roland_streak_screen.vpcf", PATTACH_ABSORIGIN_FOLLOW, self._hParent, hPlayer)
+							ParticleManager:SetParticleControl(nScreenParticle, 9, Vector(self:GetDuration(), 0, 0))
+							ParticleManager:ReleaseParticleIndex(nScreenParticle)
+end
+function modifier_roland_invul_reading:OnRefresh(tInfo)
+	self:OnCreated(tInfo)
+end
+function modifier_roland_invul_reading:OnDestroy()
+	if not IsServer() then return end
+
+	self._hParent:AddNewModifier(self._hCaster, self._hAbility, "modifier_roland_invul_reading_buff", {duration = self._hAbility:GetSpecialValueFor("streak_10_buff_duration")})
+end
+
+
+
+
+
+
+
+--====================================================================================================--
+LinkLuaModifier("modifier_roland_invul_reading_buff", "heroes/roland/roland_card", LUA_MODIFIER_MOTION_NONE)
+
+modifier_roland_invul_reading_buff = class({})
+
+function modifier_roland_invul_reading_buff:IsHidden()															return false end
+function modifier_roland_invul_reading_buff:IsDebuff()															return false end
+function modifier_roland_invul_reading_buff:IsPurgable()														return false end
+function modifier_roland_invul_reading_buff:IsPurgeException()													return false end
+function modifier_roland_invul_reading_buff:RemoveOnDeath()														return false end
+-- function modifier_roland_invul_reading_buff:DestroyOnExpire()													return false end
+function modifier_roland_invul_reading_buff:GetAttributes()														return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_roland_invul_reading_buff:GetPriority()														return MODIFIER_PRIORITY_SUPER_ULTRA end
+function modifier_roland_invul_reading_buff:DeclareFunctions()
+	local t =
+	{
+		MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE,
+		MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
+		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+	}
+	return t
+end
+function modifier_roland_invul_reading_buff:GetModifierMoveSpeed_Absolute(keys)
+	return self._streak_10_buff_abs_ms
+end
+function modifier_roland_invul_reading_buff:GetModifierPercentageCooldown(keys)
+	return self._streak_10_buff_cdr
+end
+function modifier_roland_invul_reading_buff:GetModifierSpellAmplify_Percentage(keys)
+	return self._streak_10_buff_amp
+end
+function modifier_roland_invul_reading_buff:OnCreated(tInfo)
+	self._hCaster = self:GetCaster()
+	self._hParent = self:GetParent()
+	self._hAbility = self:GetAbility()
+
+	if not IsServer() then return end
+
+	self._streak_10_buff_abs_ms = self._hAbility:GetSpecialValueFor("streak_10_buff_abs_ms")
+	self._streak_10_buff_cdr = self._hAbility:GetSpecialValueFor("streak_10_buff_cdr")
+	self._streak_10_buff_amp = self._hAbility:GetSpecialValueFor("streak_10_buff_amp")
+
+	local tAnim =
+	{
+		duration = 0.2,
+		pause = 0,
+		pause_sync = 1,
+		activity = ACT_DOTA_CAST_ABILITY_4,
+		rate = GetAnimPlayRate(29, 29, 30, 0.2),
+		rate_time = 0.2,
+	}
+
+	local hAnim = self._hParent:AddNewModifier(self._hParent, self._hAbility, "modifier_roland_animation_generic", tAnim)
+	if IsNull(hAnim) then return end
+
+	local nPFX = ParticleManager:CreateParticle("particles/heroes/roland/roland_streak/roland_streak_buff.vpcf", PATTACH_ABSORIGIN_FOLLOW, self._hParent)
+
+	self:AddParticle(nPFX, false, false, -1, false, false)
+end
+function modifier_roland_invul_reading_buff:OnRefresh(tInfo)
+	self:OnCreated(tInfo)
+end
+function modifier_roland_invul_reading_buff:OnDestroy()
+	if not IsServer() then return end
+
+	local tAnim =
+	{
+		duration = 0.2,
+		pause = 0,
+		pause_sync = 1,
+		activity = ACT_DOTA_CAST_ABILITY_4_END,
+		rate = GetAnimPlayRate(17, 17, 30, 0.2),
+		rate_time = 0.2,
+	}
+
+	local hAnim = self._hParent:AddNewModifier(self._hParent, self._hAbility, "modifier_roland_animation_generic", tAnim)
+	if IsNull(hAnim) then return end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1196,6 +1391,15 @@ end
 function roland_card:GetCustomCastErrorLocation(vLocation)
 	return self._sFilterError
 end
+function roland_card:GetBehavior()
+	local hCaster = self:GetCaster()
+	local nBehavior = self.BaseClass.GetBehavior(self)
+	local hChangeAbility = hCaster:FindAbilityByName("roland_change")
+	if IsNotNull(hChangeAbility) and hChangeAbility:GetToggleState() and not string.match(self:GetAbilityName(), "roland_slot_") then
+		return DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_DIRECTIONAL + DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING + DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES
+	end
+	return nBehavior
+end
 function roland_card:OnSpellStart()
 	local hCaster = self:GetCaster()
 
@@ -1205,11 +1409,23 @@ function roland_card:OnSpellStart()
 		ROLAND_LightSpend(hCaster, nCost)
 	end
 
+	local bCardMode = true
+	local hChangeAbility = hCaster:FindAbilityByName("roland_change")
+	if IsNotNull(hChangeAbility) then
+		bCardMode = not hChangeAbility:GetToggleState()
+	end
+
 	local hTurnAbility = hCaster:FindAbilityByName("roland_turn_start")
 	if IsNotNull(hTurnAbility) then
 		local nCD = math.max(0, hTurnAbility:GetCooldownTimeRemaining() + self:GetSpecialValueFor("turn_cd_reduce")) * hCaster:GetCooldownReduction()
 		hTurnAbility:EndCooldown()
 		hTurnAbility:StartCooldown(nCD)
+	end
+
+	if not bCardMode then
+		local vPoint = self:GetCursorPosition()
+		self:PreCastDashToTarget(hCaster, vPoint, GetDirection(vPoint, hCaster))
+		return
 	end
 
 	ROLAND_TurnCardAdd(hCaster, self, self:GetSpecialValueFor("rarity"), nCost, self:GetSpecialValueFor("type"))
@@ -1397,6 +1613,11 @@ end
 
 
 function roland_card:TurnPlayNext(hCaster, hTarget, vDir)
+	local hChangeAbility = hCaster:FindAbilityByName("roland_change")
+	if IsNotNull(hChangeAbility) and hChangeAbility:GetToggleState() then
+		return
+	end
+
 	local hCardNext = ROLAND_TurnCardGet(hCaster, 1)
 	if IsNull(hCardNext) then
 		ROLAND_TurnEnd(hCaster)
@@ -1509,3 +1730,47 @@ roland_slot_4 = class(roland_card)
 --====================================================================================================--
 --====================================================================================================--
 roland_slot_5 = class(roland_card)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+roland_change = class({})
+
+function roland_change:ResetToggleOnRespawn()							return false end
+function roland_change:OnOwnerDied()									end
+function roland_change:OnOwnerSpawned()									end
+function roland_change:OnOwnerSpawned()
+	if self._bToggleState and self._bToggleState ~= self:GetToggleState() then
+		self:ToggleAbility()
+	end
+end
+function roland_change:GetAbilityTextureName()
+	return self:GetToggleState() and "heroes/roland/roland_change_2" or "heroes/roland/roland_change_1"
+end
+function roland_change:OnToggle()
+	local hCaster = self:GetCaster()
+	local bAlive = hCaster:IsAlive()
+	local bToggle = bAlive and self:GetToggleState()
+
+	if bAlive then
+		self._bToggleState = bToggle
+	end
+
+	self:SetActivated(false)
+end

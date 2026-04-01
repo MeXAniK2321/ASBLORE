@@ -17,7 +17,7 @@
 		"VoiceFile"					"soundevents/heroes/roland/voice/roland_base.vsndevts"
 		"SoundSet"					"roland_base"
 		//"VoiceBackgroundSound"		""
-		"IdleSoundLoop"				"roland_portrait"
+		// "IdleSoundLoop"				"roland_portrait"
 		"HeroSelectSoundEffect"		"roland_base.Pick"
 
 		"precache"
@@ -39,7 +39,7 @@
 
 		"Ability8"					"roland_bleed"
 
-		"Ability9"					"generic_hidden"
+		"Ability9"					"roland_change"
 
 		"Ability10"					"special_bonus_hp_400"//"special_bonus_roland_10r"
 		"Ability11"					"special_bonus_roland_10l"

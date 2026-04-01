@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc37:version{9e04b9aa-f073-4e59-8923-ff57489eb2c7} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -135,8 +135,8 @@
 								surface_property = ""
 								translation_only = false
 								group_id = 0
-								hitbox_mins = [ -18.351089, -12.245826, -14.941071 ]
-								hitbox_maxs = [ 17.270599, 13.315372, 13.158737 ]
+								hitbox_mins = [ -18.35109, -12.245826, -14.941071 ]
+								hitbox_maxs = [ 17.2706, 13.315372, 13.158737 ]
 							},
 							{
 								_class = "Hitbox"
@@ -465,6 +465,7 @@
 					{
 						_class = "AnimFile"
 						name = "gojo_new"
+						is_default_idle_anim = false
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -477,16 +478,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_idle"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -499,16 +503,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 647
 						end_frame = 710
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_attack"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
 						weight_list_name = ""
@@ -521,16 +528,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 38
 						end_frame = 95
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_attack2"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_ATTACK2"
 						activity_weight = 1
 						weight_list_name = ""
@@ -543,12 +553,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 103
 						end_frame = 170
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
@@ -561,6 +573,7 @@
 								activity_weight = 1
 							},
 						]
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_RUN"
 						activity_weight = 1
 						weight_list_name = ""
@@ -573,16 +586,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 731
 						end_frame = 756
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_run"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_RUN"
 						activity_weight = 1
 						weight_list_name = ""
@@ -595,16 +611,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 1546
 						end_frame = 1570
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_idle_rare"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_IDLE_RARE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -617,16 +636,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 1685
 						end_frame = 1780
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_die"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_DIE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -639,16 +661,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 281
 						end_frame = 363
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_gojoing"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_1_END"
 						activity_weight = 1
 						weight_list_name = ""
@@ -661,16 +686,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2973
 						end_frame = 3004
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_idk"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
@@ -683,16 +711,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 1635
 						end_frame = 1635
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_hollow_purple"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
@@ -705,16 +736,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 1220
 						end_frame = 1320
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_cast_red_orb"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
@@ -727,16 +761,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 1155
 						end_frame = 1200
 						framerate = 60.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_cast_blue_orb"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
@@ -749,16 +786,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 945
 						end_frame = 1030
 						framerate = 60.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick1"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_5"
 						activity_weight = 1
 						weight_list_name = ""
@@ -771,16 +811,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3500
 						end_frame = 3530
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick2"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
@@ -793,16 +836,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3537
 						end_frame = 3580
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick3"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_7"
 						activity_weight = 1
 						weight_list_name = ""
@@ -815,16 +861,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3591
 						end_frame = 3640
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick4"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ABILITY_ROT"
 						activity_weight = 1
 						weight_list_name = ""
@@ -837,16 +886,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3640
 						end_frame = 3700
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick5"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ALACRITY"
 						activity_weight = 1
 						weight_list_name = ""
@@ -859,16 +911,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3700
 						end_frame = 3750
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick6"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ALACRITY_ORB"
 						activity_weight = 1
 						weight_list_name = ""
@@ -881,16 +936,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3750
 						end_frame = 3770
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_kick7"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_CHAOS_METEOR"
 						activity_weight = 1
 						weight_list_name = ""
@@ -903,12 +961,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3796
 						end_frame = 3830
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
@@ -921,6 +981,7 @@
 								activity_weight = 1
 							},
 						]
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -933,12 +994,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3290
 						end_frame = 3360
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
@@ -951,6 +1014,7 @@
 								activity_weight = 1
 							},
 						]
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
 						weight_list_name = ""
@@ -963,12 +1027,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3380
 						end_frame = 3425
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
@@ -981,6 +1047,7 @@
 								activity_weight = 1
 							},
 						]
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_ATTACK2"
 						activity_weight = 1
 						weight_list_name = ""
@@ -993,12 +1060,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3435
 						end_frame = 3480
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
@@ -1011,6 +1080,7 @@
 								activity_weight = 1
 							},
 						]
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_RUN"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1023,16 +1093,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 731
 						end_frame = 756
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_charge_punch_full"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_THIRST"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1045,16 +1118,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2747
 						end_frame = 2813
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_land_punch"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_THUNDER_STRIKE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1067,16 +1143,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3012
 						end_frame = 3079
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_i_am_not_sure"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_TINKER_REARM1"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1089,16 +1168,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3180
 						end_frame = 3280
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_domain_full_maybe"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_TINKER_REARM2"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1111,16 +1193,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2714
 						end_frame = 2740
 						framerate = 26.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_might_be_useful"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_TINKER_REARM3"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1133,16 +1218,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2015
 						end_frame = 2071
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_charge_punch_start"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_TORRENT"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1155,16 +1243,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2747
 						end_frame = 2768
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_charge_punch_fly"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_POOF_END"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1177,16 +1268,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2768
 						end_frame = 2768
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_charge_punch_punch"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_TRICKS_END"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1199,16 +1293,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2768
 						end_frame = 2813
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_land_punch_copy"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_CAST_ICE_WALL"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1221,16 +1318,19 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 3030
 						end_frame = 3079
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "gojo_new_domain_full_maybe_copy"
+						is_default_idle_anim = false
 						activity_name = "ACT_DOTA_MEDUSA_STONE_GAZE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1243,12 +1343,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/heroes/anime/jujutsu_kaisen/gojo/gojo_new.fbx"
 						import_bone_scales = false
 						start_frame = 2740
 						end_frame = 2740
 						framerate = 30.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 				]
 				default_root_bone_name = ""
@@ -1278,8 +1380,10 @@
 								]
 							},
 						]
+						disabled = true
 						hidden_in_tools = false
 						non_bodygroup_single_choice = false
+						suppress_missing_warnings = false
 					},
 				]
 			},

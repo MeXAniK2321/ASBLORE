@@ -201,7 +201,17 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
+		PrecacheResource("model", "models/heroes/roland/units/base/gebura/gebura.vmdl", context)
 
+		PrecacheResource("model", "models/edward_elrik/canon.vmdl", context)
+		PrecacheResource("model", "models/ikaros/untitled.vmdl", context)
+		PrecacheResource("model", "models/subaru/betty/betty.vmdl", context)
+		PrecacheResource("model", "models/sans/untitled.vmdl", context)
+		PrecacheResource("model", "models/heroes/anime/jujutsu_kaisen/gojo/gojo.vmdl", context)
+		PrecacheResource("model", "models/kurapika/kurta.vmdl", context)
+		PrecacheResource("model", "models/props_wildlife/wildlife_birdlarge001.vmdl", context)
+		
+		PrecacheResource("particle", "particles/screen_spla.vpcf", context)
 		-- PrecacheResource("soundfile", "soundevents/heroes/roland/game/roland_base.vsndevts", context)
 
 

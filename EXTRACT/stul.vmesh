@@ -1,0 +1,159 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CRenderMesh"
+	m_sceneObjects = 
+	[
+		
+		{
+			m_vMinBounds = 
+			[
+				-29.780510,
+				-39.294018,
+				-26.730442,
+			]
+			m_vMaxBounds = 
+			[
+				54.778111,
+				48.413174,
+				118.253151,
+			]
+			m_drawCalls = 
+			[
+				
+				{
+					m_nPrimitiveType = "RENDER_PRIM_TRIANGLES"
+					m_nBaseVertex = 0
+					m_nVertexCount = 107810
+					m_nStartIndex = 0
+					m_nIndexCount = 196590
+					m_nStartInstance = 0
+					m_nInstanceCount = 0
+					m_flUvDensity = 10.925190
+					m_vTintColor = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_CullDataIndex = -1
+					m_nMeshID = 0
+					m_indexBuffer = 
+					{
+						m_hBuffer = 0
+						m_nBindOffsetBytes = 0
+					}
+					m_material = resource:"materials/dev/primary_white.vmat"
+					m_vertexBuffers = 
+					[
+						
+						{
+							m_hBuffer = 0
+							m_nBindOffsetBytes = 0
+						},
+					]
+					m_bUseCompressedNormalTangent = true
+				},
+				
+				{
+					m_nPrimitiveType = "RENDER_PRIM_TRIANGLES"
+					m_nBaseVertex = 0
+					m_nVertexCount = 65775
+					m_nStartIndex = 0
+					m_nIndexCount = 122211
+					m_nStartInstance = 0
+					m_nInstanceCount = 0
+					m_flUvDensity = 1.651355
+					m_vTintColor = 
+					[
+						1.000000,
+						1.000000,
+						1.000000,
+					]
+					m_CullDataIndex = -1
+					m_nMeshID = 0
+					m_indexBuffer = 
+					{
+						m_hBuffer = 1
+						m_nBindOffsetBytes = 0
+					}
+					m_material = resource:"materials/dev/primary_white.vmat"
+					m_vertexBuffers = 
+					[
+						
+						{
+							m_hBuffer = 1
+							m_nBindOffsetBytes = 0
+						},
+					]
+					m_bUseCompressedNormalTangent = true
+				},
+			]
+			m_drawCullData = 
+			[
+			]
+			m_vTintColor = 
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			]
+		},
+	]
+	m_constraints = 
+	[
+	]
+	m_skeleton = 
+	{
+		m_bones = 
+		[
+			
+			{
+				m_boneName = "Bone"
+				m_parentName = ""
+				m_invBindPose = 
+				[
+					0.000000,
+					1.000000,
+					0.000000,
+					0.910745,
+					0.984868,
+					0.000000,
+					0.173306,
+					3.821991,
+					0.173306,
+					0.000000,
+					-0.984868,
+					-21.719662,
+				]
+				m_bbox = 
+				{
+					m_vecCenter = 
+					[
+						5.470322,
+						21.455093,
+						-65.135513,
+					]
+					m_vecSize = 
+					[
+						43.853596,
+						47.213112,
+						65.441177,
+					]
+				}
+				m_flSphereRadius = 147.250031
+			},
+		]
+		m_boneParents = 
+		[
+		]
+		m_nBoneWeightCount = 1
+	}
+	m_attachments = 
+	[
+	]
+	m_hitboxsets = 
+	[
+	]
+	m_morphSet = null
+}

@@ -353,19 +353,19 @@ function gogeta_kamehameha:OnSpellStart()
     -- Set a timer for finding enemies in a straight line
     Timers:CreateTimer(timer_delay, function()
         if timer_stop >= timer_duration or hCaster:IsStunned() or not hCaster:IsAlive() or not hCaster:HasModifier(hModifierName) then
-            if IsNotNull(pfx) then 
+            if pfx then 
                 ParticleManager:DestroyParticle( pfx, true )
                 ParticleManager:ReleaseParticleIndex( pfx )
             end
-            if IsNotNull(pfx_ball) then 
+            if pfx_ball then 
                 ParticleManager:DestroyParticle( pfx_ball, true )
                 ParticleManager:ReleaseParticleIndex( pfx_ball )
             end
-            if IsNotNull(pfx_air) then 
+            if pfx_air then 
                 ParticleManager:DestroyParticle( pfx_air, true )
                 ParticleManager:ReleaseParticleIndex( pfx_air )
             end
-            if IsNotNull(pfx_end) then
+            if pfx_end then
                 ParticleManager:DestroyParticle( pfx_end, true )
                 ParticleManager:ReleaseParticleIndex( pfx_end )
             end

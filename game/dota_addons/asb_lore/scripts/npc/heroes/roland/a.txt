@@ -1,5 +1,17 @@
 "DOTAAbilities"
 {
+	"roland_change"
+	{
+		"BaseClass"									"ability_lua"
+
+		"ScriptFile"								"heroes/roland/roland_card"
+		"AbilityTextureName"						"heroes/roland/roland_change"
+
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+		"MaxLevel"									"1"
+		"IsLearned"									"1"
+	}
 	//=======================================================================================================
 	"roland_card"
 	{
@@ -131,9 +143,15 @@
 			"ability_cast_cc_immune_time"			"2"
 
 			"furioso_slot_to_draw"					"5"
-			"furioso_stack_duration"				"15"
+			"furioso_stack_duration"				"30"
 
 			"cast_hit_radius"						"128"
+
+			"streak_10_cast_duration"				"20"
+			"streak_10_buff_duration"				"30"
+			"streak_10_buff_abs_ms"					"1000"
+			"streak_10_buff_cdr"					"-30"
+			"streak_10_buff_amp"					"30"
 		}
 	}
 	//=======================================================================================================
@@ -622,7 +640,7 @@
 		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"						"SPELL_DISPELLABLE_NO"
 
-		"AbilityCooldown"							"30"
+		"AbilityCooldown"							"80"
 
 		"MaxLevel"									"1"
 
@@ -869,7 +887,7 @@
 
 		"AbilityValues"
 		{
-			"value"									"3"
+			"value"									"1.5"
 		}
 	}
 

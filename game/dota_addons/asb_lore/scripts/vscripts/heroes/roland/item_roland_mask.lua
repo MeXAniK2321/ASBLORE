@@ -5,6 +5,9 @@ require("heroes/roland/roland_card")
 --====================================================================================================--
 item_roland_mask = item_roland_mask or class({})
 
+function item_roland_mask:Precache(context)
+	PrecacheUnitByNameSync("npc_roland_gebura", context, nil)
+end
 function item_roland_mask:GetIntrinsicModifierName()
 	return "modifier_item_roland_mask"
 end
@@ -51,6 +54,24 @@ function item_roland_mask:OnSpellStart()
 	else
 		local _hGeburaNPC = fCallback(CreateUnitByName(sUnitName, vSpawnLoc, true, hCaster, hCaster, hCaster:GetTeamNumber()), false)
 	end
+
+
+	-- local therolist = LoadKeyValues("scripts/npc/herolist.txt")
+
+	-- for sHeroName, enable in pairs(therolist) do
+	-- 	if enable > 0 then
+	-- 		PrecacheUnitByNameAsync(sHeroName, function(nID)
+	-- 			local hHero = CreateUnitByName(sHeroName, vSpawnLoc, true, hCaster, hCaster, hCaster:GetTeamNumber())
+	-- 			hHero:AddItemByName("item_pandora_box")
+	-- 			hHero:SetControllableByPlayer(hCaster:GetPlayerOwnerID(), false)
+	-- 			for i = 1, 30 do
+	-- 				hHero:HeroLevelUp(false)
+	-- 			end
+	-- 		end, hCaster:GetPlayerOwnerID())
+
+
+	-- 	end
+	-- end
 end
 
 --====================================================================================================--

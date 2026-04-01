@@ -98,7 +98,7 @@ function roland_gebura_horizontal:SlashCast(tInfo)
 				self:DoDamage({
 					target = hEnt,
 					caster = tInfo.caster,
-					damage = tInfo.damage - 1000,
+					damage = tInfo.damage,
 				})
 
 				

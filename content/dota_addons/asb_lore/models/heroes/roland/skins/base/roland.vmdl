@@ -137,7 +137,7 @@
 						_class = "Attachment"
 						name = "ATTACH_LOGIC"
 						parent_bone = "Hand_R"
-						relative_origin = [ 17.037567, 77.185371, 0.780458 ]
+						relative_origin = [ 17.037567, 77.18537, 0.780458 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
@@ -214,7 +214,7 @@
 								_class = "AnimFile"
 								name = "buffed"
 								is_default_idle_anim = false
-								activity_name = ""
+								activity_name = "ACT_DOTA_CAST_ABILITY_4"
 								activity_weight = 1
 								weight_list_name = ""
 								fade_in_time = 0.2
@@ -239,7 +239,7 @@
 								_class = "AnimFile"
 								name = "debuffed"
 								is_default_idle_anim = false
-								activity_name = ""
+								activity_name = "ACT_DOTA_CAST_ABILITY_4_END"
 								activity_weight = 1
 								weight_list_name = ""
 								fade_in_time = 0.2
@@ -2354,6 +2354,68 @@
 								reverse = false
 								additional_anim_files = [  ]
 							},
+							{
+								_class = "AnimFile"
+								name = "roland_charge"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = false
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "ActivityModifier"
+										disabled = true
+										activity_name = "ranga_slash_3"
+										activity_weight = 1
+									},
+									{
+										_class = "AnimOffset"
+										translation = [ -15.0, 0.0, 0.0 ]
+										rotation_xyz = [ 0.0, 0.0, 0.0 ]
+									},
+									{
+										_class = "AnimSmoothLoop"
+										frames_from_start = 1
+										frames_from_end = 1
+									},
+									{
+										_class = "AnimForceBoneScale"
+										bone = "Knife"
+										frame = 0
+										scale = 0.0
+									},
+								]
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/heroes/roland/skins/base/roland.fbx"
+								import_bone_scales = false
+								start_frame = 409
+								end_frame = 411
+								framerate = 3.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
 						]
 					},
 				]
@@ -2592,7 +2654,7 @@
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -20.533115, -15.7967, -10.487896 ]
-								hitbox_maxs = [ 20.533127, 31.078819, 9.792198 ]
+								hitbox_maxs = [ 20.533127, 31.07882, 9.792198 ]
 							},
 							{
 								_class = "Hitbox"
@@ -2601,7 +2663,7 @@
 								surface_property = ""
 								translation_only = false
 								group_id = 0
-								hitbox_mins = [ -58.206768, -139.370819, -56.972847 ]
+								hitbox_mins = [ -58.206768, -139.37082, -56.972847 ]
 								hitbox_maxs = [ 62.000965, 47.3358, 49.737106 ]
 							},
 							{
@@ -2622,7 +2684,7 @@
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -9.039097, -8.270157, -8.696247 ]
-								hitbox_maxs = [ 9.886246, 16.324631, 11.39212 ]
+								hitbox_maxs = [ 9.886246, 16.32463, 11.39212 ]
 							},
 							{
 								_class = "Hitbox"
@@ -2632,7 +2694,7 @@
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -12.72611, -11.250323, -19.154861 ]
-								hitbox_maxs = [ 6.687639, 22.260509, 10.859451 ]
+								hitbox_maxs = [ 6.687639, 22.26051, 10.859451 ]
 							},
 							{
 								_class = "Hitbox"
@@ -2652,7 +2714,7 @@
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -6.414821, -6.605278, -4.200241 ]
-								hitbox_maxs = [ 6.032924, 34.795731, 5.254395 ]
+								hitbox_maxs = [ 6.032924, 34.79573, 5.254395 ]
 							},
 							{
 								_class = "Hitbox"
