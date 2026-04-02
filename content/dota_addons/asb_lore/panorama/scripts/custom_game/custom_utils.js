@@ -324,6 +324,10 @@ function SetImageForPanelDemonNasral(pPanel, sHeroName)
 		{
 			pPanel.SetImage( "file://{images}/heroes/ringmaster.png" );
 		}
+		else if (sHeroName == "npc_dota_hero_kez")
+		{
+			pPanel.SetImage( "file://{images}/heroes/roland.png" );
+		}
 		else if ($.BImageFileExists("file://{images}/heroes/"+sHeroName+".png"))
 		{
 			pPanel.SetImage("file://{images}/heroes/"+sHeroName+".png");

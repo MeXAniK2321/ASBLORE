@@ -22,7 +22,7 @@ function item_roland_mask:OnSpellStart()
 							if not bNotFirstSpawn then
 								self._hGeburaNPC = hUnit
 								
-								hUnit:SetUnitCanRespawn(true)
+								hUnit:SetUnitCanRespawn(false)
 								hUnit:SetControllableByPlayer(hCaster:GetPlayerOwnerID(), true)
 							else
 								FindClearSpaceForUnit(hUnit, vSpawnLoc, true)

@@ -1497,8 +1497,20 @@ function modifier_roland_furioso_invul_caster:CheckState()
 		[MODIFIER_STATE_PROVIDES_VISION] = true,
 	}
 end
-
-
+function modifier_roland_furioso_invul_caster:OnCreated(tInfo)
+	if not IsServer() then
+		self:StartIntervalThink(0.1)
+	end
+end
+function modifier_roland_furioso_invul_caster:OnIntervalThink()
+	if self:GetRemainingTime() <= 7 and not self._sounded then
+		self._sounded = true
+		EmitSoundOn("roland_die.1", self:GetParent())
+	end
+end
+function modifier_roland_furioso_invul_caster:OnDestroy()
+	StopSoundOn("roland_die.1", self:GetParent())
+end
 --====================================================================================================--
 --====================================================================================================--
 roland_furioso_ex = class(roland_furioso)
