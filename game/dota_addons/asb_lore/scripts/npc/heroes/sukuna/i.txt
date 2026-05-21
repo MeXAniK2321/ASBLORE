@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+	"item_sukuna_switch_mp"
+	{
+		"BaseClass"								"item_lua"
+
+		"ScriptFile"							"heroes/sukuna/sukuna_switch_mp"
+		"AbilityTextureName"					"heroes/sukuna/sukuna_switch_mp_phys"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_MUTED | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityCooldown"						"5"
+
+		"ItemCost"								"0"
+		"ItemPurchasable"						"0"
+		"ItemSellable"							"0"
+		"ItemDroppable" 						"0"
+
+		"ItemIsNeutralActiveDrop"				"1"
+		"ItemIsNeutralDrop"						"1"
+		
+		"AbilityValues"
+		{
+		}
+	}
+}

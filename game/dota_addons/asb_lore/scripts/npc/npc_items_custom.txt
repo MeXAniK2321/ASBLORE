@@ -1,3 +1,5 @@
+#base heroes/sukuna/i.txt
+
 "DOTAAbilities"
 {
 	"item_containers_lua_pack"

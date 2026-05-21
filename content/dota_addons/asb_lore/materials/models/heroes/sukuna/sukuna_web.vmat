@@ -1,0 +1,19 @@
+"Layer0"
+{
+	"shader"	"projected_dota.vfx"
+	"F_USE_SHEETS"	"0"
+	"F_MOD_2X"	"0"
+	"F_ADDITIVE_BLENDING"	"1"
+	"F_SLOPED"	"0"
+	"F_FALLOFF"	"0"
+	"g_flSolidRange"	"0"
+	"g_flAlphaRange"	"0"
+	"g_flFalloffRange"	"0"
+	"g_flFalloffFinal"	"0"
+	"TextureColor"	"materials/models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_color.png"
+	"TextureTranslucency"	"materials/models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_8051afe2_trans.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_color_tga_8051afe2.vtex"
+	}
+}

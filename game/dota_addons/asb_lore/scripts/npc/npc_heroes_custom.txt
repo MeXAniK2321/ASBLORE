@@ -1,6 +1,7 @@
 #base "heroes/npc_fate_hero_nanaya.kv"
 #base "heroes/npc_fate_hero_muramasa.kv"
 #base "heroes/roland/h.txt"
+#base "heroes/sukuna/h.txt"
 
 "DOTAHeroes"
 {

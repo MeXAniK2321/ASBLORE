@@ -1,0 +1,359 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	sukuna_base.PreAttack = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/pangolier/preattack01.vsnd",
+			"sounds/weapons/hero/pangolier/preattack02.vsnd",
+			"sounds/weapons/hero/pangolier/preattack03.vsnd"
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	
+	sukuna_base.Attack = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/slark/attack01.vsnd",
+			"sounds/weapons/hero/slark/attack02.vsnd",
+			"sounds/weapons/hero/slark/attack03.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_base.Pick = 
+	{
+		type = "dota_src1_2d"
+		volume = 0.500000
+		vsnd_files = "sounds/boombox/sukuna_malevolent_shrine.vsnd"
+	}
+
+
+
+
+
+
+	sukuna_r.cast =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_r_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_r.domain =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_r_domain_1.vsnd",
+			"sounds/heroes/sukuna/sukuna_r_domain_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_r.slash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_r_slash.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_fuga.cast =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_fuga_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_fuga.launch =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_fuga_launch.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_fuga.explode =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/lina/lightstrikearray.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_fuga.burn =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/batrider/batrider_firefly_loop.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_web.cast =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/kez/hunger_blade_slash_layer.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_web.slash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_slash_1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_web_slash.slash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_slash_2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_wcs_point.cast =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/kez/hunger_blade_slash.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_wcs_point.preslash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/kez/hunger_blade_slash_layer.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_slashes_aoe.slash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_slash_hit.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_slashes.laugh =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_laugh.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_dash.cast =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/pangolier/swashbuckle_cast.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_dash.smash =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/misc/ogre_smash_01.vsnd",
+			"sounds/misc/ogre_smash_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_dash.throw =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/creep/roshan/throw.vsnd",
+			"sounds/weapons/creep/roshan/throw.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_aura.heal =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/dawnbreaker/healing_touch_powerup.vsnd",
+			"sounds/weapons/hero/dawnbreaker/healing_touch_powerup.vsnd",
+		]
+		volume = "3.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+
+	sukuna_black_flash.impact =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
+			"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+}

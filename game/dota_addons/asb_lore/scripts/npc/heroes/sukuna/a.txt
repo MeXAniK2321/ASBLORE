@@ -1,0 +1,847 @@
+"DOTAAbilities"
+{
+	//=======================================================================================================
+	// МОД МАГА - Q СКИЛЛ - РАЗРЕЗ (Волна Тайда)
+	//=======================================================================================================
+	"sukuna_m_q"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_m_q"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_m_q"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ALT_CASTABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0"
+		"AbilityCooldown"							"10"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"0"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"proj_range"							"1400"
+			"proj_width"							"260"
+			"proj_speed"							"2000"
+
+			"hits"									"4"
+			"hits_tick"								"0.2"
+			"damage"								"80 120 160 200"
+
+			"ca_time"								"0.6"
+			"dash_range"							"500"
+			"dash_height"							"200"
+		}
+	}
+	//=======================================================================================================
+	// МОД МАГА - W СКИЛЛ - РАЗРЕЗ ОБЛАСТИ (2 заряда)
+	//=======================================================================================================
+	"sukuna_m_w"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_m_w"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_m_w"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.5"
+		"AbilityCooldown"							"5"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"700"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityValues"
+		{
+			"radius"								"500"
+			
+			"hits"									"10"
+			"hits_tick"								"0.2"
+			
+			"damage"								"100 140 180 220"
+
+			"slow_ms_pct"							"-30 -40 -50 -60"
+			"slow_duration"							"2.5"
+			
+			"silence_duration"						"1.0"
+
+			"AbilityCharges"		
+			{
+				"value"								"2"
+			}
+
+			"AbilityChargeRestoreTime"
+			{
+				"value"								"15"
+			}
+		}
+	}
+	//=======================================================================================================
+	// МОД МАГА - E СКИЛЛ - CLEAVE (2 применения) + БЕГ С РАЗРЕЗАНИЕМ
+	//=======================================================================================================
+	"sukuna_m_e"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_m_e"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_m_e"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.3"
+		"AbilityCooldown"							"10"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"600"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilityValues"
+		{
+			"stun_duration"							"1.0"
+			
+			"ca_time"								"0.6"
+
+			"hits_delay"							"1.0"
+			"hits"									"6"
+			"hits_tick"								"0.2"
+
+			"damage"								"120 160 200 240"
+			
+			"recast_time"							"2"
+
+			"dash_duration"							"3.0"
+			"dash_speed"							"800"
+			"dash_radius"							"300"
+			"dash_damage_interval"					"0.2"
+			"dash_damage"							"100 120 140 160"
+		}
+	}
+	//=======================================================================================================
+	// МОД МАГА - D СКИЛЛ - WEB
+	//=======================================================================================================
+	"sukuna_m_d"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_m_d"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_m_d"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.3"
+		"AbilityCooldown"							"10"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"0"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityValues"
+		{
+			"radius"								"500"
+
+			"ca_time"								"0.5"
+
+			"damage"								"200 400 600 800"
+			"stun_duration"							"2"
+		}
+	}
+
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	// МОД МАГА - F СКИЛЛ - СПЕЛЛБУК (Большие заклинания)
+	//=======================================================================================================
+	"sukuna_switch_book"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_switch_book"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_switch_book_open"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_MUTED | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"// | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityCooldown"							"5"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"precache"
+		{
+			"model_folder"							"models/heroes/sukuna"
+			"particle_folder"						"particles/heroes/sukuna"
+			"soundfile"								"soundevents/heroes/sukuna/game/sukuna_base.vsndevts"
+			"soundfile"								"soundevents/heroes/sukuna/voice/sukuna_base.vsndevts"
+		}
+
+		"AbilityValues"
+		{
+		}
+	}
+	//=======================================================================================================
+	// КНИГА - WORLD CUT SLASH
+	//=======================================================================================================
+	"sukuna_b_q"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_b_q"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_b_q"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PURE"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"							"0.2"
+		"AbilityCooldown"							"20"
+		"AbilityManaCost"							"50"
+		"AbilityCastRange"							"6000"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"recast_time"							"2"
+
+			"max_points"							"3"
+
+			"min_range"								"400"
+
+			"width"									"200"
+
+			"damage"								"1000"
+
+			"release_time"							"0.5"
+		}
+	}
+	//=======================================================================================================
+	// КНИГА - WORLD CLEAVE
+	//=======================================================================================================
+	"sukuna_b_w"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_b_w"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_b_w"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ALT_CASTABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"							"0.5"
+		"AbilityCooldown"							"20"
+		"AbilityManaCost"							"50"
+		"AbilityCastRange"							"0"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityValues"
+		{
+			"proj_range"							"6000"
+			"proj_width"							"260"
+			"proj_speed"							"2000"
+
+			"damage"								"1000"
+
+			"ca_time"								"0.6"
+		}
+	}
+	//=======================================================================================================
+	// КНИГА - WORLD NET
+	//=======================================================================================================
+	"sukuna_b_e"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_b_e"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_b_e"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"							"0.5"
+		"AbilityCooldown"							"20"
+		"AbilityManaCost"							"50"
+		"AbilityCastRange"							"1200"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilityValues"
+		{
+			"proj_range"							"1200"
+			"proj_width"							"500"
+			"proj_speed"							"2000"
+
+			"damage"								"1000"
+
+			"ca_time"								"0.3"
+
+			"dash_range"							"350"
+			"dash_height"							"0"
+
+			"casts"									"3"
+		}
+	}
+	//=======================================================================================================
+	// КНИГА - FUGA
+	//=======================================================================================================
+	"sukuna_b_d"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_b_d"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_b_d"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"							"0.5"
+		"AbilityCooldown"							"20"
+		"AbilityManaCost"							"50"
+		"AbilityCastRange"							"2200"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityValues"
+		{
+			"proj_range"							"2200"
+			"proj_width"							"128"
+			"proj_speed"							"2000"
+
+			"ca_time"								"1.5"
+
+			"radius"								"600"
+
+			"damage"								"2500"
+			
+			"burn_duration"							"5"
+			"burn_damage"							"700"
+		}
+	}
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	// ДОМЕН
+	//=======================================================================================================
+	"sukuna_r"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_r"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_r"
+
+		"AbilityType"								"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PURE"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"2.0"
+		"AbilityCooldown"							"100"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"0"
+
+		"MaxLevel"									"3"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_6"
+
+		"AbilityValues"
+		{
+			"spawn_time"							"1.5"
+			
+			"health"								"3000"
+
+			"radius"								"1500 1800 2100"
+			"duration"								"16"
+			
+			"slow_ms_pct"							"-30"
+
+			"damage_amp"							"20"
+
+			"damage_tick"							"0.2"
+			"damage"								"60 80 100"
+			"damage_max_hp"							"3 5 7"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	// ПЕРЕКЛЧЕНИЕ - ВРЕМЕННО СПОСОБНОСТЬ
+	//=======================================================================================================
+	"sukuna_switch_mp"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_switch_mp"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_switch_mp_phys"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_MUTED | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityCooldown"							"5"
+
+		"MaxLevel"									"1"
+		"IsLearned"									"1"
+
+		"AbilityValues"
+		{
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	// ФИЗИЧЕСКИЙ МОД - Q СКИЛЛ - ТЕЛЕПОРТАЦИЯ С УДАРОМ
+	//=======================================================================================================
+	"sukuna_p_q"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_p_q"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_p_q"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.2"
+		"AbilityCooldown"							"7"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"700"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_1"
+
+		"AbilityValues"
+		{
+			"ca_time"								"0.4"
+
+			"damage"								"300 600 900 1200"
+
+			"stun_duration"							"1.5"
+
+			"knock_time"							"1.5"
+			"knock_range"							"500"
+			"knock_height"							"350"
+		}
+	}
+
+	//=======================================================================================================
+	// ФИЗИЧЕСКИЙ МОД - W СКИЛЛ
+	//=======================================================================================================
+	"sukuna_p_w"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_p_w"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_p_w"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.5"
+		"AbilityCooldown"							"8"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"600"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityValues"
+		{
+			"radius"								"600"
+			"angle"									"180"
+
+			"damage"								"400 500 600 700"
+
+			"ca_time"								"0.4"
+			"dash_range"							"400"
+
+			"stun_duration"							"2.0"
+			"black_flash_duration"					"4.0"
+		}
+	}
+
+	//=======================================================================================================
+	// ФИЗИЧЕСКИЙ МОД - E СКИЛЛ - ХВАТ И БЕГ
+	//=======================================================================================================
+	"sukuna_p_e"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_p_e"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_p_e"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.1"
+		"AbilityCooldown"							"9"
+		"AbilityManaCost"							"0"
+		"AbilityCastRange"							"250"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_3"
+
+		"AbilityValues"
+		{
+			"da_time"								"1.0"
+			"da_range"								"1500"
+
+			"da_damage_tick"						"0.2"
+			"da_damage"								"120 160 200 240"
+
+			"ca_time"								"0.5"
+			"ca_damage"								"600 700 800 900"
+
+			"knock_time"							"0.5"		
+			"knock_range"							"600"
+			"knock_height"							"0"
+
+			"slow_duration"							"2.5"
+			"slow_ms_pct"							"-50"
+
+			"silence_duration"						"2.5"
+		}
+	}
+
+	//=======================================================================================================
+	// ФИЗИЧЕСКИЙ МОД - D СКИЛЛ - ОТПРЫГИВАНИЕ/БЕГ С ПИНКОМ
+	//=======================================================================================================
+	"sukuna_p_d"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_p_d"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_p_d"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ALT_CASTABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.01"
+		"AbilityCooldown"							"12"
+		"AbilityManaCost"							"0"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityValues"
+		{
+			"ca_time"								"0.6"
+			"ca_dash_range"							"500"
+			"ca_dash_height"						"200"
+
+			"alt_ca_time"							"0.6"
+			"alt_da_time"							"0.6"
+			"alt_da_dash_range"						"1000"
+			"alt_da_dash_width"						"128"
+
+			"alt_knock_time"						"1.0"		
+			"alt_knock_range"						"500"
+			"alt_knock_height"						"350"
+
+			"mage_mode_duration"					"3.0"
+			"mage_mode_hp_cost_pct"					"20"
+		}
+	}
+
+	//=======================================================================================================
+	// ФИЗИЧЕСКИЙ МОД - F СКИЛЛ - REVERSE CURSED TECH (ХИЛЕНИЕ)
+	//=======================================================================================================
+	"sukuna_p_f"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/sukuna/sukuna_p_f"
+		"AbilityTextureName"						"heroes/sukuna/sukuna_p_f"
+
+		"AbilityType"								"ABILITY_TYPE_BASIC"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_PHYSICAL"
+
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"						"SPELL_DISPELLABLE_YES"
+
+		"AbilityCastPoint"							"0.0"
+		"AbilityCooldown"							"15"
+		"AbilityManaCost"							"0"
+
+		"MaxLevel"									"4"
+		"IsLearned"									"1"
+
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_5"
+
+		"AbilityValues"
+		{
+			"heal_per_second"						"60 120 240 480"
+			"heal_duration"							"5.0"
+			"heal_damage_interrupt"					"50"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//=======================================================================================================
+	// ТАЛАНТЫ
+	//=======================================================================================================
+	"special_bonus_sukuna_10r"
+	{
+		"BaseClass"									"special_bonus_undefined"
+		"AbilityType"								"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"									"200"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_10l"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"15"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_15r"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"400"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_15l"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"8"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_20r"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"0.4"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_20l"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"1"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_25r"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"10"
+		}
+	}
+	//=======================================================================================================
+	"special_bonus_sukuna_25l"
+	{
+		"_base"										"special_bonus_sukuna_10r"
+
+		"AbilityValues"
+		{
+			"value"									"5"
+		}
+	}
+}

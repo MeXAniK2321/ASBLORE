@@ -1,0 +1,370 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "bot.vmat"
+								to = "materials/models/heroes/sukuna/domain/body.vmat"
+							},
+							{
+								from = "bot_left_skulls.vmat"
+								to = "materials/models/heroes/sukuna/domain/skull_2.vmat"
+							},
+							{
+								from = "bot_right_skulls.vmat"
+								to = "materials/models/heroes/sukuna/domain/skull_2.vmat"
+							},
+							{
+								from = "center_box.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "left_teeth.vmat"
+								to = "materials/models/heroes/sukuna/domain/teeth.vmat"
+							},
+							{
+								from = "right_teeth.vmat"
+								to = "materials/models/heroes/sukuna/domain/teeth.vmat"
+							},
+							{
+								from = "top.vmat"
+								to = "materials/models/heroes/sukuna/domain/body.vmat"
+							},
+							{
+								from = "left_branches.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "top_left.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "top_right.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "top_skulls.vmat"
+								to = "materials/models/heroes/sukuna/domain/skull_2.vmat"
+							},
+							{
+								from = "right_skulls.vmat"
+								to = "materials/models/heroes/sukuna/domain/skull_1.vmat"
+							},
+							{
+								from = "right_ropes.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "right_claws.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "right_branches.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "left_skulls.vmat"
+								to = "materials/models/heroes/sukuna/domain/skull_1.vmat"
+							},
+							{
+								from = "left_ropes.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+							{
+								from = "left_claws.vmat"
+								to = "materials/models/heroes/sukuna/domain/misc.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = "materials/dev/hero_black.vmat"
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/heroes/sukuna/domain/domain.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "ATTACH_ORIGIN"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HEAD"
+						parent_bone = "Default_Bone"
+						relative_origin = [ 0.0, 0.0, 549.3222 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FOLLOW_OVERHEAD"
+						parent_bone = "Default_Bone"
+						relative_origin = [ 0.0, -0.000036621906, 878.1659 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HITLOC"
+						parent_bone = "Default_Bone"
+						relative_origin = [ 0.0, 0.0, 320.52368 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK1"
+						disabled = true
+						parent_bone = "Bip001_R_Hand"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK2"
+						disabled = true
+						parent_bone = "Bip001_L_Hand"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Default_Bone"
+								parent_bone = "Default_Bone"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -336.16934, -374.21423, -89.73665 ]
+								hitbox_maxs = [ 338.17752, 371.86707, 478.10974 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "ModelModifier_ScaleAndMirror"
+						scale = 0.5
+						mirror_x = false
+						mirror_y = false
+						mirror_z = false
+						flip_bone_forward = false
+						swap_left_and_right_bones = false
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "domain"
+						children = 
+						[
+							{
+								_class = "AnimForceBonePosition"
+								disabled = true
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, 0.0 ]
+								rotation = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "AnimForceBonePositionRange"
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, -400.0 ]
+								rotation = [ 0.0, 90.0, 0.0 ]
+								start_frame = 0
+								peak_frame = 0
+								tail_frame = 0
+								end_frame = 30
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_SPAWN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/sukuna/domain/domain.fbx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = 30
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "domain_copy"
+						children = 
+						[
+							{
+								_class = "AnimForceBonePosition"
+								disabled = true
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, 0.0 ]
+								rotation = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "AnimForceBonePositionRange"
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, -400.0 ]
+								rotation = [ 0.0, 90.0, 0.0 ]
+								start_frame = 0
+								peak_frame = 30
+								tail_frame = 0
+								end_frame = 0
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/sukuna/domain/domain.fbx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = 30
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "domain_copy1"
+						children = 
+						[
+							{
+								_class = "AnimForceBonePosition"
+								disabled = true
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, 0.0 ]
+								rotation = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "AnimForceBonePositionRange"
+								disabled = true
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, 0.0 ]
+								rotation = [ 5.0, 90.0, 0.0 ]
+								start_frame = 0
+								peak_frame = 15
+								tail_frame = 15
+								end_frame = 15
+							},
+							{
+								_class = "AnimForceBonePositionRange"
+								disabled = true
+								bone = "Default_Bone"
+								translation = [ 0.0, 0.0, 0.0 ]
+								rotation = [ -5.0, 90.0, 0.0 ]
+								start_frame = 15
+								peak_frame = 0
+								tail_frame = 0
+								end_frame = 30
+							},
+						]
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/heroes/sukuna/domain/domain.fbx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = 30
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

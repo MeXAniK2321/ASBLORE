@@ -5,6 +5,7 @@
 #base "abilities/nanaya/nanaya_abilities.txt"
 #base "abilities/muramasa/muramasa_abilities.txt"
 #base "heroes/roland/a.txt"
+#base "heroes/sukuna/a.txt"
 
 "DOTAAbilities"
 {

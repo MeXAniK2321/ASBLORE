@@ -1,0 +1,42 @@
+"DOTAUnits"
+{
+	//=================================================================================	
+	// UNIT
+	//=================================================================================
+	"npc_dota_sukuna_domain"
+	{
+		"BaseClass"					"npc_dota_base_additive"
+
+		"Model"						"models/heroes/sukuna/domain/domain.vmdl"
+		"ModelScale"				"1.0"
+
+		"SoundSet"					""
+		"Level"						"1"
+
+		"SelectionGroup"			"SukunaDomain"
+		"UnitLabel"					"SukunaDomain"
+
+		// "MinimapIcon"				"minimap_heroicon_arrow"
+		// "MinimapIconSize"			"0.5"
+
+		"ConsideredHero"			"0"
+		"HasInventory"				"0"
+		"CanRespawn"				"1"
+		"SelectOnSpawn"				"0"
+		"AutoAttacksByDefault"		"0"
+		"IsAncient"					"1"
+		"IsSummoned"				"1"
+		"IgnoreAddSummonedToSelection" "1"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"550"
+		"MovementTurnRate"			"0.500000"
+
+		//--===BOUNDS===--
+		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"
+		"RingRadius"				"200"
+		// "ProjectileCollisionSize"	"600"
+	}
+}

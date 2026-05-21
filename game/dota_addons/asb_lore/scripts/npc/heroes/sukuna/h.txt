@@ -1,0 +1,103 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_goa_sukuna"
+	{
+		"override_hero"				"npc_dota_hero_shredder"
+		// "BaseClass"					"npc_dota_hero"
+		"DisableWearables"			"1"
+
+		// "HeroID"					"151"
+
+		"Model"						"models/heroes/sukuna/sukuna.vmdl"
+		"ModelScale"				"1.0"
+		
+		//--===SOUNDS===--
+		"particle_folder"			"particles/heroes/sukuna"
+		"GameSoundsFile"			"soundevents/heroes/rolandame/sukuna_base.vsndevts"
+		"VoiceFile"					"soundevents/heroes/roland/voice/sukuna_base.vsndevts"
+		"SoundSet"					"sukuna_base"
+		//"VoiceBackgroundSound"		""
+		// "IdleSoundLoop"				"sukuna_portrait"
+		"HeroSelectSoundEffect"		"sukuna_base.Pick"
+
+		"precache"
+		{
+			"model_folder"			"models/heroes/sukuna"
+			"particle_folder"		"particles/heroes/sukuna"
+			"soundfile"				"soundevents/heroes/sukuna/game/roland_base.vsndevts"
+			"soundfile"				"soundevents/heroes/sukuna/voice/roland_base.vsndevts"
+		}
+
+		"Ability1"					"sukuna_m_q"
+		"Ability2"					"sukuna_m_w"
+		"Ability3"					"sukuna_m_e"
+		"Ability4"					"sukuna_m_d"
+		"Ability5"					"sukuna_switch_book"
+		"Ability6"					"sukuna_r"
+
+		"Ability7"					"sukuna_b_q"
+		"Ability8"					"sukuna_b_w"
+		"Ability9"					"sukuna_b_e"
+		"Ability10"					"sukuna_b_d"
+		"Ability11"					"generic_hidden"
+
+		"Ability12"					"sukuna_p_q"
+		"Ability13"					"sukuna_p_w"
+		"Ability14"					"sukuna_p_e"
+		"Ability15"					"sukuna_p_d"
+		"Ability16"					"sukuna_p_f"
+
+		// "Ability17"					"sukuna_switch_mp"
+
+		"Ability18"					"special_bonus_sukuna_10r"
+		"Ability19"					"special_bonus_sukuna_10l"
+
+		"Ability20"					"special_bonus_sukuna_15r"
+		"Ability21"					"special_bonus_sukuna_15l"
+
+		"Ability22"					"special_bonus_sukuna_20r"
+		"Ability23"					"special_bonus_sukuna_20l"
+
+		"Ability24"					"special_bonus_sukuna_25r"
+		"Ability25"					"special_bonus_sukuna_25l"
+
+		"AbilityTalentStart"		"18"
+
+		//--===ARMOR===--
+		"ArmorPhysical"				"8"
+		"MagicalResistance"			"10"
+
+		//--===DAMAGE===--
+		"AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRate"				"1.8"
+
+		"AttackDamageMin"			"75"
+		"AttackDamageMax"			"75"
+		
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"120"
+
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"1200"
+
+		//--===ATTRIBUTES===--
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+
+		"AttributeStrengthGain"		"2.5"
+		"AttributeAgilityGain"		"2.0"
+		"AttributeIntelligenceGain"	"2.5"
+
+		//--===OTHER===--
+		"MovementSpeed"				"330"
+
+		"StatusHealth"				"600"
+		"StatusMana"				"300"
+		
+		"StatusHealthRegen"			"7"
+		"StatusManaRegen"			"0"
+
+		//--===VISION===--
+		"VisionDaytimeRange"		"1000"
+		"VisionNighttimeRange"		"1000"
+	}
+}
