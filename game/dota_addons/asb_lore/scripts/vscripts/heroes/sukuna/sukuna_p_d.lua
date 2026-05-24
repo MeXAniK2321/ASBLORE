@@ -374,6 +374,9 @@ end
 function modifier_sukuna_p_d_mage_mode:Swap(bEnable)
 	local hBook = self._hParent:FindAbilityByName("sukuna_switch_book")
 	local hMP = self._hParent:FindItemInInventory("item_sukuna_switch_mp")
+	if IsNull(hMP) then
+		hMP = self._hParent:FindItemInInventory("item_sukuna_switch_mp_box")
+	end
 	if IsNull(hMP) then return end
 	if not bEnable then
 		hMP:ToggleAbility()

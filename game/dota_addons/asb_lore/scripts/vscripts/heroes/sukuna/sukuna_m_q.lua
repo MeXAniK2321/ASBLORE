@@ -56,7 +56,7 @@ function sukuna_m_q:OnSpellStart()
 				hits = self:GetSpecialValueFor("hits"),
 				hits_tick = self:GetSpecialValueFor("hits_tick"),
 
-				damage = self:GetSpecialValueFor("damage"),
+				damage = self:GetSpecialValueFor("damage") + FindTalentValue(hCaster, "special_bonus_sukuna_10r"),
 			}
 		}
 	}

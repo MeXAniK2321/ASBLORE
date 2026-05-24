@@ -536,5 +536,8 @@
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_explode_shards_bright.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_explode_rocks.vpcf"
+		},
 	]
 }

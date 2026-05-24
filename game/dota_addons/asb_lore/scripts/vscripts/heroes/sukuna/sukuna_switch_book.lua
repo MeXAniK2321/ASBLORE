@@ -51,6 +51,7 @@ function sukuna_switch_book:OnAbilityUpgrade(hAbility)
 	local hCaster = self:GetCaster()
 	local tBookOnly =
 	{
+		"sukuna_p_f",
 		"sukuna_switch_book",
 		"sukuna_b_q",
 		"sukuna_b_w",
@@ -122,6 +123,25 @@ function sukuna_switch_book:Spawn()
 	if not IsServer() then return end
 	local hCaster = self:GetCaster()
 	local hSwitchBook = hCaster:FindItemInInventory("item_sukuna_switch_mp")
-	if IsNotNull(hSwitchBook) then return end
+	local hSwitchBookBox = hCaster:FindItemInInventory("item_sukuna_switch_mp_box")
+	if IsNotNull(hSwitchBook) or IsNotNull(hSwitchBookBox) then return end
 	hCaster:AddItemByName("item_sukuna_switch_mp")
+
+	Timers:CreateTimer(1, function()
+		if IsNotNull(hCaster) then
+			local hItemNOW = hCaster:GetItemInSlot(DOTA_ITEM_NEUTRAL_ACTIVE_SLOT)
+			if hCaster:HasScepter() then
+				if IsNotNull(hItemNOW) and hItemNOW:GetAbilityName() ~= "item_sukuna_switch_mp_box" then
+					hCaster:RemoveItem(hItemNOW)
+					hCaster:AddItemByName("item_sukuna_switch_mp_box")
+				end
+			else
+				if IsNotNull(hItemNOW) and hItemNOW:GetAbilityName() ~= "item_sukuna_switch_mp" then
+					hCaster:RemoveItem(hItemNOW)
+					hCaster:AddItemByName("item_sukuna_switch_mp")
+				end
+			end
+		end
+		return 1
+	end)
 end

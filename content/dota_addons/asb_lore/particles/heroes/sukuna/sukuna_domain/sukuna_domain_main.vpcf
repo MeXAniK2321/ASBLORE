@@ -1324,6 +1324,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_domain/sukuna_domain_ground_slashes.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }

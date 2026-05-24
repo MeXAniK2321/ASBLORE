@@ -50,13 +50,13 @@
 		// "Ability17"					"sukuna_switch_mp"
 
 		"Ability18"					"special_bonus_sukuna_10r"
-		"Ability19"					"special_bonus_sukuna_10l"
+		"Ability19"					"special_bonus_attack_speed_15"//"special_bonus_sukuna_10l"
 
 		"Ability20"					"special_bonus_sukuna_15r"
-		"Ability21"					"special_bonus_sukuna_15l"
+		"Ability21"					"special_bonus_spell_lifesteal_20"
 
 		"Ability22"					"special_bonus_sukuna_20r"
-		"Ability23"					"special_bonus_sukuna_20l"
+		"Ability23"					"special_bonus_hp_600"
 
 		"Ability24"					"special_bonus_sukuna_25r"
 		"Ability25"					"special_bonus_sukuna_25l"

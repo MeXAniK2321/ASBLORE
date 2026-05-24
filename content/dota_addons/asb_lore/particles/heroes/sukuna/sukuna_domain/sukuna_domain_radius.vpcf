@@ -1028,7 +1028,7 @@
 		},
 		{
 			_class = "C_OP_RenderScreenShake"
-			m_flDurationScale = 17.0
+			m_flDurationScale = 3.0
 			m_flRadiusScale = 2000.0
 			m_flFrequencyScale = 10.0
 			m_flAmplitudeScale = 10.0

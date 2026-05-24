@@ -30610,6 +30610,10 @@
     //"AnimationPlaybackRate"     "1"
     //"AnimationIgnoresModelScale"  "1"
 
+    "precache"
+    {
+      "model"               "models/items/queenofpain/ripper_dagger.vmdl"
+    }
 
     "AbilityCooldown"       "30.0 25.0 20.0 15.0"
     "AbilityManaCost"       "25 50 75 100"

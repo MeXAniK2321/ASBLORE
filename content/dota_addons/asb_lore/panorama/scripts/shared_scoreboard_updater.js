@@ -288,6 +288,10 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 				{
 			 		playerPortrait.SetImage( "file://{images}/heroes/roland.png" );
 				}
+				else if (playerInfo.player_selected_hero == "npc_dota_hero_shredder")
+				{
+			 		playerPortrait.SetImage( "file://{images}/heroes/sukuna.png" );
+				}
 				else
 				{
 					playerPortrait.SetImage( "file://{images}/custom_game/unassigned.png" );

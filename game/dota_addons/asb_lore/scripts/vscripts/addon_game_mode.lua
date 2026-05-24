@@ -352,6 +352,8 @@ function COverthrowGameMode:InitGameMode()
 		self.m_GoldRadiusMax = 1400
 		self.m_GoldDropPercent = 35
         self.n_RespawnMultiplier = 3.0
+        CreateUnitByName("npc_dota_xp_global", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
+        CreateUnitByName("npc_dota_xp_granter2", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
 	elseif GetMapName() == "temple_quartet" then
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 3 )
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 3 )

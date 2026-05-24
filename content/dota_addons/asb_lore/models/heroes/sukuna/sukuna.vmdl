@@ -391,12 +391,12 @@
 						_class = "AnimFile"
 						name = "attack_1"
 						is_default_idle_anim = false
-						activity_name = ""
+						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = true
+						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -408,7 +408,7 @@
 						import_bone_scales = false
 						start_frame = 10
 						end_frame = 50
-						framerate = -1.0
+						framerate = 14.0
 						reverse = false
 						additional_anim_files = [  ]
 					},
@@ -416,12 +416,12 @@
 						_class = "AnimFile"
 						name = "attack_2"
 						is_default_idle_anim = false
-						activity_name = ""
+						activity_name = "ACT_DOTA_ATTACK2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = true
+						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -433,7 +433,7 @@
 						import_bone_scales = false
 						start_frame = 70
 						end_frame = 117
-						framerate = -1.0
+						framerate = 14.0
 						reverse = false
 						additional_anim_files = [  ]
 					},
@@ -441,12 +441,12 @@
 						_class = "AnimFile"
 						name = "attack_3"
 						is_default_idle_anim = false
-						activity_name = ""
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = true
+						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -458,7 +458,7 @@
 						import_bone_scales = false
 						start_frame = 137
 						end_frame = 181
-						framerate = -1.0
+						framerate = 14.0
 						reverse = false
 						additional_anim_files = [  ]
 					},

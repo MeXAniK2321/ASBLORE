@@ -61,6 +61,7 @@ local tPandoraItems = {
                           npc_dota_hero_earthshaker = "item_fusion_dance",        -- Gogeta(SSJB)
                           npc_dota_hero_dazzle = "item_gojo_six_eyes",            -- Gojo Satoru
                           npc_dota_hero_kez = "item_roland_mask",                 -- Roland
+                          npc_dota_hero_shredder = "item_sukuna_switch_mp_box",   -- Sukuna
                       }
 
 item_pandora_box = item_pandora_box or class({})
@@ -85,6 +86,13 @@ function item_pandora_box:OnSpellStart()
             item = CreateItem("item_vongolla_primo_ring", caster, self)
         end
         
+        if caster:GetUnitName() == "npc_dota_hero_shredder" then
+            local keksuka = caster:FindItemInInventory("item_sukuna_switch_mp")
+            if keksuka then
+                keksuka:RemoveSelf()
+            end
+        end
+
         if IsNotNull(item) then
             if IsNotNull(hPlaceholder) then
                 caster:RemoveItem(hPlaceholder)

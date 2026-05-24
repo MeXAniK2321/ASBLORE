@@ -86,7 +86,7 @@ function modifier_sukuna_b_q_recast:OnCreated(tInfo)
 	self.nWidth = self._hAbility:GetSpecialValueFor("width")
 	self.nDamage = self._hAbility:GetSpecialValueFor("damage")
 
-	self.nReleaseTime = self._hAbility:GetSpecialValueFor("release_time")
+	self.nReleaseTime = self._hAbility:GetSpecialValueFor("release_time") + FindTalentValue(self._hCaster, "special_bonus_sukuna_20r")
 
 	self.tPoints = self.tPoints or {}
 	self.tParticles = self.tParticles or {}
@@ -198,7 +198,7 @@ function modifier_sukuna_b_q_recast:SlashPoints(vP1, vP2)
 		ParticleManager:DestroyParticle(nPreSlash, false)
 		ParticleManager:ReleaseParticleIndex(nPreSlash)
 
-		local nSlashPFX = ParticleManager:CreateParticle("particles/econ/items/void_spirit/void_spirit_immortal_2021/void_spirit_immortal_2021_astral_step.vpcf", PATTACH_WORLDORIGIN, nil)
+		local nSlashPFX = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_wcs_pointed/sukuna_wcs_pointed_slash/sukuna_wcs_pointed_slash.vpcf", PATTACH_WORLDORIGIN, nil)
 							ParticleManager:SetParticleShouldCheckFoW(nSlashPFX, false)
 							ParticleManager:SetParticleControl(nSlashPFX, 0, vP1)
 							ParticleManager:SetParticleControl(nSlashPFX, 1, vP2)

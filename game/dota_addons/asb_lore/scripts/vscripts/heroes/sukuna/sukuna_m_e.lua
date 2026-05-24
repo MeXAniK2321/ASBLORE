@@ -62,7 +62,7 @@ function sukuna_m_e:OnSpellStart()
 
 		recast_time = self:GetSpecialValueFor("recast_time"),
 
-		dash_duration = self:GetSpecialValueFor("dash_duration"),
+		dash_duration = self:GetSpecialValueFor("dash_duration") + FindTalentValue(hCaster, "special_bonus_sukuna_25l"),
 		dash_speed = self:GetSpecialValueFor("dash_speed"),
 		dash_radius = self:GetSpecialValueFor("dash_radius"),
 		dash_damage_interval = self:GetSpecialValueFor("dash_damage_interval"),

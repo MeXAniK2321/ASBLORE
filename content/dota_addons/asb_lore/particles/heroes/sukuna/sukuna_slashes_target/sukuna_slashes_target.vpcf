@@ -195,6 +195,10 @@
 			_class = "C_OP_FadeOutSimple"
 			m_flFadeOutTime = 1.0
 		},
+		{
+			_class = "C_OP_SetChildControlPoints"
+			m_bDisableOperator = true
+		},
 	]
 	m_Renderers = 
 	[
@@ -1904,6 +1908,21 @@
 	[
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target_cuts.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target_swooshes.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target_test.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target_test_1.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target_slash.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }

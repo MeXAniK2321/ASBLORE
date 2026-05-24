@@ -42,6 +42,10 @@ function sukuna_m_d:OnSpellStart()
 		damage = self:GetSpecialValueFor("damage"),
 
 		stun_duration = self:GetSpecialValueFor("stun_duration"),
+
+		knock_time = self:GetSpecialValueFor("stun_duration"),
+		knock_range = 0,
+		knock_height = 300,
 	}
 
 	tInfo.ca_rate = GetAnimPlayRate(16, 15, 30, tInfo.ca_time)
@@ -110,7 +114,9 @@ function sukuna_m_d:SlashEnemies(tInfo)
 
 	for _, hEnt in ipairs(tEntities) do
 		if hEnt ~= tInfo.caster then
-			hEnt:AddNewModifier(tInfo.caster, self, "modifier_stunned", {duration = tInfo.stun_duration})
+			tInfo.target = hEnt
+			tInfo.dir = GetDirection(hEnt, tInfo.caster)
+			self:KnockTarget(tInfo)
 
 			self:SlashTarget({
 				target = hEnt,
@@ -135,7 +141,42 @@ function sukuna_m_d:SlashTarget(tInfo)
 
 	ApplyDamage(tDamage)
 end
+function sukuna_m_d:KnockTarget(tInfo)
+	local tMotion =
+	{
+		duration = tInfo.knock_time,
 
+		dir_x = tInfo.dir.x,
+		dir_y = tInfo.dir.y,
+
+		distance = tInfo.knock_range + 100,
+		-- speed = 1000,
+		height = tInfo.knock_height,
+
+		facing = 0,
+
+		path_trees = 1,
+		path_hg = 1,
+		path_blocked = 1,
+	}
+
+	local hMotion = tInfo.target:AddNewModifier(tInfo.caster, self, "modifier_sukuna_motion_generic", tMotion)
+	if IsNull(hMotion) or hMotion:IsInterrupted() then return end
+
+	local nPFX_Impact = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_impact/sukuna_impact.vpcf", PATTACH_CENTER_FOLLOW, tInfo.target)
+						ParticleManager:ReleaseParticleIndex(nPFX_Impact)
+						
+	local nPFX = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_dash/sukuna_dash_trail.vpcf", PATTACH_ABSORIGIN_FOLLOW, tInfo.target)
+
+	tInfo.target:AddNewModifier(tInfo.caster, self, "modifier_stunned", {duration = tInfo.stun_duration})
+
+	EmitSoundOn("sukuna_dash.smash", tInfo.target)
+	
+	hMotion:AddCallbackEnd(function(hMod)
+		ParticleManager:DestroyParticle(nPFX, false)
+		ParticleManager:ReleaseParticleIndex(nPFX)
+	end)
+end
 
 
 --====================================================================================================--

@@ -4,6 +4,25 @@ require("heroes/sukuna/sukuna_init")
 --====================================================================================================--
 sukuna_r = class({})
 
+function sukuna_r:Spawn()
+	if not IsServer() then return end
+	self:SetLevel(1)
+	self:StartCooldown(self:GetSpecialValueFor("start_cd"))
+end
+function sukuna_r:GetBehavior()
+	local hCaster = self:GetCaster()
+	if hCaster:HasScepter() then
+		return DOTA_ABILITY_BEHAVIOR_NO_TARGET + 1099511627776
+	end
+	return DOTA_ABILITY_BEHAVIOR_NO_TARGET
+end
+function sukuna_r:GetCooldown(nLevel)
+	local hCaster = self:GetCaster()
+	if IsServer() and hCaster:HasScepter() and self:GetAltCastState() then
+		return self:GetSpecialValueFor("alt_cd")
+	end
+	return self.BaseClass.GetCooldown(self, nLevel)
+end
 function sukuna_r:OnAbilityPhaseStart()
 	local hCaster = self:GetCaster()
 	if not self.nPFX then
@@ -21,6 +40,10 @@ function sukuna_r:OnAbilityPhaseInterrupted()
 	StopSoundOn("sukuna_r.cast", self:GetCaster())
 end
 function sukuna_r:GetAOERadius()
+	local hCaster = self:GetCaster()
+	if IsServer() and hCaster:HasScepter() and self:GetAltCastState() then
+		return self:GetSpecialValueFor("alt_radius")
+	end
 	return self:GetSpecialValueFor("radius")
 end
 function sukuna_r:OnSpellStart()
@@ -34,6 +57,11 @@ function sukuna_r:OnSpellStart()
 
 	self:OnAbilityPhaseInterrupted()
 
+	if hCaster:HasScepter() and self:GetAltCastState() then
+		self:StartWithoutDomain()
+		return
+	end
+
 	local hDomain = self.hDomain or CreateUnitByName("npc_dota_sukuna_domain", vOffsetSpawn, true, hCaster, hCaster, hCaster:GetTeamNumber())
 	if IsNull(hDomain) then return end
 	self.hDomain = hDomain
@@ -43,7 +71,7 @@ function sukuna_r:OnSpellStart()
 
 	-- FindClearSpaceForUnit(hDomain, vOffsetSpawn, true)
 
-	local nHealth = self:GetSpecialValueFor("health")
+	local nHealth = self:GetSpecialValueFor("health") + FindTalentValue(hCaster, "special_bonus_sukuna_15r")
 
 	hDomain:SetBaseMaxHealth(nHealth)
 	hDomain:SetMaxHealth(nHealth)
@@ -99,6 +127,37 @@ function sukuna_r:OnSpellStart()
 			hEnt:AddNewModifier(hCaster, self, "modifier_stunned", {duration = nSpawnTime})
 		end
 	end
+end
+function sukuna_r:StartWithoutDomain()
+	local hCaster = self:GetCaster()
+
+	local nTeamID = hCaster:GetTeamNumber()
+
+	local nDuration = self:GetSpecialValueFor("alt_duration")
+
+	local nCastPFX = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_domain/sukuna_domain_radius.vpcf", PATTACH_WORLDORIGIN, nil)
+					ParticleManager:SetParticleShouldCheckFoW(nCastPFX, false)
+					ParticleManager:SetParticleControl(nCastPFX, 0, hCaster:GetAbsOrigin())
+					ParticleManager:SetParticleControl(nCastPFX, 1, Vector(self:GetAOERadius(), 0, 0))
+
+	local tEntities = FindUnitsInRadius(
+		nTeamID,
+		hCaster:GetAbsOrigin(),
+		nil,
+		self:GetAOERadius(),
+		self:GetAbilityTargetTeam(),
+		self:GetAbilityTargetType(),
+		self:GetAbilityTargetFlags(),
+		FIND_CLOSEST,
+		false)
+
+	for _, hEnt in ipairs(tEntities) do
+		if hEnt ~= hCaster and hEnt ~= hDomain then
+			hEnt:AddNewModifier(hCaster, self, "modifier_stunned", {duration = nDuration})
+		end
+	end
+
+	CreateModifierThinker(hCaster, self, "modifier_sukuna_r_domain_aura", {duration = nDuration, domain_cast = nCastPFX}, hCaster:GetAbsOrigin(), nTeamID, false)
 end
 
 
@@ -205,7 +264,8 @@ function modifier_sukuna_r_domain_aura:OnCreated(tInfo)
 
 	self.hAbility:SetActivated(false)
 
-	EmitSoundOnLocationWithCaster(self.hParent:GetAbsOrigin(), "sukuna_r.domain", self.hParent)
+	EmitSoundOn("sukuna_r.domain", self.hParent)
+	-- EmitSoundOnLocationWithCaster(self.hParent:GetAbsOrigin(), "sukuna_r.domain", self.hParent)
 
 	self:StartIntervalThink(FrameTime())
 end
@@ -235,6 +295,10 @@ function modifier_sukuna_r_domain_aura:OnDestroy()
 	self.hAbility:SetActivated(true)
 
 	StopSoundOn("sukuna_r.domain", self.hParent)
+
+	if IsNotNull(self.hCaster) and self.hCaster:IsAlive() then
+		self.hCaster:AddNewModifier(self.hCaster, self.hAbility, "modifier_sukuna_r_domain_fuga_buff", {})
+	end
 end
 function modifier_sukuna_r_domain_aura:GetEffectName()
 	return "particles/heroes/sukuna/sukuna_aura/sukuna_aura_domain.vpcf"
@@ -282,7 +346,7 @@ function modifier_sukuna_r_domain_aura_debuff:OnCreated(tInfo)
 
 	self.nDamageTick = self.hAbility:GetSpecialValueFor("damage_tick")
 	self.nDamage = self.hAbility:GetSpecialValueFor("damage")
-	self.nDamageMaxHp = self.hAbility:GetSpecialValueFor("damage_max_hp") * 0.01
+	self.nDamageMaxHp = (self.hAbility:GetSpecialValueFor("damage_max_hp") + FindTalentValue(self.hCaster, "special_bonus_sukuna_25r")) * 0.01
 
 	self.tDamage =
 	{
@@ -307,3 +371,18 @@ function modifier_sukuna_r_domain_aura_debuff:OnIntervalThink()
 	self.tDamage.damage = nDamage
 	ApplyDamage(self.tDamage)
 end
+
+
+
+
+
+--====================================================================================================--
+LinkLuaModifier("modifier_sukuna_r_domain_fuga_buff", "heroes/sukuna/sukuna_r", LUA_MODIFIER_MOTION_NONE)
+
+modifier_sukuna_r_domain_fuga_buff = class({})
+
+function modifier_sukuna_r_domain_fuga_buff:IsHidden()															return false end
+function modifier_sukuna_r_domain_fuga_buff:IsDebuff()															return false end
+function modifier_sukuna_r_domain_fuga_buff:IsPurgable()														return false end
+function modifier_sukuna_r_domain_fuga_buff:IsPurgeException()													return false end
+function modifier_sukuna_r_domain_fuga_buff:RemoveOnDeath()														return false end

@@ -27,6 +27,10 @@ function sukuna_b_d:OnAbilityPhaseInterrupted()
 	end
 end
 function sukuna_b_d:GetAOERadius()
+	local hCaster = self:GetCaster()
+	if hCaster:HasModifier("modifier_sukuna_r_domain_fuga_buff") then
+		return self:GetSpecialValueFor("radius_domain_fuga")
+	end
 	return self:GetSpecialValueFor("radius")
 end
 function sukuna_b_d:OnSpellStart()
@@ -86,6 +90,14 @@ function sukuna_b_d:OnSpellStart()
 			}
 		}
 	}
+
+	if tInfo.caster:HasModifier("modifier_sukuna_r_domain_fuga_buff") then
+		tInfo.ca_time = self:GetSpecialValueFor("ca_time_domain_fuga")
+		tInfo.projectile.extra_data.damage = self:GetSpecialValueFor("damage_domain_fuga")
+		tInfo.projectile.extra_data.burn_duration = self:GetSpecialValueFor("burn_duration_domain_fuga")
+
+		tInfo.caster:RemoveModifierByNameAndCaster("modifier_sukuna_r_domain_fuga_buff", tInfo.caster)
+	end
 
 	tInfo.ca_rate = GetAnimPlayRate(60, 59, 30, tInfo.ca_time)
 	-- tInfo.ca_impact_time = GetAnimImpactTime(38, 10, 30, tInfo.ca_time)
@@ -195,7 +207,7 @@ function sukuna_b_d:Explosion(tInfo)
 		{
 			duration = tInfo.burn_duration,
 			-- damage = tInfo.burn_damage,
-			-- radius = tInfo.radius,
+			radius = tInfo.radius,
 		},
 		tInfo.point,
 		tInfo.team_id,
@@ -272,9 +284,9 @@ function modifier_sukuna_b_d_burn_ground:OnCreated(tInfo)
 	self.hParent  = self:GetParent()
 	self.hAbility = self:GetAbility()
 
-	self.nRadius = self.hAbility:GetAOERadius()
-
 	if not IsServer() then return end
+
+	self.nRadius = tInfo.radius
 
 	self.nABILITY_TARGET_TEAM  = self.hAbility:GetAbilityTargetTeam()
 	self.nABILITY_TARGET_TYPE  = self.hAbility:GetAbilityTargetType() 
@@ -285,6 +297,7 @@ function modifier_sukuna_b_d_burn_ground:OnCreated(tInfo)
 	self.nBLOW_PFX = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_fuga/sukuna_fuga_explosion.vpcf", PATTACH_WORLDORIGIN, nil)
 					ParticleManager:SetParticleShouldCheckFoW(self.nBLOW_PFX, false)
 					ParticleManager:SetParticleControl(self.nBLOW_PFX, 0, self.hParent:GetAbsOrigin())
+					ParticleManager:SetParticleControl(self.nBLOW_PFX, 1, Vector(self.nRadius, 1, 1))
 
 	self:AddParticle(self.nBLOW_PFX, false, false, -1, false, false)
 

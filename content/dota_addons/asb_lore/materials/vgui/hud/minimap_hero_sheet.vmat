@@ -1,0 +1,9 @@
+"Layer0"
+{
+	"shader"	"ui.vfx"
+	"Texture"	"materials/vgui/hud/minimap_hero_sheet.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/vgui/hud/minimap_hero_sheet_psd_3529892a.vtex"
+	}
+}

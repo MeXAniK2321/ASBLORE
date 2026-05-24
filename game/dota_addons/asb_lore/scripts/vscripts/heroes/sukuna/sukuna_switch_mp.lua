@@ -91,3 +91,81 @@ end
 
 item_sukuna_switch_mp = class(sukuna_switch_mp)
 item_sukuna_switch_mp._sukuna_stance = sukuna_switch_mp._sukuna_stance
+
+
+
+item_sukuna_switch_mp_box = class(sukuna_switch_mp)
+item_sukuna_switch_mp_box._sukuna_stance = sukuna_switch_mp._sukuna_stance
+
+
+function item_sukuna_switch_mp_box:Spawn()
+-- 	if not IsServer() then return end
+-- 	Timers:CreateTimer(0.1, function()
+-- 	local hCaster = self:GetCaster()
+-- 	local hOld = hCaster:FindItemInInventory("item_sukuna_switch_mp")
+-- 	if IsNotNull(hOld) then
+-- 		hCaster:SwapItems(hOld:GetItemSlot(), self:GetItemSlot())
+-- 		hCaster:RemoveItem(hOld)
+-- 	end
+-- end)
+end
+function item_sukuna_switch_mp_box:GetIntrinsicModifierName()
+	return "modifier_item_sukuna_switch_mp_box"
+end
+
+
+--====================================================================================================--
+LinkLuaModifier("modifier_item_sukuna_switch_mp_box", "heroes/sukuna/sukuna_switch_mp", LUA_MODIFIER_MOTION_NONE)
+
+modifier_item_sukuna_switch_mp_box = class({})
+
+function modifier_item_sukuna_switch_mp_box:IsHidden()												return true end
+function modifier_item_sukuna_switch_mp_box:RemoveOnDeath()											return false end
+function modifier_item_sukuna_switch_mp_box:IsPurgable()												return false end
+function modifier_item_sukuna_switch_mp_box:GetAttributes()											return MODIFIER_ATTRIBUTE_MULTIPLE end
+function modifier_item_sukuna_switch_mp_box:DeclareFunctions()
+	local t =
+	{
+		MODIFIER_PROPERTY_HEALTH_BONUS,
+		MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+		MODIFIER_PROPERTY_STATS_AGILITY_BONUS,
+		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+	}
+	return t
+end
+function modifier_item_sukuna_switch_mp_box:OnCreated(hTable)
+	self.caster  = self:GetCaster()
+	self.parent  = self:GetParent()
+	self.ability = self:GetAbility()
+	
+	self.iBonusDmg	  = self.ability:GetSpecialValueFor("bonus_attk_damage")
+	self.iBonusHealth   = self.ability:GetSpecialValueFor("bonus_health")
+	self.iBonusAllStats = self.ability:GetSpecialValueFor("bonus_allstats")
+	self.iBonusSpellAmp = self.ability:GetSpecialValueFor("bonus_spell_amp")
+
+	if IsServer() and IsNotNull(self.parent) and not self.parent:HasScepter() then
+		self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
+	end
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierPreAttack_BonusDamage()
+	return self.iBonusDmg
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierHealthBonus()
+	return self.iBonusHealth
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierBonusStats_Strength()
+	return self.iBonusAllStats
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierBonusStats_Agility()
+	return self.iBonusAllStats
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierBonusStats_Intellect()
+	return self.iBonusAllStats
+end
+function modifier_item_sukuna_switch_mp_box:GetModifierSpellAmplify_Percentage()
+	return self.iBonusSpellAmp
+end
+
+
+

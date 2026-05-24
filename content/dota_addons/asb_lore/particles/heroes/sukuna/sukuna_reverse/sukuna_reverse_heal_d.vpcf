@@ -3,7 +3,7 @@
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 32
-	m_ConstantColor = [ 203, 74, 74, 180 ]
+	m_ConstantColor = [ 218, 218, 218, 180 ]
 	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 5
 	m_controlPointConfigurations = 
@@ -175,7 +175,7 @@
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 203, 74, 188 ]
+			m_ColorFade = [ 104, 104, 104 ]
 		},
 		{
 			_class = "C_OP_RemapCPtoScalar"

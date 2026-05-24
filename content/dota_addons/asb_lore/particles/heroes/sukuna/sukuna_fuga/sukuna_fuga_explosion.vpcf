@@ -23,6 +23,7 @@
 		{
 			_class = "C_OP_SetControlPointPositions"
 			m_vecCP1Pos = [ 0.0, 0.0, 350.0 ]
+			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
