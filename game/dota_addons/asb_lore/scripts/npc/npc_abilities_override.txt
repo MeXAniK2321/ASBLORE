@@ -40,7 +40,7 @@
   //"item_flask"	  "REMOVE"
   //"item_dust"	 "REMOVE"
   //"item_bottle"	 "REMOVE"
-  //"item_ward_observer"	  "REMOVE"
+  // "item_ward_observer"	  "REMOVE"
   //"item_ward_sentry"	  "REMOVE"
   //"item_tango"	  "REMOVE"
   //"item_tango_single"	 "REMOVE"
@@ -281,6 +281,11 @@
 "DOTAAbilities"
 {
 	"Version" "1"
+
+	"item_ward_observer"			"REMOVE"
+	// {
+	// 	"ItemPurchasable"				"0"
+	// }
 
 	// ================= REMOVE ITEMS =================
 	"item_recipe_ultimate_scepter" "REMOVE"
