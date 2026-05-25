@@ -206,7 +206,7 @@ function item_moonlight_goddess_bow:OnSpellStart()
     
     local f__Distance  = self:GetSpecialValueFor("distance_traveled") or 8500
     local f__Radius    = self:GetSpecialValueFor("hitbox_radius") or 150
-    local i__Speed     = self:GetSpecialValueFor("projectile_speed") or 1750
+    local i__Speed     = (self:GetSpecialValueFor("projectile_speed") - 500) or 1750
     local i__SpawnDist = self:GetSpecialValueFor("spawn_distance") or 250
     
     local f__Damage    = self:GetSpecialValueFor("base_damage")
@@ -231,7 +231,7 @@ function item_moonlight_goddess_bow:OnSpellStart()
         
     local hGoddessArrow =  {   
 	    			           Ability             = self.hSubAbility,
-	    			           EffectName          = "particles/moonlight_goddess_bow_arrow.vpcf",
+	    			           EffectName          = "particles/item/moonlight_goddess_bow/moonlight_goddess_bow_main.vpcf",
 	    			           vSpawnOrigin        = vSpawnLoc,
 	    			           fDistance           = f__Distance,
 	    			           fStartRadius        = f__Radius,

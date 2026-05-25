@@ -283,9 +283,16 @@
 	"Version" "1"
 
 	"item_ward_observer"			"REMOVE"
+	"item_ward_sentry"				"REMOVE"
 	// {
 	// 	"ItemPurchasable"				"0"
 	// }
+
+	"item_recipe_refresher"
+	{
+		"ItemPurchasable"			"1"
+		"ItemCost"           		"12000"
+	}
 
 	// ================= REMOVE ITEMS =================
 	"item_recipe_ultimate_scepter" "REMOVE"

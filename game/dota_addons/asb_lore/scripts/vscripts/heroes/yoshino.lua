@@ -97,7 +97,7 @@ function yoshino_snowball:Hit( target, dragonform )
 	}
 	ApplyDamage(damageTable)
 
-	target:AddNewModifier(self.caster, self, "modifier_generic_slow", {duration = 0.5})
+	target:AddNewModifier(caster, self, "modifier_generic_slow", {duration = 0.5})
 	
 end
 	
@@ -120,7 +120,7 @@ function yoshino_snowball:Hit2( target, dragonform )
 	}
 	ApplyDamage(damageTable)
  
- target:AddNewModifier(self.caster, self, "modifier_sheer_cold", {duration = 2.0})
+ target:AddNewModifier(caster, self, "modifier_sheer_cold", {duration = 2.0})
 
 	
 end
@@ -436,7 +436,7 @@ function modifier_yoshino_state_bad:OnIntervalThink()
 	
 	
 	
-	caster:AddNewModifier(caster, self, "modifier_yoshino_crying_run", {duration = 3})
+	caster:AddNewModifier(caster, self.ability, "modifier_yoshino_crying_run", {duration = 3})
 	self:PlayEffects()
 	
 		else
@@ -621,7 +621,7 @@ function modifier_yoshino_state_normal:OnIntervalThink()
 	
 	if RollPercentage(self.chance1) then
 	
-	caster:AddNewModifier(caster, self, "modifier_yoshino_crying_run", {duration = 3})
+	caster:AddNewModifier(caster, self.ability, "modifier_yoshino_crying_run", {duration = 3})
 	self:PlayEffects()
 		else
 		end
@@ -815,7 +815,7 @@ function modifier_yoshino_blizzard:OnDestroy()
                         center_y = self:GetParent():GetAbsOrigin().y,
                         center_z = self:GetParent():GetAbsOrigin().z }
 
-    enemy:AddNewModifier(self:GetParent(), self, "modifier_knockback", knockback)
+    enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_knockback", knockback)
 	
 		self.damageTable.victim = enemy
 		ApplyDamage( self.damageTable )
@@ -914,9 +914,9 @@ function modifier_yoshino_blizzard_inversion:OnDestroy()
                         center_y = self:GetParent():GetAbsOrigin().y,
                         center_z = self:GetParent():GetAbsOrigin().z }
 
-    enemy:AddNewModifier(self:GetParent(), self, "modifier_knockback", knockback)
-	enemy:AddNewModifier(self:GetParent(), self, "modifier_black_blizzard_delay_damage", {duration = 1.9})
-	enemy:AddNewModifier(self:GetParent(), self, "modifier_sheer_cold", {duration = 3.0})
+    enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_knockback", knockback)
+	enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_black_blizzard_delay_damage", {duration = 1.9})
+	enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_sheer_cold", {duration = 3.0})
 	local delay = 1.9
 
 	Timers:CreateTimer(delay,function()
@@ -1288,7 +1288,7 @@ function modifier_inversion_rink:OnIntervalThink()
 	for _,enemy in pairs(enemies) do
 		self.damageTable.victim = enemy
 		ApplyDamage( self.damageTable )
-		enemy:AddNewModifier(self:GetParent(), self, "modifier_sheer_cold", {duration = 0.6})
+		enemy:AddNewModifier(self:GetParent(), self:GetAbility(), "modifier_sheer_cold", {duration = 0.6})
 	end
 
 	-- tick

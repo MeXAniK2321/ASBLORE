@@ -28,7 +28,7 @@ function modifier_sheer_cold:OnCreated( kv )
 			attacker = self:GetCaster(),
 			damage = tick_damage,
 			damage_type = DAMAGE_TYPE_MAGICAL,
-			ability = self, --Optional.
+			ability = self:GetAbility(), --Optional.
 		}
 
 		-- Start interval

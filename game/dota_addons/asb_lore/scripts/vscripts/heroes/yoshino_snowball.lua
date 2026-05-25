@@ -67,7 +67,7 @@ function yoshino_snowball:Hit( target, dragonform )
 		damage_type = self:GetAbilityDamageType(),
 		ability = self, --Optional.
 	}
-	ApplyDamage(damageTable)
+	-- ApplyDamage(damageTable)
 
 	
 	
