@@ -51,6 +51,10 @@ function roland_gebura_horizontal:OnCardDashImpact(hCaster, hTarget, vDir)
 		sound = "roland_durandal.slash_3",
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.damage = tInfo.damage + nAttackScale
+
 	tInfo.sa_rate = GetAnimPlayRate(51, 51, 50, tInfo.sa_time)
 
 	tInfo.sa_impact_time = GetAnimImpactTime(51, 25, 50, tInfo.sa_time)

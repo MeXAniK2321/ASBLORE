@@ -67,6 +67,10 @@ function roland_logic:OnCardDashImpact(hCaster, hTarget, vDir)
 		}
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.projectile.knock_damage = tInfo.projectile.knock_damage + nAttackScale
+
 	for i = 1, 3 do
 		local p = tInfo["part_"..i]
 

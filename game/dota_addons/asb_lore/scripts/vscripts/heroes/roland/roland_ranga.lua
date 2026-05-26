@@ -87,6 +87,8 @@ function roland_ranga:OnCardDashImpact(hCaster, hTarget, vDir)
 		radius = self:GetSpecialValueFor("radius")
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
 	for i = 1, 3 do
 		local p = tInfo["part_"..i]
 		if p then
@@ -102,6 +104,8 @@ function roland_ranga:OnCardDashImpact(hCaster, hTarget, vDir)
 				30,
 				p.da_time
 			)
+
+			p.damage = p.damage + nAttackScale
 		end
 	end
 

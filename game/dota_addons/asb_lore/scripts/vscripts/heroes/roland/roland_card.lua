@@ -1012,6 +1012,7 @@ end
 function modifier_roland_furioso_controller:OnAbilityExecuted(keys)
 	if self._hParent ~= keys.unit or IsNull(keys.ability) or keys.ability:IsItem() then return end
 	self:CheckFuriosoActivate(keys.ability)
+	self:CheckResistanceBuff(keys.ability)
 end
 function modifier_roland_furioso_controller:OnCreated(tInfo)
 	self._hCaster = self:GetCaster()
@@ -1091,12 +1092,57 @@ function modifier_roland_furioso_controller:GiveFurioso()
 	ROLAND_CardDiscard(self._hParent, self.nSlotToDraw, true)
 	ROLAND_CardAdd(self._hParent, hAbility, self.nSlotToDraw)
 end
+function modifier_roland_furioso_controller:CheckResistanceBuff(hAbility)
+	local nMaxResistance = 40
+	local nMaxChecks = 8
+	local nDuration = 10
+	local nAdd = math.ceil(nMaxResistance / nMaxChecks)
+
+	local hModifier = self._hParent:FindModifierByNameAndCaster("modifier_roland_resistance_buff", self._hCaster)
+	if IsNull(hModifier) then
+		hModifier = self._hParent:AddNewModifier(self._hCaster, self._hAbility, "modifier_roland_resistance_buff", {duration = nDuration})
+	end
+
+	local nStacks = hModifier:GetStackCount()
+
+	if nStacks < nMaxResistance then
+		hModifier:SetStackCount(math.min(nStacks + nAdd, nMaxResistance))
+		hModifier:SetDuration(nDuration, true)
+	end
+end
 
 
 
 
 
 
+
+
+
+
+--====================================================================================================--
+LinkLuaModifier("modifier_roland_resistance_buff", "heroes/roland/roland_card", LUA_MODIFIER_MOTION_NONE)
+
+modifier_roland_resistance_buff = class({})
+
+function modifier_roland_resistance_buff:IsHidden()															return false end
+function modifier_roland_resistance_buff:IsDebuff()															return false end
+function modifier_roland_resistance_buff:IsPurgable()														return false end
+function modifier_roland_resistance_buff:IsPurgeException()													return false end
+function modifier_roland_resistance_buff:RemoveOnDeath()													return true end
+function modifier_roland_resistance_buff:DestroyOnExpire()													return true end
+function modifier_roland_resistance_buff:GetAttributes()													return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_roland_resistance_buff:GetPriority()														return MODIFIER_PRIORITY_SUPER_ULTRA end
+function modifier_roland_resistance_buff:DeclareFunctions()
+	local t =
+	{
+		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
+	}
+	return t
+end
+function modifier_roland_resistance_buff:GetModifierIncomingDamage_Percentage(keys)
+	return -self:GetStackCount()
+end
 
 
 
@@ -1144,7 +1190,7 @@ function modifier_roland_streak_controller_sounds:OnHeroKilled(keys)
 		self._bDeathStreak5 = false
 		self._nDeathStreak = 0
 		self._nKillStreak = self._nKillStreak + 1
-		if self._nKillStreak >= 10 and not self._bKillStreak10 then
+		if self._nKillStreak >= 5 and not self._bKillStreak10 then
 			self._bKillStreak10 = true
 			StopSoundOn("roland_streak.lose_5", self._hParent)
 			StopSoundOn("roland_streak.win_5", self._hParent)
@@ -1153,7 +1199,7 @@ function modifier_roland_streak_controller_sounds:OnHeroKilled(keys)
 			self._hParent:AddNewModifier(self._hCaster, self._hAbility, "modifier_roland_invul_reading", {duration = self._hAbility:GetSpecialValueFor("streak_10_cast_duration")})
 			return
 		end
-		if self._nKillStreak >= 5 and not self._bKillStreak5 then
+		if self._nKillStreak >= 3 and not self._bKillStreak5 then
 			self._bKillStreak5 = true
 			StopSoundOn("roland_streak.lose_5", self._hParent)
 			StopSoundOn("roland_streak.win_5", self._hParent)

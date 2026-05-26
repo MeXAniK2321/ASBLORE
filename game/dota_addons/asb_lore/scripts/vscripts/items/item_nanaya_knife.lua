@@ -69,6 +69,11 @@ function modifier_item_knife:OnCreated(table)
         self.parent:SwapAbilities("nanaya_slashes", "nanaya_blood", true, false)
 	end
 end
+function modifier_item_knife:OnDestroy()
+	if IsServer() then
+		self.parent:SwapAbilities("nanaya_slashes", "nanaya_blood", false, true)
+	end
+end
 function modifier_item_knife:GetModifierHealthBonus()
     return self:GetAbility():GetSpecialValueFor('hp')
 end

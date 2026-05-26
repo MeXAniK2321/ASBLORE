@@ -230,6 +230,7 @@
 		"AbilityCastPoint"						"0.0"
 		"AbilityCooldown"						"0"
 		"AbilityManaCost"						"0"
+		"ItemSellable"							"0"		
 		"AbilitySharedCooldown"					"axis_sheet"
 		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
 		"ItemPurchasable" "0"

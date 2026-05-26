@@ -27,6 +27,10 @@ function roland_boys:OnCardDashImpact(hCaster, hTarget, vDir)
 		knock_stun_time = self:GetSpecialValueFor("knock_stun_time"),
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.damage = tInfo.damage + nAttackScale
+
 	tInfo.ca_rate = GetAnimPlayRate(34, 34, 30, tInfo.ca_time)
 	tInfo.ca_impact_time = GetAnimImpactTime(34, 19, 30, tInfo.ca_time)
 

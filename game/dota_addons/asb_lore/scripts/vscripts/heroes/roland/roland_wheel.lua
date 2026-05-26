@@ -36,6 +36,10 @@ function roland_wheel:OnCardDashImpact(hCaster, hTarget, vDir)
 		},
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.part_1.damage = tInfo.part_1.damage + nAttackScale
+
 	local nCATime = self:GetSpecialValueFor("ca_time")
 
 	tInfo.cast =

@@ -67,6 +67,11 @@ function roland_crystal:OnCardDashImpact(hCaster, hTarget, vDir)
 		}
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.part_1.damage = tInfo.part_1.damage + nAttackScale
+	tInfo.part_2.damage = tInfo.part_2.damage + nAttackScale
+
 	tInfo.part_1.ca_rate = GetAnimPlayRate(8, 8, 30, tInfo.part_1.ca_time)
 	tInfo.part_2.ca_rate = GetAnimPlayRate(13, 4, 30, tInfo.part_2.ca_time)
 

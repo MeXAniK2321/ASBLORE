@@ -47,6 +47,11 @@ function roland_mook:OnCardDashImpact(hCaster, hTarget, vDir)
 
 	local p = tInfo.part_1
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	p.damage = p.damage + (nAttackScale / p.count)
+	p.damage_last = p.damage_last + nAttackScale
+
 	p.ca_rate = GetAnimPlayRate(8, 8, 30, p.ca_time)
 
 	p.sa_slash_rate = GetAnimPlayRate(

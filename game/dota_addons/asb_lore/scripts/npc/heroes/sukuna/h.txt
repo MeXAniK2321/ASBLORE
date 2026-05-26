@@ -65,7 +65,7 @@
 
 		//--===ARMOR===--
 		"ArmorPhysical"				"8"
-		"MagicalResistance"			"10"
+		"MagicalResistance"			"40"
 
 		//--===DAMAGE===--
 		"AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"

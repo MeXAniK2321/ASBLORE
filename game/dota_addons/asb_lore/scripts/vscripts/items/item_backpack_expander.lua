@@ -22,7 +22,7 @@ function item_backpack_expander:OnSpellStart()
 	self:SpendCharge(0)
 end
 ---------------------------------------------------------------------------------------------------------------------
-modifier_item_backpack_expander = modifier_item_backpack_expander or class({})
+modifier_item_backpack_expander = class({})
 
 function modifier_item_backpack_expander:IsHidden() return false end
 function modifier_item_backpack_expander:IsDebuff() return false end
@@ -38,4 +38,37 @@ function modifier_item_backpack_expander:CheckState()
 				 }	
 	
 	return func
+end
+function modifier_item_backpack_expander:OnCreated(tInfo)
+	local hParent = self:GetParent()
+
+	if not IsServer() then return end
+
+	for i = DOTA_ITEM_SLOT_7, DOTA_ITEM_SLOT_9 do
+		local hItem = hParent:GetItemInSlot(i)
+		if IsNotNull(hItem) then
+			-- hCaster:TakeItem(hItem)
+			-- hCaster:AddItem(hItem)
+			hItem:SetItemState(1)
+			hItem:RefreshIntrinsicModifier()
+		end
+	end
+
+	hParent:CalculateStatBonus(true)
+end
+function modifier_item_backpack_expander:OnRefresh(tInfo)
+	self:OnCreated(tInfo)
+end
+function modifier_item_backpack_expander:OnDestroy()
+	local hParent = self:GetParent()
+
+	for i = DOTA_ITEM_SLOT_7, DOTA_ITEM_SLOT_9 do
+		local hItem = hParent:GetItemInSlot(i)
+		if IsNotNull(hItem) then
+			hItem:SetItemState(0)
+			hParent:RemoveModifierByNameAndCaster(hItem:GetIntrinsicModifierName(), hParent)
+		end
+	end
+
+	hParent:CalculateStatBonus(true)
 end

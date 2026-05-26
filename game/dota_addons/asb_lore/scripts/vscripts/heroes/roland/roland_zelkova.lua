@@ -27,6 +27,11 @@ function roland_zelkova:OnCardDashImpact(hCaster, hTarget, vDir)
 		damage_2 = self:GetSpecialValueFor("damage_2"),
 	}
 	
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+
+	tInfo.damage_1 = tInfo.damage_1 + nAttackScale
+	tInfo.damage_2 = tInfo.damage_2 + nAttackScale
+
 	tInfo.sa_time_12 = tInfo.sa_time_1 + tInfo.sa_time_2
 
 	tInfo.sa_impact_time_1 = GetAnimImpactTime(33, 8, 30, tInfo.sa_time_12)

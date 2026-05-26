@@ -31,6 +31,10 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		last_damage =  self:GetSpecialValueFor("last_damage"),
 	}
 
+	local nAttackScale = self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster)
+	
+	tInfo.last_damage = tInfo.last_damage + nAttackScale
+
 	--======================================================================--
 	-- DASH-TO (reposition between steps)
 	--======================================================================--
@@ -73,7 +77,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 			knock_stun_time = self:GetSpecialValueFor("logic_small_knock_stun_time"),
 			knock_time      = self:GetSpecialValueFor("logic_small_knock_time"),
 			knock_range     = self:GetSpecialValueFor("logic_small_knock_range"),
-			damage          = self:GetSpecialValueFor("logic_small_damage"),
+			damage          = self:GetSpecialValueFor("logic_small_damage") + nAttackScale,
 		},
 
 		big =
@@ -85,7 +89,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 			knock_stun_time = self:GetSpecialValueFor("logic_big_knock_stun_time"),
 			knock_time      = self:GetSpecialValueFor("logic_big_knock_time"),
 			knock_range     = self:GetSpecialValueFor("logic_big_knock_range"),
-			damage          = self:GetSpecialValueFor("logic_big_damage"),
+			damage          = self:GetSpecialValueFor("logic_big_damage") + nAttackScale,
 		},
 	}
 	local l = tInfo.logic
@@ -112,7 +116,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		da_range     = self:GetSpecialValueFor("allas_da_range"),
 
 		radius       = self:GetSpecialValueFor("allas_radius"),
-		damage       = self:GetSpecialValueFor("allas_damage"),
+		damage       = self:GetSpecialValueFor("allas_damage") + nAttackScale,
 	}
 	local a = tInfo.allas
 	a.ca_rate = GetAnimPlayRate(11, 11, 30, a.ca_time)
@@ -127,7 +131,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		ca_act_mod      = "boys_cast",
 		ca_stunnable    = self:GetSpecialValueFor("boys_ca_stunnable"),
 		ca_time         = self:GetSpecialValueFor("boys_ca_time"),
-		damage          = self:GetSpecialValueFor("boys_damage"),
+		damage          = self:GetSpecialValueFor("boys_damage") + nAttackScale,
 		knock_time      = self:GetSpecialValueFor("boys_knock_time"),
 		knock_range     = self:GetSpecialValueFor("boys_knock_range"),
 		knock_stun_time = self:GetSpecialValueFor("boys_knock_stun_time"),
@@ -154,8 +158,11 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		count       = self:GetSpecialValueFor("mook_count"),
 		radius      = self:GetSpecialValueFor("mook_radius"),
 		damage      = self:GetSpecialValueFor("mook_damage"),
-		damage_last = self:GetSpecialValueFor("mook_damage_last"),
+		damage_last = self:GetSpecialValueFor("mook_damage_last") + nAttackScale,
 	}
+
+	tInfo.mook.damage = tInfo.mook.damage + (nAttackScale / tInfo.mook.count)
+
 	local m = tInfo.mook
 	m.ca_rate        = GetAnimPlayRate(8,  8,  30, m.ca_time)
 	m.sa_slash_rate  = GetAnimPlayRate(14, 14, 30, m.sa_time / m.count)
@@ -179,7 +186,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 			da_stunnable = self:GetSpecialValueFor("ranga_da_stunnable_"..i),
 			da_time      = self:GetSpecialValueFor("ranga_da_time_"..i),
 			da_range     = self:GetSpecialValueFor("ranga_da_range_"..i),
-			damage       = self:GetSpecialValueFor("ranga_damage_"..i),
+			damage       = self:GetSpecialValueFor("ranga_damage_"..i) + nAttackScale,
 			bleeds       = self:GetSpecialValueFor("ranga_bleeds_"..i) * FindTalentValue(tInfo.caster, "special_bonus_roland_25l", nil, 1),
 			sound_dash   = "roland_turn.end",
 			sound_slash  = "roland_ranga.slash_"..i,
@@ -200,8 +207,8 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		sa_time_1     = self:GetSpecialValueFor("zelkova_sa_time_1"),
 		sa_time_2     = self:GetSpecialValueFor("zelkova_sa_time_2"),
 		root_duration = self:GetSpecialValueFor("zelkova_root_duration"),
-		damage_1      = self:GetSpecialValueFor("zelkova_damage_1"),
-		damage_2      = self:GetSpecialValueFor("zelkova_damage_2"),
+		damage_1      = self:GetSpecialValueFor("zelkova_damage_1") + nAttackScale,
+		damage_2      = self:GetSpecialValueFor("zelkova_damage_2") + nAttackScale,
 	}
 	local z = tInfo.zelkova
 	z.sa_time_12      = z.sa_time_1 + z.sa_time_2
@@ -224,7 +231,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		ca_time_1      = self:GetSpecialValueFor("wheel_ca_time_1"),
 		ca_stunnable_1 = self:GetSpecialValueFor("wheel_ca_stunnable_1"),
 
-		damage    = self:GetSpecialValueFor("wheel_ca_damage_1"),
+		damage    = self:GetSpecialValueFor("wheel_ca_damage_1") + nAttackScale,
 		stun_time = self:GetSpecialValueFor("wheel_ca_stun_time_1"),
 		radius    = self:GetSpecialValueFor("wheel_ca_radius_1"),
 	}
@@ -248,7 +255,7 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		da_stunnable = self:GetSpecialValueFor("crystal_da_stunnable_2"),
 		da_time      = self:GetSpecialValueFor("crystal_da_time_2"),
 		da_range     = self:GetSpecialValueFor("crystal_da_range_2"),
-		da_damage    = self:GetSpecialValueFor("crystal_da_damage_2"),
+		da_damage    = self:GetSpecialValueFor("crystal_da_damage_2") + nAttackScale,
 		da_bleeds    = self:GetSpecialValueFor("crystal_da_bleeds_2") * FindTalentValue(tInfo.caster, "special_bonus_roland_25l", nil, 1),
 
 		radius       = self:GetSpecialValueFor("crystal_radius"),
@@ -274,9 +281,9 @@ function roland_furioso:OnCardDashImpact(hCaster, hTarget, vDir)
 		da_range      = self:GetSpecialValueFor("durandal_da_range"),
 		slow_duration = self:GetSpecialValueFor("durandal_slow_duration"),
 
-		damage_1      = self:GetSpecialValueFor("durandal_damage_1"),
-		damage_2      = self:GetSpecialValueFor("durandal_damage_2"),
-		damage_3      = self:GetSpecialValueFor("durandal_damage_3"),
+		damage_1      = self:GetSpecialValueFor("durandal_damage_1") + nAttackScale,
+		damage_2      = self:GetSpecialValueFor("durandal_damage_2") + nAttackScale,
+		damage_3      = self:GetSpecialValueFor("durandal_damage_3") + nAttackScale,
 	}
 	local d = tInfo.durandal
 	d.ca_rate          = GetAnimPlayRate(36, 36, 30, d.ca_time)
