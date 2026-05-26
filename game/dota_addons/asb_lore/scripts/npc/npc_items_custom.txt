@@ -1262,7 +1262,7 @@
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_avalon.lua"
 		"AbilityTextureName" 					"avalon"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
 		"AbilityCastPoint" "0.1"
 		"AbilityCooldown"						"60"
 		"AbilityManaCost"						"250"
