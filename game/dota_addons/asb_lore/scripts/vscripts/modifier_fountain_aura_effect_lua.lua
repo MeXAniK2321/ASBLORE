@@ -14,8 +14,12 @@ function modifier_fountain_aura_effect_lua:DeclareFunctions()
 		MODIFIER_PROPERTY_MANA_REGEN_CONSTANT,
 		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+        MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
 	}
 	return funcs
+end
+function modifier_fountain_aura_effect_lua:GetModifierMagicalResistanceBonus(keys)
+	return 40
 end
 function modifier_fountain_aura_effect_lua:GetModifierIncomingDamage_Percentage( params )
 	  if self:GetParent():HasModifier("modifier_the_one_ultimate_d") or self:GetParent():HasModifier("modifier_muscule_flex") or self:GetParent():HasModifier("modifier_death_cd")  then

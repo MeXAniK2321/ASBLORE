@@ -1224,27 +1224,27 @@
 	//=================================================================================================================
 	// Aeon Disk
 	//=================================================================================================================
-	"item_aeon_disk"
-	{	
-		"AbilitySpecial"
-		{
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"health_threshold_pct"	"65"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"status_resistance"		"0"
-			}
-		}
-		"ItemPurchasable"				"0"
-	}
-	"item_recipe_aeon_disk"
-	{	
-	"ItemPurchasable"				"0"
-	}
+	// "item_aeon_disk"
+	// {	
+	// 	"AbilitySpecial"
+	// 	{
+	// 		"03"
+	// 		{
+	// 			"var_type"				"FIELD_INTEGER"
+	// 			"health_threshold_pct"	"65"
+	// 		}
+	// 		"04"
+	// 		{
+	// 			"var_type"				"FIELD_INTEGER"
+	// 			"status_resistance"		"0"
+	// 		}
+	// 	}
+	// 	"ItemPurchasable"				"0"
+	// }
+	// "item_recipe_aeon_disk"
+	// {	
+	// "ItemPurchasable"				"0"
+	// }
 	//=================================================================================================================
 	// Abyssal Blade
 	//=================================================================================================================

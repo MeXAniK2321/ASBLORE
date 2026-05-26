@@ -11525,7 +11525,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
 		"HasShardUpgrade" "1"		
 
@@ -11548,7 +11548,7 @@
 		"AbilityValues"
 		{
 			"duration" "4"
-			"damage" "10000"
+			"damage" "15000"
 		}
 	}
 	"deidara_c4"

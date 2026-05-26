@@ -282,6 +282,132 @@
 {
 	"Version" "1"
 
+    //=================================================================================================================
+    // Recipe: Sphere
+    //=================================================================================================================
+    "item_recipe_sphere"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "Model"                         "models/props_gameplay/recipe.vmdl"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "12000"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_sphere"
+        "ItemRequirements"
+        {
+            "01"                        "item_pers;item_ultimate_orb;"
+        }
+    }
+
+    //=================================================================================================================
+    // Sphere
+    //=================================================================================================================
+    "item_sphere"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "FightRecapLevel"               "1"
+
+        
+        "AbilityCastRange"              "700"
+        "AbilityCooldown"               "30.0"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "4800"
+        "ItemShopTags"                  "regen_health;regen_mana;str;agi;int;hard_to_tag;teamfight;save"
+        "ItemQuality"                   "epic"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ActiveDescriptionLine"         "2"
+        "SuggestLategame"               "1"
+
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "bonus_all_stats"       "16"
+                "bonus_health_regen"    "6.5"
+                "bonus_mana_regen"      "4.25"
+                "block_cooldown"        "14.0"
+                "upgrade_absorb_duration"       "10.0"
+                "damage_absorb"     "300"
+        }
+    }
+
+    //=================================================================================================================
+    // Recipe: Lotus Orb
+    //=================================================================================================================
+    "item_recipe_lotus_orb"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "Model"                         "models/props_gameplay/recipe.vmdl"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "5000"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_lotus_orb"
+        "ItemRequirements"
+        {
+            "01"                        "item_pers;item_platemail;item_energy_booster"
+        }
+    }
+    
+    //=================================================================================================================
+    // Lotus Orb
+    //=================================================================================================================
+    "item_lotus_orb"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "FightRecapLevel"               "1"
+        
+        "AbilityCooldown"               "15.0"
+        "AbilityCastRange"              "900"
+        "AbilityManaCost"               "175"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "3850"
+        "ItemShopTags"                  "regen_health;regen_mana;str;agi;int;hard_to_tag;teamfight;save"
+        "ItemQuality"                   "epic"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        // "ItemDisassembleRule"            "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+        "SuggestLategame"               "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "bonus_armor"       "10"
+                "bonus_health_regen"    "6.5"
+                "bonus_mana_regen"      "4.0"
+                "bonus_mana"            "250"
+                "active_duration"       "2.5"
+        }
+    }
+
+	"item_aeon_disk"				"REMOVE"
 	"item_ward_observer"			"REMOVE"
 	"item_ward_sentry"				"REMOVE"
 	// {
