@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc32:version{c5dcef98-b629-46ab-88e3-a17c005c935e} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -15,7 +15,7 @@
 						[
 							{
 								from = "toilet.vmat"
-								to = "materials/dev/primary_white.vmat"
+								to = "materials/models/items/antimage/ti7_immortal_armor/log_gold.vmat"
 							},
 						]
 						use_global_default = false
@@ -38,8 +38,8 @@
 								surface_property = ""
 								translation_only = false
 								group_id = 0
-								hitbox_mins = [ -19.851212, -94.169708, -1.0 ]
-								hitbox_maxs = [ 195.775513, 73.793457, 220.597 ]
+								hitbox_mins = [ -19.851212, -94.16971, -1.0 ]
+								hitbox_maxs = [ 195.77551, 73.79346, 220.597 ]
 							},
 						]
 					},
@@ -81,6 +81,7 @@
 					{
 						_class = "AnimFile"
 						name = "toilet"
+						is_default_idle_anim = false
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -93,12 +94,14 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						animgraph_additive = false
+						delete_from_compiled_model = false
 						source_filename = "models/toilet/toilet.fbx"
 						import_bone_scales = false
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
+						additional_anim_files = [  ]
 					},
 				]
 				default_root_bone_name = ""
@@ -111,7 +114,7 @@
 						_class = "Attachment"
 						name = "attach_hitloc"
 						parent_bone = "bone0"
-						relative_origin = [ 105.308563, -74.566925, 46.418198 ]
+						relative_origin = [ 105.30856, -74.566925, 46.418198 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
@@ -122,5 +125,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

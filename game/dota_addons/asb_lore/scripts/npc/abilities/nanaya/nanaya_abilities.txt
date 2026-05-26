@@ -207,7 +207,7 @@
 	  	
         "AbilityValues"
         {
-            "damage" "600"
+            "damage" "100"
         }
     }
 			

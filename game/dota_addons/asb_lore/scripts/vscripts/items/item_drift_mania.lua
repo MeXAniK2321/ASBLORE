@@ -34,17 +34,17 @@ end
 function modifier_item_drift_mania:DeclareFunctions()
     local funcs = {
         MODIFIER_PROPERTY_HEALTH_BONUS,
-        MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
+        MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
         
     }
 
     return funcs
 end
 
-function modifier_item_drift_mania:GetModifierHealthBonus()
+function modifier_item_drift_mania:GetModifierHealthBonus(keys)
     return self:GetAbility():GetSpecialValueFor('bonus_hp')
 end
 
-function modifier_item_drift_mania:GetModifierSpellAmplify_Percentage()
-    return self:GetAbility():GetSpecialValueFor('spell_amp')
+function modifier_item_drift_mania:GetModifierPreAttack_BonusDamage(keys)
+    return self:GetAbility():GetSpecialValueFor('attack')
 end

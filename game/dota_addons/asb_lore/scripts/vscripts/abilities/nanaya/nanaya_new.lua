@@ -788,7 +788,6 @@ function nanaya_knife:OnProjectileHitHandle(hTarget, vLocation, iProjectileHandl
         local iHPPercent = (self:GetSpecialValueFor("hp_percent") or 10)+ (self:GetCaster():HasTalent("special_bonus_nanaya_15r")
                                                                           and self:GetCaster():FindTalentValue("special_bonus_nanaya_15r")
                                                                           or 0)
-		
         if hTarget:GetHealthPercent() >= iHPPercent then -->= 25 then
             
             local fDamage = self:GetSpecialValueFor("dmg")
@@ -797,20 +796,22 @@ function nanaya_knife:OnProjectileHitHandle(hTarget, vLocation, iProjectileHandl
                 and self:GetCaster():FindModifierByName("nanaya_blood_modifier"):GetStackCount() >= 30 then
                 local hTalent = self:GetCaster():FindAbilityByName("special_bonus_nanaya_25l")
             
-                if hTalent
-                    and IsNotNull(hTalent) then
+                if hTalent and IsNotNull(hTalent) then
                     fDamage = hTalent:GetSpecialValueFor("value") 
                     fAgiScale = fAgiScale + hTalent:GetSpecialValueFor("value2")                   
                 end
+
+                -- print(fAgiScale, "kekek")
+                caster:SetModifierStackCount("nanaya_blood_modifier", caster, 0)
             end
 		
-        local dmg = fDamage + math.floor(self:GetCaster():GetAgility()*fAgiScale)
+        	local dmg = fDamage + math.floor(self:GetCaster():GetAgility()*fAgiScale)
 			ApplyDamage({
                     victim = hTarget,
                     attacker = caster,
                     damage = dmg,
                     damage_type = DAMAGE_TYPE_PHYSICAL,
-                    damage_flags = 1024,
+                    damage_flags = 0,
                     ability = self
                 })
 		end
@@ -2103,7 +2104,7 @@ function nanaya_combo_attack:OnTakeDamage(args)
         if args.unit ~= self:GetParent() then return end
 		
         local damageTaken = args.original_damage
-        if damageTaken >= 499 and caster:GetHealth() ~= 0 and self:FilterUnits(caster, target) then
+        if damageTaken >= self:GetAbility():GetSpecialValueFor("damage") and caster:GetHealth() ~= 0 and self:FilterUnits(caster, target) then
 		    nanaya_combo:Alternate(caster, target, self:GetAbility())
 		    self:Destroy()
         end

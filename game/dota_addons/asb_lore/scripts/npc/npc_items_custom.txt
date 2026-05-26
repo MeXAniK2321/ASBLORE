@@ -4487,8 +4487,9 @@
 
 		"AbilityValues"//// ебись сам раз не написал че коробка дает
 		{
-			"spell_amp"				"50"
-			"bonus_hp"				"500"
+			// "spell_amp"				"50"
+			"bonus_hp"				"2500"
+			"attack"				"100"
 		}
 	}
 	"item_national_contract"
