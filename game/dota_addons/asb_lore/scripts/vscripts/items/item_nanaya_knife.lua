@@ -7,23 +7,13 @@ function item_nanaya_knife:GetIntrinsicModifierName()
     return "modifier_item_knife"
 end
 function item_nanaya_knife:CastFilterResult()
-    if IsServer() then
-	    local hCaster         = self:GetCaster()
-	    local hBloodModifier  = hCaster:HasModifier("nanaya_blood_modifier")
-
-	    if IsNotNull(hBloodModifier) then
-            local hModifier      = hCaster:FindModifierByNameAndCaster("nanaya_blood_modifier", hCaster)
-            local iModifierCount = hCaster:GetKills() or hModifier.iKills
-            local iKillsCounter  = self:GetSpecialValueFor("ghoul_kills") or 10
-		
-            if iModifierCount then
-                if iModifierCount >= iKillsCounter then
-                    return UF_SUCCESS
-                end
-            end
-	    end
-	    return UF_FAIL_CUSTOM
+	local hCaster = self:GetCaster()
+	local nKills = hCaster:GetModifierStackCount(self:GetIntrinsicModifierName(), hCaster)
+    local nKillsNeed  = self:GetSpecialValueFor("ghoul_kills") or 10
+    if nKills < nKillsNeed then
+    	return UF_FAIL_CUSTOM
     end
+    return self.BaseClass.CastFilterResult(self)
 end
 function item_nanaya_knife:GetCustomCastError()
 	return "#nanaya_instinct_cast_error"
@@ -40,7 +30,7 @@ end
 
 modifier_item_knife = modifier_item_knife or class({})
 
-function modifier_item_knife:IsHidden()return true end
+function modifier_item_knife:IsHidden()return false end
 function modifier_item_knife:RemoveOnDeath() return false end
 function modifier_item_knife:IsPurgable() return false end
 function modifier_item_knife:GetAttributes() return MODIFIER_ATTRIBUTE_MULTIPLE end
@@ -67,12 +57,19 @@ function modifier_item_knife:OnCreated(table)
         self.modifier_scepter = self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
         self.parent:FindAbilityByName("nanaya_slashes"):SetLevel(1)
         self.parent:SwapAbilities("nanaya_slashes", "nanaya_blood", true, false)
+
+        self:StartIntervalThink(1)
 	end
 end
 function modifier_item_knife:OnDestroy()
 	if IsServer() then
 		self.parent:SwapAbilities("nanaya_slashes", "nanaya_blood", false, true)
 	end
+end
+function modifier_item_knife:OnIntervalThink()
+	if not IsServer() then return end
+	local nKills = PlayerResource:GetKills(self.parent:GetPlayerOwnerID())
+	self:SetStackCount(nKills)
 end
 function modifier_item_knife:GetModifierHealthBonus()
     return self:GetAbility():GetSpecialValueFor('hp')

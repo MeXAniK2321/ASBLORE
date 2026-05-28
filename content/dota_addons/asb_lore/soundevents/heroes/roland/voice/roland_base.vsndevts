@@ -5269,273 +5269,273 @@
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_04 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_05 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_11 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_12 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_13 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_15 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_16 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_19 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_20 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_22 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_23 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_26 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_27 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_28 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_29 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_30 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_32 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_33 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_34 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_36 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_37 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_38 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_39 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_01 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_02 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_03 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_04 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_05 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_06 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_07 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_08 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_09 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_10 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_11 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_12 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_13 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_14 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_levelup_81_15 = 
 	{
 		type = "dota_update_vo_switch"
 		volume = 1.000000
 		pitch = 1.000000
-		vsnd_files = "sounds/heroes/roland/voice/roland_level_1.vsnd"
+		vsnd_files = "sounds/heroes/roland/voice/roland_spawn_1.vsnd"
 	}
 	kez_kez_lose_01 = 
 	{
