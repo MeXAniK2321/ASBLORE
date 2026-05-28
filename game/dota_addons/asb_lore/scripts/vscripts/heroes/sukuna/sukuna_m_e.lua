@@ -120,7 +120,8 @@ function sukuna_m_e:CastAnimation(tInfo)
 		tInfo.target:AddNewModifier(tInfo.caster, self, "modifier_stunned", {duration = tInfo.stun_duration})
 
 		Timers:CreateTimer(tInfo.hits_delay, function()
-			local nSlashesPFX = ParticleManager:CreateParticle("particles/heroes/sukuna/sukuna_slashes_target/sukuna_slashes_target.vpcf", PATTACH_ABSORIGIN_FOLLOW, tInfo.target)
+			local nSlashesPFX = ParticleManager:CreateParticle("particles/heroes/sukuna_slashes/sukuna_slash_main2.vpcf", PATTACH_ABSORIGIN_FOLLOW, tInfo.target)
+			EmitSoundOn("sukuna.wutthis1", tInfo.caster)
 
 			local nHits = 0
 			Timers:CreateTimer(0, function()

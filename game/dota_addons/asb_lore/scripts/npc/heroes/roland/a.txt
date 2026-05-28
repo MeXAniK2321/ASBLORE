@@ -226,8 +226,8 @@
 
 			"root_duration"							"0.25 0.3 0.35 0.4 0.45"
 
-			"damage_1"								"100 125 150 200 225"
-			"damage_2"								"225 250 275 300 325"
+			"damage_1"								"155 180 205 230 255"
+			"damage_2"								"255 300 325 350 400"
 
 			"rarity"								"1"
 		}
@@ -265,7 +265,7 @@
 			"dr_duration"							"3"
 			"dr_value"								"-20"
 
-			"damage"								"200 300 400 500 600"
+			"damage"								"260 390 520 650 780"
 
 			"rarity"								"1"
 		}
@@ -297,7 +297,7 @@
 			"da_time_1"								"0.3"
 			"da_range_1"							"800"
 
-			"damage_1"								"100 200 300 400 500"
+			"damage_1"								"130 260 390 520 650"
 			"bleeds_1"								
 			{
 				"value"								"5"
@@ -312,7 +312,7 @@
 			"da_time_2"								"0.3"
 			"da_range_2"							"1200"
 
-			"damage_2"								"400 500 600 700 800"
+			"damage_2"								"520 650 780 910 1040"
 			"bleeds_2"								
 			{
 				"value"								"10"
@@ -326,7 +326,7 @@
 			"da_stunnable_3"						"0"
 			"da_time_3"								"0.3"
 			"da_range_3"							"1200"
-			"damage_3"								"600 700 800 900 1000"
+			"damage_3"								"780 910 1040 1170 1300"
 			"bleeds_3"								"20"
 
 			"radius"								"128"
@@ -363,8 +363,8 @@
 			"slow_duration"							"1 1.5 2 2.5 3"
 			"slow_ms_value"							"-60"
 
-			"damage_1"								"150 200 250 300 350"
-			"damage_2"								"150 200 250 300 350"
+			"damage_1"								"200 260 325 360 455"
+			"damage_2"								"200 260 325 360 455"
 
 			"rarity"								"3"
 		}
@@ -399,8 +399,8 @@
 			
 			"radius"								"300"
 
-			"damage"								"100"
-			"damage_last"							"1000"
+			"damage"								"130"
+			"damage_last"							"1300"
 
 			"rarity"								"2"
 		}
@@ -433,7 +433,7 @@
 			"da_stunnable_1"						"0"
 			"da_time_1"								"0.3"
 			"da_range_1"							"800"
-			"da_damage_1"							"200 300 400 500 600"
+			"da_damage_1"							"260 390 520 650 780"
 			"da_bleeds_1"
 			{
 				"value"								"20"
@@ -447,7 +447,7 @@
 			"da_stunnable_2"						"1"
 			"da_time_2"								"0.3"
 			"da_range_2"							"1200"
-			"da_damage_2"							"400 600 800 1000 1200"
+			"da_damage_2"							"520 780 1040 1300 1560"
 			"da_bleeds_2"
 			{
 				"value"								"40"
@@ -497,7 +497,7 @@
 			"proj_knock_stun_time"					"0.8"
 			"proj_knock_time"						"0.2"
 			"proj_knock_range"						"250"
-			"proj_knock_damage"						"200 350 500 650 800"
+			"proj_knock_damage"						"260 455 650 835 1040"
 
 			"rarity"								"2"
 			"type"									"2"
@@ -526,7 +526,7 @@
 			"ca_stunnable_1"						"1"
 			"ca_time_1"								"0.6"
 
-			"damage_1"								"150 200 250 300 350"
+			"damage_1"								"200 260 325 390 455"
 
 			"knock_time_1"							"0.5"
 			"knock_range_1"							"400"
@@ -540,7 +540,7 @@
 			"da_range_2"							"1200"
 
 			"radius_2"								"128"
-			"damage_2"								"300 350 400 450 500"
+			"damage_2"								"390 455 520 585 650"
 
 			"dr_duration_2"							"3"
 			"dr_value_2"							"-20"
@@ -573,7 +573,7 @@
 
 			"ca_time_1"								"0.3"
 			"ca_stunnable_1"						"0"
-			"ca_damage_1"							"500 700 900 1100 1300"
+			"ca_damage_1"							"650 910 1170 1443 1690"
 			"ca_stun_time_1"						"2"
 			"ca_radius_1"							"300"
 
@@ -618,7 +618,7 @@
 			"sa_radius"								"300"
 			"sa_vision_time"						"10"
 
-			"sa_damage"								"1200"
+			"sa_damage"								"1560"
 
 			"rarity"								"4"
 		}
@@ -678,7 +678,7 @@
 			"logic_small_knock_stun_time"			"0.8"
 			"logic_small_knock_time"				"0.2"
 			"logic_small_knock_range"				"250"
-			"logic_small_damage"					"150"
+			"logic_small_damage"					"200"
 
 			//=======================================================================================================
 			// STEP 2 - ALLAS: long-range dash behind target (part 2 only)
@@ -689,14 +689,14 @@
 			"allas_da_time"							"0.3"
 			"allas_da_range"						"1500"
 			"allas_radius"							"128"
-			"allas_damage"							"250"
+			"allas_damage"							"325"
 
 			//=======================================================================================================
 			// STEP 3 - BOYS: knock enemy backward
 			//=======================================================================================================
 			"boys_ca_stunnable"						"0"
 			"boys_ca_time"							"0.6"
-			"boys_damage"							"150"
+			"boys_damage"							"200"
 			"boys_knock_time"						"0.5"
 			"boys_knock_range"						"400"
 			"boys_knock_stun_time"					"2"
@@ -710,7 +710,7 @@
 			"mook_sa_time"							"0.6"
 			"mook_count"							"10"
 			"mook_radius"							"300"
-			"mook_damage"							"80"
+			"mook_damage"							"104"
 			"mook_damage_last"						"800"
 
 			//=======================================================================================================
@@ -723,7 +723,7 @@
 			"ranga_da_stunnable_1"					"0"
 			"ranga_da_time_1"						"0.3"
 			"ranga_da_range_1"						"800"
-			"ranga_damage_1"						"80"
+			"ranga_damage_1"						"104"
 			"ranga_bleeds_1"						"5"
 
 			"ranga_ca_stunnable_2"					"0"
@@ -731,7 +731,7 @@
 			"ranga_da_stunnable_2"					"0"
 			"ranga_da_time_2"						"0.3"
 			"ranga_da_range_2"						"1200"
-			"ranga_damage_2"						"300"
+			"ranga_damage_2"						"390"
 			"ranga_bleeds_2"						"10"
 
 			"ranga_ca_stunnable_3"					"0"
@@ -739,7 +739,7 @@
 			"ranga_da_stunnable_3"					"0"
 			"ranga_da_time_3"						"0.3"
 			"ranga_da_range_3"						"1200"
-			"ranga_damage_3"						"500"
+			"ranga_damage_3"						"650"
 			"ranga_bleeds_3"						"20"
 
 			//=======================================================================================================
@@ -750,7 +750,7 @@
 			"zelkova_sa_time_2"						"0.35"
 			"zelkova_root_duration"					"0.25"
 			"zelkova_damage_1"						"80"
-			"zelkova_damage_2"						"180"
+			"zelkova_damage_2"						"234"
 
 			//=======================================================================================================
 			// STEP 7 - WHEEL: AoE strike
@@ -759,7 +759,7 @@
 			"wheel_ca_stunnable"					"0"
 			"wheel_ca_time_1"						"0.3"
 			"wheel_ca_stunnable_1"					"0"
-			"wheel_ca_damage_1"						"400"
+			"wheel_ca_damage_1"						"520"
 			"wheel_ca_stun_time_1"					"2"
 			"wheel_ca_radius_1"						"300"
 
@@ -772,7 +772,7 @@
 			"crystal_da_stunnable_2"				"0"
 			"crystal_da_time_2"						"0.3"
 			"crystal_da_range_2"					"1200"
-			"crystal_da_damage_2"					"350"
+			"crystal_da_damage_2"					"455"
 			"crystal_da_bleeds_2"					"40"
 
 			//=======================================================================================================
@@ -783,7 +783,7 @@
 			"logic_big_knock_stun_time"				"1.2"
 			"logic_big_knock_time"					"0.4"
 			"logic_big_knock_range"					"350"
-			"logic_big_damage"						"300"
+			"logic_big_damage"						"390"
 
 			//=======================================================================================================
 			// STEP 10 - DURANDAL: 2 hits + bonus 3rd hit, turn backward at end
@@ -792,9 +792,9 @@
 			"durandal_ca_time"						"0.9"
 			"durandal_da_range"						"300"
 			"durandal_slow_duration"				"1"
-			"durandal_damage_1"						"120"
-			"durandal_damage_2"						"120"
-			"durandal_damage_3"						"120"
+			"durandal_damage_1"						"156"
+			"durandal_damage_2"						"156"
+			"durandal_damage_3"						"156"
 
 			// Required by modifier_roland_durandal_slow when furioso applies it
 			"slow_ms_value"							"-60"
@@ -941,7 +941,7 @@
 			"stun_time"								"2"
 			"vision_time"							"10"
 
-			"damage"								"1200"
+			"damage"								"1560"
 		}
 	}
 
@@ -974,7 +974,7 @@
 			"stun_time"								"2"
 			"vision_time"							"10"
 
-			"damage"								"1200"
+			"damage"								"1560"
 		}
 	}
 

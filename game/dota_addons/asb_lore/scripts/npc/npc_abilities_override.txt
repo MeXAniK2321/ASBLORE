@@ -281,6 +281,9 @@
 "DOTAAbilities"
 {
 	"Version" "1"
+	
+    "item_recipe_black_king_bar"	  "REMOVE"
+    "item_black_king_bar"	 "REMOVE"
 
     "item_abyssal_blade"
     {
@@ -298,7 +301,7 @@
         
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                      "12000"   
+        "ItemCost"                      "5700"   
         "ItemShopTags"                  ""
         
         // Recipe

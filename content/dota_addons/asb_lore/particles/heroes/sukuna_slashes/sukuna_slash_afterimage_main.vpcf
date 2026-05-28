@@ -21,7 +21,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 0.09
+				m_flLiteralValue = 0.05
 				m_NamedValue = ""
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
@@ -87,9 +87,17 @@
 	[
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna_slashes/sukuna_slash_afterimage_cyan.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna_slashes/sukuna_slash_afterimage_purple.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna_slashes/sukuna_slash_blue_cringe.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna_slashes/sukuna_slash_purple_cringe.vpcf"
 		},
 	]
 }

@@ -5549,7 +5549,7 @@
 		"ItemShareability"						"ITEM_FULLY_SHAREABLE"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"0"
-		"ItemCost"								"77777"
+		"ItemCost"								"55555"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"

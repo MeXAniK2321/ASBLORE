@@ -90,7 +90,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 		end
 		
 		-- Level Ultimates if option is enabled
-		if _G.LoreStartWithUlts and _G.LoreStartWithUlts ~= nil then
+		if _G.LoreStartUltsCD and _G.LoreStartUltsCD > 0 then
 	        for i = 0, spawnedUnit:GetAbilityCount() - 1 do
 		        local iAbility = spawnedUnit:GetAbilityByIndex(i)
 		        if iAbility then

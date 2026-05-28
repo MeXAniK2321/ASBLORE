@@ -345,10 +345,29 @@
 		type = "dota_src1_3d"
 		vsnd_files =
 		[
-			"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
-			"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
+			//"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
+			//"sounds/heroes/sukuna/sukuna_black_flash.vsnd",
+			"sounds/heroes/sukuna/wutthis/black_flash3.vsnd",
+			"sounds/heroes/sukuna/wutthis/black_flash3.vsnd",
 		]
-		volume = "1.000000"
+		volume = "5.000000"//"1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "5000.000000"
+		event_type = "1.000000"
+	}
+	
+	sukuna.wutthis1 =
+	{
+		type = "dota_src1_3d"
+		vsnd_files =
+		[
+			"sounds/heroes/sukuna/wutthis/dismantle3.vsnd",
+			"sounds/heroes/sukuna/wutthis/dismantle3.vsnd",
+		]
+		volume = "3.000000"//"1.000000"
 		pitch_rand_min = "-0.050000"
 		pitch_rand_max = "0.050000"
 		pitch = "1.000000"

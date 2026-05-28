@@ -541,7 +541,7 @@ function modifier_unlimited_gay_works:OnCreated(table)
     self.awake_mana = self.ability:GetSpecialValueFor("awake_mana")
     self.skills_table = {
                             ["unlimited_gay_works"] = "gaynado",
-							["gachi_storm"] = "gachi_storm"
+							["gay_bar"] = "gachi_storm"
 						
 							
 							

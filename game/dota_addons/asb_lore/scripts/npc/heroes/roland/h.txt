@@ -61,7 +61,7 @@
 
 		//--===DAMAGE===--
 		"AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackRate"				"1.5"
+		"AttackRate"				"2.3"
 
 		"AttackDamageMin"			"65"
 		"AttackDamageMax"			"65"
