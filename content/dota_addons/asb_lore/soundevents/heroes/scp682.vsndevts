@@ -1,0 +1,62 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	"Scp682bite" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/scp682/scp682_bite.vsnd",
+		]
+	}
+	
+	"Scp682scream" = 
+	{
+		type = "dota_src1_3d"
+		volume = 2.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/scp682/scp682_scream.vsnd",
+		]
+	}
+	
+	"Scp682ultimate" = 
+	{
+		type = "dota_src1_3d"
+		volume = 4.0
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/scp682/scp682_ultimate.vsnd",
+		]
+	}
+	
+	"Scp682dmf" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.5
+		pitch = 1.0
+		soundlevel = 84.0
+		mixgroup = "Weapons"
+		delay = 0.0
+		distance_max = 3500.0
+		vsnd_files = 
+		[
+			"sounds/scp682/dmf.vsnd",
+		]
+	}
+}

@@ -151,6 +151,7 @@ function COverthrowGameMode:OnNPCSpawned( event )
 								 npc_dota_hero_sven = {"models/tohka/arcana/tohka_arcana.vmdl", 1.4},
 								 npc_dota_hero_terrorblade = {"models/kizuna_ai/kizuna_ai.vmdl", 1.4},
 								 npc_dota_hero_dazzle = {"models/heroes/anime/jujutsu_kaisen/gojo_arcana/gojo_arcana.vmdl", 1.2},
+								 npc_dota_hero_skywrath_mage = {"models/heroes/alphalucia/alphaluciaae86.vmdl", 1.0},
 			                 }
 	   
 			-- Arcana Models
@@ -159,6 +160,17 @@ function COverthrowGameMode:OnNPCSpawned( event )
 				if IsASBPatreon(player) then
 					player:SetOriginalModel(tArcanas[sArcanaHero][1])
 					player:SetModelScale(tArcanas[sArcanaHero][2])
+				end
+			end
+			
+			if player:GetUnitName() == "npc_dota_hero_skywrath_mage" then
+				if GameRules:State_Get() ~= DOTA_GAMERULES_STATE_GAME_IN_PROGRESS and not IsASBPatreon(player) then
+					local item = CreateItem("item_arcana_gift", player, self)
+					Timers:CreateTimer(0.1, function()
+						if IsNotNull(item) then
+							player:AddItem(item)
+						end
+					end)
 				end
 			end
             

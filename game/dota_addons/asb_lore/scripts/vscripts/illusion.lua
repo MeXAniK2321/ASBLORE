@@ -153,7 +153,8 @@ IsASBPatreon = function(player)
 	local PID = player:GetPlayerOwnerID()
 	local id32 = PlayerResource:IsFakeClient(PID) and PID * 32 or PlayerResource:GetSteamAccountID(PID)
 	local hero = PlayerResource:GetSelectedHeroEntity(PID) 
-	local patreon = 
+	--local patreon =
+	_G.__Patreon = _G.__Patreon or 
 	{
 		418417801, -- Chumba
 		167912041, -- Miku
@@ -175,8 +176,9 @@ IsASBPatreon = function(player)
 		82664205,
 		215924558,
 		226322257,
+		1012891301, -- Soju
 	}
-	for _,patr in pairs(patreon) do
+	for _,patr in pairs(_G.__Patreon) do
 	   if id32 == patr then
 		   return true
 	   end

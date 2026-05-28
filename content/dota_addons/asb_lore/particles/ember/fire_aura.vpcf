@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf59:version{6cf97bfa-52a0-441a-87f0-856fb7aaa129} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf65:version{48e806a9-c210-4cd8-811a-38b5ef63b195} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -28,11 +28,6 @@
 					m_iControlPoint = 3
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_vecOffset = [ 0.0, 0.0, 100.0 ]
-					m_entityName = "self"
-				},
-				{
-					m_iControlPoint = 20
-					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
 			]
@@ -77,6 +72,7 @@
 		{
 			m_ChildRef = resource:"particles/econ/items/ember_spirit/ember_ti9/ember_ti9_flameguard_aoe.vpcf"
 			m_flDelay = 0.3
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard_column.vpcf"
@@ -84,10 +80,12 @@
 		},
 		{
 			m_ChildRef = resource:"particles/econ/items/ember_spirit/ember_ti9/ember_ti9_flameguard_flamepillar.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/econ/items/ember_spirit/ember_ti9/ember_ti9_flameguard_flamepillar.vpcf"
 			m_flDelay = 0.3
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/econ/items/ember_spirit/ember_ti9/ember_ti9_flameguard_tornado.vpcf"

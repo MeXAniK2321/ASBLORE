@@ -499,4 +499,18 @@
 		]
 	}
 	
+    "Gojo.blue_full" = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.5
+		pitch = 1.0
+		soundlevel = 100.0
+		delay = 0.0
+		distance_max = 5000.0
+		vsnd_files = 
+		[
+			"sounds/gojo/gojo_full_power_blue.vsnd",
+		]
+	}
+	
 }

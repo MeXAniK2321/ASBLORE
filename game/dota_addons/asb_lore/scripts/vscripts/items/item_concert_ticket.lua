@@ -45,7 +45,7 @@ for i = 1, 4 do
    --local ticketSounds = TicketSounds[item_name]
    --if ticketSounds then
      --caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", ticketSounds[RandomInt(1, #ticketSounds)])
-   -- caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", {SoundName = "new.year_theme_1", duration = 160.000000})
+     caster:AddNewModifier(caster, self, "modifier_item_anime_boombox_ticket", {SoundName = "new.year_theme_1", duration = 160.000000})
    --end
  end
 end

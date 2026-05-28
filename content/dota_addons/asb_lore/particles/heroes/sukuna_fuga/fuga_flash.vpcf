@@ -1,23 +1,16 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf60:version{cd92a366-0b0d-4811-a18d-f6d472d19709} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf65:version{48e806a9-c210-4cd8-811a-38b5ef63b195} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 20
 	m_ConstantColor = [ 211, 167, 141, 255 ]
-	m_nBehaviorVersion = 5
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 5
 	m_controlPointConfigurations = 
 	[
 		{
 			m_name = "preview"
-			m_drivers = 
-			[
-				{
-					m_iControlPoint = 3
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-			]
+			m_drivers = [  ]
 		},
 	]
 	m_PreEmissionOperators = 
@@ -55,10 +48,6 @@
 			_class = "C_INIT_CreateWithinSphereTransform"
 			m_vecDistanceBias = [ 1.0, 1.0, 0.0 ]
 			m_fRadiusMax = 48.0
-			m_TransformInput = 
-			{
-				m_nControlPoint = 3
-			}
 		},
 		{
 			_class = "C_INIT_InitFloat"
@@ -230,6 +219,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_bDisableZBuffering = true
 		},
 	]
 }

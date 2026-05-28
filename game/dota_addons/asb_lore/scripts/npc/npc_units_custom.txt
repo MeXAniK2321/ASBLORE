@@ -2074,6 +2074,40 @@
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}	
-	
+
+	"npc_dota_pumpkin_candy"
+	{										
+		"Model"						"models/props_gameplay/pumpkin_bucket.vmdl"
+		"BaseClass"					"npc_dota_ward_base_truesight"
+		"Level"						"1"
+		"ModelScale"				"1"
+		"IsSummoned"				"1"
+		"IsAncient"					"1"
+		"ConsideredHero"			"0"
+		"IgnoreAddSummonedToSelection" "1"
+		"ArmorPhysical"				"20"
+        "MagicalResistance"			"50"		
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"		
+		"AttackDamageMax"			"0"			
+		"AttackRate"				"100"		
+		"AttackAnimationPoint"		"100"		
+		"AttackAcquisitionRange"	"1"		
+		"AttackRange"				"1"		
+		"HealthBarOffset"			"1000"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"		
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			
+		"StatusHealth"				"200000"		
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"		
+		"StatusManaRegen"			"0"			
+		"VisionDaytimeRange"		"250"		
+		"VisionNighttimeRange"		"250"
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
 	
 }

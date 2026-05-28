@@ -91,7 +91,8 @@
      "item"      "item_abyss_horn"
      "item"      "item_hand_of_gaben"
      "item"      "item_loli_hex"
-     "item"      "item_travel_boots"
+     //"item"      "item_travel_boots"
+	 "item"      "item_zawarudo"
 }  
   
   // Level 1 - Green Recipes

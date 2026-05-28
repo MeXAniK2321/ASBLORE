@@ -1,0 +1,46 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf63:version{a6e6a69e-52d3-4527-8b9c-ff3bb91aca3e} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 16
+	m_BoundingBoxMin = [ -12.0, -12.0, -10.0 ]
+	m_BoundingBoxMax = [ 12.0, 12.0, 10.0 ]
+	m_flConstantLifespan = 1.1
+	m_ConstantColor = [ 255, 255, 255, 60 ]
+	m_nGroupID = 3
+	m_flMaxDrawDistance = 2000.0
+	m_bShouldSort = false
+	m_nBehaviorVersion = 3
+	m_nFirstMultipleOverride_BackwardCompat = 4
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/heroes/alphalucia/alphalucia.vmdl"
+				m_sequenceName = "lucy_charge_stinger"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_alphalucia/alphalucia_rainbow_model_red.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_alphalucia/alphalucia_rainbow_model_green.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/anime_hero_alphalucia/alphalucia_rainbow_model_blue.vpcf"
+		},
+	]
+}

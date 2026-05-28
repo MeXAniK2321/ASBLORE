@@ -702,6 +702,10 @@
 			"sounds/BoomBox/devil_trigger.vsnd",
 			"sounds/BoomBox/ncts_next.vsnd",
 			"sounds/BoomBox/yougotthat.vsnd",
+			"sounds/BoomBox/raidenarmstrong_gachi.vsnd",
+			"sounds/BoomBox/rulesofnature.vsnd",
+			"sounds/BoomBox/sas_kokuten.vsnd",
+			"sounds/BoomBox/scp682chasetheme.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -1860,6 +1864,142 @@
 			"sounds/bogdan/takeitboy.vsnd",
 		]
 		volume = "2.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.1 =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina1.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.2 = 
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina2.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.3 =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina3.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.4 =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina4.vsnd",
+		]
+		volume = "1.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.5 =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina5.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.Thunder =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/ae86/arcana/vergilina_thunder.vsnd",
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    AE86.Theme.Arcana.DriftHit =
+	{
+		type = "dota_update_default"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/razor/razor_lightning_strike_04.vsnd",
+			"sounds/weapons/hero/razor/razor_lightning_strike_03.vsnd"
+		]
+		volume = "0.500000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    spooky_item_march =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/spooky_item/spooky_item_march.vsnd"
+		]
+		volume = "1.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    zawarudo =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/zawarudo/zawarudo.vsnd"
+		]
+		volume = "5.000000"
 		pitch_min = "0.400000"
 		pitch_max = "1.000000"
 		soundlevel = "100.000000"

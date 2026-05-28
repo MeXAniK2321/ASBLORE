@@ -1,6 +1,4 @@
 
-
-_G.nNEUTRAL_TEAM = 4
 _G.nCOUNTDOWNTIMER = 990
 _G.AnimeGameKills = 0
 _G.CurrentMusic = {}
@@ -9,18 +7,16 @@ _G.CurrentMusicUltima = {}
 _G.SoundCheck = {}
 _G.ToumaCombo = 0
 _G.ToumaGenderCombo = 0
-_G.LoreStartWithUlts = true
 _G.LoreStartUltsCD = 400
 _G.__PLAYERS_MUSIC_STATUS = _G.__PLAYERS_MUSIC_STATUS or {}
 _G.__GOJO_SETTINGS = _G.__GOJO_SETTINGS or {}
+_G.__HALLOWEEN_EVENT = true
 ---------------------------------------------------------------------------
 -- COverthrowGameMode class
 ---------------------------------------------------------------------------
 if COverthrowGameMode == nil then
 	_G.COverthrowGameMode = class({}) 
-	
 end
-
 ---------------------------------------------------------------------------
 -- Required .lua files
 ---------------------------------------------------------------------------
@@ -101,6 +97,7 @@ function Precache( context )
 		PrecacheResource( "particle", "particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_wex.vpcf", context )
 		PrecacheResource( "particle", "particles/blackrock_projectile.vpcf", context )
 		PrecacheResource( "particle", "particles/item/chest_cour/screen_arcane_drop.vpcf", context )
+		PrecacheResource( "particle", "particles/item/chest_cour/screen_arcane_drop_halloween.vpcf", context )
 		
        	
 	--Cache particles for traps
@@ -175,6 +172,12 @@ function Precache( context )
 		PrecacheResource( "model", "models/vocaloid_rin/len/blabla2.vmdl", context )
 		PrecacheResource( "model", "models/bogdan/slave_model/gachi_brother.vmdl", context )
 		
+		PrecacheResource( "model", "models/items/courier/pumpkin_courier/pumpkin_courier_flying.vmdl", context )
+		PrecacheResource( "model", "models/props_gameplay/pumpkin_rune.vmdl", context )
+		PrecacheResource( "model", "models/props_gameplay/halloween_candy.vmdl", context )
+		PrecacheResource( "model", "models/props_gameplay/pumpkin_bucket.vmdl", context )
+		PrecacheResource( "model", "models/particle/witchdoctor_skull.vmdl", context )
+		
 		PrecacheResource( "soundfile", "soundevents/yoshino.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_axis_sheet.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/esdeath_ability4.vsndevts", context )
@@ -198,6 +201,7 @@ function Precache( context )
 		-- Temporarily Here
 		PrecacheResource( "soundfile", "soundevents/heroes/gogeta.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/heroes/anime_hero_gojo.vsndevts", context )
+		PrecacheResource( "soundfile", "soundevents/heroes/anime_hero_alpha_lucia.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
@@ -212,17 +216,16 @@ function Precache( context )
 		PrecacheResource("model", "models/props_wildlife/wildlife_birdlarge001.vmdl", context)
 		
 		PrecacheResource("particle", "particles/screen_spla.vpcf", context)
-		-- PrecacheResource("soundfile", "soundevents/heroes/roland/game/roland_base.vsndevts", context)
+		
+		PrecacheResource("particle", 	"particles/test/halloween_pumpkin.vpcf", context)
+		PrecacheResource("particle", 	"particles/test/halloween_pumpkin_bone_fix.vpcf", context)
+		PrecacheResource("particle", 	"particles/test/halloween_pumpkin_scp682.vpcf", context)
 
-
-	-- PrecacheUnitByNameSync("npc_dota_hero_kez", context, nil)
 end
 
 function Activate()
 	-- Create our game mode and initialize it
 	COverthrowGameMode:InitGameMode()
-	-- Custom Spawn
-	
 end
 
 
@@ -297,88 +300,48 @@ function COverthrowGameMode:InitGameMode()
 	self.TEAM_KILLS_TO_WIN = 50
 	self.CLOSE_TO_VICTORY_THRESHOLD = 5
 	
-
-
 	---------------------------------------------------------------------------
 
 	self:GatherAndRegisterValidTeams()
 
 	GameRules:GetGameModeEntity().COverthrowGameMode = self
 	
-	
-	
-
 	-- Adding Many Players
-	if GetMapName() == "ruin_solo" then
-	    GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
-		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(60)
-		GameRules:SetCustomGameBansPerTeam(0)
-		self.m_GoldRadiusMin = 250
-		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 15
-        self.n_RespawnMultiplier = 1.0
-		elseif GetMapName() == "balance_duo" then
-		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride(0)
-		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(0)
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 2 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 2 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 2 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_2, 2 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_3, 2 )
-			self.m_GoldRadiusMin = 400
-		self.m_GoldRadiusMax = 700
-		self.m_GoldDropPercent = 15
-        self.n_RespawnMultiplier = 2.0
-        elseif GetMapName() == "birzhamemov_5v5" then
-		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
-		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(1)
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
-		self.m_GoldRadiusMin = 100
-		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 20
-		self.effectradius = 1400
-        self.n_RespawnMultiplier = 2.5
-	elseif GetMapName() == "desert_quintet" then
-	GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or 20.0 )
-		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(2)
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 5 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 5 )
-		self.m_GoldRadiusMin = 300
-		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 35
-        self.n_RespawnMultiplier = 3.0
-        CreateUnitByName("npc_dota_xp_global", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
-        CreateUnitByName("npc_dota_xp_granter2", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
-	elseif GetMapName() == "temple_quartet" then
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 3 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 3 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 3 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_2, 3 )
-		self.m_GoldRadiusMin = 300
-		self.m_GoldRadiusMax = 1400
-		self.m_GoldDropPercent = 35
-        self.n_RespawnMultiplier = 2.5
-	elseif GetMapName() == "asb_fate_nasral" then
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 7 )
-		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 7 )
-		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(45)
-		GameRules:SetCustomGameBansPerTeam(7)
-		self.m_GoldRadiusMin = 600
-		self.m_GoldRadiusMax = 3000
-		self.m_GoldDropPercent = 0
-        self.n_RespawnMultiplier = 2.5
-		CreateUnitByName("npc_dota_xp_global", Vector(944, 2120, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
-	else
-		self.m_GoldRadiusMin = 250
-		self.m_GoldRadiusMax = 550
-		self.m_GoldDropPercent = 15
-        self.n_RespawnMultiplier = 1.0
+	local tMaps = {
+	                  -- Map: BanTimeOverride, HeroPickTImeOverride, CustomBansPerTeam, Teams, GoldRadiusMin, GoldRadiusMax, GoldDropPercent, RespawnMult
+					  ruin_solo      = {BanTime = 0, PickTime = 60, Bans = 0, Teams = nil, Players = 1, GoldRadius = {250, 550}, GoldDropPercent = 15, RespawnMult = 1.0},
+					  balance_duo    = {BanTime = 0, PickTime = 45, Bans = 0, Teams = DOTA_TEAM_CUSTOM_3, Players = 2, GoldRadius = {400, 700}, GoldDropPercent = 15, RespawnMult = 2.0},
+					  desert_quintet = {BanTime = 20, PickTime = 45, Bans = 2, Teams = DOTA_TEAM_CUSTOM_1, Players = 5, GoldRadius = {300, 1400}, GoldDropPercent = 35, RespawnMult = 3.0}
+	              }
+	
+	local tMapCheck = tMaps[GetMapName()]
+	if tMapCheck then
+		GameRules:GetGameModeEntity():SetDraftingBanningTimeOverride( IsInToolsMode() and 0 or tMapCheck.BanTime )
+		GameRules:GetGameModeEntity():SetDraftingHeroPickSelectTimeOverride(tMapCheck.PickTime)
+		GameRules:SetCustomGameBansPerTeam(tMapCheck.Bans)
+	
+		-- Set total teams and players per team
+		if tMapCheck.Teams then
+			for i = DOTA_TEAM_GOODGUYS, tMapCheck.Teams do
+				-- Only valid player teams, use Team Colors table for check
+				if self.m_TeamColors[i] then
+					GameRules:SetCustomGameTeamMaxPlayers( i, tMapCheck.Players )
+				end
+			end
+		end
+		
+		--Fix for Quintet
+		if GetMapName() == "desert_quintet" then
+			CreateUnitByName("npc_dota_xp_global", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
+			CreateUnitByName("npc_dota_xp_granter2", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
+		end
 	end
+	
+	-- Set gold values and respawn multipliers
+	self.m_GoldRadiusMin = tMapCheck and tMapCheck.GoldRadius[1] or 250
+	self.m_GoldRadiusMax = tMapCheck and tMapCheck.GoldRadius[2] or 550
+	self.m_GoldDropPercent = tMapCheck and tMapCheck.GoldDropPercent or 15
+	self.n_RespawnMultiplier = tMapCheck and tMapCheck.RespawnMult or 1.0
 	
 
 	-- Show the ending scoreboard immediately
@@ -752,6 +715,25 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 	]]
 
 	local orderType = filterTable["order_type"]
+	-- Fix for modifier on order not updating new position
+	if orderType == DOTA_UNIT_ORDER_MOVE_TO_POSITION or orderType == DOTA_UNIT_ORDER_ATTACK_MOVE or orderType == DOTA_UNIT_ORDER_PICKUP_RUNE then
+		local hPlayer = PlayerResource:GetPlayer(filterTable["issuer_player_id_const"])
+		if not hPlayer then return true end
+		
+		local hHero   = hPlayer:GetAssignedHero()
+		
+		if hHero and filterTable.position_x and filterTable.position_y then
+			local vNewPos = Vector(filterTable["position_x"], filterTable["position_y"], filterTable["position_z"])
+			if orderType == DOTA_UNIT_ORDER_PICKUP_RUNE then
+			    local hRune = EntIndexToHScript( filterTable["entindex_target"] )
+			    vNewPos = hRune:GetOrigin()
+			end
+			hHero.newest_pos = vNewPos
+			--print("WORKS")
+		end
+		
+		--print("DID SOMETHING")
+	end
 	if ( orderType ~= DOTA_UNIT_ORDER_PICKUP_ITEM or filterTable["issuer_player_id_const"] == -1 ) then
 		return true
 	else
@@ -760,19 +742,23 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 			return true
 		end
 		local pickedItem = item:GetContainedItem()
+		local position   = item:GetAbsOrigin()
+		local player     = PlayerResource:GetPlayer(filterTable["issuer_player_id_const"])
+		if player == nil then 
+			return true 
+		end
+		local hero       = player:GetAssignedHero()
+		hero.newest_pos  = position
 		--print(pickedItem:GetAbilityName())
 		if pickedItem == nil then
 			return true
 		end
 		if pickedItem:GetAbilityName() == "item_treasure_chest" then
-			local player = PlayerResource:GetPlayer(filterTable["issuer_player_id_const"])
-			local hero = player:GetAssignedHero()
 			if hero:GetNumItemsInInventory() < 9 then
 				--print("inventory has space")
 				return true
 			else
 				--print("Moving to target instead")
-				local position = item:GetAbsOrigin()
 				filterTable["position_x"] = position.x
 				filterTable["position_y"] = position.y
 				filterTable["position_z"] = position.z

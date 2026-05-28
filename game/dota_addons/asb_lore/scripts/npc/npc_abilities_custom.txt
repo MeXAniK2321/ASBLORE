@@ -34903,5 +34903,482 @@
 		{
 		}
 	}
+	
+  //=================================================================================================================
+  // Alpha Lucia: Sword Wave (Q)
+  //=================================================================================================================
+  "alpha_lucia_sword_wave"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"           "ability_lua"
+    "ScriptFile"          "heroes/alphalucia/alphalucia"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityTextureName"      "shiki/q"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"    "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+    "AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL"
+
+    "AbilityType"         "ABILITY_TYPE_BASIC"
+    "MaxLevel"            "4"
+    "RequiredLevel"         "1"
+    "LevelsBetweenUpgrades"   "1"
+    "AbilityCastPoint"        "0.1"
+    "AbilityCastAnimation"      "empty"
+    //"AnimationPlaybackRate"     "1"
+    //"AnimationIgnoresModelScale"  "1"
+
+
+    "AbilityCooldown"       "30.0 25.0 20.0 15.0"
+    "AbilityManaCost"       "25 35 45 65"
+    //"AbilityDamage"         "25 50 100"
+    //"AbilityCastRange"        "1500"
+    //"AbilityCastRangeBuffer"    "250"
+    //"AbilityChannelTime"      "0.0 0.0 0.0"
+    //"AbilityChannelledManaCostPerSecond"  "30 35 40"
+    //"AbilityDuration"       "0.0 0.0 0.0"
+    //"AoERadius"           "250"
+
+    "AbilityValues"
+        {
+            "agility_start" "2 3 4 5"
+            "duration" "0.1 0.1 0.1 0.1"
+            "distance" "50 50 50 50"
+            "agility_end" "2 3 4 5"
+            "duration_stun" "0.6"
+            "distance_last" "300 300 300 300"
+            "radius" "200 200 200 200"
+            "radius_end" "400 400 400 400"
+            "duration_last" "0.5 0.5 0.5 0.5"
+            "distance_kb" "225 225 225 225"
+        }
+  }
+  
+  //=================================================================================================================
+  // Alpha Lucia: Area Slash (W)
+  //=================================================================================================================
+  "alpha_lucia_area_slash"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"           "ability_lua"
+    "ScriptFile"          "heroes/alphalucia/alphalucia"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityTextureName"      "shiki/q"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"    "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+    "AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL"
+
+    "AbilityType"         "ABILITY_TYPE_BASIC"
+    "MaxLevel"            "4"
+    "RequiredLevel"         "1"
+    "LevelsBetweenUpgrades"   "1"
+    "AbilityCastPoint"        "0.2"
+    "AbilityCastAnimation"      "empty"
+    //"AnimationPlaybackRate"     "1"
+    //"AnimationIgnoresModelScale"  "1"
+
+
+    "AbilityCooldown"       "30.0 25.0 20.0 15.0"
+    "AbilityManaCost"       "25 35 45 65"
+    //"AbilityDamage"         "25 50 100"
+    //"AbilityCastRange"        "1500"
+    //"AbilityCastRangeBuffer"    "250"
+    //"AbilityChannelTime"      "0.0 0.0 0.0"
+    //"AbilityChannelledManaCostPerSecond"  "30 35 40"
+    //"AbilityDuration"       "0.0 0.0 0.0"
+    //"AoERadius"           "250"
+
+    "AbilityValues"
+        {
+            "agility_start" "2 3 4 5"
+            "duration" "0.1 0.1 0.1 0.1"
+            "distance" "50 50 50 50"
+            "agility_end" "2 3 4 5"
+            "duration_stun" "0.6"
+            "distance_last" "300 300 300 300"
+            "radius" "200 200 200 200"
+            "radius_end" "400 400 400 400"
+            "duration_last" "0.5 0.5 0.5 0.5"
+            "distance_kb" "225 225 225 225"
+        }
+  }
+  
+  //=================================================================================================================
+  // Alpha Lucia: Sword(E)
+  //=================================================================================================================
+  
+	"alpha_lucia_sword"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/alphalucia/alphalucia"
+		"AbilityTextureName"			"gojo_hollow_nuke"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.4"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+        {
+
+        }
+	}
+	
+  //=================================================================================================================
+  // Alpha Lucia: Stinger (D)
+  //=================================================================================================================
+  "alpha_lucia_stinger"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"           "ability_lua"
+    "ScriptFile"          "heroes/alphalucia/alphalucia"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityTextureName"      "shiki/q"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"    "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ENEMIES"
+    "AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL"
+
+    "AbilityType"         "ABILITY_TYPE_BASIC"
+    "MaxLevel"            "4"
+    "RequiredLevel"         "1"
+    "LevelsBetweenUpgrades"   "1"
+    "AbilityCastPoint"        "0.2"
+    "AbilityCastAnimation"      "empty"
+    //"AnimationPlaybackRate"     "1"
+    //"AnimationIgnoresModelScale"  "1"
+
+
+    "AbilityCooldown"       "30.0 25.0 20.0 15.0"
+    "AbilityManaCost"       "25 35 45 65"
+    //"AbilityDamage"         "25 50 100"
+    //"AbilityCastRange"        "1500"
+    //"AbilityCastRangeBuffer"    "250"
+    //"AbilityChannelTime"      "0.0 0.0 0.0"
+    //"AbilityChannelledManaCostPerSecond"  "30 35 40"
+    //"AbilityDuration"       "0.0 0.0 0.0"
+    //"AoERadius"           "250"
+
+    "AbilityValues"
+        {
+            "agility_start" "2 3 4 5"
+            "duration" "0.1 0.1 0.1 0.1"
+            "distance" "50 50 50 50"
+            "agility_end" "2 3 4 5"
+            "duration_stun" "0.6"
+            "distance_last" "300 300 300 300"
+            "radius" "200 200 200 200"
+            "radius_end" "400 400 400 400"
+            "duration_last" "0.5 0.5 0.5 0.5"
+            "distance_kb" "225 225 225 225"
+        }
+  }
+  
+  //=================================================================================================================
+  // Alpha Lucia: Bike(F)
+  //=================================================================================================================
+  
+	"alpha_lucia_bike"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/alphalucia/alphalucia"
+		"AbilityTextureName"			"gojo_hollow_nuke"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastAnimation"          "ACT_DOTA_IDLE"
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.4"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+        {
+
+        }
+	}
+	
+	//=================================================================================================================
+	// SCP-682
+	//=================================================================================================================
+	"scp682_bite"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/scp682/scp682.lua"
+		"AbilityTextureName"			"scp682/bite"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"	
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"80 90 100 110"
+		"HasShardUpgrade"				"1"
+		
+		// Precache
+		"precache"
+		{
+			"particle" "particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
+			"particle" "particles/items_fx/black_king_bar_avatar.vpcf"
+			"particle" "particles/status_fx/status_effect_avatar.vpcf"
+			"particle" "particles/units/heroes/hero_bloodseeker/bloodseeker_bloodbath.vpcf"
+			"particle" "particles/scp_plot_thinker.vpcf"
+			
+			"soundfile" "soundevents/heroes/scp682.vsndevts"
+		}
+
+		"AbilityValues"
+		{
+			"radius" 					"150"
+			"damage"		
+			{
+				"value"					"120 180 240 300"
+				"LinkedSpecialBonus"	"special_bonus_birzha_scp683_1"
+			}
+			"dmg_bonus_pct"				"50"
+			"point_blank_range"			"157.5"
+			"movespeed"					"-20"
+			"duration"					"3"
+			"shard_stun_duration"		"1"
+		}
+	}
+
+	"scp682_rage"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/scp682/scp682.lua"
+		"AbilityTextureName"			"scp682/rage"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityCooldown"				"22 20 18 16"
+		"AbilityCastRange"				"800"
+
+		"AbilityValues"
+		{	
+			"bonus_attack_speed"	"40 70 100 130"
+			"movespeed"				"800"
+			"duration"		
+			{
+				"value"					"5"
+				"LinkedSpecialBonus"	"special_bonus_birzha_scp683_2"
+			}
+		}
+	}
+
+	"scp682_plot"	
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/scp682/scp682.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityTextureName"			"scp682/plot"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityValues"
+		{
+			"duration"		
+			{
+				"value"					"2"
+				"LinkedSpecialBonus"	"special_bonus_birzha_scp683_3"
+			}
+			"max_stack"					"5"
+			"damage"					"0.8 1.2 1.6 2"
+			"scepter_duration"			"5"
+			"scepter_radius"			"400"
+		}
+	}
+	
+	"scp682_grow"	
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/scp682/scp682.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"scp682/grow"
+		
+		"MaxLevel"            			"1"
+
+		"AbilityValues"
+		{
+			"max_stacks"				"20"
+		}
+	}
+
+	"scp682_ultimate"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/scp682/scp682.lua"
+		"AbilityTextureName"			"scp682/ultimate"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityCooldown"				"60 70 80"
+		"AbilityManaCost"				"120 160 200"
+
+		"AbilityValues"
+		{	
+			"lifesteal"				"50 75 100"
+			"cast_range"			"150"
+			"duration"				"4 5 7"
+		}
+	}
+
+	"special_bonus_birzha_scp683_1"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"50"			
+		}
+	}
+	"special_bonus_birzha_scp683_2"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"1"			
+		}
+	}
+	"special_bonus_birzha_scp683_3"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"2"			
+		}
+	}
+	"special_bonus_birzha_scp683_4"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"-5"			
+		}
+	}
+	"special_bonus_birzha_scp683_5"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"0"			
+		}
+	}
+	"special_bonus_birzha_scp683_6"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"50"			
+		}
+	}
+	"special_bonus_birzha_scp683_7"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"0"			
+		}
+	}
+	"special_bonus_birzha_scp683_8"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			"value"						"0"			
+		}
+	}
 }
 

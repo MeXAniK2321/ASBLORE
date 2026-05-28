@@ -5526,4 +5526,159 @@
 		{
 		}
 	}
+	
+	//=================================================================================================================
+	// ZAWARUDO
+	//=================================================================================================================
+	//=================================================================================================================
+	"item_zawarudo"
+	{
+	    "ID"									"3500"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_zawarudo.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							"models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			"zawarudo"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ItemPurchasable"						"1"
+		"ItemSellable"							"0"
+		"ItemShareability"						"ITEM_FULLY_SHAREABLE"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"0"
+		"ItemCost"								"77777"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		"AbilityCooldown"						"300"
+
+		"AbilityValues"
+        {
+        }
+	}
+	
+	//=================================================================================================================
+	// Arcana Gift
+	//=================================================================================================================
+	//=================================================================================================================
+	"item_arcana_gift"
+	{
+	    "ID"									"3500"
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_arcana_gift.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"Model"							"models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			"arcana_gift"
+		"ItemStackable"							"0"
+		"ItemPermanent"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"0"
+		"ItemSellable"							"0"
+		"ShouldBeInitiallySuggested"			"0"
+		"ItemInitialCharges"					"1"
+		"ItemCost"								"0"
+		"ItemPurchasable"					    "0"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilityValues"
+        {
+        }
+	}
+	
+		"item_scp682_pandora"
+	{
+	"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_scp682_pandora.lua"
+	"AbilityTextureName"			"scp682_pandora"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+	"AbilityCastPoint"						"0.0"
+	"AbilityCooldown"						"180"
+	"AbilityManaCost"						"0"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"1"
+		"ItemIsNeutralActiveDrop"        "0"
+		"ItemIsNeutralDrop"						"0"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilityValues"
+        {
+            "bonus_health" "800"
+			"bonus_attk_damage" "100"
+        }
+	}
+	
+		"item_boss_of_this_gym"
+	{
+	"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_boss_of_this_gym.lua"
+	"AbilityTextureName"			"boss_of_this_gym"	
+	"ItemPurchasable"						"0"
+	"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityCastPoint"						"0.0"
+	"AbilityCooldown"						"0"
+	"AbilityManaCost"						"0"
+	"ItemCost"					"20000"
+	"ItemDroppable" 						"1"
+		"ItemIsNeutralActiveDrop"        "0"
+		"ItemIsNeutralDrop"						"0"
+	"ItemSellable"							"0"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+		"AbilityValues"
+        {
+            "bonus_health" "1000"
+			"bonus_spell_amp" "100"
+        }
+	}
+	
+	//=================================================================================================================
+	"item_spooky_item"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_spooky_item.lua"
+		"AbilityTextureName" 					"spooky_item"
+		"Model"									"models/particle/witchdoctor_skull.vmdl"
+    	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_ATTACK_IMMUNE"
+
+		//"ItemCost"								"10000"
+		"ItemShopTags"							"buff;unique"
+		"ItemQuality"							"artifact"
+		"ItemAliases"							"ww"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		//"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+		"ShouldBeSuggested"						"1"
+		"ItemShareability"						"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"                       "0"
+		"AbilityCooldown"						"50"
+		"AbilityManaCost"						"360"
+		"AbilityCastPoint"				        "1.4"
+		//"AbilitySharedCooldown"					""
+
+		"AbilityValues"
+        {
+            "bonus_all_stats" "50"
+            "march_damage"    "500"
+			"march_duration"  "10"
+        }
+	}
+
 }

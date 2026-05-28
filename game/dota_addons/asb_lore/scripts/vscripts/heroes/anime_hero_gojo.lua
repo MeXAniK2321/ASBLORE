@@ -199,6 +199,9 @@ function modifier_gojo_projectile_thinker:OnCreated(hTable)
         self.fExplosionTimer = self.fExplosionTimer or 0
         self.hSubAbility = self.hSubAbility or nil
         self.bIsRedirected = false
+		
+		-- Small Fix for Blue Orb rotating immediately and not catching ppl
+		self.nWaitABit = self.nWaitABit or 0
         
         -- Red Orb Bool
         self.bIsRedOrb = hTable.bIsRedOrb > 0
@@ -354,12 +357,14 @@ function modifier_gojo_projectile_thinker:OnBlueOrbLogic(vCurPos, vNextPos)
         -- Blue Orb Rotation Engagement Logic
         if not self.bBlueRotateOnce
             and self.iBlueOrbTargets > 0 then
-            self.iBlueCurrentState = STATE_IS_ROTATING
+			self.nWaitABit = 0.25
+			self.iBlueCurrentState = STATE_IS_ROTATING
             self.bBlueRotateOnce = true
         elseif self.bBlueRotateOnce
             and self.iBlueCurrentState == STATE_IS_MOVING
             and self.iBlueOrbTargets > self.iBlueOrbTargetsCopy then
-            self.iBlueCurrentState = STATE_IS_ROTATING
+			self.nWaitABit = 0.25
+			self.iBlueCurrentState = STATE_IS_ROTATING
         end
 
         -- Blue Orb Idle Logic
@@ -385,30 +390,34 @@ function modifier_gojo_projectile_thinker:OnBlueOrbLogic(vCurPos, vNextPos)
             
         -- Blue Orb Rotation Logic
         if self.iBlueCurrentState == STATE_IS_ROTATING then
-            -- Handle Circular Motion
-            local vCenter = self.parent:GetOrigin()  -- Center of rotation
-            local iRadius = 400 -- Radius of rotation
-            local fCircum = (2 * math.pi * iRadius) -- Circumference of the Circle
-            local fSpeed = 360 * self.iMoveSpeed / fCircum --45  -- Speed of angular incrementation
-            local iDeltaAngle = 1  -- Delta Angle for smoother rotation
-         
-            -- Calculate new position in polar coordinates
-            self.angle = self.angle + iDeltaAngle * fSpeed * 0.01
-                    
-            -- Check if a full revolution has occurred
-            if self.angle >= 360 then
-                self.iBlueCurrentState = STATE_IS_IDLING
-                self.angle = 0
-                print("Blue Orb Full Revolution")
-            end
-                    
-            local vRadians = math.rad(self.angle)
-            local VecX = vCenter.x + iRadius * math.cos(vRadians)
-            local VecY = vCenter.y + iRadius * math.sin(vRadians)
-      
-            -- Set the new position
-            self.Target = Vector(VecX, VecY, vCenter.z) --Rotated Position
-        end
+		    if self.nWaitABit <= 0 then
+				-- Handle Circular Motion
+				local vCenter = self.parent:GetOrigin()  -- Center of rotation
+				local iRadius = 400 -- Radius of rotation
+				local fCircum = (2 * math.pi * iRadius) -- Circumference of the Circle
+				local fSpeed = 360 * self.iMoveSpeed / fCircum --45  -- Speed of angular incrementation
+				local iDeltaAngle = 1  -- Delta Angle for smoother rotation
+			 
+				-- Calculate new position in polar coordinates
+				self.angle = self.angle + iDeltaAngle * fSpeed * 0.01
+						
+				-- Check if a full revolution has occurred
+				if self.angle >= 360 then
+					self.iBlueCurrentState = STATE_IS_IDLING
+					self.angle = 0
+					print("Blue Orb Full Revolution")
+				end
+						
+				local vRadians = math.rad(self.angle)
+				local VecX = vCenter.x + iRadius * math.cos(vRadians)
+				local VecY = vCenter.y + iRadius * math.sin(vRadians)
+		  
+				-- Set the new position
+				self.Target = Vector(VecX, VecY, vCenter.z) --Rotated Position
+			else
+			    self.nWaitABit = self.nWaitABit - 0.01
+			end
+		end
     else
         -- Blue Orb Explosion Logic
         self.Target = vCurPos

@@ -113,7 +113,7 @@ function modifier_ember_buff:OnIntervalThink()
     end
         
     if not self.AuraEffect then
-        self.AuraEffect =  ParticleManager:CreateParticle("particles/ember/fire_aura.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent) 
+        self.AuraEffect =  ParticleManager:CreateParticle("particles/item/ember/ember_main.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent) 
                            ParticleManager:SetParticleControl(self.AuraEffect, 0, self.parent:GetAbsOrigin())
                            ParticleManager:SetParticleControl(self.AuraEffect, 1, self.parent:GetAbsOrigin())
         self:AddParticle(self.AuraEffect, false, false, -1, false, false)
