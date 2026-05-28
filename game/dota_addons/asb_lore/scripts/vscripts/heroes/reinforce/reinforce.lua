@@ -2,16 +2,16 @@ reinforce_knockdown = class({})
 LinkLuaModifier( "modifier_black_lady_2nd", "heroes/reinforce/reinforce", LUA_MODIFIER_MOTION_NONE )
 --------------------------------------------------------------------------------
 function reinforce_knockdown:GetIntrinsicModifierName()
-    return "modifier_black_lady_2nd"
+	return "modifier_black_lady_2nd"
 end
 function reinforce_knockdown:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("reinforce_berserk")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-		     if ability:IsActivated() then
-            ability:SetActivated(false)
-        end
-    end
+	local ability = self:GetCaster():FindAbilityByName("reinforce_berserk")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+			 if ability:IsActivated() then
+			ability:SetActivated(false)
+		end
+	end
 end
 
 function reinforce_knockdown:OnSpellStart()
@@ -105,15 +105,15 @@ else
 
 			-- knockback if not having spear stun
 			local knockback = { should_stun = 1,
-                        knockback_duration = self.duration,
-                        duration = self.duration,
-                        knockback_distance = 300,
-                        knockback_height = 0,
-                        center_x = caster:GetAbsOrigin().x,
-                        center_y = caster:GetAbsOrigin().y,
-                        center_z = caster:GetAbsOrigin().z }
+						knockback_duration = self.duration,
+						duration = self.duration,
+						knockback_distance = 300,
+						knockback_height = 0,
+						center_x = caster:GetAbsOrigin().x,
+						center_y = caster:GetAbsOrigin().y,
+						center_z = caster:GetAbsOrigin().z }
 if not enemy:IsCreep() then
-    enemy:AddNewModifier(caster, self, "modifier_knockback", knockback)
+	enemy:AddNewModifier(caster, self, "modifier_knockback", knockback)
 	end
 	
 damageTable.victim = enemy
@@ -159,33 +159,33 @@ function modifier_black_lady_2nd:IsPurgeException() return false end
 function modifier_black_lady_2nd:RemoveOnDeath() return false end
 
 function modifier_black_lady_2nd:OnCreated()
-    if IsServer() then
-    
+	if IsServer() then
+	
 
-        self:StartIntervalThink(FrameTime())
-    end
+		self:StartIntervalThink(FrameTime())
+	end
 end
 function modifier_black_lady_2nd:OnRefresh()
-    if IsServer() then
-       
-    end
+	if IsServer() then
+	   
+	end
 end
 
 function modifier_black_lady_2nd:OnIntervalThink()
 	if IsServer() then
 			local vongolle2 = self:GetParent():FindAbilityByName("reinforce_darkness_parade")
-        if vongolle2 and not vongolle2:IsNull() then
-            if self:GetParent():HasScepter() then
-                if vongolle2:IsHidden() then
-                    vongolle2:SetHidden(false)
+		if vongolle2 and not vongolle2:IsNull() then
+			if self:GetParent():HasScepter() then
+				if vongolle2:IsHidden() then
+					vongolle2:SetHidden(false)
 					vongolle2:SetLevel(1)
-                end
-            else
-                  vongolle2:SetHidden(true)
-                end
-            end
+				end
+			else
+				  vongolle2:SetHidden(true)
+				end
 			end
-        end
+			end
+		end
 
 
 
@@ -207,7 +207,7 @@ LinkLuaModifier("modifier_black_lady", "heroes/reinforce/reinforce", LUA_MODIFIE
 
 
 function book_of_darkness:GetIntrinsicModifierName()
-    return "modifier_black_lady"
+	return "modifier_black_lady"
 end
 function book_of_darkness:GetBehavior()
 if self:GetCaster():HasModifier("modifier_book_of_darkness") then
@@ -256,9 +256,9 @@ function book_of_darkness:GetCustomCastErrorTarget( hTarget )
 	return ""
 end
 function book_of_darkness:OnSpellStart()
-    local caster = self:GetCaster()
-    local target = self:GetCursorTarget()
-    local duration = 5
+	local caster = self:GetCaster()
+	local target = self:GetCursorTarget()
+	local duration = 5
 	local radius = 400
 	if caster:HasModifier("modifier_book_of_darkness") then
 	-- logic
@@ -289,10 +289,10 @@ function book_of_darkness:OnSpellStart()
 		{} -- kv
 	)
 	
-    self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_book_of_darkness", {} )
+	self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_book_of_darkness", {} )
 	self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_muted", { duration = 0.2 } )
 	
-    EmitSoundOn("reinforce.2", caster)
+	EmitSoundOn("reinforce.2", caster)
 	self:PlayEffects( radius )
 	self:EndCooldown()
 	self:StartCooldown(5)
@@ -315,23 +315,23 @@ end
 modifier_book_of_darkness = class({})
 
 function modifier_book_of_darkness:IsHidden()
-    return false
+	return false
 end
 function modifier_book_of_darkness:CheckState()
-    local state = {
-        [MODIFIER_STATE_OUT_OF_GAME] = true,     
-        [MODIFIER_STATE_INVULNERABLE] = true,
-        [MODIFIER_STATE_NO_HEALTH_BAR] = true,
-        [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
+	local state = {
+		[MODIFIER_STATE_OUT_OF_GAME] = true,	 
+		[MODIFIER_STATE_INVULNERABLE] = true,
+		[MODIFIER_STATE_NO_HEALTH_BAR] = true,
+		[MODIFIER_STATE_NO_UNIT_COLLISION] = true,
 		[MODIFIER_STATE_MUTED] = true,
 		[MODIFIER_STATE_ROOTED] = true,
 		[MODIFIER_STATE_DISARMED] = true,
-    }
+	}
 
-    return state
+	return state
 end
 function modifier_book_of_darkness:IsPurgable()
-    return false
+	return false
 end
 function modifier_book_of_darkness:OnCreated(hTable)
 if IsServer() then
@@ -339,7 +339,7 @@ if IsServer() then
 
 		if self:GetCaster():HasModifier("modifier_item_aghanims_shard") then
 		else
-      local HiddenAbilities = 
+	  local HiddenAbilities = 
 	{
 		"reinforce_knockdown",
 		"reinforce_way_to_darkness",
@@ -349,12 +349,12 @@ if IsServer() then
 
 	for _,HiddenAbility in pairs(HiddenAbilities) do
 	   	HiddenAbility = self:GetParent():FindAbilityByName(HiddenAbility)
-        if HiddenAbility:IsActivated() then
-            HiddenAbility:SetActivated(true)
-        end
+		if HiddenAbility:IsActivated() then
+			HiddenAbility:SetActivated(true)
 		end
 		end
-    end
+		end
+	end
 	end
 
 
@@ -365,11 +365,11 @@ if not IsServer() then return end
 local point = self:GetCaster():GetAbsOrigin()
 
 FindClearSpaceForUnit(self:GetParent(), self:GetCaster():GetAbsOrigin(), true)
-    local chance = math.random(100)
-    local npcName = self:GetParent():GetUnitName()
+	local chance = math.random(100)
+	local npcName = self:GetParent():GetUnitName()
 	local caster = self:GetCaster()
-    
-    self:GetParent():RemoveNoDraw()
+	
+	self:GetParent():RemoveNoDraw()
   
 			local radius = 400
 	local duration = 1.0
@@ -386,8 +386,8 @@ FindClearSpaceForUnit(self:GetParent(), self:GetCaster():GetAbsOrigin(), true)
 	for _,HiddenAbility in pairs(HiddenAbilities) do
 	   	HiddenAbility = self:GetParent():FindAbilityByName(HiddenAbility)
 		  if HiddenAbility and not HiddenAbility:IsActivated() then
-            HiddenAbility:SetActivated(true)
-        end
+			HiddenAbility:SetActivated(true)
+		end
 		end
 end
 function modifier_book_of_darkness:PlayEffects( radius )
@@ -406,30 +406,30 @@ end
 book_of_darkness_target = class({})
 
 function book_of_darkness_target:IsPurgable()
-    return false
+	return false
 end
 
 function book_of_darkness_target:OnCreated( kv )
-    self:StartIntervalThink(0.03)
-    if not IsServer() then return end
+	self:StartIntervalThink(0.03)
+	if not IsServer() then return end
 self.parent = self:GetParent()
    self.ability = self:GetAbility()
-    self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
-    
+	self.duration = self:GetAbility():GetSpecialValueFor( "duration" )
+	
 end
 
 function book_of_darkness_target:OnIntervalThink()
-    if not IsServer() then return end
-    local target = self:GetCaster()
-    local target_pos = target:GetAbsOrigin ()
-    local caster = self:GetAbility ():GetCaster ()
+	if not IsServer() then return end
+	local target = self:GetCaster()
+	local target_pos = target:GetAbsOrigin ()
+	local caster = self:GetAbility ():GetCaster ()
 	
 	
-    target:SetAbsOrigin (self:GetParent ():GetAbsOrigin ())
-    if not self:GetParent ():IsAlive() then
-	    caster:RemoveModifierByName ("modifier_book_of_darkness")
-        target:RemoveModifierByName ("book_of_darkness_target")
-    end
+	target:SetAbsOrigin (self:GetParent ():GetAbsOrigin ())
+	if not self:GetParent ():IsAlive() then
+		caster:RemoveModifierByName ("modifier_book_of_darkness")
+		target:RemoveModifierByName ("book_of_darkness_target")
+	end
 end
 function book_of_darkness_target:OnDestroy( kv )
 	if IsServer() then
@@ -437,10 +437,10 @@ function book_of_darkness_target:OnDestroy( kv )
 		local target_pos = target:GetAbsOrigin ()
 		local caster = self:GetAbility ():GetCaster ()
 		caster:RemoveModifierByName ("modifier_book_of_darkness")
-		    target:RemoveModifierByName ("book_of_darkness_target")
+			target:RemoveModifierByName ("book_of_darkness_target")
 			if not self:GetParent():IsAlive() then
 			local ability = caster:FindAbilityByName("reinforce_berserk")
-			if caster:GetLevel() > 29 then
+			
 			
 			if ability:IsFullyCastable() then
 				if caster:HasModifier("modifier_book_of_darkness_spellbook") then
@@ -458,7 +458,7 @@ function book_of_darkness_target:OnDestroy( kv )
 					false)
 				end
 			end
-		end
+		
 	end
 end
 
@@ -470,11 +470,11 @@ function book_of_darkness_target:GetEffectAttachType()
 	return PATTACH_ABSORIGIN_FOLLOW
 end
 function book_of_darkness_target:DeclareFunctions()
-    local funcs = {
-        MODIFIER_EVENT_ON_TAKEDAMAGE,
+	local funcs = {
+		MODIFIER_EVENT_ON_TAKEDAMAGE,
 		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
-        MODIFIER_PROPERTY_MANA_BONUS,
-        MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+		MODIFIER_PROPERTY_MANA_BONUS,
+		MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
 		MODIFIER_PROPERTY_HEALTH_BONUS,
 		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
 		   MODIFIER_PROPERTY_MANACOST_PERCENTAGE,
@@ -482,9 +482,9 @@ function book_of_darkness_target:DeclareFunctions()
 		   
 
 	
-    }
+	}
 
-    return funcs
+	return funcs
 end
 function book_of_darkness_target:OnTakeDamage(keys)
 	if IsServer() then
@@ -505,38 +505,38 @@ function book_of_darkness_target:OnTakeDamage(keys)
 																		flags + DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES - DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 
 																		self.parent:GetTeamNumber()) == UF_SUCCESS then
 				--print(keys.original_damage, "STONE ORIG, DAMAGE")
-               
-                local heal = keys.damage * 0.20
-             	self.parent:Heal( heal, self:GetParent() )
+			   
+				local heal = keys.damage * 0.20
+			 	self.parent:Heal( heal, self:GetParent() )
 			end
 		end
 	end
 	end
 end
 function book_of_darkness_target:GetModifierTotalPercentageManaRegen()
-    return self:GetAbility():GetSpecialValueFor('mp_regen')
+	return self:GetAbility():GetSpecialValueFor('mp_regen')
 end
 
 function book_of_darkness_target:GetModifierManaBonus()
-    return self:GetAbility():GetSpecialValueFor('mp')
+	return self:GetAbility():GetSpecialValueFor('mp')
 end
 
 modifier_silence_item = class({})
 
 function modifier_silence_item:CheckState() 
   local state =
-      {
+	  {
    [MODIFIER_STATE_MUTED] = true
-      }
+	  }
   return state
 end
 
 function modifier_silence_item:IsPurgable()
-    return false
+	return false
 end
 
 function modifier_silence_item:IsHidden()
-    return true
+	return true
 end
 
 
@@ -565,15 +565,15 @@ function book_of_darkness_spellbook:IsStealable() return true end
 function book_of_darkness_spellbook:IsHiddenWhenStolen() return false end
 
 function book_of_darkness_spellbook:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("reinforce_bloody_rockets")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("reinforce_bloody_rockets")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 function book_of_darkness_spellbook:OnSpellStart()
-    local caster = self:GetCaster()
+	local caster = self:GetCaster()
 
-    caster:AddNewModifier(caster, self, "modifier_book_of_darkness_spellbook", {})
+	caster:AddNewModifier(caster, self, "modifier_book_of_darkness_spellbook", {})
 
 end
 ---------------------------------------------------------------------------------------------------------------------
@@ -587,84 +587,84 @@ function modifier_book_of_darkness_spellbook:AllowIllusionDuplicate() return tru
 
 
 function modifier_book_of_darkness_spellbook:OnCreated(table)
-    self.caster = self:GetCaster()
-    self.parent = self:GetParent()
-    self.ability = self:GetAbility()
+	self.caster = self:GetCaster()
+	self.parent = self:GetParent()
+	self.ability = self:GetAbility()
 
-    self.ability_level = self.ability:GetLevel()
+	self.ability_level = self.ability:GetLevel()
 
 	if self.caster:HasModifier("modifier_reinforce_berserk_buff") then
-	    self.skills_table = {
-                            
+		self.skills_table = {
+							
 							["book_of_darkness_spellbook"]="darkness_barrier",
 							["reinforce_knockdown"]="reinforce_bloody_rockets",
 							["starlight_breaker"]="book_of_darkness_spellbook_close",
 							["book_of_darkness"]="prison_of_eruption",
 							["reinforce_way_to_darkness"]="reinforce_demolish",
 							
-                        }
+						}
 	else
 
-    self.skills_table = {
-                            
+	self.skills_table = {
+							
 							["book_of_darkness_spellbook"]="darkness_barrier",
 							["reinforce_knockdown"]="reinforce_bloody_rockets",
 							["reinforce_berserk"]="book_of_darkness_spellbook_close",
 							["book_of_darkness"]="prison_of_eruption",
 							["reinforce_way_to_darkness"]="reinforce_demolish",
 							
-                        }
+						}
 						end
 						
 
-    if IsServer() then
-        for k, v in pairs(self.skills_table) do
-            if k and v then
-                self.parent:SwapAbilities(k, v, false, true)
-                --k:SetHidden(true)
-                --v:SetHidden(false)
+	if IsServer() then
+		for k, v in pairs(self.skills_table) do
+			if k and v then
+				self.parent:SwapAbilities(k, v, false, true)
+				--k:SetHidden(true)
+				--v:SetHidden(false)
 
-                local ability = self.parent:FindAbilityByName(v)
-                if ability and not ability:IsNull() and ability:IsTrained() and ability:GetCooldown(-1) > 0 then
-                  
-                end
-            end
-        end
+				local ability = self.parent:FindAbilityByName(v)
+				if ability and not ability:IsNull() and ability:IsTrained() and ability:GetCooldown(-1) > 0 then
+				  
+				end
+			end
+		end
 		
-           
-        
+		   
 		
-      
+		
+	  
 
   
-    end
+	end
 end
 function modifier_book_of_darkness_spellbook:OnRefresh(table)
-    self:OnCreated(table)
+	self:OnCreated(table)
 end
 function modifier_book_of_darkness_spellbook:OnDestroy()
-    if IsServer() then
-        if self.parent and not self.parent:IsNull() then
-            for k, v in pairs(self.skills_table) do
-                if k and v then
-                    self.parent:SwapAbilities(k, v, true, false)
-                    --k:SetHidden(false)
-                    --v:SetHidden(true)
-                end
-            end
+	if IsServer() then
+		if self.parent and not self.parent:IsNull() then
+			for k, v in pairs(self.skills_table) do
+				if k and v then
+					self.parent:SwapAbilities(k, v, true, false)
+					--k:SetHidden(false)
+					--v:SetHidden(true)
+				end
+			end
 
-         
+		 
 
-            if self.parent:IsRealHero() then
-                self.ability:StartCooldown(self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction())
-                local ability = self.parent:FindAbilityByName("book_of_darkness_spellbook_awake")
-                if ability and not ability:IsNull() and ability:IsTrained() then
-                    --SetZenitsuAwakeLongCd(self.parent, self.ability)
-                    --ability:CastAbility()
-                end
-            end
-        end
-    end
+			if self.parent:IsRealHero() then
+				self.ability:StartCooldown(self.ability:GetCooldown(-1) * self.parent:GetCooldownReduction())
+				local ability = self.parent:FindAbilityByName("book_of_darkness_spellbook_awake")
+				if ability and not ability:IsNull() and ability:IsTrained() then
+					--SetZenitsuAwakeLongCd(self.parent, self.ability)
+					--ability:CastAbility()
+				end
+			end
+		end
+	end
 	
 end
 
@@ -672,13 +672,13 @@ end
 book_of_darkness_spellbook_close = class({})
 
 function book_of_darkness_spellbook_close:OnSpellStart()
-    local caster = self:GetCaster() 
+	local caster = self:GetCaster() 
 
-    if caster:FindModifierByNameAndCaster("modifier_book_of_darkness_spellbook", caster) then
-        caster:RemoveModifierByNameAndCaster("modifier_book_of_darkness_spellbook", caster)
+	if caster:FindModifierByNameAndCaster("modifier_book_of_darkness_spellbook", caster) then
+		caster:RemoveModifierByNameAndCaster("modifier_book_of_darkness_spellbook", caster)
 
-        --return nil
-    end
+		--return nil
+	end
 end
 
 
@@ -704,10 +704,10 @@ function reinforce_bloody_rockets:GetAOERadius()
 	return self:GetSpecialValueFor( "radius" )
 end
 function reinforce_bloody_rockets:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("darkness_barrier")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("darkness_barrier")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 
 function reinforce_bloody_rockets:OnSpellStart()
@@ -968,10 +968,10 @@ darkness_barrier = class({})
 
 function darkness_barrier:IsHiddenWhenStolen()	return false end
 function darkness_barrier:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("prison_of_eruption")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("prison_of_eruption")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 function darkness_barrier:OnSpellStart()
 	if IsServer() then
@@ -1021,7 +1021,7 @@ function modifier_darkness_barrier_buff_block:OnCreated()
 		local ability_level = ability:GetLevel()
 		local target_origin = target:GetAbsOrigin()
 		local attach_hitloc = "attach_hitloc"
-        local mana = caster:GetMaxMana()
+		local mana = caster:GetMaxMana()
 		self.shield_init_value = self:GetAbility():GetSpecialValueFor("mana_shield") * mana
 local mana2 = caster:GetMana() 
 if self.shield_init_value > mana2 then
@@ -1159,10 +1159,10 @@ function prison_of_eruption:GetAOERadius()
 	return self:GetSpecialValueFor( "radius" )
 end
 function prison_of_eruption:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("reinforce_demolish")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("reinforce_demolish")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -1557,10 +1557,10 @@ LinkLuaModifier( "modifier_generic_slow", "modifiers/modifier_generic_slow", LUA
 -- Custom KV
 
 function reinforce_demolish:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("book_of_darkness_spellbook")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("book_of_darkness_spellbook")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -1926,10 +1926,10 @@ function reinforce_berserk:GetIntrinsicModifierName()
 	return "modifier_reinforce_berserk"
 end
 function reinforce_berserk:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("starlight_breaker")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("starlight_breaker")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 
 
@@ -2152,19 +2152,19 @@ function modifier_reinforce_berserk_invul:CheckState()
 end
 function modifier_reinforce_berserk_invul:OnCreated()
 if IsServer() then
-        --self:SetStackCount(0)
+		--self:SetStackCount(0)
 self.screw_fx = 	ParticleManager:CreateParticle("particles/reinforce_berserk_start.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster())
 								
-       
-    end
+	   
+	end
 end
 function modifier_reinforce_berserk_invul:OnDestroy()
 if IsServer() then
 local caster = self:GetCaster()
 
 if self.screw_fx then
-	    ParticleManager:DestroyParticle(self.screw_fx, false)
-	    ParticleManager:ReleaseParticleIndex(self.screw_fx)
+		ParticleManager:DestroyParticle(self.screw_fx, false)
+		ParticleManager:ReleaseParticleIndex(self.screw_fx)
 	end
 	end
 end
@@ -2179,130 +2179,130 @@ function modifier_reinforce_berserk_buff:IsPurgeException() return false end
 function modifier_reinforce_berserk_buff:RemoveOnDeath() return true end
 function modifier_reinforce_berserk_buff:AllowIllusionDuplicate() return true end
 function modifier_reinforce_berserk_buff:CheckState()
-    local state = { 
-                }
+	local state = { 
+				}
 
-    if IsServer() and self.parent and not self.parent:IsNull() and self.parent:GetMana() <= self.awake_mana + 10 then
-        local awake = self.parent:FindAbilityByName("reinforce_berserk_awake")
-        if awake and not awake:IsNull() and awake:IsTrained() then
-            awake:CastAbility()
-        end
-    end
+	if IsServer() and self.parent and not self.parent:IsNull() and self.parent:GetMana() <= self.awake_mana + 10 then
+		local awake = self.parent:FindAbilityByName("reinforce_berserk_awake")
+		if awake and not awake:IsNull() and awake:IsTrained() then
+			awake:CastAbility()
+		end
+	end
 
-    return state
+	return state
 end
 function modifier_reinforce_berserk_buff:DeclareFunctions()
-    local func = {  
-    				
-	              MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
+	local func = {  
+					
+				  MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
 				   MODIFIER_PROPERTY_MODEL_CHANGE,
-    				MODIFIER_PROPERTY_MODEL_SCALE,
+					MODIFIER_PROPERTY_MODEL_SCALE,
 		}
-    return func
+	return func
 end
 
 
 function modifier_reinforce_berserk_buff:GetModifierBonusStats_Intellect()
-    return 150
+	return 150
 end
 
 function modifier_reinforce_berserk_buff:GetModifierModelChange()
-    return "models/reinforce/reinforce_2nd.vmdl"
+	return "models/reinforce/reinforce_2nd.vmdl"
 end
 function modifier_reinforce_berserk_buff:GetModifierModelScale()
 	return 1
 end
 
 function modifier_reinforce_berserk_buff:OnCreated(table)
-    self.caster = self:GetCaster()
-    self.parent = self:GetParent()
-    self.ability = self:GetAbility()
-    self.ability_level = self.ability:GetLevel()
+	self.caster = self:GetCaster()
+	self.parent = self:GetParent()
+	self.ability = self:GetAbility()
+	self.ability_level = self.ability:GetLevel()
 
-    self.bonus_movespeed = self.ability:GetSpecialValueFor("bonus_movespeed")
-    self.projectile_avoid_chance = self.ability:GetSpecialValueFor("projectile_avoid_chance")
-    self.turn_rate = self.ability:GetSpecialValueFor("turn_rate")
-    self.awake_mana = self.ability:GetSpecialValueFor("awake_mana")
+	self.bonus_movespeed = self.ability:GetSpecialValueFor("bonus_movespeed")
+	self.projectile_avoid_chance = self.ability:GetSpecialValueFor("projectile_avoid_chance")
+	self.turn_rate = self.ability:GetSpecialValueFor("turn_rate")
+	self.awake_mana = self.ability:GetSpecialValueFor("awake_mana")
 	
 	 
 
-    self.skills_table = {
-                            ["reinforce_berserk"] = "starlight_breaker",
+	self.skills_table = {
+							["reinforce_berserk"] = "starlight_breaker",
 							
-                            
-                        }
+							
+						}
 						
 					
 					
 	
  
 
-    if IsServer() then
-        for k, v in pairs(self.skills_table) do
-            if k and v then
-                self.parent:SwapAbilities(k, v, false, true)
-                --k:SetHidden(true)
-                --v:SetHidden(false)
+	if IsServer() then
+		for k, v in pairs(self.skills_table) do
+			if k and v then
+				self.parent:SwapAbilities(k, v, false, true)
+				--k:SetHidden(true)
+				--v:SetHidden(false)
 
-                local ability = self.parent:FindAbilityByName(v)
-                if ability and not ability:IsNull() and ability:IsTrained() and ability:GetCooldown(-1) > 0 then
-                    ability:EndCooldown()
-                    ability:RefreshCharges()
-                end
-            end
-        end
-            --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
-        if IsServer() then
-        if not self.particle_time then
-            self.particle_time =    ParticleManager:CreateParticle("particles/reinforce_berserk_aura.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
-                                    
-        end
+				local ability = self.parent:FindAbilityByName(v)
+				if ability and not ability:IsNull() and ability:IsTrained() and ability:GetCooldown(-1) > 0 then
+					ability:EndCooldown()
+					ability:RefreshCharges()
+				end
+			end
+		end
+			--self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
+		if IsServer() then
+		if not self.particle_time then
+			self.particle_time =	ParticleManager:CreateParticle("particles/reinforce_berserk_aura.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+									
+		end
 
-      
+	  
 		 
-        EmitSoundOn("reinforce.5", self.parent)
+		EmitSoundOn("reinforce.5", self.parent)
 		EmitSoundOn("reinforce.5_5", self.parent)
 		end
 		local ability11 = self:GetCaster():FindAbilityByName("reinforce_berserk")
-        ability11:StartCooldown(220)
+		ability11:StartCooldown(220)
 
-        self.parent:Purge(false, true, false, true, true)
-    end
+		self.parent:Purge(false, true, false, true, true)
+	end
 	end
 
 
 function modifier_reinforce_berserk_buff:OnRefresh(table)
-    self:OnCreated(table)
+	self:OnCreated(table)
 end
 function modifier_reinforce_berserk_buff:OnDestroy()
-    if IsServer() then
+	if IsServer() then
 	if self.parent:HasModifier("modifier_book_of_darkness_spellbook") then
 	self.parent:RemoveModifierByName("modifier_book_of_darkness_spellbook") end
-        if self.parent and not self.parent:IsNull() then
-            for k, v in pairs(self.skills_table) do
-                if k and v then
-                    self.parent:SwapAbilities(k, v, true, false)
-                    --k:SetHidden(false)
-                    --v:SetHidden(true)
-                end
-            end
+		if self.parent and not self.parent:IsNull() then
+			for k, v in pairs(self.skills_table) do
+				if k and v then
+					self.parent:SwapAbilities(k, v, true, false)
+					--k:SetHidden(false)
+					--v:SetHidden(true)
+				end
+			end
 			ParticleManager:DestroyParticle(self.particle_time, false)
-        ParticleManager:ReleaseParticleIndex(self.particle_time)
+		ParticleManager:ReleaseParticleIndex(self.particle_time)
 
-           
+		   
 
-            if self.parent:IsRealHero() then
+			if self.parent:IsRealHero() then
 			 local ability3 = self.parent:FindAbilityByName("reinforce_berserk")
-                ability3:StartCooldown(ability3:GetCooldown(-1)* self.parent:GetCooldownReduction())
-                local ability = self.parent:FindAbilityByName("reinforce_berserk_awake")
-                if ability and not ability:IsNull() and ability:IsTrained() then
-                    --SetZenitsuAwakeLongCd(self.parent, self.ability)
-                    --ability:CastAbility()
-                end
-            end
+				ability3:StartCooldown(ability3:GetCooldown(-1)* self.parent:GetCooldownReduction())
+				local ability = self.parent:FindAbilityByName("reinforce_berserk_awake")
+				if ability and not ability:IsNull() and ability:IsTrained() then
+					--SetZenitsuAwakeLongCd(self.parent, self.ability)
+					--ability:CastAbility()
+				end
+			end
 				if IsServer() then
-       
-    end
+	   
+	end
 end
 end
 end
@@ -2315,10 +2315,10 @@ LinkLuaModifier( "modifier_starlight_breaker", "heroes/reinforce/reinforce", LUA
 LinkLuaModifier( "modifier_starlight_breaker_thinker", "heroes/reinforce/reinforce", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_starlight_breaker_main", "heroes/reinforce/reinforce", LUA_MODIFIER_MOTION_NONE )
 function starlight_breaker:OnUpgrade()
-    local ability = self:GetCaster():FindAbilityByName("book_of_darkness_spellbook_close")
-    if ability and ability:GetLevel() < self:GetLevel() then
-        ability:SetLevel(self:GetLevel())
-    end
+	local ability = self:GetCaster():FindAbilityByName("book_of_darkness_spellbook_close")
+	if ability and ability:GetLevel() < self:GetLevel() then
+		ability:SetLevel(self:GetLevel())
+	end
 end
 --------------------------------------------------------------------------------
 -- Ability Start
@@ -2459,10 +2459,10 @@ function modifier_starlight_breaker_thinker:PlayEffects()
 
 
 	-- -- Create Particle
-	local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetCaster() )
-	ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
-	ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 0, 0 ) )
-	ParticleManager:ReleaseParticleIndex( effect_cast )
+	-- local effect_cast = ParticleManager:CreateParticle( particle_cast, PATTACH_WORLDORIGIN, self:GetCaster() )
+	-- ParticleManager:SetParticleControl( effect_cast, 0, self:GetParent():GetOrigin() )
+	-- ParticleManager:SetParticleControl( effect_cast, 1, Vector( self.radius, 0, 0 ) )
+	-- ParticleManager:ReleaseParticleIndex( effect_cast )
 
 	-- Create Sound
 	EmitSoundOnLocationWithCaster( self:GetParent():GetOrigin(), sound_cast, self:GetCaster() )
@@ -2488,11 +2488,11 @@ function modifier_starlight_breaker:OnCreated()
 if IsServer() then
 local caster = self:GetCaster()
 caster:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_6, 2)
-        --self:SetStackCount(0)
+		--self:SetStackCount(0)
 self.screw_fx = 	ParticleManager:CreateParticle("particles/starlight_breaker_start.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster())
 								
-       
-    end
+	   
+	end
 end
 function modifier_starlight_breaker:OnDestroy()
 if IsServer() then
@@ -2504,8 +2504,8 @@ local caster = self:GetCaster()
 			{ duration = 10 } -- kv
 		)
 if self.screw_fx then
-	    ParticleManager:DestroyParticle(self.screw_fx, false)
-	    ParticleManager:ReleaseParticleIndex(self.screw_fx)
+		ParticleManager:DestroyParticle(self.screw_fx, false)
+		ParticleManager:ReleaseParticleIndex(self.screw_fx)
 	end
 	end
 end

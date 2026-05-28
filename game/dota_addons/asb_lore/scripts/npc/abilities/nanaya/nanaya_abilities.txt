@@ -21,7 +21,12 @@
         "AbilityCooldown"				"20 20 20 20"
         "AbilityCastRange"				"550 600 650 700"
 	  
-	  	
+	  	"precache"
+        {
+            "particle"                  "particles/test_part2.vpcf"
+            "particle"                  "particles/screen_spla22_ark.vpcf"
+            "particle"                  "particles/test_part2.vpcf"
+        }
         "AbilityValues"
         {
             "dmg"
