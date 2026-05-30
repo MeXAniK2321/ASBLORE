@@ -1266,6 +1266,7 @@
 				}
 			}
 			m_nOrientationType = "PARTICLE_ORIENTATION_ALIGN_TO_PARTICLE_NORMAL"
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_RenderSprites"
@@ -1591,12 +1592,14 @@
 				},
 			]
 			m_nOrientationType = "PARTICLE_ORIENTATION_ALIGN_TO_PARTICLE_NORMAL"
+			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_proj_drk.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core.vpcf"
@@ -1604,9 +1607,11 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_rings.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_rings_inner.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_bits.vpcf"
@@ -1622,6 +1627,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_start_ring.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core_glow.vpcf"
@@ -1629,6 +1635,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core_rays.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core_flare.vpcf"
@@ -1636,16 +1643,23 @@
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core_ring.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_core_light.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_ring_inner_start.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web/sukuna_web_spider_explode.vpcf"
 			m_bEndCap = true
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/heroes/sukuna/sukuna_web_v2/sukuna_web_v2_main.vpcf"
 		},
 	]
 }

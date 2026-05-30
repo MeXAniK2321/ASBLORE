@@ -39,7 +39,9 @@ function item_zawarudo:OnSpellStart()
 	if hZawarudoMainModifier and IsNotNull(hZawarudoMainModifier) then
 		if hZawarudoMainModifier:GetRemainingTime() >= nZawarudoDuration + 1.8 then self:EndCooldown() return end
 		
-		hZawarudoMainModifier:SetDuration(nZawarudoDuration, true)
+		if hZawarudoMainModifier:GetRemainingTime() < nZawarudoDuration then
+			hZawarudoMainModifier:SetDuration(nZawarudoDuration, true)
+		end
 			
 		hCaster.bCanMoveZawarudo = true
 		hCaster.bResetZawarudo   = true
@@ -66,7 +68,7 @@ function modifier_zawarudo_time_stop:CheckState()
                     }
 					
     if self.parent.bResetZawarudo then
-		self.nRemainingTimeSelf = nZawarudoDuration
+		self.nRemainingTimeSelf = GameRules:GetGameTime() + nZawarudoDuration
 		self.parent.bResetZawarudo = false
 	end
 	
@@ -76,11 +78,7 @@ function modifier_zawarudo_time_stop:CheckState()
 		self:AddParticle(self.nAuraPFX, false, false, -1, false, false)
 	end
 	
-	if self.nRemainingTimeSelf and self.nRemainingTimeSelf > 0 and self:GetRemainingTime() <= nZawarudoDuration then
-		self.nRemainingTimeSelf = self.nRemainingTimeSelf - 0.1
-	end
-	
-	if self.nRemainingTimeSelf <= 0 and self.parent.bCanMoveZawarudo then
+	if self.nRemainingTimeSelf and GameRules:GetGameTime() > self.nRemainingTimeSelf and self.parent.bCanMoveZawarudo then
 		self.parent.bCanMoveZawarudo = false
 	end
 	
@@ -88,7 +86,7 @@ function modifier_zawarudo_time_stop:CheckState()
 	
 	if self.parent and self.parent.bCanMoveZawarudo then return {} end
 
-    return (self.parent ~= self.caster or self:GetRemainingTime() > self.fTimeStopMoves or self.nRemainingTimeSelf <= 0) and state or {}
+    return (self.parent ~= self.caster or self:GetRemainingTime() > self.fTimeStopMoves or GameRules:GetGameTime() > self.nRemainingTimeSelf) and state or {}
 end
 function modifier_zawarudo_time_stop:DeclareFunctions()
     local func =    {
@@ -123,7 +121,8 @@ function modifier_zawarudo_time_stop:OnCreated(hTable)
 	self.fTimeStopMoves  = self:GetDuration() - 3.1
 	self.nRadiusGain     = 20000
 	
-	self.nRemainingTimeSelf = self.nRemainingTimeSelf or nZawarudoDuration
+	local fTimeToAdd     = GameRules:GetGameTime() + nZawarudoDuration
+	self.nRemainingTimeSelf = self.nRemainingTimeSelf or ( self.parent == self.caster and ( fTimeToAdd + 3.1 ) or fTimeToAdd )
 
 	if IsServer() and self.parent == self.caster then
 	    if self.parent:HasModifier("modifier_zawarudo_time_stop") and self.parent ~= self.caster then
