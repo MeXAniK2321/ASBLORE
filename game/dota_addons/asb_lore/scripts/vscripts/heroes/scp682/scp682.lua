@@ -511,6 +511,7 @@ function modifier_scp682_grow:IsPurgable() return false end
 function modifier_scp682_grow:IsPurgeException() return false end
 function modifier_scp682_grow:RemoveOnDeath() return false end
 function modifier_scp682_grow:GetAttributes() return MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE end
+function modifier_scp682_grow:GetPriority() return MODIFIER_PRIORITY_ULTRA end
 function modifier_scp682_grow:CheckState()
     local state = {
                     --[MODIFIER_STATE_FLYING] = self.bIsFlying
@@ -545,9 +546,10 @@ function modifier_scp682_grow:OnCreated(hTable)
 	self.caster  = self.caster or self:GetCaster()
 	self.ability = self.ability or self:GetAbility()
 	
-	self.fLength    = 107.5
-	self.fBaseScale = 2.0 -- Base scale for client attack range
-	self.nScale     = 5
+	self.fLength     = 107.5
+	self.fBaseScale  = 2.0 -- Base scale for client attack range
+	self.fScaleLimit = 2.75
+	self.nScale      = 5
 	
 	self.vPreviousPos    = self.vPreviousPos or nil
 	self.vNewPosFix      = vNewPosFix or nil
@@ -584,7 +586,15 @@ function modifier_scp682_grow:GetModifierModelScale(keys)
 		--print(self.nDistanceMoved)
 	end
     self.parent:SetHullRadius(24 + self:GetStackCount())
-	return self:GetStackCount() * self.nScale
+	local fModelScale = self.parent:GetModelScale()
+	--print(fModelScale)
+	if fModelScale > self.fScaleLimit then
+		return (self.fScaleLimit - fModelScale) * 100
+	else
+	    local nStackValue   = self:GetStackCount() * self.nScale
+		local nValueClamped = math.max(0, math.min( (self.fScaleLimit - fModelScale) * 100, nStackValue) )
+	    return nValueClamped
+	end
 end
 function modifier_scp682_grow:GetModifierAttackRangeBonus(keys)
     return IsServer()
