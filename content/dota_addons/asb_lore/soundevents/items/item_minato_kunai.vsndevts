@@ -679,33 +679,28 @@
 		type = "dota_update_default"
 		vsnd_files = 
 		[
-			"sounds/BoomBox/berserk_brother.vsnd",
-            "sounds/BoomBox/berserk_sign.vsnd",
+
             "sounds/BoomBox/berserk_war.vsnd",
             "sounds/BoomBox/bleach_bestrong.vsnd",
             "sounds/BoomBox/gachi2.vsnd",
             "sounds/BoomBox/gachi3.vsnd",
-            "sounds/BoomBox/giorno_meme.vsnd",
-            "sounds/BoomBox/ichigo1.vsnd",
+            "sounds/BoomBox/hakari_dance.vsnd",
             "sounds/BoomBox/ichigo2.vsnd",
 			"sounds/BoomBox/localoca.vsnd",
 			"sounds/BoomBox/loli_dance.vsnd",
-			"sounds/BoomBox/moonlight.vsnd",
-			"sounds/BoomBox/omaewamu.vsnd",
-			"sounds/BoomBox/raidenarmstrong_gachi.vsnd",
+			"sounds/BoomBox/loucura_letal.vsnd",
+			"sounds/BoomBox/luz_roja.vsnd",
+			"sounds/BoomBox/montagem_pegadora.vsnd",
 			"sounds/BoomBox/rockin_hardcore_fastway.vsnd",
 			"sounds/BoomBox/saxodeep.vsnd",
 			"sounds/BoomBox/ultra_instinct_battle.vsnd",
+			"sounds/BoomBox/voce_na_mira.vsnd",
 			"sounds/BoomBox/yhwach_nottheme.vsnd",
 			"sounds/BoomBox/zenitsu_vs_spider.vsnd",
 			"sounds/BoomBox/passom_bem_solto.vsnd",
 			"sounds/BoomBox/devil_trigger.vsnd",
 			"sounds/BoomBox/ncts_next.vsnd",
 			"sounds/BoomBox/yougotthat.vsnd",
-			"sounds/BoomBox/raidenarmstrong_gachi.vsnd",
-			"sounds/BoomBox/rulesofnature.vsnd",
-			"sounds/BoomBox/sas_kokuten.vsnd",
-			"sounds/BoomBox/scp682chasetheme.vsnd",
 		]
 		volume = "1.500000"
 		pitch_rand_min = "-0.050000"
@@ -2000,6 +1995,21 @@
 			"sounds/items/zawarudo/zawarudo.vsnd"
 		]
 		volume = "5.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    sakuya_active =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/faceless_void/time_dilation_cast.vsnd"
+		]
+		volume = "1.000000"
 		pitch_min = "0.400000"
 		pitch_max = "1.000000"
 		soundlevel = "100.000000"

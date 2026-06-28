@@ -7,6 +7,7 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 local kvAbility = LoadKeyValues("scripts/npc/npc_abilities_custom.txt") --LOAD THIS FILE ONLY ONCE
+local kvHeroes  = LoadKeyValues("scripts/npc/npc_heroes_custom.txt") --LOAD THIS FILE ONLY ONCE
 LoreIsAbilityRequiredLevel = function(hAbility, iLevel)
     if hAbility and iLevel then
         local kvAbilityInfo = kvAbility[hAbility]

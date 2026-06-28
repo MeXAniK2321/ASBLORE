@@ -4175,4 +4175,73 @@
     "VisionDaytimeRange"    "1600"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1000"                  // Range of vision at night time.
     }
+	
+//================================
+//Kiana_Kaslana
+//================================
+"Kiana"
+	{
+	"override_hero"                       "npc_dota_hero_mirana"
+	"Model"                               "models/kiana/base/test11.vmdl"
+	"ModelScale"				"1.000"
+		"LoadoutScale"				"1.0000"
+		"SpectatorLoadoutScale" 	"1.0000"
+		"VersusScale"				"1.0000"
+
+		"DisableWearables" 			"1"
+		
+		
+		 "Facets"
+        {         
+        }
+		"Ability1"         "kiana_combo_hit"
+		"Ability2"         "kiana_evasion"
+		"Ability3"         "kiana_weapon_skill"
+		"Ability4"         "kiana_ultimate"
+		"Ability27"        "will_of_the_herrsher_close"
+		"Ability28"        "kiana_flameshion_form"
+		"Ability29"        "kiana_final_form"
+		"Ability30"        "kiana_sirin_form"
+ 		"Ability31"        "kiana_drifter_form"
+		"Ability32"        "kiana_base_form"
+		"Ability22"         "kiana_final_slash"
+		"Ability5"        "kiana_special"
+		"Ability7" "empty_slot"
+		"Ability6"         "will_of_the_herrsher"
+		"Ability24" "kiana_global_kick"
+		"Ability26" "kiana_perfect_timestop"
+		"Ability10"                 "special_bonus_spell_amplify_15"
+		"Ability11"					"special_bonus_cooldown_reduction_10"
+
+		"Ability12"					"special_bonus_attack_damage_50"
+		"Ability13"					"special_bonus_kiana_20"
+
+		"Ability14"					"special_bonus_kiana_20_alt"
+		"Ability15"					"special_bonus_attack_speed_100"
+
+		"Ability16"					"special_bonus_spell_lifesteal_15"
+		"Ability17"					"special_bonus_kiana_25"
+
+		"ItemSlots"
+  		{ }
+		
+			"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
+		"AttributeBaseStrength"		"10"
+				"MagicalResistance"			"10" "StatusHealth"		"400" "Ability25" "empty_slot"
+		"AttributeStrengthGain"		"1.0"
+		"AttributeBaseIntelligence"	"15"
+		"AttributeIntelligenceGain"	"0.8"
+		"AttributeBaseAgility"		"26"
+		"AttributeAgilityGain"		"0.8"
+			"AttackAnimationPoint"		"1.550000"
+		"ArmorPhysical"				"2"
+		"MovementSpeed"				"420"
+		"AttackDamageMin"			"18"
+		"AttackDamageMax"			"23"
+				"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"1200"
+		
+
+	 
+	}
   }

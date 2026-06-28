@@ -1162,7 +1162,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn_2.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1174,7 +1174,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1186,7 +1186,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1198,7 +1198,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn_2.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1210,7 +1210,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1222,7 +1222,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn_2.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1234,7 +1234,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1246,7 +1246,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1258,7 +1258,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn_2.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1270,7 +1270,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"
@@ -1282,7 +1282,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/touma/voicelines/respawn.vsnd",
+			"sounds/touma/voicelines/spawn.vsnd",
 		]
 		volume = "1.000000"
 		pitch_rand_min = "-0.050000"

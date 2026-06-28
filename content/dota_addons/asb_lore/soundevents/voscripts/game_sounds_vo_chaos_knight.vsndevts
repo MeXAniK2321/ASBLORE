@@ -5,7 +5,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Loadout.vsnd",
+			"sounds/vo/flandre_scarlet/loadout.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -15,7 +15,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Loadout2.vsnd",
+			"sounds/vo/flandre_scarlet/loadout2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -25,7 +25,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Loadout3.vsnd",
+			"sounds/vo/flandre_scarlet/loadout3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -35,7 +35,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Loadout.vsnd",
+			"sounds/vo/flandre_scarlet/loadout.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -45,7 +45,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Loadout2.vsnd",
+			"sounds/vo/flandre_scarlet/loadout2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -65,7 +65,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_1.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -85,7 +85,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
+			"sounds/vo/flandre_scarlet/moving1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -95,7 +95,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving2.vsnd",
+			"sounds/vo/flandre_scarlet/moving2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -105,7 +105,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving3.vsnd",
+			"sounds/vo/flandre_scarlet/moving3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -115,7 +115,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving4.vsnd",
+			"sounds/vo/flandre_scarlet/moving4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -125,7 +125,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving5.vsnd",
+			"sounds/vo/flandre_scarlet/moving5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -135,7 +135,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
+			"sounds/vo/flandre_scarlet/moving1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -145,7 +145,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving2.vsnd",
+			"sounds/vo/flandre_scarlet/moving2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -155,7 +155,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving3.vsnd",
+			"sounds/vo/flandre_scarlet/moving3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -165,7 +165,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving4.vsnd",
+			"sounds/vo/flandre_scarlet/moving4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -175,7 +175,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving5.vsnd",
+			"sounds/vo/flandre_scarlet/moving5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -185,7 +185,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
+			"sounds/vo/flandre_scarlet/moving1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -195,7 +195,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving2.vsnd",
+			"sounds/vo/flandre_scarlet/moving2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -205,7 +205,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving3.vsnd",
+			"sounds/vo/flandre_scarlet/moving3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -215,7 +215,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving4.vsnd",
+			"sounds/vo/flandre_scarlet/moving4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -225,7 +225,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving5.vsnd",
+			"sounds/vo/flandre_scarlet/moving5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -235,7 +235,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
+			"sounds/vo/flandre_scarlet/moving1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -245,7 +245,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Moving2.vsnd",
+			"sounds/vo/flandre_scarlet/moving2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -255,7 +255,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack1.vsnd",
+			"sounds/vo/flandre_scarlet/attack1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -265,7 +265,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack2.vsnd",
+			"sounds/vo/flandre_scarlet/attack2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -275,7 +275,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack3.vsnd",
+			"sounds/vo/flandre_scarlet/attack3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -285,7 +285,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack4.vsnd",
+			"sounds/vo/flandre_scarlet/attack4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -295,7 +295,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack1.vsnd",
+			"sounds/vo/flandre_scarlet/attack1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -305,7 +305,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack2.vsnd",
+			"sounds/vo/flandre_scarlet/attack2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -315,7 +315,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack3.vsnd",
+			"sounds/vo/flandre_scarlet/attack3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -325,7 +325,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack4.vsnd",
+			"sounds/vo/flandre_scarlet/attack4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -335,7 +335,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack1.vsnd",
+			"sounds/vo/flandre_scarlet/attack1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -345,7 +345,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack2.vsnd",
+			"sounds/vo/flandre_scarlet/attack2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -355,7 +355,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Attack3.vsnd",
+			"sounds/vo/flandre_scarlet/attack3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -395,7 +395,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Chaos_bolt_1.vsnd",
+			"sounds/vo/flandre_scarlet/chaos_bolt_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -405,7 +405,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Chaos_bolt_1.vsnd",
+			"sounds/vo/flandre_scarlet/chaos_bolt_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -415,7 +415,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Chaos_bolt_1.vsnd",
+			"sounds/vo/flandre_scarlet/chaos_bolt_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -425,7 +425,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Chaos_bolt_1.vsnd",
+			"sounds/vo/flandre_scarlet/chaos_bolt_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -435,7 +435,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Reality_rift1.vsnd",
+			"sounds/vo/flandre_scarlet/reality_rift1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -445,7 +445,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Reality_rift2.vsnd",
+			"sounds/vo/flandre_scarlet/reality_rift2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -455,7 +455,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Reality_rift1.vsnd",
+			"sounds/vo/flandre_scarlet/reality_rift1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -465,7 +465,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Reality_rift2.vsnd",
+			"sounds/vo/flandre_scarlet/reality_rift2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -475,7 +475,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Ultimate1.vsnd",
+			"sounds/vo/flandre_scarlet/ultimate1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -485,7 +485,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Ultimate2.vsnd",
+			"sounds/vo/flandre_scarlet/ultimate2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -495,7 +495,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Ultimate3.vsnd",
+			"sounds/vo/flandre_scarlet/ultimate3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -505,7 +505,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Ultimate1.vsnd",
+			"sounds/vo/flandre_scarlet/ultimate1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -515,7 +515,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Ultimate2.vsnd",
+			"sounds/vo/flandre_scarlet/ultimate2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -525,7 +525,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage4.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -535,7 +535,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage4.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -545,7 +545,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage4.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -555,7 +555,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -565,7 +565,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -575,7 +575,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -585,7 +585,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -595,7 +595,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -605,7 +605,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -615,7 +615,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Levelup1.vsnd",
+			"sounds/vo/flandre_scarlet/levelup1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -625,7 +625,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_1.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -635,7 +635,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_2.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -645,7 +645,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_3.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -655,7 +655,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_4.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -665,7 +665,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_5.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -675,7 +675,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_6.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_6.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -685,7 +685,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_7.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_7.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -695,7 +695,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_8.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_8.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -705,7 +705,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_1.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -715,7 +715,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_2.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -725,7 +725,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_3.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -735,327 +735,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_4.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_01.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_02.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_03 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_03.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_04 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_04.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_05 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_05.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_06 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_06.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_07 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_07.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_08 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_08.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_09 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_09.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_10 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_10.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_11 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_11.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_12 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_12.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_13 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_13.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_14 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_14.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_15 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_15.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_16 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_16.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_17 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_17.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_18 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_18.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_19 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_19.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_20 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_20.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_21 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_21.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_22 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_22.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_23 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_23.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_24 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_24.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_25 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_25.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_26 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_26.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_27 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_27.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_28 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_28.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_29 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_29.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_30 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_30.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_31 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_31.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_rival_32 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_rival_32.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1105,7 +785,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit1.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1115,7 +795,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit2.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1125,7 +805,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1135,7 +815,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit1.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1145,7 +825,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit2.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1155,7 +835,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1165,7 +845,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit1.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1175,7 +855,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit2.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1185,7 +865,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1195,7 +875,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying1.vsnd",
+			"sounds/vo/flandre_scarlet/dying1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1205,7 +885,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying2.vsnd",
+			"sounds/vo/flandre_scarlet/dying2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1215,7 +895,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying3.vsnd",
+			"sounds/vo/flandre_scarlet/dying3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1225,7 +905,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying4.vsnd",
+			"sounds/vo/flandre_scarlet/dying4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1235,7 +915,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying5.vsnd",
+			"sounds/vo/flandre_scarlet/dying5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1245,7 +925,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying1.vsnd",
+			"sounds/vo/flandre_scarlet/dying1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1255,7 +935,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying2.vsnd",
+			"sounds/vo/flandre_scarlet/dying2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1265,7 +945,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying3.vsnd",
+			"sounds/vo/flandre_scarlet/dying3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1275,7 +955,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying4.vsnd",
+			"sounds/vo/flandre_scarlet/dying4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1285,7 +965,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying5.vsnd",
+			"sounds/vo/flandre_scarlet/dying5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1305,7 +985,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn1.vsnd",
+			"sounds/vo/flandre_scarlet/respawn1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1315,7 +995,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn2.vsnd",
+			"sounds/vo/flandre_scarlet/respawn2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1325,7 +1005,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn3.vsnd",
+			"sounds/vo/flandre_scarlet/respawn3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1335,7 +1015,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn4.vsnd",
+			"sounds/vo/flandre_scarlet/respawn4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1345,7 +1025,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn5.vsnd",
+			"sounds/vo/flandre_scarlet/respawn5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1355,7 +1035,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn6.vsnd",
+			"sounds/vo/flandre_scarlet/respawn6.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1365,7 +1045,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn7.vsnd",
+			"sounds/vo/flandre_scarlet/respawn7.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1375,7 +1055,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn1.vsnd",
+			"sounds/vo/flandre_scarlet/respawn1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1385,7 +1065,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn2.vsnd",
+			"sounds/vo/flandre_scarlet/respawn2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1395,7 +1075,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn3.vsnd",
+			"sounds/vo/flandre_scarlet/respawn3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1405,7 +1085,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn4.vsnd",
+			"sounds/vo/flandre_scarlet/respawn4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1415,7 +1095,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn5.vsnd",
+			"sounds/vo/flandre_scarlet/respawn5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1425,7 +1105,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Respawn6.vsnd",
+			"sounds/vo/flandre_scarlet/respawn6.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1485,7 +1165,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1495,7 +1175,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1505,7 +1185,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit3.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1515,7 +1195,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit1.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1525,7 +1205,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Lasthit1.vsnd",
+			"sounds/vo/flandre_scarlet/lasthit1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1550,272 +1230,12 @@
 		volume = "1.000000"
 		pitch = "1.000000"
 	}
-	chaos_knight_chaknight_item_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_01.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_02.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_03 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_03.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_04 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_04.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_05 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_05.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_06 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_06.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_07 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_07.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_08 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_08.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_09 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_09.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_item_10 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_item_10.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_bottle_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_bottle_01.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_bottle_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_bottle_02.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_bottle_03 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_bottle_03.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny2.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_03 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_04 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny4.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_05 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny5.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_06 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny6.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_07 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_08 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny2.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_09 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_10 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny4.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_11 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny5.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_12 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny6.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_deny_13 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
 	chaos_knight_chaknight_lose_01 = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying4.vsnd",
+			"sounds/vo/flandre_scarlet/dying4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1825,7 +1245,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying5.vsnd",
+			"sounds/vo/flandre_scarlet/dying5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1835,7 +1255,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying1.vsnd",
+			"sounds/vo/flandre_scarlet/dying1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1845,7 +1265,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Dying4.vsnd",
+			"sounds/vo/flandre_scarlet/dying4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1855,7 +1275,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_1.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1865,7 +1285,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_5.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1875,7 +1295,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_5.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -1885,157 +1305,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_lane_missing_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_lane_missing_01.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_lane_missing_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_lane_missing_02.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_lane_missing_03 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_lane_missing_03.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_immort_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Killing_an_enemy_6.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_immort_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Loadout3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_haste_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_haste_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Moving1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_doubdam_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Loadout3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_doubdam_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Loadout3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_regen_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Regeneration.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_regen_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Regeneration.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_illus_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny2.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_illus_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Deny2.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_invis_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Attack4.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_invis_02 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Attack4.vsnd",
+			"sounds/vo/flandre_scarlet/killing_an_enemy_1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2225,7 +1495,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Thanking.vsnd",
+			"sounds/vo/flandre_scarlet/thanking.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2235,7 +1505,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Thanking.vsnd",
+			"sounds/vo/flandre_scarlet/thanking.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2245,37 +1515,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage1.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_inthebag_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/Loadout3.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_shiwiz_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_shiwiz_01.vsnd",
-		]
-		volume = "1.000000"
-		pitch = "1.000000"
-	}
-	chaos_knight_chaknight_crumwiz_01 = 
-	{
-		type = "dota_update_vo_switch"
-		vsnd_files = 
-		[
-			"sounds/vo/flandre_scarlet/chaknight_crumwiz_01.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2285,7 +1525,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage1.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2295,7 +1535,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage2.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2305,7 +1545,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage3.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2315,7 +1555,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage4.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2325,7 +1565,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage5.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2335,7 +1575,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage6.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage6.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2345,7 +1585,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage7.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage7.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2355,7 +1595,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage8.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage8.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2365,7 +1605,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage1.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2375,7 +1615,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage2.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2385,7 +1625,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage4.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2395,7 +1635,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage3.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2405,7 +1645,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage5.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2415,7 +1655,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage6.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage6.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2425,7 +1665,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Taking_damage7.vsnd",
+			"sounds/vo/flandre_scarlet/taking_damage7.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2435,7 +1675,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing1.vsnd",
+			"sounds/vo/flandre_scarlet/laughing1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2445,7 +1685,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing2.vsnd",
+			"sounds/vo/flandre_scarlet/laughing2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2455,7 +1695,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing3.vsnd",
+			"sounds/vo/flandre_scarlet/laughing3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2465,7 +1705,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing4.vsnd",
+			"sounds/vo/flandre_scarlet/laughing4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2475,7 +1715,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing5.vsnd",
+			"sounds/vo/flandre_scarlet/laughing5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2485,7 +1725,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing1.vsnd",
+			"sounds/vo/flandre_scarlet/laughing1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2495,7 +1735,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing2.vsnd",
+			"sounds/vo/flandre_scarlet/laughing2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2505,7 +1745,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing3.vsnd",
+			"sounds/vo/flandre_scarlet/laughing3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2515,7 +1755,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing4.vsnd",
+			"sounds/vo/flandre_scarlet/laughing4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2525,7 +1765,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing5.vsnd",
+			"sounds/vo/flandre_scarlet/laughing5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2535,7 +1775,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing1.vsnd",
+			"sounds/vo/flandre_scarlet/laughing1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2545,7 +1785,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing2.vsnd",
+			"sounds/vo/flandre_scarlet/laughing2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2555,7 +1795,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing3.vsnd",
+			"sounds/vo/flandre_scarlet/laughing3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2565,7 +1805,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing4.vsnd",
+			"sounds/vo/flandre_scarlet/laughing4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2575,7 +1815,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing5.vsnd",
+			"sounds/vo/flandre_scarlet/laughing5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2585,7 +1825,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing1.vsnd",
+			"sounds/vo/flandre_scarlet/laughing1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2595,7 +1835,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing2.vsnd",
+			"sounds/vo/flandre_scarlet/laughing2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2605,7 +1845,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing3.vsnd",
+			"sounds/vo/flandre_scarlet/laughing3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2615,7 +1855,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing4.vsnd",
+			"sounds/vo/flandre_scarlet/laughing4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2625,7 +1865,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing5.vsnd",
+			"sounds/vo/flandre_scarlet/laughing5.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2635,7 +1875,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing1.vsnd",
+			"sounds/vo/flandre_scarlet/laughing1.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2645,7 +1885,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing2.vsnd",
+			"sounds/vo/flandre_scarlet/laughing2.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2655,7 +1895,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing3.vsnd",
+			"sounds/vo/flandre_scarlet/laughing3.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
@@ -2665,7 +1905,7 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			"sounds/vo/flandre_scarlet/Laughing4.vsnd",
+			"sounds/vo/flandre_scarlet/laughing4.vsnd",
 		]
 		volume = "1.000000"
 		pitch = "1.000000"

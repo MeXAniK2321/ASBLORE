@@ -256,11 +256,12 @@
 		"BaseClass"					"item_lua"
 		"ScriptFile"				"items/item_watch"
 		"AbilityTextureName"		"watch"
-		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ItemCost"					"13500"
 		"ItemShopTags"				"damage"
 		"ItemQuality"				"magicks"
 		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"AbilityCooldown"           "80"
 		
 		"AbilityValues"
 		{
@@ -272,6 +273,7 @@
 			"lifesteal" "25"
 			"reduce_mana" "20"
 			"castrange" "300"
+			"cd_reduce" "0.25"
 		}
 	}
 	"item_recipe_watch"
@@ -1547,7 +1549,7 @@
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"asta_sword"
 		"Model"									"models/props_gameplay/recipe.mdl"
-		"ItemCost"								"1500"
+		"ItemCost"								"15000"
 		"ItemShopTags"							""
 		
 		"ItemRecipe"							"1"
@@ -1769,7 +1771,7 @@
 		"AbilityCooldown"						"45"
 		"AbilityManaCost"						"0"
 		"AbilitySharedCooldown"					"asta_sword"
-		"ItemCost"						"2500"
+		"ItemCost"						"3500"
 		"ItemSellable"							"1"
 		"ItemShopTags"							"str;damage;hard_to_tag"
 		"ItemQuality"							"epic"
@@ -1785,10 +1787,10 @@
 		{
 			"bonus_str" "10"
 			"bonus_damage" "15"
-			"duration" "3"
+			"duration" "5.5"
 			"max_level" "10"
 			"model_scale" "30"
-			"resistance" "0"
+			"resistance" "80"
 			"cooldown" "35"
 			"bonus_resist" "0"
 		}
@@ -3752,7 +3754,7 @@
 		"ItemResult"									"item_super_idol_water"
 		"ItemRequirements"
 		{
-			"01"									"item_hidnotea;item_bottle;item_magic_wand;"
+			"01"									"item_hidnotea;item_bottle;"
 		}
 	}
 	"item_super_idol_water"
@@ -4607,7 +4609,7 @@
 		"AbilityTextureName"					"monster_energy"
 		"Model"									"models/props_gameplay/red_box.vmdl"
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
-		"AbilityCooldown"						"35"
+		"AbilityCooldown"						"10"
 		"AbilitySharedCooldown"				 ""
 		"ItemCost"								"4000"
 		"ItemSellable"							"0"
@@ -4624,7 +4626,7 @@
 		
 		"AbilityValues"
 		{
-			"heal_amount" "1000"
+			"heal_amount" "300"
 			"damage_bonus" "5"
 			"stats_bonus" "2"
 			"spell_amp" "1"
@@ -5549,7 +5551,7 @@
 		"ItemShareability"						"ITEM_FULLY_SHAREABLE"
 		"ShouldBeInitiallySuggested"			"1"
 		"ItemInitialCharges"					"0"
-		"ItemCost"								"55555"
+		"ItemCost"								"38000"
 		"ItemShopTags"							"consumable"
 		"ItemQuality"							"consumable"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"

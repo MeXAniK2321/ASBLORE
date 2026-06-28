@@ -95,7 +95,7 @@ function modifier_item_lerolero_buff:IsPurgable() return false end
 function modifier_item_lerolero_buff:IsPurgeException() return false end
 function modifier_item_lerolero_buff:RemoveOnDeath() return true end
 function modifier_item_lerolero_buff:CheckState()
-	local state = {	[MODIFIER_STATE_MAGIC_IMMUNE] = true,}
+	local state = {	[MODIFIER_STATE_MAGIC_IMMUNE] = false,}
 	return state
 end
 function modifier_item_lerolero_buff:DeclareFunctions()

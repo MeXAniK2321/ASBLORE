@@ -145,6 +145,43 @@ function COverthrowGameMode:OnNPCSpawned( event )
                 end)
             end
 			
+			
+			--[[ Fix for wearable items not properly being removed with DisableWearables 1
+			tDone = tDone or {}
+			
+			if not tDone[PID] then		
+				tDone[PID] = true
+				
+				local sFixHeroWearables = player:GetUnitName()
+				local sFixHeroModel     = player:GetModelName()
+				local hero = nil
+				
+				-- With timer 0 we get exact timing
+				Timers:CreateTimer(0, function()
+					hero = PlayerResource:ReplaceHeroWith(PID, sFixHeroWearables, 1000, 0)
+					
+					if not hero or hero:IsNull() then
+					    return nil
+					end
+					
+					hero:SetModel("models/bogdan/slave_model/gachi_brother.vmdl")
+					hero:SetOriginalModel("models/bogdan/slave_model/gachi_brother.vmdl")
+					print("TEST SWAPPED MODEL TO MODEL 2")
+
+					
+					Timers:CreateTimer(0.2, function()
+						if not hero or hero:IsNull() then
+							return nil
+						end
+						hero:SetModel(sFixHeroModel)
+						hero:SetOriginalModel(sFixHeroModel)
+						print("TEST SWAPPED MODEL TO ORIGINAL MODEL")
+					end)
+				end)
+			end
+
+            ]]--
+			
 			local tArcanas = {
 			                     npc_dota_hero_axe = {"models/bogdan/hurk.vmdl", 1.4},
 								 npc_dota_hero_alchemist = {"models/goku/drip/drip_goku.vmdl", 1.0},
@@ -350,6 +387,16 @@ function COverthrowGameMode:OnEntityKilled( event )
 		--Add extra time if killed by Necro Ult
 		
 		if hero:IsRealHero() and heroTeam ~= killedTeam then
+		    -- Reduce cooldowns of ultimates by 10 seconds
+			for i = 0, hero:GetAbilityCount() - 1 do
+				local hAbility = hero:GetAbilityByIndex(i)
+				if IsNotNull(hAbility) and hAbility:GetCooldownTimeRemaining() > 0 and LoreIsAbilityRequiredLevel(hAbility:GetName(), 30) then
+					local fCooldownRemaining = hAbility:GetCooldownTimeRemaining()
+					hAbility:EndCooldown()
+					hAbility:StartCooldown( fCooldownRemaining - 10 )
+					--print("Reducing cooldown of: " ..  hAbility:GetName() .. " by 10 seconds.")
+				end
+			end
 			--print("Granting killer xp")
 			if killedUnit:GetTeam() == self.leadingTeam and self.isGameTied == false then
 			local level_target = killedUnit:GetLevel()
@@ -477,7 +524,29 @@ end
 --------------------------------------------------------------------------------
 function COverthrowGameMode:OnHeroPick(event)
     local hHero = EntIndexToHScript(event.heroindex)
-    if IsNotNull(hHero) then
+    
+	if hHero and not hHero:IsNull() then
+		
+		local sDummyModel    = "models/bogdan/slave_model/gachi_brother.vmdl"
+		local sHeroMainModel = hHero:GetModelName()
+		
+		-- Fix for Wearables, swap the model to the dummy model
+	    -- NOTE: If OnNPCSpawned used, needs a timer with a delay of 0
+		hHero:SetModel(sDummyModel)
+		hHero:SetOriginalModel(sDummyModel)
+		print("TEST SWAPPED MODEL TO DUMMY MODEL")
+
+		Timers:CreateTimer(0.2, function()
+		    if GameRules:State_Get() <= DOTA_GAMERULES_STATE_HERO_SELECTION then
+			    return 0.1
+			end
+			if not hHero or hHero:IsNull() then
+				return nil
+			end
+			hHero:SetModel(sHeroMainModel)
+			hHero:SetOriginalModel(sHeroMainModel)
+			print("TEST SWAPPED MODEL TO ORIGINAL MODEL")
+		end)
     --=============================ALTERNATE TO EYE'S METHOD, BECAUSE COPY PASTA IS CRINGE=============================--
         local sHeroName   = string.gsub(hHero:GetUnitName(), "npc_dota_hero_", "")
         local tExceptions = {

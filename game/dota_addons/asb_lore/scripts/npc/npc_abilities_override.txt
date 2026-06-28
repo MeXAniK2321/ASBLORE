@@ -425,7 +425,7 @@
 	"item_recipe_refresher"
 	{
 		"ItemPurchasable"			"1"
-		"ItemCost"           		"12000"
+		"ItemCost"           		"32000"
 	}
 
 	// ================= REMOVE ITEMS =================

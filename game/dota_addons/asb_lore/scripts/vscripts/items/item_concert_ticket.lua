@@ -68,13 +68,17 @@ end
 function modifier_item_anime_boombox_ticket:DeclareFunctions()
 	local func = { MODIFIER_EVENT_ON_DEATH,
                    MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,    
-                   MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT }
+                   MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
+                   MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE }
 	return func
 end
 function modifier_item_anime_boombox_ticket:GetModifierIncomingDamage_Percentage() 
     if IsServer() then        
-        return -15
+        return -20
     end
+end	
+function modifier_item_anime_boombox_ticket:GetModifierTotalDamageOutgoing_Percentage()        
+    return 25
 end		
 function modifier_item_anime_boombox_ticket:GetModifierMoveSpeedBonus_Constant(keys)
     return 50

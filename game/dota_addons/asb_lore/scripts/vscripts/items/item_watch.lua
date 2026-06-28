@@ -5,6 +5,30 @@ item_watch = item_watch or class({})
 function item_watch:GetIntrinsicModifierName()
     return "modifier_item_watch"
 end
+function item_watch:OnSpellStart()
+    local hCaster  = self:GetCaster()
+	local fCDReuce = self:GetSpecialValueFor('cd_reduce')
+	
+	local bCheck = false
+	for i = 0, hCaster:GetAbilityCount() - 1 do
+		local hAbility = hCaster:GetAbilityByIndex(i)
+		if IsNotNull(hAbility) and hAbility:GetCooldownTimeRemaining() > 0 and not LoreIsAbilityRequiredLevel(hAbility:GetName(), 30) then
+		    local fCooldownRemaining = hAbility:GetCooldownTimeRemaining()
+		    hAbility:EndCooldown()
+		    hAbility:StartCooldown( fCooldownRemaining - (fCooldownRemaining * fCDReuce) )
+			bCheck = true
+		end
+	end
+	
+	if not bCheck then
+		self:EndCooldown()
+		self:StartCooldown(5.0)
+	end
+	
+	local nSakuyaFX = ParticleManager:CreateParticle("particles/econ/items/faceless_void/faceless_void_bracers_of_aeons/fv_bracers_of_aeons_timedialate.vpcf", PATTACH_ABSORIGIN_FOLLOW, hCaster)
+			          ParticleManager:ReleaseParticleIndex(nSakuyaFX)
+	EmitSoundOn("sakuya_active", hCaster)
+end
 
 
 modifier_item_watch = modifier_item_watch or class({})

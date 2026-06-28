@@ -1,0 +1,819 @@
+"DOTAAbilities"
+{
+		"kiana_combo_hit"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/1"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.3"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 28 26 24 22"
+		"AbilityManaCost"				"40 50 60 70"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"precache"
+		{
+			"model"					"models/kiana/base/test11.vmdl"
+			"model"					"models/kiana/kiana_final/kiana_final.vmdl"
+			"model"                 "models/kiana/kiana_herrsher_of_flameshion/kiana_herrsher_of_flameshion.vmdl"
+			"model"                 "models/kiana/kiana_void_drifter/kiana_void_drifter.vmdl"
+			"model"                 "models/kiana/sirin/scissors.vmdl"
+			"model"                 "models/kiana/sirin/sirin.vmdl"
+			"model"                 "models/kiana/sirin/void_lance.vmdl"
+			"model"                 "models/kiana/sirin/sirin_true/sirin_true_form.vmdl"
+			"soundfile"			    "soundevents/kiana/kiana.vsndevts"
+		}
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"base_damage"			"50 60 70 80 90"
+			
+				
+				"attack_scale"			"0.05 0.07 0.09 0.013 0.18"
+			
+				
+				"cast_range"			"200"
+			
+				
+				"damage"			"50"
+			
+			
+		}
+	}
+	"kiana_evasion"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/3"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400 500 600 700 800"
+		"AbilityCastPoint"				"0.35"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18 17 16 15 14"
+		"AbilityManaCost"				"40 50 60 70"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"distance"			"400 500 600 700 800"
+			
+				
+				"attack_scale"			"0.3 0.4 0.5 0.6 0.7"
+			
+			
+		}
+	}
+	
+	"kiana_weapon_skill"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana"
+		"AbilityTextureName" 					"kiana/2"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilityCastAnimation"                  "ACT_DOTA_ALCHEMIST_CHEMICAL_RAGE_END"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+		"AbilityCastAnimation"              "ACT_DOTA_ALCHEMIST_CHEMICAL_RAGE_END"
+		"AbilityManaCost"						"50 60 70 80"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"25 24 23 22 20"
+		
+	
+
+		"AbilityValues"
+		{
+			
+				
+				"duration"						"0.5 0.6 0.7 1.0 1.1"
+		
+			
+				
+				
+				"cast_range"						"600"
+		
+			
+				
+				"damage"						"30 50 70 90 110"
+				
+			
+				
+				"slow"							"-40 -50 -60 -70 -90"
+			
+				
+				"speed"							"2000"
+			
+				
+				"attack_scale"							"0.03 0.04 0.05 0.08 0.11"
+			
+		}
+	}
+	"kiana_ultimate"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/4"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "3"
+		"LevelsBetweenUpgrades" "8"
+		"RequiredLevel" "8"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600 800 100 1200"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 40 30"
+		"AbilityManaCost"				"100 120 140 160"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"damage"			"400 600 800"
+			
+				
+				"boost"			"0.5 0.75 1.0"
+			
+				
+				"duration"			"8 9 10"
+			
+				
+				"stun"			"0.4 0.6 0.8"
+			
+				
+				"radius"			"500"
+			
+			
+		}
+	}
+	
+		"kiana_special"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/6"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "1"
+		"LevelsBetweenUpgrades" "1"
+		"RequiredLevel" "1"
+		"IsGrantedByShard" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"180"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"base_damage"			"40"
+			
+				
+				"attack_scale"			"0.225"
+			
+			
+		}
+	}
+	"will_of_the_herrsher"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/5"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"1"
+		"HasScepterUpgrade" "1"
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+
+        "RequiredLevel"     "1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastRangeBuffer"		"250"
+		"AbilityCastPoint"				"0"
+		"AbilityChannelTime"			"0"
+		"AbilityDuration"				"0.0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"reincarnate_time"		"6"
+			
+				
+				"slow_radius"			"2000"
+			
+				
+				"movespeed"				"-75"
+			
+				
+				"attackslow_tooltip"	"-75"
+			
+				
+				"slow_duration"			"3.25"
+			
+				
+				"spd"		"50"
+			
+				
+				"aura_radius"	"1200"
+		
+				
+				"str"	"50"
+			
+				
+				"duration"	"34"
+			
+				
+				"cooldown"	"230"
+			
+				
+				"hand"	"250"
+			
+		}
+	}
+	
+		"will_of_the_herrsher_close"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"dante/dante_close"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"0"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+		
+		
+		"kiana_base_form"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"reinforce/3_1"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"20"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+		
+				"kiana_drifter_form"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"reinforce/3_2"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"20"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+		
+		"kiana_sirin_form"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"reinforce/3_3"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"20"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+		
+		"kiana_flameshion_form"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"reinforce/3_3"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"20"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+		
+		"kiana_final_form"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/kiana/kiana.lua"
+		"AbilityTextureName" 					"reinforce/3_4"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"20"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades" "1"
+		
+
+		
+
+		}
+	
+"kiana_final_slash"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/5_fs"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"LevelsBetweenUpgrades" "1"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"           "ACT_DOTA_CAST_ABILITY_5"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1500"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"1.5 1.75 2 2.25"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200"
+		"AbilityManaCost"				"75 100 125 150"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"150 275 400 550"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"delay"				"2.0"
+
+			
+				
+				"radius"			"1000"
+			
+				
+				"duration"			"1.0 1.2 1.4 1.6"
+			
+				
+				"attack_scale"			"20"
+			
+		}
+	}
+	"kiana_perfect_timestop"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/5_fin"
+		"FightRecapLevel"				"1"
+		"MaxLevel" "1"
+		"LevelsBetweenUpgrades" "1"
+		"RequiredLevel" "1"
+		
+
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"99999999"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200"
+		"AbilityManaCost"				"228"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"damage"			"0"
+			
+				
+				"boost"			"0.2 0.25 0.3"
+			
+				
+				"duration"			"3.5"
+			
+				
+				"stun"			"0.4 0.6 0.8"
+			
+				
+				"radius"			"99999"
+			
+			
+		}
+	}
+	"kiana_global_kick"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/kiana/kiana"
+		"AbilityTextureName"			"kiana/4_fin"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"LevelsBetweenUpgrades" "1"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"           "ACT_DOTA_CAST_ABILITY_5"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"1.5 1.75 2 2.25"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"75 100 125 150"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"3000"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"delay"				"2.0"
+
+			
+				
+				"radius"			"1000"
+			
+				
+				"duration"			"1.0 1.2 1.4 1.6"
+			
+				
+				"attack_scale"			"50"
+			
+		}
+	}
+	"special_bonus_kiana_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+	"special_bonus_kiana_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+	"special_bonus_kiana_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+	"special_bonus_kiana_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+}
