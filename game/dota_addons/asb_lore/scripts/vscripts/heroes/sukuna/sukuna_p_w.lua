@@ -52,6 +52,8 @@ function sukuna_p_w:OnSpellStart()
 		black_flash_duration = self:GetSpecialValueFor("black_flash_duration"),
 	}
 
+	tInfo.damage = tInfo.damage + (self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.caster))
+
 	tInfo.ca_rate = GetAnimPlayRate(24, 24, 30, tInfo.ca_time)
 	tInfo.ca_impact_time = GetAnimImpactTime(24, 8, 30, tInfo.ca_time)
 

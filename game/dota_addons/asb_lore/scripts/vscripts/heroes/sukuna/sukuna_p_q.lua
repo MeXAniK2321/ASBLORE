@@ -48,6 +48,8 @@ function sukuna_p_q:OnSpellStart()
 		knock_dir = vDir,
 	}
 
+	tInfo.damage = tInfo.damage + (self:GetSpecialValueFor("damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.target))
+	
 	tInfo.ca_rate = GetAnimPlayRate(42, 41, 30, tInfo.ca_time)
 	tInfo.ca_impact_time = GetAnimImpactTime(42, 5, 30, tInfo.ca_time)
 

@@ -92,6 +92,9 @@ function sukuna_p_e:OnSpellStart()
 		in_air = bInAir,
 	}
 
+	tInfo.da_damage = tInfo.da_damage + (self:GetSpecialValueFor("da_damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.target))
+	tInfo.ca_damage = tInfo.ca_damage + (self:GetSpecialValueFor("ca_damage_attack_pct") * 0.01 * tInfo.caster:GetAverageTrueAttackDamage(tInfo.target))
+
 	tInfo.da_rate = GetAnimPlayRate(60, 59, 30, tInfo.da_time)
 	-- tInfo.da_impact_time = GetAnimImpactTime(80, 41, 30, tInfo.da_time)
 	-- tInfo.da_rate_time = 

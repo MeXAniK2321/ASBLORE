@@ -22,7 +22,7 @@
 
 		"AbilityCastPoint"							"0"
 		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"150"
 		"AbilityCastRange"							"0"
 
 		"MaxLevel"									"4"
@@ -38,7 +38,7 @@
 
 			"hits"									"4"
 			"hits_tick"								"0.2"
-			"damage"								"80 120 160 200"
+			"damage"								"70 110 150 190"
 
 			"ca_time"								"0.6"
 			"dash_range"							"500"
@@ -67,7 +67,7 @@
 
 		"AbilityCastPoint"							"0.5"
 		"AbilityCooldown"							"5"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"200"
 		"AbilityCastRange"							"700"
 
 		"MaxLevel"									"4"
@@ -82,7 +82,7 @@
 			"hits"									"10"
 			"hits_tick"								"0.2"
 			
-			"damage"								"100 140 180 220"
+			"damage"								"90 130 170 210"
 
 			"slow_ms_pct"							"-30 -40 -50 -60"
 			"slow_duration"							"2.5"
@@ -123,7 +123,7 @@
 
 		"AbilityCastPoint"							"0.3"
 		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"250"
 		"AbilityCastRange"							"600"
 
 		"MaxLevel"									"4"
@@ -141,7 +141,7 @@
 			"hits"									"6"
 			"hits_tick"								"0.2"
 
-			"damage"								"120 160 200 240"
+			"damage"								"100 140 180 220"
 			
 			"recast_time"							"2"
 
@@ -174,7 +174,7 @@
 
 		"AbilityCastPoint"							"0.3"
 		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"100"
 		"AbilityCastRange"							"0"
 
 		"MaxLevel"									"4"
@@ -571,7 +571,7 @@
 
 		"AbilityCastPoint"							"0.2"
 		"AbilityCooldown"							"7"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"50"
 		"AbilityCastRange"							"700"
 
 		"MaxLevel"									"4"
@@ -583,7 +583,8 @@
 		{
 			"ca_time"								"0.4"
 
-			"damage"								"300 600 900 1200"
+			"damage"								"200 400 600 800"
+			"damage_attack_pct"						"50"
 
 			"stun_duration"							"1.5"
 
@@ -616,7 +617,7 @@
 
 		"AbilityCastPoint"							"0.5"
 		"AbilityCooldown"							"8"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"100"
 		"AbilityCastRange"							"600"
 
 		"MaxLevel"									"4"
@@ -630,6 +631,7 @@
 			"angle"									"180"
 
 			"damage"								"400 500 600 700"
+			"damage_attack_pct"						"50"
 
 			"ca_time"								"0.4"
 			"dash_range"							"400"
@@ -662,7 +664,7 @@
 
 		"AbilityCastPoint"							"0.1"
 		"AbilityCooldown"							"9"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"200"
 		"AbilityCastRange"							"250"
 
 		"MaxLevel"									"4"
@@ -677,9 +679,11 @@
 
 			"da_damage_tick"						"0.2"
 			"da_damage"								"120 160 200 240"
+			"da_damage_attack_pct"					"10"
 
 			"ca_time"								"0.5"
 			"ca_damage"								"600 700 800 900"
+			"ca_damage_attack_pct"					"50"
 
 			"knock_time"							"0.5"		
 			"knock_range"							"350"
@@ -715,7 +719,7 @@
 
 		"AbilityCastPoint"							"0.01"
 		"AbilityCooldown"							"12"
-		"AbilityManaCost"							"0"
+		"AbilityManaCost"							"100"
 
 		"MaxLevel"									"4"
 		"IsLearned"									"1"
