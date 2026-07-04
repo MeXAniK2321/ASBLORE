@@ -7601,7 +7601,7 @@ function kiana_final_form:IsHiddenWhenStolen() return false end
 function kiana_final_form:OnSpellStart()
     local caster = self:GetCaster()
 	local ability = caster:FindAbilityByName("will_of_the_herrsher")
-	ability:StartCooldown(10)
+	Kiana_Scepter(ability, caster:HasScepter())
 	if caster:HasModifier("modifier_core_upgrade_3") then self:EndCooldown() return end
 	local mod = caster:FindModifierByName("modifier_will_of_the_herrsher")
 	local stack = mod:GetStackCount()
@@ -7662,7 +7662,7 @@ function kiana_flameshion_form:IsHiddenWhenStolen() return false end
 function kiana_flameshion_form:OnSpellStart()
     local caster = self:GetCaster()
 		local ability = caster:FindAbilityByName("will_of_the_herrsher")
-	ability:StartCooldown(10)
+	Kiana_Scepter(ability, caster:HasScepter())
 	if caster:HasModifier("modifier_core_upgrade_2") then self:EndCooldown() return end
 		local mod = caster:FindModifierByName("modifier_will_of_the_herrsher")
 	local stack = mod:GetStackCount()
@@ -7778,7 +7778,7 @@ function kiana_drifter_form:IsHiddenWhenStolen() return false end
 function kiana_drifter_form:OnSpellStart()
     local caster = self:GetCaster()
 		local ability = caster:FindAbilityByName("will_of_the_herrsher")
-	ability:StartCooldown(10)
+	Kiana_Scepter(ability, caster:HasScepter())
 	if caster:HasModifier("modifier_upgrade_core") then self:EndCooldown() return end
  if caster:FindModifierByNameAndCaster("modifier_form_swap", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_form_swap", caster)
@@ -7822,6 +7822,13 @@ function kiana_drifter_form:PlayEffects( radius )
 
 end
 
+function Kiana_Scepter(hAbility, bScepter)
+    if bScepter or not hAbility then
+		return
+	end
+    hAbility:StartCooldown(10)
+end
+
 
 kiana_base_form = class({})
 
@@ -7832,7 +7839,7 @@ function kiana_base_form:IsHiddenWhenStolen() return false end
 function kiana_base_form:OnSpellStart()
     local caster = self:GetCaster()
 		local ability = caster:FindAbilityByName("will_of_the_herrsher")
-	ability:StartCooldown(10)
+	Kiana_Scepter(ability, caster:HasScepter())
 	if caster:HasModifier("modifier_sirin_awakening") or caster:HasModifier("modifier_upgrade_core") or caster:HasModifier("modifier_core_upgrade_2") or caster:HasModifier("modifier_core_upgrade_3") then
  if caster:FindModifierByNameAndCaster("modifier_form_swap", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_form_swap", caster)
@@ -7918,7 +7925,13 @@ function will_of_the_herrsher:GetIntrinsicModifierName()
 end
 
 
-
+function will_of_the_herrsher:Spawn()
+    if IsServer() then
+		Timers:CreateTimer(0.1, function()
+			self:SetLevel(1)
+		end)
+    end
+end
 function will_of_the_herrsher:OnUpgrade()
 local level = self:GetLevel()
 local FastAbilities = 

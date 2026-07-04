@@ -216,6 +216,12 @@ function COverthrowGameMode:OnNPCSpawned( event )
                     player:AddNewModifier(player, self, "modifier_lore_ringmaster", {})
                 end
 			end
+			
+			if player:GetUnitName() == "npc_dota_hero_mirana" then
+                if not player:HasModifier("modifier_item_aghanims_shard") then
+                    player:AddNewModifier(player, nil, "modifier_item_aghanims_shard", {})
+                end
+			end
 	
 
 		if self.allSpawned == false then

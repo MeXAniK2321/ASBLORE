@@ -62,6 +62,7 @@ local tPandoraItems = {
                           npc_dota_hero_dazzle = "item_gojo_six_eyes",            -- Gojo Satoru
                           npc_dota_hero_kez = "item_roland_mask",                 -- Roland
                           npc_dota_hero_shredder = "item_sukuna_switch_mp_box",   -- Sukuna
+                          npc_dota_hero_mirana = "item_kiana_icecream",   		  -- Kiana Kaslana
                       }
 
 item_pandora_box = item_pandora_box or class({})

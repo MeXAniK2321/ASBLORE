@@ -1,0 +1,61 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf57:version{4f75132e-4f5d-493c-958e-3bb4328089ba} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/heroes/axe/axe.vmdl"
+				m_nModSpecificData = 2
+				m_sequenceName = "idle"
+				m_hitboxSetName = "default"
+			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_ground_darken.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_ground_detail.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_ash.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_ground_detail_noisey.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_gold_dust.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_base.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_streak.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_energy_lvl3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/fall_2022/regen/fountain_regen_fall2022_golden_sparkles.vpcf"
+		},
+	]
+}

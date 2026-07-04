@@ -4233,13 +4233,17 @@
 		"AttributeIntelligenceGain"	"0.8"
 		"AttributeBaseAgility"		"26"
 		"AttributeAgilityGain"		"0.8"
-			"AttackAnimationPoint"		"1.550000"
+			"AttackAnimationPoint"		"0.5"
 		"ArmorPhysical"				"2"
 		"MovementSpeed"				"420"
 		"AttackDamageMin"			"18"
 		"AttackDamageMax"			"23"
 				"VisionDaytimeRange"		"1800"
 		"VisionNighttimeRange"		"1200"
+		
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK" 
+		"AttackRate"				"1.100000"
+		"AttackRange"				"100"
 		
 
 	 

@@ -1549,7 +1549,7 @@
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"asta_sword"
 		"Model"									"models/props_gameplay/recipe.mdl"
-		"ItemCost"								"15000"
+		"ItemCost"								"8000"
 		"ItemShopTags"							""
 		
 		"ItemRecipe"							"1"
@@ -1790,7 +1790,7 @@
 			"duration" "5.5"
 			"max_level" "10"
 			"model_scale" "30"
-			"resistance" "80"
+			"resistance" "85"
 			"cooldown" "35"
 			"bonus_resist" "0"
 		}
@@ -5290,6 +5290,36 @@
 			"bonus_allstats"					"20"
 			"bonus_spell_amp"					"50"
 			"gebura_duration"					"15"
+		}
+	}
+	
+	"item_kiana_icecream"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_kiana_icecream.lua"
+		"AbilityTextureName"			"kiana_icecream"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ItemCost"					"20000"
+		"ItemPurchasable"						"0"
+		"ItemSellable"							"0"
+		"ItemDroppable" 						"1"
+		"ItemShopTags"				"damage"
+		"ItemQuality"				"magicks"
+		"ItemDeclarations"			"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemIsNeutralActiveDrop"		"0"
+		"ItemIsNeutralDrop"						"0"
+		
+		
+		
+		
+		
+		"AbilityValues"
+		{
+		
+			"all_stats" "25"
+			"attack" "200"
+			"hp" "700"
+			"amp" "25"
 		}
 	}
 	//=================================================================================================================

@@ -47,6 +47,7 @@
 			"item"      "item_berserker_armor"
 			"item"      "item_moonlight_goddess_bow"
 			"item"      "item_refresher"
+			"item"      "item_zawarudo"	
 		}
 	}
 }
