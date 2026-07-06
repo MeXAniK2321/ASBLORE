@@ -4206,7 +4206,8 @@
 		"Ability32"        "kiana_base_form"
 		"Ability22"         "kiana_final_slash"
 		"Ability5"        "kiana_special"
-		"Ability7" "empty_slot"
+		"Ability7" "sirin_judgment"
+		"Ability8" "sirin_the_end"
 		"Ability6"         "will_of_the_herrsher"
 		"Ability24" "kiana_global_kick"
 		"Ability26" "kiana_perfect_timestop"
@@ -4227,7 +4228,7 @@
 		
 			"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
 		"AttributeBaseStrength"		"10"
-				"MagicalResistance"			"10" "StatusHealth"		"400" "Ability25" "empty_slot"
+				"MagicalResistance"			"45" "StatusHealth"		"400" "Ability25" "empty_slot"
 		"AttributeStrengthGain"		"1.0"
 		"AttributeBaseIntelligence"	"15"
 		"AttributeIntelligenceGain"	"0.8"

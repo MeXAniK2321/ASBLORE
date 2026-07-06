@@ -441,7 +441,8 @@ self:PlayEffects(600)
 
     self.skills_table = {
                            
-							["will_of_the_herrsher"] = "sirin_spear_barrage",
+							["will_of_the_herrsher"] = "sirin_judgment",
+							["kiana_ultimate"]="sirin_the_end",
                             
                         }
 

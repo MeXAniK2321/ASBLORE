@@ -13,6 +13,7 @@ function modifier_star_tier2:OnCreated(table)
 	local caster = self:GetCaster()
     
     self.bSecondTheme = table.bSecondTheme
+	self.bThirdTheme  = table.bThirdTheme
 	
 	
 	if IsServer() then
@@ -139,6 +140,14 @@ function modifier_star_tier2:OnCreated(table)
         else
             EmitGlobalSound("Gojo.purple_theme")
         end
+	elseif caster:GetUnitName()== "npc_dota_hero_mirana" then
+		if self.bSecondTheme then
+            EmitGlobalSound("flameshion.base_theme")
+        elseif self.bThirdTheme then
+            EmitGlobalSound("kiana.finality_theme")
+		else
+			EmitGlobalSound("sirin.base_theme")
+        end
 	else
 	end
 
@@ -251,8 +260,13 @@ function modifier_star_tier2:OnDestroy()
 		StopGlobalSound("Gogeta.ulti_mp3")
 	elseif caster:GetUnitName()== "npc_dota_hero_dazzle" then
 		StopGlobalSound("Gojo.purple_theme")
-        StopGlobalSound("Gojo.delirious")
+        StopGlobalSound("Gojo.delirious")	
+	elseif caster:GetUnitName()== "npc_dota_hero_mirana" then
+		StopGlobalSound("flameshion.base_theme")
+		StopGlobalSound("kiana.finality_theme")
+		StopGlobalSound("sirin.base_theme")	
 	else
+	
 	end
 end
 function modifier_star_tier2:StopAllMusic()

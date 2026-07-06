@@ -1,0 +1,851 @@
+"DOTAAbilities"
+{
+"sirin_portal_passive"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/new_asb/building_ability/general.lua"
+		"AbilityTextureName"			"templar_assassin_psionic_trap"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+		}
+	}
+
+	"manipulation_book"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/sirin/sirin.lua"
+		"AbilityTextureName" 					"sirin/1"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"0"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"5"
+		"LevelsBetweenUpgrades" "5"
+		"RequiredLevel"							"1"
+		
+
+		
+
+		}
+	
+	"manipulation_book_close"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/sirin/sirin.lua"
+		"AbilityTextureName" 					"dante/dante_close"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"0"
+		"AbilityManaCost"						"0"
+		//"AbilityCastRange"						"1200"
+
+		"HasScepterUpgrade"						"0"
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"1"
+		
+
+		
+
+		}
+		"sirin_spear"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/1_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "9999"
+		"precache"
+		{
+			"soundfile"		"soundevents/sirin/Sirin.vsndevts"
+
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10 9 8"
+		"AbilityManaCost"				"50 60 70 80 100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"stun_duration"			"0.25"
+			
+				
+				"dragon_cast_range"			"400"
+				
+			
+				
+				"projectile_speed"			"1600"
+			
+				
+				"damage"			"80 160 240 360"
+
+			
+				
+				"int_scale"			"0.05 0.1 0.14 0.18 0.22"
+				
+			
+		}
+	}
+		
+		"sirin_spear_barrage"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/1_2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "9999"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"1.5 1.75 2 2.25"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10 9 8"
+		"AbilityManaCost"				"75 100 125 150 228"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"150 275 400 550 766"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"delay"				"1.0"
+				
+			    "slow" "-40"
+				
+				"radius"			"300"
+			
+				
+				"duration"			"1.0 1.2 1.4 1.6 1.8"
+			
+				
+				"int_scale"			"0.3 0.4 0.5 0.6 0.7"
+			
+				
+				"damage"			"150 275 400 550 660"
+			
+		}
+	}
+	
+		"sirin_cube_smash"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/1_3"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "9999"
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.1"
+		"AbilityDuration"				"1.5 1.75 2 2.25"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16 15 14 13 12"
+		"AbilityManaCost"				"75 100 125 150 228"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"140 240 320 400 500"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"delay"				"1.0"
+				
+			
+				
+				"radius"			"300"
+			
+				
+				"duration"			"1.0 1.2 1.4 1.6 1.8"
+			
+				
+				"int_scale"			"0.6 0.7 0.8 0.9 1.0"
+			
+				
+				"damage"			"140 240 320 400 500"
+			
+		}
+	}
+	"sirin_redirection_portal"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/1_4"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades" "2"
+		"RequiredLevel" "9999"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		"AbilityCastPoint"				"0"
+		"AbilityChannelTime"			"0.8 0.9 1.0 1.1 1.2"
+		"AbilityCastAnimation"          "ACT_DOTA_CHANNEL_ABILITY_2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 28 26 24 22"
+		"AbilityManaCost"				"100 120 140 160 200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+		
+			
+				
+				"duration"		"0.8 0.9 1.0 1.1 1.2"
+			
+			
+		}
+	}
+	
+	"sirin_blink"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/2"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"               "9999"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"60 80 100 120"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"blink_range"			"450 475 500 525 550"
+			
+				
+				"min_blink_range"		"200"
+			
+				
+				"duration"					"0.8 0.9 1.0 1.1 1.2"
+			
+	
+		}
+	}
+	
+	"sirin_portal"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/3"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"5"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+			"AbilityCastRange"				"1200"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+   "AbilityCooldown"               "25 23 21 19 17"
+
+		"AbilityManaCost"				"30 35 40 45 50"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+ "AbilityValues"
+        {
+                
+            
+				"duration"					"5 7 9 11 13"
+				"portals" "1 1 2 2 3"
+        
+		}
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+	
+	}
+	"sirin_blast"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/4"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"LevelsBetweenUpgrades" "8"
+		"RequiredLevel" "8"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_3"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.4"
+			"AbilityCastRange"				"700"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 40 30"
+		"AbilityManaCost"				"200 300 400"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+			
+				
+				"damage"					"400 500 600"
+			
+				
+				"kill_percent"					"0.08 0.1 0.12"
+			
+				
+				"delay"					"1.0 0.8 0.6"
+			
+				
+				"int_scale"					"1.6 1.8 2.0"
+			
+				
+				"radius"					"350 400 450"
+			
+				
+				"stun"					"1.0"
+			
+	
+		}
+	}
+	"herrsher_mode"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"heroes/sirin/sirin.lua"
+		"AbilityTextureName" 					"sirin/5"
+		"AbilityType"							"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		//"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		"AbilityCastPoint"						"0.5"
+		//"AbilityChannelTime"					"5.0"
+		"AbilityCooldown"						"200"
+		"AbilityManaCost"						"200"
+		//"AbilityCastRange"						"1200"
+	"HasScepterUpgrade" "1"
+
+
+		"MaxLevel"								"1"
+		"RequiredLevel"							"30"
+		"LevelsBetweenUpgrades"					"1"
+
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_5"
+		//"AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+
+	
+
+		"AbilityValues"
+		{
+			
+				
+				"damage"              "500"
+			
+				
+				"magic"	                        "25"
+				
+			
+				
+				"stun"	"2"
+			
+				
+				"radius"	"800"
+			
+				
+				"str"	"50"
+			
+				
+				"arm"				"20"
+			
+				
+				"projectile_avoid_chance"		"40"
+			
+				
+				"turn_rate"						"1"
+		
+				
+				"awake_mana"					"0"
+			
+				
+				"fixed_duration"				"30"
+			
+		}
+	}
+	
+	"sirin_judgment"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/5_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"LevelsBetweenUpgrades" "1"
+		"RequiredLevel" "1"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityCastAnimation"          "ACT_DOTA_IDLE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"2000"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"150"
+		"AbilityManaCost"				"322"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+			
+				
+				"damage"					"400 600 800"
+			
+			
+	
+		}
+	}
+	
+	"sirin_thread_of_death"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/1_1"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"IsGrantedByShard" "1"
+		"precache"
+		{
+			"soundfile"		"soundevents/sirin/Sirin.vsndevts"
+
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"150"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"stun_duration"			"0.5"
+			
+				
+				"damage"			"700"
+
+			
+				
+				"int_scale"			"1.0"
+				
+			
+		}
+	}
+	
+"sirin_death_cage"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/7"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+		"AbilityChannelTime"			"3"
+		"AbilityDuration"				"3.0"
+				"AbilityCastRange"				"800"
+	
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"500"
+        "AbilityChannelAnimation"				"ACT_DOTA_CHANNEL_ABILITY_1"
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				
+				"radius"			"600"
+			
+				
+				"explosion_radius"	"600"
+			
+				
+				"damage_max"	"2000"
+			
+				
+				"int_scale_max"	"4"
+			
+		}
+	}
+	
+		"sirin_the_end"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/sirin/sirin"
+		"AbilityTextureName"			"sirin/8"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"LevelsBetweenUpgrades" "1"
+		"RequiredLevel" "1"
+	
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_1"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"228"
+		"AbilityManaCost"				"322"
+		"AbilityCastRange"              "1200"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+			
+				
+				"damage"					"9999999"
+			
+			
+	
+		}
+	}
+	
+	
+"special_bonus_sirin_20"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+	"special_bonus_sirin_25"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"15"
+						
+		}
+	}
+	"special_bonus_sirin_20_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+	"special_bonus_sirin_25_alt"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityValues"
+		{
+			
+				
+				"value"					"0"
+						
+		}
+	}
+}

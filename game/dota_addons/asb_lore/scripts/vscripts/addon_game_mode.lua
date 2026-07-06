@@ -216,6 +216,7 @@ function Precache( context )
 		PrecacheResource("model", "models/props_wildlife/wildlife_birdlarge001.vmdl", context)
 		
 		PrecacheResource("particle", "particles/screen_spla.vpcf", context)
+		PrecacheResource("particle", "particles/sirin_spear_projectile.vpcf", context)
 		
 		PrecacheResource("particle", 	"particles/test/halloween_pumpkin.vpcf", context)
 		PrecacheResource("particle", 	"particles/test/halloween_pumpkin_bone_fix.vpcf", context)

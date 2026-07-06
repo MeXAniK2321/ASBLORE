@@ -1,0 +1,690 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	kiana.1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/ability_special.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.329342
+	}
+	kiana.hits = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_9.vsnd",
+			"sounds/touma/punch_7.vsnd",
+			"sounds/touma/punch_12.vsnd",
+			"sounds/touma/punch_10.vsnd",
+			"sounds/touma/punch_11.vsnd",
+			"sounds/nanaya/hit-2.vsnd",
+			"sounds/nanaya/nanaya_hit.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.200000"
+		pitch_rand_max = "0.200000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.090408
+	}
+	kiana.mini_slash = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/fast_slash_effect.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.200000"
+		pitch_rand_max = "-0.800000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.36
+	}
+	kiana.timestop_exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/makima/cut1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.200000"
+		pitch_rand_max = "-0.800000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.656
+	}
+	kiana.timestop_exp_glass = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/glass_break.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.200000"
+		pitch_rand_max = "-0.800000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.728
+	}
+	kiana.last_hit = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/punch_8.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.200000"
+		pitch_rand_max = "0.200000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.73551
+	}
+	kiana.2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/queenofpain/blink_out.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.550000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kiana.3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/shuichi/shuichi_berserk_shots.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.256
+	}
+	kiana.4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/4_base.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.532517
+	}
+	kiana.4_effects = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/earthshaker/echo_slam_small.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.250000"
+		pitch_rand_max = "-0.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "99999.000000"
+		event_type = "1.000000"
+	}
+	kiana.6_base = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/base_shard.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.451247
+	}
+	kiana.drifter_1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/drifter_base.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.486077
+	}
+	kiana.drifter_4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/drifter_ulti.vsnd",
+		]
+		volume = "30.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.136
+	}
+	kiana.drifter_shard = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/base_ability.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.739955
+	}
+	kiana.slash = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/makima/cut1.vsnd",
+			"sounds/makima/cut2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.300000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.656
+	}
+	kiana.spear_throw = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/misc/idles/idle_ck_throw_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.250000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kiana.spear_throw_impact = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/aria/weapons/aria_impact1.vsnd",
+			"sounds/aria/weapons/aria_impact2.vsnd",
+			"sounds/aria/weapons/aria_impact3.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.250000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kiana.ground_shake = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/leshrac/split_earth.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.250000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+	}
+	kiana.base_ult = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/vergil_5_1_exp.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.64
+	}
+	kiana.slash_hit = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/slash.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.016
+	}
+	sirin.exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/sfx explosion 2.vsnd",
+			"sounds/touma/sfx explosion 1.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.914399
+	}
+	sirin.fingersnap = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/sirin_fingersnap.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.224
+	}
+	sirin.2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/drifter_tp.vsnd",
+		]
+		volume = "10.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.696
+	}
+	sirin.swoosh = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/ikki/swoosh.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.944
+	}
+	flameshion.1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_herrsher_1.vsnd",
+		]
+		volume = "1.500000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		vsnd_duration = 2.208
+	}
+	flameshion.3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_3_sfx.vsnd",
+		]
+		volume = "18.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.44
+	}
+	flameshion.4 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_herrsher_4_sfx.vsnd",
+		]
+		volume = "10.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.616
+	}
+	flameshion.exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/touma/sfx explosion 2.vsnd",
+		]
+		volume = "1.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 3.914399
+	}
+	flameshion.6 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_sp_herrsher.vsnd",
+		]
+		volume = "3.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.52
+	}
+	flameshion.true_ulti = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_hof_ulti.vsnd",
+		]
+		volume = "3.500000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "-0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 6.36
+	}
+	finality.1 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_3.vsnd",
+		]
+		volume = "5.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.4
+	}
+	kiana.fast_slash = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/fast_slash_effect.vsnd",
+		]
+		volume = "3.500000"
+		pitch_rand_min = "-0.550000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 0.36
+	}
+	finality.2 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_2.vsnd",
+		]
+		volume = "10.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.632
+	}
+	finality.3 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_1.vsnd",
+		]
+		volume = "3.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.952
+	}
+	finality.6 = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_sp.vsnd",
+		]
+		volume = "2.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.856
+	}
+	kiana.timestop = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_ulti.vsnd",
+		]
+		volume = "5.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.608
+	}
+	kiana.final_ulti = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_ultimate1.vsnd",
+		]
+		volume = "5.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 4.464
+	}
+	kiana.final_ulti_exp = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_ultimate2.vsnd",
+		]
+		volume = "5.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "1600.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.736
+	}
+	kiana.sirin_herrsher_form = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/full_phrase.vsnd",
+		]
+		volume = "4.000000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 32.928001
+	}
+	kiana.flameshion_activation = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/kiana_herrsher_4.vsnd",
+		]
+		volume = "1.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 1.92
+	}
+	kiana.final_activation = 
+	{
+		type = "src1_3d"
+		vsnd_files = 
+		[
+			"sounds/kiana/finality_intro.vsnd",
+		]
+		volume = "4.500000"
+		pitch = "1.000000"
+		soundlevel = "100.000000"
+		distance_max = "999999.000000"
+		event_type = "1.000000"
+		vsnd_duration = 2.472
+	}
+	
+    sirin.base_theme = 
+    {
+        type = "src1_2d"
+        vsnd_files = 
+        [
+            "sounds/items/other_items/angel_halo/theme/angel_halo_awaken_stage1.vsnd",
+        ]
+        volume_min = "1.000000"
+        volume_max = "1.000000"
+        pitch_min = "1.000000"
+        pitch_max = "1.000000"
+        chan_type = "0"
+        memory_type = "0"
+        vsnd_duration = 85.704002
+    }
+    flameshion.base_theme = 
+    {
+        type = "src1_2d"
+        vsnd_files = 
+        [
+            "sounds/kiana/kiana_flameshion_theme.vsnd",
+        ]
+        volume_min = "1.000000"
+        volume_max = "1.000000"
+        pitch_min = "1.000000"
+        pitch_max = "1.000000"
+        chan_type = "0"
+        memory_type = "0"
+        vsnd_duration = 39.816002
+    }
+    kiana.finality_theme = 
+    {
+        type = "src1_2d"
+        vsnd_files = 
+        [
+            "sounds/kiana/kiana_final_theme.vsnd",
+        ]
+        volume_min = "1.000000"
+        volume_max = "1.000000"
+        pitch_min = "1.000000"
+        pitch_max = "1.000000"
+        chan_type = "0"
+        memory_type = "0"
+        vsnd_duration = 57.192001
+    }
+}

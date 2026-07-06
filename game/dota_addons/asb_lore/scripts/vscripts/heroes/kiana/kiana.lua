@@ -70,6 +70,8 @@ function kiana_combo_hit:OnSpellStart()
 	self:FlameshionCombo(target)
 	elseif caster:HasModifier("modifier_upgrade_core") then
 	self:DrifterCombo(target)
+	elseif caster:HasModifier("modifier_sirin_awakening") then
+	self:SirinCombo(target)
     else
 	self:BasicCombo(target)
 	
@@ -3449,6 +3451,9 @@ if IsServer() then
 	elseif caster:HasModifier("modifier_upgrade_core") then
 --	caster:StartGesture(ACT_DOTA_CAST_ABILITY_3)
 	self:DrifterSkill()
+	elseif caster:HasModifier("modifier_sirin_awakening") then
+--	caster:StartGesture(ACT_DOTA_CAST_ABILITY_3)
+	self:SirinSkill()
 else
 	--caster:StartGesture(ACT_DOTA_ALCHEMIST_CHEMICAL_RAGE_END)
 	self:WeaponSkill1()
@@ -5679,6 +5684,7 @@ end
 	-- unit identifier
   
 	local caster = self:GetCaster()
+	 EmitSoundOn("sirin.1_1",caster)
 	 EmitSoundOn("sirin.4", caster)
 	local duration = self:GetSpecialValueFor("duration")
 	for i = 1, 100 do
@@ -7724,7 +7730,7 @@ function kiana_sirin_form:OnSpellStart()
 	if caster:HasModifier("modifier_sirin_awakening") then self:EndCooldown() return end
 		local mod = caster:FindModifierByName("modifier_will_of_the_herrsher")
 	local stack = mod:GetStackCount()
-	if stack > 100000 then
+	if stack >= 50000 then
  if caster:FindModifierByNameAndCaster("modifier_form_swap", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_form_swap", caster)
 		
@@ -7938,6 +7944,7 @@ local FastAbilities =
 	{
 		"kiana_base_form",
 		"kiana_drifter_form",
+		"kiana_sirin_form",
 		"kiana_flameshion_form",
 		"kiana_final_form",
 		"will_of_the_herrsher_close"
@@ -7993,8 +8000,9 @@ function modifier_form_swap:OnCreated(table)
 							["will_of_the_herrsher"]="will_of_the_herrsher_close",
 							["kiana_combo_hit"]="kiana_base_form",
 							["kiana_evasion"]="kiana_drifter_form",
-							["kiana_weapon_skill"]="kiana_flameshion_form",
-								["kiana_global_kick"]="kiana_final_form",
+							["kiana_weapon_skill"]="kiana_sirin_form",
+								["kiana_global_kick"]="kiana_flameshion_form",
+								["kiana_special"]="kiana_final_form",
 				
 							}
 	else
@@ -8005,8 +8013,9 @@ function modifier_form_swap:OnCreated(table)
 							["will_of_the_herrsher"]="will_of_the_herrsher_close",
 							["kiana_combo_hit"]="kiana_base_form",
 							["kiana_evasion"]="kiana_drifter_form",
-							["kiana_weapon_skill"]="kiana_flameshion_form",
-								["kiana_ultimate"]="kiana_final_form",
+							["kiana_weapon_skill"]="kiana_sirin_form",
+								["kiana_ultimate"]="kiana_flameshion_form",
+								["kiana_special"]="kiana_final_form",
 							
 							
 							
@@ -8285,7 +8294,7 @@ self.parent:SetAttackCapability( DOTA_UNIT_CAP_RANGED_ATTACK )
       
             --self.parent:SwapAbilities(v, pAbilityName2, bEnable1, bEnable2)
        if not self.particle_time then
-            self.particle_time =    ParticleManager:CreateParticle("particles/sirin_aura.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
+            --self.particle_time =    ParticleManager:CreateParticle("particles/sirin_aura.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
                                     
         end
 	
