@@ -179,6 +179,11 @@ function Precache( context )
 		PrecacheResource( "model", "models/particle/witchdoctor_skull.vmdl", context )
 		
 		PrecacheResource( "model", "models/items/units/deltarune_missile/deltarune_missile.vmdl", context)
+		PrecacheResource( "soundfile", "soundevents/items/item_deltarune_missile.vsndevts", context )
+		PrecacheResource( "particle", "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf", context)
+		PrecacheResource( "particle", "particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_f_fallback_low.vpcf", context)
+		PrecacheResource( "particle", "particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_fallback_mid.vpcf", context)
+		PrecacheResource( "particle", "particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_fallback_mid.vpcf", context)
 
 		PrecacheResource( "soundfile", "soundevents/yoshino.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_axis_sheet.vsndevts", context )

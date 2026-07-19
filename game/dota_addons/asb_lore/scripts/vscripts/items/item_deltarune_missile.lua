@@ -155,6 +155,7 @@ function modifier_item_deltarune_missile_launch:OnCreated(tInfo)
 	self:AddParticle(nFX, false, false, -1, false, false)
 
 	self.hParent:EmitSound("Hero_Gyrocopter.HomingMissile.Launch")
+	self.hParent:EmitSound("item_deltarune_missile_loop")
 end
 function modifier_item_deltarune_missile_launch:OnRefresh(tInfo)
 	self:OnCreated(tInfo)
@@ -229,7 +230,7 @@ function modifier_item_deltarune_missile_flight:OnCreated(tInfo)
 		end
 	end
 
-	self.nDamage = self.hAbility:GetSpecialValueFor("damage")
+	self.nDamage = self.hAbility:GetSpecialValueFor("damage_pct")
 	self.nStunDuration = self.hAbility:GetSpecialValueFor("stun_duration")
 	self.nMaxSpeed = self.hAbility:GetSpecialValueFor("max_speed")
 	self.nAccelTime = self.hAbility:GetSpecialValueFor("accel_time")
@@ -238,6 +239,7 @@ function modifier_item_deltarune_missile_flight:OnCreated(tInfo)
 	self.fElapsed = 0
 
 	self.hParent:EmitSound("Hero_Gyrocopter.HomingMissile.Loop")
+	
 
 	local nFX = ParticleManager:CreateParticle("particles/units/heroes/hero_gyrocopter/gyro_guided_missile.vpcf", PATTACH_POINT_FOLLOW, self.hParent)
 				ParticleManager:SetParticleControlEnt(
@@ -259,6 +261,12 @@ end
 function modifier_item_deltarune_missile_flight:OnRefresh(tInfo)
 	self:OnCreated(tInfo)
 end
+function modifier_item_deltarune_missile_flight:SetForwardVector(hUnit, vDirection, bUseAngles)
+	if not IsNotNull(hUnit) then return end
+	if not bUseAngles then hUnit:SetForwardVector(vDirection) end
+	vDirection = VectorToAngles(vDirection)
+	return hUnit:SetAbsAngles(vDirection[1], vDirection[2], vDirection[3])
+end
 function modifier_item_deltarune_missile_flight:UpdateHorizontalMotion(me, dt)
 	if not IsNotNull(self.hParent) then return end
 
@@ -276,7 +284,7 @@ function modifier_item_deltarune_missile_flight:UpdateHorizontalMotion(me, dt)
 	local vDir = (vTarget - vPos):Normalized()
 	local vNewPos = vPos + vDir * self.fCurrentSpeed * dt
 
-	self.hParent:SetForwardVector(vDir, true)
+	self:SetForwardVector(self.hParent, vDir, true)
 
 	local nDist = (vTarget - vNewPos):Length2D()
 	if nDist < 100 then
@@ -297,25 +305,100 @@ function modifier_item_deltarune_missile_flight:OnHorizontalMotionInterrupted()
 	self:Destroy()
 end
 function modifier_item_deltarune_missile_flight:OnHit(hTarget, vPos)
-	ApplyDamage({
-		victim = hTarget,
-		attacker = self.hCaster,
-		ability = self.hAbility,
-		damage = self.nDamage * hTarget:GetMaxHealth() * 0.01,
-		damage_type = self.nDamageType,
-		damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
-	})
 
-	hTarget:AddNewModifier(self.hCaster, self.hAbility, "modifier_stunned",
+	local tKnockTable =
 	{
+		should_stun = true,
+		knockback_duration = self.nStunDuration,
 		duration = self.nStunDuration,
-	})
+		knockback_distance = 0,
+		knockback_height = 500,
+		center_x = hTarget:GetAbsOrigin().x,
+		center_y = hTarget:GetAbsOrigin().y,
+		center_z = hTarget:GetAbsOrigin().z 
+	}
+
+	hTarget:AddNewModifier(self.hCaster, self.hAbility, "modifier_knockback", tKnockTable)
+
+	self:StylishPFX(hTarget)
 
 	hTarget:EmitSound("Hero_Gyrocopter.HomingMissile.Impact")
 
 	AddFOWViewer(self.nTeamID, vPos, 400, 4, false)
+end
+function modifier_item_deltarune_missile_flight:StylishPFX(hTarget)
+	self.hParent:RemoveHorizontalMotionController(self)
 
-	self:Explode(vPos)
+	local tVectors =
+	{
+		Vector(500, 500, 500),
+		Vector(-1000,-1000,-200),
+		Vector(1000,0,100),
+		Vector(-800, 900, 100),
+		Vector(300,-900, 0),
+		Vector(300, 500, -100),
+		Vector(200, 500, 100),
+		Vector(-1000,-1000,-200),
+		Vector(200, 900, 200),
+		Vector(800, 100, 0),
+		Vector(-1000,-1000,-200),
+		Vector(1000,0,100),
+		Vector(-800, 900, 100),
+		Vector(300,-900, 0),
+		Vector(0,500, -500)
+	}
+
+	local nCounter = 0
+	Timers:CreateTimer(0, function()
+		if nCounter == 15 then
+			ApplyDamage({
+				victim = hTarget,
+				attacker = self.hCaster,
+				ability = self.hAbility,
+				damage = self.nDamage * hTarget:GetMaxHealth() * 0.01,
+				damage_type = self.nDamageType,
+				damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
+			})
+
+			self:Explode(hTarget:GetAbsOrigin())
+			return
+		end
+
+		local vBasePos = hTarget:GetAbsOrigin()
+		local vNowPos = self.hParent:GetAbsOrigin()
+		local vNewPos = vNowPos + tVectors[nCounter+1] * 0.5
+ -- RandomVector(RandomInt(300, 600))-- 
+		local vDir = (vNewPos - vNowPos):Normalized()
+
+		self:SetForwardVector(self.hParent, vDir, true)
+		self.hParent:SetAbsOrigin(vNewPos)
+
+		local nTrailPFX = ParticleManager:CreateParticle("particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf", PATTACH_CUSTOMORIGIN, self.hParent)
+						ParticleManager:SetParticleControl(nTrailPFX, 1, vNowPos)
+						ParticleManager:SetParticleControl(nTrailPFX, 0, vNewPos)
+						ParticleManager:ReleaseParticleIndex(nTrailPFX)
+
+		local nGroundPFX = ParticleManager:CreateParticle("particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_f_fallback_low.vpcf", PATTACH_ABSORIGIN_FOLLOW, hTarget)
+							ParticleManager:SetParticleControl(nGroundPFX, 1, hTarget:GetAbsOrigin())
+							ParticleManager:ReleaseParticleIndex(nGroundPFX)
+		self.hParent:EmitSound("Hero_Tusk.WalrusPunch.Target")
+
+		SendOverheadEventMessage(nil, OVERHEAD_ALERT_CRITICAL, hTarget, 999, nil)
+
+		nCounter = nCounter + 1
+		
+		return 0.1
+	end)
+
+	local nGroundPFX_1 = ParticleManager:CreateParticle("particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_fallback_mid.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hParent)
+						ParticleManager:SetParticleControl(nGroundPFX_1, 1, self.hParent:GetAbsOrigin())
+						ParticleManager:SetParticleControlOrientation(nGroundPFX_1, 0, RandomVector(3), Vector(0,1,0), Vector(1,0,0))
+						ParticleManager:ReleaseParticleIndex(nGroundPFX_1)
+
+	local nGroundPFX_2 = ParticleManager:CreateParticle("particles/units/heroes/hero_earthshaker/earthshaker_echoslam_start_fallback_mid.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.hParent)
+						ParticleManager:SetParticleControl(nGroundPFX_2, 1, self.hParent:GetAbsOrigin())
+						ParticleManager:SetParticleControlOrientation(nGroundPFX_2, 0, RandomVector(3), Vector(0,1,0), Vector(1,0,0))
+						ParticleManager:ReleaseParticleIndex(nGroundPFX_2)
 end
 function modifier_item_deltarune_missile_flight:Explode(vPos)
 	local nFX = ParticleManager:CreateParticle("particles/units/heroes/hero_gyrocopter/gyro_guided_missile_explosion.vpcf", PATTACH_WORLDORIGIN, nil)
@@ -334,6 +417,7 @@ function modifier_item_deltarune_missile_flight:OnDestroy()
 	end
 
 	self.hParent:StopSound("Hero_Gyrocopter.HomingMissile.Loop")
+	self.hParent:StopSound("item_deltarune_missile_loop")
 	self.hParent:AddNoDraw()
 	self.hParent:ForceKill(false)
 end
