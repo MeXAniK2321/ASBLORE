@@ -14,7 +14,7 @@
 		"SpectatorLoadoutScale" 	"1.30000"
 		"VersusScale"				"1.30000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"              "makima_contract"
@@ -74,7 +74,7 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -226,7 +226,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -280,7 +280,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
 		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts"
@@ -335,7 +335,7 @@
 		"SpectatorLoadoutScale" 	"0.85000"
 		"VersusScale"				"0.85000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		"Ability1"              "raikoho"
 		"Ability2"              "danku"
 		"Ability3"              "kurohitsugi1"
@@ -389,7 +389,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -450,7 +450,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"                "throw_melon"
@@ -510,7 +510,7 @@
 		"SpectatorLoadoutScale" 	"0.70000"
 		"VersusScale"				"0.70000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"Ability1" "jibril_energy_blast"
 		"Ability2" "jibril_flugel"
@@ -570,7 +570,7 @@
 		"SpectatorLoadoutScale" 	"1.2"
 		"VersusScale"				"1.2"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
         "Ability1" "gram_dispersion"
@@ -634,7 +634,7 @@
 		"SpectatorLoadoutScale" 	"1.35000"
 		"VersusScale"				"1.35000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -687,7 +687,7 @@
 		"SpectatorLoadoutScale" 	"0.60000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -766,7 +766,7 @@
 		"Ability16"					"special_bonus_billy_25"
 		"Ability17"					"special_bonus_spell_amplify_8"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -802,7 +802,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -855,7 +855,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -922,7 +922,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -972,7 +972,7 @@
 		"SpectatorLoadoutScale" 	"0.46000"
 		"VersusScale"				"0.46000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1" "chain_hit"
@@ -1027,7 +1027,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1043,7 +1043,7 @@
     "override_hero"     "npc_dota_hero_earthshaker"
     "Model"             "models/gogeta/gogeta_ssjb.vmdl"
     "ModelScale"        "1.20"
-    "DisableWearables"  "1"
+    "DisableWearables"  "0"
     "IdleExpression"		"empty"
     "PickSound"		        "empty"
 	"BanSound"		        "empty"
@@ -1126,7 +1126,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1146,7 +1146,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1196,7 +1196,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"VoiceFile"		"empty"
         "ItemSlots"
@@ -1248,7 +1248,7 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
         "Ability1" "dante_drive"
@@ -1313,7 +1313,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		
 		"VoiceFile"		"empty"
@@ -1370,7 +1370,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"Ability1" "teddy_hug"
 		"Ability2" "kigurumi"
@@ -1450,7 +1450,7 @@
 		"Ability16"					"special_bonus_daisuke_25"
 		"Ability17"					"special_bonus_spell_lifesteal_10"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1487,7 +1487,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		"Ability1"                   "kamehameha"
 		"Ability2"                   "kaioken"
 		"Ability3"                   "super_saiyan"
@@ -1542,7 +1542,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1597,7 +1597,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -1659,7 +1659,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"                  "shamak"
@@ -1718,7 +1718,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
 		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_ancient_apparition.vsndevts"
@@ -1780,7 +1780,7 @@
 		"SpectatorLoadoutScale" 	"1.20000"
 		"VersusScale"				"1.20000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1" "reality_warp"
@@ -1837,7 +1837,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"                "mikagura"
@@ -1894,7 +1894,7 @@
 		"SpectatorLoadoutScale" 	"0.55000"
 		"VersusScale"				"0.55000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
 		"GameSoundsFile"			"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
@@ -1952,7 +1952,7 @@
 		"SpectatorLoadoutScale" 	"0.40000"
 		"VersusScale"				"0.40000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"               "c1_spider"
@@ -2010,7 +2010,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -2079,7 +2079,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		//"VoiceFile"		"empty"
 		"Ability3"  "yukari_moon_portal"
@@ -2140,7 +2140,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		"Ability1"                 "sans_bone_throw"
 		"Ability2"                 "skelejoke"
 		"Ability4"                 "sans_control"
@@ -2199,7 +2199,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"                 "lelouch_nightmare"
@@ -2284,7 +2284,7 @@
 
 		"StatusStartingMana"	"-1"
 		"AbilityDraftDisabled"	"1"
-		"DisableWearables"	"1"
+		"DisableWearables"	"0"
 		"HasInventory"	"1"
 		// 是否为远古生物，0代表不是。"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"的数据驱动标记
 		"IsAncient"	"0"
@@ -2349,7 +2349,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"                  "mizuguruma"
@@ -2403,7 +2403,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"VoiceFile"		"empty"
         "ItemSlots"
@@ -2452,7 +2452,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -2506,7 +2506,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		"Ability1" "sword_circle"
 		"Ability2" "doppel_hit"
 		"Ability3" "judgment_cut"
@@ -2559,7 +2559,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
         "Ability1" "energy_wave"
@@ -2622,7 +2622,7 @@
 		"SpectatorLoadoutScale" 	"1.70000"
 		"VersusScale"				"1.70000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		"VoiceFile"		"empty"
         "Ability1" "edward_create_wall"
@@ -2680,7 +2680,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1" "narukami_lightning"
@@ -2770,7 +2770,7 @@
 		"Ability16"					"special_bonus_attack_damage_50"
 		"Ability17"					"special_bonus_frisk_25"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -2802,7 +2802,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"         "muken"
@@ -2859,7 +2859,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		//"VoiceFile"		"empty"
 		"Ability1" "ulquiorra_bala"
@@ -2916,7 +2916,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -2988,7 +2988,7 @@
 		"Ability17"					"special_bonus_flandr_25"
 		
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -3045,7 +3045,7 @@
 		"Ability17"					"special_bonus_homura_25"
 
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -3077,7 +3077,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -3133,7 +3133,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1" "super_slash"
@@ -3194,7 +3194,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -3251,7 +3251,7 @@
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		"ItemSlots"
   		{ }
@@ -3321,7 +3321,7 @@
 		"SpectatorLoadoutScale" 	"0.9000"
 		"VersusScale"				"0.9000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		//"VoiceFile"		"empty"
         "Ability1"         "touma_base_combo"
@@ -3378,7 +3378,7 @@
 		"SpectatorLoadoutScale" 	"1.3000"
 		"VersusScale"				"1.3000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
         
 		"VoiceFile"		"empty"
 		"Ability1"         "reinforce_knockdown"
@@ -3434,7 +3434,7 @@
     "override_hero"     "npc_dota_hero_riki"
     "Model"             "models/characters/ryougi_shiki/ryougi_shiki.vmdl"
     "ModelScale"        "1.10"
-    "DisableWearables"  "1"
+    "DisableWearables"  "0"
     "IdleExpression"		"empty"
     "PickSound"		"empty"
 		"BanSound"		"empty"
@@ -3503,7 +3503,7 @@
     "override_hero"     "npc_dota_hero_razor"
     "Model"             "models/characters/ichigo/ichigo.vmdl"
     "ModelScale"        "1.20"
-    "DisableWearables"  "1"
+    "DisableWearables"  "0"
     "IdleExpression"		"empty"
     "PickSound"		"empty"
 		"BanSound"		"empty"
@@ -3579,7 +3579,7 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------		
@@ -3725,7 +3725,7 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------		
@@ -3877,7 +3877,7 @@
 		"LoadoutScale"				"1.00000"
 		"SpectatorLoadoutScale" 	"1.00000"
 		"VersusScale"				"1.00000"
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------		
@@ -4028,7 +4028,7 @@
     "override_hero"     "npc_dota_hero_phantom_assassin"
     "Model"             "models/heroes/alphalucia/alphalucia.vmdl"
     "ModelScale"        "1.20"
-    "DisableWearables"  "1"
+    "DisableWearables"  "0"
     "IdleExpression"		"empty"
     "PickSound"		        "empty"
 	"BanSound"		        "empty"
@@ -4110,7 +4110,7 @@
     "override_hero"     "npc_dota_hero_slardar"
     "Model"             "models/update_heroes/scp192/scp192.vmdl"
     "ModelScale"        "2.0"
-    "DisableWearables"  "1"
+    "DisableWearables"  "0"
     "IdleExpression"		"empty"
     "PickSound"		        "empty"
 	"BanSound"		        "empty"
@@ -4188,7 +4188,7 @@
 		"SpectatorLoadoutScale" 	"1.0000"
 		"VersusScale"				"1.0000"
 
-		"DisableWearables" 			"1"
+		"DisableWearables" 			"0"
 		
 		
 		 "Facets"
@@ -4227,13 +4227,13 @@
   		{ }
 		
 			"AttributePrimary"			"DOTA_ATTRIBUTE_ALL"
-		"AttributeBaseStrength"		"10"
+		"AttributeBaseStrength"		"30"
 				"MagicalResistance"			"45" "StatusHealth"		"400" "Ability25" "empty_slot"
-		"AttributeStrengthGain"		"1.0"
-		"AttributeBaseIntelligence"	"15"
-		"AttributeIntelligenceGain"	"0.8"
-		"AttributeBaseAgility"		"26"
-		"AttributeAgilityGain"		"0.8"
+		"AttributeStrengthGain"		"3.0"
+		"AttributeBaseIntelligence"	"35"
+		"AttributeIntelligenceGain"	"3.0"
+		"AttributeBaseAgility"		"36"
+		"AttributeAgilityGain"		"2.0"
 			"AttackAnimationPoint"		"0.5"
 		"ArmorPhysical"				"2"
 		"MovementSpeed"				"420"

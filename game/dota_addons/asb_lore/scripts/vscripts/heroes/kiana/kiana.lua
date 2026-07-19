@@ -7611,7 +7611,7 @@ function kiana_final_form:OnSpellStart()
 	if caster:HasModifier("modifier_core_upgrade_3") then self:EndCooldown() return end
 	local mod = caster:FindModifierByName("modifier_will_of_the_herrsher")
 	local stack = mod:GetStackCount()
-	if stack > 150000 then
+	if stack >= 110000 then
  if caster:FindModifierByNameAndCaster("modifier_form_swap", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_form_swap", caster)
 		
@@ -7672,7 +7672,7 @@ function kiana_flameshion_form:OnSpellStart()
 	if caster:HasModifier("modifier_core_upgrade_2") then self:EndCooldown() return end
 		local mod = caster:FindModifierByName("modifier_will_of_the_herrsher")
 	local stack = mod:GetStackCount()
-	if stack > 100000 then
+	if stack >= 80000 then
  if caster:FindModifierByNameAndCaster("modifier_form_swap", caster) then
         caster:RemoveModifierByNameAndCaster("modifier_form_swap", caster)
 		

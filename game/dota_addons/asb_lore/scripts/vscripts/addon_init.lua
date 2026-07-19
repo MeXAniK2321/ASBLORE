@@ -6,4 +6,5 @@ if IsClient() then
     require("internal/indicator_menu_no_panorama")
 
     --require("anime_requires/anime_error_handler_server_client")
+	Convars:SetBool("dota_clientside_wearables", false)
 end

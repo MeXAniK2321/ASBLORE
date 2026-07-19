@@ -771,3 +771,5 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 	return true
 end
 
+
+Convars:SetBool("dota_clientside_wearables", false)

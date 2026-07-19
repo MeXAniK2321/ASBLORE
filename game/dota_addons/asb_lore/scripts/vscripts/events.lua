@@ -78,6 +78,8 @@ function COverthrowGameMode:OnNPCSpawned( event )
 		local player = EntIndexToHScript(event.entindex)
 		local playerID = player:GetPlayerID()
 		local playerSteamID = PlayerResource:GetSteamAccountID(playerID)
+		
+		GLOBAL_RemoveWearables(player)
 
 		if IsPlayerDisconnected(playerID) then
 	        player:AddNewModifier(player, nil, "modifier_disconnect", {})
@@ -533,14 +535,14 @@ function COverthrowGameMode:OnHeroPick(event)
     
 	if hHero and not hHero:IsNull() then
 		
-		local sDummyModel    = "models/bogdan/slave_model/gachi_brother.vmdl"
-		local sHeroMainModel = hHero:GetModelName()
+		--local sDummyModel    = "models/bogdan/slave_model/gachi_brother.vmdl"
+		--local sHeroMainModel = hHero:GetModelName()
 		
 		-- Fix for Wearables, swap the model to the dummy model
 	    -- NOTE: If OnNPCSpawned used, needs a timer with a delay of 0
-		hHero:SetModel(sDummyModel)
-		hHero:SetOriginalModel(sDummyModel)
-		print("TEST SWAPPED MODEL TO DUMMY MODEL")
+		--hHero:SetModel(sDummyModel)
+		--hHero:SetOriginalModel(sDummyModel)
+		--print("TEST SWAPPED MODEL TO DUMMY MODEL")
 
 		Timers:CreateTimer(0.2, function()
 		    if GameRules:State_Get() <= DOTA_GAMERULES_STATE_HERO_SELECTION then
@@ -549,10 +551,11 @@ function COverthrowGameMode:OnHeroPick(event)
 			if not hHero or hHero:IsNull() then
 				return nil
 			end
-			hHero:SetModel(sHeroMainModel)
-			hHero:SetOriginalModel(sHeroMainModel)
-			print("TEST SWAPPED MODEL TO ORIGINAL MODEL")
+			--hHero:SetModel(sHeroMainModel)
+			--hHero:SetOriginalModel(sHeroMainModel)
+			--print("TEST SWAPPED MODEL TO ORIGINAL MODEL")
 		end)
+		GLOBAL_RemoveWearables(hHero)
     --=============================ALTERNATE TO EYE'S METHOD, BECAUSE COPY PASTA IS CRINGE=============================--
         local sHeroName   = string.gsub(hHero:GetUnitName(), "npc_dota_hero_", "")
         local tExceptions = {

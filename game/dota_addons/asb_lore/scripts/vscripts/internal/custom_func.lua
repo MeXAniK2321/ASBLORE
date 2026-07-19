@@ -30,3 +30,17 @@ CDOTA_BaseNPC_Hero.GetIntellect = function(self, bskipNoConsume)
     
     return VALVE_GetIntellect(self, bskipNoConsume)
 end
+--// Remove wearables for heroes
+---------------------------------------------------------------------------------------
+function GLOBAL_RemoveWearables(hUnit)
+    if not hUnit or hUnit:IsNull() then
+        return
+    end
+    for _, hChild in ipairs(hUnit:GetChildren()) do
+        if hChild:GetClassname() == "dota_item_wearable" then
+			hChild:AddEffects(EF_NODRAW)
+			UTIL_Remove(hChild)
+			--print("REMOVED???")
+        end
+    end
+end
