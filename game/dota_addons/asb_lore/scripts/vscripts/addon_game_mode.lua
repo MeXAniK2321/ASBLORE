@@ -178,6 +178,8 @@ function Precache( context )
 		PrecacheResource( "model", "models/props_gameplay/pumpkin_bucket.vmdl", context )
 		PrecacheResource( "model", "models/particle/witchdoctor_skull.vmdl", context )
 		
+		PrecacheResource( "model", "models/items/units/deltarune_missile/deltarune_missile.vmdl", context)
+
 		PrecacheResource( "soundfile", "soundevents/yoshino.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/items/item_axis_sheet.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/esdeath_ability4.vsndevts", context )

@@ -5715,4 +5715,66 @@
         }
 	}
 
+
+
+	//=================================================================================================================
+	// Delarune Missle
+	//=================================================================================================================
+	"item_deltarune_missile"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_deltarune_missile"
+
+		"AbilityTextureName"					"deltarune_missile"
+
+		"Model"									"models/props_gameplay/red_box.vmdl"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+
+		// "MaxLevel"								"1"
+		// "RequiredLevel"							"1"
+		// "LevelsBetweenUpgrades"					"1"
+		// "IsLearned"								"1"
+
+		"AbilityCastRange"						"5000"
+		"AbilityCooldown"						"999999"
+		"PlayerSpecificCooldown"				"999999"
+		// "AbilityManaCost"						"300"
+
+		"ItemCost"								"77777"
+		"ItemSellable"							"0"
+		"ItemPermanent"							"0"
+		"ItemShopTags"							"consumable"
+		"ItemQuality"							"consumable"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemStackable"							"0"
+		"SideShop"								"0"
+		"IsTempestDoubleClonable"				"0"
+		"ItemInitiallySellable"					"1"
+		"ShouldBeInitiallySuggested"			"1"
+		"ItemInitialCharges"					"1"
+
+		"precache"
+		{
+			"model"								"models/items/units/deltarune_missile/deltarune_missile.vmdl"
+		}
+		
+		"AbilityValues"
+		{
+			"damage_pct"						"100"
+			"stun_duration"						"2.5"
+			"max_speed"							"2000"
+			"accel_time"						"5.0"
+			"launch_delay"						"2.5"
+		}
+	}
 }

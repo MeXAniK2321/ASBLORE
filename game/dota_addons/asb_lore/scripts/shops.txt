@@ -65,6 +65,7 @@
      //"item"      "item_kubikiribocho"
      "item"      "item_walter_white"
      //"item"      "item_abyssal_blade"
+     "item"       "item_deltarune_missile"
   }
       
   "misc"
