@@ -104,13 +104,6 @@ function yukari_moon_portal:GetManaCost( target )
 end
 
 function yukari_moon_portal:GetCastRange( location , target)
-	if self:GetCaster():HasModifier("modifier_yukari_moon_portal_caster") then
-	 if self:GetCaster():HasItemInInventory("item_power_of_friendship") or self:GetCaster():HasItemInInventory("item_watch") or self:GetCaster():HasItemInInventory("item_octarine_core") then
-	 return -10
-	 else
-		return 200
-	end
-	end
 	return self:GetSpecialValueFor("cast_range")
 end
 

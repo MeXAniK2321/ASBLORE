@@ -151,10 +151,10 @@ function modifier_air_banner:OnIntervalThink()
                 if vongolle:IsHidden() then
                     vongolle:SetHidden(false)
                 end
-            else
-                if not vongolle:IsHidden() then
-                    vongolle:SetHidden(true)
-                end
+            --else
+                --if not vongolle:IsHidden() then
+                    --vongolle:SetHidden(true)
+                --end
             end
         end
     end

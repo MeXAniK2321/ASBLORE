@@ -2018,4 +2018,124 @@
 		vsnd_duration = 100.000000
 	}
 	
+   divine_rapier2_suction1 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_suction1.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_suction2 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_suction2.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_suction3 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_suction3.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_impale1 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_impale1.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_impale2 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_impale2.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_lightning1 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_lightning1.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_lightning2 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_lightning2.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
+    divine_rapier2_lightning3 =
+	{
+		type = "src1_2d"
+		vsnd_files = 
+		[
+			"sounds/items/divine_rapier2/divine_rapier2_lightning3.vsnd"
+		]
+		volume = "2.000000"
+		pitch_min = "0.400000"
+		pitch_max = "1.000000"
+		soundlevel = "100.000000"
+		event_type = "1.000000"
+		vsnd_duration = 100.000000
+	}
+	
 }

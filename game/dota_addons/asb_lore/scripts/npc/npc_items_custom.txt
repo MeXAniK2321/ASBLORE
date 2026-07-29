@@ -5714,9 +5714,65 @@
 			"march_duration"  "10"
         }
 	}
-
-
-
+	
+	//=================================================================================================================
+	"item_recipe_divine_rapier2"
+	{
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName" 					"recipe"
+		"Model"									"models/props_gameplay/recipe.mdl"
+		"ItemCost"								"1"
+		"ItemShopTags"							""
+		
+		
+		"ItemRecipe"							"1"
+		"ItemResult"							"item_divine_rapier2"
+		
+		"ItemRequirements"
+		{
+			"01"								"item_mjollnir;item_dagon_5;item_relic;item_relic;item_relic;item_relic;item_relic;"
+		}
+	}
+	
+	"item_divine_rapier2"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"items/item_divine_rapier2"
+		"AbilityTextureName" 					"rapier"
+		//"Model"									"models/props_gameplay/sentry_ward_bundle.vmdl"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.2"
+		"AbilityCooldown"						"70"
+		"AbilityManaCost"						"300"
+		//"AbilitySharedCooldown"					"axis_sheet"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_NO"
+		//"ItemCost"								"2750"
+		"ItemShopTags"							"int;regen_health"
+		"ItemQuality"							"artifact"
+		"ItemAliases"							"sheepstick"
+		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShareability"						"ITEM_NOT_SHAREABLE"
+		"ItemDroppable" 						"0"
+		"ItemSellable"							"0"
+		"ShouldBeSuggested"						"1"
+		
+		"AbilityValues"
+		{
+			"pull_speed"						"250"
+			"distance_pushed"                   "2000"
+			"push_speed"                        "1000"
+			"maximum_height"                    "700"
+			"shockwave_pulses"                  "3"
+			"shockwave_damage"                  "900"
+			"autoattack_pure_dmg"               "200"
+		}
+	}
+	
 	//=================================================================================================================
 	// Delarune Missle
 	//=================================================================================================================
@@ -5750,7 +5806,7 @@
 		"PlayerSpecificCooldown"				"999999"
 		// "AbilityManaCost"						"300"
 
-		"ItemCost"								"77777"
+		"ItemCost"								"7777"
 		"ItemSellable"							"0"
 		"ItemPermanent"							"0"
 		"ItemShopTags"							"consumable"
@@ -5777,4 +5833,5 @@
 			"launch_delay"						"2.5"
 		}
 	}
+
 }

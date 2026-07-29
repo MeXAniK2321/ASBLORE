@@ -292,7 +292,7 @@ function modifier_item_deltarune_missile_flight:UpdateHorizontalMotion(me, dt)
 		return
 	end
 
-	if nDist > 2500 then
+	if nDist > 99999 then
 		self:Explode(vNewPos)
 		return
 	end

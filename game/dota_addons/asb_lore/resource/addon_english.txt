@@ -4231,6 +4231,14 @@ Using the power of the void, causes an explosion, crystallizing all enemies in t
         "DOTA_Tooltip_ability_item_deltarune_missile" "<font color='#f59f27'>FLOWERY DELTARUNE</font>"
         "DOTA_Tooltip_ability_item_deltarune_missile_Description" "<font color='#95D600'>Launch a missile</font>"
         "DOTA_Tooltip_ability_item_deltarune_missile_lore" "KEKICH"
+		
+        //====================================
+		//   Divine Rapier 2
+        //====================================
+        "DOTA_Tooltip_ability_item_divine_rapier2" "<font color='#f59f27'>Divine Rapier (Shunkō: Raijin Senkei)</font>"
+        "DOTA_Tooltip_ability_item_divine_rapier2_Description" "<h1>Active: Divine Suction</h1><font color='#95D600'>Delivers Divine Judgement to the enemy hero.</font><br><br> Pull Speed: %pull_speed% * time<br> Push Distance: %distance_pushed%<br> Push Speed: %push_speed%<br><br>Shockwave Pulses: %shockwave_pulses%<br> Shockwave Damage: <font color='#f59f27'>%shockwave_damage%</font>\n<h1>Passive: Everlasting</h1> <font color='#FF0000'>CANNOT BE DROPPED</font> <br> <font color='#FF0000'>CANNOT BE SOLD</font></font>"
+        "DOTA_Tooltip_ability_item_divine_rapier2_autoattack_pure_dmg" "+<font color='#f59f27'>PURE DAMAGE</font>"
+        "DOTA_Tooltip_ability_item_divine_rapier2_lore" "Divine Wrath"
 
         //====================================
 		//   Arcana Gift

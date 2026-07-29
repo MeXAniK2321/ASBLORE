@@ -23,7 +23,9 @@ function modifier_x_gloves:OnCreated(table)
 	self.ability = self:GetAbility()
 
 	if IsServer() then
-		self.modifier_scepter = self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
+	    if not self.parent:HasModifier("modifier_item_ultimate_scepter") then
+			self.parent:AddNewModifier(self.parent, self.ability, "modifier_item_ultimate_scepter", {})
+		end
 	end
 end
 

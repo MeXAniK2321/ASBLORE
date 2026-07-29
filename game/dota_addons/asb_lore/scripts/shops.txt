@@ -65,15 +65,16 @@
      //"item"      "item_kubikiribocho"
      "item"      "item_walter_white"
      //"item"      "item_abyssal_blade"
-     "item"       "item_deltarune_missile"
+     "item"      "item_deltarune_missile"
   }
       
   "misc"
   {
      "item"      "item_minato_kunai"
 	 "item"      "item_divine_lyre"
-     "item"      "item_lerolero"
+	 "item"      "item_divine_rapier2"
      "item"      "item_asta_sword"
+     "item"      "item_lerolero"
      "item"      "item_magic_girl_wand"
      "item"      "item_dress"
      "item"      "item_serp_molot"     	 
