@@ -210,6 +210,10 @@ function Precache( context )
 		PrecacheResource( "soundfile", "soundevents/heroes/anime_hero_gojo.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/heroes/anime_hero_alpha_lucia.vsndevts", context )
 		PrecacheResource( "soundfile", "soundevents/kizuna_ai.vsndevts", context )
+
+		PrecacheResource( "soundfile", "soundevents/items/makora.vsndevts", context )
+		PrecacheResource( "particle_folder", "particles/items/makora/", context)
+		
 	    PrecacheResource("particle", 	"particles/custom/units/elite_creeps/legendary_creep/effect.vpcf", context)
 		
 		PrecacheResource("model", "models/heroes/roland/units/base/gebura/gebura.vmdl", context)

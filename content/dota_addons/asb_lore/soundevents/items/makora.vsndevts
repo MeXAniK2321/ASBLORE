@@ -1,0 +1,59 @@
+"mahoraga"
+{
+  "operator_stacks"
+  {
+    "update_stack"
+    {
+      "reference_operator"
+      {
+        "operator"       "sos_reference_stack"
+        "reference_stack"    "dota_src1_3d"
+        "operator_variables"
+        {
+          "vsnd_files"
+          {
+            "value"
+            {
+               "value0"    "sounds/items/makora/mahoraga.vsnd"
+            }
+          }
+          "volume"      {  "value"   "20.00000" }
+          "pitch"       {  "value"   "1.000000" }
+          "soundlevel"    {  "value"   "100.00000" }
+          "distance_max"   {  "value"   "1600.000" }
+          "event_type"    {  "value"   "1.000000" }
+        }
+      }
+    }
+  }
+}
+
+"makora_summon"
+{
+  "operator_stacks"
+  {
+    "update_stack"
+    {
+      "reference_operator"
+      {
+        "operator"       "sos_reference_stack"
+        "reference_stack"    "dota_src1_3d"
+        "operator_variables"
+        {
+          "vsnd_files"
+          {
+            "value"
+            {
+               "value0"    "sounds/items/makora/makora_summon.vsnd"
+            }
+          }
+          "volume"      {  "value"   "20.00000" }
+          "pitch"       {  "value"   "1.000000" }
+          "soundlevel"    {  "value"   "100.00000" }
+          "distance_max"   {  "value"   "1600.000" }
+          "event_type"    {  "value"   "1.000000" }
+        }
+      }
+    }
+  }
+}

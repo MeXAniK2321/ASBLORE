@@ -5655,5 +5655,183 @@ If enemy hits a wall or another enemy, muramasa can use Q to teleport to him imm
    "DOTA_Tooltip_ability_item_kiana_icecream_all_stats" 			"Bonus All Stats:"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony"                "Wheel of Harmony (<font color='#FF0000'>Physical Damage</font>)"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_lore"               "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_description" "<h1>Active: Mode Switch</h1>Using the item switches Wheel of Harmony to the next mode. Mode switching has its own cooldown: %switch_cooldown% seconds.\n<h1>Passive: Physical Adaptation</h1>While this mode is selected, the item tracks only physical damage received from enemy sources. When the accumulated damage reaches the threshold, the item goes on cooldown and grants immunity to physical damage for a short time.\n<font color='#FF0000'><b>Passive: reduces incoming physical damage by %wheel_physical_damage_resistance%%.</b></font>"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_duration"               "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_counter_window"             "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_physical_threshold"             "PHYSICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_bonus_all_stats"                "+ to all attributes"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_wheel_physical_damage_resistance"               "%PHYSICAL DAMAGE REDUCTION:"
+
+        // --------------------------------------------------
+
+        // item_wheel_of_harmony_active
+
+        // --------------------------------------------------
+
+        // --- ability_item_wheel_of_harmony_active ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active"             "Wheel of Harmony"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_lore"                "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_Description"             "The item simultaneously tracks <b>physical</b>, <b>magical</b>, and <b>pure</b> damage, as well as <b>new negative effects</b> received from enemies during the accumulation window. When any counter reaches its threshold, Wheel of Harmony goes on cooldown and automatically activates the corresponding protection: immunity to physical, magical, or pure damage, or full immunity to negative effects."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_duration"                "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_counter_window"              "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_physical_threshold"              "PHYSICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_magical_threshold"               "MAGICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_pure_threshold"              "PURE DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_debuff_threshold"                "NEGATIVE EFFECT THRESHOLD:"
+
+        // --- ability_item_wheel_of_harmony_active_bonus_all_stats ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_bonus_all_stats"             "+ to all attributes"
+
+
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2"               "Wheel of Harmony (<font color='#0000FF'>Magical Damage</font>)"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_lore"              "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_description" "<h1>Active: Mode Switch</h1>Using the item switches Wheel of Harmony to the next mode. Mode switching has its own cooldown: %switch_cooldown% seconds.\n<h1>Passive: Magical Adaptation</h1>While this mode is selected, the item tracks only magical damage received from enemy sources. When the accumulated damage reaches the threshold, the item goes on cooldown and grants immunity to magical damage for a short time.\n<font color='#0000FF'><b>Passive: grants %wheel_magical_resistance%%% magical resistance.</b></font>"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_duration"              "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_counter_window"                "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_magical_threshold"             "MAGICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_bonus_all_stats"               "+ to all attributes"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony2_wheel_magical_resistance"              "%MAGICAL RESISTANCE:"
+
+        // --------------------------------------------------
+
+        // item_wheel_of_harmony3
+
+        // --------------------------------------------------
+
+        // --- ability_item_wheel_of_harmony3 ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3"               "Wheel of Harmony (<font color='#FFFF00'>Pure Damage</font>)"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_lore"              "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_description" "<h1>Active: Mode Switch</h1>Using the item switches Wheel of Harmony to the next mode. Mode switching has its own cooldown: %switch_cooldown% seconds.\n<h1>Passive: Pure Adaptation</h1>While this mode is selected, the item tracks only pure damage received from enemy sources. When the accumulated damage reaches the threshold, the item goes on cooldown and grants immunity to pure damage for a short time.\n<font color='#FFFF00'><b>Passive: grants %wheel_pure_damage_resistance%%% pure damage resistance.</b></font>"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_duration"              "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_counter_window"                "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_pure_threshold"                "PURE DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_bonus_all_stats"               "+ to all attributes"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony3_wheel_pure_damage_resistance"              "%PURE DAMAGE RESISTANCE:"
+
+        // --------------------------------------------------
+
+        // item_wheel_of_harmony4
+
+        // --------------------------------------------------
+
+        // --- ability_item_wheel_of_harmony4 ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4"               "Wheel of Harmony (<font color='#800080'>Negative Effects</font>)"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_lore"              "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_description" "<h1>Active: Mode Switch</h1>Using the item switches Wheel of Harmony to the next mode. Mode switching has its own cooldown: %switch_cooldown% seconds.\n<h1>Passive: Effect Adaptation</h1>While this mode is selected, the item tracks only new debuffs with duration applied by enemy heroes. Aura debuffs, creep debuffs, and self-applied negative effects do not increase the counter. When the counter reaches the threshold, the item instantly purges debuffs and grants full negative-effect immunity for a short time, including against aura effects.\n<font color='#800080'><b>Passive: grants %wheel_status_resistance%%% status resistance.</b></font>"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_duration"              "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_counter_window"                "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_debuff_threshold"              "NEGATIVE EFFECT THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_bonus_all_stats"               "+ to all attributes"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony4_wheel_status_resistance"               "%STATUS RESISTANCE:"
+
+        // --------------------------------------------------
+
+        // item_wheel_of_harmony
+
+        // --------------------------------------------------
+
+        // --- ability_item_wheel_of_harmony ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony"                "Wheel of Harmony (<font color='#FF0000'>Physical Damage</font>)"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_lore"               "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_description" "<h1>Active: Mode Switch</h1>Using the item switches Wheel of Harmony to the next mode. Mode switching has its own cooldown: %switch_cooldown% seconds.\n<h1>Passive: Physical Adaptation</h1>While this mode is selected, the item tracks only physical damage received from enemy sources. When the accumulated damage reaches the threshold, the item goes on cooldown and grants immunity to physical damage for a short time.\n<font color='#FF0000'><b>Passive: reduces incoming physical damage by %wheel_physical_damage_resistance%%.</b></font>"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_duration"               "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_counter_window"             "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_physical_threshold"             "PHYSICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_bonus_all_stats"                "+ to all attributes"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_wheel_physical_damage_resistance"               "%PHYSICAL DAMAGE REDUCTION:"
+
+        // --------------------------------------------------
+
+        // item_wheel_of_harmony_active
+
+        // --------------------------------------------------
+
+        // --- ability_item_wheel_of_harmony_active ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active"             "Wheel of Harmony"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_lore"                "The wheel on the Divine General's back symbolizes the Dharma that Mahoraga and other deities protect from harm."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_Description"             "The item simultaneously tracks <b>physical</b>, <b>magical</b>, and <b>pure</b> damage, as well as <b>new negative effects</b> received from enemies during the accumulation window. When any counter reaches its threshold, Wheel of Harmony goes on cooldown and automatically activates the corresponding protection: immunity to physical, magical, or pure damage, or full immunity to negative effects."
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_duration"                "DURATION:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_counter_window"              "ACCUMULATION WINDOW:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_physical_threshold"              "PHYSICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_magical_threshold"               "MAGICAL DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_pure_threshold"              "PURE DAMAGE THRESHOLD:"
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_debuff_threshold"                "NEGATIVE EFFECT THRESHOLD:"
+
+        // --- ability_item_wheel_of_harmony_active_bonus_all_stats ---
+
+        "DOTA_Tooltip_ability_item_wheel_of_harmony_active_bonus_all_stats"             "+ to all attributes"
+
+
+
+
+        // (авто) item_DOTA_Tooltip_modifier_item_wheel_of_harmony_active_Description
+
+        // --- modifier_item_wheel_of_harmony_active ---
+
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_active_Description"                "Immune to magic"
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_active"                "Wheel of Harmony"
+
+        // --- modifier_item_wheel_of_harmony_physical_immunity ---
+
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_physical_immunity"             "Wheel of Harmony: Physical Adaptation"
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_physical_immunity_Description"             "Completely blocks incoming physical damage."
+
+        // --- modifier_item_wheel_of_harmony_magical_immunity ---
+
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_magical_immunity"              "Wheel of Harmony: Magical Adaptation"
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_magical_immunity_Description"              "Completely blocks incoming magical damage."
+
+        // --- modifier_item_wheel_of_harmony_pure_immunity ---
+
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_pure_immunity"             "Wheel of Harmony: Pure Adaptation"
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_pure_immunity_Description"             "Completely blocks incoming pure damage."
+
+        // --- modifier_item_wheel_of_harmony_debuff_immunity ---
+
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_debuff_immunity"               "Wheel of Harmony: Effect Adaptation"
+        "DOTA_Tooltip_modifier_item_wheel_of_harmony_debuff_immunity_Description"               "Grants immunity to all negative effects and continuously dispels debuffs."
+
+
 }
 }

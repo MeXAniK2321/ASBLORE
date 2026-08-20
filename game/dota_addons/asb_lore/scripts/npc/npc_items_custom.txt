@@ -1,4 +1,5 @@
 #base heroes/sukuna/i.txt
+#base items/makora.txt
 
 "DOTAAbilities"
 {
@@ -1744,7 +1745,7 @@
 		"ItemDeclarations"						"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemShareability"						"ITEM_NOT_SHAREABLE"
 		"ShouldBeSuggested"						"1"
-		
+		"IsObsolete"							"1"
 		
 		
 		

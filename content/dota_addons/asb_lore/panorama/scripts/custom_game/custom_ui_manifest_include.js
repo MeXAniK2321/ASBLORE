@@ -53,3 +53,13 @@ function OnGameRulesStateChangeTest(keys)
 }
 
 GameEvents.Subscribe("game_rules_state_change", OnGameRulesStateChangeTest);
+
+
+(() =>
+{
+	let pShop = FindDotaHudElement("GridBasicItems");
+	pShop.RemoveAndDeleteChildren();
+
+	let pShop2 = FindDotaHudElement("GridUpgradeItems");
+	pShop2.RemoveAndDeleteChildren();
+})();
