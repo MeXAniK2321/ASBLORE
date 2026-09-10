@@ -13,7 +13,6 @@
 	[
 		{
 			_class = "C_OP_StopAfterCPDuration"
-			m_bDisableOperator = true
 		},
 	]
 	m_Emitters = 
