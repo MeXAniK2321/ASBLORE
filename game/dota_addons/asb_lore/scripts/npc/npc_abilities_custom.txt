@@ -73,7 +73,7 @@
   
   "example_ability"
   {
-	"ID"			  "1852"
+	
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 	"BaseClass"		   "ability_datadriven"
 	"AbilityTextureName"	  "holdout_blade_fury"
@@ -289,7 +289,7 @@
   {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	//"ID"			  "5343"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+	//
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 	"MaxLevel"			"0"
 	"BaseClass"		   "ability_datadriven"
@@ -300,7 +300,7 @@
   {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	//"ID"			  "5343"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+	//
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 	"MaxLevel"			"0"
 	"BaseClass"		   "ability_datadriven"
@@ -311,7 +311,7 @@
   {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	//"ID"			  "5343"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+	//
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 	"MaxLevel"			"0"
 	"BaseClass"		   "ability_datadriven"
@@ -322,7 +322,7 @@
   {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	//"ID"			  "5343"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+	//
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 	"MaxLevel"			"0"
 	"BaseClass"		   "ability_datadriven"
@@ -333,7 +333,7 @@
   {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	//"ID"			  "5343"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+	//
 	"AbilityBehavior"	   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 	"MaxLevel"			"0"
 	"BaseClass"		   "ability_datadriven"

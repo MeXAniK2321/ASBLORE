@@ -5,7 +5,7 @@
 {
 	"item_containers_lua_pack"
 	{
-		"ID"			  "1835"
+		
 		"BaseClass"		 "item_lua"
 		"ScriptFile"		  "libraries/abilities/item_containers_lua_pack.lua"
 		"AbilityTextureName"		"item_present"
@@ -70,7 +70,7 @@
 	//=================================================================================================================
 	"item_treasure_chest"
 	{
-		"ID"							"1001"
+		
 		"AbilityName"					"item_treasure_chest"
 		"BaseClass"						"item_bag_of_gold"
 		"Model"							"models/props_gameplay/treasure_chest_gold.vmdl"
@@ -104,7 +104,7 @@
 	//=================================================================================================================
 	"item_recipe_axis_sheet"
 	{
-		"ID"									"3031"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"axis_sheet"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -578,7 +578,7 @@
 	//=================================================================================================================
 	"item_recipe_beast_spear"
 	{
-		"ID"									"3047"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"beast_spear"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -596,7 +596,7 @@
 	//=================================================================================================================
 	"item_beast_spear"
 	{
-		"ID"									"3048"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_beast_spear"
 		"AbilityTextureName" 					"monkey_king_bar"
@@ -835,7 +835,7 @@
 	//=================================================================================================================
 	"item_recipe_soul_scythe"
 	{
-		"ID"									"3009"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"soul_scythe"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -853,7 +853,7 @@
 	//=================================================================================================================
 	"item_soul_scythe"
 	{
-		"ID"									"3010"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_soul.lua"
 		"AbilityTextureName" 					"soul_scythe"
@@ -1066,7 +1066,7 @@
 	//=================================================================================================================
 	"item_recipe_serp_molot"
 	{
-		"ID"									"3200"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"serp_molot"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -1084,7 +1084,7 @@
 	//=================================================================================================================
 	"item_serp_molot"
 	{
-		"ID"									"3201"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_serp_molot.lua"
 		"AbilityTextureName" 					"serp_molot"
@@ -1491,7 +1491,7 @@
 	//===================================================================================
 	"item_recipe_vongolla_primo_ring"
 	{
-		"ID"									"3060"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"vongolla_primo_ring"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -1509,7 +1509,7 @@
 	//====================================================================================
 	"item_vongolla_primo_ring"
 	{
-		"ID"									"3061"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_vongolla_primo_ring.lua"
 		"AbilityTextureName" 					"vongolla_primo_ring"
@@ -1546,7 +1546,7 @@
 	//=================================================================================================================
 	"item_recipe_asta_sword"
 	{
-		"ID"									"3005"
+		
 		"BaseClass"								"item_datadriven"
 		"AbilityTextureName" 					"asta_sword"
 		"Model"									"models/props_gameplay/recipe.mdl"
@@ -1728,7 +1728,7 @@
 	//=================================================================================================================
 	"item_asta_sword"
 	{
-		"ID"									"3006"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_asta_sword"
 		"AbilityTextureName" 					"black_king_bar"
@@ -1918,7 +1918,7 @@
 	}
 	"item_pandora_box"
 	{
-		"ID"									"3500"
+		
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_pandora_box.lua"
 		"AbilityTextureName"			"pandora_box"
@@ -5498,7 +5498,7 @@
 	//=================================================================================================================
 	"item_free_bbc"
 	{
-		"ID"									"3006"
+		
 		"BaseClass"								"item_lua"
 		"ScriptFile"							"items/item_free_bbc"
 		"AbilityTextureName" 					"black_king_bar"
@@ -5538,7 +5538,7 @@
 	//=================================================================================================================
 	"item_backpack_expander"
 	{
-		"ID"									"3500"
+		
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_backpack_expander.lua"
 		"AbilityTextureName"			"backpack_expander"
@@ -5568,7 +5568,7 @@
 	//=================================================================================================================
 	"item_zawarudo"
 	{
-	    "ID"									"3500"
+	    
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_zawarudo.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
@@ -5602,7 +5602,7 @@
 	//=================================================================================================================
 	"item_arcana_gift"
 	{
-	    "ID"									"3500"
+	    
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/item_arcana_gift.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
