@@ -10,8 +10,8 @@ function COverthrowGameMode:OnModifyGoldFilter(hFilterTable)
 			if IsNotNull(hKilledHero) then
 				local nLevelDifference = math.max(0, hKilledHero:GetLevel() - PlayerResource:GetLevel(hFilterTable.player_id_const) )
 
-				hFilterTable.gold = ( 100 + nLevelDifference * 50 ) * 0.5 --+ ( (GameRules:GetDOTATime(false, false) / 60) * 50 )
-				print(hFilterTable.gold)
+				hFilterTable.gold = ( 100 + nLevelDifference * 50 ) * 0.15 --+ ( (GameRules:GetDOTATime(false, false) / 60) * 50 )
+				print(hFilterTable.gold, "suka")
 			end
 		end
 

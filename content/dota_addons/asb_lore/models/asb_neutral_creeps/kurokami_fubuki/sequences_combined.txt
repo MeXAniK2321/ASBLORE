@@ -1,0 +1,292 @@
+===== ANIM FILES =====
+
+{
+    _class = "AnimFile"
+    name = "stand"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = false
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 10
+    end_frame = 60
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "stand_2"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = false
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 80
+    end_frame = 130
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "walk"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = false
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 150
+    end_frame = 180
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "attack_1"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 200
+    end_frame = 240
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "attack_2"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 260
+    end_frame = 300
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "death"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 320
+    end_frame = 425
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "spell_1"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 445
+    end_frame = 475
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "spell_2"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 495
+    end_frame = 500
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "spell_3"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 520
+    end_frame = 525
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "spell_4"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 545
+    end_frame = 550
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+{
+    _class = "AnimFile"
+    name = "spell_5"
+    is_default_idle_anim = false
+    activity_name = ""
+    activity_weight = 1
+    weight_list_name = ""
+    fade_in_time = 0.2
+    fade_out_time = 0.2
+    looping = true
+    delta = false
+    worldSpace = false
+    hidden = false
+    anim_markup_ordered = false
+    disable_compression = false
+    animgraph_additive = false
+    delete_from_compiled_model = false
+    source_filename = ""
+    import_bone_scales = false
+    start_frame = 570
+    end_frame = 575
+    framerate = -1.0
+    reverse = false
+    additional_anim_files = [  ]
+},
+
+
+===== SCALE REPORT =====
+
+(Вставь сюда свой лог костей)

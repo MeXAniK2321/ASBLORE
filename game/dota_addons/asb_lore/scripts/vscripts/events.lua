@@ -29,7 +29,7 @@ function COverthrowGameMode:OnGameRulesStateChange()
 		if GetMapName() == "forest_solo" then
 			self.AnimeGameKills = 30
 			self.ban  = 0
-		elseif GetMapName() == "balance_duo" then
+		elseif GetMapName() == "balance_duo" or GetMapName() == "balance_duo_new" then
 			self.AnimeGameKills = 48
 			self.ban = 1
         elseif GetMapName() == "5x5" then

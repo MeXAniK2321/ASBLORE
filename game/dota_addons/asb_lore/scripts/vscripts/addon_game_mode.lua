@@ -317,13 +317,15 @@ function COverthrowGameMode:InitGameMode()
 	self:GatherAndRegisterValidTeams()
 
 	GameRules:GetGameModeEntity().COverthrowGameMode = self
+	GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1500 )
 	
 	-- Adding Many Players
 	local tMaps = {
 	                  -- Map: BanTimeOverride, HeroPickTImeOverride, CustomBansPerTeam, Teams, GoldRadiusMin, GoldRadiusMax, GoldDropPercent, RespawnMult
-					  ruin_solo      = {BanTime = 0, PickTime = 60, Bans = 0, Teams = nil, Players = 1, GoldRadius = {250, 550}, GoldDropPercent = 15, RespawnMult = 1.0},
-					  balance_duo    = {BanTime = 0, PickTime = 45, Bans = 0, Teams = DOTA_TEAM_CUSTOM_3, Players = 2, GoldRadius = {400, 700}, GoldDropPercent = 15, RespawnMult = 2.0},
-					  desert_quintet = {BanTime = 20, PickTime = 45, Bans = 2, Teams = DOTA_TEAM_CUSTOM_1, Players = 5, GoldRadius = {300, 1400}, GoldDropPercent = 35, RespawnMult = 3.0}
+					  ruin_solo      = {BanTime = 0, PickTime = 60, Bans = 0, Teams = 10, Players = 1, GoldRadius = {250, 550}, GoldDropPercent = 15, RespawnMult = 1.0},
+					  balance_duo    = {BanTime = 0, PickTime = 45, Bans = 0, Teams = 5, Players = 2, GoldRadius = {400, 700}, GoldDropPercent = 15, RespawnMult = 2.0},
+					  balance_duo_new = {BanTime = 0, PickTime = 45, Bans = 0, Teams = 6, Players = 2, GoldRadius = {400, 700}, GoldDropPercent = 15, RespawnMult = 2.0},
+					  desert_quintet = {BanTime = 20, PickTime = 45, Bans = 2, Teams = 3, Players = 5, GoldRadius = {300, 1400}, GoldDropPercent = 35, RespawnMult = 3.0}
 	              }
 	
 	local tMapCheck = tMaps[GetMapName()]
@@ -334,7 +336,7 @@ function COverthrowGameMode:InitGameMode()
 	
 		-- Set total teams and players per team
 		if tMapCheck.Teams then
-			for i = DOTA_TEAM_GOODGUYS, tMapCheck.Teams do
+			for i = DOTA_TEAM_FIRST, tMapCheck.Teams + 3 do
 				-- Only valid player teams, use Team Colors table for check
 				if self.m_TeamColors[i] then
 					GameRules:SetCustomGameTeamMaxPlayers( i, tMapCheck.Players )
@@ -343,10 +345,10 @@ function COverthrowGameMode:InitGameMode()
 		end
 		
 		--Fix for Quintet
-		if GetMapName() == "desert_quintet" then
+		-- if GetMapName() == "desert_quintet" then
 			CreateUnitByName("npc_dota_xp_global", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
 			CreateUnitByName("npc_dota_xp_granter2", Vector(0, 0, 368), false, nil, nil, DOTA_TEAM_NOTEAM)
-		end
+		-- end
 	end
 	
 	-- Set gold values and respawn multipliers
@@ -738,7 +740,9 @@ function COverthrowGameMode:ExecuteOrderFilter( filterTable )
 			local vNewPos = Vector(filterTable["position_x"], filterTable["position_y"], filterTable["position_z"])
 			if orderType == DOTA_UNIT_ORDER_PICKUP_RUNE then
 			    local hRune = EntIndexToHScript( filterTable["entindex_target"] )
-			    vNewPos = hRune:GetOrigin()
+			    if hRune and not hRune:IsNull() then
+			    	vNewPos = hRune:GetOrigin()
+			    end
 			end
 			hHero.newest_pos = vNewPos
 			--print("WORKS")

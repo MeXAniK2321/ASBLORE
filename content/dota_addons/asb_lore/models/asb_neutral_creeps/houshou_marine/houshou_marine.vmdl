@@ -1,0 +1,508 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "hair.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_5.vmat"
+							},
+							{
+								from = "boots.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_1.vmat"
+							},
+							{
+								from = "coat.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_6.vmat"
+							},
+							{
+								from = "costume.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_2.vmat"
+							},
+							{
+								from = "eyes.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_4.vmat"
+							},
+							{
+								from = "hat.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_0.vmat"
+							},
+							{
+								from = "legs.vmat"
+								to = "models/asb_neutral_creeps/houshou_marine/materials/marine_uta01_3.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "ATTACH_ORIGIN"
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_HITLOC"
+						parent_bone = "b02"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK1"
+						parent_bone = "b02"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ATTACH_ATTACK2"
+						parent_bone = "b02"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "stand"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 10
+						end_frame = 70
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "walk"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 90
+						end_frame = 111
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "spell"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 131
+						end_frame = 161
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "death"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 181
+						end_frame = 211
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "stand_ready"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 231
+						end_frame = 291
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "attack_1"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 311
+						end_frame = 341
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "attack_2"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 361
+						end_frame = 391
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "spell_one"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 411
+						end_frame = 450
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "spell_two"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 470
+						end_frame = 500
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "spell_three"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 520
+						end_frame = 550
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "spell_slam"
+						is_default_idle_anim = false
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/asb_neutral_creeps/houshou_marine/houshou marine_fix.fbx"
+						import_bone_scales = false
+						start_frame = 570
+						end_frame = 606
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+				]
+				default_root_bone_name = ""
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "b56"
+								parent_bone = "b56"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -21.22968, -12.030411, -28.899834 ]
+								hitbox_maxs = [ 22.09349, 14.404526, 15.385895 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b57"
+								parent_bone = "b57"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.855326, -7.7757597, -35.921387 ]
+								hitbox_maxs = [ 10.815386, 9.772592, 9.585327 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bone_new7058"
+								parent_bone = "bone_new7058"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.897252, -8.146916, -53.058456 ]
+								hitbox_maxs = [ 5.932288, 6.300128, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bone_new6862"
+								parent_bone = "bone_new6862"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.3427806, -7.775754, -35.710533 ]
+								hitbox_maxs = [ 10.800411, 9.772597, 5.81456 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b63"
+								parent_bone = "b63"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.2257733, -8.122414, -52.736786 ]
+								hitbox_maxs = [ 5.603767, 6.324626, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b02"
+								parent_bone = "b02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -34.450893, -12.415958, -17.923035 ]
+								hitbox_maxs = [ 16.43789, 17.86994, 29.192856 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bone_new418"
+								parent_bone = "bone_new418"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.7815537, -5.3639183, -16.840286 ]
+								hitbox_maxs = [ 20.448679, 10.812407, 6.900009 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b19"
+								parent_bone = "b19"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.399752, -10.101305, -21.25853 ]
+								hitbox_maxs = [ 24.042028, 8.399637, 16.66558 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bone_new637"
+								parent_bone = "bone_new637"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -23.597023, -9.321388, -30.178513 ]
+								hitbox_maxs = [ 4.599554, 15.300482, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "b38"
+								parent_bone = "b38"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.431805, -5.7108345, -21.33722 ]
+								hitbox_maxs = [ 11.071674, 7.216465, 9.454422 ]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

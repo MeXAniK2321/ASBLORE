@@ -409,7 +409,7 @@ if GetMapName() == "playground" then
     end
 
     Timers:CreateTimer(.1, function()    
-      GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1500 )
+      -- GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1500 )
     end)
 
     Timers:CreateTimer(function()

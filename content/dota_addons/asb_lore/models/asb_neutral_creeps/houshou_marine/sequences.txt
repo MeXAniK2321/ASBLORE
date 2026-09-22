@@ -1,0 +1,11 @@
+Name:Stand; loop:false; Rarity:; Movespeed:; start:10f; end:70f
+Name:Walk; loop:false; Rarity:; Movespeed:; start:90f; end:111f
+Name:Spell; loop:false; Rarity:; Movespeed:; start:131f; end:161f
+Name:Death; loop:true; Rarity:; Movespeed:; start:181f; end:211f
+Name:Stand Ready; loop:false; Rarity:; Movespeed:; start:231f; end:291f
+Name:Attack - 1; loop:true; Rarity:; Movespeed:; start:311f; end:341f
+Name:Attack - 2; loop:true; Rarity:; Movespeed:; start:361f; end:391f
+Name:Spell One; loop:true; Rarity:; Movespeed:; start:411f; end:450f
+Name:Spell Two; loop:true; Rarity:; Movespeed:; start:470f; end:500f
+Name:Spell Three; loop:true; Rarity:; Movespeed:; start:520f; end:550f
+Name:Spell Slam; loop:true; Rarity:; Movespeed:; start:570f; end:606f

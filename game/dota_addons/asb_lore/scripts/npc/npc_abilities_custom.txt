@@ -3054,7 +3054,7 @@
 						}
 						"XPAmount"		"30"
 						"SplitEvenly"	"0"
-						"GoldAmount"	"32"
+						"GoldAmount"	"12"
 						"ReliableGold"	"0"
 						"PlayAlert"		"0"
 					}

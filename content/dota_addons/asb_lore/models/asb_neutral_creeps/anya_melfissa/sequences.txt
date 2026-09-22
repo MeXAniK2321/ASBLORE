@@ -1,0 +1,7 @@
+Name:stand; loop:false; Rarity:; Movespeed:; start:30f; end:90f
+Name:walk; loop:false; Rarity:; Movespeed:; start:110f; end:158f
+Name:attack 1; loop:true; Rarity:; Movespeed:; start:178f; end:214f
+Name:attack 2; loop:true; Rarity:; Movespeed:; start:234f; end:270f
+Name:spell; loop:true; Rarity:; Movespeed:; start:290f; end:320f
+Name:death; loop:true; Rarity:; Movespeed:; start:340f; end:406f
+Name:New; loop:false; Rarity:; Movespeed:; start:426f; end:446f

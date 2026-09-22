@@ -1,0 +1,8 @@
+anime_duo_new
+{
+	material materials/overviews/anime_duo_new.vmat
+	pos_x -8768
+	pos_y 8480
+	scale 16.562
+}
+

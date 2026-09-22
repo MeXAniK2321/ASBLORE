@@ -1,0 +1,8 @@
+Name:Model_UL_Ani_Harin; loop:false; Rarity:; Movespeed:; start:10f; end:19f
+Name:Stand; loop:false; Rarity:; Movespeed:; start:30f; end:90f
+Name:Attack -1; loop:true; Rarity:; Movespeed:; start:110f; end:140f
+Name:Spell; loop:true; Rarity:; Movespeed:; start:160f; end:230f
+Name:Spell Channel; loop:true; Rarity:; Movespeed:; start:250f; end:305f
+Name:Death; loop:true; Rarity:; Movespeed:; start:325f; end:395f
+Name:Walk; loop:false; Rarity:; Movespeed:125; start:415f; end:447f
+Name:Walk Fast; loop:false; Rarity:; Movespeed:350; start:467f; end:491f
